@@ -73,9 +73,10 @@ function AppRoutes() {
 function App() {
   return (
     <CartProvider>
-      <HashRouter basename="/E-shop-react-not-ended">
-        <AppRoutes />
-      </HashRouter>
+      <HashRouter>
+  <AppRoutes />
+</HashRouter>
+
     </CartProvider>
   );
 }
