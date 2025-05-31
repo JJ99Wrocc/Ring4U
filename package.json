@@ -1,6 +1,7 @@
 {
   "name": "strona3",
   "version": "0.1.0",
+  "homepage": "https://JJ99Wrocc.github.io/E-shop-react-not-ended/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -9,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.5",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.1.0",
@@ -21,7 +23,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
