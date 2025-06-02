@@ -13,7 +13,7 @@ import { OrderContext } from "./OrderContext";
   
 
 const OrderFinalization = () => {
-    const { orderData, updateOrderData,  } = useContext(OrderContext);
+    const { orderData, updateOrderData } = useContext(OrderContext);
   
     const handleEmailChange = (e) => {
       updateOrderData("email", e.target.value);
@@ -57,14 +57,14 @@ const OrderFinalization = () => {
               />
               <p className="e-mail-error">Wpisz poprawny adres e-mail</p>
 
-                {/* <OrderForm /> */}
+                <OrderForm />
 
                 <div>
                   <i className="fa-solid fa-check"></i>
                 Adres dostawy i adres do wystawienia faktury są takie same
               </div>
 
-              {/* <OrderInvoiceForm /> */}
+              <OrderInvoiceForm />
 
               
             <div>
