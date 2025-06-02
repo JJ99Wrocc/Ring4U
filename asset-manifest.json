@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/E-shop-react-not-ended/static/css/main.0fe19b78.css",
-    "main.js": "/E-shop-react-not-ended/static/js/main.dce0099d.js",
-    "static/media/jewelry_header_1920px.png": "/E-shop-react-not-ended/static/media/jewelry_header_1920px.dc8d695296007ab79af5.png",
-    "static/media/jewelry_header_1200px.png": "/E-shop-react-not-ended/static/media/jewelry_header_1200px.969090e30e0a317ff61c.png",
-    "static/media/jewelry_header_568px.png": "/E-shop-react-not-ended/static/media/jewelry_header_568px.cb9080e57060b43f86ff.png",
-    "index.html": "/E-shop-react-not-ended/index.html",
-    "main.0fe19b78.css.map": "/E-shop-react-not-ended/static/css/main.0fe19b78.css.map",
-    "main.dce0099d.js.map": "/E-shop-react-not-ended/static/js/main.dce0099d.js.map"
+    "main.css": "/FLOWMART/static/css/main.21a3f459.css",
+    "main.js": "/FLOWMART/static/js/main.75637ee3.js",
+    "static/js/453.e8ec925d.chunk.js": "/FLOWMART/static/js/453.e8ec925d.chunk.js",
+    "static/media/jewelry_header_1920px.png": "/FLOWMART/static/media/jewelry_header_1920px.dc8d695296007ab79af5.png",
+    "static/media/jewelry_header_1200px.png": "/FLOWMART/static/media/jewelry_header_1200px.969090e30e0a317ff61c.png",
+    "static/media/jewelry_header_568px.png": "/FLOWMART/static/media/jewelry_header_568px.cb9080e57060b43f86ff.png",
+    "index.html": "/FLOWMART/index.html",
+    "main.21a3f459.css.map": "/FLOWMART/static/css/main.21a3f459.css.map",
+    "main.75637ee3.js.map": "/FLOWMART/static/js/main.75637ee3.js.map",
+    "453.e8ec925d.chunk.js.map": "/FLOWMART/static/js/453.e8ec925d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0fe19b78.css",
-    "static/js/main.dce0099d.js"
+    "static/css/main.21a3f459.css",
+    "static/js/main.75637ee3.js"
   ]
 }
