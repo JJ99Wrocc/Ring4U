@@ -73,9 +73,9 @@ function AppRoutes() {
 function App() {
   return (
     <CartProvider>
-      <BrowserRouter basename="/E-shop-react-not-ended">
-  <AppRoutes />
-</BrowserRouter>
+      <BrowserRouter basename="/FLOWMART">
+          <AppRoutes />
+      </BrowserRouter>
 
     </CartProvider>
   );
