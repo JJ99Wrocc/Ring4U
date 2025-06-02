@@ -14,8 +14,8 @@ import Payment from "./components/Payment";
 import CartProvider from "./components/CartContext";
 import CartAddedProduct from "./components/CartPreview2";
 import OrderFinalization from "./components/OrderFinalization";
-import { HashRouter } from "react-router-dom";
-
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import OrderProvider  from "./components/OrderContext";
 
 
 
@@ -57,6 +57,7 @@ function AppRoutes() {
         }
       />
       <Route path="/payment" element={<Payment />} />
+      
       <Route
   path="/order-finalization"
   element={
@@ -65,19 +66,20 @@ function AppRoutes() {
    
   }
 />
-
+<Route path="/privacypolicy" element={<PrivacyPolicy />} />
     </Routes>
   );
 }
 
 function App() {
   return (
-    <CartProvider>
+   <OrderProvider>
+     <CartProvider>
       <BrowserRouter basename="/FLOWMART">
           <AppRoutes />
       </BrowserRouter>
-
     </CartProvider>
+   </OrderProvider>
   );
 }
 

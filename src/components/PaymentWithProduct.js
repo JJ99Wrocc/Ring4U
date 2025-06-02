@@ -121,7 +121,7 @@ const PaymentWithProduct = () =>{
             <span className="total-cost">
               {totalCost === 0
                 ? "Za darmo"
-                : totalCost > 400
+                : totalCost < 400
                 ? "20.00 zł"
                 : "Za darmo"}
             </span>
@@ -132,7 +132,7 @@ const PaymentWithProduct = () =>{
             <span className="total-cost">
               {totalCost === 0
                 ? "0.00zł"
-                : totalCost > 400
+                : totalCost < 400
                 ? totalCost + 20
                 : totalCost}{" "}
               zł{" "}

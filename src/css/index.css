@@ -10,6 +10,7 @@ html,body {
     bottom: 0;
     width: 100%;
   }
+  
 
   #nav {
     position: fixed;
@@ -689,18 +690,20 @@ font-weight: bold;
 .order-box2{
   display: flex;
   justify-content: space-between; 
-  width: 80%;
+  width:80%;
   margin-top: 20px;
   gap: 10px;
 }
 .left-order-finalization-box{
-  flex: 1;
+  flex: 0 0 62%;
   min-width: 0;
+  
   
 }
 .right-order-finalization-box{
-  flex: 1;
+  flex: 0 0 38%;
   min-width: 0;
+  
 }
 .big-letter-order{
   font-size: 20px;
@@ -708,9 +711,49 @@ font-weight: bold;
   font-weight: bold;
 } 
 .order-input{
-  height: 40px;
+  height: 45px;
+  padding-left: 10px;
 }
-  
+.order-input::placeholder {
+  color: #888;        
+  font-size: 16px;    
+
+}
+.email{
+  width: 70%;
+}
+.order-row {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;
+}
+.order-name{
+  width: 100%;
+}
+
+.order-wrapper{
+  width: 44.5%;
+}
+.order-under-input{
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.name-error,
+.surname-error,
+.adres-error,
+.post-error,
+.city-error,
+.phone-error,
+.e-mail-error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.order-adress, .order-information, .nip{
+  width: 91%;
+}
 
 @media(max-width: 1200px){
     .segment-product-price.price{

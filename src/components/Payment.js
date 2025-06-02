@@ -11,8 +11,10 @@ const Payment = () => {
   return (
     <div >
       <Navbar />
+      <main className="main-content">
+             {selectedProducts.length === 0 ? <PaymentEmptyCart /> : <PaymentWithProduct />}
+      </main>
 
-      {selectedProducts.length === 0 ? <PaymentEmptyCart /> : <PaymentWithProduct />}
 
       
 

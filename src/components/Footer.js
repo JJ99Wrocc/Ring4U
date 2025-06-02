@@ -4,7 +4,7 @@ import '../css/index.css';
 
 const Footer = () => {
     return ( 
-        <div className="ui inverted vertical segment Copy-right" >
+        <footer className="ui inverted vertical segment Copy-right" >
             <div className="ui container">
                 <div className="ui stackable grid middle aligned">
                     <div className="four wide column"></div>
@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 }
 
