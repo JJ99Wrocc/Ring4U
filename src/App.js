@@ -73,9 +73,9 @@ function AppRoutes() {
 function App() {
   return (
     <CartProvider>
-      <HashRouter>
+      <BrowserRouter basename="/E-shop-react-not-ended">
   <AppRoutes />
-</HashRouter>
+</BrowserRouter>
 
     </CartProvider>
   );
