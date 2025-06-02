@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/FLOWMART/static/css/main.d82b669c.css",
-    "main.js": "/FLOWMART/static/js/main.af3f6350.js",
+    "main.js": "/FLOWMART/static/js/main.bb6edb0f.js",
     "static/js/453.e8ec925d.chunk.js": "/FLOWMART/static/js/453.e8ec925d.chunk.js",
     "static/media/jewelry_header_1920px.png": "/FLOWMART/static/media/jewelry_header_1920px.dc8d695296007ab79af5.png",
     "static/media/jewelry_header_1200px.png": "/FLOWMART/static/media/jewelry_header_1200px.969090e30e0a317ff61c.png",
     "static/media/jewelry_header_568px.png": "/FLOWMART/static/media/jewelry_header_568px.cb9080e57060b43f86ff.png",
     "index.html": "/FLOWMART/index.html",
     "main.d82b669c.css.map": "/FLOWMART/static/css/main.d82b669c.css.map",
-    "main.af3f6350.js.map": "/FLOWMART/static/js/main.af3f6350.js.map",
+    "main.bb6edb0f.js.map": "/FLOWMART/static/js/main.bb6edb0f.js.map",
     "453.e8ec925d.chunk.js.map": "/FLOWMART/static/js/453.e8ec925d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d82b669c.css",
-    "static/js/main.af3f6350.js"
+    "static/js/main.bb6edb0f.js"
   ]
 }
