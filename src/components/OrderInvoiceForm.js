@@ -49,9 +49,30 @@ const OrderInvoiceForm = () => {
 
       <p>PAŃSTWO: Poland</p>
 
-      <input className="order-input" type="number" placeholder="Numer telefonu komórkowego *" 
-      value={orderData.billingAddress.phoneNumber}
-      onChange={(e)=>updateNestedOrderData("billingAddress","phoneNumber", e.target.value)}/>
+      <div className="order-phone-container" style={{ display: 'flex', gap: '8px' }}>
+  <select
+    className="order-input"
+    value={orderData.billingAddress.phonePrefix}
+    onChange={(e) =>
+      updateNestedOrderData("billingAddress", "phonePrefix", e.target.value)
+    }
+  >
+    <option value="+48">🇵🇱 +48</option>
+    <option value="+49">🇩🇪 +49</option>
+    <option value="+44">🇬🇧 +44</option>
+    <option value="+1">🇺🇸 +1</option>
+  </select>
+
+  <input
+    className="order-input"
+    type="tel"
+    placeholder="Numer telefonu *"
+    value={orderData.shippingAddress.phoneNumber}
+    onChange={(e) =>
+      updateNestedOrderData("billingAddress", "phoneNumber", e.target.value)
+    }
+  />
+</div>
       <p>Np. 667 667 668</p>
 
       <input className="order-input nip" type="number" placeholder="NIP" 

@@ -4,8 +4,10 @@ import { CartContext } from "./CartContext";
 import Footer from "./Footer";
 import OrderInvoiceForm from "./OrderInvoiceForm";
 import OrderReadMore from "./OrderReadMore";
+import OrderFinalizationRightBox from "./OrderFinalizationRightBox";
 import OrderForm from "./OrderForm";
 import { OrderContext } from "./OrderContext";
+
 
 
 
@@ -37,7 +39,8 @@ const OrderFinalization = () => {
            <div className="left-order-brand">FLOW<span className="order-brand-2">MART</span></div>
            <div className="right-order">  
                <Link to="/payment" className="look">
-                  <i className="fa-solid fa-cart-shopping"></i>
+                  <i className="fa-solid fa-cart-shopping order-shopping"></i>
+                  <div className="order-circle">{selectedCount}</div>
                </Link>
             </div>
            </div>
@@ -89,24 +92,7 @@ const OrderFinalization = () => {
               <div className="delivery-method big-letter-order">SPOSÓB DOSTAWY</div>
               <div className="Payment-method big-letter-order">PŁATNOŚĆ</div>
             </div>
-            <div className="right-order-finalization-box">
-                <div>TWOJE ZAMÓWIENIE <span>EDYTUJ</span></div>
-                <div>produkt <div>cena</div></div>
-                <div>dostawa <div>cena</div></div>
-                <div>Razem <div>cena</div></div>
-                <div>Łącznie z podatkiem</div>
-                {selectedProducts.map((product, index) => (
-              <div key={index}>
-                <img
-                  src={product.image}
-                  className=""
-                  alt={product.name}
-                />
-                <div className="">{product.name}</div>
-                <div className="">{product.price}</div>
-              </div>
-            ))}
-            </div>
+            <OrderFinalizationRightBox />
            </div>
            <Footer />
         </div>

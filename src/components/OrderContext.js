@@ -15,6 +15,7 @@ const OrderProvider = ({ children }) => {
       postalCode: "",
       city: "",
       phoneNumber: "",
+      phonePrefix:"",
     },
 
     billingAddress: {
@@ -26,6 +27,7 @@ const OrderProvider = ({ children }) => {
       city: "",
       phoneNumber: "",
       nip: "",
+      phonePrefix:"",
     },
 
     useDifferentBilling: false,

@@ -754,6 +754,23 @@ font-weight: bold;
 .order-adress, .order-information, .nip{
   width: 91%;
 }
+.order-shopping{
+  position: relative;
+}
+.order-circle{
+  position: absolute;
+  top: -8px;
+  margin-left: 21px;
+  font-size: 12px;
+  height: 20px;
+  width: 20px;
+  color: #ccc;
+  background-color: royalblue;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 100000000;
+}
 
 @media(max-width: 1200px){
     .segment-product-price.price{
