@@ -1,28 +1,48 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "./CartContext";
 import Footer from "./Footer";
-import OrderInvoiceForm from "./OrderInvoiceForm";
-import OrderReadMore from "./OrderReadMore";
 import OrderFinalizationRightBox from "./OrderFinalizationRightBox";
-import OrderForm from "./OrderForm";
 import { OrderContext } from "./OrderContext";
-
-
-
-
-
-  
+import OrderAfterEmail from "./OrderAfterEmail";
 
 const OrderFinalization = () => {
-    const { orderData, updateOrderData } = useContext(OrderContext);
-  
-    const handleEmailChange = (e) => {
-      updateOrderData("email", e.target.value);
-    };
+  const { orderData, updateOrderData } = useContext(OrderContext);
+  const [isEmailValid, setIsEmailValid] = useState(false);
+
+  const handleEmailChange = (e) => {
+    const email = e.target.value;
+    updateOrderData("email", email);
+    setIsEmailValid(validateEmail(email));
+  };
+
+  const validateEmail = (email) => {
+    if (!email || email.length > 254 || email.length < 6) return false;
+
+    const parts = email.split("@");
+    if (parts.length !== 2) return false;
+
+    const [localPart, domain] = parts;
+    if (!localPart || localPart.length > 64) return false;
+    if (!domain || domain.length > 253) return false;
+
+    const localValid = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+$/;
+    if (!localValid.test(localPart)) return false;
+
+    const domainValid = /^[a-zA-Z0-9-]+(\.[a-zA-Z]{2,})+$/;
+    if (!domainValid.test(domain)) return false;
+
+    
+    const tld = domain.substring(domain.lastIndexOf('.') + 1);
+    if (tld.length > 24) return false;
 
 
-  const {selectedProducts} = useContext(CartContext);
+    if (email.includes("..")) return false;
+
+    return true;
+  };
+
+  const { selectedProducts } = useContext(CartContext);
   const totalCost = selectedProducts.reduce((sum, product) => {
     if (!product.selected) return sum;
     const numericPrice = parseFloat(
@@ -30,75 +50,70 @@ const OrderFinalization = () => {
     );
     return sum + numericPrice * (product.amount || 1);
   }, 0);
+
   const selectedCount = selectedProducts
-        .filter((p) => p.selected)
-        .reduce((sum, p) => sum + (p.amount || 1), 0);
-    return (
-        <div className="order-finalization-box">
-           <div className="container ordef-box-1">
-           <div className="left-order-brand">FLOW<span className="order-brand-2">MART</span></div>
-           <div className="right-order">  
-               <Link to="/payment" className="look">
-                  <i className="fa-solid fa-cart-shopping order-shopping"></i>
-                  <div className="order-circle">{selectedCount}</div>
-               </Link>
-            </div>
-           </div>
-           <div className="order-finalization-title">FINALIZACJA ZAMÓWIENIA</div>
-           <div className="order-finalization-under-title-line"> ({selectedCount} PRODUKTY)  {totalCost} ZŁ</div>
-           <div className="container order-box2">
-            <div className="left-order-finalization-box">
-                <p className="big-letter-order">KONTAKT</p>
-                
-                        <input
-                type="email"
-                className="order-input email"
-                placeholder="E-mail *"
-                required
-                value={orderData.email}
-                onChange={handleEmailChange}
-              />
-              <p className="e-mail-error">Wpisz poprawny adres e-mail</p>
+    .filter((p) => p.selected)
+    .reduce((sum, p) => sum + (p.amount || 1), 0);
 
-                <OrderForm />
-
-                <div>
-                  <i className="fa-solid fa-check"></i>
-                Adres dostawy i adres do wystawienia faktury są takie same
-              </div>
-
-              <OrderInvoiceForm />
-
-              
-            <div>
-                  <i className="fa-solid fa-check"></i>
-                  Mam ukończone 16 lat Dlaczego to jest ważne?*
-              </div>
-              <p>Nie chcesz otrzymywać spersonalizowanych wiadomości marketingowych od adidas? Odznacz pole, aby zrezygnować.</p>
-              <div>
-                  <i className="fa-solid fa-check"></i>
-                  Odznacz pole, jeśli nie chcesz otrzymywać od adidas wiadomości marketingowych: Jeśli jesteś klientem, który zakupił produkty adidas, adidas Poland sp. z o.o. i adidas AG będą wykorzystywać Twoje dane osobowe do wysyłania spersonalizowanych wiadomości marketingowych pocztą e-mail. Opiera się to na uzasadnionym interesie adidas, aby angażować Cię jako naszego klienta. Jeśli nie chcesz otrzymywać newsletterów od adidas, odznacz pole wyboru, aby zrezygnować. Możesz zrezygnować z subskrypcji, klikając łącze "anuluj subskrypcję" w każdym kolejnym e-mailu marketingowym. KLIKNIJ TUTAJ, ABY PRZECZYTAĆ NASZĄ POLITYKĘ PRYWATNOŚCI DOTYCZĄCĄ SPERSONALIZOWANYCH WIADOMOŚCI MARKETINGOWYCH ZA POŚREDNICTWEM POCZTY E-MAIL (ZGODNIE Z ISTNIEJĄCĄ UMOWĄ).
-              </div> 
-              <p>Bądź w gronie tych, którzy jako pierwsi będą otrzymywać najnowsze promocje, produkty i wiadomości od adidas, razem ze spersonalizowanymi reklamami</p>
-              <div>
-                  <i className="fa-solid fa-check"></i>
-                  Tak, chcę otrzymywać najnowsze oferty i wiadomości o produktach adidas, za pośrednictwem reklam wyświetlanych w 
-                  mediach cyfrowych, na podstawie moich interakcji z adidas oraz zachowań na platformach takich jak Google i Facebook.
-                   Wiem, że w każdej chwili mogę zdecydować o zaprzestaniu udostępniania moich danych osobowych. <button>Czytaj więcej</button>
-                   {/* <OrderReadMore /> */}
-                  
-              </div> 
-              <button>DALEJ <i className="fa-solid fa-arrow-right-long"></i></button>
-              <div className="delivery-method big-letter-order">SPOSÓB DOSTAWY</div>
-              <div className="Payment-method big-letter-order">PŁATNOŚĆ</div>
-            </div>
-            <OrderFinalizationRightBox />
-           </div>
-           <Footer />
+  return (
+    <div className="order-finalization-box">
+      <div className="container order-box-1">
+        <div className="left-order-brand">
+          FLOW<span className="order-brand-2">MART</span>
         </div>
-        
-    )
-}
+        <div className="right-order">
+          <Link to="/payment" className="look">
+            <i className="fa-solid fa-cart-shopping "></i>
+            <div className="order-circle">{selectedCount}</div>
+          </Link>
+        </div>
+      </div>
 
+      <div className="order-finalization-title">FINALIZACJA ZAMÓWIENIA</div>
+      <div className="order-finalization-under-title-line">
+        ({selectedCount} PRODUKTY) {totalCost} ZŁ
+      </div>
+
+      <div className="container order-box2">
+        <div className="left-order-finalization-box">
+          <p className="big-letter-order">KONTAKT</p>
+
+          <input
+            type="email"
+            className="order-input email"
+            placeholder="E-mail *"
+            required
+            value={orderData.email}
+            onChange={handleEmailChange}
+            style={{
+              border:
+                orderData.email.length === 0
+                  ? "2px solid black"
+                  : isEmailValid
+                  ? "4px solid green"
+                  : "4px solid red"
+            }}
+          />
+          {!isEmailValid && orderData.email.length > 0 && (
+            <p className="e-mail-error">Wpisz poprawny adres e-mail</p>
+          )}
+
+          <hr className="order-line" />
+          <p className="big-letter-order">ADRES</p>
+
+          {isEmailValid && <OrderAfterEmail />}
+          <hr className="order-line" />
+          <div className="delivery-method big-letter-order">SPOSÓB DOSTAWY</div>
+          <hr className="order-line" />
+          <div className="Payment-method big-letter-order">PŁATNOŚĆ</div>
+        </div>
+
+        <OrderFinalizationRightBox />
+      </div>
+
+      <Footer className="order-finalization-footer" />
+    </div>
+  );
+};
 
 export default OrderFinalization;

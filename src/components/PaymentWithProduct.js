@@ -65,7 +65,7 @@ const PaymentWithProduct = () =>{
           <div className="container">
             {selectedProducts.map((product) => (
               <div
-                className="product-add-segment"
+                className="product-add-segment ui segment"
                 key={product.id + Math.random()}
               >
                 <span

@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-// import logo from './logo.svg';
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Header from "./components/Home";
@@ -15,17 +15,13 @@ import CartProvider from "./components/CartContext";
 import CartAddedProduct from "./components/CartPreview2";
 import OrderFinalization from "./components/OrderFinalization";
 import PrivacyPolicy from "./components/PrivacyPolicy";
-import OrderProvider  from "./components/OrderContext";
+import OrderProvider from "./components/OrderContext";
 
-
-
-
-
+// Layout z Navbar, Discount, CartAddedProduct i Footer, który owija dzieci (children)
 function LayoutWithNavAndFooter({ children }) {
-  
   return (
     <>
-     <CartAddedProduct />
+      <CartAddedProduct />
       <Navbar />
       <Discount />
       {children}
@@ -34,7 +30,7 @@ function LayoutWithNavAndFooter({ children }) {
   );
 }
 
-
+// Definicja wszystkich tras aplikacji
 function AppRoutes() {
   return (
     <Routes>
@@ -48,38 +44,38 @@ function AppRoutes() {
           </LayoutWithNavAndFooter>
         }
       />
+      
       <Route
         path="/login"
         element={
-            <LayoutWithNavAndFooter>
-              {<LogIn />}
-            </LayoutWithNavAndFooter>
+          <LayoutWithNavAndFooter>
+            <LogIn />
+          </LayoutWithNavAndFooter>
         }
       />
+      
       <Route path="/payment" element={<Payment />} />
       
       <Route
-  path="/order-finalization"
-  element={
-    
-      <OrderFinalization />
-   
-  }
-/>
-<Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        path="/order-finalization"
+        element={<OrderFinalization />}
+      />
+      
+      <Route path="/privacypolicy" element={<PrivacyPolicy />} />
     </Routes>
   );
 }
 
+// Główny komponent aplikacji, który owija całość w providery i router
 function App() {
   return (
-   <OrderProvider>
-     <CartProvider>
-      <BrowserRouter basename="/FLOWMART">
+    <OrderProvider>
+      <CartProvider>
+        <BrowserRouter basename="/FLOWMART">
           <AppRoutes />
-      </BrowserRouter>
-    </CartProvider>
-   </OrderProvider>
+        </BrowserRouter>
+      </CartProvider>
+    </OrderProvider>
   );
 }
 

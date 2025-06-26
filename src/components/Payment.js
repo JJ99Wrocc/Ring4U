@@ -14,11 +14,11 @@ const Payment = () => {
       <main className="main-content">
              {selectedProducts.length === 0 ? <PaymentEmptyCart /> : <PaymentWithProduct />}
       </main>
+      <Footer />
 
 
       
 
-      <Footer />
     </div>
   );
 };

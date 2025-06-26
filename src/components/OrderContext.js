@@ -3,8 +3,11 @@ import React, { createContext, useState } from "react";
 export const OrderContext = createContext();
 
 const OrderProvider = ({ children }) => {
+  const [isOrderFormValid, setIsOrderFormValid] = useState(false);
+  const [isOrderInvoiceFormValid, setIsOrderInvoiceFormValid] = useState(false)
   const [orderData, setOrderData] = useState({
     email: "",
+    
   
 
     shippingAddress: {
@@ -16,6 +19,12 @@ const OrderProvider = ({ children }) => {
       city: "",
       phoneNumber: "",
       phonePrefix:"",
+      selectedCount: "",
+      totalCost:"",
+      shipping: "",
+      productImage: "",
+      productName: "",
+      productPrice: "",
     },
 
     billingAddress: {
@@ -28,6 +37,13 @@ const OrderProvider = ({ children }) => {
       phoneNumber: "",
       nip: "",
       phonePrefix:"",
+      selectedCount: "",
+      totalCost:"",
+      shipping: "",
+      productImage: "",
+      productName: "",
+      productPrice: "",
+      
     },
 
     useDifferentBilling: false,
@@ -50,9 +66,9 @@ const OrderProvider = ({ children }) => {
       }
     }))
   }
-
+  
   return (
-    <OrderContext.Provider value={{ orderData, updateOrderData, updateNestedOrderData }}>
+    <OrderContext.Provider value={{ orderData, updateOrderData, updateNestedOrderData, isOrderFormValid, setIsOrderFormValid, isOrderInvoiceFormValid, setIsOrderInvoiceFormValid }}>
       {children}
     </OrderContext.Provider>
   );

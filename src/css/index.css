@@ -6,7 +6,7 @@ html,body {
 
   
   footer {
-    position: fixed;
+    position: sticky  ;
     bottom: 0;
     width: 100%;
   }
@@ -655,7 +655,7 @@ font-weight: bold;
   color: #2F1B0C;
 }
 
-.ordef-box-1{
+.order-box-1{
   display: flex;
   justify-content: space-between; 
   margin-top: 20px;
@@ -697,13 +697,14 @@ font-weight: bold;
 .left-order-finalization-box{
   flex: 0 0 62%;
   min-width: 0;
-  
+  min-height: 100vh;
   
 }
 .right-order-finalization-box{
+  position: relative;
+  height: 100%;
   flex: 0 0 38%;
   min-width: 0;
-  
 }
 .big-letter-order{
   font-size: 20px;
@@ -717,7 +718,6 @@ font-weight: bold;
 .order-input::placeholder {
   color: #888;        
   font-size: 16px;    
-
 }
 .email{
   width: 70%;
@@ -754,9 +754,22 @@ font-weight: bold;
 .order-adress, .order-information, .nip{
   width: 91%;
 }
-.order-shopping{
-  position: relative;
+.checkbox-box {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 10px;
+  margin: 10px 0;
 }
+.order-checks{
+  display: flex;
+  gap: 10px;
+}
+
 .order-circle{
   position: absolute;
   top: -8px;
@@ -771,14 +784,84 @@ font-weight: bold;
   border-radius: 50%;
   z-index: 100000000;
 }
+.order-summary, .shipping-summary,.total-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order-summary{
+  margin: 20px 0 5px 0;
+}
+.shipping-summary{
+  margin-bottom: 15px;
+}
+.order-total{
+  font-weight: bold;
+}
+.order-segment{
+  position: relative;
+}
+.order-img{
+  display: block;
+  height: 150px;
+  width: 150px;
+  background-image: url('../img/jewelry_header_1200px.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.order-segment-name,.order-product-count{
+  position: absolute;
+  left: 47%;
+}
+.order-segment-name,.order-product-price{
+  top: 15px;
+}
+.order-product-count{
+  top: 130px;
+}
+.order-product-price{
+position: absolute;
+top: 10%;
+left: 85%;
+}
+.order-line{
+  width: 80%;
+  margin: 35px 0;
+}
+.order-finalization-footer{
+  position: absolute;
+  bottom: 0;
+}
+.checkbox-box {
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
 
 @media(max-width: 1200px){
     .segment-product-price.price{
       left: 350px;
     }
-  }
+    .order-segment-name,.order-product-count{
+      left: 55%;
+      font-size: 13px;
+    }
+    .order-segment-price{
+      font-size: 13px;
+    }
+    .order-segment{
+      height: 150px;
+    }    
+    }
   @media(max-width:992px){
-    .ui.inverted.vertical.segment .Copy-rightt{
+    .ui.inverted.vertical.segment .Copy-right{
       font-size: 13px;
     }
     .arro{
@@ -852,6 +935,26 @@ font-weight: bold;
 
 .payment-right{
   right: 40px;
+}
+.order-segment-name,.order-product-count{
+  left: 55%;
+  
+}
+.order-product-count{
+  top: 110px;
+}
+.order-product-price,.order-segment-name,.order-product-count{
+  font-size: 13.5px;
+}
+.order-product-price {
+left: 83%;
+}
+.order-segment{
+  height: 150px;
+}
+.order-img{
+  height: 120px;
+  width: 120px;
 }
     }
     @media(max-width: 768px){
@@ -1019,12 +1122,46 @@ font-weight: bold;
         font-size: 12px;
         padding-left: 35px;
       } 
-    }
+      .order-segment-name,.order-product-count{
+        left: 48%;
+        
+      }
+      .order-product-count{
+        top: 85px;
+      }
+    
+      .order-product-price,.order-segment-name,.order-product-count{
+        font-size: 13.5px;
+      }
+      .order-product-price {
+      left: 83%;
+      }
+    
+      .order-segment{
+        width: 130%;
+        height: 120px;
+      }
+      .order-img{
+        position: absolute;
+        top: 6px;
+        left: 5px;
+        height: 105px;
+        width: 105px}
+            }
     @media(max-width:670px){
       .product-right-button2{
       
         padding-left: 30px;
+      }
+      .order-segment-name,.order-product-count{
+        left: 54%;
+      }
+      .order-segment-name,.order-product-price{
+        top: 10px;
       } 
+      .order-product-price,.order-segment-name,.order-product-count{
+        font-size: 12.5px;
+      }
     }
     @media(max-width: 600px){
       .product-add{
@@ -1230,6 +1367,7 @@ font-weight: bold;
     .payment-box{
       position: relative;
       padding-top: 150px;
+      min-height: 100%;
       
       
     }

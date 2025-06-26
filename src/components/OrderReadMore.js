@@ -21,10 +21,12 @@ const OrderReadMore = () => {
         doskonalenie strategii w zakresie przesyłania wiadomości w oparciu o moje interakcje i zaangażowanie.
          Pozwalam firmie adidas na bezpieczne udostępnianie moich danych osobowych starannie dobranym dostawcom,
          którzy mogą prowadzić działalność poza moim krajem zamieszkania. Więcej informacji na temat tych działań
-         znajduje się w 
+         znajduje się w    
+         <span style={{marginLeft: "10px"}}>
          <Link to="/privacypolicy" target="_blank" rel="noopener noreferrer">
   Informacji o polityce prywatności
 </Link>
+         </span>
         </div>
 
 

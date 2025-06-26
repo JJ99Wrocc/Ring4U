@@ -14,7 +14,7 @@ const LogIn = () => {
     const domainValid = allowedDomains.some((domain) =>
       email.endsWith(domain)
     );
-    return regex.test(email) && domainValid;
+    return regex.test(email) && domainValid;  
   };
 
 
