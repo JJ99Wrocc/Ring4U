@@ -4,7 +4,6 @@ import { OrderContext } from "./OrderContext";
 
 const OrderInvoiceForm = () => {
 
-  const { orderData, updateNestedOrderData,  setIsOrderInvoiceFormValid } = useContext(OrderContext);
   const [isNameValid, setIsNameValid] = useState(false)
   const [isSurnameValid, setIsSurnameValid] = useState(false);
   const [isAddressValid, setIsAddressValid] = useState(false);
@@ -12,9 +11,10 @@ const OrderInvoiceForm = () => {
   const [isCompanyValid, setIsCompanyValid] = useState(false);
   const [isCityValid, setIsCityValid] = useState(false);
   const [isPhoneValid, setIsPhoneValid] = useState(false);
-
-
-
+  
+  
+  
+  const { orderData, updateNestedOrderData,  setIsOrderInvoiceFormValid } = useContext(OrderContext);
   useEffect(() => {
     const data = orderData.billingAddress;
   
