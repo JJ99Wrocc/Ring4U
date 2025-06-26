@@ -20,7 +20,7 @@ const OrderFinalizationRightBox = () => {
       } 
       const shipping = shippingPrice();
     return(
-        <div className="right-order-finalization-box">
+        <div className="right-order-finalization-box hide-above768">
                 <div>TWOJE ZAMÓWIENIE <Link to="/payment">EDYTUJ</Link></div>
                 <div className="order-summary">
                     <div>{selectedCount} produkt{selectedCount !== 1 ? 'y' : ''}</div>

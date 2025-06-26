@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { useNavigate } from "react-router-dom";
 import { CartContext } from "./CartContext";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
@@ -11,13 +10,16 @@ const Payment = () => {
   return (
     <div >
       <Navbar />
-      <main className="main-content">
-             {selectedProducts.length === 0 ? <PaymentEmptyCart /> : <PaymentWithProduct />}
-      </main>
-      <Footer />
+      <div className="siema">
 
+
+{selectedProducts.length === 0 ? <PaymentEmptyCart /> : <PaymentWithProduct />}
+
+
+      </div>
 
       
+      <Footer />
 
     </div>
   );

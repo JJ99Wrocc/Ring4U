@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Header from "./components/Home";
@@ -17,7 +16,6 @@ import OrderFinalization from "./components/OrderFinalization";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import OrderProvider from "./components/OrderContext";
 
-// Layout z Navbar, Discount, CartAddedProduct i Footer, który owija dzieci (children)
 function LayoutWithNavAndFooter({ children }) {
   return (
     <>
@@ -30,7 +28,7 @@ function LayoutWithNavAndFooter({ children }) {
   );
 }
 
-// Definicja wszystkich tras aplikacji
+
 function AppRoutes() {
   return (
     <Routes>

@@ -123,7 +123,7 @@ const OrderFinalization = () => {
         <OrderFinalizationRightBox />
       </div>
 
-      <Footer className="order-finalization-footer" />
+      <Footer />
     </div>
   );
 };

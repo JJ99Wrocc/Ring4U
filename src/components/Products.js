@@ -9,7 +9,7 @@ const Product = () => {
   const [productToAdd, setProductToAdd] = useState(null);  
 
   const handleButtonClick = (product) => {
-    addProduct(product); // <- tutaj używamy logiki z amount
+    addProduct(product); 
     setProductToAdd(product);  
     setVisible(true);  
   };

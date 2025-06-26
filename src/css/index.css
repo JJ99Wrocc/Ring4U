@@ -3,15 +3,7 @@ html,body {
     position: relative;
     height: 100%;
   }
-
   
-  footer {
-    position: sticky  ;
-    bottom: 0;
-    width: 100%;
-  }
-  
-
   #nav {
     position: fixed;
     top: 0;
@@ -20,8 +12,8 @@ html,body {
     height: 150px;
     background-color: #DEB887;
     z-index: 1000; 
-   
   }
+
   .ui.header.nav-title, .nav-title-span,.look,.header-button,.header-text, .product h5,
   .product p,
   .product button, .zoom-loop, .product-add{
@@ -37,7 +29,7 @@ html,body {
   , .product-box-total-cost,.burger-dropdown,.header-button,.heder-button-shadow,.arrow-in-right-corner, .fa-x,.product-added-cost
   , .product-title,.product-right-button2,.product-name,.product-img,.product-price,.payment-left,.close,.payment-accept-box,.segment-img
   ,.segment-product-name,.segment-product-price,.amount-box,.payment-right,.total-cost,.order-circle,.order-segment-name,.order-product-count
-  ,.order-product-price, .order-finalization-footer,.delivery-flag
+  ,.order-product-price, .delivery-flag,.fa-instagram,.fa-facebook
   {
     position: absolute;
   }
@@ -47,6 +39,23 @@ html,body {
     background-repeat: no-repeat;
   }
 
+.Copy-right{
+  text-align: center;
+}
+.fa-facebook{
+  right: 20px;
+}
+.fa-instagram{
+  right: 50px;
+}
+.fa-instagram,.fa-facebook{
+  color: pink;  
+  font-size: 20px;
+  top: -20px
+}
+.fa-instagram:hover,.fa-facebook:hover{
+  color: #F0D8B0;
+}
 .look{
     color: #2F1B0C;
     text-decoration: none;
@@ -452,7 +461,6 @@ right: 30px;}
   position: relative;
   display: flex;
   padding-top: 150px;
-  min-height: 100vh;
   flex-wrap: wrap;
 }
 .payment-left{
@@ -585,7 +593,7 @@ font-weight: bold;
   position: relative;
   top: 150px;
   left: 150px;
-  height: 100vh;
+  min-height: 100vh;
 }
   .Payment-empty-p{
   padding: 20px 0;
@@ -773,9 +781,7 @@ left: 85%;
   width: 80%;
   margin: 35px 0;
 }
-.order-finalization-footer{
-  bottom: 0;
-}
+
 .checkbox-box{
   width: 20px;
   height: 20px;
@@ -949,6 +955,15 @@ left: 85%;
     top: 280px;
     padding-left: 15px;
     font-size: 12px;
+  }
+  .fa-instagram,.fa-facebook{
+    font-size: 19px;
+  }
+  .fa-facebook{
+    right: 33px;
+  }
+  .fa-instagram{
+    right: 10px;
   }
 }
 @media (min-width:450px) and (max-width: 568px){
@@ -1187,6 +1202,15 @@ left: 85%;
       left: 5px;
       height: 105px;
       width: 105px}
+      .hide-above768{
+        display: none;
+      }
+      .order-box2{
+        display: block;
+      }
+      .beyond768{
+        height: 100vh;
+      }
           } 
           @media(max-width:992px){
             .ui.inverted.vertical.segment .Copy-right{
@@ -1299,7 +1323,8 @@ left: 85%;
     }
     .order-segment{
       height: 150px;
-    }    
+    }
+     
     }
     
     @media(max-width:670px){
@@ -1408,10 +1433,7 @@ left: 85%;
       background-size: cover;
       width: 100%;
     }
-   
-    
-    
-    .payment, .segment-product-price{
+   .payment, .segment-product-price{
       left: 440px;
     }
   }
