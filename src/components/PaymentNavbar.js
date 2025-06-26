@@ -3,10 +3,6 @@ import { Link } from "react-router-dom";
 
 const PaymentNavbar = () => {
 
-    const handleClick = (e) => {
-        e.preventDefault();
-        console.log("Kliknięto Zakupy");
-    };
 
     return (
         <nav id="nav" className="ui raised very padded segment">

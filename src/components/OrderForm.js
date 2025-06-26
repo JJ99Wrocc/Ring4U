@@ -19,6 +19,7 @@ const OrderForm = ({ onValidSubmit, showAgeAlert, showInvoiceForm  }) => {
     if (onValidSubmit) {
       onValidSubmit(isFormValid );
     }
+    
   }, [isNameValid, isSurnameValid, isAddressValid, isPostalCodeValid, isCompanyValid, isCityValid, isPhoneValid, onValidSubmit]);
   
   const validateName = (name) =>{

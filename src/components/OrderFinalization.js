@@ -5,10 +5,14 @@ import Footer from "./Footer";
 import OrderFinalizationRightBox from "./OrderFinalizationRightBox";
 import { OrderContext } from "./OrderContext";
 import OrderAfterEmail from "./OrderAfterEmail";
+import DeliveryMethod from "./DeliveryMethod.js";
+
+
 
 const OrderFinalization = () => {
   const { orderData, updateOrderData } = useContext(OrderContext);
   const [isEmailValid, setIsEmailValid] = useState(false);
+  const [isNextValid, setIsNextValid] = useState(false);
 
   const handleEmailChange = (e) => {
     const email = e.target.value;
@@ -101,9 +105,17 @@ const OrderFinalization = () => {
           <hr className="order-line" />
           <p className="big-letter-order">ADRES</p>
 
-          {isEmailValid && <OrderAfterEmail />}
+          {isEmailValid && <OrderAfterEmail setIsNextValid={setIsNextValid}/>}
           <hr className="order-line" />
-          <div className="delivery-method big-letter-order">SPOSÓB DOSTAWY</div>
+          {isNextValid ? ( <span>
+            <p className="delivery-title">SPOSÓB DOSTAWY</p>
+            <DeliveryMethod />
+          </span>
+             
+          ) : ( <div className="delivery-method big-letter-order">SPOSÓB DOSTAWY</div>
+
+          )}
+          
           <hr className="order-line" />
           <div className="Payment-method big-letter-order">PŁATNOŚĆ</div>
         </div>

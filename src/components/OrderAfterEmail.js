@@ -6,8 +6,8 @@
   import OrderInvoiceData from "./OrderInvoiceData";
   import { OrderContext } from "./OrderContext";
 
-  const OrderAfterEmail = () => {
-    const [sameAddress, setSameAddress] = useState(true); // ZAZNACZONY checkbox
+  const OrderAfterEmail = ({setIsNextValid}) => {
+    const [sameAddress, setSameAddress] = useState(true); 
     const [showAgeAlert, setShowAgeAlert] = useState(false);
     const [showUnCheck, setShowUnCheck] = useState(false);
     const [showUnCheckk, setShowUnCheckk] = useState(false);
@@ -27,16 +27,19 @@
           alert("Uzupełnij dane do dostawy.");
           return;
         }
-      
+        
+        console.log("Ustawiono isNextValid na true (sameAddress)");
         setShowOrderData(true);
+        setIsNextValid(true)
         return;
       }
         if (!isOrderInvoiceFormValid && !sameAddress) {
           alert("Uzupełnij dane do faktury.");
           return;
         }
-        setShowOrderData(true)
-        
+        console.log("Ustawiono isNextValid na true (sameAddress)");
+        setShowOrderData(true);
+        setIsNextValid(true);
     
     };
     
