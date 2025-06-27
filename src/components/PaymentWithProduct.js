@@ -138,7 +138,7 @@ const PaymentWithProduct = () =>{
               zł{" "}
             </span>
           </p>
-          <p className="including-taxes">(Łącznie z podatkiem)</p>
+          <p className="including-taxes">(Łącznie z podatkiem {totalCost !== 0 ? (totalCost * 0.23).toFixed(2) : null} zł )</p>
           <p>
             <i className="fa-solid fa-tags"></i> Wpisz kod promocyjny
           </p>

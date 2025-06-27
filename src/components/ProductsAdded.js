@@ -43,8 +43,8 @@ const ProductAdded = ({ visible, setVisible, products }) => {
                   className="img-fluid product-img"
                   alt={product.name}
                 />
-                <div className="product-name">{product.name}</div>
-                <div className="product-price">{product.price}</div>
+                <div className="product-name product-added-p">{product.name}</div>
+                <div className="product-price product-added-p">{product.price}</div>
               </div>
             ))}
           </div>
@@ -52,12 +52,12 @@ const ProductAdded = ({ visible, setVisible, products }) => {
           <div className="col-6 border-start border-black border-1 custom-border">
             <div className="right">
               <p>Twój koszyk</p>
-              <p> {selectedCount} Produkty </p>
-              <p>Cena produktów: <span className="product-added-cost">{totalCost}</span>  zł</p>
-              <p>Całkowity koszt dostawy: <span className="product-added-cost">{totalCost === 0 ? "Za darmo" : totalCost < 400 ? "20.00 zł" : "Za darmo"}</span>  </p>
+              <p className="product-added-p"> {selectedCount} Produkty </p>
+              <p className="product-added-p">Cena produktów: <span className="product-added-cost">{totalCost}</span>  zł</p>
+              <p className="product-added-p">Całkowity koszt dostawy: <span className="product-added-cost">{totalCost === 0 ? "Za darmo" : totalCost < 400 ? "20.00 zł" : "Za darmo"}</span>  </p>
               <hr style={{ border: "1px solid", backgroundColor: "black" }} />
-              <p>Razem: <span className="product-added-cost"><span className="product-added-cost-fwb">{totalCost === 0 ? "Za darmo" : totalCost < 400 ? totalCost + 20 : totalCost}</span> zł</span> </p>
-              <p>(wraz z podatkiem)</p>
+              <p className="product-added-p">Razem: <span className="product-added-cost"><span className="product-added-cost-fwb">{totalCost === 0 ? "Za darmo" : totalCost < 400 ? totalCost + 20 : totalCost}</span> zł</span> </p>
+              <p className="product-added-p">(wraz z podatkiem {totalCost !== 0 ? (totalCost * 0.23).toFixed(2) : null} zł )</p>
               <button onClick={handleClick} className="product-right-button">
                 ZOBACZ KOSZYK <i className="fa-solid fa-arrow-right-long arr"></i>
               </button>

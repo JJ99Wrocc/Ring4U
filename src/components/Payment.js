@@ -13,7 +13,7 @@ const Payment = () => {
       <div className="siema">
 
 
-{selectedProducts.length === 0 ? <PaymentEmptyCart /> : <PaymentWithProduct />}
+{selectedProducts.length === 0 ? <PaymentEmptyCart /> :  <PaymentWithProduct />}
 
 
       </div>
