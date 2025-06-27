@@ -91,7 +91,12 @@ const CartAddedProduct = ({ show }) => {
       <button className="accept-all" onClick={handleToggleAll}></button>
 
       <div className="product-box-total-cost">
-        Razem: <span className="costt">{totalCost.toFixed(2)}</span> zł
+        Razem: <span className="costt">  {totalCost === 0
+                ? "0.00zł"
+                : totalCost < 400
+                ? totalCost + 20
+                : totalCost}{" "}
+              zł{" "}</span> zł
       </div>
     </div>
   );

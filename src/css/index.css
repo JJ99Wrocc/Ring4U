@@ -221,7 +221,8 @@ html,body {
     left: 200px;
   }
   .product-box-amount {
-    left: 285px;
+    top: -125px;
+    left: 275px;
     height: 30%;
     width: 20%;
     text-align: center;
@@ -236,6 +237,7 @@ html,body {
     font-size: 14px;
   }
   .product-box-price{
+    top: 85px;
     left: 200px;
     font-weight: bold;
   }
@@ -901,7 +903,7 @@ left: 85%;
     font-size: 15px !important ;
    }
    .product-added-cost,.product-added-p{
-    font-size: 8px !important;
+    font-size: 7px !important;
   }
   .fa-x{
     right:10px;
