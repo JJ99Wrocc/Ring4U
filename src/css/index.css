@@ -1432,6 +1432,9 @@ left: 85%;
     .mobile-only {
       display: none;
     }
+    .product-right-button3{
+      display: none;
+    }
   }
   @media(min-width:992px){
     .payment, .segment-product-price{

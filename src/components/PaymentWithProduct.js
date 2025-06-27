@@ -111,6 +111,13 @@ const PaymentWithProduct = () =>{
                 </span>
               </div>
             ))}
+             <button
+            onClick={() => navigate("/order-finalization")}
+            className="product-right-button3 "
+            style={{marginBottom: "20px", marginTop:"20px"}}
+          >
+            ZAKOŃCZ TRANZAKCJE <i className="fa-solid fa-arrow-right-long"></i>
+          </button>
           </div>
         </div>
 
