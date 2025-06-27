@@ -46,9 +46,14 @@ const PaymentWithProduct = () =>{
         .reduce((sum, p) => sum + (p.amount || 1), 0);
       return (
         <div className="payment-box">
-        <div className="payment-left">
+        <div className="payment-left beyond768a">
           <div className="payment-left-title">TWÓJ KOSZYK</div>
-          <p>Łącznie {selectedCount} sztuk</p>
+          <p>Łącznie {selectedCount} sztuk <span style={{fontWeight: "bold"}}>{totalCost === 0
+                ? "0.00zł"
+                : totalCost < 400
+                ? totalCost + 20
+                : totalCost}{" "}
+              zł{" "}</span></p>
 
           <p className="payment-text2">
             Produkty w Twoim koszyku nie są zarezerwowane - sfinalizuj
@@ -109,7 +114,7 @@ const PaymentWithProduct = () =>{
           </div>
         </div>
 
-        <div className="payment-right">
+        <div className="payment-right hide-above768">
           <p className="payment-right-title">PODSUMOWANIE ZAMÓWIENIA</p>
           <p>
             {" "}

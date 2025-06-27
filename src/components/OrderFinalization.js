@@ -79,7 +79,7 @@ const OrderFinalization = () => {
       </div>
 
       <div className="container order-box2">
-        <div className="left-order-finalization-box">
+        <div className="left-order-finalization-box beyond768">
           <p className="big-letter-order">KONTAKT</p>
 
           <input
