@@ -9,7 +9,8 @@ const Payment = () => {
  const {selectedProducts} = useContext(CartContext)
   return (
     <div >
-      <Navbar />
+<div>
+<Navbar />
       <div className="siema">
 
 
@@ -18,6 +19,7 @@ const Payment = () => {
 
       </div>
 
+</div>
       
       <Footer />
 

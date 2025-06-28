@@ -54,7 +54,7 @@ const ProductAdded = ({ visible, setVisible, products }) => {
               <p>Twój koszyk</p>
               <p className="product-added-p"> {selectedCount} Produkty </p>
               <p className="product-added-p">Cena produktów: <span className="product-added-cost">{totalCost}</span>  zł</p>
-              <p className="product-added-p">Całkowity koszt dostawy: <span className="product-added-cost">{totalCost === 0 ? "Za darmo" : totalCost < 400 ? "20.00 zł" : "Za darmo"}</span>  </p>
+              <p className="product-added-p">Dostawa: <span className="product-added-cost">{totalCost === 0 ? "Za darmo" : totalCost < 400 ? "20.00 zł" : "Za darmo"}</span>  </p>
               <hr style={{ border: "1px solid", backgroundColor: "black" }} />
               <p className="product-added-p">Razem: <span className="product-added-cost"><span className="product-added-cost-fwb">{totalCost === 0 ? "Za darmo" : totalCost < 400 ? totalCost + 20 : totalCost}</span> zł</span> </p>
               <p className="product-added-p">(wraz z podatkiem {totalCost !== 0 ? (totalCost * 0.23).toFixed(2) : null} zł )</p>

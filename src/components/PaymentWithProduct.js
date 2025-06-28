@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "./CartContext";
+import Footer from "./Footer";
 
 
 
@@ -114,10 +115,11 @@ const PaymentWithProduct = () =>{
              <button
             onClick={() => navigate("/order-finalization")}
             className="product-right-button3 "
-            style={{marginBottom: "20px", marginTop:"20px"}}
+            style={{marginBottom: "30px", marginTop:"20px"}}
           >
             ZAKOŃCZ TRANZAKCJE <i className="fa-solid fa-arrow-right-long"></i>
           </button>
+          
           </div>
         </div>
 
@@ -161,6 +163,7 @@ const PaymentWithProduct = () =>{
             ZAKOŃCZ TRANZAKCJE <i className="fa-solid fa-arrow-right-long"></i>
           </button>
         </div>
+  
       </div>
     
 

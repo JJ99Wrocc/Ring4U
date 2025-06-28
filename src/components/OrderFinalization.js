@@ -112,9 +112,9 @@ const OrderFinalization = () => {
             <DeliveryMethod />
           </span>
              
-          ) : ( <div className="delivery-method big-letter-order">SPOSÓB DOSTAWY</div>
-
-          )}
+            ) : ( <div className="delivery-method big-letter-order">SPOSÓB DOSTAWY</div>
+              
+            )}
           
           <hr className="order-line" />
           <div className="Payment-method big-letter-order">PŁATNOŚĆ</div>
@@ -123,7 +123,8 @@ const OrderFinalization = () => {
         <OrderFinalizationRightBox />
       </div>
 
-      <Footer />
+
+      <Footer className="order-footer-max-768"/>
     </div>
   );
 };
