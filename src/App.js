@@ -15,6 +15,7 @@ import CartAddedProduct from "./components/CartPreview2";
 import OrderFinalization from "./components/OrderFinalization";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import OrderProvider from "./components/OrderContext";
+import RegisterEmail from "./components/RegisterEmail";
 
 function LayoutWithNavAndFooter({ children }) {
   return (
@@ -59,6 +60,11 @@ function AppRoutes() {
         element={<OrderFinalization />}
       />
       
+      <Route
+       path="/registeremail"
+       element={<RegisterEmail />}
+       />
+
       <Route path="/privacypolicy" element={<PrivacyPolicy />} />
     </Routes>
   );
