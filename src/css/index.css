@@ -2,8 +2,27 @@ html,body {
     scroll-behavior: smooth;
     position: relative;
     height: 100%;
+    padding: 0;
+    margin: 0;
+
   }
-  
+  .app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .app-container{
+    height: 100%;
+  }
+  .app-wrapper > *:first-child {
+    flex: 1;
+  }
+  .ui.inverted.vertical.segment{
+    position: fixed;
+          bottom: 0;
+          width: 100%;
+          z-index: 10;
+  } 
   #nav {
     position: fixed;
     top: 0;
@@ -39,6 +58,10 @@ html,body {
     background-repeat: no-repeat;
   }
 
+  .ui.vertical.segment:last-child{
+    /* position: absolute; */
+    /* bottom: 0; */
+  }
 .Copy-right{
   text-align: center;
 }
@@ -361,6 +384,71 @@ color: black;
 .discount{
   padding-top: 150px;
 }
+.discount-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7); 
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+}
+.discount-content{
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10%;
+  margin:20px;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+.close-btn:hover{
+  transform: scale(1.3);
+}
+.discount-h2{
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.fa-clover{
+  margin-right: 5px;
+  color: gold;
+}
+.discount-form{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.discount-input{
+padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  flex: 1;
+}
+.discount-btn{
+  padding: 10px 20px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.center-p{
+  text-align: center;
+}
 .zoom-loop {
   animation: zoomInOut 4s ease-in-out infinite;
   font-size: 20px;
@@ -375,6 +463,9 @@ color: black;
 }
 .product{ 
   margin-top: 30px !important;
+}
+.product:last-child{
+  margin-bottom: -50px !important;
 }
 .product h5,
 .product p,
@@ -462,8 +553,14 @@ right: 30px;}
 .payment-box{
   position: relative;
   display: flex;
-  padding-top: 150px;
+  height: 100%;
+  /* min-height: 100vh; */
+  /* max-height: 100%; */
+  margin-top: -150px;
   flex-wrap: wrap;
+}
+.payment, .product-add-segment{
+  margin-left: -100px;
 }
 .payment-left{
   top: 190px;
@@ -498,6 +595,9 @@ right: 30px;}
   height: 200px;
   width: 100%;
   margin-bottom: 10px;
+}
+.product-add-segment:last-child{
+  margin-bottom: -100px !important;
 }
 .close {
   top: 0.5rem;
@@ -588,14 +688,18 @@ font-weight: bold;
 .payment-total-cost{
   font-weight: bold;
 }
+
 .total-cost{
   right: 1px;
 }
 .Payment-empty-cart{
   position: relative;
-  top: 150px;
+  height: 100%;
+  margin-top: 150px;
+  /* margin-bottom: -150px; */
+  /* top: 150px; */
   left: 150px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
   .Payment-empty-p{
   padding: 20px 0;
@@ -659,13 +763,13 @@ font-weight: bold;
   flex: 0 0 62%;
   min-width: 0;
   min-height: 100vh;
-  
 }
 .right-order-finalization-box{
   position: relative;
   height: 100%;
   flex: 0 0 38%;
   min-width: 0;
+  margin-bottom: 60px;
 }
 .big-letter-order{
   font-size: 20px;
@@ -909,11 +1013,7 @@ left: 85%;
     right:10px;
   }
   
-  .payment-box{
-    position: relative;
-    padding-top: 150px;
-    min-height: 100%;
-  }
+
 
   .payment-left-title{
     font-size: 17px !important;
@@ -1102,6 +1202,7 @@ left: 85%;
     }
     .discount-img{
       height: 40px;
+      width: 100%;
     }
     .Nav-added-product-box{
       top: 25px;
@@ -1227,6 +1328,7 @@ left: 85%;
       }
       .product-right-button3{
         background-color: #DEB887;
+        margin-bottom: 80px !important;
       }
           } 
           @media(max-width:992px){
@@ -1447,7 +1549,9 @@ left: 85%;
     .product-right-button3{
       display: none;
     }
-    
+    .delivery-boxes{
+      width: 80%;
+    }
   }
   @media(min-width:992px){
     .payment, .segment-product-price{

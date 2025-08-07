@@ -4,6 +4,7 @@ import App from "./App";
 import './css/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
+import Footer from "./components/Footer";
 
 
 

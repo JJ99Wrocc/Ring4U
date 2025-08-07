@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "./CartContext";
-import Footer from "./Footer";
 import OrderFinalizationRightBox from "./OrderFinalizationRightBox";
 import { OrderContext } from "./OrderContext";
 import OrderAfterEmail from "./OrderAfterEmail";
@@ -118,13 +117,15 @@ const OrderFinalization = () => {
           
           <hr className="order-line" />
           <div className="Payment-method big-letter-order">PŁATNOŚĆ</div>
+          <hr className="order-line mobile-only" />
+          <hr className="order-line mobile-only" />
         </div>
 
         <OrderFinalizationRightBox />
       </div>
 
 
-      <Footer className="order-footer-max-768"/>
+      {/* <Footer className="order-footer-max-768"/> */}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "./CartContext";
-import Footer from "./Footer";
+
 
 
 
@@ -46,7 +46,7 @@ const PaymentWithProduct = () =>{
         .filter((p) => p.selected)
         .reduce((sum, p) => sum + (p.amount || 1), 0);
       return (
-        <div className="payment-box">
+       <div className="payment-box">
         <div className="payment-left beyond768a">
           <div className="payment-left-title">TWÓJ KOSZYK</div>
           <p>Łącznie {selectedCount} sztuk <span style={{fontWeight: "bold"}}>{totalCost === 0
@@ -164,8 +164,8 @@ const PaymentWithProduct = () =>{
           </button>
         </div>
   
+        {/* <Footer /> */}
       </div>
-    
 
       )
 

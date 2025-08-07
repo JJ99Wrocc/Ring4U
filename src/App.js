@@ -16,6 +16,12 @@ import OrderFinalization from "./components/OrderFinalization";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import OrderProvider from "./components/OrderContext";
 import RegisterEmail from "./components/RegisterEmail";
+import { useContext } from "react";
+import { CartContext } from "./components/CartContext";
+import PaymentWithProduct from "./components/PaymentWithProduct"
+import PaymentEmptyCart from "./components/PaymentEmptyCart"
+
+
 
 function LayoutWithNavAndFooter({ children }) {
   return (
@@ -24,13 +30,13 @@ function LayoutWithNavAndFooter({ children }) {
       <Navbar />
       <Discount />
       {children}
-      <Footer />
     </>
   );
 }
 
 
 function AppRoutes() {
+   const {selectedProducts} = useContext(CartContext)
   return (
     <Routes>
       <Route
@@ -53,7 +59,11 @@ function AppRoutes() {
         }
       />
       
-      <Route path="/payment" element={<Payment />} />
+      <Route path="/payment" element={
+        <LayoutWithNavAndFooter>
+          {selectedProducts.length === 0 ? <PaymentEmptyCart /> :  <PaymentWithProduct />}
+        </LayoutWithNavAndFooter>
+      } />
       
       <Route
         path="/order-finalization"
@@ -70,13 +80,18 @@ function AppRoutes() {
   );
 }
 
-// Główny komponent aplikacji, który owija całość w providery i router
+
 function App() {
   return (
     <OrderProvider>
       <CartProvider>
         <BrowserRouter basename="/FLOWMART">
-          <AppRoutes />
+          <div className="page-wrapper">
+            <main className="main-content">
+              <AppRoutes />
+            </main>
+            <Footer />
+          </div>
         </BrowserRouter>
       </CartProvider>
     </OrderProvider>
