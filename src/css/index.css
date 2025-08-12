@@ -192,7 +192,7 @@ html,body {
     background: white; 
     cursor: pointer;
   }
-   
+   .bold{font-weight: bold;}
   .fa-check {
     font-size: 10px; /* rozmiar ikony */
   }
@@ -606,7 +606,8 @@ right: 30px;}
   cursor: pointer;
 }
 .payment-text2{
-  margin-top: -10px;
+  margin-top: -10px;  
+  margin:-10px 20px 10px 20px;
 }
 
 .payment-text3 {
@@ -895,8 +896,16 @@ left: 85%;
  
   cursor: pointer;
 }
+
+.delivery-boxes.selected {
+  border-color: green;
+  background-color: #e0ffe0;
+}
+
 .delivery-boxes{
-  cursor: pointer;
+  cursor: pointer;  border: 2px solid transparent;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 .delivery-title{
   font-weight: bold;
@@ -1263,9 +1272,10 @@ left: 85%;
     }
     .payment-left{        
       top: 190px;
-      left: 20px !important;
+      left: -0px !important;
       width: 100% !important;
       text-align: center;
+     
     }
     .product-add-segmen{
       left: 0 !important; 

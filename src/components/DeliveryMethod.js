@@ -1,43 +1,59 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import '../css/index.css';
 import { CartContext } from "./CartContext";
 
-const DeliveryMethod = () => {
-    const {selectedProducts} = useContext(CartContext);
+const DeliveryMethod = ({ onSelect }) => {
+  const { selectedProducts } = useContext(CartContext);
+  const [selectedDelivery, setSelectedDelivery] = useState(null);
 
-    const totalCost = selectedProducts.reduce((sum, product) => {
-        if(!product.selected) return sum;
-        const numericPrice = parseFloat(
-            product.price.toString().replace(/[^\d.]/g, "") 
-          );
-          return sum + numericPrice * (product.amount || 1);
-    }, 0)
-    return(
-        <div  className="delivery-box"> 
-            <div className="ui segment first-delivery-box delivery-boxes">
-                <p> Data dostawy do paczkomatu (time)</p>
-                <p>{totalCost === 0 
-                    ? "0.00zł" 
-                : totalCost < 400 
-                ? "20.00 zł"
-                : "Za darmo"
-                }</p>
-                <span className="delivery-flag"><i class="fa-solid fa-truck"></i></span>
-                </div>
+  const totalCost = selectedProducts.reduce((sum, product) => {
+    if (!product.selected) return sum;
+    const numericPrice = parseFloat(
+      product.price.toString().replace(/[^\d.]/g, "")
+    );
+    return sum + numericPrice * (product.amount || 1);
+  }, 0);
 
-            <div className="ui segment secount-selivery-box delivery-boxes">
-                <p>Data dostawy do domu (time)</p>
-            <p>{totalCost === 0 
-                    ? "0.00zł" 
-                : totalCost < 400 
-                ? "20.00 zł"
-                : "Za darmo"
-                }</p>
-                <span className="delivery-flag"><i class="fa-solid fa-house-flag"></i></span>
-            </div>
-       
-         </div>
-    )
-}
+  const handleSelect = (method) => {
+    setSelectedDelivery(method);
+    if (onSelect) onSelect(method);
+  };
+
+  const getPriceText = () => {
+    if (totalCost === 0) return "0.00zł";
+    if (totalCost < 400) return "20.00 zł";
+    return "Za darmo";
+  };
+
+  return (
+    <div className="delivery-box">
+      <div
+        className={`ui segment first-delivery-box delivery-boxes ${
+          selectedDelivery === "inpost" ? "selected" : ""
+        }`}
+        onClick={() => handleSelect("inpost")}
+      >
+        <p>Data dostawy do paczkomatu Inpost (time)</p>
+        <p>{getPriceText()}</p>
+        <span className="delivery-flag">
+          <i className="fa-solid fa-truck"></i>
+        </span>
+      </div>
+
+      <div
+        className={`ui segment second-delivery-box delivery-boxes ${
+          selectedDelivery === "orlen" ? "selected" : ""
+        }`}
+        onClick={() => handleSelect("orlen")}
+      >
+        <p>Data dostawy do paczkomatu Orlen (time)</p>
+        <p>{getPriceText()}</p>
+        <span className="delivery-flag">
+          <i className="fa-solid fa-house-flag"></i>
+        </span>
+      </div>
+    </div>
+  );
+};
 
 export default DeliveryMethod;

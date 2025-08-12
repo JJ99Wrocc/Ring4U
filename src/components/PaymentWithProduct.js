@@ -141,6 +141,7 @@ const PaymentWithProduct = () =>{
             </span>
           </p>
           <hr style={{ border: "1px solid", backgroundColor: "black" }} />
+
           <p className="payment-total-cost">
             Razem:{" "}
             <span className="total-cost">

@@ -1,27 +1,6 @@
 import React, { useState } from "react";
-import {
-  getFirestore,
-  collection,
-  addDoc,
-  serverTimestamp,
-} from "firebase/firestore";
+import { getFirestore, collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { getApp } from "firebase/app";
-
-
-const sendEmail = async (to, subject, htmlBody) => {
-  const url = "https://script.google.com/macros/s/AKfycbwv3WPaNBn3FVbJ-M-sWTRwWgPXNIj4N7wD_vFjtpEnaqnbVsReiwQ1ASlf7KXwuwkwww/exec"; 
-
-  const response = await fetch(url, {
-    method: "POST",
-    body: JSON.stringify({ to, subject, htmlBody }),
-    headers: { "Content-Type": "application/json" },
-  });
-
-  const data = await response.json();
-  if (data.status !== "success") {
-    throw new Error(data.message || "Błąd wysyłki maila");
-  }
-};
 
 const DiscountBox = ({ onClose }) => {
   const [email, setEmail] = useState("");
@@ -42,48 +21,35 @@ const DiscountBox = ({ onClose }) => {
     try {
       const db = getFirestore(getApp());
 
-      const docRef = await addDoc(collection(db, "newsletterSubscribers"), {
+      await addDoc(collection(db, "newsletterSubscribers"), {
         email,
         createdAt: serverTimestamp(),
         confirmed: false,
       });
 
-      const confirmLink = `https://jj99wrocc.github.io/FLOWMART/confirm?email=${encodeURIComponent(
-        email
-      )}&id=${docRef.id}`;
-
-      // Wywołanie funkcji wysyłającej maila
-      await sendEmail(
-        email,
-        "Potwierdź subskrypcję",
-        `<p>Dziękujemy za zapis do newslettera!</p>
-         <p>Kliknij w link, aby potwierdzić swój adres e-mail:</p>
-         <a href="${confirmLink}">${confirmLink}</a>`
-      );
-
       setSubmitted(true);
     } catch (err) {
-      console.error("Błąd zapisu do Firestore lub wysyłki maila:", err);
-      setError("Wystąpił błąd. Spróbuj ponownie później.");
+      console.error("Błąd zapisu do Firestore:", err);
+      setError("Wystąpił błąd podczas zapisywania. Spróbuj ponownie później.");
     }
   };
 
   return (
     <div className="discount-box">
       <div className="discount-content">
-        <button className="close-btn" onClick={onClose}>
-          ×
-        </button>
-        <h2 className="discount-h2">
-          <i className="fa-solid fa-clover"></i> Odbierz 10% zniżki
-        </h2>
-        <p className="center-p">
-          My nie spamujemy – przeczytaj naszą politykę prywatności.
-        </p>
-
+        <button className="close-btn" onClick={onClose}>×</button>
+      
+             {!submitted && (
+        <>
+          <h2 className="discount-h2">
+            <i className="fa-solid fa-clover"></i> Odbierz 10% zniżki
+          </h2>
+          <p className="center-p">My nie spamujemy – przeczytaj naszą politykę prywatności.</p>
+        </>
+      )}
         {submitted ? (
           <p className="success-message">
-            Dziękujemy! Sprawdź swoją skrzynkę e-mail i kliknij link potwierdzający.
+            TWÓJ KOD -10%: <span className="bold">FLOW10</span>
           </p>
         ) : (
           <form className="discount-form" onSubmit={handleSubmit}>

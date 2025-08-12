@@ -1,54 +1,129 @@
-import React, {useContext} from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "./CartContext";
 
 const OrderFinalizationRightBox = () => {
+  const { selectedProducts } = useContext(CartContext);
 
-      const {selectedProducts} = useContext(CartContext);
-      const totalCost = selectedProducts.reduce((sum, product) => {
-        if (!product.selected) return sum;
-        const numericPrice = parseFloat(
-          product.price.toString().replace(/[^\d.]/g, "")
-        );
-        return sum + numericPrice * (product.amount || 1);
-      }, 0);
-      const selectedCount = selectedProducts
-      .filter((p) => p.selected)
-      .reduce((sum, p) => sum + (p.amount || 1), 0);
-      const shippingPrice = () => {
-        return totalCost === 0 ? 0 : totalCost >= 400 ? "Za darmo" : "20.00zł" 
-      } 
-      const shipping = shippingPrice();
-    return(
-        <div className="right-order-finalization-box hide-above768">
-                <div>TWOJE ZAMÓWIENIE <Link to="/payment">EDYTUJ</Link></div>
-                <div className="order-summary">
-                    <div>{selectedCount} produkt{selectedCount !== 1 ? 'y' : ''}</div>
-                    <div className="order-total-cost">{totalCost} zł</div>
-                </div>
-                <div className="shipping-summary">
-                <div>dostawa </div>
-                <div>{shipping}</div>
-                </div>
-                <div className="total-summary">
-                <div>Razem </div>
-                <div className="order-total">{totalCost === 0 ? "0.00zł" : totalCost >= 400 ? totalCost : totalCost + 20} zł</div>
-                </div>
-                <div>( Łącznie z podatkiem {totalCost !== 0 ? (totalCost * 0.23).toFixed(2) : null} zł )</div>
-                <hr style={{margin: "30px 0"}}></hr>
-                {selectedProducts.map((product, index) => (
-              <div key={index} className="ui segment order-segment">
-                <img 
-                  src={product.image}
-                  className="order-img"
-                  alt={product.name}
-                />
-                <div className="order-segment-name">{product.name}</div>
-                <div className="order-product-count">{product.selected ? ` ilość  ${product.amount}`: null}</div>
-                <div className="order-product-price">{product.price}</div>
-              </div>
-            ))}
-            </div>
-    )
-}
+  // Nowe stany do obsługi kodu rabatowego
+  const [discountCode, setDiscountCode] = useState("");
+  const [discountApplied, setDiscountApplied] = useState(false);
+  const [error, setError] = useState("");
+
+  // Oblicz koszt całkowity przed rabatem
+  const baseTotalCost = selectedProducts.reduce((sum, product) => {
+    if (!product.selected) return sum;
+    const numericPrice = parseFloat(
+      product.price.toString().replace(/[^\d.]/g, "")
+    );
+    return sum + numericPrice * (product.amount || 1);
+  }, 0);
+
+  // Jeśli kod został zastosowany — obniżamy o 10%
+  const totalCost = discountApplied
+    ? (baseTotalCost * 0.9).toFixed(2)
+    : baseTotalCost.toFixed(2);
+
+  const selectedCount = selectedProducts
+    .filter((p) => p.selected)
+    .reduce((sum, p) => sum + (p.amount || 1), 0);
+
+  const shippingPrice = () => {
+    return baseTotalCost === 0
+      ? 0
+      : baseTotalCost >= 400
+      ? "Za darmo"
+      : "20.00zł";
+  };
+
+  const shipping = shippingPrice();
+
+  // Funkcja do zastosowania rabatu
+  const applyDiscount = () => {
+    if (discountCode.toUpperCase() === "FLOW10") {
+      if (!discountApplied) {
+        setDiscountApplied(true);
+        setError("");
+      } else {
+        setError("Kod rabatowy już został zastosowany.");
+      }
+    } else {
+      setError("Nieprawidłowy kod rabatowy.");
+    }
+  };
+
+  return (
+    <div className="right-order-finalization-box hide-above768">
+      <div>
+        TWOJE ZAMÓWIENIE <Link to="/payment">EDYTUJ</Link>
+      </div>
+
+      <div className="order-summary">
+        <div>
+          {selectedCount} produkt{selectedCount !== 1 ? "y" : ""}
+        </div>
+        <div className="order-total-cost">{totalCost} zł</div>
+      </div>
+
+      <div className="shipping-summary">
+        <div>dostawa </div>
+        <div>{shipping}</div>
+      </div>
+
+      {/* Kod rabatowy */}
+      <div>
+        <p className="order-discount-enter">KOD RABATOWY:</p>
+        <input
+          type="text"
+          value={discountCode}
+          onChange={(e) => setDiscountCode(e.target.value)}
+          placeholder="Wpisz kod"
+          disabled={discountApplied}
+        />
+        <button onClick={applyDiscount} disabled={discountApplied}>
+          Zastosuj
+        </button>
+        {error && <p style={{ color: "red" }}>{error}</p>}
+      </div>
+
+      <div className="total-summary">
+        <div>Razem </div>
+        <div className="order-total">
+          {baseTotalCost === 0
+            ? "0.00zł"
+            : baseTotalCost >= 400
+            ? totalCost
+            : (parseFloat(totalCost) + 20).toFixed(2)}{" "}
+          zł
+        </div>
+      </div>
+
+      <div>
+        ( Łącznie z podatkiem{" "}
+        {baseTotalCost !== 0
+          ? (parseFloat(totalCost) * 0.23).toFixed(2)
+          : null}{" "}
+        zł )
+      </div>
+
+      <hr style={{ margin: "30px 0" }} />
+
+      {selectedProducts.map((product, index) => (
+        <div key={index} className="ui segment order-segment">
+          <img
+            src={product.image}
+            className="order-img"
+            alt={product.name}
+          />
+          <div className="order-segment-name">{product.name}</div>
+          <div className="order-product-count">
+            {product.selected ? ` ilość  ${product.amount}` : null}
+          </div>
+          <div className="order-product-price">{product.price}</div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
 export default OrderFinalizationRightBox;

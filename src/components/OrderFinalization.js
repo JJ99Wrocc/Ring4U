@@ -5,14 +5,20 @@ import OrderFinalizationRightBox from "./OrderFinalizationRightBox";
 import { OrderContext } from "./OrderContext";
 import OrderAfterEmail from "./OrderAfterEmail";
 import DeliveryMethod from "./DeliveryMethod.js";
-
+import PaymentMethods from "./PaymentMethods.js";
 
 
 const OrderFinalization = () => {
   const { orderData, updateOrderData } = useContext(OrderContext);
   const [isEmailValid, setIsEmailValid] = useState(false);
-  const [isNextValid, setIsNextValid] = useState(false);
-
+  const [isNextValid, setIsNextValid] = useState(false);  
+  const [selectedDeliveryMethod, setSelectedDeliveryMethod] = useState(null);       
+  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState(null);
+             
+  const handleDeliverySelect = (method) => {
+    setSelectedDeliveryMethod(method);
+    updateOrderData("deliveryMethod", method); // jeśli chcesz w kontekście
+  };
   const handleEmailChange = (e) => {
     const email = e.target.value;
     updateOrderData("email", email);
@@ -106,17 +112,28 @@ const OrderFinalization = () => {
 
           {isEmailValid && <OrderAfterEmail setIsNextValid={setIsNextValid}/>}
           <hr className="order-line" />
-          {isNextValid ? ( <span>
-            <p className="delivery-title">SPOSÓB DOSTAWY</p>
-            <DeliveryMethod />
-          </span>
-             
-            ) : ( <div className="delivery-method big-letter-order">SPOSÓB DOSTAWY</div>
-              
-            )}
+          {isNextValid ? (
+  <span>
+    <p className="delivery-title">SPOSÓB DOSTAWY</p>
+    <DeliveryMethod onSelect={handleDeliverySelect} />
+
+    {selectedDeliveryMethod && (
+      <>
+        <hr className="order-line" />
+        <p className="Payment-method big-letter-order">PŁATNOŚĆ</p>
+        <PaymentMethods
+          selected={selectedPaymentMethod}
+          onSelect={setSelectedPaymentMethod}
+        />
+      </>
+    )}
+  </span>
+) : (
+  <div className="delivery-method big-letter-order">SPOSÓB DOSTAWY</div>
+)}
           
           <hr className="order-line" />
-          <div className="Payment-method big-letter-order">PŁATNOŚĆ</div>
+          {/* <div className="Payment-method big-letter-order">PŁATNOŚĆ</div> */}
           <hr className="order-line mobile-only" />
           <hr className="order-line mobile-only" />
         </div>

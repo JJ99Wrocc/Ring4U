@@ -12,8 +12,7 @@ const CartPreview = ({ show }) => {
       <p className="test">
         Witamy z powrotem! Jeśli miałaś przedmioty w swoim koszyku, zapisaliśmy je dla
         Ciebie. Zaloguj się teraz, aby je zobaczyć...
-      </p>
-    </div>
+      </p>    </div>
   );
 };
 

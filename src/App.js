@@ -74,7 +74,7 @@ function AppRoutes() {
        path="/registeremail"
        element={<RegisterEmail />}
        />
-
+s
       <Route path="/privacypolicy" element={<PrivacyPolicy />} />
     </Routes>
   );
