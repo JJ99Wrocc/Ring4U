@@ -14,10 +14,10 @@ const LogIn = () => {
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
-  // Funkcja do pokazania/ukrycia hasła
+
   const showPass = () => setShowPassword((prev) => !prev);
 
-  // Walidacja adresu email (Twoja oryginalna)
+ 
   const validateEmail = (email) => {
     if (!email || email.length > 254 || email.length < 6) return false;
     const parts = email.split("@");

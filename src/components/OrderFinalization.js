@@ -6,19 +6,24 @@ import { OrderContext } from "./OrderContext";
 import OrderAfterEmail from "./OrderAfterEmail";
 import DeliveryMethod from "./DeliveryMethod.js";
 import PaymentMethods from "./PaymentMethods.js";
-
+import { auth, db } from "../Firebase";
+import { collection, addDoc, Timestamp } from "firebase/firestore";
 
 const OrderFinalization = () => {
   const { orderData, updateOrderData } = useContext(OrderContext);
+  const { selectedProducts } = useContext(CartContext);
+  
   const [isEmailValid, setIsEmailValid] = useState(false);
   const [isNextValid, setIsNextValid] = useState(false);  
   const [selectedDeliveryMethod, setSelectedDeliveryMethod] = useState(null);       
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState(null);
-             
+  const [loading, setLoading] = useState(false);
+
   const handleDeliverySelect = (method) => {
     setSelectedDeliveryMethod(method);
-    updateOrderData("deliveryMethod", method); // jeśli chcesz w kontekście
+    updateOrderData("deliveryMethod", method);
   };
+
   const handleEmailChange = (e) => {
     const email = e.target.value;
     updateOrderData("email", email);
@@ -27,31 +32,21 @@ const OrderFinalization = () => {
 
   const validateEmail = (email) => {
     if (!email || email.length > 254 || email.length < 6) return false;
-
     const parts = email.split("@");
     if (parts.length !== 2) return false;
-
     const [localPart, domain] = parts;
     if (!localPart || localPart.length > 64) return false;
     if (!domain || domain.length > 253) return false;
-
     const localValid = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+$/;
     if (!localValid.test(localPart)) return false;
-
     const domainValid = /^[a-zA-Z0-9-]+(\.[a-zA-Z]{2,})+$/;
     if (!domainValid.test(domain)) return false;
-
-    
     const tld = domain.substring(domain.lastIndexOf('.') + 1);
     if (tld.length > 24) return false;
-
-
     if (email.includes("..")) return false;
-
     return true;
   };
 
-  const { selectedProducts } = useContext(CartContext);
   const totalCost = selectedProducts.reduce((sum, product) => {
     if (!product.selected) return sum;
     const numericPrice = parseFloat(
@@ -63,6 +58,40 @@ const OrderFinalization = () => {
   const selectedCount = selectedProducts
     .filter((p) => p.selected)
     .reduce((sum, p) => sum + (p.amount || 1), 0);
+
+  // Funkcja zapisu zamówienia
+  const handleOrderSubmit = async () => {
+    if (!auth.currentUser) {
+      alert("Musisz być zalogowany, aby złożyć zamówienie!");
+      return;
+    }
+    if (!isEmailValid || !isNextValid || !selectedDeliveryMethod || !selectedPaymentMethod) {
+      alert("Uzupełnij wszystkie dane, aby złożyć zamówienie.");
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const userId = auth.currentUser.uid;
+
+      await addDoc(collection(db, "users", userId, "orders"), {
+        orderDate: Timestamp.now(),
+        status: "processing",
+        products: selectedProducts.filter(p => p.selected),
+        customer: orderData,
+        deliveryMethod: selectedDeliveryMethod,
+        paymentMethod: selectedPaymentMethod,
+        totalCost: totalCost
+      });
+
+      alert("Zamówienie zostało złożone!");
+      // tutaj możesz wyczyścić koszyk lub przekierować
+    } catch (error) {
+      console.error("Błąd przy składaniu zamówienia:", error);
+      alert("Wystąpił problem, spróbuj ponownie.");
+    }
+    setLoading(false);
+  };
 
   return (
     <div className="order-finalization-box">
@@ -110,39 +139,42 @@ const OrderFinalization = () => {
           <hr className="order-line" />
           <p className="big-letter-order">ADRES</p>
 
-          {isEmailValid && <OrderAfterEmail setIsNextValid={setIsNextValid}/>}
+          {isEmailValid && <OrderAfterEmail setIsNextValid={setIsNextValid} />}
           <hr className="order-line" />
           {isNextValid ? (
-  <span>
-    <p className="delivery-title">SPOSÓB DOSTAWY</p>
-    <DeliveryMethod onSelect={handleDeliverySelect} />
+            <span>
+              <p className="delivery-title">SPOSÓB DOSTAWY</p>
+              <DeliveryMethod onSelect={handleDeliverySelect} />
 
-    {selectedDeliveryMethod && (
-      <>
-        <hr className="order-line" />
-        <p className="Payment-method big-letter-order">PŁATNOŚĆ</p>
-        <PaymentMethods
-          selected={selectedPaymentMethod}
-          onSelect={setSelectedPaymentMethod}
-        />
-      </>
-    )}
-  </span>
-) : (
-  <div className="delivery-method big-letter-order">SPOSÓB DOSTAWY</div>
-)}
-          
+              {selectedDeliveryMethod && (
+                <>
+                  <hr className="order-line" />
+                  <p className="Payment-method big-letter-order">PŁATNOŚĆ</p>
+                  <PaymentMethods
+                    selected={selectedPaymentMethod}
+                    onSelect={setSelectedPaymentMethod}
+                  />
+                </>
+              )}
+            </span>
+          ) : (
+            <div className="delivery-method big-letter-order">
+              SPOSÓB DOSTAWY
+            </div>
+          )}
+
           <hr className="order-line" />
-          {/* <div className="Payment-method big-letter-order">PŁATNOŚĆ</div> */}
-          <hr className="order-line mobile-only" />
-          <hr className="order-line mobile-only" />
+          <button 
+            className="place-order-btn" 
+            onClick={handleOrderSubmit} 
+            disabled={loading}
+          >
+            {loading ? "Przetwarzanie..." : "Kup teraz"}
+          </button>
         </div>
 
         <OrderFinalizationRightBox />
       </div>
-
-
-      {/* <Footer className="order-footer-max-768"/> */}
     </div>
   );
 };

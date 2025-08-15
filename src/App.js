@@ -20,6 +20,7 @@ import { useContext } from "react";
 import { CartContext } from "./components/CartContext";
 import PaymentWithProduct from "./components/PaymentWithProduct"
 import PaymentEmptyCart from "./components/PaymentEmptyCart"
+import MyOrders from "./components/MyOrders";
 
 
 
@@ -55,6 +56,14 @@ function AppRoutes() {
         element={
           <LayoutWithNavAndFooter>
             <LogIn />
+          </LayoutWithNavAndFooter>
+        }
+      />
+      <Route
+        path="/my-orders"
+        element={
+          <LayoutWithNavAndFooter>
+            <MyOrders />
           </LayoutWithNavAndFooter>
         }
       />

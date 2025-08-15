@@ -110,6 +110,33 @@ html,body {
 .log-in-after-log-in{
   display: inline-block;
 }
+.my-order-title{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+  border-bottom: 3px solid #3498db;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+.my-order-box{
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  width: 95%;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.my-order-box:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
 .ui.header.nav-title {
 
   text-transform: uppercase;
@@ -924,6 +951,34 @@ left: 85%;
   right: 15px;
   top: 10px;
 }
+.place-order-btn {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.place-order-btn:hover {
+  background: linear-gradient(135deg, #feb47b, #ff7e5f);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.place-order-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
 @media(max-width: 450px){
   
   .fa-bars{
@@ -1080,6 +1135,7 @@ left: 85%;
     left: 10px;
     top: 50px;
   }
+
 }
 @media (min-width:450px) and (max-width: 568px){
   .fa-bars{
@@ -1134,6 +1190,110 @@ left: 85%;
     }
     
   }
+  @media(max-width:992px){
+    .ui.inverted.vertical.segment .Copy-right{
+      font-size: 13px;
+    }
+    .arro{
+      font-size: 20px;
+      margin-left: 70px !important;
+    }
+    .header-button{
+      top: 410px;
+      width: 190px;
+    }
+    .heder-button-shadow{
+      top: 414px;
+      width: 190px;
+    }
+    .header-text{
+      top: 365px;
+      width: 140px;
+    }    
+    .Nav-added-product-box{
+      width: 350px;
+      height: 220px;
+    }
+    .my-order-title{
+      font-size: 20px !important;
+    }
+    .my-order-p{
+      font-size: 13px;
+    }
+    .product-box-img{
+      height: 115px;
+      width: 100px;
+    }
+    .product-box-name, .product-box-price{
+      left: 170px;
+    }
+    .product-box-amount{
+      left: 250px;
+    }
+    .product-box-bin{
+      left: 290px;
+    }  
+.product-add-segment{
+  height: 170px;
+}
+.payment-left{
+  
+  top: 190px;
+  left: 40px;
+  width: 50%;
+}
+
+.payment-left-title{
+  font-size: 25px;
+}
+.left-box{
+  height: 90px;
+  width: 70%;
+}
+.segment-img{
+  height: 170px;
+  width: 170px;
+}
+.segment-product-name{
+  font-size: 12px;
+  left: 180px;
+}
+.segment-product-price.price{
+  left: 300px ;
+}
+
+.amount-box{
+  height: 40px;
+  width: 80px;
+  left: 220px;
+  top: 110px;
+}
+
+.payment-right{
+  right: 40px;
+}
+.order-segment-name,.order-product-count{
+  left: 55%;
+  
+}
+.order-product-count{
+  top: 110px;
+}
+.order-product-price,.order-segment-name,.order-product-count{
+  font-size: 13.5px;
+}
+.order-product-price {
+left: 83%;
+}
+.order-segment{
+  height: 150px;
+}
+.order-img{
+  height: 120px;
+  width: 120px;
+}
+    }
+  
   @media(max-width: 768px){
     .ui.header.nav-title{
       font-size: 30px;
@@ -1162,6 +1322,12 @@ left: 85%;
     .Navbar-squeres.Cart{
       width: 300px ;
       left: -200px  ;  
+    }
+    .my-order-title{
+      font-size: 15px !important;
+    }
+    .my-order-p{
+      font-size: 12px;
     }
     .fa-cart-shop{
       font-size: 40px !important;
@@ -1349,103 +1515,6 @@ left: 85%;
         margin-bottom: 80px !important;
       }
           } 
-          @media(max-width:992px){
-            .ui.inverted.vertical.segment .Copy-right{
-              font-size: 13px;
-            }
-            .arro{
-              font-size: 20px;
-              margin-left: 70px !important;
-            }
-            .header-button{
-              top: 410px;
-              width: 190px;
-            }
-            .heder-button-shadow{
-              top: 414px;
-              width: 190px;
-            }
-            .header-text{
-              top: 365px;
-              width: 140px;
-            }    
-            .Nav-added-product-box{
-              width: 350px;
-              height: 220px;
-            }
-            .product-box-img{
-              height: 115px;
-              width: 100px;
-            }
-            .product-box-name, .product-box-price{
-              left: 170px;
-            }
-            .product-box-amount{
-              left: 250px;
-            }
-            .product-box-bin{
-              left: 290px;
-            }  
-        .product-add-segment{
-          height: 170px;
-        }
-        .payment-left{
-          
-          top: 190px;
-          left: 40px;
-          width: 50%;
-        }
-        
-        .payment-left-title{
-          font-size: 25px;
-        }
-        .left-box{
-          height: 90px;
-          width: 70%;
-        }
-        .segment-img{
-          height: 170px;
-          width: 170px;
-        }
-        .segment-product-name{
-          font-size: 12px;
-          left: 180px;
-        }
-        .segment-product-price.price{
-          left: 300px ;
-        }
-        
-        .amount-box{
-          height: 40px;
-          width: 80px;
-          left: 220px;
-          top: 110px;
-        }
-        
-        .payment-right{
-          right: 40px;
-        }
-        .order-segment-name,.order-product-count{
-          left: 55%;
-          
-        }
-        .order-product-count{
-          top: 110px;
-        }
-        .order-product-price,.order-segment-name,.order-product-count{
-          font-size: 13.5px;
-        }
-        .order-product-price {
-        left: 83%;
-        }
-        .order-segment{
-          height: 150px;
-        }
-        .order-img{
-          height: 120px;
-          width: 120px;
-        }
-            }
           
 @media(max-width: 1200px){
     .segment-product-price.price{
@@ -1465,7 +1534,12 @@ left: 85%;
       height: 120px;
       width: 120px;
     }
-     
+    .my-order-title{
+      font-size: 24px;
+    }
+    .my-order-p{
+      font-size: 14px;
+    }
     }
     
     @media(max-width:670px){
