@@ -102,6 +102,14 @@ html,body {
   padding: 10px 20px;
   border-radius: 5px;
 }
+.user-name-after-log-in{
+  position: fixed; 
+  top: 10px;
+  left: 20px;
+}
+.log-in-after-log-in{
+  display: inline-block;
+}
 .ui.header.nav-title {
 
   text-transform: uppercase;

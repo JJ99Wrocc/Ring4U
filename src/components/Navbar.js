@@ -78,7 +78,11 @@ const Navbar = () => {
 
           {/* Zmiana w zależności od zalogowania */}
           {user ? (
-            <button onClick={() => signOut(auth)}>Wyloguj</button>
+          
+          <div>
+              <button onClick={() => signOut(auth)}>Wyloguj</button>
+              <div className="user-name-after-log-in">Cześć {user.displayName || "Użytkowniku"}</div>
+          </div>
           ) : (
             <LogInPreview show={showLogin} setShow={setShowLogin} />
           )}
