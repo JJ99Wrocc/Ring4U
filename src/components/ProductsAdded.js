@@ -59,7 +59,7 @@ const ProductAdded = ({ visible, setVisible, products }) => {
               <p className="product-added-p">Razem: <span className="product-added-cost"><span className="product-added-cost-fwb">{totalCost === 0 ? "Za darmo" : totalCost < 400 ? totalCost + 20 : totalCost}</span> zł</span> </p>
               <p className="product-added-p">(wraz z podatkiem {totalCost !== 0 ? (totalCost * 0.23).toFixed(2) : null} zł )</p>
               <button onClick={handleClick} className="product-right-button">
-                ZOBACZ KOSZYK <i className="fa-solid fa-arrow-right-long arr"></i>
+                ZOBACZ KOSZYK 
               </button>
             </div>
           </div>

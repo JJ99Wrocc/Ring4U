@@ -117,7 +117,7 @@ const PaymentWithProduct = () =>{
             className="product-right-button3 "
             style={{marginBottom: "30px", marginTop:"20px"}}
           >
-            ZAKOŃCZ TRANZAKCJE <i className="fa-solid fa-arrow-right-long"></i>
+            ZAKOŃCZ TRANZAKCJE 
           </button>
           
           </div>

@@ -62,7 +62,7 @@ const DiscountBox = ({ onClose }) => {
               onChange={(e) => setEmail(e.target.value)}
             />
             <button type="submit" className="discount-btn">
-              Zapisz się
+              <p className="discount-btn-p">Zapisz się</p>
             </button>
           </form>
         )}

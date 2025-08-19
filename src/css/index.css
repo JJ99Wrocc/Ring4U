@@ -4,7 +4,7 @@ html,body {
     height: 100%;
     padding: 0;
     margin: 0;
-
+    /* overflow-x: hidden */
   }
   .app-wrapper {
     display: flex;
@@ -106,6 +106,7 @@ html,body {
   position: fixed; 
   top: 10px;
   left: 20px;
+  font-size: 15px;
 }
 .log-in-after-log-in{
   display: inline-block;
@@ -141,7 +142,7 @@ html,body {
   color: #444;
 }
 
-.my-order-p strong {
+.strong {
   color: #111;
   font-weight: 600;
 }
@@ -211,6 +212,7 @@ html,body {
   }
   .Navbar-squeres{
     border: 1px solid black;
+    border-radius: 13%;
     background-color: white;  
     top: 150px; 
     z-index: 9999;
@@ -401,13 +403,13 @@ html,body {
   position: relative;
   background-image: url('../img/jewelry_header_1200px.png');
   margin-top: 80px;
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   margin: 0;
   padding: 0; 
 }
 .header-button{
-  font-size: 22px;
+  font-size: 24px;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
@@ -415,7 +417,7 @@ html,body {
   text-decoration: none;
   color: black;
   background-color: #FFF8E7;
-  top: 450px;
+  top: 350px;
   left: 115px;
   height: 50px;
   width: 220px;
@@ -430,7 +432,7 @@ color: black;
 .heder-button-shadow{
   background-color: transparent;
   border: 1px solid white;
-  top: 455px;
+  top: 355px;
   left: 120px;
   height: 50px;
   width: 220px;
@@ -447,7 +449,7 @@ color: black;
  font-weight: bold;
   font-size: 30px;
   border: 1px solid black;
-  top: 405px;
+  top: 305px;
   left: 115px;
   height: 35px;
   width: 170px;
@@ -456,10 +458,7 @@ color: black;
   box-shadow: 3px 3px 3px;
   z-index: 10;
 }
-.main-segment{
-  height: 100vh;
-  background-color: #1F1F1F;
-}
+
 .discount-img{
   background-image: url('../img/color_bar_for_header.png');
   position: relative;
@@ -686,7 +685,7 @@ right: 30px;}
 }
 .close {
   top: 0.5rem;
-  right: 0.5rem;
+  right: 1.2rem;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -782,6 +781,7 @@ font-weight: bold;
   position: relative;
   height: 100%;
   margin-top: 150px;
+  width: 100%;
   /* margin-bottom: -150px; */
   /* top: 150px; */
   left: 150px;
@@ -800,11 +800,14 @@ font-weight: bold;
   box-shadow: 3px 3px 3px;
   transition:  0.4s;
   background-color: #F0D8B0;
-  
+  border-radius: 15%;
+  transition: scale 0.7s ease-in;
 }
 .Payment-empty-button:hover{
   background-color: #DEB887;
   color: #2F1B0C;
+
+  transform: scale(1.1);
 }
 
 .order-box-1{
@@ -849,6 +852,7 @@ font-weight: bold;
   flex: 0 0 62%;
   min-width: 0;
   min-height: 100vh;
+  padding-bottom: 150px;
 }
 .right-order-finalization-box{
   position: relative;
@@ -1129,323 +1133,241 @@ left: 85%;
 .btn-delete:hover {
   background-color: #d32f2f;
 }
+.password-reset-p {
+  text-align: center;
+  margin: 10px 0;
+  padding: 5px;
+  user-select: none;
+  color: #111;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+.password-reset-p:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  color: #0d6efd;
+}
+.password-wrapper {
+  max-width: 400px;
+  margin: 50px auto;
+  width: 90%;
+  padding: 30px 25px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
 
+.resset-password-h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
 
-@media(max-width: 450px){
-  
-  .fa-bars{
-    font-size: 20px;
-  }
-  a.look{
-    font-size: 17px !important;
-    }
-  .Nav-input{
-    width: 60px !important;
-    font-size: 12px;
-  }
-  .Navbar-squeres.Cart{
-    height: 230px;
-    width: 200px !important ;
-    left: -100px !important;  
-  }
-  .ui.header.nav-title{
-    font-size: 20px !important;
-  }
+.reset-password-input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reset-password-input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.3);
+}
+
+.resset-password-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resset-password-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.03);
+}
+
+.password-wrapper p {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #555;
+}
+
+.after-log-in ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+
+}
+
+.after-log-in .custom-link {
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  text-align: center;
+}
+
+.after-log-in .custom-link a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.after-log-in .custom-link:hover {
+  background: #f5f7fa;
+  color: #0d6efd;
+}
+.privacy-content{
+  padding-top: 160px;
+  padding-bottom: 120px;
+  text-align: center;
+  margin: 20px 40px;
+}
+@media(max-width:992px){
   .ui.inverted.vertical.segment .Copy-right{
-    font-size: 10px !important ;
+    font-size: 13px;
+  }
+  .arro{
+    font-size: 20px;
+    margin-left: 70px !important;
   }
   .header-button{
-    top: 430px;
-    left: 20px !important;
-    
+    top: 410px;
+    width: 190px;
   }
   .heder-button-shadow{
-    top: 432px;
-    left: 26px !important;
- 
+    top: 414px;
+    width: 190px;
   }
   .header-text{
-    top: 370px !important;
-    left: 20px !important;
-  }
-  .Nav-added-product-box {
-    width: 250px !important;
+    top: 365px;
+    width: 140px;
+  }    
+  .Nav-added-product-box{
+    width: 350px;
     height: 220px;
   }
-
-  .product-box-img {
-    left: 40px;
-    height: 100px !important;
-    width: 90px !important;
+  .my-order-title{
+    font-size: 20px !important;
   }
-
-  .product-box-name, .product-box-price {
-    left: 140px !important;
-    font-size: 11px;
+  .my-order-p{
+    font-size: 13px;
   }
-
-  .product-box-amount {
-    left: 160px !important;
+  .product-box-img{
+    height: 115px;
+    width: 100px;
   }
-
-  .product-box-bin {
-    left: 190px !important;
+  .product-box-name, .product-box-price{
+    left: 170px;
   }
-
-  .product-box-total-cost {
-    font-size: 10px;
+  .product-box-amount{
+    left: 250px;
   }
-  .accept-product-box{
-    width: 15px;
-    height: 15px;
-  }
-  .ui[class*="right floated"].header {
-    right: -25px !important;
-  }
-  .burger-dropdown{
-    top: 30px;
-    left:0px !important;
-  }
-   .ui[class*="left floated"]{
-    width: 10%;
-    left: -30px;
-   }
-   .product{
-    width: 50%;
-   }
-   .product-add{
-    width: 340px !important;
-   }
-  
-   .product-name{
-    top: 200px;
-   }
-   .product-price{
-    top: 230px;
-   }
-   .product-img{
-    width: 90px;
-    height: 90px;
-   }
-   .product-title{
-    font-size: 15px !important ;
-   }
-   .product-added-cost,.product-added-p{
-    font-size: 7px !important;
-  }
-  .fa-x{
-    right:10px;
-  }
-  
-
-
-  .payment-left-title{
-    font-size: 17px !important;
-  }
-  .left-box{
-    height: 90px;
-    width: 70%;
-  }
-  .segment-img{
-    height: 120px;
-    width: 120px;
-  }
-  .segment-product-name{
-    left: 125px;
-    font-size: 11px;
-  }
- 
-  .segment-product-price.price{
-    font-size: 12px;
-    font-weight: bold;
-    left: 150px !important ;
-  }
-  .amount-box{
-    height: 30px;
-    width: 60px;
-    left: 130px;
-    top: 80px;
-  }
-  .product-right-button2{
-    top: 280px;
-    padding-left: 15px;
-    font-size: 12px;
-  }
-  .product-right-button{
-    font-size: 12px;
-  }
-  .fa-instagram,.fa-facebook{
-    font-size: 19px;
-  }
-  .fa-facebook{
-    right: 33px;
-  }
-  .fa-instagram{
-    right: 10px;
-  }
-  .payment-accept-box{
-    left: 10px;
-    top: 50px;
-  }
-
-}
-@media (min-width:450px) and (max-width: 568px){
-  .fa-bars{
-    font-size: 19px;
-  }
-  .ui.header.nav-title{
-    font-size: 25px !important;
-  }
-  a.look{
-    font-size: 19px !important;
-    }
-    .search{
-      margin-right: 10px;
-    }
-    .log{
-      margin-left: 5px;
-    }
-    .Nav-input{
-      width: 70px !important;
-      font-size: 12px;
-    }
-    .ui.inverted.vertical.segment .Copy-right{
-      font-size: 12px;
-    }
-    .header-button{
-      top: 450px;
-      left: 20px !important;
-      width: 170px !important;
-    }
-    .heder-button-shadow{
-      top: 452px;
-      left: 26px !important;
-      width: 170px !important;
-    }
-    .header-text{
-      top: 370px;
-      left: 20px !important;
-      height: 30px;
-      font-size: 22px;
-      width: 130px !important;
-    }
-    .fa-arrow-right-long{
-      font-size: 20px;
-      margin-left: 3px;
-    } 
-    .payment-accept-box{
-      left: 10px;
-      top: 50px;
-    }
-    .segment-product-amount{
-      left: 120px;
-    }
-    
-  }
-  @media(max-width:992px){
-    .ui.inverted.vertical.segment .Copy-right{
-      font-size: 13px;
-    }
-    .arro{
-      font-size: 20px;
-      margin-left: 70px !important;
-    }
-    .header-button{
-      top: 410px;
-      width: 190px;
-    }
-    .heder-button-shadow{
-      top: 414px;
-      width: 190px;
-    }
-    .header-text{
-      top: 365px;
-      width: 140px;
-    }    
-    .Nav-added-product-box{
-      width: 350px;
-      height: 220px;
-    }
-    .my-order-title{
-      font-size: 20px !important;
-    }
-    .my-order-p{
-      font-size: 13px;
-    }
-    .product-box-img{
-      height: 115px;
-      width: 100px;
-    }
-    .product-box-name, .product-box-price{
-      left: 170px;
-    }
-    .product-box-amount{
-      left: 250px;
-    }
-    .product-box-bin{
-      left: 290px;
-    }  
+  .product-box-bin{
+    left: 290px;
+  }  
 .product-add-segment{
-  height: 170px;
+height: 170px;
 }
 .payment-left{
-  
-  top: 190px;
-  left: 40px;
-  width: 50%;
+
+top: 190px;
+left: 40px;
+width: 50%;
 }
 
 .payment-left-title{
-  font-size: 25px;
+font-size: 25px;
 }
 .left-box{
-  height: 90px;
-  width: 70%;
+height: 90px;
+width: 70%;
 }
 .segment-img{
-  height: 170px;
-  width: 170px;
+height: 170px;
+width: 170px;
 }
 .segment-product-name{
-  font-size: 12px;
-  left: 180px;
+font-size: 12px;
+left: 180px !important;
 }
 .segment-product-price.price{
-  left: 300px ;
+left: 300px !important;
 }
 
 .amount-box{
-  height: 40px;
-  width: 80px;
-  left: 220px;
-  top: 110px;
+height: 40px;
+width: 80px;
+left: 220px;
+top: 110px;
 }
 
 .payment-right{
-  right: 40px;
+right: 40px;
 }
 .order-segment-name,.order-product-count{
-  left: 55%;
-  
+left: 55%;
+
 }
 .order-product-count{
-  top: 110px;
+top: 110px;
 }
 .order-product-price,.order-segment-name,.order-product-count{
-  font-size: 13.5px;
+font-size: 13.5px;
 }
 .order-product-price {
 left: 83%;
 }
 .order-segment{
-  height: 150px;
+height: 150px;
 }
 .order-img{
-  height: 120px;
-  width: 120px;
+height: 120px;
+width: 120px;
 }
-    }
-  
+.Payment-empty-cart{
+left: 80px;
+ }
+
+.Payment-empty-title{
+font-size: 39px;
+}
+.Payment-empty-p{
+font-size: 15px;
+padding: 5px 0;
+margin-bottom: 5px;
+}
+.payment-empty-strong{
+margin-bottom: 5px;
+}
+.Payment-empty-button{
+font-size: 25px;
+margin-top: 10px;
+}
+.Payment-empty-text{
+font-size: 13px;
+padding: 18px;
+}
+.user-name-after-log-in{
+  font-size: 14px ;
+}
+  }
   @media(max-width: 768px){
     .ui.header.nav-title{
       font-size: 30px;
@@ -1500,19 +1422,19 @@ left: 83%;
     }
     .header-button{
       left: 105px;
-      top: 630px;
+      top: 365px;
       height: 40px;
       font-size: 20px;
       width: 170px !important;
     }
     .heder-button-shadow{
-      top: 632px;
+      top: 367px;
       left: 110px;
       height: 38px;
       width: 168px !important;
     }
     .header-text{
-      top: 590px ;
+      top: 315px ;
       left: 105px;
       height: 30px;
       font-size: 22px;
@@ -1521,11 +1443,12 @@ left: 83%;
     .img-header{
       background-image: url('../img/jewelry_header_568px.png');
       background-size: cover;
+      height: 70vh;
     }
-    .fa-arrow-right-long{
-      font-size: 20px;
-      margin-left: 3px;
+    .home-segment{
+      height: 70vh;
     }
+
     .discount{
       padding-top: 130px;
     }
@@ -1666,7 +1589,291 @@ left: 83%;
         background-color: #DEB887;
         margin-bottom: 80px !important;
       }
+      .segment-product-amount{
+        left: 100px !important;
+        font-size: 12px !important;
+      }
+      .discount-btn{
+        font-size: 13px;
+      }
+     
+      .discount-h2{
+        font-size: 22px;
+      }
+      .discount-input{
+        font-size: 12px;
+      }
+      .center-p{
+        font-size: 12px;
+      }
+      .user-name-after-log-in{
+        font-size: 12px;
+      }
           } 
+ 
+  @media (min-width:450px) and (max-width: 568px){
+    .fa-bars{
+      font-size: 19px;
+    }
+    .ui.header.nav-title{
+      font-size: 25px !important;
+    }
+    a.look{
+      font-size: 19px !important;
+      }
+      .search{
+        margin-right: 10px;
+      }
+      .log{
+        margin-left: 5px;
+      }
+      .Nav-input{
+        width: 70px !important;
+        font-size: 12px;
+      }
+      .ui.inverted.vertical.segment .Copy-right{
+        font-size: 12px;
+      }
+      .header-button{
+        top: 360px;
+        left: 20px !important;
+        width: 170px !important;
+      }
+      .heder-button-shadow{
+        top: 362px;
+        left: 26px !important;
+        width: 170px !important;
+      }
+      .header-text{
+        top: 310px;
+        left: 20px !important;
+        height: 30px;
+        font-size: 22px;
+        width: 130px !important;
+      }
+      .fa-arrow-right-long{
+        font-size: 20px;
+        margin-left: 3px;
+      } 
+      .payment-accept-box{
+        left: 10px;
+        top: 50px;
+      }
+      .Payment-empty-cart{
+        left: 30px;
+         }
+    
+  
+      .Payment-empty-p{
+        font-size: 14px;
+        padding: 5px 0;
+        margin-bottom: 5px;
+      }
+      .payment-empty-strong{
+        margin-bottom: 5px;
+      }
+      .Payment-empty-button{
+        font-size: 23px;
+        margin-top: 10px;
+      }
+      .Payment-empty-text{
+        font-size: 13px;
+        padding: 15px;
+      } 
+      .Payment-empty-title{
+        font-size: 34px;
+      }
+      /* .segment-product-amount{
+        left: 90px;
+      } */
+
+    }
+  
+    
+  
+@media(max-width: 450px){
+  
+  .fa-bars{
+    font-size: 20px;
+  }
+  a.look{
+    font-size: 17px !important;
+    }
+  .Nav-input{
+    width: 60px !important;
+    font-size: 12px;
+  }
+  .Navbar-squeres.Cart{
+    height: 230px;
+    width: 200px !important ;
+    left: -100px !important;  
+  }
+  .ui.header.nav-title{
+    font-size: 20px !important;
+  }
+  .ui.inverted.vertical.segment .Copy-right{
+    font-size: 10px !important ;
+  }
+  .header-button{
+    top: 310px;
+    left: 20px !important;
+    font-size: 21px;
+  }
+  .heder-button-shadow{
+    top: 312px;
+    left: 26px !important;
+ 
+  }
+  .header-text{
+    top: 260px !important;
+    left: 20px !important;
+    font-size: 19px;
+  }
+  .Nav-added-product-box {
+    width: 250px !important;
+    height: 220px;
+  }
+
+  .product-box-img {
+    left: 40px;
+    height: 100px !important;
+    width: 90px !important;
+  }
+
+  .product-box-name, .product-box-price {
+    left: 140px !important;
+    font-size: 11px;
+  }
+
+  .product-box-amount {
+    left: 160px !important;
+  }
+
+  .product-box-bin {
+    left: 190px !important;
+  }
+  .user-name-after-log-in{
+    font-size: 10px ;
+  }
+  .product-box-total-cost {
+    font-size: 10px;
+  }
+  .Payment-empty-title{
+    font-size: 20px;
+  }
+  .accept-product-box{
+    width: 15px;
+    height: 15px;
+  }
+  .ui[class*="right floated"].header {
+    right: -25px !important;
+  }
+  .burger-dropdown{
+    top: 30px;
+    left:0px !important;
+  }
+   .ui[class*="left floated"]{
+    width: 10%;
+    left: -30px;
+   }
+   .product{
+    width: 50%;
+   }
+   .product-add{
+    width: 340px !important;
+   }
+  
+   .product-name{
+    top: 200px;
+   }
+   .product-price{
+    top: 230px;
+   }
+   .product-img{
+    width: 90px;
+    height: 90px;
+   }
+   .product-title{
+    font-size: 15px !important ;
+   }
+   .product-added-cost,.product-added-p{
+    font-size: 7px !important;
+  }
+  .fa-x{
+    right:10px;
+  }
+  
+  .Payment-empty-cart{
+    left: 30px;
+    font-size: 10px;
+  }
+
+  .payment-left-title{
+    font-size: 17px !important;
+  }
+  .Payment-empty-p{
+    font-size: 11px;
+    padding: 5px 0;
+    margin-bottom: 5px;
+  }
+  .payment-empty-strong{
+    margin-bottom: 5px;
+  }
+  .Payment-empty-button{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .Payment-empty-text{
+    font-size: 13px;
+    padding: 10px;
+  }
+  .left-box{
+    height: 90px;
+    width: 70%;
+  }
+  .segment-img{
+    height: 120px;
+    width: 120px;
+  }
+  .segment-product-name{
+    left: 125px;
+    font-size: 11px;
+  }
+ 
+  .segment-product-price.price{
+    font-size: 12px;
+    font-weight: bold;
+    left: 150px !important ;
+  }
+  .amount-box{
+    height: 30px;
+    width: 60px;
+    left: 130px;
+    top: 80px;
+  }
+  .product-right-button2{
+    top: 280px;
+    padding-left: 15px;
+    font-size: 10px;
+  }
+  .product-right-button{
+    font-size: 10px;
+  }
+  .fa-instagram,.fa-facebook{
+    font-size: 19px;
+  }
+  .fa-facebook{
+    right: 33px;
+  }
+  .fa-instagram{
+    right: 10px;
+  }
+  .payment-accept-box{
+    left: 10px;
+    top: 50px;
+  }
+
+}
           
 @media(max-width: 1200px){
     .segment-product-price.price{
@@ -1690,6 +1897,13 @@ left: 83%;
       font-size: 24px;
     }
     .my-order-p{
+      font-size: 14px;
+    }
+    .fa-arrow-right-long{
+      margin-left: -45px;
+    }
+    .product-right-button2{
+      padding-left: 10px;
       font-size: 14px;
     }
     }
@@ -1743,7 +1957,7 @@ left: 83%;
        
     }
     .segment-product-amount{
-      left: 35px;
+      left:  60px !important;
       font-size: 12px !important;
     }
       .segment-img{
@@ -1796,6 +2010,10 @@ left: 83%;
     .delivery-boxes{
       width: 80%;
     }
+    .segment-product-name{
+      left: 215px !important;
+      font-size: 13px;
+    }
   }
   @media(min-width:992px){
     .payment, .segment-product-price{
@@ -1806,6 +2024,10 @@ left: 83%;
     }
     .segment-img{
       background-image: url('../img/jewelry_header_1200px.png');
+    }
+    .segment-product-name{
+      left: 245px !important;
+
     }
   }
   @media(min-width:1200px){

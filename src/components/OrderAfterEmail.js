@@ -128,7 +128,7 @@
             </div>
 
             <button style={{ marginTop: "10px" }} onClick={handleClick}>
-              DALEJ <i className="fa-solid fa-arrow-right-long"></i>
+              DALEJ 
             </button>
           </>
         )}

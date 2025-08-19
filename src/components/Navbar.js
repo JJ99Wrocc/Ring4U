@@ -103,7 +103,8 @@ const Navbar = () => {
           {user ? (
             <>
               <div className="user-name-after-log-in">
-                Cześć {user.displayName || "Użytkowniku"}
+                Cześć, {user.displayName || "Użytkowniku"}
+                
               </div>
               <LogInAfter show={showLogin} setShow={setShowLogin}/>
 
