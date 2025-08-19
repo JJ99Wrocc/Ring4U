@@ -31,7 +31,7 @@ console.log(uid);
                 <Link to="/my-orders">Moje zamówienia</Link>
                 </li>
                 <li className="custom-link">
-                <Link to="/my-orders">Moje wiadomości</Link>
+                <Link to="/my-dm">Moje wiadomości</Link>
                 </li>
                 <li className="custom-link"
                 onClick={() => signOut(auth)}>

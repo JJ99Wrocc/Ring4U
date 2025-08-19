@@ -8,24 +8,26 @@ import DeliveryMethod from "./DeliveryMethod.js";
 import PaymentMethods from "./PaymentMethods.js";
 import { auth, db } from "../Firebase";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
 
 const OrderFinalization = () => {
-  const { orderData, updateOrderData } = useContext(OrderContext);
-  const { selectedProducts } = useContext(CartContext);
+  const { orderData, updateOrderData,setOrderData } = useContext(OrderContext);
+  const { selectedProducts, setSelectedProducts } = useContext(CartContext);
   
   const [isEmailValid, setIsEmailValid] = useState(false);
   const [isNextValid, setIsNextValid] = useState(false);  
   const [selectedDeliveryMethod, setSelectedDeliveryMethod] = useState(null);       
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState(null);
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleDeliverySelect = (method) => {
     setSelectedDeliveryMethod(method);
     updateOrderData("deliveryMethod", method);
   };
 
-  const handleEmailChange = (e) => {
-    const email = e.target.value;
+  const handleEmailChange = (event) => {
+    const email = event.target.value;
     updateOrderData("email", email);
     setIsEmailValid(validateEmail(email));
   };
@@ -56,10 +58,9 @@ const OrderFinalization = () => {
   }, 0);
 
   const selectedCount = selectedProducts
-    .filter((p) => p.selected)
-    .reduce((sum, p) => sum + (p.amount || 1), 0);
+    .filter((product) => product.selected)
+    .reduce((sum, product) => sum + (product.amount || 1), 0);
 
-  // Funkcja zapisu zamówienia
   const handleOrderSubmit = async () => {
     if (!auth.currentUser) {
       alert("Musisz być zalogowany, aby złożyć zamówienie!");
@@ -69,39 +70,90 @@ const OrderFinalization = () => {
       alert("Uzupełnij wszystkie dane, aby złożyć zamówienie.");
       return;
     }
-
+  
     setLoading(true);
     try {
       const userId = auth.currentUser.uid;
 
-      await addDoc(collection(db, "users", userId, "orders"), {
+      const orderReference = await addDoc(collection(db, "users", userId, "orders"), {
         orderDate: Timestamp.now(),
         status: "processing",
-        products: selectedProducts.filter(p => p.selected),
+        products: selectedProducts.filter((product) => product.selected),
         customer: orderData,
         deliveryMethod: selectedDeliveryMethod,
         paymentMethod: selectedPaymentMethod,
         totalCost: totalCost
       });
 
+      await addDoc(collection(db, "userMessages", userId, "messages"), {
+        title: "Zamówienie złożone",
+        content: "Twoje zamówienie zostało przyjęte i jest w realizacji.",
+        status: "unread",
+        orderId: orderReference.id,
+        createdAt: Timestamp.now()
+      });
+
+      setSelectedProducts([]);
       alert("Zamówienie zostało złożone!");
-      // tutaj możesz wyczyścić koszyk lub przekierować
+      navigate("/");
+      setOrderData({
+        email: "",
+        shippingAddress: {
+          costumerName: "",
+          costumerSurname: "",
+          address: "",
+          company: "",
+          postalCode: "",
+          city: "",
+          phoneNumber: "",
+          phonePrefix: "",
+          selectedCount: "",
+          totalCost: "",
+          shipping: "",
+          productImage: "",
+          productName: "",
+          productPrice: "",
+          discountApplied: false,
+          discountValue: 0,
+        },
+        billingAddress: {
+          costumerName: "",
+          costumerSurname: "",
+          address: "",
+          company: "",
+          postalCode: "",
+          city: "",
+          phoneNumber: "",
+          nip: "",
+          phonePrefix: "",
+          selectedCount: "",
+          totalCost: "",
+          shipping: "",
+          productImage: "",
+          productName: "",
+          productPrice: "",
+        },
+        useDifferentBilling: false,
+      });
+      
+    
     } catch (error) {
       console.error("Błąd przy składaniu zamówienia:", error);
       alert("Wystąpił problem, spróbuj ponownie.");
     }
+
     setLoading(false);
   };
 
   return (
     <div className="order-finalization-box">
-      <div className="container order-box-1">
+      <div className="container order-box-1">   
         <div className="left-order-brand">
           FLOW<span className="order-brand-2">MART</span>
         </div>
         <div className="right-order">
           <Link to="/payment" className="look">
-            <i className="fa-solid fa-cart-shopping "></i>
+            <i className="fa-solid fa-cart-shopping"></i>
             <div className="order-circle">{selectedCount}</div>
           </Link>
         </div>
@@ -163,14 +215,21 @@ const OrderFinalization = () => {
             </div>
           )}
 
+          {selectedPaymentMethod && (
+            <>
+              <hr className="order-line" />
+              <button 
+                className="place-order-btn" 
+                onClick={handleOrderSubmit} 
+                disabled={loading}
+              >
+                {loading ? "Przetwarzanie..." : "Kup teraz"}
+              </button>
+              <hr className="order-line" />
+            </>
+          )}
+
           <hr className="order-line" />
-          <button 
-            className="place-order-btn" 
-            onClick={handleOrderSubmit} 
-            disabled={loading}
-          >
-            {loading ? "Przetwarzanie..." : "Kup teraz"}
-          </button>
         </div>
 
         <OrderFinalizationRightBox />

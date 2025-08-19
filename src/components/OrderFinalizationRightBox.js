@@ -1,54 +1,102 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "./CartContext";
+import { OrderContext } from "./OrderContext";
+import { getFirestore, collection, doc, setDoc, Timestamp } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 const OrderFinalizationRightBox = () => {
   const { selectedProducts } = useContext(CartContext);
+  const { orderData, updateNestedOrderData } = useContext(OrderContext);
 
-  // Nowe stany do obsługi kodu rabatowego
   const [discountCode, setDiscountCode] = useState("");
-  const [discountApplied, setDiscountApplied] = useState(false);
+  const [discountApplied, setDiscountApplied] = useState(orderData.shippingAddress.discountApplied);
   const [error, setError] = useState("");
 
-  // Oblicz koszt całkowity przed rabatem
+  // Obliczenie bazowej ceny
   const baseTotalCost = selectedProducts.reduce((sum, product) => {
     if (!product.selected) return sum;
-    const numericPrice = parseFloat(
-      product.price.toString().replace(/[^\d.]/g, "")
-    );
+    const numericPrice = parseFloat(product.price.toString().replace(/[^\d.]/g, ""));
     return sum + numericPrice * (product.amount || 1);
   }, 0);
 
-  // Jeśli kod został zastosowany — obniżamy o 10%
+  // Koszt po rabacie
   const totalCost = discountApplied
-    ? (baseTotalCost * 0.9).toFixed(2)
+    ? (baseTotalCost * (1 - orderData.shippingAddress.discountValue)).toFixed(2)
     : baseTotalCost.toFixed(2);
 
+  // Liczba wybranych produktów
   const selectedCount = selectedProducts
     .filter((p) => p.selected)
     .reduce((sum, p) => sum + (p.amount || 1), 0);
 
+  // Koszt dostawy
   const shippingPrice = () => {
-    return baseTotalCost === 0
-      ? 0
-      : baseTotalCost >= 400
-      ? "Za darmo"
-      : "20.00zł";
+    return baseTotalCost === 0 ? 0 : baseTotalCost >= 400 ? "Za darmo" : "20.00zł";
   };
-
   const shipping = shippingPrice();
 
-  // Funkcja do zastosowania rabatu
+  // Funkcja zastosowania kodu rabatowego
   const applyDiscount = () => {
     if (discountCode.toUpperCase() === "FLOW10") {
       if (!discountApplied) {
         setDiscountApplied(true);
         setError("");
+
+        // Aktualizacja kontekstu
+        updateNestedOrderData("shippingAddress", "discountApplied", true);
+        updateNestedOrderData("shippingAddress", "discountValue", 0.1); // 10% rabatu
       } else {
         setError("Kod rabatowy już został zastosowany.");
       }
     } else {
       setError("Nieprawidłowy kod rabatowy.");
+    }
+  };
+
+  // Funkcja do zapisania zamówienia w Firestore
+  const saveOrder = async () => {
+    const auth = getAuth();
+    const user = auth.currentUser;
+
+    if (!user) {
+      alert("Musisz być zalogowany, aby złożyć zamówienie");
+      return;
+    }
+
+    const db = getFirestore();
+    const orderRef = doc(collection(db, "users", user.uid, "orders")); // nowy dokument z automatycznym ID
+
+    const orderToSave = {
+      orderDate: Timestamp.now(),
+      status: "Oczekujące",
+      discountApplied: orderData.shippingAddress.discountApplied,
+      discountValue: orderData.shippingAddress.discountValue,
+      totalCost: parseFloat(totalCost) + (baseTotalCost < 400 ? 20 : 0),
+      shipping: shipping,
+      products: selectedProducts
+        .filter((p) => p.selected)
+        .map((p) => ({
+          id: p.id,
+          name: p.name,
+          price: parseFloat(p.price.toString().replace(/[^\d.]/g, "")),
+          amount: p.amount || 1,
+          image: p.image,
+        })),
+      customerData: {
+        shippingAddress: orderData.shippingAddress,
+        billingAddress: orderData.billingAddress,
+        useDifferentBilling: orderData.useDifferentBilling,
+        email: orderData.email,
+      },
+    };
+
+    try {
+      await setDoc(orderRef, orderToSave);
+      alert("Zamówienie zostało zapisane!");
+    } catch (error) {
+      console.error("Błąd zapisu zamówienia:", error);
+      alert("Wystąpił błąd przy zapisie zamówienia.");
     }
   };
 
@@ -70,7 +118,6 @@ const OrderFinalizationRightBox = () => {
         <div>{shipping}</div>
       </div>
 
-      {/* Kod rabatowy */}
       <div>
         <p className="order-discount-enter">KOD RABATOWY:</p>
         <input
@@ -100,21 +147,14 @@ const OrderFinalizationRightBox = () => {
 
       <div>
         ( Łącznie z podatkiem{" "}
-        {baseTotalCost !== 0
-          ? (parseFloat(totalCost) * 0.23).toFixed(2)
-          : null}{" "}
-        zł )
+        {baseTotalCost !== 0 ? (parseFloat(totalCost) * 0.23).toFixed(2) : null} zł )
       </div>
 
       <hr style={{ margin: "30px 0" }} />
 
       {selectedProducts.map((product, index) => (
         <div key={index} className="ui segment order-segment">
-          <img
-            src={product.image}
-            className="order-img"
-            alt={product.name}
-          />
+          <img src={product.image} className="order-img" alt={product.name} />
           <div className="order-segment-name">{product.name}</div>
           <div className="order-product-count">
             {product.selected ? ` ilość  ${product.amount}` : null}
@@ -122,6 +162,8 @@ const OrderFinalizationRightBox = () => {
           <div className="order-product-price">{product.price}</div>
         </div>
       ))}
+
+  
     </div>
   );
 };

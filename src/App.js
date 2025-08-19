@@ -16,14 +16,11 @@ import OrderFinalization from "./components/OrderFinalization";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import OrderProvider from "./components/OrderContext";
 import RegisterEmail from "./components/RegisterEmail";
-import { useContext } from "react";
-import { CartContext } from "./components/CartContext";
 import PaymentWithProduct from "./components/PaymentWithProduct"
 import PaymentEmptyCart from "./components/PaymentEmptyCart"
 import MyOrders from "./components/MyOrders";
-
-
-
+import MyDm from "./components/MyDm";
+import { CartContext } from "./components/CartContext";
 function LayoutWithNavAndFooter({ children }) {
   return (
     <>
@@ -35,9 +32,8 @@ function LayoutWithNavAndFooter({ children }) {
   );
 }
 
-
+// Tu nie używamy useContext od razu na zewnątrz
 function AppRoutes() {
-   const {selectedProducts} = useContext(CartContext)
   return (
     <Routes>
       <Route
@@ -67,12 +63,23 @@ function AppRoutes() {
           </LayoutWithNavAndFooter>
         }
       />
+      <Route
+        path="/my-dm"
+        element={
+          <LayoutWithNavAndFooter>
+            <MyDm />
+          </LayoutWithNavAndFooter>
+        }
+      />
       
-      <Route path="/payment" element={
-        <LayoutWithNavAndFooter>
-          {selectedProducts.length === 0 ? <PaymentEmptyCart /> :  <PaymentWithProduct />}
-        </LayoutWithNavAndFooter>
-      } />
+      <Route 
+        path="/payment" 
+        element={
+          <LayoutWithNavAndFooter>
+            <PaymentWrapper />
+          </LayoutWithNavAndFooter>
+        } 
+      />
       
       <Route
         path="/order-finalization"
@@ -82,13 +89,18 @@ function AppRoutes() {
       <Route
        path="/registeremail"
        element={<RegisterEmail />}
-       />
-s
+      />
+
       <Route path="/privacypolicy" element={<PrivacyPolicy />} />
     </Routes>
   );
 }
 
+// Tworzymy komponent wewnętrzny do logiki sprawdzania koszyka
+function PaymentWrapper() {
+  const { selectedProducts } = React.useContext(CartContext);
+  return selectedProducts.length === 0 ? <PaymentEmptyCart /> : <PaymentWithProduct />;
+}
 
 function App() {
   return (

@@ -25,6 +25,8 @@ const OrderProvider = ({ children }) => {
       productImage: "",
       productName: "",
       productPrice: "",
+      discountApplied: false,
+      discountValue: 0 
     },
 
     billingAddress: {
@@ -68,7 +70,7 @@ const OrderProvider = ({ children }) => {
   }
   
   return (
-    <OrderContext.Provider value={{ orderData, updateOrderData, updateNestedOrderData, isOrderFormValid, setIsOrderFormValid, isOrderInvoiceFormValid, setIsOrderInvoiceFormValid }}>
+    <OrderContext.Provider value={{ orderData, updateOrderData, updateNestedOrderData, isOrderFormValid, setIsOrderFormValid, isOrderInvoiceFormValid, setIsOrderInvoiceFormValid,setOrderData }}>
       {children}
     </OrderContext.Provider>
   );

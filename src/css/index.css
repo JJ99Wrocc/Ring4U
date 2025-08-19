@@ -110,32 +110,82 @@ html,body {
 .log-in-after-log-in{
   display: inline-block;
 }
-.my-order-title{
-  text-align: center;
-  font-size: 28px;
-  font-weight: 700;
-  color: #2c3e50;
-  border-bottom: 3px solid #3498db;
-  padding-top: 10px;
-  padding-bottom: 10px;
+/* Główne kontenery */
+.my-order-title {
+  font-size: 1.8rem;
+  font-weight: bold;
   margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  color: #222;
+  text-align: center;
 }
-.my-order-box{
-  background-color: #ffffff;
+
+.my-order-box {
+  background: #fff;
   border: 1px solid #e0e0e0;
-  width: 95%;
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.my-order-box:hover{
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+.my-order-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Pola zamówienia */
+.my-order-p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.my-order-p strong {
+  color: #111;
+  font-weight: 600;
+}
+
+/* Produkty w zamówieniu */
+.my-order-box ul {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.my-order-box ul li {
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+/* Tekst wyróżniony */
+.order-total {
+  color: #0d6efd; /* np. bootstrapowy niebieski albo Twój brand color */
+  font-weight: 600;
+}
+
+/* Obrazki produktów */
+.my-order-box img {
+  border: 1px solid #ddd;
+  background: #fafafa;
+  transition: transform 0.2s ease;
+}
+
+.my-order-box img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .my-order-box {
+    padding: 15px;
+  }
+  .my-order-p {
+    font-size: 0.9rem;
+  }
+  .my-order-title {
+    font-size: 1.5rem;
+  }
 }
 .ui.header.nav-title {
 
@@ -935,6 +985,7 @@ left: 85%;
 .delivery-boxes.selected {
   border-color: green;
   background-color: #e0ffe0;
+ 
 }
 
 .delivery-boxes{
@@ -964,8 +1015,9 @@ left: 85%;
   display: inline-block;
   width: 100%;
   max-width: 300px;
-  margin: 20px auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .place-order-btn:hover {
@@ -977,7 +1029,107 @@ left: 85%;
 .place-order-btn:active {
   transform: translateY(-1px);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}.payment-option.selected {
+  border-color: green;
+  background-color: #e0ffe0;
+
 }
+.payment-option {
+  transition: all 0.3s ease;
+}
+.messages-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.my-order-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.no-messages {
+  text-align: center;
+  color: #777;
+  font-size: 1rem;
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.message-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px 20px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.message-item.unread {
+  background-color: #e0f7ff;
+}
+
+.message-item.read {
+  background-color: #f9f9f9;
+}
+
+.message-title {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.message-content {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.message-order {
+  font-size: 0.9rem;
+  color: #888;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.message-status {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.message-buttons button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-right: 8px;
+  transition: background-color 0.2s;
+}
+
+.btn-read {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-read:hover {
+  background-color: #45a049;
+}
+
+.btn-delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #d32f2f;
+}
+
 
 @media(max-width: 450px){
   
