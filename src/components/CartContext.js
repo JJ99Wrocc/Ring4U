@@ -54,7 +54,8 @@ export const CartProvider = ({ children }) => {
         p.id === id ? { ...p, amount: Number(newAmount) } : p
       )
     );
-  };
+  }; 
+
   
   return (
     <CartContext.Provider
@@ -66,8 +67,8 @@ export const CartProvider = ({ children }) => {
         addProduct,
         toggleProductSelection,
         selectAllProducts,
-        deselectAllProducts
-      }}
+        deselectAllProducts,
+         }}
     >
       {children}
     </CartContext.Provider>

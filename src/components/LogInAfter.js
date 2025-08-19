@@ -17,10 +17,10 @@ console.log(uid);
         </Link> 
         {show && (
             <div
-            className="Navbar-squeres"
+            className="Navbar-squeres after-log-in"
             style={{
                 width: "170px",
-                height: "110px",
+                height: "150px",
                 left: "-100px",
                 top: "40px",
             }}

@@ -14,15 +14,15 @@ const LogInPreview = ({ show, setShow }) => {
       </Link> 
       {show && (
         <div
-          className="Navbar-squeres"
+          className="Navbar-squeres after-log-in"
           style={{
             width: "170px",
-            height: "40px",
+            height: "85px",
             left: "-100px",
             top: "40px",
           }}
         >
-          <ul style={{ listStyleType: 'none', padding: 0, margin: '10px' }}>
+          <ul >
             <li className="custom-link">
               <Link to="/login">Zaloguj się / Zarejestruj</Link>
             </li>

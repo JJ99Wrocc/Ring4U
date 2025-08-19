@@ -8,9 +8,7 @@ import { getAuth } from "firebase/auth";
 const OrderFinalizationRightBox = () => {
   const { selectedProducts } = useContext(CartContext);
   const { orderData, updateNestedOrderData } = useContext(OrderContext);
-
   const [discountCode, setDiscountCode] = useState("");
-  const [discountApplied, setDiscountApplied] = useState(orderData.shippingAddress.discountApplied);
   const [error, setError] = useState("");
 
   // Obliczenie bazowej ceny
@@ -21,7 +19,7 @@ const OrderFinalizationRightBox = () => {
   }, 0);
 
   // Koszt po rabacie
-  const totalCost = discountApplied
+  const totalCost = orderData.shippingAddress.discountApplied
     ? (baseTotalCost * (1 - orderData.shippingAddress.discountValue)).toFixed(2)
     : baseTotalCost.toFixed(2);
 
@@ -39,13 +37,10 @@ const OrderFinalizationRightBox = () => {
   // Funkcja zastosowania kodu rabatowego
   const applyDiscount = () => {
     if (discountCode.toUpperCase() === "FLOW10") {
-      if (!discountApplied) {
-        setDiscountApplied(true);
-        setError("");
-
-        // Aktualizacja kontekstu
+      if (!orderData.shippingAddress.discountApplied) {
         updateNestedOrderData("shippingAddress", "discountApplied", true);
         updateNestedOrderData("shippingAddress", "discountValue", 0.1); // 10% rabatu
+        setError("");
       } else {
         setError("Kod rabatowy już został zastosowany.");
       }
@@ -58,7 +53,6 @@ const OrderFinalizationRightBox = () => {
   const saveOrder = async () => {
     const auth = getAuth();
     const user = auth.currentUser;
-
     if (!user) {
       alert("Musisz być zalogowany, aby złożyć zamówienie");
       return;
@@ -125,9 +119,9 @@ const OrderFinalizationRightBox = () => {
           value={discountCode}
           onChange={(e) => setDiscountCode(e.target.value)}
           placeholder="Wpisz kod"
-          disabled={discountApplied}
+          disabled={orderData.shippingAddress.discountApplied}
         />
-        <button onClick={applyDiscount} disabled={discountApplied}>
+        <button onClick={applyDiscount} disabled={orderData.shippingAddress.discountApplied}>
           Zastosuj
         </button>
         {error && <p style={{ color: "red" }}>{error}</p>}
@@ -157,13 +151,11 @@ const OrderFinalizationRightBox = () => {
           <img src={product.image} className="order-img" alt={product.name} />
           <div className="order-segment-name">{product.name}</div>
           <div className="order-product-count">
-            {product.selected ? ` ilość  ${product.amount}` : null}
+            {product.selected ? `ilość ${product.amount}` : null}
           </div>
           <div className="order-product-price">{product.price}</div>
         </div>
       ))}
-
-  
     </div>
   );
 };

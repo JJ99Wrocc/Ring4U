@@ -4,7 +4,7 @@ html,body {
     height: 100%;
     padding: 0;
     margin: 0;
-
+    overflow-x: hidden
   }
   .app-wrapper {
     display: flex;
@@ -211,6 +211,7 @@ html,body {
   }
   .Navbar-squeres{
     border: 1px solid black;
+    border-radius: 13%;
     background-color: white;  
     top: 150px; 
     z-index: 9999;
@@ -456,10 +457,7 @@ color: black;
   box-shadow: 3px 3px 3px;
   z-index: 10;
 }
-.main-segment{
-  height: 100vh;
-  background-color: #1F1F1F;
-}
+
 .discount-img{
   background-image: url('../img/color_bar_for_header.png');
   position: relative;
@@ -782,6 +780,7 @@ font-weight: bold;
   position: relative;
   height: 100%;
   margin-top: 150px;
+  width: 100%;
   /* margin-bottom: -150px; */
   /* top: 150px; */
   left: 150px;
@@ -1129,8 +1128,106 @@ left: 85%;
 .btn-delete:hover {
   background-color: #d32f2f;
 }
+.password-reset-p {
+  text-align: center;
+  margin: 10px 0;
+  padding: 5px;
+  user-select: none;
+  color: #111;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+.password-reset-p:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  color: #0d6efd;
+}
+.password-wrapper {
+  max-width: 400px;
+  margin: 50px auto;
+  width: 90%;
+  padding: 30px 25px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
 
+.resset-password-h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
 
+.reset-password-input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reset-password-input:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.3);
+}
+
+.resset-password-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resset-password-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.03);
+}
+
+.password-wrapper p {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #555;
+}
+
+.after-log-in ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+
+}
+
+.after-log-in .custom-link {
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  text-align: center;
+}
+
+.after-log-in .custom-link a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.after-log-in .custom-link:hover {
+  background: #f5f7fa;
+  color: #0d6efd;
+}
 @media(max-width: 450px){
   
   .fa-bars{
@@ -1237,7 +1334,10 @@ left: 85%;
     right:10px;
   }
   
-
+  .Payment-empty-cart{
+    left: 10px;
+    font-size: 10px;
+  }
 
   .payment-left-title{
     font-size: 17px !important;

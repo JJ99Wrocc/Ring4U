@@ -5,7 +5,7 @@ const CartPreview = ({ show }) => {
 
   return (
     <div className="Navbar-squeres Cart">
-      <div className="fa-cart-shop" style={{ textAlign: "center", fontSize: "50px", margin: "20px" }}>
+      <div className="fa-cart-shop" style={{ textAlign: "center", fontSize: "50px", margin: "20px"}}>
         <i className="fa-solid fa-cart-shopping"></i>
       </div>
       <p className="test">Twój koszyk jest pusty</p>

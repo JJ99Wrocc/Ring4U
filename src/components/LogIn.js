@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { auth, googleProvider, facebookProvider } from "../Firebase";
 import {
   signInWithEmailAndPassword,
-  signInWithPopup,
+  signInWithPopup 
 } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -245,6 +245,9 @@ const LogIn = () => {
             <button type="submit" className="ui fluid large teal submit button">
               Zaloguj
             </button>
+            <div className="password-reset-p"  onClick={() => navigate('/forgot-password')}>
+                  Zapomniałem hasła
+            </div>
           </div>
         </form>
 
@@ -261,7 +264,6 @@ const LogIn = () => {
           <hr style={{ flex: 1, marginLeft: 10, alignSelf: "center" }} />
         </div>
 
-        {/* Przycisk logowania Google */}
         <button
           onClick={signInWithGoogle}
           style={{
@@ -279,7 +281,6 @@ const LogIn = () => {
           Zaloguj się przez Google
         </button>
 
-        {/* Przycisk logowania Facebook */}
         <button
           onClick={signInWithFacebook}
           style={{

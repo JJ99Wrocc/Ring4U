@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Header from "./components/Home";
-import NavMain from "./components/NavMain";
+
 import LogIn from "./components/LogIn"; 
 import Discount from "./components/discount";
 import Product from "./components/Products";
@@ -21,6 +21,7 @@ import PaymentEmptyCart from "./components/PaymentEmptyCart"
 import MyOrders from "./components/MyOrders";
 import MyDm from "./components/MyDm";
 import { CartContext } from "./components/CartContext";
+import ForgotPassword from "./components/resetPassword";
 function LayoutWithNavAndFooter({ children }) {
   return (
     <>
@@ -41,7 +42,6 @@ function AppRoutes() {
         element={
           <LayoutWithNavAndFooter>
             <Header />
-            <NavMain />
             <Product />
           </LayoutWithNavAndFooter>
         }
@@ -68,6 +68,14 @@ function AppRoutes() {
         element={
           <LayoutWithNavAndFooter>
             <MyDm />
+          </LayoutWithNavAndFooter>
+        }
+      />
+      <Route
+        path="/forgot-password"
+        element={
+          <LayoutWithNavAndFooter>
+            <ForgotPassword />
           </LayoutWithNavAndFooter>
         }
       />
