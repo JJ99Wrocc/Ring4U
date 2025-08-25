@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../Firebase"; // upewnij się, że ścieżka jest poprawna
 import { CartContext } from "./CartContext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import CartPreview from "./CartPreview";
 import CartAddedProduct from "./CartPreview2";
 import ShowSquare2 from "./ShowSquere2";
@@ -15,11 +15,11 @@ const Navbar = () => {
   const [showLogin, setShowLogin] = useState(false);
   const [showSquare2, setShowSquare2] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
-  const [showBurgerMenu, setShowBurgerMenu] = useState(false);
+
   const { selectedProducts } = useContext(CartContext);
 
   const [user, setUser] = useState(null);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -34,17 +34,17 @@ const Navbar = () => {
     setShowCartPreview(false);
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768 && showBurgerMenu) {
-        setShowBurgerMenu(false);
-      }
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [showBurgerMenu]);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     if (window.innerWidth > 768 && showBurgerMenu) {
+  //       setShowBurgerMenu(false);
+  //     }
+  //   };
+  //   window.addEventListener("resize", handleResize);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, [showBurgerMenu]);
 
   return (
     <div>
@@ -120,35 +120,13 @@ const Navbar = () => {
           className="ui left floated header nav-main"
           style={{ position: "relative" }}
         >
-          <div
-            className="ui left floated header burger-menu"
-            onClick={() => setShowBurgerMenu(!showBurgerMenu)}
-          >
-            <i className="fa-solid fa-bars"></i>
-          </div>
-          {showBurgerMenu && (
-            <div className="burger-dropdown">
-              <Link
-                to="/"
-                className="item mobile-only"
-                onClick={() => setShowBurgerMenu(false)}
-              >
-                Strona Główna
-              </Link>
-              <Link
-                to="/zakupy"
-                className="item mobile-only"
-                onClick={() => setShowBurgerMenu(false)}
-              >
-                Zakupy
-              </Link>
-            </div>
-          )}
+          <span className="mobile-only main-page-mobile" onClick={()=>navigate("/")}>Główna</span>
+        </div>
+        
           <Link to="/" className="look desktop-only">
             Strona Główna
           </Link>
           <ShowSquare2 show={showSquare2} setShow={setShowSquare2} />
-        </div>
       </nav>
     </div>
   );

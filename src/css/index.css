@@ -154,9 +154,9 @@ html,body {
 .my-order-box ul li {
   border-top: 1px solid #eee;
   padding-top: 10px;
+  margin-bottom: 40px !important;
 }
 
-/* Tekst wyróżniony */
 .order-total {
   color: #0d6efd; /* np. bootstrapowy niebieski albo Twój brand color */
   font-weight: 600;
@@ -1230,12 +1230,87 @@ left: 85%;
   background: #f5f7fa;
   color: #0d6efd;
 }
-.privacy-content{
-  padding-top: 160px;
-  padding-bottom: 120px;
-  text-align: center;
-  margin: 20px 40px;
+.privacy-content {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  padding-bottom: 150px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.7;
 }
+
+.privacy-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: #111;
+}
+
+.privacy-content hr {
+  border: none;
+  border-top: 2px solid #eee;
+  margin: 30px 0;
+}
+
+.privacy-content p {
+  margin-bottom: 16px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.privacy-content .strong {
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+}
+
+.privacy-policy-pkt {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 24px 0 12px;
+  color: #0057ff;
+  border-left: 4px solid #0057ff;
+  padding-left: 10px;
+}
+
+.privacy-content ul,
+.privacy-content ol {
+  margin: 12px 0 20px 24px;
+  padding: 0;
+}
+
+.privacy-content li {
+  margin-bottom: 8px;
+}
+
+.privacy-content a {
+  color: #0057ff;
+  text-decoration: none;
+}
+
+.privacy-content a:hover {
+  text-decoration: underline;
+}
+
+.privacy-content code {
+  background: #f6f6f6;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 0.95rem;
+}
+.main-page-mobile{
+  font-size: 14px;
+  display: inline;
+  cursor: pointer;
+}
+
 @media(max-width:992px){
   .ui.inverted.vertical.segment .Copy-right{
     font-size: 13px;
@@ -1609,9 +1684,7 @@ padding: 18px;
           } 
  
   @media (min-width:450px) and (max-width: 568px){
-    .fa-bars{
-      font-size: 19px;
-    }
+    
     .ui.header.nav-title{
       font-size: 25px !important;
     }
@@ -1688,9 +1761,7 @@ padding: 18px;
   
 @media(max-width: 450px){
   
-  .fa-bars{
-    font-size: 20px;
-  }
+
   a.look{
     font-size: 17px !important;
     }
@@ -1989,9 +2060,7 @@ padding: 18px;
   
   
   @media(min-width: 768px){
-    .fa-bars{
-      display: none;
-    }
+   
     .desktop-only {
       display: inline-block;
     }

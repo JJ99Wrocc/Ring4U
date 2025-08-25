@@ -125,11 +125,13 @@ function AppRoutes() {
           </LayoutWithNavAndFooter>
         }
       />
+      <Route path="/privacypolicy" element={<LayoutWithNavAndFooter>
+            <PrivacyPolicy />
+          </LayoutWithNavAndFooter> } />
 
 
       <Route path="/order-finalization" element={<OrderFinalization />} />
       <Route path="/registeremail" element={<RegisterEmail />} />
-      <Route path="/privacypolicy" element={<PrivacyPolicy />} />
     </Routes>
   );
 }

@@ -13,6 +13,7 @@
     const [showUnCheckk, setShowUnCheckk] = useState(false);
     const [showOrderReadMore, setShowOrderReadMore] = useState(false);
     const [showOrderData, setShowOrderData] = useState(false);
+    const [changeText, setChangeText]= useState(false);
 
   
 
@@ -119,10 +120,12 @@
               <span>
                 Tak, chcę otrzymywać oferty i wiadomości...{" "}
                 <button
-                  onClick={() => setShowOrderReadMore(!showOrderReadMore)}
+                  onClick={() => {setShowOrderReadMore(!showOrderReadMore);
+                    setChangeText(!changeText);}
+                  }
                 >
-                  Czytaj więcej
-                </button>
+                 {changeText ? "Czytaj mniej" : "Czytaj więcej"}
+                </button >
                 {showOrderReadMore && <OrderReadMore />}
               </span>
             </div>
