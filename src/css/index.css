@@ -4,11 +4,7 @@ html,body {
     height: 100%;
     padding: 0;
     margin: 0;
-<<<<<<< HEAD
-    /* overflow-x: hidden */
-=======
-    overflow-x: hidden
->>>>>>> 662a2b9b45e88319faec15b6359554bb3ef4a929
+
   }
   .app-wrapper {
     display: flex;
