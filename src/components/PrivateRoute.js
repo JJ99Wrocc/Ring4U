@@ -15,7 +15,7 @@ const PrivateRoute = ({ children }) => {
     return () => unsubscribe();
   }, []);
 
-  if (loading) return null; // można dać spinner zamiast null
+  if (loading) return null;
 
   return user ? children : <Navigate to="/login" replace />;
 };

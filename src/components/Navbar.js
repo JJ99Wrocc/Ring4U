@@ -57,7 +57,7 @@ const Navbar = () => {
           flow<span className="nav-title-span">mart</span>
         </a>
 
-        {/* prawa część navbara */}
+       
         <div
           className="ui right floated header"
           style={{
@@ -68,7 +68,7 @@ const Navbar = () => {
             gap: "15px",
           }}
         >
-          {/* ikona wyszukiwania */}
+          
           <div
             className="search"
             onMouseEnter={() => setShowSearch(true)}
@@ -80,7 +80,6 @@ const Navbar = () => {
             {showSearch && <SearchPreview />}
           </div>
 
-          {/* ikona koszyka */}
           <div
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -99,7 +98,7 @@ const Navbar = () => {
             )}
           </div>
 
-          {/* po zalogowaniu */}
+  
           {user ? (
             <>
               <div className="user-name-after-log-in">
@@ -116,7 +115,7 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* lewa część navbara */}
+
         <div
           className="ui left floated header nav-main"
           style={{ position: "relative" }}

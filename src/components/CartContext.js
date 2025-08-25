@@ -111,11 +111,18 @@ const OrderProvider = ({ children }) => {
         p.id === id ? { ...p, amount: Number(newAmount) } : p
       )
     );
+<<<<<<< HEAD
   };
 
+=======
+  }; 
+
+  
+>>>>>>> 662a2b9b45e88319faec15b6359554bb3ef4a929
   return (
     <OrderContext.Provider
       value={{
+<<<<<<< HEAD
         orderData,
         updateOrderData,
         updateNestedOrderData,
@@ -125,6 +132,17 @@ const OrderProvider = ({ children }) => {
         setIsOrderInvoiceFormValid,
         setOrderData,
       }}
+=======
+        changeProductAmount,
+        selectedProducts,
+        setSelectedProducts,
+        removeProduct,
+        addProduct,
+        toggleProductSelection,
+        selectAllProducts,
+        deselectAllProducts,
+         }}
+>>>>>>> 662a2b9b45e88319faec15b6359554bb3ef4a929
     >
       <CartContext.Provider
         value={{
