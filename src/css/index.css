@@ -58,10 +58,7 @@ html,body {
     background-repeat: no-repeat;
   }
 
-  .ui.vertical.segment:last-child{
-    /* position: absolute; */
-    /* bottom: 0; */
-  }
+
 .Copy-right{
   text-align: center;
 }

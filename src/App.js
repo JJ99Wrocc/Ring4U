@@ -9,8 +9,8 @@ import Header from "./components/Home";
 import LogIn from "./components/LogIn"; 
 import Discount from "./components/discount";
 import Product from "./components/Products";
-import Payment from "./components/Payment";
-import CartProvider, { CartContext } from "./components/CartContext";
+// import Payment from "./components/Payment";
+import CartProvider from "./components/CartContext";
 import CartAddedProduct from "./components/CartPreview2";
 import OrderFinalization from "./components/OrderFinalization";
 import PrivacyPolicy from "./components/PrivacyPolicy";
@@ -20,16 +20,11 @@ import PaymentWithProduct from "./components/PaymentWithProduct";
 import PaymentEmptyCart from "./components/PaymentEmptyCart";
 import MyOrders from "./components/MyOrders";
 import MyDm from "./components/MyDm";
-<<<<<<< HEAD
 import ForgotPassword from "./components/resetPassword";
-
 import PublicRoute from "./components/PublicRoute";
 import PrivateRoute from "./components/PrivateRoute";
-
-=======
 import { CartContext } from "./components/CartContext";
-import ForgotPassword from "./components/resetPassword";
->>>>>>> 662a2b9b45e88319faec15b6359554bb3ef4a929
+
 function LayoutWithNavAndFooter({ children }) {
   return (
     <>
@@ -102,12 +97,17 @@ function AppRoutes() {
           </PrivateRoute>
         }
       />
-<<<<<<< HEAD
+
 
      
-      <Route
+      {/* <Route
         path="/payment"
-=======
+        element={
+          <LayoutWithNavAndFooter>
+          <Payment/>
+        </LayoutWithNavAndFooter>
+        }
+/> */}
       <Route
         path="/forgot-password"
         element={
@@ -119,7 +119,6 @@ function AppRoutes() {
       
       <Route 
         path="/payment" 
->>>>>>> 662a2b9b45e88319faec15b6359554bb3ef4a929
         element={
           <LayoutWithNavAndFooter>
             <PaymentWrapper />

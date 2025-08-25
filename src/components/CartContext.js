@@ -1,15 +1,20 @@
 import React, { createContext, useState, useEffect } from "react";
 
+// Tworzymy konteksty
 export const OrderContext = createContext();
+export const CartContext = createContext();
 
 const OrderProvider = ({ children }) => {
+  // Stany walidacji formularzy
   const [isOrderFormValid, setIsOrderFormValid] = useState(false);
-  const [isOrderInvoiceFormValid, setIsOrderInvoiceFormValid] = useState(false)
+  const [isOrderInvoiceFormValid, setIsOrderInvoiceFormValid] = useState(false);
+
+  // Stan koszyka
+  const [selectedProducts, setSelectedProducts] = useState([]);
+
+  // Stan danych zamówienia
   const [orderData, setOrderData] = useState({
     email: "",
-    
-  
-
     shippingAddress: {
       costumerName: "",
       costumerSurname: "",
@@ -18,7 +23,7 @@ const OrderProvider = ({ children }) => {
       postalCode: "",
       city: "",
       phoneNumber: "",
-      phonePrefix:"",
+      phonePrefix: "",
       selectedCount: "",
       totalCost: "",
       shipping: "",
@@ -48,6 +53,7 @@ const OrderProvider = ({ children }) => {
     useDifferentBilling: false,
   });
 
+  // Funkcja do aktualizacji głównych danych zamówienia
   const updateOrderData = (key, value) => {
     setOrderData((prev) => ({
       ...prev,
@@ -55,6 +61,7 @@ const OrderProvider = ({ children }) => {
     }));
   };
 
+  // Funkcja do aktualizacji zagnieżdżonych danych (np. shippingAddress, billingAddress)
   const updateNestedOrderData = (section, key, value) => {
     setOrderData((prev) => ({
       ...prev,
@@ -65,14 +72,17 @@ const OrderProvider = ({ children }) => {
     }));
   };
 
+  // Zapis koszyka do sessionStorage
   useEffect(() => {
     sessionStorage.setItem("cart", JSON.stringify(selectedProducts));
   }, [selectedProducts]);
 
+  // Usuwanie produktu z koszyka
   const removeProduct = (id) => {
     setSelectedProducts((prev) => prev.filter((p) => p.id !== id));
   };
 
+  // Dodawanie produktu do koszyka
   const addProduct = (newProduct) => {
     setSelectedProducts((prev) => {
       const existing = prev.find((p) => p.id === newProduct.id);
@@ -85,6 +95,7 @@ const OrderProvider = ({ children }) => {
     });
   };
 
+  // Przełączanie wyboru produktu
   const toggleProductSelection = (id) => {
     setSelectedProducts((prev) =>
       prev.map((p) =>
@@ -93,36 +104,32 @@ const OrderProvider = ({ children }) => {
     );
   };
 
+  // Zaznacz wszystkie produkty
   const selectAllProducts = () => {
     setSelectedProducts((prev) =>
       prev.map((p) => ({ ...p, selected: true }))
     );
   };
 
+  // Odznacz wszystkie produkty
   const deselectAllProducts = () => {
     setSelectedProducts((prev) =>
       prev.map((p) => ({ ...p, selected: false }))
     );
   };
 
+  // Zmiana ilości produktu w koszyku
   const changeProductAmount = (id, newAmount) => {
     setSelectedProducts((prev) =>
       prev.map((p) =>
         p.id === id ? { ...p, amount: Number(newAmount) } : p
       )
     );
-<<<<<<< HEAD
   };
 
-=======
-  }; 
-
-  
->>>>>>> 662a2b9b45e88319faec15b6359554bb3ef4a929
   return (
     <OrderContext.Provider
       value={{
-<<<<<<< HEAD
         orderData,
         updateOrderData,
         updateNestedOrderData,
@@ -132,17 +139,6 @@ const OrderProvider = ({ children }) => {
         setIsOrderInvoiceFormValid,
         setOrderData,
       }}
-=======
-        changeProductAmount,
-        selectedProducts,
-        setSelectedProducts,
-        removeProduct,
-        addProduct,
-        toggleProductSelection,
-        selectAllProducts,
-        deselectAllProducts,
-         }}
->>>>>>> 662a2b9b45e88319faec15b6359554bb3ef4a929
     >
       <CartContext.Provider
         value={{
