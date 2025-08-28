@@ -39,27 +39,20 @@ const MyOrders = () => {
       <h2 className="my-order-title">Moje zamówienia</h2>
       <ul>
         {orders.map(order => {
-          
+          // Odczyt rabatu z poziomu zamówienia
           const hasDiscount = !!order.discountApplied;
           const discountValue = parseFloat(order.discountValue || 0);
-          
 
-console.log("shippingAddress:", order.shippingAddress);
-console.log("discountApplied:", order.shippingAddress?.discountApplied);
-console.log("discountValue:", discountValue);
-
-          
-          
+          // Obliczenie całkowitej ceny przed rabatem
           const totalPrice = order.products?.reduce((acc, product) => {
-          
             const priceNumber = parseFloat(product.price.replace(/[^\d,.]/g, '').replace(',', '.'));
             return acc + priceNumber * product.amount;
           }, 0) || 0;
-          
+
+          // Cena po rabacie
           const finalPrice = hasDiscount 
             ? (totalPrice * (1 - discountValue)).toFixed(2) 
             : totalPrice.toFixed(2);
-          
 
           return (
             <li key={order.id} className="my-order-box">

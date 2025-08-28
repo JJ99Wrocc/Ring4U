@@ -28,17 +28,17 @@ const OrderFinalization = () => {
     return sum + numericPrice * (product.amount || 1);
   }, 0);
 
-  // Koszt po rabacie
+
   const totalCost = orderData.shippingAddress.discountApplied
     ? (baseTotalCost * (1 - orderData.shippingAddress.discountValue)).toFixed(2)
     : baseTotalCost.toFixed(2);
 
-  // Liczba wybranych produktów
+
   const selectedCount = selectedProducts
     .filter((p) => p.selected)
     .reduce((sum, p) => sum + (p.amount || 1), 0);
 
-  // Koszt dostawy
+
   const shippingPrice = () => {
     return baseTotalCost === 0 ? 0 : baseTotalCost >= 400 ? "Za darmo" : "20.00zł";
   };

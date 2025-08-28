@@ -15,7 +15,7 @@ const Product = () => {
   };
 
   const products = [
-    { id: 1, name: "Produkt 1", price: "100 zł", image: "obrazek1.jpg" },
+    { id: 1, name: "Produkt 1", price: "100 zł", image: "/img/color_bar_for_header.png" },
     { id: 2, name: "Produkt 2", price: "200 zł", image: "obrazek1.jpg" },
     { id: 3, name: "Produkt 3", price: "300 zł", image: "obrazek1.jpg" },
     { id: 4, name: "Produkt 4", price: "400 zł", image: "obrazek1.jpg" },

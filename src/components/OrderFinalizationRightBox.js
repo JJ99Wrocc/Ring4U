@@ -11,7 +11,7 @@ const OrderFinalizationRightBox = () => {
   const [discountCode, setDiscountCode] = useState("");
   const [error, setError] = useState("");
 
-  // Obliczenie bazowej ceny
+
   const baseTotalCost = selectedProducts.reduce((sum, product) => {
     if (!product.selected) return sum;
     const numericPrice = parseFloat(product.price.toString().replace(/[^\d.]/g, ""));
@@ -49,7 +49,6 @@ const OrderFinalizationRightBox = () => {
     }
   };
 
-  // Funkcja do zapisania zamówienia w Firestore
   const saveOrder = async () => {
     const auth = getAuth();
     const user = auth.currentUser;
@@ -59,8 +58,7 @@ const OrderFinalizationRightBox = () => {
     }
 
     const db = getFirestore();
-    const orderRef = doc(collection(db, "users", user.uid, "orders")); // nowy dokument z automatycznym ID
-
+    const orderRef = doc(collection(db, "users", user.uid, "orders"));
     const orderToSave = {
       orderDate: Timestamp.now(),
       status: "Oczekujące",

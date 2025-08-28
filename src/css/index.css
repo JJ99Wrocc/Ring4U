@@ -6,6 +6,7 @@ html,body {
     margin: 0;
     /* overflow-x: hidden */
   }
+
   .app-wrapper {
     display: flex;
     flex-direction: column;
@@ -19,7 +20,7 @@ html,body {
   }
   .ui.inverted.vertical.segment{
     position: fixed;
-          bottom: 0;
+             bottom: 0;
           width: 100%;
           z-index: 10;
   } 
