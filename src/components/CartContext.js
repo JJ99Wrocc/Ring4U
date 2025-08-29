@@ -1,18 +1,18 @@
 import React, { createContext, useState, useEffect } from "react";
 
-// Tworzymy konteksty
+
 export const OrderContext = createContext();
 export const CartContext = createContext();
 
 const OrderProvider = ({ children }) => {
-  // Stany walidacji formularzy
+
   const [isOrderFormValid, setIsOrderFormValid] = useState(false);
   const [isOrderInvoiceFormValid, setIsOrderInvoiceFormValid] = useState(false);
 
-  // Stan koszyka
+
   const [selectedProducts, setSelectedProducts] = useState([]);
 
-  // Stan danych zamówienia
+  
   const [orderData, setOrderData] = useState({
     email: "",
     shippingAddress: {

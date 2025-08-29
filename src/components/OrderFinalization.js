@@ -141,7 +141,11 @@ const OrderFinalization = () => {
       alert("Uzupełnij wszystkie dane, aby złożyć zamówienie.");
       return;
     }
-  
+    if(selectedPaymentMethod === "Revolut"){
+      const revolutLink = `https://revolut.me/jj99flex/${parseFloat(totalCost).toFixed(2)}pln`
+      window.open(revolutLink, "_blank");
+      return;
+    }
     setLoading(true);
     try {
       const userId = auth.currentUser.uid;

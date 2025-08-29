@@ -15,9 +15,9 @@ const PublicRoute = ({ children }) => {
     return () => unsubscribe();
   }, []);
 
-  if (loading) return null; // poczekaj aż Firebase sprawdzi usera
+  if (loading) return null; 
 
-  // 🔑 jeśli zalogowany → przekieruj do strony głównej
+ 
   if (user) {
     return <Navigate to="/" />;
   }
