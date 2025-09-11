@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/FLOWMART/static/css/main.ad27cdf1.css",
-    "main.js": "/FLOWMART/static/js/main.ce665c7c.js",
-    "static/js/453.e8ec925d.chunk.js": "/FLOWMART/static/js/453.e8ec925d.chunk.js",
-    "static/media/jewelry_header_1920px.png": "/FLOWMART/static/media/jewelry_header_1920px.dc8d695296007ab79af5.png",
-    "static/media/jewelry_header_1200px.png": "/FLOWMART/static/media/jewelry_header_1200px.969090e30e0a317ff61c.png",
-    "static/media/jewelry_header_568px.png": "/FLOWMART/static/media/jewelry_header_568px.cb9080e57060b43f86ff.png",
-    "index.html": "/FLOWMART/index.html",
-    "main.ad27cdf1.css.map": "/FLOWMART/static/css/main.ad27cdf1.css.map",
-    "main.ce665c7c.js.map": "/FLOWMART/static/js/main.ce665c7c.js.map",
-    "453.e8ec925d.chunk.js.map": "/FLOWMART/static/js/453.e8ec925d.chunk.js.map"
+    "main.css": "/static/css/main.3da15c86.css",
+    "main.js": "/static/js/main.cf32a9da.js",
+    "static/js/453.e8ec925d.chunk.js": "/static/js/453.e8ec925d.chunk.js",
+    "static/media/jewelry_header_1920px.png": "/static/media/jewelry_header_1920px.dc8d695296007ab79af5.png",
+    "static/media/jewelry_header_1200px.png": "/static/media/jewelry_header_1200px.969090e30e0a317ff61c.png",
+    "static/media/jewelry_header_568px.png": "/static/media/jewelry_header_568px.cb9080e57060b43f86ff.png",
+    "index.html": "/index.html",
+    "main.3da15c86.css.map": "/static/css/main.3da15c86.css.map",
+    "main.cf32a9da.js.map": "/static/js/main.cf32a9da.js.map",
+    "453.e8ec925d.chunk.js.map": "/static/js/453.e8ec925d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad27cdf1.css",
-    "static/js/main.ce665c7c.js"
+    "static/css/main.3da15c86.css",
+    "static/js/main.cf32a9da.js"
   ]
 }
