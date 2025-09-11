@@ -31,31 +31,26 @@ const MyOrders = () => {
     fetchOrders();
   }, []);
 
-  if (loading) return <p>Ładowanie zamówień...</p>;
-  if (!orders.length) return <p>Brak zamówień.</p>;
+  if (loading) return <p role="status">Ładowanie zamówień...</p>;
+  if (!orders.length) return <p role="status">Brak zamówień.</p>;
 
   return (
     <div>
       <h2 className="my-order-title">Moje zamówienia</h2>
-      <ul>
+      <ul role="list">
         {orders.map(order => {
-          // Odczyt rabatu z poziomu zamówienia
           const hasDiscount = !!order.discountApplied;
           const discountValue = parseFloat(order.discountValue || 0);
-
-          // Obliczenie całkowitej ceny przed rabatem
           const totalPrice = order.products?.reduce((acc, product) => {
             const priceNumber = parseFloat(product.price.replace(/[^\d,.]/g, '').replace(',', '.'));
             return acc + priceNumber * product.amount;
           }, 0) || 0;
-
-          // Cena po rabacie
           const finalPrice = hasDiscount 
             ? (totalPrice * (1 - discountValue)).toFixed(2) 
             : totalPrice.toFixed(2);
 
           return (
-            <li key={order.id} className="my-order-box">
+            <li key={order.id} className="my-order-box" role="listitem" aria-label={`Zamówienie ${order.id}, status ${order.status}`}>
               <p className="my-order-p"><strong>ID zamówienia:</strong> {order.id}</p>
               <p className="my-order-p"><strong>Data zamówienia:</strong> {order.orderDate?.toDate().toLocaleString()}</p>
               <p className="my-order-p"><strong>Data dostawy:</strong> {order.deliveryDate?.toDate().toLocaleString()}</p>
@@ -66,9 +61,14 @@ const MyOrders = () => {
               <p className="my-order-p"><strong>Łączna kwota po rabacie:</strong> {finalPrice} zł</p>
 
               <p className="my-order-p"><strong>Produkty:</strong></p>
-              <ul>
+              <ul role="list">
                 {order.products?.map(product => (
-                  <li key={product.id} style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}>
+                  <li 
+                    key={product.id} 
+                    style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}
+                    role="listitem"
+                    aria-label={`Produkt ${product.name}, ilość ${product.amount}, cena ${product.price} zł`}
+                  >
                     <img 
                       src={product.image} 
                       alt={product.name} 

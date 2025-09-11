@@ -26,17 +26,25 @@ const Product = () => {
   ];
 
   return (
-    <div id="product" className="container">
+    <section id="product" className="container" role="region" aria-label="Lista produktów">
       <div className="row">
         {products.map((product) => (
-          <div key={product.id} className="col-6 col-md-3 mb-4 product">
+          <article 
+            key={product.id} 
+            className="col-6 col-md-3 mb-4 product" 
+            role="group" 
+            aria-label={`${product.name}, cena ${product.price}`}
+          >
             <img src={product.image} className="img-fluid" alt={product.name} />
             <h5>{product.name}</h5>
             <p>{product.price}</p>
-            <button onClick={() => handleButtonClick(product)}>
+            <button 
+              onClick={() => handleButtonClick(product)} 
+              aria-label={`Dodaj ${product.name} do koszyka`}
+            >
               <i className="fa-solid fa-cart-shopping"></i> DODAJ DO KOSZYKA
             </button>
-          </div>
+          </article>
         ))}
       </div>
 
@@ -47,7 +55,7 @@ const Product = () => {
           products={[productToAdd]}  
         />
       )}
-    </div>
+    </section>
   );
 };
 

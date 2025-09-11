@@ -26,12 +26,17 @@ const DeliveryMethod = ({ onSelect }) => {
   };
 
   return (
-    <div className="delivery-box">
+    <div className="delivery-box" aria-live="polite">
       <div
         className={`ui segment first-delivery-box delivery-boxes ${
           selectedDelivery === "inpost" ? "selected" : ""
         }`}
         onClick={() => handleSelect("inpost")}
+        role="button"
+        tabIndex={0}
+        aria-pressed={selectedDelivery === "inpost"}
+        aria-label={`Wybierz dostawę do paczkomatu Inpost, cena: ${getPriceText()}`}
+        onKeyDown={(e) => e.key === "Enter" && handleSelect("inpost")}
       >
         <p>Data dostawy do paczkomatu Inpost (time)</p>
         <p>{getPriceText()}</p>
@@ -45,6 +50,11 @@ const DeliveryMethod = ({ onSelect }) => {
           selectedDelivery === "orlen" ? "selected" : ""
         }`}
         onClick={() => handleSelect("orlen")}
+        role="button"
+        tabIndex={0}
+        aria-pressed={selectedDelivery === "orlen"}
+        aria-label={`Wybierz dostawę do paczkomatu Orlen, cena: ${getPriceText()}`}
+        onKeyDown={(e) => e.key === "Enter" && handleSelect("orlen")}
       >
         <p>Data dostawy do paczkomatu Orlen (time)</p>
         <p>{getPriceText()}</p>

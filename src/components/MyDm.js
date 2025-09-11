@@ -7,7 +7,7 @@ const MyDm = () => {
   const [userUid, setUserUid] = useState(null);
 
   useEffect(() => {
-      const unsubscribeAuth = auth.onAuthStateChanged(user => {
+    const unsubscribeAuth = auth.onAuthStateChanged(user => {
       if (user) {
         setUserUid(user.uid);
       } else {
@@ -43,29 +43,43 @@ const MyDm = () => {
     await updateDoc(messageRef, { status: "read" });
   };
 
-  if (!userUid) return <p>Musisz być zalogowany, aby zobaczyć wiadomości.</p>;
-  if (messages.length === 0) return <p>Brak wiadomości.</p>;
+  if (!userUid) return <p role="alert">Musisz być zalogowany, aby zobaczyć wiadomości.</p>;
+  if (messages.length === 0) return <p role="status">Brak wiadomości.</p>;
 
   return (
     <div className="messages-wrapper">
       <h2 className="my-order-title">Moje wiadomości</h2>
-      <div className="messages-container">
+      <div className="messages-container" role="list">
         {messages.map(msg => (
           <div
             key={msg.id}
             className={`message-item ${msg.status === "unread" ? "unread" : "read"}`}
+            role="listitem"
+            aria-label={`Wiadomość: ${msg.title}, status: ${msg.status}`}
           >
             <h4 className="message-title">{msg.title}</h4>
             <p className="message-content">{msg.content}</p>
-            {msg.orderId && <small className="message-order">Numer zamówienia: {msg.orderId}</small>}
+            {msg.orderId && (
+              <small className="message-order">
+                Numer zamówienia: {msg.orderId}
+              </small>
+            )}
             <p className="message-status">Status: {msg.status}</p>
             <div className="message-buttons">
               {msg.status === "unread" && (
-                <button className="btn-read" onClick={() => markAsRead(msg.id)}>
+                <button
+                  className="btn-read"
+                  onClick={() => markAsRead(msg.id)}
+                  aria-label={`Oznacz wiadomość "${msg.title}" jako przeczytaną`}
+                >
                   Oznacz jako przeczytane
                 </button>
               )}
-              <button className="btn-delete" onClick={() => handleDelete(msg.id)}>
+              <button
+                className="btn-delete"
+                onClick={() => handleDelete(msg.id)}
+                aria-label={`Usuń wiadomość "${msg.title}"`}
+              >
                 Usuń
               </button>
             </div>

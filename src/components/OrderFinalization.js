@@ -7,37 +7,35 @@ import OrderAfterEmail from "./OrderAfterEmail";
 import DeliveryMethod from "./DeliveryMethod.js";
 import PaymentMethods from "./PaymentMethods.js";
 import { auth, db } from "../Firebase";
-import { collection, addDoc, Timestamp,setDoc,getFirestore,  doc } from "firebase/firestore";
+import { collection, addDoc, Timestamp, setDoc, getFirestore, doc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import { getAuth } from "firebase/auth";
+
 const OrderFinalization = () => {
-  const { orderData, updateOrderData,setOrderData,updateNestedOrderData } = useContext(OrderContext);
+  const { orderData, updateOrderData, setOrderData, updateNestedOrderData } = useContext(OrderContext);
   const { selectedProducts, setSelectedProducts } = useContext(CartContext);
-    const [discountCode, setDiscountCode] = useState("");
-    const [error, setError] = useState("");
-       
+  const [discountCode, setDiscountCode] = useState("");
+  const [error, setError] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(false);
   const [isNextValid, setIsNextValid] = useState(false);  
   const [selectedDeliveryMethod, setSelectedDeliveryMethod] = useState(null);       
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState(null);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
- const baseTotalCost = selectedProducts.reduce((sum, product) => {
+
+  const baseTotalCost = selectedProducts.reduce((sum, product) => {
     if (!product.selected) return sum;
     const numericPrice = parseFloat(product.price.toString().replace(/[^\d.]/g, ""));
     return sum + numericPrice * (product.amount || 1);
   }, 0);
 
-
   const totalCost = orderData.shippingAddress.discountApplied
     ? (baseTotalCost * (1 - orderData.shippingAddress.discountValue)).toFixed(2)
     : baseTotalCost.toFixed(2);
 
-
   const selectedCount = selectedProducts
     .filter((p) => p.selected)
     .reduce((sum, p) => sum + (p.amount || 1), 0);
-
 
   const shippingPrice = () => {
     return baseTotalCost === 0 ? 0 : baseTotalCost >= 400 ? "Za darmo" : "20.00zł";
@@ -103,6 +101,7 @@ const OrderFinalization = () => {
       alert("Wystąpił błąd przy zapisie zamówienia.");
     }
   };
+
   const handleDeliverySelect = (method) => {
     setSelectedDeliveryMethod(method);
     updateOrderData("deliveryMethod", method);
@@ -131,7 +130,6 @@ const OrderFinalization = () => {
     return true;
   };
 
-
   const handleOrderSubmit = async () => {
     if (!auth.currentUser) {
       alert("Musisz być zalogowany, aby złożyć zamówienie!");
@@ -141,15 +139,10 @@ const OrderFinalization = () => {
       alert("Uzupełnij wszystkie dane, aby złożyć zamówienie.");
       return;
     }
-    if(selectedPaymentMethod === "Revolut"){
-      const revolutLink = `https://revolut.me/jj99flex/${parseFloat(totalCost).toFixed(2)}pln`
-      window.open(revolutLink, "_blank");
-      return;
-    }
     setLoading(true);
     try {
       const userId = auth.currentUser.uid;
-
+      
       const orderReference = await addDoc(collection(db, "users", userId, "orders"), {
         orderDate: Timestamp.now(),
         status: "processing",
@@ -167,7 +160,7 @@ const OrderFinalization = () => {
         orderId: orderReference.id,
         createdAt: Timestamp.now()
       });
-
+      
       setSelectedProducts([]);
       alert("Zamówienie zostało złożone!");
       navigate("/");
@@ -210,24 +203,29 @@ const OrderFinalization = () => {
         },
         useDifferentBilling: false,
       });
+      if(selectedPaymentMethod === "Revolut"){
+        const revolutLink = `https://revolut.me/jj99flex/${parseFloat(totalCost).toFixed(2)}pln`
+        window.open(revolutLink, "_blank");
+        return;
+      }
     } catch (error) {
       console.error("Błąd przy składaniu zamówienia:", error);
       alert("Wystąpił problem, spróbuj ponownie.");
     }
-
+    
     setLoading(false);
   };
-
+  
   return (
-    <div className="order-finalization-box">
+    <div className="order-finalization-box" role="form" aria-label="Finalizacja zamówienia">
       <div className="container order-box-1">
-        <div className="left-order-brand">
+        <div className="left-order-brand" aria-label="Marka sklepu FLOWMART">
           FLOW<span className="order-brand-2">MART</span>
         </div>
         <div className="right-order">
-          <Link to="/payment" className="look">
-            <i className="fa-solid fa-cart-shopping"></i>
-            <div className="order-circle">{selectedCount}</div>
+          <Link to="/payment" className="look" aria-label="Przejdź do koszyka">
+            <i className="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+            <div className="order-circle" aria-live="polite">{selectedCount}</div>
           </Link>
         </div>
       </div>
@@ -245,6 +243,9 @@ const OrderFinalization = () => {
             type="email"
             className="order-input email"
             placeholder="E-mail *"
+            aria-label="Adres e-mail"
+            aria-required="true"
+            aria-invalid={!isEmailValid && orderData.email.length > 0}
             required
             value={orderData.email}
             onChange={handleEmailChange}
@@ -258,7 +259,9 @@ const OrderFinalization = () => {
             }}
           />
           {!isEmailValid && orderData.email.length > 0 && (
-            <p className="e-mail-error">Wpisz poprawny adres e-mail</p>
+            <p className="e-mail-error" role="alert">
+              Wpisz poprawny adres e-mail
+            </p>
           )}
 
           <hr className="order-line" />
@@ -291,55 +294,56 @@ const OrderFinalization = () => {
           {selectedPaymentMethod && (
             <>
               <hr className="order-line" />
-                   
-                    <div className="mobile-only">
-                    <div>
-                      TWOJE ZAMÓWIENIE <Link to="/payment">EDYTUJ</Link>
-                    </div>
-              
-                    <div className="order-summary">
-                      <div>
-                        {selectedCount} produkt{selectedCount !== 1 ? "y" : ""}
-                      </div>
-                      <div className="order-total-cost">{totalCost} zł</div>
-                    </div>
-              
-                    <div className="shipping-summary">
-                      <div>dostawa </div>
-                      <div>{shipping}</div>
-                    </div>
-              
-                    <div>
-                      <p className="order-discount-enter">KOD RABATOWY:</p>
-                      <input
-                        type="text"
-                        value={discountCode}
-                        onChange={(e) => setDiscountCode(e.target.value)}
-                        placeholder="Wpisz kod"
-                        disabled={orderData.shippingAddress.discountApplied}
-                      />
-                      <button onClick={applyDiscount} disabled={orderData.shippingAddress.discountApplied}>
-                        Zastosuj
-                      </button>
-                      {error && <p style={{ color: "red" }}>{error}</p>}
-                    </div>
-              
-                    <div className="total-summary">
-                      <div>Razem </div>
-                      <div className="order-total">
-                        {baseTotalCost === 0
-                          ? "0.00zł"
-                          : baseTotalCost >= 400
-                          ? totalCost
-                          : (parseFloat(totalCost) + 20).toFixed(2)}{" "}
-                        zł
-                      </div>
-                    </div>
-                    </div>
+              <div className="mobile-only" aria-label="Podsumowanie zamówienia">
+                <div>
+                  TWOJE ZAMÓWIENIE <Link to="/payment">EDYTUJ</Link>
+                </div>
+                <div className="order-summary">
+                  <div>
+                    {selectedCount} produkt{selectedCount !== 1 ? "y" : ""}
+                  </div>
+                  <div className="order-total-cost">{totalCost} zł</div>
+                </div>
+                <div className="shipping-summary">
+                  <div>dostawa </div>
+                  <div>{shipping}</div>
+                </div>
+                <div>
+                  <p className="order-discount-enter">KOD RABATOWY:</p>
+                  <input
+                    type="text"
+                    value={discountCode}
+                    aria-label="Kod rabatowy"
+                    onChange={(e) => setDiscountCode(e.target.value)}
+                    placeholder="Wpisz kod"
+                    disabled={orderData.shippingAddress.discountApplied}
+                  />
+                  <button 
+                    onClick={applyDiscount} 
+                    disabled={orderData.shippingAddress.discountApplied}
+                    aria-label="Zastosuj kod rabatowy"
+                  >
+                    Zastosuj
+                  </button>
+                  {error && <p style={{ color: "red" }} role="alert">{error}</p>}
+                </div>
+                <div className="total-summary">
+                  <div>Razem </div>
+                  <div className="order-total">
+                    {baseTotalCost === 0
+                      ? "0.00zł"
+                      : baseTotalCost >= 400
+                      ? totalCost
+                      : (parseFloat(totalCost) + 20).toFixed(2)}{" "}
+                    zł
+                  </div>
+                </div>
+              </div>
               <button 
                 className="place-order-btn" 
                 onClick={handleOrderSubmit} 
                 disabled={loading}
+                aria-label="Złóż zamówienie"
               >
                 {loading ? "Przetwarzanie..." : "Kup teraz"}
               </button>

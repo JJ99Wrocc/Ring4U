@@ -11,35 +11,30 @@ const OrderFinalizationRightBox = () => {
   const [discountCode, setDiscountCode] = useState("");
   const [error, setError] = useState("");
 
-
   const baseTotalCost = selectedProducts.reduce((sum, product) => {
     if (!product.selected) return sum;
     const numericPrice = parseFloat(product.price.toString().replace(/[^\d.]/g, ""));
     return sum + numericPrice * (product.amount || 1);
   }, 0);
 
-  // Koszt po rabacie
   const totalCost = orderData.shippingAddress.discountApplied
     ? (baseTotalCost * (1 - orderData.shippingAddress.discountValue)).toFixed(2)
     : baseTotalCost.toFixed(2);
 
-  // Liczba wybranych produktów
   const selectedCount = selectedProducts
     .filter((p) => p.selected)
     .reduce((sum, p) => sum + (p.amount || 1), 0);
 
-  // Koszt dostawy
   const shippingPrice = () => {
     return baseTotalCost === 0 ? 0 : baseTotalCost >= 400 ? "Za darmo" : "20.00zł";
   };
   const shipping = shippingPrice();
 
-  // Funkcja zastosowania kodu rabatowego
   const applyDiscount = () => {
     if (discountCode.toUpperCase() === "FLOW10") {
       if (!orderData.shippingAddress.discountApplied) {
         updateNestedOrderData("shippingAddress", "discountApplied", true);
-        updateNestedOrderData("shippingAddress", "discountValue", 0.1); // 10% rabatu
+        updateNestedOrderData("shippingAddress", "discountValue", 0.1);
         setError("");
       } else {
         setError("Kod rabatowy już został zastosowany.");
@@ -95,19 +90,24 @@ const OrderFinalizationRightBox = () => {
   return (
     <div className="right-order-finalization-box hide-above768">
       <div>
-        TWOJE ZAMÓWIENIE <Link to="/payment">EDYTUJ</Link>
+        TWOJE ZAMÓWIENIE{" "}
+        <Link to="/payment" tabIndex={0} aria-label="Edytuj zamówienie">
+          EDYTUJ
+        </Link>
       </div>
 
       <div className="order-summary">
-        <div>
+        <div aria-live="polite">
           {selectedCount} produkt{selectedCount !== 1 ? "y" : ""}
         </div>
-        <div className="order-total-cost">{totalCost} zł</div>
+        <div className="order-total-cost" aria-label={`Koszt produktów: ${totalCost} zł`}>
+          {totalCost} zł
+        </div>
       </div>
 
       <div className="shipping-summary">
         <div>dostawa </div>
-        <div>{shipping}</div>
+        <div aria-label={`Koszt dostawy: ${shipping}`}>{shipping}</div>
       </div>
 
       <div>
@@ -118,8 +118,15 @@ const OrderFinalizationRightBox = () => {
           onChange={(e) => setDiscountCode(e.target.value)}
           placeholder="Wpisz kod"
           disabled={orderData.shippingAddress.discountApplied}
+          aria-label="Wpisz kod rabatowy"
+          tabIndex={0}
         />
-        <button onClick={applyDiscount} disabled={orderData.shippingAddress.discountApplied}>
+        <button
+          onClick={applyDiscount}
+          disabled={orderData.shippingAddress.discountApplied}
+          aria-label="Zastosuj kod rabatowy"
+          tabIndex={0}
+        >
           Zastosuj
         </button>
         {error && <p style={{ color: "red" }}>{error}</p>}
@@ -127,7 +134,7 @@ const OrderFinalizationRightBox = () => {
 
       <div className="total-summary">
         <div>Razem </div>
-        <div className="order-total">
+        <div className="order-total" aria-label={`Łączny koszt: ${totalCost} zł`}>
           {baseTotalCost === 0
             ? "0.00zł"
             : baseTotalCost >= 400
@@ -145,8 +152,19 @@ const OrderFinalizationRightBox = () => {
       <hr style={{ margin: "30px 0" }} />
 
       {selectedProducts.map((product, index) => (
-        <div key={index} className="ui segment order-segment">
-          <img src={product.image} className="order-img" alt={product.name} />
+        <div
+          key={index}
+          className="ui segment order-segment"
+          role="group"
+          aria-label={`Produkt: ${product.name}`}
+          tabIndex={0}
+        >
+          <img
+            src={product.image}
+            className="order-img"
+            alt={product.name}
+            tabIndex={0}
+          />
           <div className="order-segment-name">{product.name}</div>
           <div className="order-product-count">
             {product.selected ? `ilość ${product.amount}` : null}

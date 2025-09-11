@@ -1311,7 +1311,10 @@ left: 85%;
   display: inline;
   cursor: pointer;
 }
-
+.li-privacy-polcy{
+  list-style: none; 
+  padding-left: 0;
+}
 @media(max-width:992px){
   .ui.inverted.vertical.segment .Copy-right{
     font-size: 13px;
