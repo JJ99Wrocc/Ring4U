@@ -145,7 +145,7 @@ function App() {
   return (
     <OrderProvider>
       <CartProvider>
-        <BrowserRouter basename="/Ring4UT">
+        <BrowserRouter >
           <div className="page-wrapper">
             <main className="main-content">
               <AppRoutes />
