@@ -4,9 +4,23 @@ html,body {
     height: 100%;
     padding: 0;
     margin: 0;
-    /* overflow-x: hidden */
+    line-height: 1.55;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Playfair Display', 'Montserrat', serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
 
+  
+  /* Nagłówki */
+  h1, h2, h3, h4 {
+  
+    margin: 0 0 0.6rem 0;
+    color: #222;
+    line-height: 1.15;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
   .app-wrapper {
     display: flex;
     flex-direction: column;
@@ -30,11 +44,11 @@ html,body {
     left: 0;
     width: 100%;
     height: 150px;
-    background-color: #DEB887;
+    background-color: #32312f;
     z-index: 1000; 
   }
 
-  .ui.header.nav-title, .nav-title-span,.look,.header-button,.header-text, .product h5,
+  .ui.header.nav-title, .nav-title-span,.look,.header-button, .product h5,
   .product p,
   .product button, .zoom-loop, .product-add{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.20)
@@ -46,7 +60,7 @@ html,body {
     font-weight: bold;
   }
   .Navbar-squeres,.Nav-added-product-box,.accept-all,.accept-product-box,.product-box-name,.product-box-amount,.product-box-price,.product-box-bin
-  , .product-box-total-cost,.burger-dropdown,.header-button,.heder-button-shadow,.arrow-in-right-corner, .fa-x,.product-added-cost
+  , .product-box-total-cost,.burger-dropdown,.header-button,.header-text,.arrow-in-right-corner, .fa-x,.product-added-cost
   , .product-title,.product-right-button2,.product-name,.product-img,.product-price,.payment-left,.close,.payment-accept-box,.segment-img
   ,.segment-product-name,.segment-product-price,.amount-box,.payment-right,.total-cost,.order-circle,.order-segment-name,.order-product-count
   ,.order-product-price, .delivery-flag,.fa-instagram,.fa-facebook
@@ -78,13 +92,13 @@ html,body {
   color: #F0D8B0;
 }
 .look{
-    color: #2F1B0C;
+    color: #edebe9;
     text-decoration: none;
     font-size: 25px;
     transition: color 0.3s;
 }
 .look:hover{
-    color: #F5DEB3;
+    color: rgb(237, 32, 196);
 }
 .arro{
   font-size: 22px;
@@ -190,7 +204,7 @@ html,body {
 
   text-transform: uppercase;
   text-decoration: none;  
-  color: #4A2E0F;
+  color: #f9f8f7;
   font-size: 40px;
 }
   .nav-title-span{
@@ -406,56 +420,41 @@ html,body {
   margin: 0;
   padding: 0; 
 }
-.header-button{
-  font-size: 24px;
+.header-button{ 
   text-transform: uppercase;
-  font-weight: bold;
   text-align: center;
   align-items: center;
   text-decoration: none;
-  color: black;
-  background-color: #FFF8E7;
   top: 350px;
   left: 115px;
   height: 50px;
   width: 220px;
   transition: background-color 0.3s;
-  box-shadow: 2px 2px 2px;
+  background-color: transparent;
+  color: rgb(248, 245, 245);
+  box-shadow: 1px 1px 1px 1px rgb(248, 2, 125);;
+  font-size: 24px;
  z-index: 1;
 }
+.header-text{
+  top: 300px;
+  left: 115px;
+ color: white;
+}
 .header-button:hover{
-background-color: 	#F0D8B0;
+background-color: 	rgb(248, 2, 125);
 color: black;
 }
-.heder-button-shadow{
-  background-color: transparent;
-  border: 1px solid white;
-  top: 355px;
-  left: 120px;
-  height: 50px;
-  width: 220px;
-  padding: 20px 20px;
 
-}
 .fa-arrow-right-long{
   margin: 0 auto;
   font-size: 24px;
   margin-left: 7px;
 }
-.header-text{
-  position:absolute ;
- font-weight: bold;
-  font-size: 30px;
-  border: 1px solid black;
-  top: 305px;
-  left: 115px;
-  height: 35px;
-  width: 170px;
-  background-color: white;
-  color: black;
-  box-shadow: 3px 3px 3px;
-  z-index: 10;
+.header-button,.heder-button-shadow,.product button,.product-right-button3,.product-right-button2,.Payment-empty-button,  .product-right-button,button{
+  border-radius: 18px;  border: 1px solid rgb(248, 2, 125);background-color: transparent;
 }
+
 
 .discount-img{
   background-image: url('../img/color_bar_for_header.png');
@@ -544,7 +543,7 @@ padding: 10px;
   cursor: pointer;
 }
 .product{ 
-  margin-top: 30px !important;
+  margin-top: 30px !important;text-align: center;
 }
 .product:last-child{
   margin-bottom: -50px !important;
@@ -555,6 +554,9 @@ padding: 10px;
   font-family: 'Arial', sans-serif;
   margin: 8px 0;
   transition:  0.3s;
+}
+.product button {
+  padding: 4px;
 }
 .product button:hover{
   background-color: #F0D8B0;
@@ -604,7 +606,7 @@ right: 30px;}
   right: 300px;
 }
 .product-right-button2{
-  padding-left: 60px;
+  padding-left: 60px;text-align: center;
   gap:50px;
   font-size: 15px;
   top: 350px;
@@ -794,11 +796,10 @@ font-weight: bold;
   font-weight: bold;
 }
 .Payment-empty-button{
-  font-size: 25px;
+  font-size: 20px;
   box-shadow: 3px 3px 3px;
   transition:  0.4s;
-  background-color: #F0D8B0;
-  border-radius: 15%;
+  background-color: transparent;
   transition: scale 0.7s ease-in;
 }
 .Payment-empty-button:hover{
@@ -1314,7 +1315,15 @@ left: 85%;
 .li-privacy-polcy{
   list-style: none; 
   padding-left: 0;
+}.header-animate {
+  transform: translateY(-100%);
+  opacity: 0;
+  animation: slideDown 1s ease forwards;
 }
+
+.pink,.fa-user{color: rgb(248, 2, 125);}
+
+
 @media(max-width:992px){
   .ui.inverted.vertical.segment .Copy-right{
     font-size: 13px;
@@ -1447,10 +1456,10 @@ padding: 18px;
   @media(max-width: 768px){
     .ui.header.nav-title{
       font-size: 30px;
-    }
+    }.main-page-mobile,a.look {color: white;}
     a.look{
       font-size: 20px;
-      color: #4A2E0F; 
+
     }
     a.look:hover{
       color: #DEB887;
@@ -1659,7 +1668,7 @@ padding: 18px;
         display: none;
       }
       .product-right-button3{
-        background-color: #F5DEB3;
+        background-color: #e31f9b;
       }
       .product-right-button3{
         background-color: #DEB887;
@@ -2118,4 +2127,9 @@ padding: 18px;
     50%  { transform: scale(1.05); }
     100% { transform: scale(1); }
   }
-  
+  @keyframes slideDown {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

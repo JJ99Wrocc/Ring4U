@@ -11,7 +11,7 @@ const LogInPreview = ({ show, setShow }) => {
      
     >
       <Link to="/login" className="look">
-        <i className="fa-solid fa-user "></i>
+        <i className="fa-solid fa-user pink"></i>
       </Link> 
       {show && (
         <div

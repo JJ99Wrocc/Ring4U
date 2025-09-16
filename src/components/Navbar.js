@@ -44,14 +44,14 @@ const Navbar = () => {
         role="navigation"
         aria-label="Główne menu"
       >
-        <a 
+        <h1><a 
           className="ui header nav-title" 
           href="/"
           tabIndex="0"
           aria-label="Ring for You - Strona główna"
         >
-          Ring<span className="nav-title-span">4</span>U
-        </a>
+          Ring<span className="nav-title-span pink">4</span>U
+        </a></h1>
 
         <div
           className="ui right floated header"
@@ -136,7 +136,7 @@ const Navbar = () => {
         
         <Link 
           to="/" 
-          className="look desktop-only" 
+          className="look desktop-only pink" 
           role="link" 
           tabIndex="0" 
           aria-label="Strona główna"
