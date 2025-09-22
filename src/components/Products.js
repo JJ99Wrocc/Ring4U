@@ -13,8 +13,8 @@ export const products = [
     {  id: "KST3388", 
       name: "Kolczyki 'Koniczynka' masa perłowa", 
       price: "99.99 zł", 
-      image: "/img/Kolczyki koniczyna KST3388 .jpg", 
-      url: "/product/KST3420",
+      image: "/img/Kolczyki koniczyna KST3388.jpg", 
+      url: "/product/KST3388",
       description: `Kolczyki ze stali szlachetnej platerowane 14-karatowym złotem, sztyft.
   Eleganckie i stylowe kolczyki.
 
@@ -29,15 +29,15 @@ export const products = [
       color: "Jasne złoto", 
       availability: "W magazynie",
       images: [
-        "/img/Kolczyki perła KST3420 3zdj.jpg",
-        "/img/Kolczyki wkrętki KST2982.jpg",
-        "/img/Koniczynka czarna KST3419_2.jpg"
+        "/img/Kolczyki koniczyna KST3388.jpg",
+        // "/img/Kolczyki wkrętki KST2982.jpg",
+        // "/img/Koniczynka czarna KST3419_2.jpg"
       ]},
     {  id: "KST2982", 
       name: "Kolczyki 'Wkrętki' pozłacane", 
       price: "99.99 zł", 
       image: "/img/Kolczyki wkrętki KST2982.jpg", 
-      url: "/product/KST3420",
+      url: "/product/KST2982",
       description: `Kolczyki damskie  platerowane złotem.
   Eleganckie i stylowe kolczyki.
 
@@ -53,9 +53,9 @@ export const products = [
       color: "Jasne złoto", 
       availability: "W magazynie",
       images: [
-        "/img/Kolczyki perła KST3420 3zdj.jpg",
+        // "/img/Kolczyki perła KST3420 3zdj.jpg",
         "/img/Kolczyki wkrętki KST2982.jpg",
-        "/img/Koniczynka czarna KST3419_2.jpg"
+        // "/img/Koniczynka czarna KST3419_2.jpg"
       ]},
     {  id: "KST3420", 
       name: "Kolczyki 'Sztyft' perła", 
