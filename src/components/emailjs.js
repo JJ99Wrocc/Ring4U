@@ -1,30 +1,20 @@
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 
-const handleSendOrder = (e) => {
-  e.preventDefault();
-
+export const sendOrderEmail = (orderData, selectedProducts, totalCost) => {
   const templateParams = {
-    to_name: orderData.name,
+    to_name: `${orderData.shippingAddress.costumerName} ${orderData.shippingAddress.costumerSurname}`,
     email: orderData.email,
-    address: orderData.address,
-    city: orderData.city,
-    postal_code: orderData.postalCode,
-    products: selectedProducts.map(p => `${p.name} (${p.amount})`).join(', '),
+    address: orderData.shippingAddress.address,
+    city: orderData.shippingAddress.city,
+    postal_code: orderData.shippingAddress.postalCode,
+    products: selectedProducts.map(p => `${p.name} (${p.amount})`).join(", "),
     total: `${totalCost} zł`,
   };
 
-  emailjs.send(
-    'YOUR_SERVICE_ID',
-    'YOUR_TEMPLATE_ID',
+  return emailjs.send(
+    "YOUR_SERVICE_ID",   // <- ID z EmailJS
+    "YOUR_TEMPLATE_ID",  // <- ID szablonu EmailJS
     templateParams,
-    'YOUR_PUBLIC_KEY'
-  ).then((response) => {
-    console.log('SUCCESS!', response.status, response.text);
-    alert("Zamówienie wysłane!");
-  }, (err) => {
-    console.log('FAILED...', err);
-    alert("Błąd podczas wysyłania.");
-  });
+    "YOUR_PUBLIC_KEY"    // <- publiczny klucz EmailJS
+  );
 };
-
-export default handleSendOrder;

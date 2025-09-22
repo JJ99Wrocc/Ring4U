@@ -2,7 +2,7 @@ import React from "react";
 
 const PaymentMethods = ({ onSelect, selected }) => {
   const methods = [
-    { id: "Revolut", label: "Revolut" }, // Revolut pierwszy
+    { id: "Revolut", label: "Revolut" }, 
     { id: "PayPal", label: "PayPal" },
   ];
 

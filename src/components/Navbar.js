@@ -16,7 +16,7 @@ const Navbar = () => {
   const [showLogin, setShowLogin] = useState(false);
   const [showSquare2, setShowSquare2] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
-
+  const [scroll, setScroll] = useState(false);
   const { selectedProducts } = useContext(CartContext);
 
   const [user, setUser] = useState(null);
@@ -28,6 +28,18 @@ const Navbar = () => {
     return () => unsubscribe();
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const handleMouseEnter = () => {
     setShowCartPreview(true);
   };
@@ -39,7 +51,7 @@ const Navbar = () => {
     <div>
       <nav
         id="nav"
-        className="ui raised very padded segment"
+        className={`ui raised very padded segment navbar ${scroll ? "scroll" : ""}`}
         style={{ display: "block" }}
         role="navigation"
         aria-label="Główne menu"

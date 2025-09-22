@@ -26,7 +26,8 @@ const OrderProvider = ({ children }) => {
       productName: "",
       productPrice: "",
       discountApplied: false,
-      discountValue: 0 
+      discountValue: 0
+     
     },
 
     billingAddress: {
@@ -49,9 +50,11 @@ const OrderProvider = ({ children }) => {
     },
 
     useDifferentBilling: false,
-    
+    acceptedAge: false,
+  acceptedRodo: false,
   });
-
+  const [showAgeAlert, setShowAgeAlert] = useState(false);
+  const [showRodoAlert, setShowRodoAlert] = useState(false);
   const updateOrderData = (key, value) => {
     setOrderData(prev => ({
       ...prev,
@@ -70,7 +73,10 @@ const OrderProvider = ({ children }) => {
   }
   
   return (
-    <OrderContext.Provider value={{ orderData, updateOrderData, updateNestedOrderData, isOrderFormValid, setIsOrderFormValid, isOrderInvoiceFormValid, setIsOrderInvoiceFormValid,setOrderData }}>
+    <OrderContext.Provider value={{ orderData, updateOrderData, updateNestedOrderData, isOrderFormValid, setIsOrderFormValid, isOrderInvoiceFormValid, setIsOrderInvoiceFormValid,setOrderData, showRodoAlert,
+      setShowRodoAlert,
+      showAgeAlert,
+      setShowAgeAlert }}>
       {children}
     </OrderContext.Provider>
   );

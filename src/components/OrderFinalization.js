@@ -10,9 +10,10 @@ import { auth, db } from "../Firebase";
 import { collection, addDoc, Timestamp, setDoc, getFirestore, doc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import { getAuth } from "firebase/auth";
+import { sendOrderEmail } from "./emailjs.js";
 
 const OrderFinalization = () => {
-  const { orderData, updateOrderData, setOrderData, updateNestedOrderData } = useContext(OrderContext);
+  const { orderData, updateOrderData, setOrderData, updateNestedOrderData,showRodoAlert,showAgeAlert } = useContext(OrderContext);
   const { selectedProducts, setSelectedProducts } = useContext(CartContext);
   const [discountCode, setDiscountCode] = useState("");
   const [error, setError] = useState("");
@@ -160,6 +161,12 @@ const OrderFinalization = () => {
         orderId: orderReference.id,
         createdAt: Timestamp.now()
       });
+      try {
+        await sendOrderEmail(orderData, selectedProducts, totalCost);
+        console.log("Potwierdzenie zamówienia wysłane na email!");
+      } catch (err) {
+        console.error("Błąd wysyłania maila:", err);
+      }
       
       setSelectedProducts([]);
       alert("Zamówienie zostało złożone!");
@@ -202,6 +209,8 @@ const OrderFinalization = () => {
           productPrice: "",
         },
         useDifferentBilling: false,
+  //       acceptedAge: showAgeAlert,
+  // acceptedRodo: showRodoAlert,
       });
       if(selectedPaymentMethod === "Revolut"){
         const revolutLink = `https://revolut.me/jj99flex/${parseFloat(totalCost).toFixed(2)}pln`
@@ -220,7 +229,7 @@ const OrderFinalization = () => {
     <div className="order-finalization-box" role="form" aria-label="Finalizacja zamówienia">
       <div className="container order-box-1">
         <div className="left-order-brand" aria-label="Marka sklepu FLOWMART">
-          FLOW<span className="order-brand-2">MART</span>
+          Ring<span className="order-brand-2 pink">4</span>U
         </div>
         <div className="right-order">
           <Link to="/payment" className="look" aria-label="Przejdź do koszyka">
@@ -325,7 +334,7 @@ const OrderFinalization = () => {
                   >
                     Zastosuj
                   </button>
-                  {error && <p style={{ color: "red" }} role="alert">{error}</p>}
+                  {error && <p style={{ color: "red" }} role="alert">{error}</p>} 
                 </div>
                 <div className="total-summary">
                   <div>Razem </div>
