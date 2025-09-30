@@ -9,6 +9,7 @@ import ShowSquare2 from "./ShowSquere2";
 import LogInPreview from "./LogInPreview";
 import SearchPreview from "./SearchPreview";
 import "../css/index.css";
+import "../css/nav.css"
 import LogInAfter from "../components/LogInAfter"
 
 const Navbar = () => {
@@ -47,12 +48,12 @@ const Navbar = () => {
     setShowCartPreview(false);
   };
 
-  return (
-    <div>
+  return (<div className="container">
+<div>
       <nav
         id="nav"
-        className={`ui raised very padded segment navbar ${scroll ? "scroll" : ""}`}
-        style={{ display: "block" }}
+        className={`   navbar  ${scroll ? "scroll" : ""}`}
+        style={{ display: "flex" }}
         role="navigation"
         aria-label="Główne menu"
       >
@@ -66,10 +67,10 @@ const Navbar = () => {
         </a></h1>
 
         <div
-          className="ui right floated header"
+          className="ui right floated header "
           style={{
             position: "relative",
-            right: "30px",
+            right: "-450px",
             display: "flex",
             alignItems: "center",
             gap: "15px",
@@ -77,7 +78,7 @@ const Navbar = () => {
           role="menubar"
         >
           <div
-            className="search"
+            className=" search-bar"
             onMouseEnter={() => setShowSearch(true)}
             onMouseLeave={() => setShowSearch(false)}
             role="menuitem"
@@ -86,10 +87,11 @@ const Navbar = () => {
             aria-expanded={showSearch}
             aria-label="Szukaj produktów"
           >
-            <a className="look" role="button" tabIndex="0">
-              <i className="fa-solid fa-magnifying-glass"></i>
-            </a>
-            {showSearch && <SearchPreview />}
+            
+            <input type="text" placeholder="Wyszukaj" />
+             <button><i class="fa-solid fa-magnifying-glass"></i></button>
+           
+           
           </div>
 
           <div
@@ -102,8 +104,10 @@ const Navbar = () => {
             aria-expanded={showCartPreview}
             aria-label="Koszyk"
           >
-            <Link to="/payment" className="look" aria-label="Przejdź do płatności" tabIndex="0">
-              <i className="fa-solid fa-cart-shopping"></i>
+            <Link to="/payment" className="look icon" aria-label="Przejdź do płatności" tabIndex="0">
+            <span className="icon-circle">
+            <i class="fa-solid fa-bag-shopping fa-fw"></i>
+            </span>
             </Link>
             {selectedProducts.length === 0 ? (
               <CartPreview show={showCartPreview} setShow={setShowCartPreview} />
@@ -131,35 +135,15 @@ const Navbar = () => {
           )}
         </div>
 
-        <div
-          className="ui left floated header nav-main"
-          style={{ position: "relative" }}
-        >
-          <span 
-            className="mobile-only main-page-mobile" 
-            onClick={()=>navigate("/")}
-            role="link"
-            tabIndex="0"
-            aria-label="Przejdź na stronę główną"
-          >
-            Główna
-          </span>
-        </div>
-        
-        <Link 
-          to="/" 
-          className="look desktop-only pink" 
-          role="link" 
-          tabIndex="0" 
-          aria-label="Strona główna"
-        >
-          Strona Główna
-        </Link>
+   
+     
 
         <ShowSquare2 show={showSquare2} setShow={setShowSquare2} />
       </nav>
     </div>
-  );
+
+  </div>
+      );
 };
 
 export default Navbar;

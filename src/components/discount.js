@@ -8,7 +8,7 @@ const Discount = () => {
     return(
         <>
         <div  
-            className="discount" 
+            className="discount container" 
             onClick={() => setShowBox(true)} 
             role="button"
             tabIndex={0}

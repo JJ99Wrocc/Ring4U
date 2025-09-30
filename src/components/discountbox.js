@@ -36,7 +36,7 @@ const DiscountBox = ({ onClose }) => {
 
   return (
     <div className="discount-box" role="dialog" aria-modal="true" aria-labelledby="discount-title">
-      <div className="discount-content">
+      <div className="discount-content ">
         <button
           className="close-btn"
           onClick={onClose}

@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 
 const ShowSquare2 = ({ show, setShow }) => {
   return (
-    <div
+    <div className="nav-shopping-text"
       onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
       style={{
         display: "inline-block",
         marginLeft: "20px",
         position: "relative",
-        padding: "10px 15px",
+        padding: "10px 15px",left:"-980px"
       }}
     >
-      <a className="look desktop-only" href="#">
-        Zakupy <i className="fa-solid fa-arrow-down"></i>
+      <a className="look desktop-only nav-shopping-text" href="#">
+        Zakupy 
       </a>
 
       {show && (

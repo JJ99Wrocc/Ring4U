@@ -4,7 +4,7 @@ import '../css/index.css';
 
 const Footer = () => {
     return ( 
-        <footer className="ui inverted vertical segment " >
+        <footer className="ui inverted vertical segment container" >
             <div className="ui container">
                
                   

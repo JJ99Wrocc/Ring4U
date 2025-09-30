@@ -10,7 +10,7 @@ const UpperFooter = () => {
   };
 
   return (
-    <footer className="footer " role="contentinfo" aria-label="Stopka strony FlowMart">
+    <footer className="footer container" role="contentinfo" aria-label="Stopka strony FlowMart">
       <div className="footer-container">
 
         {/* Kolumna 1 - Menu / Nawigacja */}

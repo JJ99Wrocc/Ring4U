@@ -10,13 +10,16 @@ const LogInPreview = ({ show, setShow }) => {
       onMouseLeave={() => setShow(false)}
      
     >
-      <Link to="/login" className="look">
-        <i className="fa-solid fa-user pink"></i>
-      </Link> 
+<Link to="/login" >
+  <span className="icon-circle">
+    <i className="fa-solid fa-user fa-fw"></i>
+  </span>
+</Link>
+
       {show && (
         <div
           className="Navbar-squeres after-log-in"
-          style={{
+          style={{position:"absolute",
             width: "170px",
             height: "85px",
             left: "-100px",

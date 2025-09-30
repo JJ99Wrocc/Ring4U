@@ -6,8 +6,8 @@ const PrivacyPolicy = () => {
   return (
     <>
       <Navbar />
-      <main className="privacy-content" role="document" aria-label="Polityka Prywatności FLOWMART">
-        <h1>Polityka Prywatności – FLOWMART</h1>
+      <main className="privacy-content" role="document" aria-label="Polityka Prywatności Ring4U">
+        <h1>Polityka Prywatności – Ring4U</h1>
 
         <section aria-label="Informacje podstawowe">
           <p className="strong">**Wersja:** 1.0</p>
@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
           <ul>
             <li className="li-privacy-polcy">1. **Administrator danych (ADO):** Ring4U / Joachim Esangbedo</li>
             <li className="li-privacy-polcy">2. **Adres:** Nowodworska 39/6, 54-433, Wrocław, Polska</li>
-            <li className="li-privacy-polcy">3. **E-mail kontaktowy:** <a href="mailto:privacy@flowmart.pl">esangbedojoachim@gmail.com</a></li>
+            <li className="li-privacy-polcy">3. **E-mail kontaktowy:** <a href="mailto:privacy@ring4u.pl">esangbedojoachim@gmail.com</a></li>
             <li className="li-privacy-polcy">4. **Telefon :** 791881256</li>
             <li className="li-privacy-polcy">5. **Inspektor Ochrony Danych (IOD):** Brak powołanego IOD / dane kontaktowe, jeśli powołany</li>
           </ul>
@@ -107,7 +107,7 @@ const PrivacyPolicy = () => {
           <ul>
             <li className="li-privacy-polcy">
               1. Prawo dostępu, sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych, sprzeciwu, wycofania zgody, złożenia skargi do organu nadzorczego (UODO). 
-              Żądania można zgłaszać mailowo na adres <a href="mailto:privacy@flowmart.pl">privacy@flowmart.pl</a>. Odpowiedź zostanie udzielona w ciągu 30 dni.
+              Żądania można zgłaszać mailowo na adres <a href="mailto:privacy@ring4u.pl">esangbedojoachim@gmail.com</a>. Odpowiedź zostanie udzielona w ciągu 30 dni.
             </li>
           </ul>
         </section>
@@ -206,7 +206,7 @@ const PrivacyPolicy = () => {
           </ul>
           <hr />
           <p>
-            **Kontakt w sprawie danych osobowych:** <a href="mailto:privacy@flowmart.pl">esangbedojoachim@gmail.com</a><br />
+            **Kontakt w sprawie danych osobowych:** <a href="mailto:privacy@ring4u.pl">esangbedojoachim@gmail.com</a><br />
             **Data ostatniej aktualizacji:** 25 sierpnia 2025 r.
           </p>
         </section>

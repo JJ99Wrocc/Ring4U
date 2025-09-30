@@ -34,8 +34,8 @@
       <>
         <CartAddedProduct />
         <Navbar />
-        <Discount />
         {children}
+        
       </>
     );
   }
@@ -50,6 +50,7 @@
             <LayoutWithNavAndFooter>
               <Header />
               <Product />
+              <Discount />
               <UpperFooter />
             </LayoutWithNavAndFooter>
           }
