@@ -1,0 +1,19 @@
+.burger-menu-img{height: 30px;width: 30px;border-radius: 28%;margin-right: 10px;}
+.submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .submenu-open {
+    max-height: 200px; /* lub więcej, jeśli masz dłuższą listę */
+  }
+  
+  .transition {
+    transition: transform 0.3s ease;
+  }
+  
+  .rotate-180 {
+    transform: rotate(180deg);
+  }
+  

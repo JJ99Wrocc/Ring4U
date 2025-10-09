@@ -10,7 +10,7 @@ const Header = () =>{
                 <h2 className="header-text"><span className="pink">Biżuteria</span>, która podkreśla każdą chwilę</h2>
                 <a  href="#product" className="header-button">Poznaj ofertę </a>
           </div>
-          <div className="img-header-shadow"></div>
+          {/* <div className="img-header-shadow"></div> */}
 
         </div>
     )

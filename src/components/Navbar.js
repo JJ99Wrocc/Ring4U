@@ -11,7 +11,10 @@ import SearchPreview from "./SearchPreview";
 import "../css/index.css";
 import "../css/nav.css"
 import LogInAfter from "../components/LogInAfter"
-
+import { useRef } from "react";
+import bootstrap from "bootstrap/dist/js/bootstrap.bundle";
+import NavbarBurgerMenu from "../components/NavbarBurgerMenu"
+import Pierscionek from "../img/Pierscionek.png"
 const Navbar = () => {
   const [showCartPreview, setShowCartPreview] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
@@ -47,7 +50,13 @@ const Navbar = () => {
   const handleMouseLeave = () => {
     setShowCartPreview(false);
   };
+  const offcanvasRef = useRef(null);
 
+  const handleLinkClick = () => {
+    // Pobieramy instancję offcanvas i zamykamy
+    const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasRef.current);
+    bsOffcanvas.hide();
+  };
   return (<div className="container">
 <div>
       <nav
@@ -63,14 +72,14 @@ const Navbar = () => {
           tabIndex="0"
           aria-label="Ring for You - Strona główna"
         >
-          Ring<span className="nav-title-span pink">4</span>U
+        <img src={Pierscionek} className="navbarr-menu-img "></img>  Ring<span className="nav-title-span pink">4</span>U
         </a></h1>
 
         <div
           className="ui right floated header "
           style={{
             position: "relative",
-            right: "-450px",
+            right: "-40px",
             display: "flex",
             alignItems: "center",
             gap: "15px",
@@ -118,7 +127,7 @@ const Navbar = () => {
               />
             )}
           </div>
-
+            
           {user ? (
             <>
               <div 
@@ -139,7 +148,21 @@ const Navbar = () => {
      
 
         <ShowSquare2 show={showSquare2} setShow={setShowSquare2} />
+        <button
+        className="navbar-toggler mobile-only burger-btn"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Przełącz nawigację"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+
+          <NavbarBurgerMenu />
+
       </nav>
+      
     </div>
 
   </div>

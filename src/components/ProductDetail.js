@@ -56,7 +56,7 @@ const ProductDetail = ({ products }) => {
       aria-labelledby="product-title"
       aria-describedby="product-description"
     >
-      <div className="row g-4">
+      <div className="row g-4 product-detail-container">
         {/* Lewy blok - obrazek */}
         <div className="col-md-6 product-image-wrapper">
           <div

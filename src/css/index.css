@@ -35,7 +35,7 @@ html,body {
   .ui.inverted.vertical.segment{
     position: fixed;
              bottom: 0;
-          width: 100%;
+          width: 100% !important;
           z-index: 10;
   } 
   
@@ -374,7 +374,7 @@ html,body {
   position: relative;
   background-image: url('../img/jewelry_header_1200px.png');
   border-radius: 28px;border: rgb(248, 2, 125);
-  height: 50vh;
+  height: 50vh;max-height: 50vh;
   width: 100%;
   margin: 0;
   padding: 0; 
@@ -382,8 +382,8 @@ html,body {
 .img-header-shadow {
   position: absolute;
   inset: 0; border-radius: 28px;width: 100%;
-  background: rgba(0, 0, 0, 0.6); /* 0.4 = poziom przyciemnienia */
-  z-index: 0;margin: 0 10px;width: 98%;
+  background: rgba(0, 0, 0, 0.5); /* 0.4 = poziom przyciemnienia */
+  z-index: 0;margin: 0 10px;width: 97%;max-height: 50vh;
 }
 .header-button{ 
   text-transform: uppercase;
@@ -1286,7 +1286,7 @@ left: 85%;
   animation: slideDown 1s ease forwards;
 }
 
-.pink{color: rgb(248, 2, 125);}
+.pink{color: rgb(248, 2, 125) !important;}
 
 
 .footer {
@@ -1381,6 +1381,7 @@ left: 85%;
   .footer-links {
     max-height: none !important;
   }
+  
 }
 
 
@@ -1770,32 +1771,36 @@ padding: 18px;
     }
     .ui.inverted.vertical.segment .Copy-right{
       font-size: 13px;
-    }
+    }.ui.container{margin-left: 0 !important;}
     #nav{
       height: 130px;
     }
     .header-button{
-      left: 105px;
-      top: 365px;
+      left: 20px;
+      top: 260px !important;
       height: 30px;
       font-size: 20px;
       width: 170px !important;font-size: 17px;
     }
 
     .header-text{
-      top: 315px ;
-      left: 105px;
-      height: 30px;
-      font-size: 17px;
- 
+      top: 220px !important;
+      left: 20px !important;
+      font-size: 13px;
     }
     .img-header{
-      /* background-image: url('../img/jewelry_header_568px.png'); */
-      /* background-size: cover; */
-      height: 50vh;margin-left: 20px;width: 98%;
+      padding: 0;align-items: center;
+    }
+    .img-header-shadow {
+    
+      border-radius: 28px;width: 98% !important;
+
+      z-index: 0;
     }
     .home-segment{
-      height: 70vh;
+      height: 50vh; display: flex;
+      justify-content: center; /* wyśrodkowanie poziome */
+      align-items: center; width: 100%;
     }
 
     .discount{
@@ -1805,7 +1810,7 @@ padding: 18px;
       font-size: 15px;
     }
     .arrow-in-right-corner{
-      font-size: 15px;
+      display: none;
     }
     .discount-img{
       height: 100px;
@@ -1833,11 +1838,9 @@ padding: 18px;
     .product-box-total-cost{
       font-size: 12px;
     }
-    .ui[class*="right floated"].header{
-      right: -10px !important;
-    }
+
     .product-img{
-      background-image: url('../img/jewelry_header_568px.png');
+      background-image: url('../img/jewelry_header_568px.png');left: 30px;width: 120px !important;height: 120px !important;
     }
     .product-name{
       top: 230px;
@@ -1853,7 +1856,7 @@ padding: 18px;
     }
  
     .product-added-cost,.product-added-p{
-      font-size: 9px;
+      font-size: 9px; white-space: nowrap;
     }
     .payment-accept-box{
       left: 10px;
@@ -1931,6 +1934,10 @@ padding: 18px;
       .order-footer-max-768{
         display: none;
       }
+
+      .product-right-button{
+        width: 100px;   font-size: 10px;
+      }
       .product-right-button3{
         background-color: #e31f9b;
       }
@@ -1970,8 +1977,16 @@ padding: 18px;
     .cookie-buttons button {
         width: 100%;
     }
+    .product-2{
+      margin-top: 40px;width: 10%;
+    }
           } 
- 
+/* @media(min-width:450) and (max-width:600px){
+  .img-header{
+    width: 50% !important;
+    margin: 50px;
+  }
+}  */
   @media (min-width:450px) and (max-width: 568px){
     
     .ui.header.nav-title{
@@ -2039,6 +2054,21 @@ padding: 18px;
   
     
   @media(max-width:360px){ .img-header{width: 90%;margin: 10px;}}
+  @media(max-width:330px){ .img-header{width: 85% !important;margin-left: -10px !important;} 
+  .product{
+    width: 45%;margin-left: 3px !important;
+   }
+  .discount-img{
+    width: 90%;
+  }
+  .zoom-loop{
+    font-size: 10px;
+  }
+  .footer{
+    /* padding: 0;margin: 0; */
+  }
+  .footer-title::after{right: 25px;} 
+}
 @media(max-width: 450px){
   
 
@@ -2058,16 +2088,19 @@ padding: 18px;
     font-size: 20px !important;
   }
   .ui.inverted.vertical.segment .Copy-right{
-    font-size: 10px !important ;
+    font-size: 9px !important ;
+  }
+  .fa-instagram, .fa-facebook{
+    font-size: 15px;
   }
   .header-button{
-    top: 310px;
+    top: 250px;
     left: 20px !important;
     font-size: 13px;height: 20px;width: 130px !important;
   }
   
   .header-text{
-    top: 260px !important;
+    top: 210px !important;
     left: 20px !important;
     font-size: 13px;
   }
@@ -2119,7 +2152,7 @@ padding: 18px;
     left: -30px;
    }
    .product{
-    width: 50%;
+    width: 45%;margin-left: 10px;
    }
    .product-add{
     width: 340px !important;
@@ -2214,7 +2247,12 @@ padding: 18px;
     left: 10px;
     top: 50px;
   }
+  .img-header-shadow {
+    
+    border-radius: 28px;width: 95% !important;
 
+    z-index: 0;
+  }
 }
           
 @media(max-width: 1200px){
@@ -2276,7 +2314,7 @@ padding: 18px;
       
     }
     @media(max-width: 568px){
-   
+      .footer{border-radius: 0 !important;}
       .payment-right{
         right: 10px;
       }
