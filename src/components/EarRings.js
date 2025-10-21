@@ -250,6 +250,26 @@ export const earRings = [
              image2:  "/img/Kolczyki eperełki złote-KST3325 (1).jpg",
              image3:  "/img/Kolczyki eperełki złote-KST3325 (2).jpg",
             },
+         { 
+           id: "KST3325", 
+           name: "Kolczyki 'Muszelki' złote", 
+           price: "99.99 zł", 
+           image: "/img/Kolczyki eperełki złote-KST3325.jpg", 
+           url: "/product/KST3325",
+           description: ["Kolczyki damskie  platerowane złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
+           specs: {
+             "Wymiar kolczyków": "1,7cm x 1,7cm x 0,8cm",
+             "Wymiar kartonika": "6 cm x 5,5 cm ",
+             "Waga": "10g netto / 13g brutto",  
+             "Kolor": " złoto",  
+             "Rodzaj zapięcia": "sztyft",  
+           },
+           material: "Stal szlachetna", 
+           color: "jasne złoto", 
+           availability: "W magazynie",
+             image2:  "/img/Kolczyki eperełki złote-KST3325 (1).jpg",
+             image3:  "/img/Kolczyki eperełki złote-KST3325 (2).jpg",
+            },
       
         ]
 
