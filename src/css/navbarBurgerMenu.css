@@ -6,7 +6,7 @@
   }
   
   .submenu-open {
-    max-height: 200px; /* lub więcej, jeśli masz dłuższą listę */
+    max-height: 250px; /* lub więcej, jeśli masz dłuższą listę */
   }
   
   .transition {

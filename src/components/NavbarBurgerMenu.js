@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import "../css/navbarBurgerMenu.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import bootstrap from "bootstrap/dist/js/bootstrap.bundle";
-import Pierscionek from "../img/Pierscionek.png"
+import Pierscionek from "../img/Pierscionek.png";import { Link, useNavigate } from "react-router-dom";
 const NavbarBurgerMenu = () => {
   const offcanvasRef = useRef(null);
 
@@ -13,10 +13,24 @@ const NavbarBurgerMenu = () => {
   const [socialOpen, setSocialOpen] = useState(false);
 
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (e) => {
+    // e.preventDefault(); // ⛔️ zapobiega przeładowaniu strony
     const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasRef.current);
-    if (bsOffcanvas) bsOffcanvas.hide();
+    if (bsOffcanvas) {
+      bsOffcanvas.hide();
+      setTimeout(() => {
+        document.body.classList.remove("offcanvas-backdrop");
+        const backdrop = document.querySelector(".offcanvas-backdrop");
+        if (backdrop) backdrop.remove();
+      }, 200);
+    }
+  
+    // 🚀 Ręcznie przejdź do trasy
+    const link = e.currentTarget.getAttribute("href") || e.currentTarget.getAttribute("to");
+    if (link) window.history.pushState({}, "", link);
   };
+  
+  
 
 
   const toggleZakupy = () => setZakupyOpen((prev) => !prev);
@@ -67,28 +81,46 @@ const NavbarBurgerMenu = () => {
             >
               <hr></hr>
               <li>
-                <a href="#products" className="nav-link" onClick={handleLinkClick}>
-                  Kolczyki <i class="fa-solid fa-arrow-right"></i>
-                </a>
-              </li>
+  <Link
+    to="/ear-rings"
+    className="nav-link"
+    onClick={handleLinkClick}
+  >
+    Kolczyki <i className="fa-solid fa-arrow-right"></i>
+  </Link>
+</li>
               <hr></hr>
               <li>
-                <a href="#promotions" className="nav-link" onClick={handleLinkClick}>
-                  Branzoletki <i class="fa-solid fa-arrow-right"></i>
-                </a>
-              </li>
+  <Link
+    to="/necklace"
+    className="nav-link"
+    onClick={handleLinkClick}
+  >
+   Naszyjniki <i className="fa-solid fa-arrow-right"></i>
+  </Link>
+</li>
               <hr></hr>
               <li>
-                <a href="#products" className="nav-link" onClick={handleLinkClick}>
-                  Naszyjniki <i class="fa-solid fa-arrow-right"></i>
-                </a>
-              </li>
+  <Link
+    to="/bracelet"
+    className="nav-link"
+    onClick={handleLinkClick}
+  >
+    Branzoletki <i className="fa-solid fa-arrow-right"></i>
+  </Link>
+</li>
               <hr></hr>
               <li>
-                <a href="#promotions" className="nav-link" onClick={handleLinkClick}>
-                  Pierścionki <i class="fa-solid fa-arrow-right"></i>
-                </a>
-              </li>
+  <Link
+    to="/rings"
+    className="nav-link"
+    onClick={handleLinkClick}
+  >
+    Pierścionki <i className="fa-solid fa-arrow-right"></i>
+  </Link>
+</li>
+              <hr></hr>
+           
              
             </ul>
           </li>
@@ -114,12 +146,13 @@ const NavbarBurgerMenu = () => {
               className={`submenu list-unstyled ps-3 ${
                 aboutOpen ? "submenu-open" : ""
               }`}
-            ><hr></hr>
+            >
+              {/* <hr></hr>
               <li>
                 <a href="#team" className="nav-link" onClick={handleLinkClick}>
                   Zespół
                 </a>
-              </li>
+              </li> */}
               <hr></hr>
               <li>
                 <a href="#mission" className="nav-link" onClick={handleLinkClick}>

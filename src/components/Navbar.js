@@ -98,7 +98,7 @@ const Navbar = () => {
           >
             
             <input type="text" placeholder="Wyszukaj" />
-             <button><i class="fa-solid fa-magnifying-glass"></i></button>
+             <button><i className="fa-solid fa-magnifying-glass"></i></button>
            
            
           </div>
@@ -115,7 +115,7 @@ const Navbar = () => {
           >
             <Link to="/payment" className="look icon" aria-label="Przejdź do płatności" tabIndex="0">
             <span className="icon-circle">
-            <i class="fa-solid fa-bag-shopping fa-fw"></i>
+            <i className="fa-solid fa-bag-shopping fa-fw"></i>
             </span>
             </Link>
             {selectedProducts.length === 0 ? (

@@ -29,6 +29,12 @@
   import CookieConsent from "./components/CookieConsent";
   import Product, { products } from "./components/Products";
   import ProductDetail from "./components/ProductDetail";
+  import EarRings from "./components/EarRings";
+  import Bracelet from "./components/Bracelet";
+  import Necklace from "./components/Necklace";
+  import Rings from "./components/Rings"
+  
+  import { earRings } from "./components/EarRings";
   function LayoutWithNavAndFooter({ children }) {
     return (
       <>
@@ -63,6 +69,56 @@
             <PublicRoute>
               <LayoutWithNavAndFooter>
                 <LogIn />
+              </LayoutWithNavAndFooter>
+            </PublicRoute>
+          }
+        />
+
+<Route
+  path="/product/:productId"
+  element={
+    <LayoutWithNavAndFooter>
+      <ProductDetail products={[...products, ...earRings]} />
+      <UpperFooter />
+    </LayoutWithNavAndFooter>
+  }
+/>
+        <Route
+          path="/ear-rings"
+          element={
+            <PublicRoute>
+              <LayoutWithNavAndFooter>
+                <EarRings />
+              </LayoutWithNavAndFooter>
+            </PublicRoute>
+          }
+        />
+        <Route
+          path="/bracelet"
+          element={
+            <PublicRoute>
+              <LayoutWithNavAndFooter>
+                <Bracelet />
+              </LayoutWithNavAndFooter>
+            </PublicRoute>
+          }
+        />
+        <Route
+          path="/necklace"
+          element={
+            <PublicRoute>
+              <LayoutWithNavAndFooter>
+                <Necklace />
+              </LayoutWithNavAndFooter>
+            </PublicRoute>
+          }
+        />
+        <Route
+          path="/rings"
+          element={
+            <PublicRoute>
+              <LayoutWithNavAndFooter>
+                <Rings />
               </LayoutWithNavAndFooter>
             </PublicRoute>
           }
@@ -113,15 +169,7 @@
             </PrivateRoute>
           }
         />
-<Route
-  path="/product/:productId"
-  element={
-    <LayoutWithNavAndFooter>
-      <ProductDetail products={products} />
-      <UpperFooter />
-    </LayoutWithNavAndFooter>
-  }
-/>
+
 
         <Route
           path="/my-dm"

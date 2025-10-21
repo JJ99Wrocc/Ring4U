@@ -59,14 +59,14 @@ const ProductAdded = ({ visible, setVisible, products }) => {
                   alt={product.name}
                 />
                 <div className="product-name product-added-p">{product.name}</div>
-                <div className="product-price product-added-p">{product.price}</div>
+                {/* <div className="product-price product-added-p">{product.price}</div> */}
               </article>
             ))}
           </div>
 
           <div className="col-6 border-start border-black border-1 custom-border" role="region" aria-label="Podsumowanie koszyka">
             <div className="right">
-              <p>Twój koszyk</p>
+              <p className="product-added-right-title">Twój koszyk</p>
               <p className="product-added-p"> {selectedCount} Produkty </p>
               <p className="product-added-p">
                 Cena produktów: <span className="product-added-cost">{totalCost}</span> zł

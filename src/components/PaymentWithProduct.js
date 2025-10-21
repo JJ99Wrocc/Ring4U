@@ -99,10 +99,10 @@ const PaymentWithProduct = () => {
                 alt={product.name}
               />
               <p className="segment-product-name">{product.name}</p>
-              <p className="segment-product-price price">{product.price}</p>
+              <p className="segment-product-price-payment price">{product.price}</p>
 
               <div className="amount-box">
-                <div className="segment-product-amount ui segment">
+                <div className="segment-product-amount-payment ui segment">
                   <label htmlFor={`amount-${product.id}`} className="sr-only">
                     Ilość produktu {product.name}
                   </label>
