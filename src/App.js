@@ -3,7 +3,7 @@
   import 'aos/dist/aos.css';
   import 'bootstrap/dist/css/bootstrap.min.css';
   import Navbar from "./components/Navbar";
-  import Footer from "./components/Footer";
+
   import Header from "./components/Home";
   import PasswordReset from "./components/PasswordReset";
   import TermsOfService from "./components/TermsOfServices";
@@ -25,7 +25,7 @@
   import PublicRoute from "./components/PublicRoute";
   import PrivateRoute from "./components/PrivateRoute";
   import { CartContext } from "./components/CartContext";
-  import UpperFooter from "./components/UpperFooter";
+  import Footer from "./components/Footer";
   import CookieConsent from "./components/CookieConsent";
   import Product, { products } from "./components/Products";
   import ProductDetail from "./components/ProductDetail";
@@ -38,12 +38,16 @@
   // import { necklace } from "./components/Necklace";
   function LayoutWithNavAndFooter({ children }) {
     return (
-      <>
-        <CartAddedProduct />
-        <Navbar />
+      <div className="app-container"> 
+      <CartAddedProduct />
+      <Navbar />
+      
+      <main className="content-grow"> 
         {children}
-        
-      </>
+      </main>
+      
+      <Footer />
+    </div>
     );
   }
 
@@ -58,7 +62,7 @@
               <Header />
               <Product />
               <Discount />
-              <UpperFooter />
+      
             </LayoutWithNavAndFooter>
           }
         />
@@ -80,7 +84,7 @@
   element={
     <LayoutWithNavAndFooter>
       <ProductDetail products={[...products]} />
-      <UpperFooter />
+  
     </LayoutWithNavAndFooter>
   }
 />
@@ -155,7 +159,7 @@
               <LayoutWithNavAndFooter>
                 <MyOrders />
               </LayoutWithNavAndFooter>
-              <UpperFooter />
+       
             </PrivateRoute>
           }
         />
@@ -166,7 +170,7 @@
               <LayoutWithNavAndFooter>
                 <TermsOfService />
               </LayoutWithNavAndFooter>
-              <UpperFooter />
+     
             </PrivateRoute>
           }
         />
@@ -179,7 +183,7 @@
               <LayoutWithNavAndFooter>
                 <MyDm />
               </LayoutWithNavAndFooter>
-              <UpperFooter />
+
             </PrivateRoute>
           }
         />
@@ -213,7 +217,7 @@
         />
         <Route path="/privacypolicy" element={<LayoutWithNavAndFooter>
               <PrivacyPolicy />
-              <UpperFooter />
+             
             </LayoutWithNavAndFooter> } />
 
 
@@ -238,7 +242,7 @@
                 <AppRoutes />
               </main>
               {/* <EcarlaImport /> */}
-              <Footer />
+        
             </div>
             <CookieConsent />
           </BrowserRouter>

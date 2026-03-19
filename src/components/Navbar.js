@@ -57,7 +57,9 @@ const Navbar = () => {
     const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasRef.current);
     bsOffcanvas.hide();
   };
-  return (<div className="container">
+  return (
+    <div className="nav-sticky-wrapper">
+  <div className="container">
 <div>
       <nav
         id="nav"
@@ -165,6 +167,7 @@ const Navbar = () => {
       
     </div>
 
+  </div>
   </div>
       );
 };

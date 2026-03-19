@@ -3,7 +3,7 @@ import { CartContext } from "./CartContext";
 // import ProductAdded from "./ProductsAdded";
 import { Link } from "react-router-dom";
 import '../css/earRings.css';
-import UpperFooter from "./UpperFooter";
+import UpperFooter from "./Footer";
 export const earRings = [
     {  id: "KST1415", 
         name: "Kolczyki 'Koniczynka' czarna", 

@@ -1,0 +1,108 @@
+.Payment-empty-cart{
+    position: relative;
+    height: 100%;
+    margin-top: 150px;
+    width: 100%;
+
+    left: 150px;
+
+  }
+    .Payment-empty-p{
+    padding: 20px 0;
+    font-size: 15px;  }
+  .Payment-empty-title{
+
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .Payment-empty-button{
+    font-size: 20px;
+    box-shadow: 3px 3px 3px;
+    transition:  0.4s;
+    background-color: transparent;
+    transition: scale 0.7s ease-in;
+  }
+  .Payment-empty-button:hover{
+    background-color: #DEB887;
+    color: #2F1B0C;
+  
+    transform: scale(1.1);
+  }
+  Payment-empty-button{
+    border-radius: 18px;  border: 1px solid rgb(248, 2, 125);background-color: transparent;
+  }
+  .Payment-empty-text,.Payment-empty-title,  .Payment-empty-title,.Payment-empty-p{
+    color: aliceblue;
+  }
+  @media(max-width:1200px){
+    
+  }
+  @media(max-width:992px){
+    .Payment-empty-cart{
+        left: 80px;
+         }
+         .Payment-empty-title{
+            font-size: 39px;
+            }
+       .Payment-empty-p{
+           font-size: 15px;
+           padding: 5px 0;
+           margin-bottom: 5px;
+           }
+       .payment-empty-strong{
+           margin-bottom: 5px;
+           }
+       .Payment-empty-button{
+           font-size: 25px;
+           margin-top: 10px;
+           }    
+           .Payment-empty-text{
+            font-size: 13px;
+            padding: 18px;
+            }           
+  }
+  @media(max-width:768px){
+
+  }
+  @media(max-width:576px){
+    .Payment-empty-cart{
+        left: 30px;
+        font-size: 10px;
+      }
+      .Payment-empty-title{
+        font-size: 34px;
+      }
+      .Payment-empty-p{
+        font-size: 14px;
+        padding: 5px 0;
+        margin-bottom: 5px;
+      }
+      .payment-empty-strong{
+        margin-bottom: 5px;
+      }
+      .Payment-empty-button{
+        font-size: 23px;
+        margin-top: 10px;
+      }
+      .Payment-empty-text{
+        font-size: 13px;
+        padding: 15px;
+      } 
+  }
+  @media(max-width:450px){
+    
+  .Payment-empty-p{
+    font-size: 11px;
+    padding: 5px 0;
+    margin-bottom: 5px;
+  }
+  .Payment-empty-button{
+    font-size: 20px;
+
+  }
+
+  .Payment-empty-text{
+   
+    padding: 10px;
+  }
+  }

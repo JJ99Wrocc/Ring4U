@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "./CartContext";
+import "../css/PaymentWithProduct.css";
 
 const PaymentWithProduct = () => {
   const {
@@ -47,7 +48,7 @@ const PaymentWithProduct = () => {
     <div className="payment-box" role="region" aria-label="Koszyk użytkownika">
       <div className="payment-left beyond768a">
         <div className="payment-left-title">TWÓJ KOSZYK</div>
-        <p>
+        <p className="payment-left-title-p">
           Łącznie {selectedCount} sztuk{" "}
           <span style={{ fontWeight: "bold" }}>
             {totalCost === 0

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { CartContext } from "./CartContext";
 import { Link } from "react-router-dom";
-import UpperFooter from "./UpperFooter";
+import UpperFooter from "./Footer";
 import ProductAdded from "./ProductsAdded";
 
 const Necklace = () => {
