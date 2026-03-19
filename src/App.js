@@ -33,8 +33,9 @@
   import Bracelet from "./components/Bracelet";
   import Necklace from "./components/Necklace";
   import Rings from "./components/Rings"
-  
-  import { earRings } from "./components/EarRings";
+  // import EcarlaImport from "./components/EcarlaImport";
+  // import { earRings } from "./components/EarRings";
+  // import { necklace } from "./components/Necklace";
   function LayoutWithNavAndFooter({ children }) {
     return (
       <>
@@ -78,7 +79,7 @@
   path="/product/:productId"
   element={
     <LayoutWithNavAndFooter>
-      <ProductDetail products={[...products, ...earRings]} />
+      <ProductDetail products={[...products]} />
       <UpperFooter />
     </LayoutWithNavAndFooter>
   }
@@ -236,7 +237,7 @@
               <main className="main-content">
                 <AppRoutes />
               </main>
-              
+              {/* <EcarlaImport /> */}
               <Footer />
             </div>
             <CookieConsent />

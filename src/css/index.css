@@ -8,6 +8,7 @@ html,body {
     letter-spacing: 0.01em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background: #000;
     font-family: 'Playfair Display', 'Montserrat', serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
 
@@ -39,26 +40,26 @@ html,body {
           z-index: 10;
   } 
   
-  .ui.header.nav-title, .nav-title-span,.look,.header-button, .product h5,
+  .ui.header.nav-title, .nav-title-span,.look,.header, .product h5,
   .product p,
-  .product button, .zoom-loop, .product-add,.header-text{
+  .product button, .zoom-loop, .product-add{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.20)
   }
-  .checkbox-box,.order-box-1,.discount-img, .header-text, .product-add,.accept-all, .payment-text3, .product-box-amount,.inside-box, .product-right-button2,.amount-box   {
+  .checkbox-box,.order-box-1,.discount-img, .product-add,.accept-all, .payment-text3, .product-box-amount,.inside-box, .product-right-button2,.amount-box   {
     display: flex;
     align-items: center;  
     justify-content: center;
     font-weight: bold;
   }
   .Navbar-squeres,.Nav-added-product-box,.accept-all,.accept-product-box,.product-box-name,.product-box-amount,.product-box-price,.product-box-bin
-  , .product-box-total-cost,.burger-dropdown,.header-button,.header-text,.arrow-in-right-corner, .fa-x,.product-added-cost
+  , .product-box-total-cost,.burger-dropdown,.arrow-in-right-corner, .fa-x,.product-added-cost
   , .product-title,.product-right-button2,.product-name,.product-img,.product-price,.payment-left,.close,.payment-accept-box,.segment-img
   ,.segment-product-name,.segment-product-price,.amount-box,.payment-right,.total-cost,.order-circle,.order-segment-name,.order-product-count
   ,.order-product-price, .delivery-flag,.fa-instagram,.fa-facebook
   {
     position: absolute;
   }
-  .img-header,.product-img,.segment-img,.order-img,  .product-box-img{
+  .product-img,.segment-img,.order-img,  .product-box-img{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -370,54 +371,17 @@ html,body {
 .desktop-only {
   display: none;
 }
-.img-header{ 
-  position: relative;
-  background-image: url('../img/jewelry_header_1200px.png');
-  border-radius: 28px;border: rgb(248, 2, 125);
-  height: 50vh;max-height: 50vh;
-  width: 100%;
-  margin: 0;
-  padding: 0; 
-}
-.img-header-shadow {
-  position: absolute;
-  inset: 0; border-radius: 28px;width: 100%;
-  background: rgba(0, 0, 0, 0.5); /* 0.4 = poziom przyciemnienia */
-  z-index: 0;margin: 0 10px;width: 97%;max-height: 50vh;
-}
-.header-button{ 
-  text-transform: uppercase;
-  text-align: center;
-  align-items: center;
-  text-decoration: none;
-  top: 270px;
-  left: 100px;
-  height: 35px;
-  width: 220px;
-  transition: background-color 0.3s;
-  background-color: transparent;
-  color: rgb(248, 245, 245);
-  box-shadow: 1px 1px 1px 1px rgb(248, 2, 125);;
-  font-size: 22px;
- z-index: 100;
-}
-.header-text{ white-space: nowrap !important;
-  font-size: 22px;
-  top: 220px;
-  left: 100px;
- color: white;z-index: 100;
-}
-.header-button:hover{
-background-color: 	rgb(248, 2, 125);
-color: black;
-}
+
+
+
+
 
 .fa-arrow-right-long{
   margin: 0 auto;
   font-size: 24px;
   margin-left: 7px;
 }
-.header-button,.heder-button-shadow,.product button,.product-right-button3,.product-right-button2,.Payment-empty-button,  .product-right-button,button{
+.product button,.product-right-button3,.product-right-button2,.Payment-empty-button,  .product-right-button,button{
   border-radius: 18px;  border: 1px solid rgb(248, 2, 125);background-color: transparent;
 }
 
@@ -1610,15 +1574,8 @@ left: 85%;
     font-size: 20px;
     margin-left: 70px !important;
   }
-  .header-button{
-    top: 250px;left: 50px;
-    width: 190px;font-size: 16px;height: 30px;width:  150px;
-  }
- 
-  .header-text{font-size: 18px;
-    top: 200px;left: 50px;
 
-  }    
+
   .Nav-added-product-box{
     width: 350px;
     height: 220px;
@@ -1778,33 +1735,9 @@ padding: 18px;
     #nav{
       height: 130px;
     }
-    .header-button{
-      left: 20px;
-      top: 260px !important;
-      height: 30px;
-      font-size: 20px;
-      width: 170px !important;font-size: 17px;
-    }
 
-    .header-text{
-      top: 220px !important;
-      left: 20px !important;
-      font-size: 13px;
-    }
-    .img-header{
-      padding: 0;align-items: center;
-    }
-    .img-header-shadow {
-    
-      border-radius: 28px;width: 98% !important;
+   
 
-      z-index: 0;
-    }
-    .home-segment{
-      height: 50vh; display: flex;
-      justify-content: center; /* wyśrodkowanie poziome */
-      align-items: center; width: 100%;
-    }
     .segment-product-amount-payment{left: 140px;top: 13px;}
     .discount{
       padding-top: 30px;
@@ -1984,12 +1917,7 @@ padding: 18px;
       margin-top: 40px;width: 10%;
     }
           } 
-/* @media(min-width:450) and (max-width:600px){
-  .img-header{
-    width: 50% !important;
-    margin: 50px;
-  }
-}  */
+
   @media (min-width:450px) and (max-width: 568px){
     
     .ui.header.nav-title{
@@ -2006,19 +1934,8 @@ padding: 18px;
       .ui.inverted.vertical.segment .Copy-right{
         font-size: 12px;
       }
-      .header-button{
-        top: 360px;
-        left: 20px !important;
-        width: 150px !important;font-size: 15px;
-      }
 
-      .header-text{
-        top: 310px;
-        left: 20px !important;
-        height: 30px;
-        font-size: 14px;
-
-      }
+   
       .fa-arrow-right-long{
         font-size: 20px;
         margin-left: 3px;
@@ -2056,8 +1973,8 @@ padding: 18px;
     }
   
     
-  @media(max-width:360px){ .img-header{width: 90%;margin: 10px;}}
-  @media(max-width:330px){ .img-header{width: 85% !important;margin-left: -10px !important;} 
+
+  @media(max-width:330px){ 
   .product{
     width: 45%;margin-left: 3px !important;
    }
@@ -2067,9 +1984,7 @@ padding: 18px;
   .zoom-loop{
     font-size: 10px;
   }
-  .footer{
-    /* padding: 0;margin: 0; */
-  }
+
   .footer-title::after{right: 25px;} 
 }
 @media(max-width: 450px){
@@ -2096,17 +2011,8 @@ padding: 18px;
   .fa-instagram, .fa-facebook{
     font-size: 15px;
   }
-  .header-button{
-    top: 250px;
-    left: 20px !important;
-    font-size: 13px;height: 20px;width: 130px !important;
-  }
-  
-  .header-text{
-    top: 210px !important;
-    left: 20px !important;
-    font-size: 13px;
-  }
+
+
   .Nav-added-product-box {
     width: 250px !important;
     height: 220px;
@@ -2161,7 +2067,7 @@ padding: 18px;
    .product-add{
     width: 340px !important;
    }
-   .img-header{width: 95%;margin: 10px;}
+  
    .product-name{
     top: 200px;
    }
@@ -2251,12 +2157,7 @@ padding: 18px;
     left: 10px;
     top: 50px;
   }
-  .img-header-shadow {
-    
-    border-radius: 28px;width: 95% !important;
 
-    z-index: 0;
-  }
 }
           
 @media(max-width: 1200px){
@@ -2414,11 +2315,7 @@ padding: 18px;
     }
   }
   @media(min-width:1200px){
-    .img-header{
-      background-image: url('../img/jewelry_header_1920px.png');
-      background-size: cover;
-      width: 100%;
-    }
+   
    .payment, .segment-product-price{
       left: 440px;
     }

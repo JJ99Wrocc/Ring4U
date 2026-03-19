@@ -16,7 +16,7 @@ export const products = [
     description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14 - karatowym złotem, świetnie pasuje do eleganckich, jak również do codziennych stylizacji. Elegancki dodatek na każdą okazję, do sukienek, swetrów i bluzek",
 
 "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!."],
-     specs: {
+     desc: {
         "Długość kropli": "3,1 cm ",
       
         "Kolor": "jasne złoto",
@@ -43,7 +43,7 @@ export const products = [
     url: "/product/NST954",
     description: ["Modny naszyjnik ze srebra pokrytego rodem. Świetnie pasuje do eleganckich, jak również do codziennych stylizacji. Elegancki dodatek na każdą okazję, do sukienek, swetrów i bluzek.",
 "Zabieg rodowania pozwala zabezpieczyć srebro przed matowieniem i ciemnieniem, dodatkowo zapobiega powstawaniu uszkodzeń mechanicznych czy zarysowań na biżuteri. Rodowanie sprawia, ze biżuteria zachowuje też swój blask i kolor. Biżuteria antyalergiczna."],
-specs: {
+desc: {
   "długość naszyjnika": "41 + 5 cm ",
   "szerokość ozdoby": "1,2 cm ",
 
@@ -65,7 +65,7 @@ specs: {
     description: ["`Modny naszyjnik ze stali chirurgicznej. Nowa kolekcja biżuterii ze stali nierdzewnej platerowanej 14 karatowym złotem. Świetnie pasuje do eleganckich, jak również do codziennych stylizacji. Elegancki dodatek na każdą okazję, do sukienek, swetrów i bluzek.",
       "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"
     ],
-    specs: {
+    desc: {
       "długość łańcuszka": "42cm",
       "długość regulacji": "5cm ",
       "Wymiary zawieszki": "2cm x 3cm ",
@@ -96,7 +96,7 @@ specs: {
       "Elegancki dodatek na każdą okazję, do sukienek, swetrów i bluzek.",
       "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"
     ],
-    specs: {
+    desc: {
       "Długość łańcuszka": "41 cm",
       "Długość regulacji": "5 cm",
       "Wymiar kartonika": "12 cm x 10 cm",
@@ -116,7 +116,7 @@ specs: {
     description: ["Kolczyki ze stali szlachetnej platerowane 14-karatowym złotem, sztyft. Eleganckie i stylowe kolczyki.",
 
 "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."],
-      specs: {
+      desc: {
         "Wymiar kolczyków": "1,3cm x 1,3cm ",
         "Wymiar kartonika": "5,5 cm x 6 cm",
         "Waga": "4g netto / 6g brutto",
@@ -140,7 +140,7 @@ specs: {
       description: ["Kolczyki ze stali szlachetnej platerowane 14-karatowym złotem.  Eleganckie i stylowe kolczyki.",
         " STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
       ],
-      specs: {
+      desc: {
         "Wymiar kolczyków": "0,9 cm x 1,6 cm",
         "Wymiar kartonika": "6,5 cm x 9,5 cm",
         "Waga": "4 g netto/ 6 g brutto",  
@@ -160,7 +160,7 @@ specs: {
       description: ["`Kolczyki ze stali szlachetnej platerowane 14-karatowym złotem, sztyft.  Eleganckie i stylowe kolczyki.",
         "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
       ],
-      specs: {
+      desc: {
         "Wymiar kolczyków": "0,8 cm x 0,8 cm",
         "Wymiar kartonika": " 5,5 cm x 6 cm",
         "Waga": "1 g netto / 3 g brutto",  
@@ -181,7 +181,7 @@ specs: {
     image: "/img/Koniczynka czarna KST3419.jpg", 
     url: "/product/KST3419",
     description: ["`Kolczyki ze stali szlachetnej platerowane 14-karatowym złotem, sztyft. Eleganckie i stylowe kolczyki.","STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje"],
-    specs: {
+    desc: {
       "Wymiar kolczyków": "1,1cm x 1,1cm",
       "Wymiar kartonika": " 5,5 cm x 6 cm",
       "Waga": "2g netto / 6g brutto",  
@@ -200,7 +200,7 @@ specs: {
     image: "/img/Pierścionek PST947.jpg", 
     url: "/product/PST947",
     description: ["`Nowa kolekcja biżuterii ze stali szlachetnej. Pierścionek platerowany 14-karatowym złotem","STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."],
-    specs: {
+    desc: {
       "Rozmiar": "uniwersalny, regulowany",
       "Szerokość": "2cm",
       "Szerokość od góry": "2,3cm",
@@ -219,7 +219,7 @@ specs: {
     image: "/img/Pierścionek 'black devil' złotyl PST635R6.jpg", 
     url: "/product/PST635R6",
     description: ["Nowa kolekcja biżuterii ze stali nierdzewnej, PLATEROWANY  złotem. Elegancki i stylow pierścionek.","STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."],
-    specs: {
+    desc: {
       "Rozmiar pierścionków": "US6 EU11US6 EU11, US7 EU14US7 EU14, US8 EU17US8 EU17, US9 EU20US9 EU20",
           "Kolor": "złoty",  
     },
@@ -237,7 +237,7 @@ specs: {
     image: "/img/Pierścionek jeleń białe złoto PST756R6.jpg", 
     url: "/product/PST756R6",
     description: ["Kolczyki ze stali szlachetnej platerowane 14-karatowym złotem, sztyft. Eleganckie i stylowe kolczyki.","STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje. ."],
-    specs: {
+    desc: {
       "Rozmiar pierścionków": "US6 EU11US6 EU11, US7 EU14US7 EU14, US8 EU17US8 EU17, US9 EU20US9 EU20",
           "Waga": "2g netto / 6g brutto",  
           "Kolor": "Białe złoto",  
@@ -257,7 +257,7 @@ specs: {
     image: "/img/Pierścionek 'białe złoto' platerowane PST760.jpg", 
     url: "/product/PST760R8",
     description: ["Nowa kolekcja biżuterii ze stali nierdzewnej. Pierścionek platerowany białym złotem. Eleganckie i stylowe kolczyki.","STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."],
-    specs: {
+    desc: {
       "Rozmiar pierścionków": " US8 EU17US8 EU17",
           "Waga": "2g netto / 6g brutto",  
           "Kolor": "Białe złoto",  

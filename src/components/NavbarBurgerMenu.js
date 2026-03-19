@@ -1,10 +1,11 @@
 import React, { useRef, useState } from "react";
 import "../css/navbarBurgerMenu.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import bootstrap from "bootstrap/dist/js/bootstrap.bundle";
 import Pierscionek from "../img/Pierscionek.png";import { Link, useNavigate } from "react-router-dom";
 const NavbarBurgerMenu = () => {
   const offcanvasRef = useRef(null);
+  const navigate = useNavigate();
 
 
   const [zakupyOpen, setZakupyOpen] = useState(false);
@@ -12,9 +13,7 @@ const NavbarBurgerMenu = () => {
   const [aboutOpen, setAboutOpen] = useState(false);
   const [socialOpen, setSocialOpen] = useState(false);
 
-
-  const handleLinkClick = (e) => {
-    // e.preventDefault(); // ⛔️ zapobiega przeładowaniu strony
+  const handleLinkClick = (path) => {
     const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasRef.current);
     if (bsOffcanvas) {
       bsOffcanvas.hide();
@@ -22,13 +21,13 @@ const NavbarBurgerMenu = () => {
         document.body.classList.remove("offcanvas-backdrop");
         const backdrop = document.querySelector(".offcanvas-backdrop");
         if (backdrop) backdrop.remove();
-      }, 200);
+        navigate(path); // <--- nawigacja po zamknięciu offcanvas
+      }, 250);
+    } else {
+      navigate(path);
     }
-  
-    // 🚀 Ręcznie przejdź do trasy
-    const link = e.currentTarget.getAttribute("href") || e.currentTarget.getAttribute("to");
-    if (link) window.history.pushState({}, "", link);
   };
+  
   
   
 
@@ -94,11 +93,12 @@ const NavbarBurgerMenu = () => {
   <Link
     to="/necklace"
     className="nav-link"
-    onClick={handleLinkClick}
+    onClick={() => handleLinkClick("/necklace")}
   >
-   Naszyjniki <i className="fa-solid fa-arrow-right"></i>
+    Naszyjniki <i className="fa-solid fa-arrow-right"></i>
   </Link>
 </li>
+
               <hr></hr>
               <li>
   <Link

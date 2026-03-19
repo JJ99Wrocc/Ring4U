@@ -183,9 +183,9 @@ const ProductDetail = ({ products }) => {
       </div>
       <div id="product-specs" className="product-specs mb-4">
   <h5>Specyfikacje:</h5>
-  {product.specs ? (
+  {product.desc ? (
     <ul>
-      {Object.entries(product.specs).map(([key, value], index) => (
+      {Object.entries(product.desc).map(([key, value], index) => (
         <li key={index}>
           <strong>{key}:</strong> {value}
         </li>

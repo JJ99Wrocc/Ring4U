@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { CartContext } from "./CartContext";
 // import ProductAdded from "./ProductsAdded";
 import { Link } from "react-router-dom";
-import '../css/index.css';
+import '../css/earRings.css';
 import UpperFooter from "./UpperFooter";
 export const earRings = [
     {  id: "KST1415", 
@@ -129,12 +129,51 @@ export const earRings = [
         availability: "W magazynie",
           image2:  "/img/Kolczyki wiszące kst3409 (1).jpg",
          },
-         
+         { 
+          id: "KST3325", 
+          name: "Kolczyki 'Muszelki' złote", 
+          price: "99.99 zł", 
+          image: "/img/Kolczyki eperełki złote-KST3325.jpg", 
+          url: "/product/KST3325",
+          description: ["Kolczyki damskie  platerowane złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
+          specs: {
+            "Wymiar kolczyków": "1,7cm x 1,7cm x 0,8cm",
+            "Wymiar kartonika": "6 cm x 5,5 cm ",
+            "Waga": "10g netto / 13g brutto",  
+            "Kolor": " złoto",  
+            "Rodzaj zapięcia": "sztyft",  
+          },
+          material: "Stal szlachetna", 
+          color: "jasne złoto", 
+          availability: "W magazynie",
+            image2:  "/img/Kolczyki eperełki złote-KST3325 (1).jpg",
+            image3:  "/img/Kolczyki eperełki złote-KST3325 (2).jpg",
+           },
+           { 
+            id: "KST2823", 
+            name: "Kolczyki 'Serca' złote", 
+            price: "99.99 zł", 
+            image: "/img/Kolczyki serca-KST2823.jpg", 
+            url: "/product/KST2823",
+            description: ["Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
+            specs: {
+              "Wymiar kolczyków": "2,5 x 1,4 cm",
+             //  "Wymiar kartonika": "6 cm x 5,5 cm ",
+             //  "Waga": "6g netto / 8g brutto",  
+              "Kolor": " złoto",  
+              "Rodzaj zapięcia": "sztyft",  
+            },
+            material: "Stal szlachetna", 
+            color: " złoto", 
+            availability: "W magazynie",
+              image2:  "/img/Kolczyki serca-KST2823(1).jpg",
+             //  image3:  "/img/Kolczyki koła geometryczne KST3409 (2).jpg",
+             },
       { 
         id: "KST3349", 
         name: "Kolczyki 'Łezki' wiszące złote", 
         price: "99.99 zł", 
-        image: "/img/Kolczyki Łezki wiszące KST3349.jpg", 
+        image: "/img/Kolczyki Łezki wiszące KST3349 (1).jpg", 
         url: "/product/KST3349",
         description: ["Kolczyki damskie  platerowane złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
         specs: {
@@ -147,13 +186,13 @@ export const earRings = [
         material: "Stal szlachetna", 
         color: "Jasne złoto", 
         availability: "W magazynie",
-          image2:  "/img/Kolczyki Łezki wiszące KST3349 (1).jpg",
+          image2:  "/img/Kolczyki Łezki wiszące KST3349.jpg",
          },
          { 
            id: "KST3369", 
         name: "Kolczyki 'Cyrkonie' złote", 
         price: "99.99 zł", 
-        image: "/img/Kolczyki Cyrkonie złote-kst3369.jpg", 
+        image: "/img/Kolczyki Cyrkonie złote-kst3369 (1).jpg", 
         url: "/product/KST3369",
         description: ["Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem . STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
         specs: {
@@ -166,7 +205,7 @@ export const earRings = [
         material: "Stal szlachetna", 
         color: "Złoty", 
         availability: "W magazynie",
-          image2:  "/img/Kolczyki Cyrkonie złote-kst3369 (1).jpg",
+          image2:  "/img/Kolczyki Cyrkonie złote-kst3369.jpg",
           image3:  "/img/Kolczyki Cyrkonie złote-kst3369 (2).jpg",
           image4:  "/img/Kolczyki Cyrkonie złote-kst3369 (3)  .jpg",
          },
@@ -174,7 +213,7 @@ export const earRings = [
            id: "KST2951", 
            name: "Kolczyki 'Koła' gemetryczne", 
            price: "99.99 zł", 
-           image: "/img/Kolczyki koła geometryczne KST3409.jpg", 
+           image: "/img/Kolczyki koła geometryczne KST3409 (1).jpg", 
            url: "/product/KST2951",
            description: ["Kolczyki damskie  platerowane złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
            specs: {
@@ -187,14 +226,14 @@ export const earRings = [
            material: "Stal szlachetna", 
            color: "Jasne złoto", 
            availability: "W magazynie",
-             image2:  "/img/Kolczyki koła geometryczne KST3409 (1).jpg",
+             image2:  "/img/Kolczyki koła geometryczne KST3409 .jpg",
              image3:  "/img/Kolczyki koła geometryczne KST3409 (2).jpg",
             },
          { 
            id: "KST3359", 
            name: "Kolczyki 'Wisienki' gemetryczne", 
            price: "99.99 zł", 
-           image: "/img/Kolczyki wisienki jasne złoto KST3359.jpg", 
+           image: "/img/Kolczyki wisienki jasne złoto KST3359(1).jpg", 
            url: "/product/KST3359",
            description: ["Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
            specs: {
@@ -207,7 +246,7 @@ export const earRings = [
            material: "Stal szlachetna", 
            color: "Jasne złoto", 
            availability: "W magazynie",
-             image2:  "/img/Kolczyki wisienki jasne złoto KST3359(1).jpg",
+             image2:  "/img/Kolczyki wisienki jasne złoto KST3359.jpg",
             //  image3:  "/img/Kolczyki koła geometryczne KST3409 (2).jpg",
             },
          { 
@@ -231,45 +270,28 @@ export const earRings = [
             //  image3:  "/img/Kolczyki koła geometryczne KST3409 (2).jpg",
             },
          { 
-           id: "KST3325", 
-           name: "Kolczyki 'Muszelki' złote", 
+           id: "KST2931CZ", 
+           name: "Kolczyki 'Pętelka' złote", 
            price: "99.99 zł", 
-           image: "/img/Kolczyki eperełki złote-KST3325.jpg", 
-           url: "/product/KST3325",
-           description: ["Kolczyki damskie  platerowane złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
+           image: "/img/Kolczyki kółka KST2931cz.jpg", 
+           url: "/product/KST2931CZ",
+           description: ["Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
            specs: {
-             "Wymiar kolczyków": "1,7cm x 1,7cm x 0,8cm",
-             "Wymiar kartonika": "6 cm x 5,5 cm ",
-             "Waga": "10g netto / 13g brutto",  
+             "Wymiar kolczyków": "2 cm",
+             "Średnica kółka": "1,4 cm  ",
+            //  "Waga": "6g netto / 8g brutto",  
              "Kolor": " złoto",  
              "Rodzaj zapięcia": "sztyft",  
            },
            material: "Stal szlachetna", 
-           color: "jasne złoto", 
+           color: " złoto", 
            availability: "W magazynie",
-             image2:  "/img/Kolczyki eperełki złote-KST3325 (1).jpg",
-             image3:  "/img/Kolczyki eperełki złote-KST3325 (2).jpg",
+             image2:  "/img/Kolczyki kółka KST2931cz(1).jpg",
+            //  image3:  "/img/Kolczyki koła geometryczne KST3409 (2).jpg",
             },
-         { 
-           id: "KST3325", 
-           name: "Kolczyki 'Muszelki' złote", 
-           price: "99.99 zł", 
-           image: "/img/Kolczyki eperełki złote-KST3325.jpg", 
-           url: "/product/KST3325",
-           description: ["Kolczyki damskie  platerowane złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
-           specs: {
-             "Wymiar kolczyków": "1,7cm x 1,7cm x 0,8cm",
-             "Wymiar kartonika": "6 cm x 5,5 cm ",
-             "Waga": "10g netto / 13g brutto",  
-             "Kolor": " złoto",  
-             "Rodzaj zapięcia": "sztyft",  
-           },
-           material: "Stal szlachetna", 
-           color: "jasne złoto", 
-           availability: "W magazynie",
-             image2:  "/img/Kolczyki eperełki złote-KST3325 (1).jpg",
-             image3:  "/img/Kolczyki eperełki złote-KST3325 (2).jpg",
-            },
+
+    
+
       
         ]
 

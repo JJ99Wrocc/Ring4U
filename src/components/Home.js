@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/index.css';
+import '../css/home.css';
 
 
 const Header = () =>{
@@ -7,10 +7,10 @@ const Header = () =>{
     return(
         <div className=" very padded text home-segment main header-animate container">
           <div className="img-header">
-                <h2 className="header-text"><span className="pink">Biżuteria</span>, która podkreśla każdą chwilę</h2>
+                <h1 className="header-text">Biżuteria, która podkreśla każdą chwilę</h1>
                 <a  href="#product" className="header-button">Poznaj ofertę </a>
           </div>
-          {/* <div className="img-header-shadow"></div> */}
+        
 
         </div>
     )

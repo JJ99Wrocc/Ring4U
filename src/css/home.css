@@ -1,0 +1,235 @@
+.img-header{
+    position: relative;
+    background-image: url('../img/jewelry_header_1200px.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 28px;
+height: 500px;
+min-height: 300px;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+    border: none !important;
+
+
+    -webkit-mask-image: radial-gradient(
+        ellipse 90% 80% at center, 
+        black 30%, 
+        rgba(0, 0, 0, 0.05) 60%, 
+        transparent 98%
+    );
+    mask-image: radial-gradient(
+        ellipse 90% 80% at center, 
+        black 30%, 
+        rgba(0, 0, 0, 0.05) 60%, 
+        transparent 98%
+    );
+
+    /* 3. EFEKT SEAMLESS: To sprawia, że zdjęcie "wypływa" z tła strony */
+    filter: drop-shadow(0 0 60px rgba(0, 0, 0, 0.1));
+    
+    /* Dodatkowy blur na samych krawędziach zdjęcia */
+    backdrop-filter: blur(4px);
+}
+.home-segment{
+    margin: 0 auto;
+}
+.img-header-shadow {
+    position: absolute;
+    inset: 0;
+    border: none !important;
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse 90% 80% at center, black 30%, transparent 98%);
+    mask-image: radial-gradient(ellipse 90% 80% at center, black 30%, transparent 98%);
+    
+    pointer-events: none;
+  }
+  .header-text {
+    position: absolute;
+    top: 30%; left: 50%;
+
+    z-index: 100;
+    font-size: 35px; 
+    font-weight: 900;
+    line-height: 0.9;
+    color: #ffffff;
+    text-transform: none; 
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3)) 
+          drop-shadow(0 0 80px rgba(255, 255, 255, 0.1));
+    mix-blend-mode: screen; 
+    opacity: 0.96; 
+    max-width: 800px;
+    white-space: normal !important; 
+    letter-spacing: 2px;
+}
+
+/* DODATEK DLA SŁOWA "Biżuteria" (jeśli używasz span lub chcesz wyróżnić pierwsze słowo) */
+.header-text::first-line {
+    font-weight: 950;
+    letter-spacing: -0.06em;
+}
+.header-button {
+    /* POZYCJA TWOJA - BEZ ZMIAN */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+
+    /* WYMIARY I TYPOGRAFIA PRO */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px; /* Nieco szerszy dla prestiżu */
+    height: 55px; /* Wyższy button = droższy look */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px; /* Mniejszy font + większy spacing = High-End */
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #ffffff;
+    
+    /* GLASSMORPHISM 2026 */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    /* BORDER - SUBTELNY, NIE CHAMSKI */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 100px; /* Full Pill Shape to teraz standard pro */
+    
+    /* GŁĘBIA */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2), 
+                inset 0 0 15px rgba(255, 255, 255, 0.05);
+    
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+}
+
+/* EFEKT POŁYSKU PRZECHODZĄCEGO PRZEZ PRZYCISK (SHIMMER) */
+.header-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.3), 
+        transparent
+    );
+    transition: all 0.6s;
+
+}
+
+.header-button:hover {
+    background: #ffffff; /* Odwrócenie luksusowe: biały na hover */
+    color: #000000;
+    transform: translateY(-5px) scale(1.02);
+    border-color: #ffffff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+
+}
+
+.header-button:hover::before {
+    left: 100%;
+}
+.header-text,.header-button,.header-button:hover {
+    transform: translate(-50%,-50%);
+}
+
+  @media(max-width:1200px){
+    .img-header{
+        background-image: url('../img/jewelry_header_1920px.png');
+        background-size: cover;
+        width: 100%;
+      }
+      .header-button{
+font-size: 12px;   width: 200px; height: 50px;
+      }
+      .header-text{
+font-size: 30px;
+      }
+  }
+  @media(max-width:992px){
+    .header-button{
+        font-size: 11px;   width: 170px; height: 45px;
+              }
+              .header-text{
+        font-size: 23px;
+              }
+
+  }
+  @media(max-width:768px){
+    .img-header{
+        padding: 0;align-items: center;
+        background-size: cover;
+      }
+      .img-header-shadow {
+      
+        border-radius: 28px;width: 98% !important;
+  
+        z-index: 0;
+      }
+      .home-segment{
+        height: 50vh; display: flex;
+        justify-content: center; /* wyśrodkowanie poziome */
+        align-items: center; width: 100%;
+      }
+      .header-button{
+        top: 55%;
+        font-size: 10px;   width: 150px; height: 40px;
+              }
+              .header-text{
+                top: 40%;
+        font-size: 17px;
+              }
+
+  }
+  @media(max-width:576px){
+    .header-button{
+        top: 60%;
+        font-size: 7px;   width: 130px; height: 30px;
+              }
+              .header-text{
+                top: 45%;
+        font-size: 14px;
+              }
+  }
+@media(max-width:450px){
+    .img-header{width: 95%;margin: 10px;}
+    .img-header-shadow {
+    
+        border-radius: 28px;width: 95% !important;
+    
+        z-index: 0;
+      }
+
+      .header-button{
+        top: 60%;
+        font-size: 7px;   width: 130px; height: 30px;
+              }
+              .header-text{
+                top: 45%;
+        font-size: 12px;
+        letter-spacing: 0.3px;
+              }
+}
+  @media(max-width:360px){ .img-header{width: 90%;margin: 10px;}}
+  @media(max-width:330px){
+    .img-header{width: 85% !important;margin-left: -10px !important;} 
+  } 
+
+  @keyframes breathe {
+    0% {
+        background-size: 105% auto;
+        background-position: 50% 50%;
+    }
+    100% {
+        background-size: 115% auto;
+        background-position: 52% 48%; /* Lekki ruch po skosie udaje ruch 3D */
+    }
+}
