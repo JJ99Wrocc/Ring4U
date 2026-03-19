@@ -192,11 +192,11 @@ font-size: 30px;
   @media(max-width:576px){
     .header-button{
         top: 60%;
-        font-size: 7px;   width: 130px; height: 30px;
+        font-size: 9px;   width: 150px; height: 40px;
               }
               .header-text{
                 top: 45%;
-        font-size: 14px;
+        font-size: 18px;
               }
   }
 @media(max-width:450px){
@@ -208,15 +208,8 @@ font-size: 30px;
         z-index: 0;
       }
 
-      .header-button{
-        top: 60%;
-        font-size: 7px;   width: 130px; height: 30px;
-              }
-              .header-text{
-                top: 45%;
-        font-size: 12px;
-        letter-spacing: 0.3px;
-              }
+
+
 }
   @media(max-width:360px){ .img-header{width: 90%;margin: 10px;}}
   @media(max-width:330px){
