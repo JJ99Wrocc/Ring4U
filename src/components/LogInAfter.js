@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "../Firebase";
+import  "../css/LogInAfter.css"
 
 const LogInPreview = ({ show, setShow }) => {
     const uid = auth.currentUser.uid;

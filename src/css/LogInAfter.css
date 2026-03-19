@@ -1,0 +1,112 @@
+/* --- TWÓJ KONTENER (BEZ ZMIAN POZYCJI) --- */
+.log {
+    position: relative;
+    display: inline-block;
+}
+
+.look {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+.look:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
+}
+
+/* --- TWOJA KLASA AFTER-LOG-IN (NOWY DESIGN) --- */
+.Navbar-squeres.after-log-in {
+    /* Styl inline z JS (width, height, left, top) nadpisze te wartości, 
+       więc tutaj skupiamy się na wyglądzie "Premium" */
+    
+    background: rgba(10, 10, 10, 0.8) !important; /* Głęboka czerń */
+    backdrop-filter: blur(20px) saturate(180%); /* Efekt szkła 2030 */
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    
+    border-radius: 20px; /* Zaokrąglenie pro */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    
+    /* Wielowarstwowy cień dający głębię */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 
+                inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    /* Animacja wejścia */
+    animation: luxuryFade 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ROZWIĄZANIE PROBLEMU ZNIKANIA (MOST) */
+.Navbar-squeres.after-log-in::before {
+    content: "";
+    position: absolute;
+    top: -40px; /* Wypełnia lukę między ikoną a menu */
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: transparent;
+}
+
+@keyframes luxuryFade {
+    from { opacity: 0; transform: translateY(10px) scale(0.95); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* --- LISTA I LINKI --- */
+.Navbar-squeres ul {
+    width: 100%;
+}
+
+.custom-link {
+    padding: 10px 15px !important; /* Zwiększony padding dla UX */
+    margin: 2px 5px !important;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+    list-style: none;
+}
+
+.custom-link a, 
+.custom-link {
+    color: rgba(255, 255, 255, 0.6) !important;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+/* HOVER NA OPCJE */
+.custom-link:hover {
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.custom-link:hover a,
+.custom-link:hover {
+    color: #ffffff !important;
+    transform: translateX(3px); /* Lekkie wysunięcie pro */
+}
+
+/* Wyloguj - Czerwony akcent 2030 */
+.custom-link:last-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 8px !important;
+    padding-top: 12px !important;
+    color: #ff4d4d !important;
+}
+
+.custom-link:last-child:hover {
+    background: rgba(255, 77, 77, 0.05);
+}
+
+/* --- TWOJA RESPONSYWNOŚĆ (BEZ ZMIAN) --- */
+@media(max-width: 768px) {
+    /* Tu zostawiam puste, bo Twoje media queries z plików CSS 
+       nadal będą działać na te klasy */
+}

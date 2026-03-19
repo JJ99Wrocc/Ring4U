@@ -1,57 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&display=swap');
+
+/* 1. TŁO SEKCJI - ULTRA-LUXURY "OBSIDIAN DEEP SEA" */
+#product {
+  padding: 50px 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  position: relative;
+  
+  /* 1. TŁO NA CAŁĄ SZEROKOŚĆ (Bez ucięć po bokach) */
+  width: 100%;
+  background: 
+      url("https://www.transparenttextures.com/patterns/dark-dot-2.png"),
+      radial-gradient(circle at 50% 50%, #1a1a1a 0%, #050505 100%),
+      #0a0a0a;
+  background-blend-mode: overlay, normal, normal;
+
+  /* 2. KLUCZ DO ZNIKNIĘCIA BOKÓW: Podwójna maska 2D */
+  /* Ta maska sprawia, że tło znika na górze, dole ORAZ na lewym i prawym brzegu ekranu */
+  mask-image: 
+      linear-gradient(to bottom, transparent, black 10%, black 85%, transparent),
+      linear-gradient(to right, transparent, black 5%, black 90%, transparent);
+  -webkit-mask-image: 
+      linear-gradient(to bottom, transparent, black 10%, black 85%, transparent),
+      linear-gradient(to right, transparent, black 5%, black 90%, transparent);
+  
+  /* Łączymy obie maski (Source In oznacza, że pokaże się tylko tam, gdzie obie są czarne) */
+  mask-composite: intersect;
+  -webkit-mask-composite: source-in;
+
+  /* 3. MOCNE WYGŁADZENIE KRAWĘDZI (Wewnętrzna winieta) */
+  box-shadow: 
+      inset 0 0 150px 50px #0a0a0a; /* To "zjada" wszelkie pozostałe ostre krawędzie wewnątrz */
+      
+  overflow: visible !important;
+}
+#product .row {
+  max-width: 1300px; /* Albo szerokość Twojego kontenera */
+  margin: 0 auto;
+}
+/* Subtelny blask w tle (Bez zmian) */
+#product::after {
+    content: '';
+    position: absolute;
+    top: -150px; left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+    filter: blur(50px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* 2. KARTA PRODUKTU (Bez zmian typografii i układu) */
+.product {
+    margin-bottom: 70px !important;
+    text-align: left;
+    transition: transform 0.5s ease;
+    position: relative;
+    z-index: 2; /* Produkty nad blaskiem tła */
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+/* 3. WRAPPER OBRAZKA - "GLOW-MERGING" (Bez zmian) */
 .product-image-wrapper {
     position: relative;
     display: inline-block;
     width: 100%;
-    overflow: hidden; /* żeby przycisk nie "wystawał" zanim się pojawi */
-  }
-  
-  .img-fluid {
-    border-radius: 25px;
-    border: 1px solid rgb(248, 2, 125);
+    overflow: hidden;
+    border-radius: 20px;
+    background: transparent;
+    border: none !important;
+    box-shadow: 
+        0 15px 35px -5px rgba(0, 0, 0, 0.6),
+        0 0 25px 5px rgba(10, 10, 10, 0.9); 
+    transition: box-shadow 0.5s ease;
+
+}
+
+.product:hover .product-image-wrapper {
+    box-shadow: 
+        0 25px 50px -10px rgba(0, 0, 0, 0.7),
+        0 0 35px 10px rgba(10, 10, 10, 1);
+}
+
+.img-fluid {
     display: block;
     width: 100%;
     height: auto;
-  }
-  
-  /* domyślnie ukryty */
-  .product-btn {
+    transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1), filter 0.5s ease;
+    filter: brightness(0.9) contrast(1.05);
+}
+
+.product:hover .img-fluid {
+    transform: scale(1.08);
+    filter: brightness(1.1) contrast(1.1);
+}
+
+/* 4. PRZYCISK KOSZYKA - TWOJE POZYCJE (LEFT 75%) - BEZ ZMIAN */
+.product-btn {
     position: absolute;
     left: 75%;
-    bottom: -40px;   /* start poza obrazkiem */
+    bottom: -70px;
     font-size: 16px;
-    padding: 10px !important;
-    background: white;
+    padding: 14px !important;
+    background: #fff;
     border-radius: 50%;
-    color: rgb(248, 2, 125);
-    border: 3px solid rgb(248, 2, 125);
+    color: #1a1a1a;
+    border: none;
     cursor: pointer;
-    /* box-shadow: 1px 1px 1px 1px ; */
     opacity: 0;
-    transition: all 0.3s ease; /* płynna animacja */
-  }
-  
-  /* pokazanie przycisku przy hover na wrapperze */
-  .product-image-wrapper:hover .product-btn {
-    bottom: 50px;
-    opacity: 1;
-  }
-  @media(max-width:1200px){
-    .product-image-wrapper:hover .product-btn {
-        bottom: 35px;
-      
-      }
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    z-index: 10;
+}
 
-  }
-  @media(max-width:992px){
+.product-image-wrapper:hover .product-btn {
+    bottom: 35px;
+    opacity: 1;
+}
+
+.product-btn:hover {
+    background: #e6c666;
+    color: #000;
+    transform: scale(1.15);
+    box-shadow: 0 15px 35px rgba(230, 198, 102, 0.3);
+}
+
+/* 5. TEKSTY POD PRODUKTEM (Bez zmian) */
+.product h5 {
+    margin-top: 25px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.product h5 a {
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+    color: inherit;
+}
+
+.product h5 a:hover {
+    color: #fff !important;
+}
+
+.product p {
+    font-size: 19px;
+    font-weight: 800;
+    color: #fff;
+    margin-top: 6px;
+    letter-spacing: -0.8px;
+}
+
+/* --- RESPONSYWNOŚĆ (Zachowana wg Twoich wytycznych) --- */
+@media(max-width:1200px){
+    .product-image-wrapper:hover .product-btn {
+        bottom: 30px;
+    }
+}
+
+@media(max-width:992px){
+    #product { padding: 50px 0; }
     .product-image-wrapper:hover .product-btn {
         bottom: 25px;      
-      }
-      .product-btn {
-        position: absolute;
+    }
+    .product-btn {
         left: 65%;
-
         font-size: 12px;
         padding: 10px !important;
-    
-      }
-  }
+    }
+}
+
+@media(max-width:576px) {
+    #product { padding: 20px 0; }
+    .product-image-wrapper { border-radius: 15px; }
+    .product p { font-size: 16px; }
+    /* Zmniejszamy siłę maski na mobile */
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+}

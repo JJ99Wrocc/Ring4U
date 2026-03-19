@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;800&display=swap');
+
+.discount {
+    /* Twoje pozycjonowanie i odstępy */
+    margin: 60px auto;
+    cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    
+    /* KLUCZ: Usuwamy bordery i dodajemy maskowanie */
+    border: none !important;
+    background: transparent;
+    
+    /* Efekt rozmywania krawędzi (maska gradientowa) */
+    -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 95%);
+    mask-image: radial-gradient(ellipse at center, black 20%, transparent 95%);
+    
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.discount:hover {
+    transform: scale(1.02);
+}
+
+.discount-img {
+    position: relative;
+    background-image: url('../img/color_bar_for_header.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    font-weight: 800; /* Mocniejszy font 2026 */
+    height: 100px;
+    color: #FFF8E7;
+    
+    /* Subtelny blask zamiast cienia */
+    filter: drop-shadow(0 0 15px rgba(248, 2, 125, 0.2));
+    
+    /* Czyścimy stare zaokrąglenia na rzecz płynnego przejścia */
+    border-radius: 0; 
+}
+
+.zoom-loop {
+    animation: zoomInOut 4s ease-in-out infinite;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    letter-spacing: 4px; /* Większe odstępy między literami = prestiż */
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+.arrow-in-right-corner {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: right 0.3s ease;
+    opacity: 0.8;
+}
+
+.discount:hover .arrow-in-right-corner {
+    right: 40px; /* Strzałka lekko ucieka na hoverze */
+    opacity: 1;
+}
+
+/* TWOJA RESPONSYWNOŚĆ - NIENARUSZONA */
+@media(max-width:1200px){
+    .fa-arrow-right-long{
+        margin-left: -45px;
+    }
+}
+
+@media(max-width:768px){
+    .discount-img{
+        height: 100px;
+    }
+    .discount{
+        padding-top: 30px;
+        /* Na mobile zmniejszamy siłę maski, żeby tekst był czytelny */
+        -webkit-mask-image: radial-gradient(ellipse at center, black 50%, transparent 100%);
+    }
+    .zoom-loop{
+        font-size: 15px;
+    }
+    .arrow-in-right-corner{
+        display: none;
+    }
+}
+
+@media(max-width:576px){
+    .fa-arrow-right-long{
+        font-size: 20px;
+        margin-left: 3px;
+    } 
+}
+
+@media(max-width:330px){
+    .discount-img{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .zoom-loop{
+        font-size: 10px;
+    }
+}
+
+/* TWÓJ ZOOM - NIENARUSZONY */
+@keyframes zoomInOut {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}

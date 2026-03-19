@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import '../css/index.css';
+import '../css/cookieBaner.css';
 
 const CookieConsent = () => {
   const [visible, setVisible] = useState(false);

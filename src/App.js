@@ -60,8 +60,8 @@
           element={
             <LayoutWithNavAndFooter>
               <Header />
-              <Product />
               <Discount />
+              <Product />
       
             </LayoutWithNavAndFooter>
           }

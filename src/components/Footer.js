@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../css/index.css";
+import "../css/footer.css";
 
 const Footer = () => {
   const [activeSection, setActiveSection] = useState(null);

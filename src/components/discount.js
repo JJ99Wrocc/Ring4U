@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import React from "react";
-import '../css/index.css';
+import '../css/discount.css';
 import DiscountBox from "./discountbox";
 
 const Discount = () => {

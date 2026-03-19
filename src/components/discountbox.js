@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { getFirestore, collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { getApp } from "firebase/app";
+import "../css/discountBox.css"
 
 const DiscountBox = ({ onClose }) => {
   const [email, setEmail] = useState("");

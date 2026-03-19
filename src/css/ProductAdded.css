@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+
+.product-add {
+    /* TWOJE WYMIARY I POZYCJA - NIENARUSZONE */
+    position: fixed;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 420px;
+    width: 600px;
+    z-index: 10000000;
+    
+    /* STYLIZACJA 2026 */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 24px; /* Nowoczesne, ale nie za obłe */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* Soft shadow zamiast twardego 3px 3px */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.product-title {
+    position: absolute;  
+    left: 40px;
+    top: 30px; /* Delikatna korekta dla oddechu */
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #1a1a1a;
+}
+
+/* Przycisk X - Twoja pozycja, nowy look */
+.fa-x {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #1a1a1a; /* Cieńsza, elegantsza linia */
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.fa-x:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+    transform: scale(1.1) rotate(90deg);
+}
+
+.product-2 {
+    margin-top: 40px;
+    width: 10%; /* Zostawiam zgodnie z Twoim kodem */
+}
+
+/* Obrazek - Twoje wymiary 120x120 */
+.product-img {
+    position: absolute;
+    left: 30px;
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.product-name {
+    position: absolute;
+    top: 230px;
+    left: 40px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #444;
+}
+
+.product-added-p {
+    font-size: 9px; 
+    white-space: nowrap;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.custom-border {
+    height: 300px;
+    border-left: 1px solid rgba(0,0,0,0.1) !important;
+}
+
+.product-added-right-title {
+    font-size: 10px !important; 
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Ceny - Twoja pozycja absolute */
+.product-added-cost {
+    position: absolute;  
+    font-size: 9px; 
+    white-space: nowrap;
+    right: 30px;
+    font-weight: 500;
+}
+
+.product-added-cost-fwb {
+    font-weight: 800;
+    color: #000;
+}
+
+/* Przycisk ZOBACZ KOSZYK - Twoje wymiary 100px */
+.product-right-button {
+    width: 100px; 
+    height: 35px; /* Dopasowanie do Twojego proporcjonalnego buttona */
+    border-radius: 10px; 
+    border: 1px solid #1a1a1a;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 9px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.product-right-button:hover {
+    background-color: transparent;
+    color: #1a1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* TWOJA RESPONSYWNOŚĆ - NIENARUSZONA */
+@media(max-width: 600px){
+    .product-add { width: 400px; }
+}
+
+@media(max-width:450px){
+    .product-add { width: 340px !important; }
+    .product-title { font-size: 15px !important; }
+    .fa-x { right: 10px; }
+    .product-img { width: 90px !important; height: 90px !important; }
+    .product-name { top: 200px; }
+    .product-added-p { font-size: 7px !important; }
+}

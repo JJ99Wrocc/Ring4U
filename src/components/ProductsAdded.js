@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "./CartContext";
+import "../css/ProductAdded.css"
 
 const ProductAdded = ({ visible, setVisible, products }) => {
   const navigate = useNavigate();
@@ -40,7 +41,7 @@ const ProductAdded = ({ visible, setVisible, products }) => {
         DODANO DO KOSZYKA!
       </div>
 
-      <button 
+      <button  
         onClick={handleClose} 
         style={{ cursor: "pointer" }} 
         aria-label="Zamknij podsumowanie koszyka"
@@ -59,7 +60,6 @@ const ProductAdded = ({ visible, setVisible, products }) => {
                   alt={product.name}
                 />
                 <div className="product-name product-added-p">{product.name}</div>
-                {/* <div className="product-price product-added-p">{product.price}</div> */}
               </article>
             ))}
           </div>
