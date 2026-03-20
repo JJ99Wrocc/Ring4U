@@ -22,6 +22,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     /* Soft shadow zamiast twardego 3px 3px */
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    z-index: 123123213123123;
 }
 
 .product-title {

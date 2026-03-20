@@ -1,13 +1,12 @@
 import React from "react";
-import Navbar from "./Navbar";
 
-import '../css/index.css';
+import '../css/TermsOfServices.css';
 import useToggleSections from "./useToggleSections";
 const TermsOfService = () => {
     useToggleSections();
   return (
     <>
-      <Navbar />
+ 
       <main className="terms-container" role="main" aria-label="Regulamin sklepu Ring4U">
         <h1>Regulamin Sklepu Internetowego Ring4U</h1>
 

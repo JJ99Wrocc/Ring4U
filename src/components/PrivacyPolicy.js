@@ -1,11 +1,28 @@
-import React from "react";
-
-import Navbar from "./Navbar";
-
+import React, {useEffect}from "react";
+import "../css/PrivacyPolicy.css"
+import useToggleSections from "./useToggleSections";
 const PrivacyPolicy = () => {
+  useEffect(() => {
+    // Skrypt szuka nagłówków w obu typach dokumentów
+    const selectors = ".terms-container h2, .privacy-policy-pkt";
+    const headers = document.querySelectorAll(selectors);
+
+    const toggle = (e) => {
+      e.currentTarget.classList.toggle("active");
+    };
+
+    headers.forEach((h) => h.addEventListener("click", toggle));
+    
+    // Sprzątanie po wyjściu z komponentu
+    return () => {
+      headers.forEach((h) => h.removeEventListener("click", toggle));
+    };
+  }, []);
+
+  useToggleSections();
   return (
     <>
-      <Navbar />
+
       <main className="privacy-content" role="document" aria-label="Polityka Prywatności Ring4U">
         <h1>Polityka Prywatności – Ring4U</h1>
 
@@ -206,7 +223,7 @@ const PrivacyPolicy = () => {
           </ul>
           <hr />
           <p>
-            **Kontakt w sprawie danych osobowych:** <a href="mailto:privacy@ring4u.pl">esangbedojoachim@gmail.com</a><br />
+            **Kontakt w sprawie danych osobowych:** <a href="EsangbedJoachim@gmail.com">esangbedojoachim@gmail.com</a><br />
             **Data ostatniej aktualizacji:** 25 sierpnia 2025 r.
           </p>
         </section>

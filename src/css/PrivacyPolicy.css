@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;600;800&display=swap');
+
+/* --- FUNDAMENT --- */
+:root {
+  --bg-color: #050505;
+  --accent-white: #ffffff;
+  --glass-bg: rgba(255, 255, 255, 0.02);
+  --glass-border: rgba(255, 255, 255, 0.07);
+  --text-dim: rgba(255, 255, 255, 0.5);
+  --transition-main: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.privacy-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 120px 40px;
+  background-color: var(--bg-color);
+  color: var(--text-dim);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Nagłówek - Apple Style */
+.privacy-content h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 120px;
+  color: var(--accent-white);
+  font-weight: 800;
+  letter-spacing: -4px;
+  line-height: 0.9;
+}
+
+/* --- SEKCJE JAKO SZKLANE PANELE --- */
+.privacy-content section {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 32px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(20px);
+  transition: var(--transition-main);
+  overflow: hidden;
+}
+
+.privacy-content section:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* --- NAGŁÓWEK TOGGLE (TRIGGER) --- */
+.privacy-policy-pkt {
+  cursor: pointer;
+  padding: 40px;
+  margin: 0;
+  color: var(--accent-white);
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+/* Ikona statusu - Minimalistyczny Plus */
+.privacy-policy-pkt::after {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: var(--accent-white);
+  transition: var(--transition-main);
+  position: relative;
+}
+
+/* Druga linia plusa tworzona przez pseudo-element */
+.privacy-policy-pkt::before {
+  content: '';
+  width: 2px;
+  height: 20px;
+  background: var(--accent-white);
+  position: absolute;
+  right: 49px; /* Dopasuj do paddingu */
+  transition: var(--transition-main);
+}
+
+/* Animacja ikony po kliknięciu */
+.privacy-policy-pkt.active::after {
+  transform: rotate(180deg);
+}
+
+.privacy-policy-pkt.active::before {
+  transform: rotate(90deg);
+  opacity: 0; /* Znika pionowa kreska, zostaje minus */
+}
+
+/* --- TREŚĆ UKRYTA (LOGIKA) --- */
+.privacy-policy-pkt + ul,
+.privacy-policy-pkt + ol,
+.privacy-policy-pkt + p {
+  max-height: 0;
+  opacity: 0;
+  padding: 0 40px;
+  margin: 0;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* TREŚĆ POKAZANA */
+.privacy-policy-pkt.active + ul,
+.privacy-policy-pkt.active + ol,
+.privacy-policy-pkt.active + p {
+  max-height: 1000px; /* Dowolna duża wartość */
+  opacity: 1;
+  padding-bottom: 40px;
+  margin-top: -10px;
+}
+
+/* --- STYLIZACJA LISTY --- */
+.li-privacy-polcy {
+  list-style: none;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  font-weight: 300;
+  font-size: 1.05rem;
+  color: var(--text-dim);
+}
+
+.strong{
+    color: #ffffff !important;
+    font-size: 15px !important;
+}
+
+/* Linki - Silver Glow */
+.privacy-content a {
+  color: var(--accent-white);
+  text-decoration: none;
+  position: relative;
+  transition: var(--transition-main);
+}
+
+.privacy-content a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background: var(--accent-white);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+
+.privacy-content a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Górne info (Wersja/Data) */
+.strong {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.7rem;
+  color: var(--accent-white);
+  margin-bottom: 8px;
+}
+
+/* Płynne pojawianie się całej strony */
+@keyframes pageLoad {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.privacy-content {
+  animation: pageLoad 1.2s ease forwards;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .strong{font-size: 13px !important;}
+  .privacy-content { padding: 80px 20px; }
+  .privacy-policy-pkt { padding: 30px 20px; font-size: 13px !important}
+  .privacy-content h1 { letter-spacing: -2px;  font-size: 26px;}
+  .li-privacy-polcy {font-size: 11px;}
+}
+@media (max-width: 576px) {
+    .strong{font-size: 11px !important;}
+  .privacy-content { padding: 80px 20px; }
+  .privacy-policy-pkt { padding: 30px 20px; font-size: 11px !important}
+  .privacy-content h1 { letter-spacing: -2px;  font-size: 25px;}
+  .li-privacy-polcy {font-size: 9px;}
+}
