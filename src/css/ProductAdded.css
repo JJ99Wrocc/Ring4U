@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;  
     justify-content: center;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 420px;
@@ -22,7 +22,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     /* Soft shadow zamiast twardego 3px 3px */
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-    z-index: 123123213123123;
+    z-index: 123123213123123 !important;
 }
 
 .product-title {

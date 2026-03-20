@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { db, auth } from "../Firebase";
 import { collection, query, orderBy, onSnapshot, doc, deleteDoc, updateDoc } from "firebase/firestore";
+import "../css/MyDm.css"
 
 const MyDm = () => {
   const [messages, setMessages] = useState([]);

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { auth, db } from "../Firebase";
 import { collection, getDocs, query, orderBy } from "firebase/firestore";
-
+import "../css/MyOrders.css"
 const MyOrders = () => {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
