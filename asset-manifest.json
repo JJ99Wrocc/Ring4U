@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.632aeea7.css",
+    "main.css": "/static/css/main.95875d1e.css",
     "main.js": "/static/js/main.80825e8f.js",
     "static/js/453.e8ec925d.chunk.js": "/static/js/453.e8ec925d.chunk.js",
     "static/media/jewelry_header_1920px.png": "/static/media/jewelry_header_1920px.dc8d695296007ab79af5.png",
     "static/media/jewelry_header_1200px.png": "/static/media/jewelry_header_1200px.969090e30e0a317ff61c.png",
     "static/media/Pierscionek.png": "/static/media/Pierscionek.978af942031fc6805e27.png",
     "index.html": "/index.html",
-    "main.632aeea7.css.map": "/static/css/main.632aeea7.css.map",
+    "main.95875d1e.css.map": "/static/css/main.95875d1e.css.map",
     "main.80825e8f.js.map": "/static/js/main.80825e8f.js.map",
     "453.e8ec925d.chunk.js.map": "/static/js/453.e8ec925d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.632aeea7.css",
+    "static/css/main.95875d1e.css",
     "static/js/main.80825e8f.js"
   ]
 }
