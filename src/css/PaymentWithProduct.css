@@ -269,6 +269,16 @@
     .payment-left-title-p, .payment-text2, .payment-text3{
 font-size: 14px;
     }
+    .total-cost{
+        font-size: 15px !important;
+    }
+    .product-right-button2{
+        font-size: 14px;
+        padding: 10px;
+    }
+    .product-right-button3{
+        display: none;
+    }
 }
 
 @media(max-width: 768px) {
@@ -303,9 +313,12 @@ font-size: 14px;
         font-size: 28px;
     }
     
-    .payment-left-title-p, .payment-text2, .payment-text3{
+    .payment-left-title-p, .payment-text2, .payment-text3,.total-cost{
 font-size: 13px;
     }
+    
+
+  
 }
 
 @media(max-width: 576px) {
@@ -314,7 +327,10 @@ font-size: 13px;
     .segment-img { height: 90px; width: 90px; top: 20px; left: 25px; }
     .segment-product-name { left: 120px !important; top: 20px; font-size: 9px !important; }
     .amount-box { left: 20px !important; top: -10px !important;  font-size: 10px !important;}
-    .product-right-button2 { top: 280px; }
+    .product-right-button2{
+        font-size: 12px;
+        height: 30px;
+    }
     .segment-product-price-payment { top: 40px  !important; font-size: 10px !important; left: 10px; }
     .close{
         right: 30px;
@@ -322,6 +338,6 @@ font-size: 13px;
     .payment-accept-box{
         font-size: 9px;
     }
-    
+
 }
 
