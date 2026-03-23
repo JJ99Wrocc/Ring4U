@@ -8,7 +8,7 @@ import CartAddedProduct from "./CartPreview2";
 import ShowSquare2 from "./ShowSquere2";
 import LogInPreview from "./LogInPreview";
 import SearchPreview from "./SearchPreview";
-import "../css/index.css";
+// import "../css/index.css";
 import "../css/nav.css"
 import LogInAfter from "../components/LogInAfter"
 import { useRef } from "react";
@@ -34,7 +34,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY >150) {
         setScroll(true);
       } else {
         setScroll(false);

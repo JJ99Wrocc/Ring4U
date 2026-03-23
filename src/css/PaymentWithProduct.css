@@ -279,6 +279,9 @@ font-size: 14px;
     .product-right-button3{
         display: none;
     }
+    .ui.segment:last-child{
+        font-size: 13px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -316,7 +319,9 @@ font-size: 14px;
     .payment-left-title-p, .payment-text2, .payment-text3,.total-cost{
 font-size: 13px;
     }
-    
+    .ui.segment:last-child{
+        font-size: 11px;
+    }
 
   
 }
@@ -338,6 +343,11 @@ font-size: 13px;
     .payment-accept-box{
         font-size: 9px;
     }
-
+    .total-cost{
+        font-size: 11px;
+    }
+    .ui.segment:last-child{
+        font-size: 10px;
+    }
 }
 

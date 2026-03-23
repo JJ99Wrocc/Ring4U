@@ -70,6 +70,9 @@
     .fa-arrow-right-long{
         margin-left: -45px;
     }
+    .zoom-loop{
+        font-size: 15px;
+    }
 }
 
 @media(max-width:768px){
@@ -82,7 +85,7 @@
         -webkit-mask-image: radial-gradient(ellipse at center, black 50%, transparent 100%);
     }
     .zoom-loop{
-        font-size: 15px;
+        font-size: 13px;
     }
     .arrow-in-right-corner{
         display: none;
@@ -94,6 +97,9 @@
         font-size: 20px;
         margin-left: 3px;
     } 
+    .zoom-loop{
+        font-size: 10px;
+    }
 }
 
 @media(max-width:330px){
@@ -101,9 +107,7 @@
         width: 90%;
         margin: 0 auto;
     }
-    .zoom-loop{
-        font-size: 10px;
-    }
+   
 }
 
 /* TWÓJ ZOOM - NIENARUSZONY */

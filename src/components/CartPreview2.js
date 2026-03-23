@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { CartContext } from "./CartContext";
-
+import "../css/NavAddedBox.css"
 const CartAddedProduct = ({ show }) => {
   const {
     removeProduct,
@@ -103,12 +103,15 @@ const CartAddedProduct = ({ show }) => {
         </div>
       ))}
 
-      <button
-        className="accept-all"
-        onClick={handleToggleAll}
-        aria-label="Zaznacz wszystkie produkty"
-      ></button>
 
+  <button
+    className="accept-all"
+    onClick={handleToggleAll}
+    aria-label="Zaznacz wszystkie produkty"
+  ></button>
+  <span className="accept-all-text">Wszystkie</span>
+
+   
       <div className="product-box-total-cost">
         Razem:{" "}
         <span className="costt">
@@ -117,7 +120,7 @@ const CartAddedProduct = ({ show }) => {
             : totalCost < 400
             ? totalCost + 20
             : totalCost}{" "}
-          zł
+       
         </span>{" "}
         zł
       </div>
