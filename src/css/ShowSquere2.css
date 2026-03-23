@@ -1,0 +1,99 @@
+/* --- KONTENER GŁÓWNY (NAWIGACJA) --- */
+.nav-shopping-text {
+    text-decoration: none !important;
+    color: #1b365d; /* Twój luksusowy niebieski */
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease;
+}
+
+/* Usunięcie podkreśleń z linku "Zakupy" */
+.look.nav-shopping-text {
+    text-decoration: none !important;
+    display: block;
+}
+
+/* --- ROZWIJANE MENU (OKNO) --- */
+.Navbar-squeres.desktop-only {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(27, 54, 93, 0.1); /* Delikatny granatowy obrys */
+    border-radius: 8px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 10000;
+    /* Poniższe zapewnia, że kursor nie "gubi" menu między Zakupy a listą */
+    margin-top: 0; 
+}
+
+/* "Most" - zapobiega znikaniu przy przejeżdżaniu myszką */
+.Navbar-squeres.desktop-only::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: transparent;
+}
+
+/* --- LISTA LINKÓW --- */
+.navbar-ul-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.navbar-ul-list li {
+    padding: 0;
+    margin: 0;
+}
+
+/* LINKI W LIŚCIE (Kolczyki, Bransoletki itp.) */
+.navbar-li-list {
+    display: block;
+    padding: 12px 20px;
+    color: #444 !important;
+    text-decoration: none !important;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border-left: 0 solid #1b365d; /* Animowany pasek z boku */
+}
+
+.navbar-li-list:hover {
+    background: rgba(27, 54, 93, 0.05); /* Bardzo jasny błękit na hover */
+    color: #1b365d !important;
+    padding-left: 25px; /* Delikatne przesunięcie w prawo przy najechaniu */
+    border-left: 3px solid #1b365d;
+}
+
+/* --- EFEKT WEJŚCIA (ANIMACJA) --- */
+.Navbar-squeres.desktop-only {
+    animation: menuEntrance 0.3s ease-out forwards;
+    transform-origin: top center;
+}
+@media(min-width:992px) {
+    .desktop-only{
+        display: block;
+    }
+}
+@media(max-width:992px) {
+    .desktop-only{
+        display: none !important;
+    }
+}
+@keyframes menuEntrance {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

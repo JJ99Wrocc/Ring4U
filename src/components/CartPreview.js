@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/CartPreview.css"
 
 const CartPreview = ({ show }) => {
   if (!show) return null;

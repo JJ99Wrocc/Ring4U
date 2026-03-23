@@ -16,10 +16,8 @@
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
 }
 
-/* --- TWOJA KLASA AFTER-LOG-IN (NOWY DESIGN) --- */
 .Navbar-squeres.after-log-in {
-    /* Styl inline z JS (width, height, left, top) nadpisze te wartości, 
-       więc tutaj skupiamy się na wyglądzie "Premium" */
+
     
     background: rgba(10, 10, 10, 0.8) !important; /* Głęboka czerń */
     backdrop-filter: blur(20px) saturate(180%); /* Efekt szkła 2030 */
@@ -52,10 +50,6 @@
     background: transparent;
 }
 
-@keyframes luxuryFade {
-    from { opacity: 0; transform: translateY(10px) scale(0.95); }
-    to { opacity: 1; transform: translateY(0) scale(1); }
-}
 
 /* --- LISTA I LINKI --- */
 .Navbar-squeres ul {
@@ -75,13 +69,16 @@
 .custom-link {
     color: rgba(255, 255, 255, 0.6) !important;
     text-decoration: none;
-    font-size: 13px;
+
     font-weight: 500;
     font-family: 'Plus Jakarta Sans', sans-serif;
     display: flex;
     align-items: center;
 }
-
+.custom-link:last-child,.custom-link a, 
+.custom-link{
+    font-size: 11px !important;
+}
 /* HOVER NA OPCJE */
 .custom-link:hover {
     background: rgba(255, 255, 255, 0.07);
@@ -105,8 +102,29 @@
     background: rgba(255, 77, 77, 0.05);
 }
 
-/* --- TWOJA RESPONSYWNOŚĆ (BEZ ZMIAN) --- */
-@media(max-width: 768px) {
-    /* Tu zostawiam puste, bo Twoje media queries z plików CSS 
-       nadal będą działać na te klasy */
+
+@media(max-width: 992px) {
+    .custom-link:last-child,.custom-link a, 
+    .custom-link{
+        font-size: 10px !important;
+    
+    }
+
 }
+@media(max-width: 768px) {
+    .custom-link:last-child,.custom-link a, 
+    .custom-link{
+        font-size: 9px !important;
+    
+    }
+    .Navbar-squeres ,.after-log-in{
+        left: -125px !important;
+    }
+
+}
+
+
+@keyframes luxuryFade {
+        from { opacity: 0; transform: translateY(10px) scale(0.95); }
+        to { opacity: 1; transform: translateY(0) scale(1); }
+    }

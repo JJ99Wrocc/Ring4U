@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import "../css/LogInAfter.css"
 
 const LogInPreview = ({ show, setShow }) => {
   const [user,setUser] = useState(null)

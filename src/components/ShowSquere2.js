@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../css/ShowSquere2.css"
 
 const ShowSquare2 = ({ show, setShow }) => {
   return (
