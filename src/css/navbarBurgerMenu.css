@@ -1,6 +1,148 @@
-.burger-menu-img{height: 30px;width: 30px;border-radius: 28%;margin-right: 10px;}
+
+/* --- FUNDAMENT LUXURY MENU --- */
+#offcanvasNavbar {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  border-left: 1px solid rgba(27, 54, 93, 0.05);
+  width: 380px !important;
+  box-shadow: -10px 0 50px rgba(0, 0, 0, 0.05);
+}
+
+/* --- HEADER --- */
+.offcanvas-header {
+  
+  padding: 30px 40px;
+  background: #fff;
+}
+
+.offcanvas-title {
+  font-family: 'Playfair Display', serif; /* Podstawowy font luksusowy */
+  color: #1b365d;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.burger-menu-img {
+  height: 40px;
+  width: auto;
+  filter: drop-shadow(0 4px 8px rgba(27, 54, 93, 0.15));
+}
+
+.btn-close {
+  opacity: 0.5;
+  transition: all 0.3s;
+  background-size: 15px;
+}
+
+.btn-close:hover {
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+/* --- LISTA GŁÓWNA --- */
+.offcanvas-body {
+  padding: 0 40px !important;
+}
+
+.nav-item {
+  margin-bottom: 5px;
+}
+
+.nav-link {
+  color: #1a1a1a !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 20px 0 !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border: none !important;
+  background: none !important;
+}
+
+.nav-link:hover {
+  color: #1b365d !important;
+  padding-left: 10px !important;
+}
+
+/* --- SUBMENU (ANIMACJA) --- */
 .submenu {
-    max-height: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(27, 54, 93, 0.02);
+}
+
+.submenu-open {
+  max-height: 600px; /* Wysoka wartość dla swobodnego otwarcia */
+  margin-bottom: 20px;
+}
+
+.submenu li .nav-link {
+  font-size: 14px !important;
+  padding: 12px 20px !important;
+  color: #555 !important;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submenu li .nav-link i {
+  font-size: 10px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+.submenu li .nav-link:hover i {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* --- STRZAŁKI I ROTACJA --- */
+.transition {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 12px;
+  color: #1b365d;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+/* --- LINIE (HR) --- */
+hr {
+  margin: 0;
+  opacity: 0.08;
+  color: #1b365d;
+}
+
+/* --- SOCIAL MEDIA --- */
+.fa-brands {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #1b365d;
+}
+
+/* --- CUSTOM SCROLLBAR --- */
+.offcanvas-body::-webkit-scrollbar {
+  width: 3px;
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb {
+  background: #1b365d;
+  border-radius: 10px;
+}
+
+/* --- RESPONSYWNOŚĆ --- */
+.submenu {
+  max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
   }
@@ -16,4 +158,37 @@
   .rotate-180 {
     transform: rotate(180deg);
   }
-  
+  /* Plik: ../css/navbarBurgerMenu.css */
+
+.offcanvas {
+  /* Używamy vh dla starszych i dvh dla nowoczesnych przeglądarek (2026 standard) */
+  height: 100vh !important; 
+  height: 100dvh !important; 
+
+  border-left: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.offcanvas-body {
+  /* Pozwala na scrollowanie tylko wewnątrz menu, jeśli linków jest dużo */
+  overflow-y: auto;
+  height: 100%;
+  padding-bottom: 50px; /* Oddech na dole */
+}
+
+/* Jeśli chcesz, żeby tło strony nie "uciekało" przy otwartym menu */
+body.offcanvas-open {
+  overflow: hidden;
+}
+  @media (max-width: 576px) {
+    #offcanvasNavbar {
+        width: 100% !important; /* Na mobile zajmuje cały ekran dla efektu Premium */
+    }
+    
+    .offcanvas-header {
+        padding: 20px 25px;
+    }
+    
+    .offcanvas-body {
+        padding: 0 25px !important;
+    }
+  }.burger-menu-img{height: 30px;width: 30px;border-radius: 28%;margin-right: 10px;}

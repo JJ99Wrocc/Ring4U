@@ -309,6 +309,7 @@ const EarRings =()=>{
     return(
 
           <section id="product-ear-rings" className="container" role="region" aria-label="product-ear-rings" >
+             <h1 className="ear-rings-title">Kolczyki</h1>
                 <div className="row">
                     {earRings.map((product)  => (
                         <article

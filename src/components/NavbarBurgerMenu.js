@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import "../css/navbarBurgerMenu.css";
-// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import bootstrap from "bootstrap/dist/js/bootstrap.bundle";
 import Pierscionek from "../img/Pierscionek.png";import { Link, useNavigate } from "react-router-dom";
 const NavbarBurgerMenu = () => {
@@ -79,11 +78,15 @@ const NavbarBurgerMenu = () => {
               }`}
             >
               <hr></hr>
+            
               <li>
   <Link
     to="/ear-rings"
     className="nav-link"
-    onClick={handleLinkClick}
+    onClick={(e) => {
+      e.preventDefault(); 
+      handleLinkClick("/ear-rings"); 
+    }}
   >
     Kolczyki <i className="fa-solid fa-arrow-right"></i>
   </Link>
@@ -93,7 +96,10 @@ const NavbarBurgerMenu = () => {
   <Link
     to="/necklace"
     className="nav-link"
-    onClick={() => handleLinkClick("/necklace")}
+    onClick={(e) => {
+      e.preventDefault();
+      handleLinkClick("/necklace");
+    }}
   >
     Naszyjniki <i className="fa-solid fa-arrow-right"></i>
   </Link>
@@ -104,7 +110,10 @@ const NavbarBurgerMenu = () => {
   <Link
     to="/bracelet"
     className="nav-link"
-    onClick={handleLinkClick}
+    onClick={(e) => {
+      e.preventDefault();
+      handleLinkClick("/bracelet");
+    }}
   >
     Branzoletki <i className="fa-solid fa-arrow-right"></i>
   </Link>
@@ -114,7 +123,10 @@ const NavbarBurgerMenu = () => {
   <Link
     to="/rings"
     className="nav-link"
-    onClick={handleLinkClick}
+    onClick={(e) => {
+      e.preventDefault();
+      handleLinkClick("/rings")
+    }}
   >
     Pierścionki <i className="fa-solid fa-arrow-right"></i>
   </Link>

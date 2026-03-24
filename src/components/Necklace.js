@@ -3,7 +3,7 @@ import { CartContext } from "./CartContext";
 import { Link } from "react-router-dom";
 import UpperFooter from "./Footer";
 import ProductAdded from "./ProductsAdded";
-
+import "../css/necklaces.css"
 const Necklace = () => {
   const { addProduct } = useContext(CartContext);
   const [necklaces, setNecklaces] = useState([]);
@@ -69,6 +69,7 @@ const Necklace = () => {
 
   return (
     <section id="product-necklaces" className="container">
+      <h1 className="necklaces-title">Naszyjniki</h1>
       <div className="row">
         {loading && <p>Ładowanie produktów...</p>}
         {!loading && necklaces.length === 0 && <p>Brak produktów w kategorii naszyjniki.</p>}

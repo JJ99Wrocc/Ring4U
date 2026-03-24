@@ -1,0 +1,287 @@
+/* STYLIZACJA SAMEGO OBRAZKA PRO 2026 */
+
+.img-fluid {
+    /* 1. ZAOKRĄGLENIE I KSZTAŁT */
+    border-radius: 12px; /* Nadaje nowoczesny, luksusowy sznyt (miękkie krawędzie) */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Idealne dopasowanie bez rozciągania */
+
+    /* 2. EFEKT GŁĘBI (NIE "WKLEJONE") */
+    filter: brightness(0.98) contrast(1.02) drop-shadow(0 5px 15px rgba(0,0,0,0.05));
+    /* Powyższy filtr dodaje mikro-cień pod sam produkt, nie pod całą ramkę */
+
+    /* 3. PŁYNNOŚĆ RUCHU */
+    transition: 
+        transform 1.2s cubic-bezier(0.2, 1, 0.3, 1), 
+        filter 0.5s ease, 
+        border-radius 0.5s ease;
+    
+    display: block;
+}
+
+/* Zachowanie obrazka po najechaniu (Hover) */
+.product-rings:hover .img-fluid {
+    transform: scale(1.05); /* Bardzo delikatny, prestiżowy zoom */
+    filter: brightness(1.03) contrast(1.08) drop-shadow(0 10px 25px rgba(0,0,0,0.1));
+    border-radius: 20px; /* Lekkie zwiększenie zaokrąglenia przy interakcji */
+}
+
+/* --- LUXURY BUTTON 2026 --- */
+
+/* Styl bazowy dla przycisków w produktach */
+.rings-btn, 
+button {
+    position: relative;
+    bottom: 10px;
+    left: 5px;
+    /* 1. KSZTAŁT I WYMIARY */
+    padding: 14px 14px;
+    border-radius: 50px; /* Ultra-nowoczesny, obły kształt (pill-shape) */
+    border: 1px solid #fff; /* Delikatna ramka */
+    
+    /* 2. KOLORYSTYKA - ZERO RÓŻU */
+    background-color: #111111; /* Głęboka czerń */
+    color: #ffffff !important; /* BIAŁE NAPISY I IKONY */
+    
+    /* 3. TYPOGRAFIA PRO */
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.5px; /* Luksusowy rozstaw liter */
+    
+    /* 4. INTERAKCJA I PŁYNNOŚĆ */
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Odstęp między ikoną a tekstem */
+    z-index: 1;
+}
+
+/* Biała ikona w środku */
+.rings-btni,
+button i {
+    color: #ffffff !important;
+    font-size: 0.9rem;
+    transition: transform 0.4s ease;
+}
+
+/* EFEKT HOVER - PRESTIŻOWE ZŁOTO I UNIESIENIE */
+.rings-btn:hover, 
+button:hover {
+    background-color: #c5a059; /* Szlachetne złoto */
+    border-color: #c5a059;
+    color: #ffffff !important;
+    transform: translateY(-3px); /* Delikatne uniesienie przycisku */
+    box-shadow: 0 10px 25px rgba(197, 160, 89, 0.3); /* Złota poświata */
+}
+
+/* Animacja ikony przy najechaniu (lekki ruch w górę) */
+.rings-btn:hover i,
+button:hover i {
+    transform: translateY(-2px);
+}
+
+/* EFEKT KLIKNIĘCIA (ACTIVE) */
+.rings-btn:active,
+button:active {
+    transform: translateY(0); /* Przycisk "siada" przy kliknięciu */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    filter: brightness(0.9);
+}
+
+/* SZKLANY BŁYSK (SHIMMER) PRZECHODZĄCY PRZEZ PRZYCISK */
+.rings-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.2), 
+        transparent
+    );
+    transition: all 0.6s;
+    z-index: -1;
+}
+
+.rings-btn:hover::before {
+    left: 100%;
+}
+/* --- LUXURY TYPOGRAPHY 2026 --- */
+
+.mt-2 {
+    /* 1. TYPOGRAFIA - CZYSTA I LEKKA */
+    font-family: 'Inter', 'Montserrat', sans-serif; /* Jeśli masz te fonty, będzie idealnie */
+    font-size: 11.5px; /* Mniejszy rozmiar = większy prestiż */
+    font-weight: 500; /* Medium, nie za gruby */
+    text-transform: uppercase; /* Zawsze wielkie litery dla biżuterii */
+    letter-spacing: 3px; /* KLUCZ: Duże odstępy między literami dają efekt "Premium" */
+    line-height: 1.6;
+    
+    /* 2. KOLORYSTYKA - ZERO RÓŻU */
+    color: #fff !important; /* Głęboki grafit/czerń */
+    
+    /* 3. POZYCJONOWANIE */
+    margin-top: 1.5rem !important; /* Nadajemy dystans od zdjęcia */
+    display: block;
+    text-align: center;
+    transition: all 0.4s ease;
+    
+    /* 4. EFEKT PRZY NAJECHANIU (Jeśli to link) */
+    cursor: pointer;
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Subtelna linia pod napisem pojawiająca się na hover */
+.mt-2:hover {
+    color: #c5a059 !important; /* Zmiana na szlachetne złoto */
+    letter-spacing:3.5px; /* Napis "rozsuwa się" przy najechaniu - efekt pro */
+}
+
+/* Opcjonalnie: Stylizacja ceny, jeśli też ma tę klasę lub jest pod nią */
+.mt-2 + p {
+    font-size: 15px;
+    color: #888;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    text-align: center;
+}
+/* --- LUXURY OBSIDIAN ROW 2026 --- */
+
+.row {
+    /* 1. NOWY KOLOR - GŁĘBOKI GRAFIT (ZAMIAST CZERNI) */
+    background: linear-gradient(165deg, #161616 0%, #0d0d0d 100%);
+    
+    /* 2. MIĘKKIE KRAWĘDZIE I PRESTIŻOWE CIENIE */
+    border-radius: 30px;
+    padding: 70px 50px;
+    margin: 50px 0 !important;
+    
+    /* 3. EFEKT "GLOW" - SZLACHETNA POŚWIATA */
+    /* Zewnętrzny cień, który tworzy "aurę" wokół sekcji na czarnym tle */
+    box-shadow: 
+        0 40px 100px rgba(0, 0, 0, 0.8), 
+        inset 0 1px 1px rgba(255, 255, 255, 0.05); /* Cienka linia światła na górze */
+
+    /* 4. RAMKA W KOLORZE CIEMNEGO ZŁOTA (SMOKED GOLD) */
+    border: 1px solid rgba(197, 160, 89, 0.1); 
+    
+    /* 5. EFEKT SZKŁA (FROSTED GLASS) */
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* DODATKOWY EFEKT: SUBTELNY BLASK W ROGACH */
+.row::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(197, 160, 89, 0.03) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Stylizacja kart wewnątrz, żeby pasowały do nowego tła */
+.row .product-rings {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/* --- LUXURY RING TITLE 2026 --- */
+
+.ring-title {
+    /* 1. POZYCJONOWANIE - IDEALNY ŚRODEK */
+    text-align: center;
+    margin: 40px auto;
+    display: block;
+    width: 100%;
+    
+    /* 2. TYPOGRAFIA HIGH-END */
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    font-size: 24px; /* Nie za duży, luksus to subtelność */
+    font-weight: 300; /* Cienka czcionka wygląda drożej */
+    text-transform: uppercase; /* Obowiązkowe dla biżuterii */
+    letter-spacing: 8px; /* KLUCZ: Bardzo szeroki rozstaw liter */
+    line-height: 1.2;
+    
+    /* 3. KOLORYSTYKA I EFEKT ŚWIETLNY */
+    color: #ffffff; /* Białe napisy na czarnym tle */
+    position: relative;
+    padding-bottom: 20px;
+    
+    /* Subtelny blask tekstu (soft glow) */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    
+    transition: all 0.6s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/* 4. DEKORACYJNA LINIA POD TYTUŁEM (MINIMAL) */
+.ring-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px; /* Krótka, elegancka linia */
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #c5a059, transparent); /* Złoty akcent */
+    transition: width 0.8s ease;
+}
+
+/* 5. INTERAKCJA (HOVER) */
+.ring-title:hover {
+    letter-spacing: 12px; /* Napis jeszcze bardziej się "rozszerza" */
+    color: #c5a059; /* Zmiana na złoto */
+    cursor: default;
+}
+
+.ring-title:hover::after {
+    width: 80px; /* Linia się wydłuża */
+}
+
+/* Responsywność dla mobile */
+@media (max-width: 992px) {
+    .ring-title {
+        font-size: 18px;
+        letter-spacing: 5px;
+        margin: 30px auto;
+    }
+}
+
+/* Responsywność */
+@media (max-width: 992px) {
+    .mt-2{
+font-size: 9px;
+letter-spacing: 2px;
+    }
+    .mt-2:hover{
+        letter-spacing: 2.5px ;
+    }
+    .mt-2 + p{
+font-size: 13px;
+    }
+    .rings-btn{
+        padding: 11px 11px;
+    }
+    .fa-fw{
+        font-size: 10px;
+    }
+    .row {
+        padding: 40px 20px;
+        margin: 30px 10px !important;
+        border-radius: 20px;
+    }
+}

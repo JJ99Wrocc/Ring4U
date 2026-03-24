@@ -53,7 +53,7 @@ const Navbar = () => {
   const offcanvasRef = useRef(null);
 
   const handleLinkClick = () => {
-    // Pobieramy instancję offcanvas i zamykamy
+   
     const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasRef.current);
     bsOffcanvas.hide();
   };

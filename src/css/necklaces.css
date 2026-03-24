@@ -1,14 +1,6 @@
-body{
-    overflow: scroll !important;
-}
-
-
-.ear-rings-box{  position: fixed;
-    height: 100vh;
-   }
 /* --- LUXURY RING TITLE 2026 --- */
 
-.ear-rings-title {
+.necklaces-title {
     /* 1. POZYCJONOWANIE - IDEALNY ŚRODEK */
     text-align: center;
     margin: 40px auto;
@@ -35,7 +27,7 @@ body{
 }
 
 /* 4. DEKORACYJNA LINIA POD TYTUŁEM (MINIMAL) */
-.ear-rings-title::after {
+.necklaces-title::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -48,19 +40,19 @@ body{
 }
 
 /* 5. INTERAKCJA (HOVER) */
-.ear-rings-title:hover {
+.necklaces-title:hover {
     letter-spacing: 12px; /* Napis jeszcze bardziej się "rozszerza" */
     color: #c5a059; /* Zmiana na złoto */
     cursor: default;
 }
 
-.ear-rings-title:hover::after {
+.necklaces-title:hover::after {
     width: 80px; /* Linia się wydłuża */
 }
 
 /* Responsywność dla mobile */
 @media (max-width: 992px) {
-    .ear-rings-title {
+    .necklaces-title {
         font-size: 18px;
         letter-spacing: 5px;
         margin: 30px auto;

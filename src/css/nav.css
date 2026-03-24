@@ -302,3 +302,20 @@
     .navbar-toggler {position: absolute;right: 25px;top: 33px;font-size: 10px;
     }
   }
+
+
+
+  @media (min-width: 992px) {
+    .mobile-only.burger-btn {
+        display: none !important;
+    }
+}
+
+/* Upewniamy się, że na mniejszych niż 992px jest widoczny jako flex/block */
+@media (max-width: 991px) {
+    .mobile-only.burger-btn {
+        display: flex !important; /* lub block, zależnie od Twojego układu */
+        align-items: center;
+        justify-content: center;
+    }
+}

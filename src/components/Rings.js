@@ -3,6 +3,7 @@ import React, { useContext, useState } from "react";
 import { CartContext } from "./CartContext";
 import ProductAdded from "./ProductsAdded";
 import { Link } from "react-router-dom";
+import "../css/rings.css"
 
 
 export const rings = [
@@ -21,17 +22,18 @@ const Rings =()=>{
   };
 
     return(
-
-        <section id="product-ear-rings" className="container" role="region" aria-label="product-ear-rings">
+        <div> 
+        <section id="product-rings" className="container rings-section" role="region" aria-label="product-rings">
+          <h1 className="ring-title">Pierścionki</h1>
                 <div className="row">
                     {rings.map((product)  => (
                         <article
                         key={product.id}
-                        className="col-6 col-md-3 mb-4 product-ear-rings"
+                        className="col-6 col-md-3 mb-4 product-rings"
                         role="group"
                         aria-label={`${product.name}, cena ${product.price}`}
                         >
-                            <div className="ear-rings-image-wrapper">
+                            <div className="rings-image-wrapper">
                                 <img
                                 src={product.name}
                                 className="img-fluid"
@@ -45,7 +47,7 @@ const Rings =()=>{
                                 }}
                                 />
                                 <button
-                                className="ear-rings-btn"
+                                className="rings-btn"
                                 onClick={() => handleButtonClick(product)}
                                 aria-label={`Dodaj ${product.name} do koszyka`}>
                                     <i className="fa-solid fa-bag-shopping fa-fw"></i>
@@ -68,6 +70,7 @@ const Rings =()=>{
                     }
                 </div>
         </section>
+        </div>
     )
 }
 

@@ -91,41 +91,41 @@
         <Route
           path="/ear-rings"
           element={
-            <PublicRoute>
+            
               <LayoutWithNavAndFooter>
                 <EarRings />
               </LayoutWithNavAndFooter>
-            </PublicRoute>
+            
           }
         />
         <Route
           path="/bracelet"
           element={
-            <PublicRoute>
+            
               <LayoutWithNavAndFooter>
                 <Bracelet />
               </LayoutWithNavAndFooter>
-            </PublicRoute>
+            
           }
         />
         <Route
           path="/necklace"
           element={
-            <PublicRoute>
+            
               <LayoutWithNavAndFooter>
                 <Necklace />
               </LayoutWithNavAndFooter>
-            </PublicRoute>
+          
           }
         />
         <Route
           path="/rings"
           element={
-            <PublicRoute>
+            
               <LayoutWithNavAndFooter>
                 <Rings />
               </LayoutWithNavAndFooter>
-            </PublicRoute>
+            
           }
         />
         <Route
@@ -190,14 +190,7 @@
 
 
       
-        {/* <Route
-          path="/payment"
-          element={
-            <LayoutWithNavAndFooter>
-            <Payment/>
-          </LayoutWithNavAndFooter>
-          }
-  /> */}
+
         <Route
           path="/forgot-password"
           element={
@@ -241,7 +234,7 @@
               <main className="main-content">
                 <AppRoutes />
               </main>
-              {/* <EcarlaImport /> */}
+     
         
             </div>
             <CookieConsent />
