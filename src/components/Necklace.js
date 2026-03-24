@@ -3,7 +3,8 @@ import { CartContext } from "./CartContext";
 import { Link } from "react-router-dom";
 import UpperFooter from "./Footer";
 import ProductAdded from "./ProductsAdded";
-import "../css/necklaces.css"
+import "../css/necklaces.css";
+
 const Necklace = () => {
   const { addProduct } = useContext(CartContext);
   const [necklaces, setNecklaces] = useState([]);
@@ -14,13 +15,13 @@ const Necklace = () => {
     fetch("/data/necklaces.xml")
       .then(res => res.text())
       .then(str => {
-   
+        // Zamiana przecinków na kropki w cenach
         str = str.replace(/price="(\d+),(\d+)"/g, 'price="$1.$2"');
   
         const parser = new DOMParser();
         const xml = parser.parseFromString(str, "text/xml");
   
-        // ✅ Pobieramy wszystkie produkty z XML
+        // Pobieramy wszystkie produkty z XML
         const offers = Array.from(xml.querySelectorAll("o")).map((o, index) => {
           const images = [
             o.querySelector("main")?.getAttribute("url"),
@@ -39,18 +40,13 @@ const Necklace = () => {
           };
         });
   
-        // ✅ Sprawdzenie, co dokładnie wczytano
-        console.log("Wczytane produkty z XML (offers):", offers);
-  
-        // ✅ Filtrujemy tylko naszyjniki
+        // Filtrujemy tylko naszyjniki
         const keywords = ["naszyjnik", "kette"];
         const filtered = offers.filter(p => {
           const cat = p.category?.toLowerCase() || "";
           const name = p.name?.toLowerCase() || "";
           return keywords.some(k => cat.includes(k) || name.includes(k));
         });
-  
-        console.log("Przefiltrowane produkty (necklaces):", filtered);
   
         setNecklaces(filtered);
         setLoading(false);
@@ -61,43 +57,55 @@ const Necklace = () => {
       });
   }, []);
   
-
   const handleAddToCart = (product) => {
     addProduct(product);
     setPopupProduct(product);
   };
 
   return (
-    <section id="product-necklaces" className="container">
-      <h1 className="necklaces-title">Naszyjniki</h1>
-      <div className="row">
-        {loading && <p>Ładowanie produktów...</p>}
-        {!loading && necklaces.length === 0 && <p>Brak produktów w kategorii naszyjniki.</p>}
+    <section id="product-necklaces" className="neck-v2-main-container container">
+      <h1 className="neck-v2-title">Naszyjniki</h1>
+      
+      <div className="row neck-v2-row-grid">
+        {loading && <p className="text-white text-center">Ładowanie produktów...</p>}
+        {!loading && necklaces.length === 0 && (
+          <p className="text-white text-center">Brak produktów w kategorii naszyjniki.</p>
+        )}
 
         {necklaces.map(product => (
-          <article key={product.id} className="col-6 col-md-3 mb-4 product-necklace">
-            <div className="necklace-image-wrapper position-relative">
+          <article key={product.id} className="col-6 col-md-3 mb-4 neck-v2-card">
+            <div className="neck-v2-image-wrapper">
               <img
                 src={product.images[0]}
-                className="img-fluid"
+                className="img-fluid neck-v2-img"
                 alt={product.name}
-                onMouseEnter={e => { if (product.images[1]) e.currentTarget.src = product.images[1]; }}
-                onMouseLeave={e => { e.currentTarget.src = product.images[0]; }}
+                onMouseEnter={e => { 
+                  if (product.images[1]) e.currentTarget.src = product.images[1]; 
+                }}
+                onMouseLeave={e => { 
+                  e.currentTarget.src = product.images[0]; 
+                }}
               />
               <button
-                className="necklace-btn position-absolute"
+                className="neck-v2-buy-btn"
                 onClick={() => handleAddToCart(product)}
                 aria-label={`Dodaj ${product.name} do koszyka`}
               >
                 <i className="fa-solid fa-bag-shopping fa-fw"></i>
               </button>
             </div>
-            <h5 className="mt-2">
-              <Link to={`/product/${product.id}`} style={{ textDecoration: "none", color: "inherit" }}>
-                {product.name}
-              </Link>
-            </h5>
-            <p>{product.price}</p>
+            
+            <div className="neck-v2-product-info">
+              <h5>
+                <Link 
+                  to={`/product/${product.id}`} 
+                  className="neck-v2-product-link"
+                >
+                  {product.name}
+                </Link>
+              </h5>
+              <p className="neck-v2-product-price">{product.price}</p>
+            </div>
           </article>
         ))}
       </div>

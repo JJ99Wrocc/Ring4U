@@ -172,13 +172,107 @@ hr {
   /* Pozwala na scrollowanie tylko wewnątrz menu, jeśli linków jest dużo */
   overflow-y: auto;
   height: 100%;
-  padding-bottom: 50px; /* Oddech na dole */
+  padding-bottom: 50px;
 }
 
 /* Jeśli chcesz, żeby tło strony nie "uciekało" przy otwartym menu */
 body.offcanvas-open {
   overflow: hidden;
 }
+/* Kontener przycisku */
+.navbar-toggler {
+  position: relative;
+  top: -5px;
+  border: none !important;
+  padding: 10px 5px;
+  background: transparent;
+  outline: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+/* Ikona - Środkowa linia */
+.navbar-toggler-icon {
+  background-image: none !important; /* Wywalamy standardowy obrazek */
+  width: 35px;
+  height: 2px;
+  background: linear-gradient(90deg, #e67e22, #f39c12); /* Kolor Miedź/Bursztyn */
+  position: relative;
+  border-radius: 2px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 0 8px rgba(230, 126, 34, 0.4);
+}
+
+/* Górna linia */
+.navbar-toggler-icon::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 0; /* Wyrównanie do prawej dla stylu 2026 */
+  width: 22px; /* Krótsza - efekt asymetrii */
+  height: 2px;
+  background: inherit;
+  border-radius: 2px;
+  transition: all 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+/* Dolna linia */
+.navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 28px; /* Średnia długość */
+  height: 2px;
+  background: inherit;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* --- EFEKT PRO 2026 (BEZ ZMIANY W X) --- */
+
+/* Hover: Linie "pływają" - dynamiczna zmiana szerokości */
+.navbar-toggler:hover .navbar-toggler-icon {
+  width: 40px;
+  box-shadow: 0 0 15px rgba(230, 126, 34, 0.7);
+}
+
+.navbar-toggler:hover .navbar-toggler-icon::before {
+  width: 35px;
+  transform: translateX(-5px); /* Delikatne przesunięcie w locie */
+}
+
+.navbar-toggler:hover .navbar-toggler-icon::after {
+  width: 20px;
+  transform: translateX(15px);
+}
+
+/* Stan po kliknięciu (Gdy menu jest otwarte - nadal burger, ale w innym układzie) */
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  background: #ffcc00; /* Jaśniejszy, "aktywny" kolor */
+  transform: scale(0.9);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+  width: 40px;
+  top: -8px;
+  background: #ffcc00;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+  width: 40px;
+  bottom: -8px;
+  background: #ffcc00;
+}
+
+/* Delikatny efekt poświaty przy kliknięciu */
+.navbar-toggler:active {
+  transform: scale(0.85);
+}
+.burger-menu-img{height: 30px;width: 30px;border-radius: 28%;margin-right: 10px;}
+
   @media (max-width: 576px) {
     #offcanvasNavbar {
         width: 100% !important; /* Na mobile zajmuje cały ekran dla efektu Premium */
@@ -191,4 +285,5 @@ body.offcanvas-open {
     .offcanvas-body {
         padding: 0 25px !important;
     }
-  }.burger-menu-img{height: 30px;width: 30px;border-radius: 28%;margin-right: 10px;}
+
+  }

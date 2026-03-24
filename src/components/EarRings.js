@@ -1,9 +1,10 @@
 import React, { useContext, useState } from "react";
 import { CartContext } from "./CartContext";
-// import ProductAdded from "./ProductsAdded";
+import ProductAdded from "./ProductsAdded"; // Odkomentowałem, by modal działał
 import { Link } from "react-router-dom";
 import '../css/earRings.css';
 import UpperFooter from "./Footer";
+
 export const earRings = [
     {  id: "KST1415", 
         name: "Kolczyki 'Koniczynka' czarna", 
@@ -11,25 +12,20 @@ export const earRings = [
         image: "/img/Kolczyki platerowane KST1415 .jpg", 
         url: "/product/KST1415",
         description: ["Kolczyki ze stali szlachetnej platerowane 14-karatowym złotem, sztyft. Eleganckie i stylowe kolczyki.",
-    
     "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."],
-          specs: {
+        specs: {
             "Wymiar kolczyków": "1,3cm x 1,3cm ",
             "Wymiar kartonika": "5,5 cm x 6 cm",
             "Waga": "4g netto / 6g brutto",
             "Kolor": "jasne złoto",
             "Rodzaj" : "zapięcia: sztyft"
-          },
+        },
         material: "Stal szlachetna", 
         color: "Jasne złoto", 
         availability: "W magazynie",
-        image2:       "/img/Kolczyki platerowane KST1415 (2).jpg",
-    
-    
-       
-        },
-      
-        {  id: "KST3376", 
+        image2: "/img/Kolczyki platerowane KST1415 (2).jpg",
+    },
+    {  id: "KST3376", 
           name: "Kolczyki 'KROPLE' pozłacane", 
           price: "99.99 zł", 
           image: "/img/Kolczyki krople KST3376.jpg", 
@@ -42,14 +38,13 @@ export const earRings = [
             "Wymiar kartonika": "6,5 cm x 9,5 cm",
             "Waga": "4 g netto/ 6 g brutto",  
           },
-     
           material: "Stal szlachetna", 
           color: "złoty", 
           availability: "W magazynie",
           image2:  "/img/Kolczyki krople KST3376 (1).jpg",
           image3:  "/img/Kolczyki krople KST3376 (2).jpg",
-       },
-        {  id: "KST3420", 
+    },
+    {  id: "KST3420", 
           name: "Kolczyki 'Sztyft' perła", 
           price: "99.99 zł", 
           image: "/img/Kolczyki perła KST3420.jpg", 
@@ -64,14 +59,12 @@ export const earRings = [
             "Kolor": "jasne złoto",  
             "Rodzaj zapięcia": "sztyft",  
           },
-    
           material: "Stal szlachetna", 
           color: "Jasne złoto", 
           availability: "W magazynie",
           image2: "/img/Kolczyki perła KST3420 3zdj.jpg",
-            
-            },
-      { 
+    },
+    { 
         id: "KST3419", 
         name: "Kolczyki 'Koniczynka' czarna", 
         price: "99.99 zł", 
@@ -89,8 +82,8 @@ export const earRings = [
         color: "Jasne złoto", 
         availability: "W magazynie",
           image2:  "/img/Koniczynka czarna KST3419-3zdj.jpg",
-         },
-         { 
+    },
+    { 
           id: "KST2951", 
           name: "Kolczyki 'Gwiazdki' złote", 
           price: "99.99 zł", 
@@ -99,8 +92,6 @@ export const earRings = [
           description: ["Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
           specs: {
             "Wymiar kolczyków": "1 cm x 1cm ",
-           //  "Wymiar kartonika": "6 cm x 5,5 cm ",
-           //  "Waga": "4g netto / 7g brutto",  
             "Kolor": "jasne złoto",  
             "Rodzaj zapięcia": "sztyft",  
           },
@@ -108,9 +99,8 @@ export const earRings = [
           color: "Jasne złoto", 
           availability: "W magazynie",
             image2:  "/img/Kolczyki Gwiazdki złote-KST2938 (1).jpg",
-           //  image3:  "/img/Kolczyki koła geometryczne KST3409 (2).jpg",
-           },
-      { 
+    },
+    { 
         id: "KST3409", 
         name: "Kolczyki 'Wiszące' złote", 
         price: "99.99 zł", 
@@ -128,8 +118,8 @@ export const earRings = [
         color: "Jasne złoto", 
         availability: "W magazynie",
           image2:  "/img/Kolczyki wiszące kst3409 (1).jpg",
-         },
-         { 
+    },
+    { 
           id: "KST3325", 
           name: "Kolczyki 'Muszelki' złote", 
           price: "99.99 zł", 
@@ -148,8 +138,8 @@ export const earRings = [
           availability: "W magazynie",
             image2:  "/img/Kolczyki eperełki złote-KST3325 (1).jpg",
             image3:  "/img/Kolczyki eperełki złote-KST3325 (2).jpg",
-           },
-           { 
+    },
+    { 
             id: "KST2823", 
             name: "Kolczyki 'Serca' złote", 
             price: "99.99 zł", 
@@ -158,8 +148,6 @@ export const earRings = [
             description: ["Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
             specs: {
               "Wymiar kolczyków": "2,5 x 1,4 cm",
-             //  "Wymiar kartonika": "6 cm x 5,5 cm ",
-             //  "Waga": "6g netto / 8g brutto",  
               "Kolor": " złoto",  
               "Rodzaj zapięcia": "sztyft",  
             },
@@ -167,9 +155,8 @@ export const earRings = [
             color: " złoto", 
             availability: "W magazynie",
               image2:  "/img/Kolczyki serca-KST2823(1).jpg",
-             //  image3:  "/img/Kolczyki koła geometryczne KST3409 (2).jpg",
-             },
-      { 
+    },
+    { 
         id: "KST3349", 
         name: "Kolczyki 'Łezki' wiszące złote", 
         price: "99.99 zł", 
@@ -187,8 +174,8 @@ export const earRings = [
         color: "Jasne złoto", 
         availability: "W magazynie",
           image2:  "/img/Kolczyki Łezki wiszące KST3349.jpg",
-         },
-         { 
+    },
+    { 
            id: "KST3369", 
         name: "Kolczyki 'Cyrkonie' złote", 
         price: "99.99 zł", 
@@ -208,9 +195,9 @@ export const earRings = [
           image2:  "/img/Kolczyki Cyrkonie złote-kst3369.jpg",
           image3:  "/img/Kolczyki Cyrkonie złote-kst3369 (2).jpg",
           image4:  "/img/Kolczyki Cyrkonie złote-kst3369 (3)  .jpg",
-         },
-         { 
-           id: "KST2951", 
+    },
+    { 
+           id: "KST2951_2", 
            name: "Kolczyki 'Koła' gemetryczne", 
            price: "99.99 zł", 
            image: "/img/Kolczyki koła geometryczne KST3409 (1).jpg", 
@@ -228,8 +215,8 @@ export const earRings = [
            availability: "W magazynie",
              image2:  "/img/Kolczyki koła geometryczne KST3409 .jpg",
              image3:  "/img/Kolczyki koła geometryczne KST3409 (2).jpg",
-            },
-         { 
+    },
+    { 
            id: "KST3359", 
            name: "Kolczyki 'Wisienki' gemetryczne", 
            price: "99.99 zł", 
@@ -247,9 +234,8 @@ export const earRings = [
            color: "Jasne złoto", 
            availability: "W magazynie",
              image2:  "/img/Kolczyki wisienki jasne złoto KST3359.jpg",
-            //  image3:  "/img/Kolczyki koła geometryczne KST3409 (2).jpg",
-            },
-         { 
+    },
+    { 
            id: "KST2844B", 
            name: "Kolczyki 'Piękne' złote", 
            price: "99.99 zł", 
@@ -258,18 +244,14 @@ export const earRings = [
            description: ["Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
            specs: {
              "Wymiar kolczyków": "Wysokość: 2,9 cm Szerokość: 0,4 cm",
-            //  "Wymiar kartonika": "6 cm x 5,5 cm ",
-            //  "Waga": "6g netto / 8g brutto",  
              "Kolor": " złoto",  
              "Rodzaj zapięcia": "sztyft",  
            },
            material: "Stal szlachetna", 
            color: " złoto", 
            availability: "W magazynie",
-            //  image2:  "/img/Kolczyki wisienki jasne złoto KST3359(1).jpg",
-            //  image3:  "/img/Kolczyki koła geometryczne KST3409 (2).jpg",
-            },
-         { 
+    },
+    { 
            id: "KST2931CZ", 
            name: "Kolczyki 'Pętelka' złote", 
            price: "99.99 zł", 
@@ -279,7 +261,6 @@ export const earRings = [
            specs: {
              "Wymiar kolczyków": "2 cm",
              "Średnica kółka": "1,4 cm  ",
-            //  "Waga": "6g netto / 8g brutto",  
              "Kolor": " złoto",  
              "Rodzaj zapięcia": "sztyft",  
            },
@@ -287,16 +268,11 @@ export const earRings = [
            color: " złoto", 
            availability: "W magazynie",
              image2:  "/img/Kolczyki kółka KST2931cz(1).jpg",
-            //  image3:  "/img/Kolczyki koła geometryczne KST3409 (2).jpg",
-            },
+    },
+];
 
-    
-
-      
-        ]
-
-const EarRings =()=>{  
-  const { selectedProducts, addProduct } = useContext(CartContext);
+const EarRings = () => {  
+  const { addProduct } = useContext(CartContext);
   const [visible, setVisible] = useState(false);
   const [productToAdd, setProductToAdd] = useState(null);   
 
@@ -306,60 +282,59 @@ const EarRings =()=>{
     setVisible(true);  
   };
 
-    return(
-
-          <section id="product-ear-rings" className="container" role="region" aria-label="product-ear-rings" >
-             <h1 className="ear-rings-title">Kolczyki</h1>
-                <div className="row">
-                    {earRings.map((product)  => (
-                        <article
-                        key={product.id}
-                        className="col-6 col-md-3 mb-4 product-ear-rings"
-                        role="group"
-                        aria-label={`${product.name}, cena ${product.price}`}
-                        >
-                            <div className="ear-rings-image-wrapper">
-                                <img
-                                src={product.image}
-                                className="img-fluid"
-                                onMouseEnter={(e) => {
-                                    if(product.image2) {
-                                        e.currentTarget.src =product.image2;
-                                    }
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.currentTarget.src = product.image;
-                                }}
-                                />
-                                <button
-                                className="ear-rings-btn"
-                                onClick={() => handleButtonClick(product)}
-                                aria-label={`Dodaj ${product.name} do koszyka`}>
-                                    <i className="fa-solid fa-bag-shopping fa-fw"></i>
-                                    </button>    
-                                                             
-
-                            </div>
-                            <h5>
-                                      <Link 
-                                        to={product.url} 
-                                        style={{ textDecoration: 'none', color: 'inherit' }}
-                                      >
-                                        {product.name}
-                                      </Link>
-                                    </h5>
-                            
-                                    <p>{product.price}</p>
-                        </article>
-                    ) )
-                    }
-                </div>
-                <UpperFooter />
-        </section>
-        
-    )
+  return (
+    <section id="product-ear-rings" className="ear-v2-main-container container" role="region" aria-label="product-ear-rings">
+      {/* MODAL PO DODANIU */}
+      <ProductAdded visible={visible} setVisible={setVisible} products={productToAdd ? [productToAdd] : []} />
+      
+      <h1 className="ear-v2-title">Kolczyki</h1>
+      
+      <div className="row ear-v2-row-grid">
+        {earRings.map((product) => (
+          <article
+            key={product.id}
+            className="col-6 col-md-3 mb-4 ear-v2-card"
+            role="group"
+            aria-label={`${product.name}, cena ${product.price}`}
+          >
+            <div className="ear-v2-image-wrapper">
+              <img
+                src={product.image}
+                className="img-fluid ear-v2-img"
+                alt={product.name}
+                onMouseEnter={(e) => {
+                  if(product.image2) e.currentTarget.src = product.image2;
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.src = product.image;
+                }}
+              />
+              <button
+                className="ear-v2-buy-btn"
+                onClick={() => handleButtonClick(product)}
+                aria-label={`Dodaj ${product.name} do koszyka`}
+              >
+                <i className="fa-solid fa-bag-shopping fa-fw"></i>
+              </button>
+            </div>
+            
+            <div className="ear-v2-product-info">
+              <h5>
+                <Link 
+                  to={product.url} 
+                  className="ear-v2-product-link"
+                >
+                  {product.name}
+                </Link>
+              </h5>
+              <p className="ear-v2-product-price">{product.price}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+      <UpperFooter />
+    </section>
+  );
 }
-
-
 
 export default EarRings;
