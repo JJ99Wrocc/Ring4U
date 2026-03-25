@@ -175,11 +175,15 @@
       left: 440px;
     }
     div.ui.right.floated.header {
-      right: -170px !important;font-size: 18px !important;
+      right: -100px !important;font-size: 18px !important;
     }
     .nav-title{
       font-size: 28px !important;
             }
+            .navbar-toggler{
+              right: 0;
+            }
+  
   }
   @media(max-width:768px){
       .nav-title-span{
@@ -204,7 +208,7 @@
         z-index: 9999;
       }
       div.ui.right.floated.header {
-        right: -100px !important;font-size: 1px !important;
+        right: -50px !important;font-size: 1px !important;
       }
       .search-bar {height: 30px;width: 150px;
         input {
@@ -230,8 +234,10 @@
   } 
   @media(max-width:600px){
     div.ui.right.floated.header {
-      right: -46px !important;font-size: 1px !important;
+      
+      right: -25px !important;font-size: 15px !important;
     }
+ 
     .search-bar {height: 25px;width: 130px;
       input {
          
@@ -249,7 +255,7 @@
   }
   @media(max-width:450px){
     div.ui.right.floated.header {
-      right: -20px !important;font-size: 15px !important;gap: 3px !important;
+      right: 0px !important;font-size: 15px !important;gap: 3px !important;
     }
     .search-bar {height: 20px;width: 100px;
       input {
@@ -260,15 +266,15 @@
          
       }
       button{height: 20px;width: 20px;}
-  }
+      .ui.header.nav-title{font-size: 20px !important;margin-right: 10px !important;margin-left: 5px;}
+      /* .navbar-toggler {position: relative;right: 5px;top: 33px;font-size: 10px; */
+  
 
-  .ui.header.nav-title{font-size: 20px !important;margin-right: 10px !important;margin-left: 5px;}
-  .navbar-toggler {position: absolute;right: 5px;top: 33px;font-size: 10px;
   }
   }
   @media(max-width:360px){
     div.ui.right.floated.header {
-      right: -25px !important;font-size: 15px !important;
+      right: -10px !important;font-size: 15px !important;  
     }
     .search-bar {height: 20px;width: 70px;
       input {
@@ -279,14 +285,14 @@
          
       }
       button{height: 20px;width: 20px;}
+   
   }
 
-    .navbar-toggler {position: absolute;right: 5px;top: 33px;font-size: 10px;
-    }
+
   }
   @media(max-width:330px){
     div.ui.right.floated.header {
-      right: 0px !important;font-size: 15px !important;
+      right: 70px !important;font-size: 15px !important;
     }
     .search-bar {height: 20px;width: 70px;
       input {
@@ -298,9 +304,9 @@
       }
       button{height: 20px;width: 20px;}
   }
+  .navbar-toggler {position: absolute;right: 30px;top: 18px;font-size: 10px;
+  }
 
-    .navbar-toggler {position: absolute;right: 25px;top: 33px;font-size: 10px;
-    }
   }
 
 
@@ -311,11 +317,3 @@
     }
 }
 
-/* Upewniamy się, że na mniejszych niż 992px jest widoczny jako flex/block */
-@media (max-width: 991px) {
-    .mobile-only.burger-btn {
-        display: flex !important; /* lub block, zależnie od Twojego układu */
-        align-items: center;
-        justify-content: center;
-    }
-}

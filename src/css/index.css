@@ -72,7 +72,7 @@ html,body, .page-wrapper {
     transition: color 0.3s;
 }
 .look:hover{
-    color: rgb(237, 32, 196);
+    color: #000dc3;
 }
 
 .arro{
@@ -96,12 +96,7 @@ html,body, .page-wrapper {
 
 
 
-  .test{
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 13px;
-    margin: 10px 10px;
-  }
+
   .arro{
     margin-left: 30px;
   }
@@ -119,14 +114,7 @@ html,body, .page-wrapper {
     height: 200px;
   }
 
-  .Navbar-squeres.Cart{
-    width: 400px;
-    height: 200px;
-    left: -300px;
-    top: 30px;
-    padding: 0 20px;
-  }
-
+ 
  
 
   
@@ -743,14 +731,9 @@ width: 120px;
       height: 25px;
       font-size: 13px;
     }  
-    .Navbar-squeres.Cart{
-      width: 300px ;
-      left: -200px  ;  
-    }
+ 
 
-    .fa-cart-shop{
-      font-size: 40px !important;
-    }
+
     .home-segment {
       margin-top: 80px;
       height: 100vh;
@@ -900,11 +883,7 @@ width: 120px;
     width: 60px !important;
     font-size: 12px;
   }
-  .Navbar-squeres.Cart{
-    height: 230px;
-    width: 200px !important ;
-    left: -100px !important;  
-  }
+
   .ui.header.nav-title{
     font-size: 20px !important;
   }

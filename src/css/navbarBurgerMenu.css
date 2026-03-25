@@ -175,104 +175,124 @@ hr {
   padding-bottom: 50px;
 }
 
-/* Jeśli chcesz, żeby tło strony nie "uciekało" przy otwartym menu */
+
 body.offcanvas-open {
   overflow: hidden;
 }
-/* Kontener przycisku */
+
 .navbar-toggler {
-  position: relative;
-  top: -5px;
+
+  --b-width: 38px;      
+  --b-height: 1.5px;       
+  --b-gap: 8px;            
+  --b-margin-left: 30px;   
+  --b-color: #565553;      
+  --b-hover-color: #031ed1; 
+  
   border: none !important;
-  padding: 10px 5px;
+  padding: 12px;
   background: transparent;
   outline: none !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease;
+  margin-left: var(--b-margin-left);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-/* Ikona - Środkowa linia */
+/* ŚRODKOWA LINIA */
 .navbar-toggler-icon {
-  background-image: none !important; /* Wywalamy standardowy obrazek */
-  width: 35px;
-  height: 2px;
-  background: linear-gradient(90deg, #e67e22, #f39c12); /* Kolor Miedź/Bursztyn */
+  background-image: none !important; /* Wywalamy standardowy syf */
+  width: var(--b-width);
+  height: var(--b-height);
+  background-color: var(--b-color);
   position: relative;
   border-radius: 2px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 0 8px rgba(230, 126, 34, 0.4);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
 }
 
-/* Górna linia */
+/* GÓRNA LINIA (ASYMETRIA PRO) */
 .navbar-toggler-icon::before {
   content: '';
   position: absolute;
-  top: -10px;
-  right: 0; /* Wyrównanie do prawej dla stylu 2026 */
-  width: 22px; /* Krótsza - efekt asymetrii */
-  height: 2px;
-  background: inherit;
-  border-radius: 2px;
-  transition: all 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  top: calc(-1 * var(--b-gap));
+  right: 0;
+  width: 60%; /* Krótsza linia - znak rozpoznawczy 2026 */
+  height: var(--b-height);
+  background-color: inherit;
+  border-radius: inherit;
+  transition: width 0.4s ease, transform 0.4s ease;
 }
 
-/* Dolna linia */
+/* DOLNA LINIA */
 .navbar-toggler-icon::after {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: calc(-1 * var(--b-gap));
   left: 0;
-  width: 28px; /* Średnia długość */
-  height: 2px;
-  background: inherit;
-  border-radius: 2px;
-  transition: all 0.3s ease;
+  width: 100%; /* Pełna szerokość dla balansu */
+  height: var(--b-height);
+  background-color: inherit;
+  border-radius: inherit;
+  transition: width 0.4s ease, transform 0.4s ease;
 }
 
-/* --- EFEKT PRO 2026 (BEZ ZMIANY W X) --- */
+/* --- EFEKTY INTERAKCJI --- */
 
-/* Hover: Linie "pływają" - dynamiczna zmiana szerokości */
+/* Hover: Linie stają się równe i jaśniejsze */
 .navbar-toggler:hover .navbar-toggler-icon {
-  width: 40px;
-  box-shadow: 0 0 15px rgba(230, 126, 34, 0.7);
+  background-color: var(--b-hover-color);
+
 }
 
 .navbar-toggler:hover .navbar-toggler-icon::before {
-  width: 35px;
-  transform: translateX(-5px); /* Delikatne przesunięcie w locie */
+  width: 100%;
 }
 
 .navbar-toggler:hover .navbar-toggler-icon::after {
-  width: 20px;
-  transform: translateX(15px);
+  width: 70%;
+  transform: translateX(30%); /* Przesunięcie w bok na hover */
 }
 
-/* Stan po kliknięciu (Gdy menu jest otwarte - nadal burger, ale w innym układzie) */
+/* Aktywny burger (po kliknięciu, gdy menu jest otwarte) */
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
-  background: #ffcc00; /* Jaśniejszy, "aktywny" kolor */
-  transform: scale(0.9);
+  transform: rotate(180deg); /* Delikatny obrót o 180 stopni zamiast X */
 }
 
-.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
-  width: 40px;
-  top: -8px;
-  background: #ffcc00;
+/* --- RESPONSYWNOŚĆ --- */
+@media (max-width: 992px) {
+  .navbar-toggler {
+      --b-width: 32px;
+      margin-bottom: 5px;
+      --b-margin-left: 15px;
+      --b-gap: 7px;
+  }
 }
 
-.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
-  width: 40px;
-  bottom: -8px;
-  background: #ffcc00;
+@media (max-width: 576px) {
+  .navbar-toggler {
+      --b-width: 20px;
+      --b-height: 1px;
+   margin-left: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .mobile-only.burger-btn {
+      display: none !important;
+  }
 }
 
-/* Delikatny efekt poświaty przy kliknięciu */
-.navbar-toggler:active {
-  transform: scale(0.85);
+/* Upewniamy się, że na mniejszych niż 992px jest widoczny jako flex/block */
+@media (max-width: 992px) {
+  .mobile-only.burger-btn {
+    position: absolute;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+  }
 }
-.burger-menu-img{height: 30px;width: 30px;border-radius: 28%;margin-right: 10px;}
-
   @media (max-width: 576px) {
     #offcanvasNavbar {
         width: 100% !important; /* Na mobile zajmuje cały ekran dla efektu Premium */
@@ -285,5 +305,6 @@ body.offcanvas-open {
     .offcanvas-body {
         padding: 0 25px !important;
     }
-
-  }
+  }.burger-menu-img{height: 30px;width: 30px;border-radius: 28%;margin-right: 10px;}
+  
+  
