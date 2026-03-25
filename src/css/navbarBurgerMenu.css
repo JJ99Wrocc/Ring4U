@@ -6,6 +6,7 @@
   border-left: 1px solid rgba(27, 54, 93, 0.05);
   width: 380px !important;
   box-shadow: -10px 0 50px rgba(0, 0, 0, 0.05);
+
 }
 
 /* --- HEADER --- */
@@ -265,7 +266,7 @@ body.offcanvas-open {
 @media (max-width: 992px) {
   .navbar-toggler {
       --b-width: 32px;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
       --b-margin-left: 15px;
       --b-gap: 7px;
   }
@@ -276,6 +277,7 @@ body.offcanvas-open {
       --b-width: 20px;
       --b-height: 1px;
    margin-left: 100px;
+   margin-bottom: 10px;
   }
 }
 @media (min-width: 992px) {
@@ -306,5 +308,4 @@ body.offcanvas-open {
         padding: 0 25px !important;
     }
   }.burger-menu-img{height: 30px;width: 30px;border-radius: 28%;margin-right: 10px;}
-  
   

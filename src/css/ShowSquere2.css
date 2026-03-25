@@ -41,7 +41,7 @@
 }
 
 /* --- LISTA LINKÓW --- */
-.navbar-ul-list {
+.navbar-ul-list {  
     list-style: none !important;
     padding: 0 !important;
     margin: 0 !important;
@@ -74,8 +74,16 @@
 
 /* --- EFEKT WEJŚCIA (ANIMACJA) --- */
 .Navbar-squeres.desktop-only {
+  
+    left: 50px !important;
     animation: menuEntrance 0.3s ease-out forwards;
     transform-origin: top center;
+}
+
+@media(max-width:1200px) {
+    .Navbar-squeres.desktop-only {  
+        left: 240px !important;
+    }
 }
 @media(min-width:992px) {
     .desktop-only{

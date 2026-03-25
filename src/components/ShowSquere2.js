@@ -32,19 +32,19 @@ const ShowSquare2 = ({ show, setShow }) => {
 
 <ul  className="ui list navbar-ul-list list " style={{ fontSize: '14px',listStyleType: 'none !important', padding: 0, margin: '10px'}}>
   <li>
-    <Link className="navbar-li-list" to="/category/electronics">Kolczyki</Link>
+    <Link className="navbar-li-list" to="/ear-rings">Kolczyki</Link>
   </li>
   <li>
-    <Link className="navbar-li-list" to="/category/fashion"> Branzoletki </Link>
+    <Link className="navbar-li-list" to="/necklace">Naszyjniki</Link>
   </li>
   <li>
-    <Link className="navbar-li-list" to="/category/beauty">Naszyjniki</Link>
+    <Link className="navbar-li-list" to="/bracelet"> Branzoletki </Link>
   </li>
   <li>
-    <Link className="navbar-li-list" to="/category/home"> Dom</Link>
+    <Link className="navbar-li-list" to="/rings">Pierścionki</Link>
   </li>
   <li>
-    <Link className="navbar-li-list" to="/category/sport">Sport    </Link>
+
   </li>
 </ul>
 

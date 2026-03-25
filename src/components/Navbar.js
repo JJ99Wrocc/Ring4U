@@ -161,9 +161,9 @@ const Navbar = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-          <NavbarBurgerMenu />
 
       </nav>
+          <NavbarBurgerMenu />
       
     </div>
 
