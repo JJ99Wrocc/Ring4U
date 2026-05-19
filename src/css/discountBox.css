@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap');
+
+.discount-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* Ultra-głęboki blur tła */
+    background: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.discount-content {
+    /* Glassmorphism 2030 */
+    background: rgba(255, 255, 255, 0.95);
+    padding: 60px 40px;
+    border-radius: 40px; /* Bardziej luksusowy promień */
+    margin: 20px;
+    position: relative;
+    max-width: 500px;
+    width: 90%;
+    
+    /* Efekt 3D: Cień wielowarstwowy + wewnętrzny blask */
+    box-shadow: 
+        0 30px 60px rgba(0,0,0,0.2), 
+        inset 0 0 0 1px rgba(255,255,255,0.5);
+    
+    border: none;
+    transform: perspective(1000px) rotateX(0deg);
+    transition: transform 0.3s ease;
+}
+
+/* Przycisk zamknięcia - minimalistyczny */
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 28px;
+    font-weight: 200;
+    background: #f0f0f0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.close-btn:hover {
+    background: #000;
+    color: #fff;
+    transform: scale(1.1) rotate(90deg);
+}
+
+.discount-h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #1a1a1a;
+}
+
+/* Koniczynka jako "płynne złoto" */
+.fa-clover {
+    margin-right: 10px;
+    color: transparent;
+    background: linear-gradient(135deg, #ffd700, #b8860b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.4));
+}
+
+.center-p {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.discount-form {
+    display: flex;
+    flex-direction: column; /* Nowoczesne podejście: input nad buttonem na mobile, lub obok */
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* Input "Invisible Luxury" */
+.discount-input {
+    padding: 18px 25px;
+    background: #f8f8f8;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 18px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.discount-input:focus {
+    background: #fff;
+    border-color: #ffd700;
+    box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.1);
+}
+
+/* Button 3D Dynamic */
+.discount-btn {
+    padding: 18px;
+    background: #1a1a1a;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.discount-btn-p {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin: 0;
+}
+
+.discount-btn:hover {
+    background: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.discount-btn:active {
+    transform: translateY(0);
+}
+
+/* Wiadomość o sukcesie */
+.success-message {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 20px;
+    color: #b8860b;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.bold {
+    display: block;
+    font-size: 36px;
+    margin-top: 10px;
+    color: #1a1a1a;
+    letter-spacing: 5px;
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* Desktop optimization */
+@media(min-width: 600px) {
+    .discount-form {
+        flex-direction: row; /* Wracamy do Twojego układu na szerszych ekranach */
+    }
+    .discount-btn {
+        width: auto;
+        padding: 0 30px;
+    }
+}

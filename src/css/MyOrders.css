@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;800&display=swap');
+
+/* --- KONFIGURACJA PREMIUM --- */
+:root {
+  --obsidian: #0a0a0a;
+  --silver-leaf: rgba(255, 255, 255, 0.03);
+  --border-glow: rgba(255, 255, 255, 0.1);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.4);
+  --accent-blue: #007aff; /* Apple-style Blue dla akcentów */
+}
+
+/* Tytuł - Efekt wykutego w metalu */
+.my-order-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 1.5px !important;
+  text-align: center;
+  margin-bottom: 80px;
+  color: var(--text-primary);
+  letter-spacing: -3px;
+  background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,0.2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+}
+
+/* GŁÓWNA KARTA - EKSTREMALNY MINIMALIZM */
+.my-order-box {
+  background: var(--silver-leaf);
+  border: 1px solid var(--border-glow);
+  border-radius: 40px; /* Bardzo duże zaokrąglenia = luksus */
+  padding: 50px;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(30px) saturate(150%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Efekt najechania - Podświetlenie krawędzi */
+.my-order-box:hover {
+  transform: scale(1.02);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 40px 100px rgba(0,0,0,0.8);
+}
+
+/* Pola tekstowe - Styl dyskretny */
+.my-order-p {
+  margin: 12px 0;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between; /* Rozbicie na lewo i prawo dla elegancji */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  padding-bottom: 8px;
+}
+
+.my-order-p strong {
+  color: var(--text-primary);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+.my-order-box p {
+    color:white !important;
+}
+/* LISTA PRODUKTÓW - Industrialny sznyt */
+.my-order-box ul {
+  margin-top: 40px;
+}
+
+.my-order-box ul li {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 20px !important;
+  margin-bottom: 15px !important;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  transition: 0.3s;
+}
+
+.my-order-box ul li:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Obrazek produktu - Floating Effect */
+.my-order-box img {
+  border: none;
+  border-radius: 16px !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  filter: brightness(0.9) contrast(1.1);
+}
+
+/* Wartości liczbowe - Monospace luksus */
+.order-total {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: -0.5px;
+}
+
+/* --- RESPONSYWNOŚĆ BEZ ZMIANY UKŁADU --- */
+@media (max-width: 992px) {
+    .my-order-title{ font-size: 30px !important; }
+  .my-order-box { padding: 30px; border-radius: 24px; }
+  .my-order-p {font-size: 15px; }
+  .order-total{font-size: 14px;}
+}
+@media (max-width: 768px) {
+    .my-order-title{ font-size: 25px !important; }
+  .my-order-box { padding: 25px; border-radius: 24px; }
+  .my-order-p {  font-size: 14px;}
+  .order-total{font-size: 14px;}
+}
+@media (max-width: 576px) {
+    .my-order-title{ font-size: 23px !important; }
+  .my-order-box { padding: 20px; border-radius: 24px; }
+  .my-order-p {  flex-direction: column; align-items: flex-start; gap: 1px;  font-size: 14px;}
+  .order-total{font-size: 11.5px;}
+}
+
+/* Animacja wjazdu kart - jedna po drugiej */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.my-order-box {
+  animation: slideUp 0.8s ease backwards;
+}
+
+/* Delay dla każdej kolejnej karty (do 5 zamówień) */
+.my-order-box:nth-child(1) { animation-delay: 0.1s; }
+.my-order-box:nth-child(2) { animation-delay: 0.2s; }
+.my-order-box:nth-child(3) { animation-delay: 0.3s; }

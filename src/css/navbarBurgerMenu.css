@@ -1,0 +1,312 @@
+
+/* --- FUNDAMENT LUXURY MENU --- */
+#offcanvasNavbar {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  border-left: 1px solid rgba(27, 54, 93, 0.05);
+  width: 380px !important;
+  box-shadow: -10px 0 50px rgba(0, 0, 0, 0.05);
+
+}
+
+/* --- HEADER --- */
+.offcanvas-header {
+  
+  padding: 30px 40px;
+  background: #fff;
+}
+
+.offcanvas-title {
+  font-family: 'Playfair Display', serif; /* Podstawowy font luksusowy */
+  color: #1b365d;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.burger-menu-img {
+  height: 40px;
+  width: auto;
+  filter: drop-shadow(0 4px 8px rgba(27, 54, 93, 0.15));
+}
+
+.btn-close {
+  opacity: 0.5;
+  transition: all 0.3s;
+  background-size: 15px;
+}
+
+.btn-close:hover {
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+/* --- LISTA GŁÓWNA --- */
+.offcanvas-body {
+  padding: 0 40px !important;
+}
+
+.nav-item {
+  margin-bottom: 5px;
+}
+
+.nav-link {
+  color: #1a1a1a !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 20px 0 !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border: none !important;
+  background: none !important;
+}
+
+.nav-link:hover {
+  color: #1b365d !important;
+  padding-left: 10px !important;
+}
+
+/* --- SUBMENU (ANIMACJA) --- */
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(27, 54, 93, 0.02);
+}
+
+.submenu-open {
+  max-height: 600px; /* Wysoka wartość dla swobodnego otwarcia */
+  margin-bottom: 20px;
+}
+
+.submenu li .nav-link {
+  font-size: 14px !important;
+  padding: 12px 20px !important;
+  color: #555 !important;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submenu li .nav-link i {
+  font-size: 10px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+.submenu li .nav-link:hover i {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* --- STRZAŁKI I ROTACJA --- */
+.transition {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 12px;
+  color: #1b365d;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+/* --- LINIE (HR) --- */
+hr {
+  margin: 0;
+  opacity: 0.08;
+  color: #1b365d;
+}
+
+/* --- SOCIAL MEDIA --- */
+.fa-brands {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #1b365d;
+}
+
+/* --- CUSTOM SCROLLBAR --- */
+.offcanvas-body::-webkit-scrollbar {
+  width: 3px;
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb {
+  background: #1b365d;
+  border-radius: 10px;
+}
+
+/* --- RESPONSYWNOŚĆ --- */
+.submenu {
+  max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .submenu-open {
+    max-height: 250px; /* lub więcej, jeśli masz dłuższą listę */
+  }
+  
+  .transition {
+    transition: transform 0.3s ease;
+  }
+  
+  .rotate-180 {
+    transform: rotate(180deg);
+  }
+  /* Plik: ../css/navbarBurgerMenu.css */
+
+.offcanvas {
+  /* Używamy vh dla starszych i dvh dla nowoczesnych przeglądarek (2026 standard) */
+  height: 100vh !important; 
+  height: 100dvh !important; 
+
+  border-left: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.offcanvas-body {
+  /* Pozwala na scrollowanie tylko wewnątrz menu, jeśli linków jest dużo */
+  overflow-y: auto;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+
+body.offcanvas-open {
+  overflow: hidden;
+}
+
+.navbar-toggler {
+
+  --b-width: 38px;      
+  --b-height: 1.5px;       
+  --b-gap: 8px;            
+  --b-margin-left: 30px;   
+  --b-color: #565553;      
+  --b-hover-color: #031ed1; 
+  
+  border: none !important;
+  padding: 12px;
+  background: transparent;
+  outline: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: var(--b-margin-left);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ŚRODKOWA LINIA */
+.navbar-toggler-icon {
+  background-image: none !important; /* Wywalamy standardowy syf */
+  width: var(--b-width);
+  height: var(--b-height);
+  background-color: var(--b-color);
+  position: relative;
+  border-radius: 2px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+/* GÓRNA LINIA (ASYMETRIA PRO) */
+.navbar-toggler-icon::before {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--b-gap));
+  right: 0;
+  width: 60%; /* Krótsza linia - znak rozpoznawczy 2026 */
+  height: var(--b-height);
+  background-color: inherit;
+  border-radius: inherit;
+  transition: width 0.4s ease, transform 0.4s ease;
+}
+
+/* DOLNA LINIA */
+.navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  bottom: calc(-1 * var(--b-gap));
+  left: 0;
+  width: 100%; /* Pełna szerokość dla balansu */
+  height: var(--b-height);
+  background-color: inherit;
+  border-radius: inherit;
+  transition: width 0.4s ease, transform 0.4s ease;
+}
+
+/* --- EFEKTY INTERAKCJI --- */
+
+/* Hover: Linie stają się równe i jaśniejsze */
+.navbar-toggler:hover .navbar-toggler-icon {
+  background-color: var(--b-hover-color);
+
+}
+
+.navbar-toggler:hover .navbar-toggler-icon::before {
+  width: 100%;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon::after {
+  width: 70%;
+  transform: translateX(30%); /* Przesunięcie w bok na hover */
+}
+
+/* Aktywny burger (po kliknięciu, gdy menu jest otwarte) */
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  transform: rotate(180deg); /* Delikatny obrót o 180 stopni zamiast X */
+}
+
+/* --- RESPONSYWNOŚĆ --- */
+@media (max-width: 992px) {
+  .navbar-toggler {
+      --b-width: 32px;
+      margin-bottom: 15px;
+      --b-margin-left: 15px;
+      --b-gap: 7px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-toggler {
+      --b-width: 20px;
+      --b-height: 1px;
+   margin-left: 100px;
+   margin-bottom: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .mobile-only.burger-btn {
+      display: none !important;
+  }
+}
+
+/* Upewniamy się, że na mniejszych niż 992px jest widoczny jako flex/block */
+@media (max-width: 992px) {
+  .mobile-only.burger-btn {
+    position: absolute;
+      display: flex !important;
+      align-items: end !important;
+      justify-content: end;
+      
+  }
+}
+  @media (max-width: 576px) {
+    #offcanvasNavbar {
+        width: 100% !important; /* Na mobile zajmuje cały ekran dla efektu Premium */
+    }
+    
+    .offcanvas-header {
+        padding: 20px 25px;
+    }
+    
+    .offcanvas-body {
+        padding: 0 25px !important;
+    }
+  }.burger-menu-img{height: 30px;width: 30px;border-radius: 28%;margin-right: 10px;}
+  

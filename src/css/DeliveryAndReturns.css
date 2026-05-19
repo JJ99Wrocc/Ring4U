@@ -1,0 +1,193 @@
+/* Import czcionki (jeśli nie ma jej w głównym pliku) */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+
+.delivery-page-container {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* --- NAGŁÓWEK --- */
+.delivery-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.delivery-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
+  background: linear-gradient(180deg, #fff 0%, #aaa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.delivery-header p {
+  color: #999;
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* --- SEKCJE / KARTY --- */
+.delivery-section {
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.delivery-section:hover {
+  border-color: rgba(241, 229, 172, 0.2); /* Delikatny hover w kolorze złotego blasku stopki */
+}
+
+.delivery-section h2 {
+  font-size: 1.5rem;
+  color: #F1E5AC; /* Twój kolor --primary-glow ze stopki */
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.delivery-section h3 {
+  font-size: 1.15rem;
+  color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.delivery-section p {
+  line-height: 1.65;
+  color: #cccccc;
+  font-size: 0.98rem;
+}
+
+/* --- LISTY --- */
+.delivery-section ul, 
+.delivery-section ol {
+  padding-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.delivery-section li {
+  line-height: 1.8;
+  color: #cccccc;
+  margin-bottom: 10px;
+  font-size: 0.98rem;
+}
+
+.delivery-section li strong {
+  color: #ffffff;
+}
+
+.delivery-note {
+  margin-top: 20px;
+  font-size: 0.88rem;
+  color: #777777;
+  font-style: italic;
+}
+
+.delivery-link {
+  color: #F1E5AC;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(241, 229, 172, 0.4);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.delivery-link:hover {
+  color: #fff;
+  border-bottom-style: solid;
+}
+
+/* --- TABELA KOSZTÓW --- */
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.delivery-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.delivery-table th {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  color: #ffffff;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.delivery-table td {
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  color: #cccccc;
+}
+
+.delivery-table tr:last-child td {
+  border-bottom: none;
+}
+
+.price-free {
+  color: #6df1a5;
+  font-weight: 700;
+}
+
+/* --- STOPKA PODSTRONY --- */
+.delivery-footer {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 40px;
+  margin-top: 60px;
+  color: #666666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.delivery-footer strong {
+  color: #999;
+}
+
+/* --- RESPONSYWNOŚĆ (MEDIA QUERIES) --- */
+@media (max-width: 768px) {
+  .delivery-page-container {
+    padding: 40px 15px;
+  }
+  
+  .delivery-header {
+    margin-bottom: 40px;
+  }
+
+  .delivery-header h1 {
+    font-size: 2rem;
+  }
+
+  .delivery-section {
+    padding: 25px 20px;
+    border-radius: 16px;
+  }
+
+  .delivery-table th, 
+  .delivery-table td {
+    padding: 12px;
+    font-size: 0.88rem;
+  }
+}

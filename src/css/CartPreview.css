@@ -1,0 +1,118 @@
+/* --- KONTENER KOSZYKA (SZKLANA KARTA) --- */
+.Navbar-squeres.Cart {
+    /* Twoje wymiary zostają bez zmian */
+    width: 400px;
+    height: 200px;
+    left: -320px;
+    top: 30px;
+    padding: 0 20px;
+    
+    /* STYLIZACJA LUXURY */
+    position: absolute;
+    background: rgba(10, 10, 10, 0.8) !important;
+    backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(15px) saturate(180%);
+    border: 1px solid rgba(27, 54, 93, 0.1);
+    border-radius: 12px;
+    box-shadow: 
+        0 10px 40px rgba(0, 0, 0, 0.08),
+        0 0 1px rgba(27, 54, 93, 0.2);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* --- IKONA KOSZYKA --- */
+.fa-cart-shop {
+    text-align: center;
+    font-size: 50px;
+    margin: 20px;
+    color: #1b365d; /* Twój granat */
+    filter: drop-shadow(0 4px 10px rgba(27, 54, 93, 0.2));
+    animation: cartFloat 3s ease-in-out infinite; /* Delikatne pływanie ikony */
+}
+
+/* --- TEKST (KOMUNIKATY) --- */
+.test {
+    text-align: center;
+    margin: 8px 10px;
+    font-size: 13px;
+    color: #1b365d;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+}
+
+/* Pierwszy akapit (Tytuł: Koszyk jest pusty) */
+.test:first-of-type {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin-top: 0;
+}
+
+/* Drugi akapit (Opis/Zaloguj się) */
+.test:last-of-type {
+    color: #666; /* Subtelniejszy szary dla tekstu pomocniczego */
+    font-weight: 400;
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+/* --- ANIMACJA PŁYWANIA IKONY --- */
+@keyframes cartFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* --- TWOJA RESPONSYWNOŚĆ (NIETKNIĘTA LOGIKA) --- */
+@media(max-width:992px) {
+    .Navbar-squeres.Cart {
+        width: 300px;
+        left: -210px;
+    }
+    .fa-cart-shop {
+        font-size: 35px !important;
+    }
+    .test{
+        font-size: 12px;
+    }
+}
+@media(max-width:768) {
+    .fa-cart-shop {
+        font-size: 30px !important;
+    }
+    .test{
+        font-size: 11px !important;
+    }
+}
+@media(max-width:576px) {
+    .Navbar-squeres.Cart {
+        height: 210px;
+        width: 200px !important;
+        left: -140px !important;
+    }
+    .test:last-of-type {
+        font-size: 9px; /* Dopasowanie do małego ekranu */
+    }
+    .fa-cart-shop {
+        font-size: 25px !important;
+    }
+    .test{
+        font-size: 9px !important;
+    }
+}
+
+/* --- DODATEK: "MOST" DLA MYSZKI --- */
+.Navbar-squeres.Cart::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent; 
+}

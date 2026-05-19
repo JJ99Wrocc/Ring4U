@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+/* Reset i baza */
+.login-page-wrapper {
+  background: #050505 !important; /* Głęboka czerń */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+/* KARTA - Subtelna elegancja */
+.ui.container.login-card {
+  --primary: #007aff;
+  --input-bg: #121212;
+  --border: rgba(255, 255, 255, 0.08);
+  margin: 0 auto !important;
+  background: #0f0f0f !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 28px !important;
+  padding: 48px !important;
+  width: 100% !important;
+  max-width: 420px !important;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4) !important;
+}
+
+/* Nagłówek - Zero efektów kiczowatych, czysty font */
+.login-card h2.header {
+  color: #ffffff !important;
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+  margin-bottom: 32px !important;
+  text-align: center !important;
+}
+
+/* INPUTY - Maksymalna czytelność */
+.ui.form .field {
+  margin-bottom: 18px !important;
+}
+
+.ui.input input {
+  background: var(--input-bg) !important;
+  color: #ffffff !important; /* Wyraźny biały tekst */
+  border: 1px solid var(--border) !important;
+  border-radius: 14px !important;
+  padding: 16px 16px 16px 48px !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
+}
+
+/* Stan focus - tylko delikatna niebieska ramka */
+.ui.input input:focus {
+  border-color: var(--primary) !important;
+  background: #161616 !important;
+  box-shadow: none !important;
+}
+
+/* Ikony - przygaszone, by nie odciągać uwagi */
+.ui.input > i.icon {
+  color: #555 !important;
+  left: 16px !important;
+  opacity: 1 !important;
+  font-size: 1.1rem !important;
+}
+
+/* PRZYCISK GŁÓWNY */
+.ui.submit.button {
+  background: var(--primary) !important;
+  color: #fff !important;
+  border-radius: 14px !important;
+  padding: 18px !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  margin-top: 8px !important;
+  transition: opacity 0.2s !important;
+}
+
+.ui.submit.button:hover {
+  opacity: 0.9 !important;
+  background: var(--primary) !important;
+}
+
+/* PRZYCISKI SOCIAL - Minimalizm */
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 14px !important;
+  border-radius: 14px !important;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+  border: 1px solid var(--border) !important;
+  background: transparent !important;
+  color: #eee !important;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: background 0.2s !important;
+}
+
+.social-btn:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.social-btn i.icon {
+  margin-right: 10px !important;
+}
+
+/* Separator */
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 24px 0;
+  color: #444;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.separator::before, .separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid var(--border);
+}
+
+.separator span {
+  padding: 0 15px;
+}
+
+/* Linki i komunikaty */
+.password-reset-p {
+  color: white;
+  font-size: 0.85rem;
+  margin-top: 8px;
+  cursor: pointer;
+  text-align: right;
+}
+
+.ui.message {
+  background: transparent !important;
+  color: #666 !important;
+  font-size: 0.9rem !important;
+  margin-top: 24px !important;
+  text-align: center !important;
+}
+
+.ui.message a {
+  color: var(--primary) !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+/* Błędy walidacji - czyste kolory */
+.input-error { border-color: #ff453a !important; }
+.input-success { border-color: #32d74b !important; }
+
+
+
+/* Kontener ustawiający input i listę w jednej linii */
+.field-group-horizontal {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+/* Mała lista walidacji */
+.password-check-list {
+  background: #1a1a1a !important; /* Ciemne tło pasujące do całości */
+  border: 1px solid #333 !important;
+  border-radius: 12px !important;
+  padding: 10px !important;
+  margin: 0 !important;
+  list-style: none !important;
+  min-width: 130px; /* Stała szerokość, żeby nie skakało */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  flex-shrink: 0; /* Nie pozwala liście się ścisnąć */
+}
+
+.password-check-list li {
+  font-size: 10px !important; /* Bardzo mały, czytelny font */
+  color: #666 !important; /* Domyślny szary kolor dla niespełnionych */
+  line-height: 1.4 !important;
+  margin-bottom: 4px !important;
+  display: flex !important;
+  align-items: center !important;
+  transition: color 0.3s ease;
+}
+
+.password-check-list li:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Kropka przed tekstem */
+.password-check-list li::before {
+  content: "○";
+  margin-right: 6px;
+  font-size: 8px;
+}
+
+/* Styl dla spełnionych warunków */
+.password-check-list li.valid {
+  color: #32d74b !important; /* Jasny zielony */
+}
+
+.password-check-list li.valid::before {
+  content: "●";
+}
+
+/* Jeśli ekran jest za wąski (np. telefon), wracamy do pionu */
+@media (max-width: 480px) {
+  .field-group-horizontal {
+    flex-direction: column !important;
+  }
+  .password-check-list {
+    width: 100% !important;
+    min-width: unset;
+  }
+}
+
+/* Dodatkowy fix dla widoczności tekstu w inputach, o który prosiłeś wcześniej */
+.ui.input input {
+  color: #ffffff !important;
+  background: #111 !important;
+}

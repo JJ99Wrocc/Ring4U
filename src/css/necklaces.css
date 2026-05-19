@@ -1,0 +1,60 @@
+/* --- LUXURY RING TITLE 2026 --- */
+
+.necklaces-title {
+    /* 1. POZYCJONOWANIE - IDEALNY ŚRODEK */
+    text-align: center;
+    margin: 40px auto;
+    display: block;
+    width: 100%;
+    
+    /* 2. TYPOGRAFIA HIGH-END */
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    font-size: 24px; /* Nie za duży, luksus to subtelność */
+    font-weight: 300; /* Cienka czcionka wygląda drożej */
+    text-transform: uppercase; /* Obowiązkowe dla biżuterii */
+    letter-spacing: 8px; /* KLUCZ: Bardzo szeroki rozstaw liter */
+    line-height: 1.2;
+    
+    /* 3. KOLORYSTYKA I EFEKT ŚWIETLNY */
+    color: #ffffff; /* Białe napisy na czarnym tle */
+    position: relative;
+    padding-bottom: 20px;
+    
+    /* Subtelny blask tekstu (soft glow) */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    
+    transition: all 0.6s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/* 4. DEKORACYJNA LINIA POD TYTUŁEM (MINIMAL) */
+.necklaces-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px; /* Krótka, elegancka linia */
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #c5a059, transparent); /* Złoty akcent */
+    transition: width 0.8s ease;
+}
+
+/* 5. INTERAKCJA (HOVER) */
+.necklaces-title:hover {
+    letter-spacing: 12px; /* Napis jeszcze bardziej się "rozszerza" */
+    color: #c5a059; /* Zmiana na złoto */
+    cursor: default;
+}
+
+.necklaces-title:hover::after {
+    width: 80px; /* Linia się wydłuża */
+}
+
+/* Responsywność dla mobile */
+@media (max-width: 992px) {
+    .necklaces-title {
+        font-size: 18px;
+        letter-spacing: 5px;
+        margin: 30px auto;
+    }
+}
