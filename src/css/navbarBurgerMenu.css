@@ -226,7 +226,38 @@ body.offcanvas-open {
   border-radius: inherit;
   transition: width 0.4s ease, transform 0.4s ease;
 }
+/* 1. Domyślnie ukrywamy submenu */
+/* Wymuszenie widoczności dla testu */
+.submenu {
+  display: none !important; /* Domyślnie schowane */
+}
+.submenu {
+  display: none; /* Domyślnie ukryte */
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
 
+.submenu.submenu-open {
+  display: block; /* Pokazuj po kliknięciu */
+}
+.submenu.submenu-open {
+  display: block !important; /* Wymuszenie wyświetlenia po kliknięciu */
+  background-color: #f8f9fa; /* Dodaj tło, żeby zobaczyć czy menu zajmuje miejsce */
+  padding-left: 20px !important;
+  border-left: 2px solid #ccc; /* Dodaj obramowanie, żeby zobaczyć kontener */
+}
+/* 3. Opcjonalnie, żeby strzałki się obracały */
+.transition {
+  transition: transform 0.3s ease;
+}
+@media (min-width: 992px) {
+  .submenu {
+    z-index: 9999 !important; /* Wymuszamy bycie na wierzchu */
+  }
+}
+.rotate-180 {
+  transform: rotate(180deg);
+}
 /* DOLNA LINIA */
 .navbar-toggler-icon::after {
   content: '';

@@ -320,7 +320,7 @@ const Product = () => {
 
         <h5>
           <Link 
-            to={product.url} 
+            to={`/product/${product.id}`} 
             style={{ textDecoration: 'none', color: 'inherit' }}
           >
             {product.name}

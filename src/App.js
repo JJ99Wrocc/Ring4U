@@ -34,6 +34,8 @@
   import Necklace from "./components/Necklace";
   import Rings from "./components/Rings"
   import DeliveryAndReturns from "./components/DeliveryAndReturns";
+  import EarRingsStal from "./components/KolczykiStal";
+  
   // import EcarlaImport from "./components/EcarlaImport";
   // import { earRings } from "./components/EarRings";
   // import { necklace } from "./components/Necklace";
@@ -89,16 +91,26 @@
     </LayoutWithNavAndFooter>
   }
 />
-        <Route
-          path="/ear-rings"
-          element={
-            
-              <LayoutWithNavAndFooter>
-                <EarRings />
-              </LayoutWithNavAndFooter>
-            
-          }
-        />
+<Route
+  path="/ear-rings"
+  element={
+    <LayoutWithNavAndFooter>
+      <EarRings /> {/* Tutaj wyświetlą się wszystkie kolczyki bez filtra */}
+    </LayoutWithNavAndFooter>
+  }
+/>
+  
+  {/* Nowa trasa dla Twoich kolczyków */}
+
+<Route
+  path="/ear-rings/stal"
+  element={
+    <LayoutWithNavAndFooter>
+      <EarRingsStal category="stal" />
+    </LayoutWithNavAndFooter>
+  }
+/>
+
         <Route
           path="/bracelet"
           element={

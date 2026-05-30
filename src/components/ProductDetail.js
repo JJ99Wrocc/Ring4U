@@ -1,19 +1,29 @@
-import React, { useContext, useState, useRef } from "react";
+import React, { useContext, useState, useRef, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { CartContext } from "./CartContext";
 import ProductAdded from "./ProductsAdded";
-import "../css/ProductDetail.css"; // osobny plik CSS
+import "../css/ProductDetail.css"; 
 
 const ProductDetail = ({ products }) => {
   const { productId } = useParams();
   const { addProduct, changeProductAmount } = useContext(CartContext);
   const [visible, setVisible] = useState(false);
 
+  // Szukanie produktu w tablicy danych
   const product = products.find((p) => p.id.toString() === productId);
-  const [mainImage, setMainImage] = useState(product?.image || "");
+  
+  // Stan dla głównego zdjęcia
+  const [mainImage, setMainImage] = useState("");
   const [zoom, setZoom] = useState({ x: 0, y: 0, visible: false });
 
   const imageRef = useRef(null);
+
+  // KROK 1: AKTUALIZACJA ZDJĘCIA PRZY ZMIANIE PRODUKTU
+  useEffect(() => {
+    if (product) {
+      setMainImage(product.image || "");
+    }
+  }, [product]);
 
   if (!product)
     return (
@@ -138,7 +148,7 @@ const ProductDetail = ({ products }) => {
               </label>
               <select
                 id={`amount-${product.id}`}
-                value={product.amount}
+                value={product.amount || 1}
                 onChange={(e) => handleAmountChange(e, product.id)}
               >
                 {[...Array(10).keys()].map((n) => (
@@ -170,31 +180,33 @@ const ProductDetail = ({ products }) => {
         />
       )}
 
+      {/* Opis produktu */}
       <div id="product-description" className="product-description mb-4">
         <h5>Opis produktu:</h5>
         {Array.isArray(product.description) ? (
-  product.description.map((line, index) => (
-    <p key={index}>{line}</p>
-  ))
-) : (
-  <p>{product.description}</p>
-)}
-
+          product.description.map((line, index) => (
+            <p key={index}>{line}</p>
+          ))
+        ) : (
+          <p>{product.description}</p>
+        )}
       </div>
+
+      {/* KROK 2: POPRAWIONA SPECYFIKACJA (Z ZASTOSOWANIEM ROZWIĄZANIA .specs) */}
       <div id="product-specs" className="product-specs mb-4">
-  <h5>Specyfikacje:</h5>
-  {product.desc ? (
-    <ul>
-      {Object.entries(product.desc).map(([key, value], index) => (
-        <li key={index}>
-          <strong>{key}:</strong> {value}
-        </li>
-      ))}
-    </ul>
-  ) : (
-    <p>Brak specyfikacji</p>
-  )}
-</div>
+        <h5>Specyfikacje:</h5>
+        {product.specs ? (
+          <ul>
+            {Object.entries(product.specs).map(([key, value], index) => (
+              <li key={index}>
+                <strong>{key}:</strong> {value}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>Brak specyfikacji</p>
+        )}
+      </div>
     </section>
   );
 };

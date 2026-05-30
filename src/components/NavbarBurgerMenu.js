@@ -11,7 +11,9 @@ const NavbarBurgerMenu = () => {
   const [kontaktOpen, setKontaktOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [socialOpen, setSocialOpen] = useState(false);
+  const [openKolczyki, setOpenKolczyki] = useState(false);
 
+const [openSztuczne, setOpenSztuczne] = useState(false);
   const handleLinkClick = (path) => {
     const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasRef.current);
     if (bsOffcanvas) {
@@ -30,7 +32,9 @@ const NavbarBurgerMenu = () => {
   
   
 
-
+  const toggleSubmenu = (submenu) => {
+    if(submenu === "kolczyki") { setOpenKolczyki((prev) => !prev)}
+  }
   const toggleZakupy = () => setZakupyOpen((prev) => !prev);
   const toggleKontakt = () => setKontaktOpen((prev) => !prev);
   const toggleAbout = () => setAboutOpen((prev) => !prev);
@@ -60,82 +64,82 @@ const NavbarBurgerMenu = () => {
       <div className="offcanvas-body">
         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
           {/* 🛒 ZAKUPY */}
-          <li className="nav-item">
-            <button
-              className="nav-link w-100 text-start d-flex justify-content-between align-items-center"
-              onClick={toggleZakupy}
-            >
-              Zakupy
-              <i
-                className={`fa-solid fa-arrow-down transition ${
-                  zakupyOpen ? "rotate-180" : ""
-                }`}
-              ></i>
-            </button>
-            <ul
-              className={`submenu list-unstyled ps-3 ${
-                zakupyOpen ? "submenu-open" : ""
-              }`}
-            >
-              <hr></hr>
-            
-              <li>
-  <Link
-    to="/ear-rings"
-    className="nav-link"
-    onClick={(e) => {
-      e.preventDefault(); 
-      handleLinkClick("/ear-rings"); 
-    }}
+<li className="nav-item">
+  <button
+    className="nav-link w-100 text-start d-flex justify-content-between align-items-center"
+    onClick={toggleZakupy}
   >
-    Kolczyki <i className="fa-solid fa-arrow-right"></i>
-  </Link>
-</li>
-              <hr></hr>
-              <li>
-  <Link
-    to="/necklace"
-    className="nav-link"
-    onClick={(e) => {
-      e.preventDefault();
-      handleLinkClick("/necklace");
-    }}
-  >
-    Naszyjniki <i className="fa-solid fa-arrow-right"></i>
-  </Link>
-</li>
+    Zakupy
+    <i className={`fa-solid fa-arrow-down transition ${zakupyOpen ? "rotate-180" : ""}`}></i>
+  </button>
 
-              <hr></hr>
-              <li>
-  <Link
-    to="/bracelet"
-    className="nav-link"
-    onClick={(e) => {
-      e.preventDefault();
-      handleLinkClick("/bracelet");
-    }}
-  >
-    Branzoletki <i className="fa-solid fa-arrow-right"></i>
-  </Link>
+  {/* GŁÓWNE SUBMENU ZAKUPÓW */}
+  <ul className={`submenu list-unstyled ps-3 ${zakupyOpen ? "submenu-open" : ""}`}>
+    <hr />
+
+    {/* 1. KOLCZYKI (z pod-submenu) */}
+    <li>
+      <button
+        className="nav-link w-100 text-start d-flex justify-content-between align-items-center"
+        onClick={() => toggleSubmenu("kolczyki")}
+      >
+        Kolczyki
+        <i className={`fa-solid fa-arrow-down transition ${openKolczyki ? "rotate-180" : ""}`}></i>
+      </button>
+
+      {/* Pod-submenu Kolczyków */}
+      <ul className={`submenu list-unstyled ps-3 ${openKolczyki ? "submenu-open" : ""}`}>
+        {/* Stal */}
+        <li className="nav-item">
+          <button className="nav-link w-100 text-start d-flex justify-content-between align-items-center" onClick={() => handleLinkClick("/ear-rings/stal")}>
+            Stal Chirurgiczna
+          </button>
+       
+        </li>
+        {/* Sztuczne */}
+        <li className="nav-item">
+          <button className="nav-link w-100 text-start d-flex justify-content-between align-items-center" onClick={() => setOpenSztuczne(!openSztuczne)}>
+            Sztuczne
+            <i className={`fa-solid fa-arrow-down transition ${openSztuczne ? "rotate-180" : ""}`}></i>
+          </button>
+          <ul className={`submenu list-unstyled ps-4 ${openSztuczne ? "submenu-open" : ""}`}>
+            <li><Link to="/ear-rings/sztuczne/chwosty" className="nav-link" onClick={() => handleLinkClick("/ear-rings/sztuczne/chwosty")}>Chwosty</Link></li>
+            <li><Link to="/ear-rings/sztuczne/przy-uchu" className="nav-link" onClick={() => handleLinkClick("/ear-rings/sztuczne/przy-uchu")}>Przy Uchu</Link></li>
+            <li><Link to="/ear-rings/sztuczne/wiszace" className="nav-link" onClick={() => handleLinkClick("/ear-rings/sztuczne/wiszace")}>Wiszące</Link></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <hr />
+
+    {/* 2. NASZYJNIKI */}
+    <li>
+      <Link to="/necklace" className="nav-link" onClick={(e) => { e.preventDefault(); handleLinkClick("/necklace"); }}>
+        Naszyjniki <i className="fa-solid fa-arrow-right"></i>
+      </Link>
+    </li>
+    <hr />
+
+    {/* 3. BRANSOLETKI */}
+    <li>
+      <Link to="/bracelet" className="nav-link" onClick={(e) => { e.preventDefault(); handleLinkClick("/bracelet"); }}>
+        Bransoletki <i className="fa-solid fa-arrow-right"></i>
+      </Link>
+    </li>
+    <hr />
+
+    {/* 4. PIERŚCIONKI */}
+    <li>
+      <Link to="/rings" className="nav-link" onClick={(e) => { e.preventDefault(); handleLinkClick("/rings"); }}>
+        Pierścionki <i className="fa-solid fa-arrow-right"></i>
+      </Link>
+    </li>
+    <hr />
+  </ul>
 </li>
               <hr></hr>
-              <li>
-  <Link
-    to="/rings"
-    className="nav-link"
-    onClick={(e) => {
-      e.preventDefault();
-      handleLinkClick("/rings")
-    }}
-  >
-    Pierścionki <i className="fa-solid fa-arrow-right"></i>
-  </Link>
-</li>
-              <hr></hr>
-           
              
-            </ul>
-          </li>
+           
 
           <hr />
 
