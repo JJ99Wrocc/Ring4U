@@ -5,6 +5,28 @@ import UpperFooter from "./Footer";
 import ProductAdded from "./ProductsAdded";
 import "../css/necklaces.css";
 
+
+const necklace = [
+    {
+    "id": "33206",
+    "name": "Naszyjnik stal szlachetna pozłacana 14k złotem, miś z czarną cyrkonią ",
+    "price": "109.00 zł",
+    "category": "naszyjnik",
+    "url": "/product/33206",
+    "image": "https://hurt.ecarla.pl/196557-large_default/naszyjnik-stal-szlachetna-pozłacana-14k-zlotem-mis-z-czarna-cyrkonia-nst2231.jpg",
+    "description": [
+      "Naszyjnik damski ze stali szlachetnej.",
+      "Elegancki i stylowy naszyjnik.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "3,7 x 2,8 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "NST2231" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+]
+
+
 const Necklace = () => {
   const { addProduct } = useContext(CartContext);
   const [necklaces, setNecklaces] = useState([]);

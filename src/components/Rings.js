@@ -7,7 +7,26 @@ import "../css/rings.css"
 
 
 export const rings = [
-    
+     {
+    "id": "24029-2371",
+    "name": "Pierścionek cyrkonie stal chirurgiczna platerowana złotem PST866, Rozmiar pierścionków",
+    "price": "17.22 zł",
+    "image": "https://hurt.ecarla.pl/145170-large_default/pierscionek-cyrkonie-stal-chirurgiczna-platerowana-zlotem-pst866.jpg",
+    "description": [
+      "Nowa kolekcja biżuterii pozłacanej",
+      "PLATEROWANY 14 karatowym złotem pierścionek z dużymi cyrkoniami.  Kolor: złoty",
+      "STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Rozmiar pierścionków": "US7 EU14",
+      "Model": "PST866R7"
+    },
+    "material": "Biżuteria ze stali chirurgicznej / Pierścionki",
+    "color": "Pozłacany",
+    "availability": "Brak w magazynie",
+    "image2": "https://hurt.ecarla.pl/145171-large_default/pierscionek-cyrkonie-stal-chirurgiczna-platerowana-zlotem-pst866.jpg",
+    "image3": null
+  },
 ]
 
 const Rings =()=>{  
