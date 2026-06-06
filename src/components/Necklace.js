@@ -24,6 +24,51 @@ const necklace = [
     "color": "Jasne złoto",
     "availability": "W magazynie"
   },
+   {
+    "id": "34098",
+    "name": "Naszyjnik stal szlachetna pozłacana 14k złotem, cyrkonie, koniczynka",
+    "price": "89.99 zł",
+    "category": "naszyjnik",
+    "url": "/product/34098",
+    "image": "https://hurt.ecarla.pl/201763-large_default/naszyjnik-stal-szlachetna-pozłacana-14k-zlotem-cyrkonie-koniczynka-nst2196.jpg",
+    "description": [
+      "Modny naszyjnik z koniczynką i cyrkoniami, wykonany ze stali nierdzewnej platerowanej 14-karatowym złotem.",
+      "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"
+    ],
+    "specs": {
+      "Wymiary": "Długość 42 cm + 5 cm regulacji",
+      "Waga": "3g netto / 12g brutto",
+      "Model": "NST2196"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/201722-large_default/naszyjnik-stal-szlachetna-pozłacana-14k-zlotem-cyrkonie-koniczynka-nst2196.jpg",
+    "image3": "https://hurt.ecarla.pl/201721-large_default/naszyjnik-stal-szlachetna-pozłacana-14k-zlotem-cyrkonie-koniczynka-nst2196.jpg"
+  },
+  { 
+        id: "16217", 
+        name: "Naszyjnik stal chirurgiczna literka B platerowana złotem ",
+        price: "89.15 zł", 
+        category: "stal",
+        url: "/product/16217",
+        image: "https://hurt.ecarla.pl/112600-large_default/naszyjnik-stal-chirurgiczna-literka-b-platerowana-zlotem-nst995b.jpg",
+        description: [
+            "Modny naszyjnik ze stali chirurgicznej. Nowa kolekcja biżuterii ze stali nierdzewnej platerowanej 14 karatowym złotem.",
+            "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji. Elegancki dodatek na każdą okazję, do sukienek, swetrów i bluzek.",
+            "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie ciemnieje!"
+        ],
+        specs: {
+            "Długość naszyjnika": "45 + 4,0 cm",
+            "Rozmiar zawieszki": "Podana na zdjęciu",
+            "Model": "NST995B"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Biżuteria z literkami", 
+        color: "Złoty", 
+        availability: "W magazynie", 
+        image2: "https://hurt.ecarla.pl/112598-large_default/naszyjnik-stal-chirurgiczna-literka-b-platerowana-zlotem-nst995b.jpg",
+        image3: "https://hurt.ecarla.pl/112599-large_default/naszyjnik-stal-chirurgiczna-literka-b-platerowana-zlotem-nst995b.jpg"
+    },
 ]
 
 

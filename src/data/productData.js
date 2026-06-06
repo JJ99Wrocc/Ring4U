@@ -1,15 +1,9 @@
-    import react, { useContext, useState } from 'react';
-    import { CartContext } from './CartContext';
-    import { Link } from 'react-router-dom';
-    import ProductAdded from './ProductsAdded'; // DODANO
-    // import UpperFooter from './Footer';
-    // import "../css/EarRings.css";
-    import { earRings } from "./Products";
     export const kolczykiStal = [
 { 
     id: "H_34487", // Oryginalne ID z hurtowni (zostaje do zamówień!)
     name: "Kolczyki pozłacane 14k złotem, okrągłe kwadrat",
     category: "stal",
+    "subCategory": "pozlacane",
     price: "99.99 zł",
     image: "https://hurt.ecarla.pl/203436-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okragle-kwadrat-kst3653.jpg",
     url: "/product/H_34487", // URL przekazuje ID do komponentu ProductDetail
@@ -37,6 +31,7 @@
     name: "Kolczyki ślubne wiszące z kryształkami stal chirurgiczna",
     category: "stal",
     url: "/product/14505",
+    
     price: "119.00 zł", 
     image: "https://hurt.ecarla.pl/103169-large_default/kolczyki-slubne-wiszace-z-krysztalkami-stal-chirurgiczna-ksl60.jpg",
     description: [
@@ -149,6 +144,7 @@
     name: "KOLCZYKI STAL CHIRURGICZNA ZŁOTO ",
     price: "99.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/11896",
     image: "https://hurt.ecarla.pl/89471-large_default/kolczyki-stal-chirurgiczna-zloto-kst1203.jpg",
     description: [
@@ -171,6 +167,7 @@
     name: "KOLCZYKI ZE STALI CHIRURGICZNEJ PLATEROWANE ZŁOTEM ",
     price: "94.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/11722",
     image: "https://hurt.ecarla.pl/87266-large_default/kolczyki-ze-stali-chirurgicznej-platerowane-zlotem-kst1097.jpg",
     description: [
@@ -194,6 +191,7 @@
     name: "KOLCZYKI ZE STALI CHIRURGICZNEJ PLATEROWANE ZŁOTEM",
     price: "99.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/11654",
     image: "https://hurt.ecarla.pl/87026-large_default/kolczyki-ze-stali-chirurgicznej-platerowane-zlotem-kst1112.jpg",
     description: [
@@ -217,6 +215,7 @@
     name: "KOLCZYKI ZE STALI CHIRURGICZNEJ PLATEROWANE ZŁOTEM ZŁOTE ",
     price: "94.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/11618",
     image: "https://hurt.ecarla.pl/86989-large_default/kolczyki-ze-stali-chirurgicznej-platerowane-zlotem-zlote-kst983.jpg",
     description: [
@@ -240,6 +239,7 @@
     name: "KOLCZYKI ZE STALI PLATEROWANEJ ŻÓŁTYM ZLOTEM",
     category: "stal",
     price: "94.99 zł", 
+    "subCategory": "platerowane",
     url: "/product/9183",
     image: "https://hurt.ecarla.pl/77907-large_default/kolczyki-ze-stali-platerowanej-zoltym-zlotem-kst762.jpg",
     description: [
@@ -330,6 +330,7 @@
     name: "Kolczyki ze stali chirurgicznej ",
     price: "94.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/14525",
     image: "https://hurt.ecarla.pl/103234-large_default/kolczyki-ze-stali-chirurgicznej-kst1532.jpg",
     description: [
@@ -353,6 +354,7 @@
     name: "Nausznice czarne kryształki platerowane złotem ",
     price: "94.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/16068",
     image: "https://hurt.ecarla.pl/111628-large_default/nausznice-ze-stali-szlachetnej-czarne-krysztalki-platerowane-zlotem-kst1724.jpg",
     description: [
@@ -375,6 +377,7 @@
     name: "Nausznice podwójne złoto-srebrne proste platerowane złotem ",
     price: "94.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/16081",
     image: "https://hurt.ecarla.pl/111654-large_default/nausznice-podwojne-ze-stali-szlachetnej-zloto-srebrne-proste-platerowane-zlotem-kst1716.jpg",
     description: [
@@ -397,6 +400,7 @@
         name: "Kolczyki pozłacane literka A ",
         price: "89.89 zł", 
         category: "stal",
+        "subCategory": "literki",
         url: "/product/16195",
         image: "https://hurt.ecarla.pl/112746-large_default/kolczyki-pozlacane-literka-a-kst1683a.jpg",
         description: [
@@ -419,6 +423,7 @@
         name: "Kolczyki pozłacane literka B ",
         price: "89.89 zł", 
         category: "stal",
+        subCategory: "literki",
         url: "/product/16196",
         image: "https://hurt.ecarla.pl/112747-large_default/kolczyki-pozlacane-literka-b-kst1683b.jpg",
         description: [
@@ -441,6 +446,7 @@
         name: "Kolczyk pozłacany literka E ",
         price: "89.89 zł", 
         category: "stal",
+        "subCategory": "literki",
         url: "/product/16199",
         image: "https://hurt.ecarla.pl/112750-large_default/kolczyk-pozlacany-literka-e-kst1683e.jpg",
         description: [
@@ -462,6 +468,7 @@
         id: "16200", 
         name: "Kolczyk pozłacany literka F ",
         price: "89.89 zł", 
+        "subCategory": "literki",
         category: "stal",
         url: "/product/16200",
         image: "https://hurt.ecarla.pl/112751-large_default/kolczyk-pozlacany-literka-f-kst1683f.jpg",
@@ -485,6 +492,7 @@
         name: "Kolczyk pozłacany literka G ",
         price: "89.89 zł", 
         category: "stal",
+        "subCategory": "literki",
         url: "/product/16201",
         image: "https://hurt.ecarla.pl/112752-large_default/kolczyk-pozlacany-literka-g-kst1683g.jpg",
         description: [
@@ -507,6 +515,7 @@
         name: "Kolczyk pozłacany literka I ",
         price: "89.89 zł", 
         category: "stal",
+        "subCategory": "literki",
         url: "/product/16202",
         image: "https://hurt.ecarla.pl/112753-large_default/kolczyk-pozlacany-literka-i-kst1683i.jpg",
         description: [
@@ -529,6 +538,7 @@
         name: "Kolczyk pozłacany literka O ",
         price: "89.89 zł",
         category: "stal",
+        "subCategory": "literki",
         url: "/product/16208", 
         image: "https://hurt.ecarla.pl/112759-large_default/kolczyk-pozlacany-literka-o-kst1683o.jpg",
         description: [
@@ -551,8 +561,9 @@
         name: "Kolczyk pozłacany literka P ",
         price: "89.89 zł", 
         category: "stal",
+        subCategory: "literki",
         url: "/product/16209",
-        image: "https://hurt.ecarla.pl/112560-large_default/kolczyk-pozlacany-literka-p-kst1683p.jpg",
+        image: "https://hurt.ecarla.pl/112760-large_default/kolczyk-pozlacany-literka-p-kst1683p.jpg",
         description: [
             "Kolczyki pozłacane 14 karatowym złotem cena dotyczy 1 sztuki Możesz je dopasować do swojej wymarzonej ślubnej kreacji jak i wieczorowych strojów.",
             "Cyrkonie pięknie się mienią przyciągając wzrok i nadając Ci dodatkowego blasku.",
@@ -565,7 +576,7 @@
         material: "Biżuteria ze stali chirurgicznej / Biżuteria z literkami", 
         color: "Pozłacany", 
         availability: "W magazynie", 
-        image2: "https://hurt.ecarla.pl/112760-large_default/kolczyk-pozlacany-literka-p-kst1683p.jpg",
+        image2: "https://hurt.ecarla.pl/112560-large_default/kolczyk-pozlacany-literka-p-kst1683p.jpg",
         image3: "https://hurt.ecarla.pl/112566-large_default/kolczyk-pozlacany-literka-p-kst1683p.jpg"
     },
         { 
@@ -573,6 +584,7 @@
         name: "Kolczyk pozłacany literka S ",
         price: "89.89 zł", 
         category: "stal",
+        subCategory: "literki",
         url: "/product/16210",
         image: "https://hurt.ecarla.pl/112761-large_default/kolczyk-pozlacany-literka-s-kst1683s.jpg",
         description: [
@@ -595,6 +607,7 @@
         name: "Kolczyk pozłacany literka R ",
         price: "89.89 zł", 
         category: "stal",
+        subCategory: "literki",
         url: "/product/16211",
         image: "https://hurt.ecarla.pl/112762-large_default/kolczyk-pozlacany-literka-r-kst1683r.jpg",
         description: [
@@ -617,6 +630,7 @@
         name: "Kolczyk pozłacany literka T ",
         price: "89.89 zł", 
         category: "stal",
+        subCategory: "literki",
         url: "/product/16212",
         image: "https://hurt.ecarla.pl/112763-large_default/kolczyk-pozlacany-literka-t-kst1683t.jpg",
         description: [
@@ -639,6 +653,7 @@
         name: "Kolczyk pozłacany literka U ",
         price: "89.89 zł", 
         category: "stal",
+        subCategory: "literki",
         url: "/product/16213",
         image: "https://hurt.ecarla.pl/112580-large_default/kolczyk-pozlacany-literka-u-kst1683u.jpg",
         description: [
@@ -661,6 +676,7 @@
         name: "Kolczyk pozłacany literka W ",
         price: "89.89 zł", 
         category: "stal",
+        subCategory: "literki",
         url: "/product/16214",
         image: "https://hurt.ecarla.pl/112764-large_default/kolczyk-pozlacany-literka-w-kst1683w.jpg",
         description: [
@@ -683,6 +699,7 @@
         name: "Kolczyk pozłacany literka Z ",
         price: "89.89 zł", 
         category: "stal",
+        subCategory: "literki",
         url: "/product/16215",
         image: "https://hurt.ecarla.pl/112765-large_default/kolczyk-pozlacany-literka-z-kst1683z.jpg",
         description: [
@@ -700,34 +717,13 @@
         image2: "https://hurt.ecarla.pl/112584-large_default/kolczyk-pozlacany-literka-z-kst1683z.jpg",
         image3: "https://hurt.ecarla.pl/112583-large_default/kolczyk-pozlacany-literka-z-kst1683z.jpg"
     },
-       { 
-        id: "16217", 
-        name: "Naszyjnik stal chirurgiczna literka B platerowana złotem ",
-        price: "89.15 zł", 
-        category: "stal",
-        url: "/product/16217",
-        image: "https://hurt.ecarla.pl/112600-large_default/naszyjnik-stal-chirurgiczna-literka-b-platerowana-zlotem-nst995b.jpg",
-        description: [
-            "Modny naszyjnik ze stali chirurgicznej. Nowa kolekcja biżuterii ze stali nierdzewnej platerowanej 14 karatowym złotem.",
-            "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji. Elegancki dodatek na każdą okazję, do sukienek, swetrów i bluzek.",
-            "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie ciemnieje!"
-        ],
-        specs: {
-            "Długość naszyjnika": "45 + 4,0 cm",
-            "Rozmiar zawieszki": "Podana na zdjęciu",
-            "Model": "NST995B"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Biżuteria z literkami", 
-        color: "Złoty", 
-        availability: "W magazynie", 
-        image2: "https://hurt.ecarla.pl/112598-large_default/naszyjnik-stal-chirurgiczna-literka-b-platerowana-zlotem-nst995b.jpg",
-        image3: "https://hurt.ecarla.pl/112599-large_default/naszyjnik-stal-chirurgiczna-literka-b-platerowana-zlotem-nst995b.jpg"
-    },
+       
         { 
         id: "16431", 
         name: "Kolczyki stal chirurgiczna złote ażurowe listki sztyft ",
         price: "89.32 zł",
         category: "stal",
+        "subCategory": "platerowane",
         url: "/product/16431", 
         image: "https://hurt.ecarla.pl/113733-large_default/kolczyki-stal-chirurgiczna-zlote-azurowe-listki-sztyft-kst1811.jpg",
         description: [
@@ -769,6 +765,7 @@
         name: "Kolczyki ze stali chirurgicznej pozłacane sztyfty ",
         price: "99.93 zł",
         category: "stal",
+        "subCategory": "pozlacane",
         url: "/product/16793", 
         image: "https://hurt.ecarla.pl/115303-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyfty-kst1891.jpg",
         description: [
@@ -789,6 +786,7 @@
         name: "Kolczyki ze stali chirurgicznej pozłacane ",
         price: "99.18 zł", 
         category: "stal",
+        subCategory: "literki",
         url: "/product/17095",
         image: "https://hurt.ecarla.pl/116575-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-kst1911.jpg",
         description: [
@@ -809,6 +807,7 @@
         name: "Kolczyki ze stali chirurgicznej pozłacane ",
         price: "92.18 zł", 
         category: "stal",
+            subCategory: "literki",
         url: "/product/17103",
         image: "https://hurt.ecarla.pl/116592-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-kst1921.jpg",
         description: [
@@ -829,6 +828,7 @@
         name: "Kolczyki ze stali chirurgicznej pozłacane KST1925",
         price: "89.30 zł", 
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/17107",
         image: "https://hurt.ecarla.pl/116600-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-kst1925.jpg",
         description: [
@@ -849,6 +849,7 @@
         name: "Kolczyki pozłacanej sztyft ",
         price: "95.99 zł", 
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/17340",
         image: "https://hurt.ecarla.pl/117576-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-wkretki-kst1982.jpg",
         description: [
@@ -872,6 +873,7 @@
         name: "Kolczyki pozłacanej sztyft",
         price: "89.72 zł", 
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/17377",
         image: "https://hurt.ecarla.pl/117803-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst1992.jpg",
         description: [
@@ -895,6 +897,7 @@
         name: "Kolczyki pozłacanej sztyft",
         price: "89.00 zł", 
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/18848",
         image: "https://hurt.ecarla.pl/123946-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2238.jpg",
         description: [
@@ -917,6 +920,7 @@
         name: "Kolczyki pozłacanej sztyft ",
         price: "84.15 zł", 
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/18851",
         image: "https://hurt.ecarla.pl/123951-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2232.jpg",
         description: [
@@ -939,6 +943,7 @@
         name: "Kolczyki pozłacanej sztyft ",
         price: "85.78 zł", 
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/18868",
         image: "https://hurt.ecarla.pl/123986-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2224.jpg",
         description: [
@@ -961,6 +966,7 @@
         name: "Kolczyki pozłacanej ",
         price: "89.84 zł", 
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/18996",
         image: "https://hurt.ecarla.pl/124493-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2279.jpg",
         description: [
@@ -984,6 +990,7 @@
         name: "Kolczyk nausznica pozłacane",
         price: "109.6 zł", 
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/19010",
         image: "https://hurt.ecarla.pl/124527-large_default/-kolczyk-nausznica-ze-stali-szlachetnej-pozlacanej-kst2280-1-sztuka.jpg",
         description: [
@@ -1009,6 +1016,7 @@
         name: "Kolczyki pozłacanej",
         price: "89.87 zł", 
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/19067",
         image: "https://hurt.ecarla.pl/124653-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2287.jpg",
         description: [
@@ -1032,6 +1040,7 @@
         name: "Kolczyki pozłacanej ",
         price: "89 zł", 
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/19086",
         image: "https://hurt.ecarla.pl/124692-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2369.jpg",
         description: [
@@ -1055,6 +1064,7 @@
         name: "Kolczyki pozłacanej sztyft ",
         price: "89.96 zł", 
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/19759",
         image: "https://hurt.ecarla.pl/127516-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2408.jpg",
         description: [
@@ -1078,6 +1088,7 @@
         name: "Kolczyki pozłacanej ",
         price: "89.19 zł", 
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/19772",
         image: "https://hurt.ecarla.pl/127544-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2449.jpg",
         description: [
@@ -1101,6 +1112,7 @@
         name: "Kolczyki pozłacanej ",
         price: "84.15 zł", 
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/19783",
         image: "https://hurt.ecarla.pl/127566-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2437.jpg",
         description: [
@@ -1125,6 +1137,7 @@
 
         price: "89.65 zł", 
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/19786",
         image: "https://hurt.ecarla.pl/127573-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2433.jpg",
         description: [
@@ -1148,6 +1161,7 @@
         name: "Kolczyki pozłacanej ",
         price: "89.34 zł", 
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/19894",
         image: "https://hurt.ecarla.pl/127826-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2464.jpg",
         description: [
@@ -1190,6 +1204,7 @@
         name: "Kolczyki pozłacanej ",
         price: "79.88 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/20385",
         image: "https://hurt.ecarla.pl/130397-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2568.jpg",
         description: [
@@ -1214,6 +1229,7 @@
         name: "Kolczyki pozłacanej ",
         price: "89.9 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/20591",
         image: "https://hurt.ecarla.pl/131387-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2605cz.jpg",
         description: [
@@ -1237,6 +1253,7 @@
         name: "Kolczyki pozłacanej",
         price: "109.39 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/20594",
         image: "https://hurt.ecarla.pl/131393-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2608.jpg",
         description: [
@@ -1281,6 +1298,7 @@
         name: "Kolczyki pozłacanej 14k złotem ",
         price: "89.9 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/21199",
         image: "https://hurt.ecarla.pl/133936-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2642.jpg",
         description: [
@@ -1300,6 +1318,7 @@
         name: "Kolczyki pozłacanej 14k złotem",
         price: "79.9 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/21201",
         image: "https://hurt.ecarla.pl/133940-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2644.jpg",
         description: [
@@ -1322,6 +1341,7 @@
         name: "Kolczyki pozłacanej 14k złotem",
         price: "79.53 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/21207",
         image: "https://hurt.ecarla.pl/133952-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2650.jpg",
         description: [
@@ -1344,6 +1364,7 @@
         name: "Kolczyki pozłacanej 14k złotem ",
         price: "89.82 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/21219",
         image: "https://hurt.ecarla.pl/133976-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2662.jpg",
         description: [
@@ -1366,6 +1387,7 @@
         name: "Kolczyki pozłacanej 14k złotem ",
         price: "89.30 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/21974",
         image: "https://hurt.ecarla.pl/137006-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2793.jpg",
         description: [
@@ -1387,7 +1409,8 @@
         id: "21985",
         name: "Kolczyki pozłacanej 14k złotem ",
         price: "89.9 zł",
-            category: "stal",
+        category: "stal",
+        subCategory: "pozlacane",
         url: "/product/21985",
         image: "https://hurt.ecarla.pl/137031-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2801zie.jpg",
         description: [
@@ -1409,6 +1432,7 @@
         name: "Kolczyki pozłacanej 14k złotem",
         price: "89.07 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/21986",
         image: "https://hurt.ecarla.pl/137033-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2801cz.jpg",
         description: [
@@ -1430,6 +1454,7 @@
         name: "Kolczyki pozłacanej 14k złotem ",
         price: "89.99 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/22036",
         image: "https://hurt.ecarla.pl/137201-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2805.jpg",
         description: [
@@ -1451,6 +1476,7 @@
         name: "Kolczyki pozłacanej 14k złotem",
         price: "89.39 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/22039",
         image: "https://hurt.ecarla.pl/137198-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2807zie.jpg",
         description: [
@@ -1472,6 +1498,7 @@
         name: "Kolczyki pozłacanej 14k złotem ",
         price: "89.91 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/22046",
         image: "https://hurt.ecarla.pl/137191-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2814.jpg",
         description: [
@@ -1492,6 +1519,7 @@
         name: "Kolczyki pozłacanej ",
         price: "109.23 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/22183",
         image: "https://hurt.ecarla.pl/137589-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2818.jpg",
         description: [
@@ -1515,6 +1543,7 @@
         name: "Kolczyki pozłacanej ",
         price: "104.99 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/22197",
         image: "https://hurt.ecarla.pl/137617-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2832.jpg",
         description: [
@@ -1538,6 +1567,7 @@
         name: "Kolczyki pozłacanej sztyft",
         price: "79.96 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/22307",
         image: "https://hurt.ecarla.pl/138017-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2090.jpg",
         description: [
@@ -1561,6 +1591,7 @@
         name: "Kolczyki pozłacanej sztyft",
         price: "79.55 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/22308",
         image: "https://hurt.ecarla.pl/138018-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2091.jpg",
         description: [
@@ -1585,6 +1616,7 @@
         name: "Kolczyki ze stali chirurgicznej pozłacane sztyft",
         price: "79.24 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/22314",
         image: "https://hurt.ecarla.pl/138026-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyft-kst2143.jpg",
         description: [
@@ -1608,6 +1640,7 @@
         name: "Kolczyki ze stali chirurgicznej pozłacane sztyft",
         price: "79.69 zł",
         category: "stal",
+        subCategory: "pozlacane",
         url: "/product/22318",
         image: "https://hurt.ecarla.pl/138031-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyft-kst2163.jpg",
         description: [
@@ -1631,6 +1664,7 @@
         name: "Kolczyki 'Wiszące' złote", 
         price: "99.99 zł", 
         category: "stal",
+        "subCategory": "platerowane",
         productId: "KST3409",
         image: "/img/Kolczyki wiszące kst3409.jpg", 
         url: "/product/KST3409",
@@ -1652,6 +1686,7 @@
           name: "Kolczyki 'Muszelki' złote", 
           price: "99.99 zł", 
           category: "stal",
+          "subCategory": "platerowane",
           productId: "KST3325",
           image: "/img/Kolczyki eperełki złote-KST3325.jpg", 
           url: "/product/KST3325",
@@ -1669,142 +1704,12 @@
             image2:  "/img/Kolczyki eperełki złote-KST3325 (1).jpg",
             image3:  "/img/Kolczyki eperełki złote-KST3325 (2).jpg",
     },
-    { 
-            id: "KST2823", 
-            name: "Kolczyki 'Serca' złote", 
-            price: "99.99 zł", 
-            category: "stal",
-            productId: "KST2823",
-            image: "/img/Kolczyki serca-KST2823.jpg", 
-            url: "/product/KST2823",
-            description: ["Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
-            specs: {
-              "Wymiar kolczyków": "2,5 x 1,4 cm",
-              "Kolor": " złoto",  
-              "Rodzaj zapięcia": "sztyft",  
-            },
-            material: "Stal szlachetna", 
-            color: " złoto", 
-            availability: "W magazynie",
-              image2:  "/img/Kolczyki serca-KST2823(1).jpg",
-    },
-    { 
-        id: "KST3349", 
-        name: "Kolczyki 'Łezki' wiszące złote", 
-        price: "99.99 zł", 
-        image: "/img/Kolczyki Łezki wiszące KST3349 (1).jpg", 
-        url: "/product/KST3349",
-        description: ["Kolczyki damskie  platerowane złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
-        specs: {
-          "Wymiar kolczyków": "7cm x 1,1cm",
-          "Wymiar kartonika": "6 cm x 5,5 cm",
-          "Waga": "10g netto / 12g brutto",  
-          "Kolor": "jasne złoto",  
-          "Rodzaj zapięcia": "sztyft",  
-        },
-        material: "Stal szlachetna", 
-        color: "Jasne złoto", 
-        availability: "W magazynie",
-          image2:  "/img/Kolczyki Łezki wiszące KST3349.jpg",
-    },
-    { 
-           id: "KST3369", 
-        name: "Kolczyki 'Cyrkonie' złote", 
-        price: "99.99 zł", 
-        image: "/img/Kolczyki Cyrkonie złote-kst3369 (1).jpg", 
-        url: "/product/KST3369",
-        description: ["Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem . STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
-        specs: {
-          "Wymiar kolczyków": "1,5cm x 1cm x 1,7cm",
-          "Wymiar kartonika": "6cm x 5,5 cm",
-          "Waga": "4g netto / 7g brutto",  
-          "Kolor": "Złoto",  
-          "Rodzaj zapięcia": "sztyft ze srebra S925",  
-        },
-        material: "Stal szlachetna", 
-        color: "Złoty", 
-        availability: "W magazynie",
-          image2:  "/img/Kolczyki Cyrkonie złote-kst3369.jpg",
-          image3:  "/img/Kolczyki Cyrkonie złote-kst3369 (2).jpg",
-          image4:  "/img/Kolczyki Cyrkonie złote-kst3369 (3)  .jpg",
-    },
-    { 
-           id: "KST2951_2", 
-           name: "Kolczyki 'Koła' gemetryczne", 
-           price: "99.99 zł", 
-           image: "/img/Kolczyki koła geometryczne KST3409 (1).jpg", 
-           url: "/product/KST2951",
-           description: ["Kolczyki damskie  platerowane złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
-           specs: {
-             "Wymiar kolczyków": "1 cm x 1cm ",
-             "Wymiar kartonika": "6 cm x 5,5 cm ",
-             "Waga": "4g netto / 7g brutto",  
-             "Kolor": "jasne złoto",  
-             "Rodzaj zapięcia": "sztyft",  
-           },
-           material: "Stal szlachetna", 
-           color: "Jasne złoto", 
-           availability: "W magazynie",
-             image2:  "/img/Kolczyki koła geometryczne KST3409 .jpg",
-             image3:  "/img/Kolczyki koła geometryczne KST3409 (2).jpg",
-    },
-    { 
-           id: "KST3359", 
-           name: "Kolczyki 'Wisienki' gemetryczne", 
-           price: "99.99 zł", 
-           image: "/img/Kolczyki wisienki jasne złoto KST3359(1).jpg", 
-           url: "/product/KST3359",
-           description: ["Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
-           specs: {
-             "Wymiar kolczyków": "1,4cm x 1,3cm",
-             "Wymiar kartonika": "6 cm x 5,5 cm ",
-             "Waga": "6g netto / 8g brutto",  
-             "Kolor": "jasne złoto",  
-             "Rodzaj zapięcia": "sztyft",  
-           },
-           material: "Stal szlachetna", 
-           color: "Jasne złoto", 
-           availability: "W magazynie",
-             image2:  "/img/Kolczyki wisienki jasne złoto KST3359.jpg",
-    },
-    { 
-           id: "KST2844B", 
-           name: "Kolczyki 'Piękne' złote", 
-           price: "99.99 zł", 
-           image: "/img/Kolczyki Pieknezłote-KST2844b.jpg", 
-           url: "/product/KST2844B",
-           description: ["Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
-           specs: {
-             "Wymiar kolczyków": "Wysokość: 2,9 cm Szerokość: 0,4 cm",
-             "Kolor": " złoto",  
-             "Rodzaj zapięcia": "sztyft",  
-           },
-           material: "Stal szlachetna", 
-           color: " złoto", 
-           availability: "W magazynie",
-    },
-    { 
-           id: "KST2931CZ", 
-           name: "Kolczyki 'Pętelka' złote", 
-           price: "99.99 zł", 
-           image: "/img/Kolczyki kółka KST2931cz.jpg", 
-           url: "/product/KST2931CZ",
-           description: ["Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem. Eleganckie i stylowe kolczyki. STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedziej"],
-           specs: {
-             "Wymiar kolczyków": "2 cm",
-             "Średnica kółka": "1,4 cm  ",
-             "Kolor": " złoto",  
-             "Rodzaj zapięcia": "sztyft",  
-           },
-           material: "Stal szlachetna", 
-           color: " złoto", 
-           availability: "W magazynie",
-             image2:  "/img/Kolczyki kółka KST2931cz(1).jpg",
-    },{ 
+{ 
     id: "24143",    
     name: "Kolczyki ze stali chirurgicznej pozłacane ",
     price: "99.99 zł", 
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/24143",
     image: "https://hurt.ecarla.pl/145647-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-kst3011.jpg",
     description: [
@@ -1828,6 +1733,7 @@
     name: "Kolczyki ze stali chirurgicznej pozłacane sztyfty ",
     price: "89.99 zł",
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/24185", 
     image: "https://hurt.ecarla.pl/145739-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyfty-kst2682.jpg",
     description: [
@@ -1850,6 +1756,7 @@
     name: "Kolczyki pozłacanej 14k złotem ",
     price: "99.99 zł", 
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/25783",
     image: "https://hurt.ecarla.pl/152784-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst3114.jpg",
     description: [
@@ -1875,6 +1782,7 @@
     name: "Kolczyki pozłacanej ",
     price: "79.99 zł", 
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/26028",
     image: "https://hurt.ecarla.pl/153752-large_default/kolczyki-jawa-ze-stali-szlachetnej-pozlacanej-kst2691.jpg",
     description: [
@@ -1899,6 +1807,7 @@
     name: "Kolczyki pozłacanej 14k złotem ",
     price: "79.99 zł", 
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/26033",
     image: "https://hurt.ecarla.pl/153759-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst3054.jpg",
     description: [
@@ -1922,6 +1831,7 @@
     name: "Kolczyki pozłacanej 14k złotem ",
     price: "79.99 zł", 
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/26039",
     image: "https://hurt.ecarla.pl/153777-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst3043r.jpg",
     description: [
@@ -1947,6 +1857,7 @@
     name: "Kolczyki pozłacanej ",
     price: "79.99 zł", 
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/26118",
     image: "https://hurt.ecarla.pl/153987-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2823.jpg",
     description: [
@@ -1971,6 +1882,7 @@
     name: "Kolczyki pozłacanej ",
     price: "89.99 zł", 
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/26230",
     image: "https://hurt.ecarla.pl/154762-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3173.jpg",
     description: [
@@ -1996,6 +1908,7 @@
     name: "Kolczyki pozłacanej ",
     price: "79.99 zł", 
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/26233",
     image: "https://hurt.ecarla.pl/154766-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3176.jpg",
     description: [
@@ -2021,6 +1934,7 @@
     name: "Kolczyki platerowane złotem ",
     price: "69.75 zł", 
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/26301",
     image: "https://hurt.ecarla.pl/154989-large_default/kolczyki-ze-stali-szlachetnej-platerowane-zlotem-kst3035.jpg",
     description: [
@@ -2046,6 +1960,7 @@
     name: "Kolczyki wiszące platerowanej 14k złotem ",
     price: "99.99 zł",
         category: "stal",
+        "subCategory": "platerowane",
     url: "/product/26317", 
     image: "https://hurt.ecarla.pl/155045-large_default/kolczyki-wiszace-ze-stali-szlachetnej-platerowanej-14k-zlotem-kst3131.jpg",
     description: [
@@ -2071,6 +1986,7 @@
     name: "Kolczyki platerowanej 14k złotem ",
     price: "79.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/26318",
     image: "https://hurt.ecarla.pl/155044-large_default/kolczyki-ze-stali-szlachetnej-platerowanej-14k-zlotem-kst3132.jpg",
     description: [
@@ -2096,6 +2012,7 @@
     name: "Kolczyki platerowanej 14k złotem ",
     price: "89.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/26322",
     image: "https://hurt.ecarla.pl/155037-large_default/kolczyki-ze-stali-szlachetnej-platerowanej-14k-zlotem-kst3136.jpg",
     description: [
@@ -2121,6 +2038,7 @@
       name: "Kolczyki pozłacanej ",
       price: "79.99zł", 
       category: "stal",
+      subCategory: "pozlacane",
       url: "/product/26754",
       image: "https://hurt.ecarla.pl/157581-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst1575.jpg",
       description: [
@@ -2145,6 +2063,7 @@
     name: "Kolczyki platerowane 14k złotem ",
     price: "79.98 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/27411",
     image: "https://hurt.ecarla.pl/160937-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-kst3037.jpg",
     description: [
@@ -2171,6 +2090,7 @@
     name: "Kolczyki platerowane 14k złotem sztyft ",
     price: "79.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/27434",
     image: "https://hurt.ecarla.pl/160978-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3208.jpg",
     description: [
@@ -2197,6 +2117,7 @@
     name: "Kolczyki platerowane 14k złotem, literka B 2szt. ",
     price: "69.89 zł",
         category: "stal",
+        "subCategory": "platerowane",
     url: "/product/27437", 
     image: "https://hurt.ecarla.pl/160990-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-literka-b-2szt-kst3203b.jpg",
     description: [
@@ -2224,6 +2145,7 @@
     name: "Kolczyki platerowane 14k złotem, literka D 2szt. ",
     price: "69.89 zł", 
         category: "stal",
+        "subCategory": "platerowane",
     url: "/product/27438",
     image: "https://hurt.ecarla.pl/160993-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-literka-d-2szt-kst3203d.jpg",
     description: [
@@ -2251,6 +2173,7 @@
     name: "Kolczyki platerowane 14k złotem, literka J 2szt. ",
     price: "69.89 zł", 
         category: "stal",
+        "subCategory": "platerowane",
     url: "/product/27439",
     image: "https://hurt.ecarla.pl/160996-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-literka-j-2szt-kst3203j.jpg",
     description: [
@@ -2278,6 +2201,7 @@
     name: "Kolczyki pozłacanej",
     price: "89.99 zł",
         category: "stal",
+        subCategory: "pozlacane",
     url: "/product/27587", 
     image: "https://hurt.ecarla.pl/201001-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3171.jpg",
     description: [
@@ -2302,7 +2226,9 @@
     id: "27591",    
     name: "Kolczyki pozłacanej wkrętki 3,1 cm ",
     price: "89.99 zł",
-        category: "stal",
+     category: "stal",
+     subCategory: "pozlacane",
+
     url: "/product/27591", 
     image: "https://hurt.ecarla.pl/161847-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-wkretki-31-cm-kst3172.jpg",
     description: [
@@ -2329,6 +2255,7 @@
     name: "Kolczyki pozłacanej ",
     price: "89.99 zł",
             category: "stal",
+            subCategory: "pozlacane",
     url: "/product/27624", 
     image: "https://hurt.ecarla.pl/161907-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3223.jpg",
     description: [
@@ -2353,6 +2280,7 @@
     name: "Kolczyki pozłacanej ",
     price: "89.99 zł",
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/27625",
     image: "https://hurt.ecarla.pl/161909-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3224.jpg",
     description: [
@@ -2376,7 +2304,8 @@
     id: "27626",    
     name: "Kolczyki pozłacanej ",
     price: "89.83 zł",
-    category: "stal", 
+    category: "stal",
+    subCategory: "pozlacane",
     image: "https://hurt.ecarla.pl/161911-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3225.jpg",
     description: [
       "Kolczyki platerowane 14-karatowym złotem.",
@@ -2401,6 +2330,7 @@
     name: "Kolczyki platerowane 14k złotem, sztyft S925",
     price: "79.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/27681",
     image: "https://hurt.ecarla.pl/162188-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-s925-kst3186.jpg",
     description: [
@@ -2427,6 +2357,7 @@
     "name": "Kolczyki ze stali chirurgicznej pozłacane sztyfty ",
     "price": "79.88 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/23716",
     "image": "https://hurt.ecarla.pl/143816-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyfty-kst2064.jpg",
     "description": [
@@ -2451,6 +2382,7 @@
     "name": "Kolczyki pozłacanej 14k złotem ",
     "price": "79.66 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/23719",
     "image": "https://hurt.ecarla.pl/143823-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2916.jpg",
     "description": [
@@ -2474,6 +2406,7 @@
     "name": "Kolczyki pozłacanej 14k złotem",
     "price": "79.78 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/23722",
     "image": "https://hurt.ecarla.pl/143832-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2926.jpg",
     "description": [
@@ -2497,6 +2430,7 @@
     "name": "Kolczyki pozłacanej 14k złotem ",
     "price": "79.19 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/23741",
     "image": "https://hurt.ecarla.pl/143930-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2976.jpg",
     "description": [
@@ -2520,6 +2454,7 @@
     "name": "Kolczyki pozłacanej 14k złotem ",
     "price": "74.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/23745",
     "image": "https://hurt.ecarla.pl/143913-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2931cz.jpg",
     "description": [
@@ -2543,6 +2478,7 @@
     "name": "Kolczyki pozłacanej 14k złotem",
     "price": "79.93 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/23747",
     "image": "https://hurt.ecarla.pl/143923-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2971.jpg",
     "description": [
@@ -2563,6 +2499,7 @@
     "name": "Kolczyki pozłacanej 14k złotem",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/23749",
     "image": "https://hurt.ecarla.pl/143926-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2972.jpg",
     "description": [
@@ -2586,6 +2523,7 @@
     "name": "Kolczyki pozłacanej 14k złotem Zielone Serce ",
     "price": "69.26 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/23755",
     "image": "https://hurt.ecarla.pl/143885-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2975.jpg",
     "description": [
@@ -2609,6 +2547,7 @@
     "name": "Kolczyki pozłacanej 14k złotem",
     "price": "69.00 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/23756",
     "image": "https://hurt.ecarla.pl/143889-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2938.jpg",
     "description": [
@@ -2629,6 +2568,7 @@
     "name": "Kolczyki pozłacanej Perłowe Serce ",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/23759",
     "image": "https://hurt.ecarla.pl/143932-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2941.jpg",
     "description": [
@@ -2649,6 +2589,7 @@
     "name": "Kolczyki pozłacanej ",
     "price": "89.19 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/23765",
     "image": "https://hurt.ecarla.pl/143938-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2947.jpg",
     "description": [
@@ -2673,6 +2614,7 @@
     "name": "Kolczyki pozłacanej",
     "price": "79.46 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/23769",
     "image": "https://hurt.ecarla.pl/143940-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2953.jpg",
     "description": [
@@ -2833,6 +2775,7 @@
     "name": "Kolczyki pozłacane",
     "price": "99.76 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/24018",
     "image": "https://hurt.ecarla.pl/145122-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-kst2897.jpg",
     "description": [
@@ -2858,6 +2801,7 @@
     "name": "Kolczyki pozłacanej",
     "price": "89.96 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/24108",
     "image": "https://hurt.ecarla.pl/145555-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2995.jpg",
     "description": [
@@ -2883,6 +2827,7 @@
     "name": "Kolczyki pozłacanej",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/24110",
     "image": "https://hurt.ecarla.pl/145556-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2999.jpg",
     "description": [
@@ -2909,6 +2854,7 @@
     "name": "Kolczyki pozłacanej Perłowe Serce",
     "price": "89.99 zł",
     "category": "stal",
+        "subCategory": "pozlacane",
     "url": "/product/24111",
     "image": "https://hurt.ecarla.pl/198866-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2997.jpg",
     "description": [
@@ -2971,6 +2917,7 @@
     name: "Kolczyki platerowane 14k złotem, sztyft ",
     price: "89.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/27837",
     image: "https://hurt.ecarla.pl/163225-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3229.jpg",
     description: [
@@ -2997,6 +2944,7 @@
     name: "Kolczyki platerowane 14k złotem, sztyft ",
     price: "89.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/27846",
     image: "https://hurt.ecarla.pl/163234-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3238.jpg",
     description: [
@@ -3023,6 +2971,7 @@
     name: "Kolczyki platerowane 14k złotem, sztyft ",
     price: "79.91 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/27847",
     image: "https://hurt.ecarla.pl/201006-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3239.jpg",
     description: [
@@ -3049,6 +2998,7 @@
     name: "Kolczyki platerowane 14k złotem, sztyft ",
     price: "79.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/27852",
     image: "https://hurt.ecarla.pl/163240-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3244.jpg",
     description: [
@@ -3075,6 +3025,7 @@
     name: "Kolczyki platerowane 14k złotem, sztyft ",
     price: "89.29 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/27859",
     image: "https://hurt.ecarla.pl/163282-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3251.jpg",
     description: [
@@ -3102,6 +3053,7 @@
     name: "Kolczyki platerowane 14k złotem, sztyft ",
     price: "89.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/27860",
     image: "https://hurt.ecarla.pl/163283-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3252.jpg",
     description: [
@@ -3128,6 +3080,7 @@
     name: "Kolczyki platerowane 14k złotem, sztyft ",
     price: "99.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/27862",
     image: "https://hurt.ecarla.pl/163294-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3254.jpg",
     description: [
@@ -3155,6 +3108,7 @@
     name: "Kolczyki platerowane 14k złotem, sztyft",
     price: "89.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/27864",
     image: "https://hurt.ecarla.pl/163295-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3256.jpg",
     description: [
@@ -3182,6 +3136,7 @@
     price: "99.99 zł",
      
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/27871",
     image: "https://hurt.ecarla.pl/163281-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3263.jpg",
     description: [
@@ -3208,6 +3163,8 @@
     name: "Kolczyki platerowane 14k złotem ",
     price: "89.99 zł",
     category: "stal",
+    "subCategory": "platerowane",
+    subCategory: "pozlacane",
     url: "/product/27872", 
     image: "https://hurt.ecarla.pl/163287-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-kst3264.jpg",
     description: [
@@ -3234,6 +3191,7 @@
     name: "Kolczyki platerowane 14k złotem, sztyft",
     price: "89.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/27874",
     image: "https://hurt.ecarla.pl/163299-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3266.jpg",
     description: [
@@ -3260,6 +3218,7 @@
     name: "Kolczyki wiszące platerowanej 14k złotem ",
     price: "79.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/28468",
     image: "https://hurt.ecarla.pl/166126-large_default/kolczyki-wiszace-ze-stali-szlachetnej-platerowanej-14k-zlotem-kst3219.jpg",
     description: [
@@ -3284,6 +3243,7 @@
     name: "Kolczyki pozłacanej ",
     price: "79.99 zł",
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/28679", 
     image: "https://hurt.ecarla.pl/167622-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3115.jpg",
     description: [
@@ -3339,6 +3299,7 @@
     name: "Kolczyki platerowane złotem",
     price: "89.99 zł",
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/29449", 
     image: "https://hurt.ecarla.pl/173237-large_default/kolczyki-ze-stali-szlachetnej-platerowane-zlotem-kst3282.jpg",
     description: [
@@ -3366,6 +3327,7 @@
     name: "Kolczyki platerowane złotem ",
     price: "99.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/29450",
     image: "https://hurt.ecarla.pl/172954-large_default/kolczyki-ze-stali-szlachetnej-platerowane-zlotem-kst3283.jpg",
     description: [
@@ -3394,6 +3356,7 @@
     price: "79.99 zł", 
     
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/29454",
     image: "https://hurt.ecarla.pl/172971-large_default/kolczyki-ze-stali-szlachetnej-platerowane-zlotem-kst3292.jpg",
     description: [
@@ -3421,6 +3384,7 @@
     name: "Kolczyki platerowane złotem ",
     price: "79.99 zł",
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/29455", 
     image: "https://hurt.ecarla.pl/172975-large_default/kolczyki-ze-stali-szlachetnej-platerowane-zlotem-kst3295.jpg",
     description: [
@@ -3448,6 +3412,7 @@
     name: "Kolczyki platerowane 14K złotem, sztyft S925 ",
     price: "79.99 zł",
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/29543", 
     image: "https://hurt.ecarla.pl/173514-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-s925-kst3287.jpg",
     description: [
@@ -3502,6 +3467,7 @@
     name: "Kolczyki platerowane 14k złotem ZAWIJANE",
     price: "89.99 zł",
         category: "stal",
+        "subCategory": "platerowane",
     url: "/product/30583", 
     image: "https://hurt.ecarla.pl/180487-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-zawijane-kst3352.jpg",
     description: [
@@ -3530,6 +3496,7 @@
     name: "Kolczyki platerowane 14k złotem ZAWIJANE ",
     price: "89.99 zł",
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/30584", 
     image: "https://hurt.ecarla.pl/180418-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-zawijane-kst3353.jpg",
     description: [
@@ -3558,6 +3525,7 @@
     name: "Kolczyki platerowane 14k złotem SERCA",
     price: "89.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/30585",
     image: "https://hurt.ecarla.pl/180419-large_default/kolczyki-ze-stali-szlachetnej-platerowane-zlotem-kst3354.jpg",
     description: [
@@ -3587,6 +3555,7 @@
     name: "Kolczyki platerowane 14k złotem WISIENKI",
     price: "89.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/30587",
     image: "https://hurt.ecarla.pl/180423-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-wisienki-kst3356.jpg",
     description: [
@@ -3616,6 +3585,7 @@
     name: "Kolczyki platerowane 14k złotem KWIATY perełki",
     price: "89.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/30593",
     image: "https://hurt.ecarla.pl/180255-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-kwiaty-perelki-kst3361.jpg",
     description: [
@@ -3647,6 +3617,7 @@
     name: "Kolczyki wiszące platerowane złotem",
     price: "79.99 zł",
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/30798", 
     image: "https://hurt.ecarla.pl/181618-large_default/kolczyki-wiszace-ze-stali-szlachetnej-platerowane-zlotem-kst3122.jpg",
     description: [
@@ -3673,6 +3644,7 @@
     name: "Kolczyki wiszące platerowanej 14k złotem",
     price: "79.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/30800",
     image: "https://hurt.ecarla.pl/181625-large_default/kolczyki-wiszace-ze-stali-szlachetnej-platerowanej-14k-zlotem-kst3212.jpg",
     description: [
@@ -3700,6 +3672,7 @@
     name: "Kolczyki wiszące platerowanej 14k złotem gwiazdki ",
     price: "89.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/30802",
     image: "https://hurt.ecarla.pl/184069-large_default/kolczyki-wiszace-ze-stali-szlachetnej-platerowanej-14k-zlotem-gwiazdki-kst3314.jpg",
     description: [
@@ -3728,6 +3701,7 @@
     name: "Kolczyki platerowane 14k złotem owalne",
     price: "89.99 zł",
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/30811",
     image: "https://hurt.ecarla.pl/182044-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-owalne-kst3384.jpg",
     description: [
@@ -3755,6 +3729,7 @@
     name: "Kolczyki platerowane 14k złotem duże okrągłe",
     price: "99.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/30814",
     image: "https://hurt.ecarla.pl/181692-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-duze-okragle-kst3387.jpg",
     description: [
@@ -3777,41 +3752,13 @@
     image2: "https://hurt.ecarla.pl/181691-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-duze-okragle-kst3387.jpg",
     image3: ""
   },
-  { 
-    id: "30818",    
-    name: "Naszyjnik stal szlachetna pozłacana 14k złotem",
-    price: "89.99 zł",
-    category: "stal",
-    url: "/product/30818", 
-    image: "https://hurt.ecarla.pl/181718-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst2182.jpg",
-    description: [
-      "Modny naszyjnik ze stali chirurgicznej.",
-      "Nowa kolekcja biżuterii ze stali nierdzewnej platerowanej 14 karatowym złotem.",
-      "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.",
-      "Elegancki dodatek na każdą okazję, do sukienek, swetrów i bluzek.",
-      "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"
-    ],
-    specs: {
-      "Długość łańcuszka": "41cm",
-      "Długość regulacji": "5cm",
-      "Wymiary kartonika": "12cm x 10cm",
-      "Waga": "6g / 10g brutto",
-      "Materiał wykonania": "Stal chirurgiczna pozłacana",
-      "Producent": "Inny",
-      "Model": "NST2182" 
-    },
-    material: "Stal chirurgiczna", 
-    color: "Jasny odcień złota", 
-    availability: "W magazynie", 
-    image2: "https://hurt.ecarla.pl/181697-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst2182.jpg",
-    image3: ""
-  },
-
+  
   { 
     id: "30896",    
     name: "Kolczyki pozłacanej kryształ górski",
     price: "69.99 zł", 
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/30896",
     image: "https://hurt.ecarla.pl/182283-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-krysztal-gorski-kst2911.jpg",
     description: [
@@ -3836,6 +3783,7 @@
     name: "Kolczyki pozłacanej kryształ górski",
     price: "69.99 zł",
         category: "stal",
+        subCategory: "pozlacane",
     url: "/product/30897", 
     image: "https://hurt.ecarla.pl/182284-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-krysztal-gorski-kst2943.jpg",
     description: [
@@ -3863,6 +3811,7 @@
     name: "Kolczyki pozłacanej kryształ górski",
     price: "69.99 zł",
         category: "stal",
+            subCategory: "pozlacane",
     url: "/product/30898", 
     image: "https://hurt.ecarla.pl/182286-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-krysztal-gorski-kst2914.jpg",
     description: [
@@ -3888,6 +3837,7 @@
     name: "Kolczyki pozłacanej kryształ górski",
     price: "69.99 zł",
             category: "stal",
+            subCategory: "pozlacane",
     url: "/product/30899", 
     image: "https://hurt.ecarla.pl/182287-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-krysztal-gorski-kst2912cz.jpg",
     description: [
@@ -3912,6 +3862,7 @@
     name: "Kolczyki pozłacanej kryształ górski",
     price: "69.99 zł",
         category: "stal",
+        subCategory: "pozlacane",
     url: "/product/30900", 
     image: "https://hurt.ecarla.pl/182288-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-krysztal-gorski-kst2912b.jpg",
     description: [
@@ -3936,6 +3887,7 @@
     name: "Kolczyki pozłacanej kryształ górski ",
     price: "69.99 zł",
         category: "stal",
+            subCategory: "pozlacane",
     url: "/product/30901", 
     image: "https://hurt.ecarla.pl/182289-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-krysztal-gorski-kst2912r.jpg",
     description: [
@@ -3960,6 +3912,7 @@
     name: "Kolczyki pozłacanej 14k złotem kryształ górski",
     price: "69.99 zł",
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/30902", 
     image: "https://hurt.ecarla.pl/182290-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-krysztal-gorski-kst2904cze.jpg",
     description: [
@@ -3985,6 +3938,7 @@
     name: "Kolczyki pozłacanej 14k złotem kryształ górski",
     price: "79.99 zł", 
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/30903",
     image: "https://hurt.ecarla.pl/182292-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-krysztal-gorski-kst2904cz.jpg",
     description: [
@@ -4011,6 +3965,7 @@
     name: "Kolczyki platerowane 14k złotem, sztyft ",
     price: "89.99 zł",
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/31009", 
     image: "https://hurt.ecarla.pl/184065-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3235.jpg",
     description: [
@@ -4037,6 +3992,7 @@
     name: "Kolczyki platerowane 14k złotem, duże sztyft ",
     price: "89.99 zł",
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/31031",
     image: "https://hurt.ecarla.pl/183241-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-duze-sztyft-kst3374.jpg",
     description: [
@@ -4063,6 +4019,7 @@
     name: "Kolczyki platerowane 14k złotem, SERCA cyrkonie",
     price: "89.99 zł",
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/31060", 
     image: "https://hurt.ecarla.pl/184050-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-serca-cyrkonie-kst3394.jpg",
     description: [
@@ -4091,6 +4048,7 @@
     name: "Kolczyki platerowane 14k złotem, MUSZELKI, sztyft",
     price: "89.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/31061",
     image: "https://hurt.ecarla.pl/183242-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-muszelki-sztyft-kst3395.jpg",
     description: [
@@ -4117,6 +4075,7 @@
     name: "Kolczyki KOŁA platerowane 14k złotem, cyrkonie",
     price: "89.99 zł",
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/31216", 
     image: "https://hurt.ecarla.pl/184290-large_default/kolczyki-kola-ze-stali-szlachetnej-platerowane-14k-zlotem-cyrkonie-kst3326.jpg",
     description: [
@@ -4144,6 +4103,7 @@
     name: "Kolczyki pozłacanej 14k złotem z cyrkoniami, sztyft srebro S925 ",
     price: "79.99 zł",
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/31217", 
     image: "https://hurt.ecarla.pl/184503-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-z-cyrkoniami-sztyft-srebro-s925-kst3327.jpg",
     description: [
@@ -4171,6 +4131,7 @@
     name: "Kolczyki KOKARDKI pozłacanej 14k złotem, cyrkonie, sztyft srebro S925",
     price: "79.99 zł", 
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/31221",
     image: "https://hurt.ecarla.pl/184506-large_default/kolczyki-kokardki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-cyrkonie-sztyft-srebro-s925-kst3330.jpg",
     description: [
@@ -4200,6 +4161,7 @@
     name: "Kolczyki KOKARDKI pozłacanej 14k złotem z cyrkoniami, sztyft S925",
     price: "89.99 zł",
     category: "stal",
+    subCategory: "pozlacane",
     url:"/product/31222",
     image: "https://hurt.ecarla.pl/184505-large_default/kolczyki-kokardki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-z-cyrkoniami-sztyft-s925-kst3329.jpg",
     description: [
@@ -4229,6 +4191,7 @@
     name: "Kolczyki WISIENKI pozłacanej 14k złotem cyrkonie, sztyft srebro S925 perły",
     price: "79.99 zł",
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/31224", 
     image: "https://hurt.ecarla.pl/184416-large_default/kolczyki-wisienki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-cyrkonie-sztyft-srebro-s925-perly-kst3334.jpg",
     description: [
@@ -4258,6 +4221,7 @@
     name: "Kolczyki platerowane 14k złote, cyrkonie SERCA ",
     price: "79.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/31226",
     image: "https://hurt.ecarla.pl/184497-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlote-cyrkonie-serca-kst3339.jpg",
     description: [
@@ -4286,6 +4250,7 @@
     name: "Kolczyki platerowane 14k złote, perły SERCA, sztyft srebro ",
     price: "79.99 zł",
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/31227", 
     image: "https://hurt.ecarla.pl/184460-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlote-perly-serca-sztyft-srebro-s925kst3341.jpg",
     description: [
@@ -4314,6 +4279,7 @@
     name: "Kolczyki KOKARDY platerowane 14k złote, perły, sztyft S925",
     price: "89.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/31229",
     image: "https://hurt.ecarla.pl/184491-large_default/kolczyki-kokardy-ze-stali-szlachetnej-platerowane-14k-zlote-perly-sztyft-s925-kst3342.jpg",
     description: [
@@ -4341,6 +4307,7 @@
     name: "Kolczyki platerowane 14k złotem, KOŁA geometryczne ",
     price: "89.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/31263",
     image: "https://hurt.ecarla.pl/184743-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-kola-geometryczne-kst3320.jpg",
     description: [
@@ -4369,6 +4336,7 @@
     name: "Kolczyki wiszące platerowane 14k złotem, sztyft srebro S925, perły",
     price: "89.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/31268",
     image: "https://hurt.ecarla.pl/184830-large_default/kolczyki-wiszace-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-srebro-s925-perly-kst3340.jpg",
     description: [
@@ -4397,6 +4365,7 @@
     name: "Kolczyki platerowane 14k złotem, Koniczynka masa perłowa",
     price: "79.99 zł", 
     category: "stal",
+    "subCategory": "platerowane",
     url: "/product/31436",
     image: "https://hurt.ecarla.pl/185798-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-koniczynka-masa-perlowa-kst3388.jpg",
     description: [
@@ -4425,6 +4394,7 @@
     name: "Kolczyki pozłacanej 14k złotem z cyrkoniami, SERCE",
     price: "89.99 zł", 
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/31437",
     image: "https://hurt.ecarla.pl/186114-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-z-cyrkoniami-serce-kst3389.jpg",
     description: [
@@ -4454,6 +4424,7 @@
     name: "Kolczyki pozłacanej 14k złotem, SERCE RÓŻA sztyft srebro S925",
     price: "79.99 zł", 
     category: "stal",
+    subCategory: "pozlacane",
     url: "/product/31455",
     image: "https://hurt.ecarla.pl/186103-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-serce-roza-sztyft-srebro-s925-kst3338.jpg",
     description: [
@@ -4480,7 +4451,10 @@
 ,{
     "id": "31534",
     "name": "Kolczyki pozłacanej 14k złotem, SERCE KST3318",
-    "price": "22.14 zł",
+    "price": "99.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/31534",
     "image": "https://hurt.ecarla.pl/201003-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-serce-kst3318.jpg",
     "description": [
       "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
@@ -4505,7 +4479,10 @@
   {
     "id": "31541",
     "name": "Kolczyki pozłacanej 14k złotem, grube KOŁA sztyft KST3324",
-    "price": "22.14 zł",
+    "price": "99.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/31541",
     "image": "https://hurt.ecarla.pl/186711-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-grube-kola-sztyft-kst3324.jpg",
     "description": [
       "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
@@ -4530,7 +4507,10 @@
   {
     "id": "31542",
     "name": "Kolczyki wiszące srebro platerowane 14k złotem, srebro S925 KST3391",
-    "price": "19.07 zł",
+    "price": "99.99 zł",
+    "category": "stal",
+    "subCategory": "platerowane",
+    "url": "/product/31542",
     "image": "https://hurt.ecarla.pl/186712-large_default/kolczyki-wiszace-srebro-platerowane-14k-zlotem-srebro-s925-kst3391.jpg",
     "description": [
       "Kolczyki damskie platerowane złotem.",
@@ -4554,8 +4534,11 @@
   },
   {
     "id": "31543",
-    "name": "Kolczyki wiszące srebro platerowane 14k złotem, srebro S925 KST3392",
-    "price": "16.61 zł",
+    "name": "Kolczyki wiszące srebro platerowane 14k złotem, srebro S925",
+    "price": "99.99 zł",
+     "category" : "stal",
+     "url": "/product/31543",
+    "subCategory": "platerowane",
     "image": "https://hurt.ecarla.pl/186715-large_default/kolczyki-wiszace-srebro-platerowane-14k-zlotem-srebro-s925-kst3392.jpg",
     "description": [
       "Kolczyki damskie platerowane złotem.",
@@ -4579,8 +4562,11 @@
   },
   {
     "id": "31761",
-    "name": "Kolczyki pozłacanej 14k złotem, sztyft srebro S925 KST3404",
-    "price": "16.61 zł",
+    "name": "Kolczyki pozłacanej 14k złotem, sztyft srebro S925 ",
+    "price": "99.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/31761",
     "image": "https://hurt.ecarla.pl/188325-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-sztyft-srebro-s925-kst3404.jpg",
     "description": [
       "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
@@ -4604,8 +4590,11 @@
   },
   {
     "id": "31780",
-    "name": "Kolczyki platerowane 14k złotem KST2895",
-    "price": "18.45 zł",
+    "name": "Kolczyki platerowane 14k złotem ",
+    "price": "99.99 zł",
+    "category": "stal",
+    "subCategory": "platerowane",
+    "url": "/product/31780",
     "image": "https://hurt.ecarla.pl/188391-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2895.jpg",
     "description": [
       "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
@@ -4628,8 +4617,11 @@
   },
   {
     "id": "31781",
-    "name": "Kolczyki platerowane 14k złotem, sztyft KST3241",
-    "price": "22.14 zł",
+    "name": "Kolczyki platerowane 14k złotem, sztyft ",
+    "price": "99.99 zł",
+    "category": "stal",
+    "subCategory": "platerowane",
+    url: "/product/31781",
     "image": "https://hurt.ecarla.pl/188378-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3241.jpg",
     "description": [
       "Kolczyki platerowane 14-karatowym złotem.",
@@ -4653,8 +4645,11 @@
   },
   {
     "id": "31785",
-    "name": "Kolczyki platerowane 14k złotem WISIENKI, sztyft srebro S925 KST3317",
-    "price": "11.69 zł",
+    "name": "Kolczyki platerowane 14k złotem WISIENKI, sztyft srebro S925 ",
+    "price": "99.99 zł",
+    "category": "stal",
+    "subCategory": "platerowane",
+    "url": "/product/31785",
     "image": "https://hurt.ecarla.pl/188387-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-wisienki-sztyft-srebro-s925-kst3317.jpg",
     "description": [
       "Kolczyki damskie platerowane złotem.",
@@ -4678,8 +4673,11 @@
   },
   {
     "id": "31789",
-    "name": "Kolczyki platerowane 14k złotem, TRUSKAWKI wiszące czerwone KST3406",
-    "price": "26.45 zł",
+    "name": "Kolczyki platerowane 14k złotem, TRUSKAWKI wiszące czerwone",
+    "price": "99.99 zł",
+    "category": "stal",
+    "subCategory": "platerowane",
+    "url": "/product/31789",
     "image": "https://hurt.ecarla.pl/188614-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-truskawki-wiszace-czerwone-kst3406.jpg",
     "description": [
       "Kolczyki platerowane 14-karatowym złotem.",
@@ -4707,7 +4705,9 @@
     "name": "Kolczyki pozłacane 14k złotem",
     "price": "69.99 zł",
     "category": "stal",
-    url: "/product/32252",
+    
+    "subCategory": "pozlacane",
+    "url": "/product/32252",
     "image": "https://hurt.ecarla.pl/191512-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kst2093.jpg",
     "description": [
       "Kolczyki damskie.",
@@ -4730,6 +4730,7 @@
     "name": "Kolczyki pozłacane 14k złotem, z cyrkoniami ",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/32253",
     "image": "https://hurt.ecarla.pl/191517-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-z-cyrkoniami-kst1217.jpg",
     "description": [
@@ -4753,6 +4754,7 @@
     "name": "Kolczyki platerowane 14k złotem, wiszące ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/32256",
     "image": "https://hurt.ecarla.pl/191534-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-wiszace-kst3409.jpg",
     "description": [
@@ -4776,6 +4778,7 @@
     "name": "Kolczyki platerowane 14k złotem, wiszące",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/32258",
     "image": "https://hurt.ecarla.pl/191544-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-wiszace-kst3413.jpg",
     "description": [
@@ -4799,6 +4802,7 @@
     "name": "Kolczyki pozłacanej ",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/32275",
     "image": "https://hurt.ecarla.pl/191588-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3001.jpg",
     "description": [
@@ -4822,6 +4826,7 @@
     "name": "Kolczyki pozłacanej",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/32276",
     "image": "https://hurt.ecarla.pl/191590-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3002.jpg",
     "description": [
@@ -4845,6 +4850,7 @@
     "name": "Kolczyki pozłacane 14k złotem, z cyrkoniami",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/32386",
     "image": "https://hurt.ecarla.pl/192353-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-z-cyrkoniami-kst2859.jpg",
     "description": [
@@ -4868,6 +4874,7 @@
     "name": "Kolczyki pozłacane 14k złotem, z cyrkoniami",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/32390",
     "image": "https://hurt.ecarla.pl/192438-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-z-cyrkoniami-kst3416.jpg",
     "description": [
@@ -4891,6 +4898,7 @@
     "name": "Kolczyki KOKARDY wiszące pozłacanej, perełki ",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/32776",
     "image": "https://hurt.ecarla.pl/194487-large_default/kolczyki-kokardy-wiszace-ze-stali-szlachetnej-pozlacanej-perelki-kst3281.jpg",
     "description": [
@@ -4914,6 +4922,7 @@
     "name": "Kolczyki platerowane 14k złotem, zapięcie angielskie",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/32830",
     "image": "https://hurt.ecarla.pl/194874-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-zapiecie-angielskie-kst3421.jpg",
     "description": [
@@ -4937,6 +4946,7 @@
     "name": "Kolczyki platerowane 14k złotem, zapięcie angielskie",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/32835",
     "image": "https://hurt.ecarla.pl/194794-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-zapiecie-angielskie-kst3429.jpg",
     "description": [
@@ -4960,6 +4970,7 @@
     "name": "Kolczyki platerowane 14k złotem, zapięcie sztyfit ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/32836",
     "image": "https://hurt.ecarla.pl/194948-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-zapiecie-sztyfit-kst3410.jpg",
     "description": [
@@ -4983,6 +4994,7 @@
     "name": "Kolczyki platerowane 14k złotem, zapięcie sztyfit",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/32838",
     "image": "https://hurt.ecarla.pl/194761-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-zapiecie-sztyfit-kst3411.jpg",
     "description": [
@@ -5006,6 +5018,7 @@
     "name": "Kolczyki platerowane 14k złotem, zapięcie sztyfit SERCE",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/32840",
     "image": "https://hurt.ecarla.pl/201005-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-zapiecie-sztyfit-serce-kst3435.jpg",
     "description": [
@@ -5029,6 +5042,7 @@
     "name": "Kolczyki platerowane 14k złotem, zapięcie angielskie",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/32842",
     "image": "https://hurt.ecarla.pl/194951-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-zapiecie-angielskie-kst3426.jpg",
     "description": [
@@ -5052,6 +5066,7 @@
     "name": "Kolczyki platerowane 14k złotem, zapięcie angielskie",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/32845",
     "image": "https://hurt.ecarla.pl/194772-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-zapiecie-angielskie-kst3432.jpg",
     "description": [
@@ -5075,6 +5090,7 @@
     "name": "Kolczyki platerowane 14k złotem, zapięcie sztyfit",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/32849",
     "image": "https://hurt.ecarla.pl/194954-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-zapiecie-sztyfit-kst3436.jpg",
     "description": [
@@ -5098,6 +5114,7 @@
     "name": "Kolczyki platerowane 14k złotem, zapięcie angielskie ",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/32850",
     "image": "https://hurt.ecarla.pl/194787-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-zapiecie-angielskie-kst3465.jpg",
     "description": [
@@ -5121,6 +5138,7 @@
     "name": "Kolczyki platerowane 14k złotem, zapięcie angielskie",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/32852",
     "image": "https://hurt.ecarla.pl/194950-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-zapiecie-angielskie-kst3464.jpg",
     "description": [
@@ -5142,8 +5160,9 @@
  {
   "id": "33105",
   "name": "Kolczyki pozłacane 14k złotem, cyrkonie serca",
-  "price": "79.99 zł",
+  "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33105",
   "image": "https://hurt.ecarla.pl/196349-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-serca-kst2856.jpg",
   "description": [
@@ -5168,6 +5187,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33144",
     "image": "https://hurt.ecarla.pl/196418-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-kst3499.jpg",
     "description": [
@@ -5185,6 +5205,7 @@
     "name": "Kolczyki pozłacane 14k złotem, kokardka cyrkonie",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33145",
     "image": "https://hurt.ecarla.pl/196420-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kokardka-cyrkonie-kst3494.jpg",
     "description": [
@@ -5202,6 +5223,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie serce, gwiazdka",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33146",
     "image": "https://hurt.ecarla.pl/196545-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-serce-gwiazdka-kst3493.jpg",
     "description": [
@@ -5217,8 +5239,9 @@
   {
     "id": "33147",
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie motylki",
-    "price": "79.99 zł",
+    "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33147",
     "image": "https://hurt.ecarla.pl/196546-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-motylki-kst3491.jpg",
     "description": [
@@ -5236,6 +5259,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie serca",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33148",
     "image": "https://hurt.ecarla.pl/196426-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-serca-kst3487.jpg",
     "description": [
@@ -5253,6 +5277,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie serca ",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33150",
     "image": "https://hurt.ecarla.pl/196431-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-serca-kst3485.jpg",
     "description": [
@@ -5270,6 +5295,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie serca",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33152",
     "image": "https://hurt.ecarla.pl/196435-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-serca-kst3483.jpg",
     "description": [
@@ -5287,6 +5313,8 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie, kółka sztyft ",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
+
     "url": "/product/33153",
     "image": "https://hurt.ecarla.pl/196437-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-kolka-sztyft-kst3471.jpg",
     "description": [
@@ -5304,6 +5332,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie zielone kwiaty",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33154",
     "image": "https://hurt.ecarla.pl/196441-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-zielone-kwiaty-kst3472.jpg",
     "description": [
@@ -5319,8 +5348,9 @@
   {
     "id": "33156",
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie perły",
-    "price": "89.99 zł",
+    "price": "109.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33156",
     "image": "https://hurt.ecarla.pl/196451-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-perly-kst3474.jpg",
     "description": [
@@ -5338,6 +5368,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie, perły",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33159",
     "image": "https://hurt.ecarla.pl/196461-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-perly-kst3515.jpg",
     "description": [
@@ -5355,6 +5386,7 @@
     "name": "Kolczyki pozłacane 14k złotem, kokardki",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33160",
     "image": "https://hurt.ecarla.pl/196466-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kokardki-kst3476.jpg",
     "description": [
@@ -5371,7 +5403,9 @@
     "id": "33162",
     "name": "Kolczyki pozłacane 14k złotem, wyraziste, nowoczesne",
     "price": "89.99 zł",
+
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33162",
     "image": "https://hurt.ecarla.pl/196471-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wyraziste-nowoczesne-kst3478.jpg",
     "description": [
@@ -5389,6 +5423,7 @@
     "name": "Kolczyki pozłacane 14k złotem, dekoracyjne róż",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33163",
     "image": "https://hurt.ecarla.pl/196473-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-dekoracyjne-roz-kst3479r.jpg",
     "description": [
@@ -5404,8 +5439,9 @@
   {
     "id": "33164",
     "name": "Kolczyki pozłacane 14k złotem, dekoracyjne czarne",
-    "price": "89.99zł",
+    "price": "109.99zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33164",
     "image": "https://hurt.ecarla.pl/196475-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-dekoracyjne-czarne-kst3479cz.jpg",
     "description": [
@@ -5423,6 +5459,7 @@
     "name": "Kolczyki pozłacane 14k złotem, dekoracyjne ecru",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33165",
     "image": "https://hurt.ecarla.pl/196477-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-dekoracyjne-ecru-kst3479b.jpg",
     "description": [
@@ -5440,6 +5477,7 @@
     "name": "Kolczyki pozłacane 14k złotem, efektowne czarne serca",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33166",
     "image": "https://hurt.ecarla.pl/196479-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-efektowne-czarne-serca-kst3481cz.jpg",
     "description": [
@@ -5457,6 +5495,7 @@
     "name": "Kolczyki pozłacane 14k złotem, efektowne białe serca",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33167",
     "image": "https://hurt.ecarla.pl/196481-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-efektowne-biale-serca-kst3481b.jpg",
     "description": [
@@ -5474,6 +5513,7 @@
     "name": "Kolczyki pozłacane 14k złotem, kwiaty, masa perłowa",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33168",
     "image": "https://hurt.ecarla.pl/196483-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kwiaty-masa-perlowa-kst3480.jpg",
     "description": [
@@ -5491,6 +5531,7 @@
     "name": "Kolczyki pozłacane 14k złotem, koła",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33169",
     "image": "https://hurt.ecarla.pl/196559-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kola-kst3455.jpg",
     "description": [
@@ -5508,6 +5549,7 @@
     "name": "Kolczyki pozłacane 14k złotem, potrójne koła",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33170",
     "image": "https://hurt.ecarla.pl/196561-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-potrojne-kola-kst3457.jpg",
     "description": [
@@ -5525,6 +5567,7 @@
     "name": "Kolczyki pozłacane 14k złotem, podwójny owal",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33171",
     "image": "https://hurt.ecarla.pl/196554-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-podwojny-owal-kst3458.jpg",
     "description": [
@@ -5542,6 +5585,7 @@
     "name": "Kolczyki pozłacane 14k złotem, owalne",
     "price": "89.99  zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33172",
     "image": "https://hurt.ecarla.pl/196565-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-owalne-kst3459.jpg",
     "description": [
@@ -5559,6 +5603,7 @@
     "name": "Kolczyki pozłacane 14k złotem, dekoracyjne",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33173",
     "image": "https://hurt.ecarla.pl/196563-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-dekoracyjne-kst3461.jpg",
     "description": [
@@ -5576,6 +5621,7 @@
     "name": "Kolczyki pozłacane 14k złotem, okrągłe ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33174",
     "image": "https://hurt.ecarla.pl/196564-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okragle-kst3462.jpg",
     "description": [
@@ -5593,6 +5639,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie serca ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33176",
     "image": "https://hurt.ecarla.pl/196494-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-serca-kst3495.jpg",
     "description": [
@@ -5610,6 +5657,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie luksusowy blask ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33177",
     "image": "https://hurt.ecarla.pl/196497-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-luksusowy-blask-kst3501.jpg",
     "description": [
@@ -5627,6 +5675,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie kwiatki",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33178",
     "image": "https://hurt.ecarla.pl/196590-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-kwiatki-kst3504.jpg",
     "description": [
@@ -5644,6 +5693,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie niebieskie",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33179",
     "image": "https://hurt.ecarla.pl/196593-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-niebieskie-kst3498.jpg",
     "description": [
@@ -5661,6 +5711,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie niebieskie",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33181",
     "image": "https://hurt.ecarla.pl/196589-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-niebieskie-kst3496.jpg",
     "description": [
@@ -5678,6 +5729,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie motylki",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/33185",
     "image": "https://hurt.ecarla.pl/196581-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-motylki-kst3489.jpg",
     "description": [
@@ -5695,6 +5747,7 @@
     "name": "Kolczyki pozłacane 14k złotem, ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33186",
     "image": "https://hurt.ecarla.pl/196592-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kst3482.jpg",
     "description": [
@@ -5712,6 +5765,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonia wiszące kwiaty",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33187",
     "image": "https://hurt.ecarla.pl/196594-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonia-wiszace-kwiaty-kst3454.jpg",
     "description": [
@@ -5729,6 +5783,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące kokardy z perełkami ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33188",
     "image": "https://hurt.ecarla.pl/196505-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kokardy-z-perelkami-kst3453.jpg",
     "description": [
@@ -5746,6 +5801,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33189",
     "image": "https://hurt.ecarla.pl/196507-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kst3452.jpg",
     "description": [
@@ -5763,6 +5819,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie wiszące kwiaty",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33190",
     "image": "https://hurt.ecarla.pl/196584-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-wiszace-kwiaty-kst3451.jpg",
     "description": [
@@ -5780,6 +5837,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące liście kwiat",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33191",
     "image": "https://hurt.ecarla.pl/201002-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-liscie-kwiat-kst3450.jpg",
     "description": [
@@ -5798,6 +5856,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące z perłą ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33192",
     "image": "https://hurt.ecarla.pl/196576-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-z-perla-kst3449.jpg",
     "description": [
@@ -5815,6 +5874,7 @@
     "name": "Kolczyki pozłacane 14k złotem, panterka ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33193",
     "image": "https://hurt.ecarla.pl/196566-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-panterka-kst3448.jpg",
     "description": [
@@ -5832,6 +5892,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33195",
     "image": "https://hurt.ecarla.pl/196572-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kst3446.jpg",
     "description": [
@@ -5849,6 +5910,7 @@
     "name": "Kolczyki pozłacane 14k złotem, panterka i kwiaty ",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33196",
     "image": "https://hurt.ecarla.pl/196570-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-panterka-i-kwiaty-kst3445.jpg",
     "description": [
@@ -5866,6 +5928,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33199",
     "image": "https://hurt.ecarla.pl/196518-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kst3442.jpg",
     "description": [
@@ -5883,6 +5946,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące kwiaty ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33200",
     "image": "https://hurt.ecarla.pl/196580-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kwiaty-kst3441.jpg",
     "description": [
@@ -5900,6 +5964,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące kwiaty z perłą ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33201",
     "image": "https://hurt.ecarla.pl/196532-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kwiaty-z-perla-kst3440.jpg",
     "description": [
@@ -5917,6 +5982,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące z perłą ",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33204",
     "image": "https://hurt.ecarla.pl/196577-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-z-perla-kst3437.jpg",
     "description": [
@@ -5934,6 +6000,7 @@
     "name": "Kolczyki pozłacane 14k złotem, miś z czarną cyrkonią ",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33205",
     "image": "https://hurt.ecarla.pl/196556-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-mis-z-czarna-cyrkonia-kst3535.jpg",
     "description": [
@@ -5952,6 +6019,7 @@
     "name": "Kolczyki platerowane 14k złotem, dwustronne serca ",
     "price": "99.99 zł",
     "category": "stal",
+  "subCategory": "platerowane",
     "url": "/product/33420",
     "image": "https://hurt.ecarla.pl/197934-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-dwustronne-serca-kst3412.jpg",
     "description": [
@@ -5969,6 +6037,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące ",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33462",
     "image": "https://hurt.ecarla.pl/198051-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kst3521.jpg",
     "description": [
@@ -5986,6 +6055,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące Gwiazdki ",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33463",
     "image": "https://hurt.ecarla.pl/198053-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-gwiazdki-kst3531.jpg",
     "description": [
@@ -6003,6 +6073,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące z Perłą ",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33465",
     "image": "https://hurt.ecarla.pl/198057-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-z-perla-kst3522.jpg",
     "description": [
@@ -6020,6 +6091,7 @@
     "name": "Kolczyki pozłacane 14k złotem ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33466",
     "image": "https://hurt.ecarla.pl/198059-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kst3516.jpg",
     "description": [
@@ -6037,6 +6109,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące ",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33472",
     "image": "https://hurt.ecarla.pl/198081-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kst3517.jpg",
     "description": [
@@ -6054,6 +6127,7 @@
     "name": "Kolczyki pozłacane 14k złotem, Kokardki ",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33473",
     "image": "https://hurt.ecarla.pl/198074-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kokardki-kst3523.jpg",
     "description": [
@@ -6071,6 +6145,7 @@
     "name": "Kolczyki pozłacane 14k złotem, Kwiatuszki z perełką ",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33475",
     "image": "https://hurt.ecarla.pl/198078-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kwiatuszki-z-perelka-kst3519.jpg",
     "description": [
@@ -6088,6 +6163,7 @@
     "name": "Kolczyki pozłacane 14k złotem, Wiszące Perły ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33477",
     "image": "https://hurt.ecarla.pl/198080-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-perly-kst3512.jpg",
     "description": [
@@ -6105,6 +6181,7 @@
     "name": "Kolczyki SERCA platerowane 14k złotem, delikatne",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/33748",
     "image": "https://hurt.ecarla.pl/199753-large_default/kolczyki-serca-ze-stali-szlachetnej-platerowane-14k-zlotem-delikatne-kst3401.jpg",
     "description": [
@@ -6127,6 +6204,7 @@
     "name": "Kolczyki pozłacane 14k złotem, z cyrkoniami",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33750",
     "image": "https://hurt.ecarla.pl/199751-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-z-cyrkoniami-kst3536.jpg",
     "description": [
@@ -6149,6 +6227,7 @@
     "name": "Kolczyki pozłacane 14k złotem, perły, efektowne, wiszące blaszki ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33751",
     "image": "https://hurt.ecarla.pl/199762-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-perly-efektowne-wiszace-blaszki-kst3505.jpg",
     "description": [
@@ -6170,6 +6249,7 @@
     "name": "Kolczyki pozłacane 14k złotem, efektowne, wiszące kwiaty",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33752",
     "image": "https://hurt.ecarla.pl/199766-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-efektowne-wiszace-kwiaty-kst3506.jpg",
     "description": [
@@ -6191,6 +6271,7 @@
     "name": "Kolczyki pozłacane 14k złotem, efektowne, wiszące perełki",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33753",
     "image": "https://hurt.ecarla.pl/199768-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-efektowne-wiszace-perelki-kst3507.jpg",
     "description": [
@@ -6212,6 +6293,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące kwiaty z perełkami",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33754",
     "image": "https://hurt.ecarla.pl/199761-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kwiaty-z-perelkami-kst3508.jpg",
     "description": [
@@ -6233,6 +6315,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące kwiaty z cyrkoniami",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33755",
     "image": "https://hurt.ecarla.pl/199764-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kwiaty-z-cyrkoniami-kst3509.jpg",
     "description": [
@@ -6254,6 +6337,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące kwiaty z cyrkoniami",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33756",
     "image": "https://hurt.ecarla.pl/199763-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kwiaty-z-cyrkoniami-kst3510.jpg",
     "description": [
@@ -6275,6 +6359,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące kwiaty z cyrkoniami",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33757",
     "image": "https://hurt.ecarla.pl/199765-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kwiaty-z-cyrkoniami-kst3526.jpg",
     "description": [
@@ -6296,6 +6381,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące kwiaty z cyrkoniami",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33758",
     "image": "https://hurt.ecarla.pl/199767-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kwiaty-z-cyrkoniami-kst3527.jpg",
     "description": [
@@ -6317,6 +6403,7 @@
     "name": "Kolczyki platerowane 14k złotem KWIATY perły",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/33777",
     "image": "https://hurt.ecarla.pl/199746-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-kwiaty-perly-kst3381.jpg",
     "description": [
@@ -6338,6 +6425,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie masa perłowa ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33874",
     "image": "https://hurt.ecarla.pl/200239-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-masa-perlowa-kst3514.jpg",
     "description": [
@@ -6360,6 +6448,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące Perły z Kwiatem",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33875",
     "image": "https://hurt.ecarla.pl/200243-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-perly-z-kwiatem-kst3513.jpg",
     "description": [
@@ -6382,6 +6471,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, cyrkonie",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33878",
     "image": "https://hurt.ecarla.pl/200254-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-cyrkonie-kst2225.jpg",
     "description": [
@@ -6403,6 +6493,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, KULKI ",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33882",
     "image": "https://hurt.ecarla.pl/200261-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-kulki-kst3567.jpg",
     "description": [
@@ -6423,6 +6514,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, SERCA",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/33886",
     "image": "https://hurt.ecarla.pl/200268-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-serca-kst3565.jpg",
     "description": [
@@ -6443,6 +6535,7 @@
     "name": "Kolczyki platerowane 14k złotem, z cyrkoniami ",
     "price": "89.99 zł",
     "category": "stal",
+"subCategory": "platerowane",
     "url": "/product/33988",
     "image": "https://hurt.ecarla.pl/201205-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-z-cyrkoniami-kst3153.jpg",
     "description": [
@@ -6465,6 +6558,7 @@
     "name": "Kolczyki platerowane 14k złotem, z cyrkoniami ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/33989",
     "image": "https://hurt.ecarla.pl/201217-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-z-cyrkoniami-kst3155.jpg",
     "description": [
@@ -6486,6 +6580,7 @@
     "name": "Kolczyki platerowane 14k złotem Miś z różowym sercem ",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/33990",
     "image": "https://hurt.ecarla.pl/201229-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-mis-z-rozowym-sercem-kst3157.jpg",
     "description": [
@@ -6506,6 +6601,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, Białe SERCA ",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34041",
     "image": "https://hurt.ecarla.pl/201677-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-biale-serca-kst3555.jpg",
     "description": [
@@ -6526,6 +6622,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, SERCA",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34042",
     "image": "https://hurt.ecarla.pl/201678-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-serca-kst3556.jpg",
     "description": [
@@ -6546,6 +6643,7 @@
     "name": "Kolczyki pozłacane 14k złotem, perły serca",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34043",
     "image": "https://hurt.ecarla.pl/201636-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-perly-serca-kst3475.jpg",
     "description": [
@@ -6565,6 +6663,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, Kryształowe SERCA",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34044",
     "image": "https://hurt.ecarla.pl/201680-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-krysztalowe-serca-kst3545.jpg",
     "description": [
@@ -6583,6 +6682,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, Perełkowe SERCA",
     "price": "99.99 zł",
     "category": "stal", 
+    "subCategory": "pozlacane",
     "url": "/product/34045",
     "image": "https://hurt.ecarla.pl/201681-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-perelkowe-serca-kst3548.jpg",
     "description": [
@@ -6603,6 +6703,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, czarne SERCA",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34046",
     "image": "https://hurt.ecarla.pl/201682-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-czarne-serca-kst3583.jpg",
     "description": [
@@ -6623,6 +6724,7 @@
     "name": "Kolczyki pozłacane 14k złotem, zapięcie angielski, Różowe SERCA",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34048",
     "image": "https://hurt.ecarla.pl/201684-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-zapiecie-angielski-rozowe-serca-kst3564.jpg",
     "description": [
@@ -6643,6 +6745,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, SERCA z cyrkonią",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34049",
     "image": "https://hurt.ecarla.pl/201723-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-serca-z-cyrkonia-kst3636.jpg",
     "description": [
@@ -6663,6 +6766,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, SERCA",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34050",
     "image": "https://hurt.ecarla.pl/201924-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-serca-kst3634.jpg",
     "description": [
@@ -6682,6 +6786,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, Cyrkonie, Koniczyna",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34095",
     "image": "https://hurt.ecarla.pl/201735-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-cyrkonie-koniczyna-kst3540.jpg",
     "description": [
@@ -6702,6 +6807,7 @@
     "name": "Kolczyki platerowane 14k złotem, sztyft, Koniczynka czarna",
     "price": "79.99 zł",
     "category": "stal",
+   "subCategory": "platerowane",
     "url": "/product/34096",
     "image": "https://hurt.ecarla.pl/201738-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-koniczynka-czarna-kst3377.jpg",
     "description": [
@@ -6724,6 +6830,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, Białe Koniczynki",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34097",
     "image": "https://hurt.ecarla.pl/201764-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-biale-koniczynki-kst3582.jpg",
     "description": [
@@ -6746,6 +6853,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, Pudrowe Kwiaty ",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34084",
     "image": "https://hurt.ecarla.pl/203519-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-pudrowe-kwiaty-kst3552.jpg",
     "description": [
@@ -6766,6 +6874,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, Pudrowe Kwiaty z Perłą ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34085",
     "image": "https://hurt.ecarla.pl/201705-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-pudrowe-kwiaty-z-perla-kst3562.jpg",
     "description": [
@@ -6786,6 +6895,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, Cyrkonie, Fuksjowe Kwiaty",
     "price": "109.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34086",
 
     "image": "https://hurt.ecarla.pl/201708-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-cyrkonie-fuksjowe-kwiaty-kst3543.jpg",
@@ -6807,6 +6917,7 @@
     "name": "Kolczyki platerowane 14k złotem, kokarda z kryształem",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34115",
     "image": "https://hurt.ecarla.pl/201768-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-kokarda-z-krysztalem-kst3559.jpg",
     "description": [
@@ -6827,6 +6938,7 @@
     "name": "Kolczyki pozłacane 14k złotem, perełkowe Kokardki",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34116",
     "image": "https://hurt.ecarla.pl/201810-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-perelkowe-kokardki-kst3511.jpg",
     "description": [
@@ -6848,6 +6960,7 @@
     "name": "Kolczyki pozłacane 14k złotem, małe kokardki ",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34117",
     "image": "https://hurt.ecarla.pl/201800-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-male-kokardki-kst3633.jpg",
     "description": [
@@ -6868,6 +6981,7 @@
     "name": "Kolczyki platerowane 14k złotem, perły z cyrkonią",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34118",
     "image": "https://hurt.ecarla.pl/201770-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-perly-z-cyrkonia-kst3542.jpg",
     "description": [
@@ -6888,6 +7002,7 @@
     "name": "Kolczyki platerowane 14k złotem, perłowe kwadraty",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34119",
     "image": "https://hurt.ecarla.pl/201772-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-perłowe-kwadraty-kst3544.jpg",
     "description": [
@@ -6908,6 +7023,7 @@
     "name": "Kolczyki pozłacane 14k złotem, perły, cyrkonie",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34120",
     "image": "https://hurt.ecarla.pl/201774-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-perły-cyrkonie-kst3549.jpg",
     "description": [
@@ -6928,6 +7044,7 @@
     "name": "Kolczyki pozłacane 14k złotem, perła",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34121",    
     "image": "https://hurt.ecarla.pl/201776-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-perła-kst3550.jpg",
     "description": [
@@ -6948,6 +7065,7 @@
     "name": "Kolczyki platerowane 14k złotem, podwójne okręgi ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34128",
     "image": "https://hurt.ecarla.pl/201896-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-podwojne-okregi-kst3553.jpg",
     "description": [
@@ -6969,6 +7087,7 @@
     "name": "Kolczyki platerowane 14k złotem, okręgi Brąz",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34129",
     "image": "https://hurt.ecarla.pl/201788-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-okregi-braz-kst3557.jpg",
     "description": [
@@ -6990,6 +7109,7 @@
     "name": "Kolczyki platerowane 14k złotem, Owalne",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34130",
     "image": "https://hurt.ecarla.pl/201790-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-owalne-kst3560.jpg",
     "description": [
@@ -7011,6 +7131,7 @@
     "name": "Kolczyki platerowane 14k złotem, perłowe, cyrkonie",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34131",
     "image": "https://hurt.ecarla.pl/201792-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-perlowe-cyrkonie-kst3561.jpg",
     "description": [
@@ -7032,6 +7153,7 @@
     "name": "Kolczyki platerowane 14k złotem",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34132",
     "image": "https://hurt.ecarla.pl/201908-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-kst3541.jpg",
     "description": [
@@ -7053,6 +7175,7 @@
     "name": "Kolczyki pozłacane 14k złotem, kryształki",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34133",
     "image": "https://hurt.ecarla.pl/201796-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-krysztalki-kst3546.jpg",
     "description": [
@@ -7074,6 +7197,7 @@
     "name": "Kolczyki pozłacane 14k złotem, kwadraty, kryształ, cyrkonie ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34134",
     "image": "https://hurt.ecarla.pl/201798-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kwadraty-krysztal-cyrkonie-kst3547.jpg",
     "description": [
@@ -7095,6 +7219,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34135",
     "image": "https://hurt.ecarla.pl/201819-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-kst2847.jpg",
     "description": [
@@ -7116,6 +7241,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące, kryształki",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34136",
     "image": "https://hurt.ecarla.pl/201802-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-krysztalki-kst3539.jpg",
     "description": [
@@ -7137,6 +7263,7 @@
     "name": "Kolczyki pozłacane 14k złotem, koła 3,5 cm",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34137",
     "image": "https://hurt.ecarla.pl/201949-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kola-35-cm-kst3626.jpg",
     "description": [
@@ -7158,6 +7285,7 @@
     "name": "Kolczyki pozłacane 14k złotem, plecione koła",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34138",
     "image": "https://hurt.ecarla.pl/201806-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-plecione-kola-kst3627.jpg",
     "description": [
@@ -7179,6 +7307,7 @@
     "name": "Kolczyki pozłacane 14k złotem, płaskie koła",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34139",
     "image": "https://hurt.ecarla.pl/201808-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-plaskie-kola-kst3628.jpg",
     "description": [
@@ -7200,6 +7329,7 @@
     "name": "Kolczyki pozłacane 14k złotem, koła, cyrkonie",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34140",
     "image": "https://hurt.ecarla.pl/201921-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kola-cyrkonie-kst3629.jpg",
     "description": [
@@ -7221,6 +7351,7 @@
     "name": "Kolczyki pozłacane 14k złotem, okręgi z cyrkoniami",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34141",
     "image": "https://hurt.ecarla.pl/201923-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okregi-z-cyrkoniami-kst3631.jpg",
     "description": [
@@ -7242,6 +7373,7 @@
     "name": "Kolczyki pozłacane 14k złotem, Krople, kryształki",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34142",
     "image": "https://hurt.ecarla.pl/201815-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-krople-krysztalki-kst3632.jpg",
     "description": [
@@ -7263,6 +7395,7 @@
     "name": "Kolczyki pozłacane 14k złotem",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34143",
     "image": "https://hurt.ecarla.pl/201925-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kst3635.jpg",
     "description": [
@@ -7284,6 +7417,7 @@
     "name": "Kolczyki pozłacanej wkrętki 2,1 cm, KROPLE",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34144",
     "image": "https://hurt.ecarla.pl/201828-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-wkretki-21-cm-krople-kst3139.jpg",
     "description": [
@@ -7332,6 +7466,7 @@
     "name": "Kolczyki platerowane 14K złotem, sztyft S925, cyrkonie",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34145",
     "image": "https://hurt.ecarla.pl/201822-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-s925-cyrkonie-kst3304.jpg",
     "description": "Eleganckie kolczyki platerowane złotem z cyrkoniami. Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje.",
@@ -7349,6 +7484,7 @@
     "name": "Kolczyki pozłacane 14k złotem, okręgi perełkowe 4 cm ",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34152",
     "image": "https://hurt.ecarla.pl/201897-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okregi-perelkowe-4-cm-kst3575.jpg",
     "description": "Eleganckie kolczyki w kształcie okręgów perełkowych, platerowane 14-karatowym złotem.",
@@ -7366,6 +7502,7 @@
     "name": "Kolczyki pozłacane 14k złotem, okręgi perełkowe 3,5 cm",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34153",
     "image": "https://hurt.ecarla.pl/201898-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okregi-perelkowe-35-cm-kst3576.jpg",
     "description": "Stylowe kolczyki - okręgi perełkowe platerowane 14-karatowym złotem.",
@@ -7383,6 +7520,7 @@
     "name": "Kolczyki pozłacane 14k złotem, okręgi z cyrkoniami",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34154",
     "image": "https://hurt.ecarla.pl/201922-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okregi-z-cyrkoniami-kst3630.jpg",
     "description": "Subtelne okręgi z cyrkoniami, platerowane 14-karatowym złotem.",
@@ -7400,6 +7538,7 @@
     "name": "Kolczyki platerowane 14k złotem, podwójne okręgi, koło",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34297",
     "image": "https://hurt.ecarla.pl/202707-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-podwójne-okręgi-koła-kst3551.jpg",
     "description": "Podwójne okręgi platerowanej złotem.",
@@ -7417,6 +7556,7 @@
     "name": "Kolczyki platerowane 14k złotem, perełki, sztyft",
     "price": "69.99zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34298",
     "image": "https://hurt.ecarla.pl/202709-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-perełki-sztyft-kst3554.jpg",
     "description": "Delikatne perełki platerowane 14K złotem.",
@@ -7434,6 +7574,7 @@
     "name": "Kolczyki platerowane 14k złotem, fioletowa cyrkonia KST3558",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34299",
     "image": "https://hurt.ecarla.pl/202711-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-fioletowa-cyrkonia-kst3558.jpg",
     "description": "Kolczyki z fioletową cyrkonią, platerowane 14K złotem.",
@@ -7451,6 +7592,7 @@
     "name": "Kolczyki platerowane 14k złotem, KONICZYNY, różowe cyrkonie",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34300",
     "image": "https://hurt.ecarla.pl/203113-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-koniczyny-różowe-cyrkonie-kst3569.jpg",
     "description": "Kolczyki w kształcie koniczynek z różowymi cyrkoniami.",
@@ -7468,6 +7610,7 @@
     "name": "Kolczyki platerowane 14k złotem, KONICZYNY złote cyrkonie",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34301",
     "image": "https://hurt.ecarla.pl/202716-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-koniczyny-złote-cyrkonie-kst3571.jpg",
     "description": "Złote koniczynki z cyrkoniami.",
@@ -7485,6 +7628,7 @@
     "name": "Kolczyki pozłacane 14k złotem, Białe Koniczyny, cyrkonie",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34302",
     "image": "https://hurt.ecarla.pl/202719-large_default/kolczyki-ze-stali-szlachetnej-pozłacane-14k-zlotem-białe-koniczyny-cyrkonie-kst3572.jpg",
     "description": "Białe koniczynki z cyrkoniami, pozłacane 14K złotem.",
@@ -7502,6 +7646,7 @@
     "name": "Kolczyki platerowane 14k złotem, KONICZYNY białe cyrkonie",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34303",
     "image": "https://hurt.ecarla.pl/202722-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-koniczyny-białe-cyrkonie-kst3573.jpg",
     "description": "Białe koniczynki platerowane 14K złotem.",
@@ -7519,6 +7664,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, Białe Koniczynki",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34304",
     "image": "https://hurt.ecarla.pl/203116-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-biale-koniczynki-kst3574.jpg",
     "description": "Eleganckie i stylowe kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
@@ -7536,6 +7682,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, róż Koniczynki",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34306",
     "image": "https://hurt.ecarla.pl/203105-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-roz-koniczynki-kst3608.jpg",
     "description": "Eleganckie i stylowe kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
@@ -7553,6 +7700,7 @@
     "name": "Kolczyki platerowane 14k złotem, Koniczynka masa perłowa",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34307",
     "image": "https://hurt.ecarla.pl/203106-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-koniczynka-masa-perlowa-kst3609.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowanej 14-karatowym złotem.",
@@ -7570,6 +7718,7 @@
     "name": "Kolczyki platerowane 14k złotem, Koniczynka mini czarna",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34308",
     "image": "https://hurt.ecarla.pl/203128-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-koniczynka-mini-czarna-kst3603.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowanej 14-karatowym złotem.",
@@ -7587,6 +7736,7 @@
     "name": "Kolczyki platerowane 14k złotem, Koniczynka mini biała ",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34309",
     "image": "https://hurt.ecarla.pl/203132-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-koniczynka-mini-biala-kst3604.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowanej 14-karatowym złotem.",
@@ -7604,6 +7754,7 @@
     "name": "Kolczyki platerowane 14k złotem, Koniczynka mini różowa",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34310",
     "image": "https://hurt.ecarla.pl/203129-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-koniczynka-mini-rozowa-kst3605.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowanej 14-karatowym złotem.",
@@ -7621,6 +7772,7 @@
     "name": "Kolczyki platerowane 14k złotem, sztyft, Koniczynka czarna",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34311",
     "image": "https://hurt.ecarla.pl/203114-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-koniczynka-czarna-kst3419.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowanej 14-karatowym złotem.",
@@ -7638,6 +7790,7 @@
     "name": "Kolczyki platerowane 14k złotem, Koniczynka masa perłowa",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34312",
     "image": "https://hurt.ecarla.pl/203115-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-koniczynka-masa-perlowa-kst3602.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowanej 14-karatowym złotem.",
@@ -7655,6 +7808,7 @@
     "name": "Kolczyki pozłacane 14k złotem, biała Koniczyna, masa perłowa",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34313",
     "image": "https://hurt.ecarla.pl/203112-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-biala-koniczyna-masa-perlowa-kst3611.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -7672,6 +7826,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące czarne Koniczyny",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34314",
     "image": "https://hurt.ecarla.pl/203118-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-czarne-koniczyny-kst3463.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -7689,6 +7844,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, SERCA cyrkonie ",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34315",
     "image": "https://hurt.ecarla.pl/203502-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-serca-cyrkonie-kst3577.jpg",
     "description": "Eleganckie i stylowe kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
@@ -7706,6 +7862,7 @@
     "name": "Kolczyki pozłacane 14k złotem, SERCA i motylki cyrkonie ",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34316",
     "image": "https://hurt.ecarla.pl/202760-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-serca-i-motylki-cyrkonie-kst3579.jpg",
     "description": "Eleganckie i stylowe kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
@@ -7723,6 +7880,7 @@
     "name": "Kolczyki pozłacane 14k złotem, SERCA cyrkonie",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34317",
     "image": "https://hurt.ecarla.pl/202762-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-serca-cyrkonie-kst3621.jpg",
     "description": "Eleganckie i stylowe kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
@@ -7740,6 +7898,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, SERCA",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34318",
     "image": "https://hurt.ecarla.pl/202836-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-serca-kst3623.jpg",
     "description": "Eleganckie i stylowe kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
@@ -7757,6 +7916,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, SERCA ",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34319",
     "image": "https://hurt.ecarla.pl/202768-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-serca-kst3666.jpg",
     "description": "Eleganckie i stylowe kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
@@ -7774,6 +7934,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, SERCA cyrkonie",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34320",
     "image": "https://hurt.ecarla.pl/202770-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-serca-cyrkonie-kst3617.jpg",
     "description": "Eleganckie i stylowe kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
@@ -7790,6 +7951,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, SERCA kremowe",
     "price": "59.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34321",
     "image": "https://hurt.ecarla.pl/203133-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-serca-kremowe-kst3615.jpg",
     "description": "Eleganckie i stylowe kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
@@ -7807,6 +7969,7 @@
     "name": "Kolczyki pozłacane 14k złotem, sztyft, SERCA czarne",
     "price": "64.00 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34322",
     "image": "https://hurt.ecarla.pl/202779-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-serca-czarne-kst3614.jpg",
     "description": "Eleganckie i stylowe kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
@@ -7824,6 +7987,7 @@
     "name": "Kolczyki platerowane 14k złotem",
     "price": "64.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34323",
     "image": "https://hurt.ecarla.pl/202786-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-kst3618.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -7841,6 +8005,7 @@
     "name": "Kolczyki platerowane 14k złotem, sztyft",
     "price": "69,99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34324",
     "image": "https://hurt.ecarla.pl/202788-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3620.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -7858,6 +8023,7 @@
     "name": "Kolczyki pozłacanej, sztyft KROPLE",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34325",
     "image": "https://hurt.ecarla.pl/202790-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-krople-kst3670.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -7875,6 +8041,7 @@
     "name": "Kolczyki pozłacanej, sztyft",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34326",
     "image": "https://hurt.ecarla.pl/202792-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst3667.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -7892,6 +8059,7 @@
     "name": "Kolczyki pozłacanej, sztyft KULKI",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34327",
     "image": "https://hurt.ecarla.pl/203142-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kulki-kst3669.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -7909,6 +8077,7 @@
     "name": "Kolczyki pozłacanej, sztyft KROPLE nowoczesne",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34328",
     "image": "https://hurt.ecarla.pl/203088-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-krople-nowoczesne-kst3662.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -7926,6 +8095,7 @@
     "name": "Kolczyki pozłacanej, sztyft nowoczesne",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34329",
     "image": "https://hurt.ecarla.pl/203089-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-nowoczesne-kst3661.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -7943,6 +8113,7 @@
     "name": "Kolczyki platerowane 14k złotem, cyrkonie",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34330",
     "image": "https://hurt.ecarla.pl/202802-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-cyrkonie-kst3619.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -7960,6 +8131,7 @@
     "name": "Kolczyki pozłacanej, sztyft KWIAT, cyrkonia",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34331",
     "image": "https://hurt.ecarla.pl/202804-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kwiat-cyrkonia-kst3637.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -7977,6 +8149,7 @@
     "name": "Kolczyki pozłacanej, sztyft, wiszące cyrkonie",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34332",
     "image": "https://hurt.ecarla.pl/202806-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-wiszace-cyrkonie-kst3580.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -7994,6 +8167,7 @@
     "name": "Kolczyki pozłacanej, wiszące cyrkonie, PERŁA",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34333",
     "image": "https://hurt.ecarla.pl/202808-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-wiszace-cyrkonie-perla-kst3581.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -8011,6 +8185,7 @@
     "name": "Kolczyki pozłacanej, sztyft, cyrkonie, PERŁA ",
     "price": "69,99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34334",
     "image": "https://hurt.ecarla.pl/202810-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-cyrkonie-perla-kst3622.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -8028,6 +8203,7 @@
     "name": "Kolczyki pozłacanej, wiszące cyrkonie",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34335",
     "image": "https://hurt.ecarla.pl/202812-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-wiszace-cyrkonie-kst3578.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -8045,6 +8221,7 @@
     "name": "Kolczyki pozłacanej, sztyft, cyrkonie",
     "price": "99.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34336",
     "image": "https://hurt.ecarla.pl/202814-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-cyrkonie-kst3664.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -8062,6 +8239,7 @@
     "name": "Kolczyki platerowane 14k złotem, sztyft, perła",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34337",
     "image": "https://hurt.ecarla.pl/202817-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-perla-kst3420.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -8079,6 +8257,7 @@
     "name": "Kolczyki pozłacane 14k złotem, zapięcie angielski, Białe SERCA",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34338",
     "image": "https://hurt.ecarla.pl/202818-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-zapiecie-angielski-biale-serca-kst3563.jpg",
     "description": "Eleganckie i stylowe kolczyki.",
@@ -8096,6 +8275,7 @@
     "name": "Kolczyki platerowane 14k złotem Serce duże, zapięcie angielskie",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34339",
     "image": "https://hurt.ecarla.pl/203125-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-serce-duze-zapiecie-angielskie-kst3660.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -8113,6 +8293,7 @@
     "name": "Kolczyki platerowane 14k złotem Serce z perłą",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34341",
     "image": "https://hurt.ecarla.pl/202841-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-serce-z-perla-kst3594.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -8130,6 +8311,7 @@
     "name": "Kolczyki platerowane 14k złotem Serce geometryczne z perłą",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34342",
     "image": "https://hurt.ecarla.pl/202843-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-serce-geometryczne-z-perla-kst3595.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -8147,6 +8329,7 @@
     "name": "Kolczyki platerowane 14k złotem",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34344",
     "image": "https://hurt.ecarla.pl/202846-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-kst3644.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -8164,6 +8347,7 @@
     "name": "Kolczyki platerowane 14k złotem z różowym serduszkiem",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34345",
     "image": "https://hurt.ecarla.pl/202848-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-z-rozowym-serduszkiem-kst3607.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -8181,6 +8365,7 @@
     "name": "Kolczyki platerowane 14k złotem",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34346",
     "image": "https://hurt.ecarla.pl/202850-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-kst3638.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -8198,6 +8383,7 @@
     "name": "Kolczyki platerowane 14k złotem",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34347",
     "image": "https://hurt.ecarla.pl/203317-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-kst3650.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -8215,6 +8401,7 @@
     "name": "Kolczyki platerowane 14k złotem",
     "price": "89.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34348",
     "image": "https://hurt.ecarla.pl/202856-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-kst3651.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -8232,6 +8419,7 @@
     "name": "Kolczyki platerowane 14k złotem wiszące z perłą",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34349",
     "image": "https://hurt.ecarla.pl/202858-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-wiszace-z-perla-kst3655.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -8249,6 +8437,7 @@
     "name": "Kolczyki platerowane 14k złotem",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "platerowane",
     "url": "/product/34350",
     "image": "https://hurt.ecarla.pl/202860-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-kst3640.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -8266,6 +8455,7 @@
     "name": "Kolczyki pozłacane 14k złotem, delikatne z cyrkonią   ",
     "price": "59.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34352",
     "image": "https://hurt.ecarla.pl/202864-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-delikatne-z-cyrkonia-kst3534.jpg",
     "description": "Eleganckie i stylowe kolczyki.",
@@ -8283,6 +8473,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące panterka",
     "price": "74.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34353",
     "image": "https://hurt.ecarla.pl/202865-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-panterka-kst3443.jpg",
     "description": "Eleganckie i stylowe kolczyki.",
@@ -8300,6 +8491,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie łezki",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34354",
     "image": "https://hurt.ecarla.pl/202866-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-lezki-kst3447.jpg",
     "description": "Eleganckie i stylowe kolczyki.",
@@ -8317,6 +8509,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonie ",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34355",
     "image": "https://hurt.ecarla.pl/202868-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-kst3656.jpg",
     "description": "Eleganckie i stylowe kolczyki.",
@@ -8334,6 +8527,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące czarne Koniczyny",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34386",
     "image": "https://hurt.ecarla.pl/202943-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-czarne-koniczyny-kst3613.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8351,6 +8545,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące białe Koniczyny ",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34387",
     "image": "https://hurt.ecarla.pl/202946-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-biale-koniczyny-kst3624.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8368,6 +8563,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące różowe Koniczyny ",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34388",
     "image": "https://hurt.ecarla.pl/203107-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-rozowe-koniczyny-kst3625.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8385,6 +8581,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące kwiat",
     "price": "69,99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34472",
     "image": "https://hurt.ecarla.pl/203475-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kwiat-kst3593.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8402,6 +8599,7 @@
     "name": "Kolczyki pozłacane 14k złotem, serca koła ",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34473",
     "image": "https://hurt.ecarla.pl/203477-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-serca-kola-kst3596.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8419,6 +8617,7 @@
     "name": "Kolczyki pozłacane 14k złotem, kwiaty koła ",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34474",
     "image": "https://hurt.ecarla.pl/203476-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kwiaty-kola-kst3597.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8436,6 +8635,7 @@
     "name": "Kolczyki pozłacane 14k złotem, koła ",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34475",
     "image": "https://hurt.ecarla.pl/203473-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kola-kst3598.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8453,6 +8653,7 @@
     "name": "Kolczyki pozłacane 14k złotem, złota koniczyna",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34476",
     "image": "https://hurt.ecarla.pl/203468-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-zlota-koniczyna-kst3606.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8470,6 +8671,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące z perłą",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34477",
     "image": "https://hurt.ecarla.pl/203474-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-z-perla-kst3639.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8487,6 +8689,7 @@
     "name": "Kolczyki pozłacane 14k złotem, geometryczna kropla",
     "price": "89,99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34478",
     "image": "https://hurt.ecarla.pl/203470-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-geometryczna-kropla-kst3641.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8504,6 +8707,7 @@
     "name": "Kolczyki pozłacane 14k złotem, cyrkonia, wiszące koraliki",
     "price": "94,99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34479",
     "image": "https://hurt.ecarla.pl/203435-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonia-wiszace-koraliki-kst3642.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8521,6 +8725,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące kropelki",
     "price": "94.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34480",
     "image": "https://hurt.ecarla.pl/203432-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kropelki-kst3643.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8538,6 +8743,7 @@
     "name": "Kolczyki pozłacane 14k złotem, kropla",
     "price": "89,99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34481",
     "image": "https://hurt.ecarla.pl/203469-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kropla-kst3645.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8555,6 +8761,7 @@
     "name": "Kolczyki pozłacane 14k złotem, koła przeplatane",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34482",
     "image": "https://hurt.ecarla.pl/203472-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kola-przeplatane-kst3646.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8572,6 +8779,7 @@
     "name": "Kolczyki pozłacane 14k złotem, serca wiszące podwójne",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34483",
     "image": "https://hurt.ecarla.pl/203471-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-serca-wiszace-podwojne-kst3647.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8589,6 +8797,7 @@
     "name": "Kolczyki pozłacane 14k złotem, serce wzorki",
     "price": "74.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34484",
     "image": "https://hurt.ecarla.pl/203430-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-serce-wzorki-kst3648.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8606,6 +8815,7 @@
     "name": "Kolczyki pozłacane 14k złotem, kulki",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34485",
     "image": "https://hurt.ecarla.pl/203438-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kulki-kst3649.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8623,6 +8833,7 @@
     "name": "Kolczyki pozłacane 14k złotem, okrągłe z sercem",
     "price": "74.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34486",
     "image": "https://hurt.ecarla.pl/203437-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okragle-z-sercem-kst3652.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8639,6 +8850,7 @@
     "id": "34487",
     "name": "Kolczyki pozłacane 14k złotem, okrągłe kwadrat",
     "price": "79.99 zł",
+    "subCategory": "pozlacane",
     "category": "stal",
     "url": "/product/34487",
     "image": "https://hurt.ecarla.pl/203436-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okragle-kwadrat-kst3653.jpg",
@@ -8657,6 +8869,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące z sercem i kryształem",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34488",
     "image": "https://hurt.ecarla.pl/203431-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-z-sercem-i-krysztalem-kst3654.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8674,6 +8887,7 @@
     "name": "Kolczyki pozłacane 14k złotem, falowane koła",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34489",
     "image": "https://hurt.ecarla.pl/203384-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-falowane-kola-kst3657.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8691,6 +8905,7 @@
     "name": "Kolczyki pozłacane 14k złotem, wiszące okręgi z sercami, serce w sercu",
     "price": "79.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34490",
     "image": "https://hurt.ecarla.pl/203443-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-okregi-z-sercami-serce-w-sercu-kst3658.jpg",
     "description": "Eleganckie i stylowe kolczyki damskie.",
@@ -8735,6 +8950,7 @@
     "name": "Kolczyki pozłacane 14k złotem, serce z perełką",
     "price": "69.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34492",
     "image": "https://hurt.ecarla.pl/203433-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-serce-z-perelka-kst3592.jpg",
     "description": "Kolczyki damskie. Eleganckie i stylowe kolczyki. Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje.",
@@ -8753,6 +8969,7 @@
     "name": "Kolczyki pozłacane 14k złotem, różowe perełki, SERCE",
     "price": "74.99 zł",
     "category": "stal",
+    "subCategory": "pozlacane",
     "url": "/product/34654",
     "image": "https://hurt.ecarla.pl/203506-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-rozowe-perelki-serce-kst3584.jpg",
     "description": "Kolczyki damskie. Eleganckie i stylowe kolczyki. Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje.",
@@ -8780,80 +8997,4 @@
     ]
 
 
-    const EarRingsStal = ({ category }) => {
-    
-    console.log("Kategoria:", category);
-    console.log("Dane produktów:", kolczykiStal);
-    const { addProduct } = useContext(CartContext);
-    const [visible, setVisible] = useState(false);
-    const [productToAdd, setProductToAdd] = useState(null); 
-
-const filteredProducts = kolczykiStal.filter(p => p.category === "stal");
- 
-
-    const handleButtonClick = (product) => {
-        addProduct(product); 
-        setProductToAdd(product);  
-        setVisible(true);  
-    };
-    if (!filteredProducts || filteredProducts.length === 0) {
-return <div className="container">Brak produktów w tej kategorii.</div>;
-    }
-
-    return (
-        <section id="product-ear-rings" className="ear-v2-main-container container" role="region" aria-label="product-ear-rings">
-        {/* MODAL PO DODANIU */}
-        <ProductAdded visible={visible} setVisible={setVisible} products={productToAdd ? [productToAdd] : []} />
-        
-        <h1 className="ear-v2-title">Kolczyki {category ? `- ${category}` : ''}</h1>
-        
-        <div className="row ear-v2-row-grid">
-            {/* <--- 3. Tutaj zmień earRings.map na filteredProducts.map */}
-            {filteredProducts.map((product) => (
-            <article
-                key={product.id}
-                className="col-6 col-md-3 mb-4 ear-v2-card"
-                role="group"
-                aria-label={`${product.name}, cena ${product.price}`}
-            >
-                <div className="ear-v2-image-wrapper">
-                <img
-                    src={product.image}
-                    className="img-fluid ear-v2-img"
-                    alt={product.name}
-                    onMouseEnter={(e) => {
-                    if(product.image2) e.currentTarget.src = product.image2;
-                    }}
-                    onMouseLeave={(e) => {
-                    e.currentTarget.src = product.image;
-                    }}
-                />
-                <button
-                    className="ear-v2-buy-btn"
-                    onClick={() => handleButtonClick(product)}
-                    aria-label={`Dodaj ${product.name} do koszyka`}
-                >
-                    <i className="fa-solid fa-bag-shopping fa-fw"></i>
-                </button>
-                </div>
-                
-                <div className="ear-v2-product-info">
-                <h5>
-                    <Link 
-                    to={`/product/${product.id}`} 
-                    style={{ textDecoration: 'none', color: 'inherit' }}
-                    >
-                    {product.name}
-                    </Link>
-                </h5>
-                <p className="ear-v2-product-price">{product.price}</p>
-                </div>
-            </article>
-            ))}
-        </div>
-        {/* <UpperFooter /> */}
-        </section>
-    );
-    }
-
-    export default EarRingsStal;
+    export default kolczykiStal;

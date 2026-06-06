@@ -34,7 +34,7 @@
   import Necklace from "./components/Necklace";
   import Rings from "./components/Rings"
   import DeliveryAndReturns from "./components/DeliveryAndReturns";
-  import EarRingsStal from "./components/KolczykiStal";
+  import EarRingsStalGold from "./components/KolczykiStalGold";
   
   // import EcarlaImport from "./components/EcarlaImport";
   // import { earRings } from "./components/EarRings";
@@ -103,10 +103,18 @@
   {/* Nowa trasa dla Twoich kolczyków */}
 
 <Route
+  path="/ear-rings/stal/:subcategory"
+  element={
+    <LayoutWithNavAndFooter>
+      <EarRingsStalGold />
+    </LayoutWithNavAndFooter>
+  }
+/>
+<Route
   path="/ear-rings/stal"
   element={
     <LayoutWithNavAndFooter>
-      <EarRingsStal category="stal" />
+      <EarRingsStalGold />
     </LayoutWithNavAndFooter>
   }
 />

@@ -14,6 +14,7 @@ const NavbarBurgerMenu = () => {
   const [openKolczyki, setOpenKolczyki] = useState(false);
 
 const [openSztuczne, setOpenSztuczne] = useState(false);
+const [openStal, setOpenStal] = useState(false);
   const handleLinkClick = (path) => {
     const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasRef.current);
     if (bsOffcanvas) {
@@ -49,7 +50,7 @@ const [openSztuczne, setOpenSztuczne] = useState(false);
     >
       <div className="offcanvas-header">
         <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-        <img src={Pierscionek} className="burger-menu-img"></img>  Menu
+        <img src={Pierscionek} className="burger-menu-img" alt="" /> Menu
         </h5>
         <button
           type="button"
@@ -78,38 +79,62 @@ const [openSztuczne, setOpenSztuczne] = useState(false);
     <hr />
 
     {/* 1. KOLCZYKI (z pod-submenu) */}
-    <li>
-      <button
-        className="nav-link w-100 text-start d-flex justify-content-between align-items-center"
-        onClick={() => toggleSubmenu("kolczyki")}
-      >
-        Kolczyki
-        <i className={`fa-solid fa-arrow-down transition ${openKolczyki ? "rotate-180" : ""}`}></i>
-      </button>
+   {/* 1. KOLCZYKI */}
+<li>
+  <button
+    className="nav-link w-100 text-start d-flex justify-content-between align-items-center"
+    onClick={() => toggleSubmenu("kolczyki")}
+  >
+    Kolczyki
+    <i className={`fa-solid fa-arrow-down transition ${openKolczyki ? "rotate-180" : ""}`}></i>
+  </button>
 
-      {/* Pod-submenu Kolczyków */}
-      <ul className={`submenu list-unstyled ps-3 ${openKolczyki ? "submenu-open" : ""}`}>
-        {/* Stal */}
-        <li className="nav-item">
-          <button className="nav-link w-100 text-start d-flex justify-content-between align-items-center" onClick={() => handleLinkClick("/ear-rings/stal")}>
-            Stal Chirurgiczna
-          </button>
-       
+  <ul className={`submenu list-unstyled ps-3 ${openKolczyki ? "submenu-open" : ""}`}>
+    {/* Stal Chirurgiczna - podkategorie */}
+    <li className="nav-item">
+      <button className="nav-link w-100 text-start d-flex justify-content-between align-items-center" onClick={() => setOpenStal(!openStal)}>
+        Stal Chirurgiczna
+        <i className={`fa-solid fa-arrow-down transition ${openStal ? "rotate-180" : ""}`}></i>
+      </button>
+      <ul className={`submenu list-unstyled ps-4 ${openStal ? "submenu-open" : ""}`}>
+        {/* PRAWIDŁOWA NAWIGACJA: */}
+        <li>
+          <Link className="nav-link" onClick={() => handleLinkClick("/ear-rings/stal/pozlacane")}>
+            Pozłacane
+          </Link>
         </li>
-        {/* Sztuczne */}
-        <li className="nav-item">
-          <button className="nav-link w-100 text-start d-flex justify-content-between align-items-center" onClick={() => setOpenSztuczne(!openSztuczne)}>
-            Sztuczne
-            <i className={`fa-solid fa-arrow-down transition ${openSztuczne ? "rotate-180" : ""}`}></i>
-          </button>
-          <ul className={`submenu list-unstyled ps-4 ${openSztuczne ? "submenu-open" : ""}`}>
-            <li><Link to="/ear-rings/sztuczne/chwosty" className="nav-link" onClick={() => handleLinkClick("/ear-rings/sztuczne/chwosty")}>Chwosty</Link></li>
-            <li><Link to="/ear-rings/sztuczne/przy-uchu" className="nav-link" onClick={() => handleLinkClick("/ear-rings/sztuczne/przy-uchu")}>Przy Uchu</Link></li>
-            <li><Link to="/ear-rings/sztuczne/wiszace" className="nav-link" onClick={() => handleLinkClick("/ear-rings/sztuczne/wiszace")}>Wiszące</Link></li>
-          </ul>
+        <li>
+          <Link className="nav-link" onClick={() => handleLinkClick("/ear-rings/stal/platerowane")}>
+            Platerowane
+          </Link>
+        </li>
+        <li>
+          <Link className="nav-link" onClick={() => handleLinkClick("/ear-rings/stal/srebrne")}>
+            Srebrne
+          </Link>
+        </li>
+        <li>
+          <Link className="nav-link" onClick={() => handleLinkClick("/ear-rings/stal/literki")}>
+            Literki
+          </Link>
         </li>
       </ul>
     </li>
+
+    {/* Sztuczne */}
+    <li className="nav-item">
+      <button className="nav-link w-100 text-start d-flex justify-content-between align-items-center" onClick={() => setOpenSztuczne(!openSztuczne)}>
+        Sztuczne
+        <i className={`fa-solid fa-arrow-down transition ${openSztuczne ? "rotate-180" : ""}`}></i>
+      </button>
+      <ul className={`submenu list-unstyled ps-4 ${openSztuczne ? "submenu-open" : ""}`}>
+        <li><Link className="nav-link" onClick={() => handleLinkClick("/ear-rings/sztuczne/chwosty")}>Chwosty</Link></li>
+        <li><Link className="nav-link" onClick={() => handleLinkClick("/ear-rings/sztuczne/przy-uchu")}>Przy Uchu</Link></li>
+        <li><Link className="nav-link" onClick={() => handleLinkClick("/ear-rings/sztuczne/wiszace")}>Wiszące</Link></li>
+      </ul>
+    </li>
+  </ul>
+</li>
     <hr />
 
     {/* 2. NASZYJNIKI */}
