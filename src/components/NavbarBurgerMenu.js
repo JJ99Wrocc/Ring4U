@@ -118,6 +118,11 @@ const [openStal, setOpenStal] = useState(false);
             Literki
           </Link>
         </li>
+        <li>
+          <Link className="nav-link" onClick={() => handleLinkClick("/ear-rings/stal/ślublne")}>
+            Ślubne
+          </Link>
+        </li>
       </ul>
     </li>
 

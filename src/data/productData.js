@@ -31,7 +31,7 @@
     name: "Kolczyki ślubne wiszące z kryształkami stal chirurgiczna",
     category: "stal",
     url: "/product/14505",
-    
+    "subCategory": "ślublne",
     price: "119.00 zł", 
     image: "https://hurt.ecarla.pl/103169-large_default/kolczyki-slubne-wiszace-z-krysztalkami-stal-chirurgiczna-ksl60.jpg",
     description: [
@@ -53,8 +53,9 @@
 { 
     id: "14504", 
     name: "Kolczyki ślubne wiszące z kryształkami stal chirurgiczna",
-    price: "94.99 zł", 
+    price: "99.99 zł", 
     category: "stal",
+    "subCategory": "ślublne",
     url: "/product/14504",
     image: "https://hurt.ecarla.pl/103163-large_default/kolczyki-slubne-wiszace-z-krysztalkami-stal-chirurgiczna-ksl61.jpg",
     description: [
@@ -78,6 +79,7 @@
     name: "Kolczyki stal chirurgiczna srebrne",
     price: "94.99 zł", 
     category: "stal",
+    "subCategory":"srebrne",
     url: "/product/12920",
     image: "https://hurt.ecarla.pl/95042-large_default/kolczyki-stal-chirurgiczna-srebrne-kst1352-1.jpg",
     description: [
@@ -100,6 +102,7 @@
     name: "Kolczyki stal chirurgiczna srebrne",
     price: "94.99 zł", 
     category: "stal",
+    "subCategory":"srebrne",
     url: "/product/12040",
     image: "https://hurt.ecarla.pl/89736-large_default/kolczyki-stal-chirurgiczna-srebrne-kst1284.jpg",
     description: [
@@ -122,6 +125,7 @@
     name: "KOLCZYKI STAL CHIRURGICZNA ZŁOTE ",
     price: "94.99 zł", 
     category: "stal",
+    "subCategory" : " pozlacane ",
     url: "/product/11952",
     image: "https://hurt.ecarla.pl/89578-large_default/kolczyki-stal-chirurgiczna-zlote-kst1253.jpg",
     description: [
@@ -262,6 +266,7 @@
     id: "6012", 
     name: "KOLCZYKI STAL CHIRURGICZNA ",
     category: "stal",
+    subCategory : "pozlacane",
     price: "99.99 zł", 
     url: "/product/6012",
     image: "https://hurt.ecarla.pl/67291-large_default/kolczyki-stal-chirurgiczna-kst618.jpg",
@@ -284,6 +289,7 @@
     name: "KOLCZYKI STAL NIERDZEWNA K558 SREBRNE",
     category: "stal",
     url: "/product/4978",
+    "subCategory":"srebrne",
     price: "99.99 zł", 
     image: "https://hurt.ecarla.pl/65117-large_default/kolczyki-stal-nierdzewna-k558-srebrne.jpg",
     description: [
@@ -307,6 +313,7 @@
     name: "KOLCZYKI STAL CHIRURGICZNA ",
     category: "stal",
     price: "99.99 zł", 
+    "subCategory": "inne",
     url: "/product/3999",
     image: "https://hurt.ecarla.pl/64002-large_default/kolczyki-stal-chirurgiczna-kst501.jpg",
     description: [
@@ -330,7 +337,8 @@
     name: "Kolczyki ze stali chirurgicznej ",
     price: "94.99 zł", 
     category: "stal",
-    "subCategory": "platerowane",
+    subCategory : "platerowane",
+    // "subCategory": "ślublne",
     url: "/product/14525",
     image: "https://hurt.ecarla.pl/103234-large_default/kolczyki-ze-stali-chirurgicznej-kst1532.jpg",
     description: [
@@ -1278,6 +1286,7 @@
         name: "Kolczyki ślubne wiszące z kryształkami stal chirurgiczna ",
         price: "109.99 zł",
         category: "stal",
+        "subCategory": "ślublne",
         url: "/product/20687",
         image: "https://hurt.ecarla.pl/131689-large_default/kolczyki-slubne-wiszace-z-krysztalkami-stal-chirurgiczna-ksl70s.jpg",
         description: [
@@ -2635,6 +2644,7 @@
     "name": "Kolczyki ślubne BOHO wizytowe wiszące z kryształkami stal szlachetna ",
     "price": "119. zł",
     "category": "stal",
+    "subCategory": "ślublne",
     "url": "/product/23986",
     "image": "https://hurt.ecarla.pl/144974-large_default/kolczyki-slubne-boho-wizytowe-wiszace-z-krysztalkami-stal-szlachetna-kols01.jpg",
     "description": [
@@ -2655,6 +2665,7 @@
     "name": "Kolczyki ślubne BOHO wizytowe wiszące z kryształkami stal szlachetna",
     "price": "159.74 zł",
     "category": "stal", 
+    "subCategory": "ślublne",
     "url": "/product/23991",
     "image": "https://hurt.ecarla.pl/145000-large_default/kolczyki-slubne-boho-wizytowe-wiszace-z-krysztalkami-stal-szlachetna-kols08.jpg",
     "description": [
@@ -2675,6 +2686,7 @@
     "name": "Kolczyki ślubne BOHO wizytowe wiszące z kryształkami stal szlachetna",
     "price": "159.99 zł",
     "category": "stal",
+    "subCategory": "ślublne",
     "url": "/product/23992",
     "image": "https://hurt.ecarla.pl/145004-large_default/kolczyki-slubne-boho-wizytowe-wiszace-z-krysztalkami-stal-szlachetna-kols10.jpg",
     "description": [
@@ -2695,6 +2707,7 @@
     "name": "Kolczyki ślubne BOHO wizytowe wiszące z kryształkami stal szlachetna ",
     "price": "159.99 zł",
     "category": "stal",
+    "subCategory": "ślublne",
     "url": "/product/23996",
     "image": "https://hurt.ecarla.pl/145017-large_default/kolczyki-slubne-boho-wizytowe-wiszace-z-krysztalkami-stal-szlachetna-kols14.jpg",
     "description": [
@@ -2715,6 +2728,7 @@
     "name": "Kolczyki ślubne BOHO wizytowe wiszące z kryształkami stal szlachetna",
     "price": "159.99 zł",
     "category": "stal",
+    "subCategory": "ślublne",
     "url": "/product/23998",
     "image": "https://hurt.ecarla.pl/145023-large_default/kolczyki-slubne-boho-wizytowe-wiszace-z-krysztalkami-stal-szlachetna-kols16.jpg",
     "description": [
@@ -2735,6 +2749,7 @@
     "name": "Kolczyki ślubne BOHO wizytowe wiszące z kryształkami stal szlachetna",
     "price": "109.99 zł",
     "category": "stal",
+    "subCategory": "ślublne",
     "url": "/product/24000",
     "image": "https://hurt.ecarla.pl/145031-large_default/kolczyki-slubne-boho-wizytowe-wiszace-z-krysztalkami-stal-szlachetna-kols18.jpg",
     "description": [
@@ -2755,6 +2770,7 @@
     "name": "Kolczyki ślubne BOHO wizytowe wiszące z kryształkami stal szlachetna",
     "price": "109 zł",
     "category": "stal",
+    "subCategory": "ślublne",
     "url": "/product/24001",
     "image": "https://hurt.ecarla.pl/145034-large_default/kolczyki-slubne-boho-wizytowe-wiszace-z-krysztalkami-stal-szlachetna-kols19.jpg",
     "description": [
