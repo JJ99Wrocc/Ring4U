@@ -244,7 +244,11 @@ body.offcanvas-open {
   display: block !important; /* Wymuszenie wyświetlenia po kliknięciu */
   background-color: #f8f9fa; /* Dodaj tło, żeby zobaczyć czy menu zajmuje miejsce */
   padding-left: 20px !important;
-  border-left: 2px solid #ccc; /* Dodaj obramowanie, żeby zobaczyć kontener */
+  border-left: 2px solid #ccc;
+
+  scrollbar-width: thin;
+  overflow-y: auto;
+  max-height: 60vh;
 }
 /* 3. Opcjonalnie, żeby strzałki się obracały */
 .transition {

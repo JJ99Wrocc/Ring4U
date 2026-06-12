@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/footer.css";
 import HotPayLogo from '../img/hotpay-logo.webp'; // Zmieniona nazwa zmiennej dla jasności
@@ -8,12 +8,31 @@ import { faCcVisa, faCcMastercard, faGooglePay, faApplePay } from '@fortawesome/
 
 const Footer = () => {
   const [activeSection, setActiveSection] = useState(null);
+  const [isVisible, setIsVisible] = useState(false);
 
   const toggleSection = (section) => {
     setActiveSection(activeSection === section ? null : section);
   };
 
-  return (
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
+  useEffect(() =>{
+    const toggleVisibility = () =>{
+      if(window.innerHeight > 300)
+       {setIsVisible(true) }
+      else
+       { setIsVisible(false) }
+    }
+    window.addEventListener('scroll', toggleVisibility);
+
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, [])
+   return (
     <footer className="footer container" role="contentinfo" aria-label="Stopka strony Ring4U">
       <div className="footer-container">
 
@@ -133,7 +152,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
+      <button 
+      className={`scroll-to-top ${isVisible ? 'show' : ''}`} 
+      onClick={scrollToTop}
+    >
+      ↑
+    </button>
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} Ring4U. All rights reserved.</p>
       </div>

@@ -52,11 +52,7 @@ const Navbar = () => {
   };
   const offcanvasRef = useRef(null);
 
-  const handleLinkClick = () => {
-   
-    const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasRef.current);
-    bsOffcanvas.hide();
-  };
+
   return (
     <div className="nav-sticky-wrapper">
   <div className="container">

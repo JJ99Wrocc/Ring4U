@@ -29,13 +29,16 @@
   import CookieConsent from "./components/CookieConsent";
   import Product, { products } from "./components/Products";
   import ProductDetail from "./components/ProductDetail";
-  import EarRings from "./components/EarRings";
+
   import Bracelet from "./components/Bracelet";
-  import Necklace from "./components/Necklace";
+  import Necklace from "./components/NecklaceStal";
   import Rings from "./components/Rings"
   import DeliveryAndReturns from "./components/DeliveryAndReturns";
   import EarRingsStalGold from "./components/KolczykiStalGold";
-  
+  import EarRingsSztuczneGold from "./components/KolczykiSztuczneGold"
+  import EarRingsSrebro from "./components/KolczykiSrebro"
+// import Necklace from "./components/NecklaceStal";
+import NecklaceStal from "./components/NecklaceStal";
   // import EcarlaImport from "./components/EcarlaImport";
   // import { earRings } from "./components/EarRings";
   // import { necklace } from "./components/Necklace";
@@ -91,24 +94,25 @@
     </LayoutWithNavAndFooter>
   }
 />
-<Route
-  path="/ear-rings"
-  element={
-    <LayoutWithNavAndFooter>
-      <EarRings /> {/* Tutaj wyświetlą się wszystkie kolczyki bez filtra */}
-    </LayoutWithNavAndFooter>
-  }
-/>
-  
-  {/* Nowa trasa dla Twoich kolczyków */}
+
+
 
 <Route
   path="/ear-rings/stal/:subcategory"
   element={
     <LayoutWithNavAndFooter>
+      
       <EarRingsStalGold />
     </LayoutWithNavAndFooter>
   }
+/>
+<Route
+path="/ear-rings/sztuczna/:subcategory"
+element={
+  <LayoutWithNavAndFooter>
+      <EarRingsSztuczneGold />
+  </LayoutWithNavAndFooter>
+}
 />
 <Route
   path="/ear-rings/stal"
@@ -117,6 +121,39 @@
       <EarRingsStalGold />
     </LayoutWithNavAndFooter>
   }
+/>
+
+<Route
+  path="/ear-rings/sztuczna"
+  element={
+    <LayoutWithNavAndFooter>
+      <EarRingsSztuczneGold />
+    </LayoutWithNavAndFooter>
+  }
+/>
+<Route
+  path="/ear-rings/srebro"
+  element={
+    <LayoutWithNavAndFooter>
+      <EarRingsSrebro />
+    </LayoutWithNavAndFooter>
+  }
+/>
+<Route
+  path="/necklace/stal/:subcategory"
+  element={
+    <LayoutWithNavAndFooter>
+      <NecklaceStal />
+    </LayoutWithNavAndFooter>
+  }
+/>
+<Route
+path="/necklace/stal"
+element={
+  <LayoutWithNavAndFooter>
+      <NecklaceStal />
+  </LayoutWithNavAndFooter>
+}
 />
 
         <Route
@@ -129,16 +166,7 @@
             
           }
         />
-        <Route
-          path="/necklace"
-          element={
-            
-              <LayoutWithNavAndFooter>
-                <Necklace />
-              </LayoutWithNavAndFooter>
-          
-          }
-        />
+     
         <Route
           path="/rings"
           element={

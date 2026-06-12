@@ -2,33 +2,27 @@
     import { CartContext } from './CartContext';
     import { Link } from 'react-router-dom';
     import ProductAdded from './ProductsAdded'; // DODANO
-    // import UpperFooter from './Footer';
-    // import "../css/EarRings.css";
+    import UpperFooter from './Footer';
+  import '../css/earRings.css';
     import { earRings } from "./Products";
-    import {kolczykiStal} from "../data/productData";
     import { useParams } from 'react-router-dom';
-import '../css/earRings.css';
+    import {KolczykiSztuczne}  from '../data/productDataSztuczneKolcz'
 
+    const EarRingsChrzastnySztuczna = ({ category }) => {
+    
 
-
-
-
-    const EarRingsStal = ({ category }) => {
-
-
-
-    const { subcategory } = useParams();
+        
     console.log("Kategoria:", category);
-    console.log("Dane produktów:", kolczykiStal);
+    // console.log("Dane produktów:", KolczykiSztuczne);
     const { addProduct } = useContext(CartContext);
     const [visible, setVisible] = useState(false);
-    const [productToAdd, setProductToAdd] = useState(null); 
+    const [productToAdd, setProductToAdd] = useState(null);
+    const { subcategory } = useParams(); 
 
-const filteredProducts = kolczykiStal.filter(p => 
-        p.category === "stal" && 
-        (!subcategory || p.subCategory === subcategory) 
-    );
- 
+      const filteredProducts = KolczykiSztuczne.filter(p => 
+              p.category === "sztuczne" && 
+              (!subcategory || p.subCategory === subcategory) 
+          );
 
     const handleButtonClick = (product) => {
         addProduct(product); 
@@ -36,7 +30,7 @@ const filteredProducts = kolczykiStal.filter(p =>
         setVisible(true);  
     };
     if (!filteredProducts || filteredProducts.length === 0) {
-return <div className="container">Brak produktów w tej kategorii.</div>;
+        return <div className="container">Brak produktów w tej kategorii.</div>;
     }
 
     return (
@@ -44,7 +38,7 @@ return <div className="container">Brak produktów w tej kategorii.</div>;
         {/* MODAL PO DODANIU */}
         <ProductAdded visible={visible} setVisible={setVisible} products={productToAdd ? [productToAdd] : []} />
         
-      <h1 className="ear-v2-title">Kolczyki {subcategory ? `- ${subcategory}` : '- Stal'}</h1>
+        <h1 className="ear-v2-title">Kolczyki {subcategory ? `- ${subcategory}` : '- Stal'}</h1>
         
         <div className="row ear-v2-row-grid">
             {/* <--- 3. Tutaj zmień earRings.map na filteredProducts.map */}
@@ -90,9 +84,9 @@ return <div className="container">Brak produktów w tej kategorii.</div>;
             </article>
             ))}
         </div>
-        {/* <UpperFooter /> */}
+        <UpperFooter />
         </section>
     );
     }
 
-    export default EarRingsStal;
+    export default EarRingsChrzastnySztuczna;

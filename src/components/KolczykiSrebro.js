@@ -1,34 +1,28 @@
     import react, { useContext, useState } from 'react';
     import { CartContext } from './CartContext';
     import { Link } from 'react-router-dom';
-    import ProductAdded from './ProductsAdded'; // DODANO
-    // import UpperFooter from './Footer';
-    // import "../css/EarRings.css";
+    import ProductAdded from './ProductsAdded'; 
+
     import { earRings } from "./Products";
-    import {kolczykiStal} from "../data/productData";
-    import { useParams } from 'react-router-dom';
+    import KolczykiSrebrne from "../data/productDataSrebroKolcz";
 import '../css/earRings.css';
 
 
 
 
 
-    const EarRingsStal = ({ category }) => {
+    const EarRingsSrebro = ({ category }) => {
 
 
 
-    const { subcategory } = useParams();
+
     console.log("Kategoria:", category);
-    console.log("Dane produktów:", kolczykiStal);
+
     const { addProduct } = useContext(CartContext);
     const [visible, setVisible] = useState(false);
     const [productToAdd, setProductToAdd] = useState(null); 
 
-const filteredProducts = kolczykiStal.filter(p => 
-        p.category === "stal" && 
-        (!subcategory || p.subCategory === subcategory) 
-    );
- 
+const filteredProducts = KolczykiSrebrne.filter(p => p.category === "srebro");
 
     const handleButtonClick = (product) => {
         addProduct(product); 
@@ -44,7 +38,7 @@ return <div className="container">Brak produktów w tej kategorii.</div>;
         {/* MODAL PO DODANIU */}
         <ProductAdded visible={visible} setVisible={setVisible} products={productToAdd ? [productToAdd] : []} />
         
-      <h1 className="ear-v2-title">Kolczyki {subcategory ? `- ${subcategory}` : '- Stal'}</h1>
+      <h1 className="ear-v2-title">Kolczyki { 'Srebro'}</h1>
         
         <div className="row ear-v2-row-grid">
             {/* <--- 3. Tutaj zmień earRings.map na filteredProducts.map */}
@@ -95,4 +89,4 @@ return <div className="container">Brak produktów w tej kategorii.</div>;
     );
     }
 
-    export default EarRingsStal;
+    export default EarRingsSrebro;

@@ -187,7 +187,50 @@
     font-family: 'Roboto Mono', monospace;
     font-size: 11px;
 }
+.scroll-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 30px;
+  height: 30px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background: rgba(0, 0, 0, 0.8); /* Nieco ciemniejsze dla lepszej czytelności */
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px; /* Mniejsze zaokrąglenie pasuje do małego rozmiaru */
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+  padding: 0;
+}
 
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  background: rgba(0, 0, 0, 1);
+  transform: translateY(-3px);
+}
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  background-color: #053555;
+  transform: scale(1.1);
+}
 .footer-company-info.is-open .footer-title {
     color: #your-accent-color;
 }
