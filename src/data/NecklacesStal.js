@@ -1237,7 +1237,20 @@ const necklaceStal = [
   },
 
 
-
+  {
+    id: "34055",
+    name: "Naszyjnik stal szlachetna pozłacana 14k złotem, kryształkowe SERCE cyrkonie NST2269",
+    price: "17.84 zł",
+    
+    "category": "stal",
+    "subCategory": "wykwintne",
+    url: "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-krysztalkowe-serce-cyrkonie-nst2269.html",
+    image: "https://hurt.ecarla.pl/201686-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-krysztalkowe-serce-cyrkonie-nst2269.jpg",
+    description: ["Modny naszyjnik ze stali chirurgicznej", "Nowa kolekcja biżuterii ze stali nierdzewnej platerowanej 14 karatowym złotem", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Elegancki dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"],
+    specs: { "Kod producenta": "NST2269", "Długość łańcuszka": "45cm", "Długość regulacji": "5cm", "Wymiary zawieszki": "0,7cm x 0,6cm", "Wymiary kartonika": "12cm x 10cm", "Waga": "3g netto / 10g brutto", "Kolor": "Jasny odcień złota", "EAN": "5903843910442" },
+    material: "Stal chirurgiczna platerowana 14k złotem",
+    availability: "W magazynie"
+  },
  
   
 
@@ -2982,7 +2995,7 @@ const necklaceStal = [
 {
     id: "33898",
     name: "MIŚ Z SERDUSZKIEM",
-    price: "89.99 zł",
+    price: "99.99 zł",
     
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -3290,20 +3303,6 @@ category: "stal",
     image3: ""
   }
 ,
-  {
-    id: "34055",
-    name: "KRYSZTAŁOWE SERDUSZKO",
-    price: "89.99 zł",
-    
-    "category": "stal",
-    "subCategory": "serca-kokardy",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-krysztalkowe-serce-cyrkonie-nst2269.html",
-    image: "https://hurt.ecarla.pl/201686-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-krysztalkowe-serce-cyrkonie-nst2269.jpg",
-    description: ["Modny naszyjnik ze stali chirurgicznej", "Nowa kolekcja biżuterii ze stali nierdzewnej platerowanej 14 karatowym złotem", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Elegancki dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"],
-    specs: { "Kod producenta": "NST2269", "Długość łańcuszka": "45cm", "Długość regulacji": "5cm", "Wymiary zawieszki": "0,7cm x 0,6cm", "Wymiary kartonika": "12cm x 10cm", "Waga": "3g netto / 10g brutto", "Kolor": "Jasny odcień złota", "EAN": "5903843910442" },
-    material: "Stal chirurgiczna platerowana 14k złotem",
-    availability: "W magazynie"
-  },
 // SERCA KOKARDYY
 
 // KWIATKI
@@ -3432,7 +3431,7 @@ category: "stal",
   {
     "id": "34407",
     "name": "WIOSENNA RÓŻ",
-    "price": "84.99 zł",
+    "price": "17.84 zł",
     "category": "stal",
     "subCategory": "kwiaty",
     "url": "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-ze-stali-nierdzewnej-pozlacanej-14-karatowym-zlotem-rozowy-kwiat-nst2258.html",
@@ -3497,7 +3496,7 @@ category: "stal",
   {
     "id": "34616",
     "name": "KONICZYNA  CZARNA 13mm",
-    "price": "79.99 zł",
+    "price": "16.61 zł",
     "category": "stal",
     "subCategory": "kwiaty",
     "url": "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-koniczynka-13mm-czarna-nst2300.html",
@@ -3521,7 +3520,7 @@ category: "stal",
   {
     "id": "34617",
     "name": "KONICZYNA PERŁOWA 13mm",
-    "price": "79.99 zł",
+    "price": "16.61 zł",
     "category": "stal",
     "subCategory": "kwiaty",
     "url": "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-koniczynka-13mm-masa-perlowa-nst2301.html",
@@ -3569,7 +3568,7 @@ category: "stal",
   {
     "id": "34619",
     "name": "KONICZYNA BIAŁA 13mm",
-    "price": "74.99 zł",
+    "price": "15.38 zł",
     "category": "stal",
     "subCategory": "kwiaty",
     "url": "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-13mm-biala-koniczynka-nst2298.html",
