@@ -39,6 +39,7 @@
   import EarRingsSrebro from "./components/KolczykiSrebro"
 // import Necklace from "./components/NecklaceStal";
 import NecklaceStal from "./components/NecklaceStal";
+import NecklaceFake from "./components/NecklacesFake";
   // import EcarlaImport from "./components/EcarlaImport";
   // import { earRings } from "./components/EarRings";
   // import { necklace } from "./components/Necklace";
@@ -155,7 +156,22 @@ element={
   </LayoutWithNavAndFooter>
 }
 />
-
+<Route
+path="/necklace/sztuczna"
+element={
+  <LayoutWithNavAndFooter>
+      <NecklaceFake />
+  </LayoutWithNavAndFooter>
+}
+/>
+<Route
+  path="/necklace/sztuczna/:subcategory"
+  element={
+    <LayoutWithNavAndFooter>
+      <NecklaceFake />
+    </LayoutWithNavAndFooter>
+  }
+/>
         <Route
           path="/bracelet"
           element={

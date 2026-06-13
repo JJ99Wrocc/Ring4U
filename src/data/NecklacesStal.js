@@ -9,7 +9,7 @@ const necklaceStal = [
 //   LITERKI
 {
     id: "16218",
-    name: "LITERKA C",
+    name: "Naszyjnik stal chirurgiczna - LITERKA C",
     price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -25,7 +25,7 @@ const necklaceStal = [
   },
   {
     id: "16219",
-    name: "LITERKA D",
+    name: "Naszyjnik stal chirurgiczna - LITERKA D",
     price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -41,7 +41,7 @@ const necklaceStal = [
   },
   {
     id: "16220",
-    name: "LITERKA E",
+    name: "Naszyjnik stal chirurgiczna - LITERKA E",
     price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -57,7 +57,7 @@ const necklaceStal = [
   },
   {
     id: "16222",
-    name: "LITERKA F",
+    name: "Naszyjnik stal chirurgiczna - LITERKA F",
     price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -73,7 +73,7 @@ const necklaceStal = [
   },
   {
     id: "16224",
-    name: "LITERKA G",
+    name: "Naszyjnik stal chirurgiczna - LITERKA G",
     price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -89,7 +89,7 @@ const necklaceStal = [
   },
   {
     id: "16225",
-    name: "LITERKA I",
+    name: "Naszyjnik stal chirurgiczna - LITERKA I",
     price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -105,7 +105,7 @@ const necklaceStal = [
   },
   {
     id: "16227",
-    name: "LITERKA K",
+    name: "Naszyjnik stal chirurgiczna - LITERKA K",
       price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -121,7 +121,7 @@ const necklaceStal = [
   },
   {
     id: "16230",
-    name: "LITERKA N",
+    name: "Naszyjnik stal chirurgiczna - LITERKA N",
      price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -137,7 +137,7 @@ const necklaceStal = [
   },
   {
     id: "16231",
-    name: "LITERKA P",
+    name: "Naszyjnik stal chirurgiczna - LITERKA P",
       price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -153,7 +153,7 @@ const necklaceStal = [
   },
   {
     id: "16232",
-    name: "LITERKA R",
+    name: "Naszyjnik stal chirurgiczna - LITERKA R",
    price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -169,7 +169,7 @@ const necklaceStal = [
   },
   {
     id: "16233",
-    name: "LITERKA S",
+    name: "Naszyjnik stal chirurgiczna - LITERKA S",
       price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -185,7 +185,7 @@ const necklaceStal = [
   },
   {
     id: "16234",
-    name: "LITERKA T",
+    name: "Naszyjnik stal chirurgiczna - LITERKA T",
       price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -201,7 +201,7 @@ const necklaceStal = [
   },
   {
     id: "16235",
-    name: "LITERKA U",
+    name: "Naszyjnik stal chirurgiczna - LITERKA U",
      price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -217,7 +217,7 @@ const necklaceStal = [
   },
   {
     id: "16236",
-    name: "LITERKA W",
+    name: "Naszyjnik stal chirurgiczna - LITERKA W",
       price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -233,7 +233,7 @@ const necklaceStal = [
   },
   {
     id: "16237",
-    name: "LITERKA Z",
+    name: "Naszyjnik stal chirurgiczna - LITERKA Z",
   price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -250,7 +250,7 @@ const necklaceStal = [
   
   {
     id: "16217",
-    name: "LITERKA B",
+    name: "Naszyjnik stal chirurgiczna - LITERKA B",
     price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -267,7 +267,7 @@ const necklaceStal = [
 
  { 
         id: "16217", 
-        name: "LITERKA B ",
+        name: "Naszyjnik stal chirurgiczna - LITERKA B ",
         price: "89.15 zł", 
         "category": "stal",
     subCategory: "literki",
@@ -291,7 +291,7 @@ const necklaceStal = [
     },
       {
     id: "16240",
-    name: "LITERKA C",
+    name: "Naszyjnik stal chirurgiczna - LITERKA C",
     price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -307,7 +307,7 @@ const necklaceStal = [
   },
     {
     id: "16248",
-    name: "LITERKA L",
+    name: "Naszyjnik stal chirurgiczna - LITERKA L",
     price: "59.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -322,7 +322,7 @@ const necklaceStal = [
     image3: "https://hurt.ecarla.pl/112804-large_default/naszyjnik-stal-chirurgiczna-literka-platerowana-zlotem-nst100l.jpg"
   },{
     id: "25085",
-    name: "LITERKA A",
+    name: "Naszyjnik stal chirurgiczna - LITERKA A",
     price: "64.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -338,7 +338,7 @@ const necklaceStal = [
   },
   {
     id: "25086",
-    name: "LITERKA K",
+    name: "Naszyjnik stal chirurgiczna - LITERKA K",
       price: "64.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -354,7 +354,7 @@ const necklaceStal = [
   },
     {
     id: "25682",
-    name: "LITERKA M",
+    name: "Naszyjnik stal chirurgiczna - LITERKA M",
     price: "64.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -368,7 +368,7 @@ const necklaceStal = [
   },
   {
     id: "27444",
-    name: "LITERKA D",
+    name: "Naszyjnik stal chirurgiczna - LITERKA D",
     price: "69.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -383,7 +383,7 @@ const necklaceStal = [
   },
   {
     id: "27445",
-    name: "LITERKA J",
+    name: "Naszyjnik stal chirurgiczna - LITERKA J",
      price: "69.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -398,7 +398,7 @@ const necklaceStal = [
   },
   {
     id: "25087",
-    name: "LITERKA M",
+    name: "Naszyjnik stal chirurgiczna - LITERKA M",
         price: "64.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -414,7 +414,7 @@ const necklaceStal = [
   },
     {
     id: "25083",
-    name: "SERCE LITERKA K",
+    name: "Naszyjnik stal chirurgiczna - SERCE LITERKA K",
     price: "79.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -430,7 +430,7 @@ const necklaceStal = [
   },
   {
     id: "25088",
-    name: "LITERKA N",
+    name: "Naszyjnik stal chirurgiczna - LITERKA N",
     price: "64.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -446,7 +446,7 @@ const necklaceStal = [
   },
       {
     id: "752",
-    name: "NAPIS SWEET",
+    name: "Naszyjnik stal chirurgiczna - NAPIS SWEET",
     price: "84.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -462,7 +462,7 @@ const necklaceStal = [
   },
   {
     id: "755",
-    name: "NAPIS HAPPY",
+    name: "Naszyjnik stal chirurgiczna - NAPIS HAPPY",
     price: "84.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -478,7 +478,7 @@ const necklaceStal = [
   },
   {
     id: "756",
-    name: "NAPIS DREAM",
+    name: "Naszyjnik stal chirurgiczna - NAPIS DREAM",
     price: "84.99 zł",
     category: "stal",
     subCategory: "literki",
@@ -496,7 +496,7 @@ const necklaceStal = [
   
     {
       id: "764",
-      name: "YOU & I",
+      name: "Naszyjnik stal chirurgiczna - YOU & I",
       price: "84.99 zł",
       category: "stal",
       subCategory: "literki",
@@ -512,7 +512,7 @@ const necklaceStal = [
     },
     {
     "id": "34468",
-    "name": "NAPIS MAMA",
+    "name": " Naszyjnik stal chirurgiczna -  NAPIS MAMA",
     "price": "89.99zł",
     "category": "stal",
     "subCategory": "literki",
@@ -536,7 +536,7 @@ const necklaceStal = [
   },
   {
     "id": "34469",
-    "name": "MAMA Z SERCEM",
+    "name": " Naszyjnik stal chirurgiczna -  MAMA Z SERCEM",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "literki",
@@ -560,7 +560,7 @@ const necklaceStal = [
   },
   {
     "id": "34470",
-    "name": "MAMA KONICZYNA",
+    "name": " Naszyjnik stal chirurgiczna -  MAMA KONICZYNA",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "literki",
@@ -584,7 +584,7 @@ const necklaceStal = [
   },
   {
     "id": "34471",
-    "name": "KÓŁKO Z NAPISEM MAMA",
+    "name": " Naszyjnik stal chirurgiczna -  KÓŁKO Z NAPISEM MAMA",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "literki",
@@ -610,7 +610,7 @@ const necklaceStal = [
 // SREBRO
 {
   id: "7627",
-  name: "KÓŁECZKO",
+  name: "Naszyjnik stal chirurgiczna - KÓŁECZKO",
   price: "89.99 zł",
   category: "stal",
   subCategory: "srebro",
@@ -626,7 +626,7 @@ const necklaceStal = [
 },
 {
   id: "981",
-  name: "ŻÓŁWIK",
+  name: "Naszyjnik stal chirurgiczna - ŻÓŁWIK",
   price: "74.99 zł",
   category: "stal",
   subCategory: "srebro",
@@ -642,7 +642,7 @@ const necklaceStal = [
 },
 {
     id: "762",
-    name: "Naszyjnik Stal chirurgiczna Para Słoniki Srebro",
+    name: "Naszyjnik stal chirurgiczna - Naszyjnik Stal chirurgiczna Para Słoniki Srebro",
     price: "84.99 zł",
     category: "stal",
     subCategory: "serbro",
@@ -658,7 +658,7 @@ const necklaceStal = [
   },
     {
     id: "7625",
-    name: "PODWÓJNE KÓŁKO",
+    name: "Naszyjnik stal chirurgiczna - PODWÓJNE KÓŁKO",
     price: "99.99 zł",
     category: "stal",
     subCategory: "srebro",
@@ -677,7 +677,7 @@ const necklaceStal = [
 // POZŁACANE
   {
     id: "33881",
-    name: "ZAWIJANY",
+    name: "Naszyjnik stal chirurgiczna - ZAWIJANY",
     price: "64.99 zł",
     
     "category": "stal",
@@ -691,7 +691,7 @@ const necklaceStal = [
   },
   {
     id: "33883",
-    name: "DWIE ZŁOTE KROPLE",
+    name: "Naszyjnik stal chirurgiczna - DWIE ZŁOTE KROPLE",
     price: "69.99 zł",
     
     "category": "stal",
@@ -705,7 +705,7 @@ const necklaceStal = [
   },
   {
     id: "19141",
-    name: "SERCE LOVE",
+    name: "Naszyjnik stal chirurgiczna - SERCE LOVE",
     price: "79.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -721,7 +721,7 @@ const necklaceStal = [
   },  
 {
     id: "9350",
-    name: "ŁAŃCUSZEK BIAŁE",
+    name: "Naszyjnik stal chirurgiczna - ŁAŃCUSZEK BIAŁE",
     price: "15.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -737,7 +737,7 @@ const necklaceStal = [
   },
  {
     "id": "34647",
-    "name": "BIALA PERLA",
+    "name": " Naszyjnik stal chirurgiczna -  BIALA PERLA",
     "price": "22.76 zł",
     "category": "stal",
     subCategory: "pozlacane",
@@ -755,7 +755,7 @@ const necklaceStal = [
                                              },
     {
     id: "13789",
-    name: "OBRĄCZKA",
+    name: "Naszyjnik stal chirurgiczna - OBRĄCZKA",
     price: "65.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -771,7 +771,7 @@ const necklaceStal = [
   },
    {
     id: "19334",
-    name: "SKRZYDŁO ASTERIXA",
+    name: "Naszyjnik stal chirurgiczna - SKRZYDŁO ASTERIXA",
     price: "69.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -786,7 +786,7 @@ const necklaceStal = [
     image3: ""
   },{
     id: "19810",
-    name: "DLA WYJĄTKOWEJ",
+    name: "Naszyjnik stal chirurgiczna - DLA WYJĄTKOWEJ",
     price: "89.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -802,7 +802,7 @@ const necklaceStal = [
   },
   {
     id: "19815",
-    name: "PODWÓJNY GWIAZDA",
+    name: "Naszyjnik stal chirurgiczna - PODWÓJNY GWIAZDA",
     price: "23.49 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -819,7 +819,7 @@ const necklaceStal = [
   
   {
     id: "19822",
-    name: "PODWÓJNY GWIAZDKI",
+    name: "Naszyjnik stal chirurgiczna - PODWÓJNY GWIAZDKI",
     price: "89.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -835,7 +835,7 @@ const necklaceStal = [
   },
   {
     id: "19827",
-    name: "MEDALIKI",
+    name: "Naszyjnik stal chirurgiczna - MEDALIKI",
     price: "99.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -851,7 +851,7 @@ const necklaceStal = [
   },
   {
     id: "19834",
-    name: "DLA GWIAZD",
+    name: "Naszyjnik stal chirurgiczna - DLA GWIAZD",
     price: "84.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -867,7 +867,7 @@ const necklaceStal = [
   },
     {
     id: "27636",
-    name: "MINI KULKI",
+    name: "Naszyjnik stal chirurgiczna - MINI KULKI",
     price: "89.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -881,7 +881,7 @@ const necklaceStal = [
   },
   {
     id: "19840",
-    name: "POLEMONIA",
+    name: "Naszyjnik stal chirurgiczna - POLEMONIA",
     price: "79.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -897,7 +897,7 @@ const necklaceStal = [
   },
    {
     id: "19860",
-    name: "KRZYŻYKI I GWIAZDKA",
+    name: "Naszyjnik stal chirurgiczna - KRZYŻYKI I GWIAZDKA",
     price: "89.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -913,7 +913,7 @@ const necklaceStal = [
   },
   {
     id: "22081",
-    name: "MAGICZNY",
+    name: "Naszyjnik stal chirurgiczna - MAGICZNY",
     price: "79.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -930,7 +930,7 @@ const necklaceStal = [
 ,
   {
     id: "22211",
-    name: "MAGNETO",
+    name: "Naszyjnik stal chirurgiczna - MAGNETO",
     price: "84.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -947,7 +947,7 @@ const necklaceStal = [
 
   {
     id: "22349",
-    name: "MONETA",
+    name: "Naszyjnik stal chirurgiczna - MONETA",
     price: "89.99zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -963,7 +963,7 @@ const necklaceStal = [
   },
   {
     id: "22601",
-    name: "Z ZIELONYM KAMYKIEM",
+    name: "Naszyjnik stal chirurgiczna - Z ZIELONYM KAMYKIEM",
     price: "79.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -981,7 +981,7 @@ const necklaceStal = [
 
   {
     id: "23687",
-    name: "KLEPSYDRY",
+    name: "Naszyjnik stal chirurgiczna - KLEPSYDRY",
     price: "99.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -1000,7 +1000,7 @@ const necklaceStal = [
   
   {
     id: "25315",
-    name: "CZARNY MIŚ",
+    name: "Naszyjnik stal chirurgiczna - CZARNY MIŚ",
     price: "79.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -1016,7 +1016,7 @@ const necklaceStal = [
   },
   {
     id: "25681",
-    name: "CZŁOWIEK Z SERCEM",
+    name: "Naszyjnik stal chirurgiczna - CZŁOWIEK Z SERCEM",
     price: "79.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -1034,7 +1034,7 @@ const necklaceStal = [
 
   {
     id: "26016",
-    name: "ZŁOTY MIŚ",
+    name: "Naszyjnik stal chirurgiczna - ZŁOTY MIŚ",
     price: "89.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -1048,7 +1048,7 @@ const necklaceStal = [
   },
   {
     id: "27197",
-    name: "FIGURY GEOMETRYCZNE",
+    name: "Naszyjnik stal chirurgiczna - FIGURY GEOMETRYCZNE",
     price: "84.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -1063,7 +1063,7 @@ const necklaceStal = [
   
   {
     id: "27231",
-    name: "GWIAZDKI I PIÓRKO",
+    name: "Naszyjnik stal chirurgiczna - GWIAZDKI I PIÓRKO",
     price: "64.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -1078,7 +1078,7 @@ const necklaceStal = [
 ,
   {
     id: "27213",
-    name: "PŁOMIENNE SŁOŃCE",
+    name: "Naszyjnik stal chirurgiczna - PŁOMIENNE SŁOŃCE",
     price: "89.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -1094,7 +1094,7 @@ const necklaceStal = [
   
   {
     id: "27614",
-    name: "KRZYŻYKI",
+    name: "Naszyjnik stal chirurgiczna - KRZYŻYKI",
     price: "99.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -1109,7 +1109,7 @@ const necklaceStal = [
  
   {
     id: "30001",
-    name: "KLASYCZNY Z CYRKONIAMI",
+    name: "Naszyjnik stal chirurgiczna - KLASYCZNY Z CYRKONIAMI",
     price: "89.99 zł",
      category: "stal",
     subCategory: "pozlacane",
@@ -1128,7 +1128,7 @@ const necklaceStal = [
  
   {
     id: "31024",
-    name: "WISIENKI",
+    name: "Naszyjnik stal chirurgiczna - WISIENKI",
     price: "89.99 zł",
      category: "stal",
     subCategory: "pozlacane",
@@ -1143,7 +1143,7 @@ const necklaceStal = [
 ,
   {
     id: "31393",
-    name: "KÓŁKO CZARNY KAMIEŃ",
+    name: "Naszyjnik stal chirurgiczna - KÓŁKO CZARNY KAMIEŃ",
     price: "79.99 zł",
      category: "stal",
     subCategory: "pozlacane",
@@ -1158,7 +1158,7 @@ const necklaceStal = [
 
  {
     id: "33110",
-    name: "LISTEK MIŁOŚCI",
+    name: "Naszyjnik stal chirurgiczna - LISTEK MIŁOŚCI",
     price: "69.99 zł",
     
     "category": "stal",
@@ -1173,7 +1173,7 @@ const necklaceStal = [
 
   {
     id: "33112",
-    name: "LETNIA BRYZA",
+    name: "Naszyjnik stal chirurgiczna - LETNIA BRYZA",
     price: "64.99 zł",
     
     "category": "stal",
@@ -1189,7 +1189,7 @@ const necklaceStal = [
 
   {
     id: "33470",
-    name: "WIOSENNY KWADRAT",
+    name: "Naszyjnik stal chirurgiczna - WIOSENNY KWADRAT",
     price: "84.99 zł",
     
     "category": "stal",
@@ -1203,7 +1203,7 @@ const necklaceStal = [
   },
   {
     id: "33585",
-    name: "SKRZYDŁO ANIOŁA",
+    name: "Naszyjnik stal chirurgiczna - SKRZYDŁO ANIOŁA",
     price: "79.99 zł",
     
     "category": "stal",
@@ -1223,7 +1223,7 @@ const necklaceStal = [
   
   {
     id: "33899",
-    name: "PROSTOKĄT",
+    name: "Naszyjnik stal chirurgiczna - PROSTOKĄT",
     price: "79.99 zł",
     
     "category": "stal",
@@ -1239,7 +1239,7 @@ const necklaceStal = [
 
   {
     id: "34055",
-    name: "Naszyjnik stal szlachetna pozłacana 14k złotem, kryształkowe SERCE cyrkonie NST2269",
+    name: "Naszyjnik stal chirurgiczna - Naszyjnik stal szlachetna pozłacana 14k złotem, kryształkowe SERCE cyrkonie NST2269",
     price: "17.84 zł",
     
     "category": "stal",
@@ -1257,7 +1257,7 @@ const necklaceStal = [
 
   {
     id: "34090",
-    name: "WAŻKA",
+    name: "Naszyjnik stal chirurgiczna - WAŻKA",
     price: "109.99 zł",
     
     "category": "stal",
@@ -1274,7 +1274,7 @@ const necklaceStal = [
   
   {
     "id": "34125",
-    "name": "PERŁOWA BRYZA",
+    "name": " Naszyjnik stal chirurgiczna -  PERŁOWA BRYZA",
     "price": "89.99 zł",
     
     "category": "stal",
@@ -1298,7 +1298,7 @@ const necklaceStal = [
   },
   {
     "id": "34155",
-    "name": "PALĄCE SŁOŃCE",
+    "name": " Naszyjnik stal chirurgiczna -  PALĄCE SŁOŃCE",
     "price": "74.99 zł",
     
     "category": "stal",
@@ -1322,7 +1322,7 @@ const necklaceStal = [
   },
   {
     "id": "34156",
-    "name": "PIÓRKA",
+    "name": " Naszyjnik stal chirurgiczna -  PIÓRKA",
     "price": "89.99 zł",
     
     "category": "stal",
@@ -1346,7 +1346,7 @@ const necklaceStal = [
   },
   {
     "id": "34157",
-    "name": "MOTYLKI",
+    "name": " Naszyjnik stal chirurgiczna -  MOTYLKI",
     "price": "79.99 zł",
     
     "category": "stal",
@@ -1370,7 +1370,7 @@ const necklaceStal = [
   },
   {
     "id": "34162",
-    "name": "BIAŁA PERŁA",
+    "name": " Naszyjnik stal chirurgiczna -  BIAŁA PERŁA",
     "price": "74.99 zł",
     
     "category": "stal",
@@ -1394,7 +1394,7 @@ const necklaceStal = [
   },
   {
     "id": "34163",
-    "name": "KROPLA ZE SŁOŃCEM",
+    "name": " Naszyjnik stal chirurgiczna -  KROPLA ZE SŁOŃCEM",
     "price": "79.99 zł",
     
     "category": "stal",
@@ -1418,7 +1418,7 @@ const necklaceStal = [
   },
   {
     "id": "34164",
-    "name": "KRYSZTALIK",
+    "name": " Naszyjnik stal chirurgiczna -  KRYSZTALIK",
     "price": "74.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1441,7 +1441,7 @@ const necklaceStal = [
   },
     {
     "id": "34165",
-    "name": "BIAŁY KAMIEŃ",
+    "name": " Naszyjnik stal chirurgiczna -  BIAŁY KAMIEŃ",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1464,7 +1464,7 @@ const necklaceStal = [
     "image3": ""
   },{
     "id": "34389",
-    "name": "ŻYŁKA MEDIUM",
+    "name": " Naszyjnik stal chirurgiczna -  ŻYŁKA MEDIUM",
     "price": "84.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1488,7 +1488,7 @@ const necklaceStal = [
   },
   {
     "id": "34390",
-    "name": "GRUBA ŻYŁKA",
+    "name": " Naszyjnik stal chirurgiczna -  GRUBA ŻYŁKA",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1512,7 +1512,7 @@ const necklaceStal = [
   },
   {
     "id": "34391",
-    "name": "ŻYŁY",
+    "name": " Naszyjnik stal chirurgiczna -  ŻYŁY",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1536,7 +1536,7 @@ const necklaceStal = [
   },
   {
     "id": "34392",
-    "name": "ŻYŁKI",
+    "name": " Naszyjnik stal chirurgiczna -  ŻYŁKI",
     "price": "84.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1560,7 +1560,7 @@ const necklaceStal = [
   },
   {
     "id": "34410",
-    "name": "POWIĄZANIE",
+    "name": " Naszyjnik stal chirurgiczna -  POWIĄZANIE",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1583,7 +1583,7 @@ const necklaceStal = [
   },
   {
     "id": "34601",
-    "name": "ZAWIJASY",
+    "name": " Naszyjnik stal chirurgiczna -  ZAWIJASY",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1607,7 +1607,7 @@ const necklaceStal = [
   },
   {
     "id": "34603",
-    "name": "GWIAZDKA Z NIEBA",
+    "name": " Naszyjnik stal chirurgiczna -  GWIAZDKA Z NIEBA",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1631,7 +1631,7 @@ const necklaceStal = [
   },
   {
     "id": "34605",
-    "name": "OBSESJA",
+    "name": " Naszyjnik stal chirurgiczna -  OBSESJA",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1655,7 +1655,7 @@ const necklaceStal = [
   },
   {
     "id": "34627",
-    "name": "SKRZYDŁA SAMOLOTU",
+    "name": " Naszyjnik stal chirurgiczna -  SKRZYDŁA SAMOLOTU",
     "price": "74.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1680,7 +1680,7 @@ const necklaceStal = [
   
   {
     "id": "34608",
-    "name": "PODWÓJNY KULKI",
+    "name": " Naszyjnik stal chirurgiczna -  PODWÓJNY KULKI",
     "price": "84.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1705,7 +1705,7 @@ const necklaceStal = [
   
   {
     "id": "34612",
-    "name": "KWADRWT MASA PERŁOWA",
+    "name": " Naszyjnik stal chirurgiczna -  KWADRWT MASA PERŁOWA",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1729,7 +1729,7 @@ const necklaceStal = [
   },
   {
     "id": "34614",
-    "name": "POŁĄCZONE OKRĘGI",
+    "name": " Naszyjnik stal chirurgiczna -  POŁĄCZONE OKRĘGI",
     "price": "94.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1753,7 +1753,7 @@ const necklaceStal = [
   },
   {
     "id": "34615",
-    "name": "MANIAKALNY",
+    "name": " Naszyjnik stal chirurgiczna -  MANIAKALNY",
     "price": "86.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1776,7 +1776,7 @@ const necklaceStal = [
     "image3": ""
   },{
     "id": "34629",
-    "name": "MEGA KROPLA",
+    "name": " Naszyjnik stal chirurgiczna -  MEGA KROPLA",
     "price": "74.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1801,7 +1801,7 @@ const necklaceStal = [
   
   {
     "id": "34632",
-    "name": "ZAWIESZANA PERŁA",
+    "name": " Naszyjnik stal chirurgiczna -  ZAWIESZANA PERŁA",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1826,7 +1826,7 @@ const necklaceStal = [
   
   {
     "id": "34635",
-    "name": "NIEZAPOMINALNY",
+    "name": " Naszyjnik stal chirurgiczna -  NIEZAPOMINALNY",
     "price": "74.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1850,7 +1850,7 @@ const necklaceStal = [
                                               },
   {
     "id": "34636",
-    "name": "PROSTA PERŁA",
+    "name": " Naszyjnik stal chirurgiczna -  PROSTA PERŁA",
     "price": "75.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1877,7 +1877,7 @@ const necklaceStal = [
   
   {
     "id": "34639",
-    "name": "LIŚCIE",
+    "name": " Naszyjnik stal chirurgiczna -  LIŚCIE",
     "price": "84.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1899,7 +1899,7 @@ const necklaceStal = [
 
   {
     "id": "34644",
-    "name": "ŻYŁKA KULECZKA",
+    "name": " Naszyjnik stal chirurgiczna -  ŻYŁKA KULECZKA",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1916,7 +1916,7 @@ const necklaceStal = [
                                         },
   {
     "id": "34645",
-    "name": "PODWÓJNY ŁEZKI",
+    "name": " Naszyjnik stal chirurgiczna -  PODWÓJNY ŁEZKI",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1934,7 +1934,7 @@ const necklaceStal = [
                                              },
   {
     "id": "34646",
-    "name": "KULKA",
+    "name": " Naszyjnik stal chirurgiczna -  KULKA",
     "price": "94.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1955,7 +1955,7 @@ const necklaceStal = [
 
   {
     "id": "34651",
-    "name": "BLASZKI KWADRATY",
+    "name": " Naszyjnik stal chirurgiczna -  BLASZKI KWADRATY",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1974,7 +1974,7 @@ const necklaceStal = [
                                               },
                                               {
     id: "18494",
-    name: "JEST TYLKO JEDEN",
+    name: "Naszyjnik stal chirurgiczna - JEST TYLKO JEDEN",
     price: "79.99 zł",
      category: "stal",
     subCategory: "pozlacane",
@@ -1991,7 +1991,7 @@ const necklaceStal = [
   
   {
     id: "18492",
-    name: "KÓŁKA MOTYLA",
+    name: "Naszyjnik stal chirurgiczna - KÓŁKA MOTYLA",
     price: "99.99 zł",
      category: "stal",
     subCategory: "pozlacane",
@@ -2007,7 +2007,7 @@ const necklaceStal = [
   },
   {
       id: "17398",
-      name: "BRAKUJÁCA GWIAZDKA",
+      name: "Naszyjnik stal chirurgiczna - BRAKUJÁCA GWIAZDKA",
       price: "79.99 zł",
        category: "stal",
       subCategory: "pozlacane",
@@ -2025,7 +2025,7 @@ const necklaceStal = [
 // WYKWINTNE
   {
     id: "16777",
-    name: "CHCESZ MNIE",
+    name: "Naszyjnik stal chirurgiczna - CHCESZ MNIE",
     price: "89.99 zł",
      category: "stal",
     subCategory: "wykwintne",
@@ -2041,7 +2041,7 @@ const necklaceStal = [
   },
   {
     "id": "34653",
-    "name": "DZIŚ ALBO NIGDY",
+    "name": " Naszyjnik stal chirurgiczna -  DZIŚ ALBO NIGDY",
     "price": "89.99 zł", "category": "stal",
     "subCategory": "wykwintne",
     "url": "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-skrzydelka-nst2255.html",
@@ -2059,7 +2059,7 @@ const necklaceStal = [
 
   {
     "id": "34602",
-    "name": "TEGO PRAGNE",
+    "name": " Naszyjnik stal chirurgiczna -  TEGO PRAGNE",
     "price": "84.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -2083,7 +2083,7 @@ const necklaceStal = [
   },
  {
     "id": "34607",
-    "name": "NIE Z TEJ ZIEMI",
+    "name": " Naszyjnik stal chirurgiczna -  NIE Z TEJ ZIEMI",
     "price": "84.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -2107,7 +2107,7 @@ const necklaceStal = [
  
   {
     "id": "34613",
-    "name": "KOLOROWE SERCA",
+    "name": " Naszyjnik stal chirurgiczna -  KOLOROWE SERCA",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -2131,7 +2131,7 @@ const necklaceStal = [
   },
   {
     "id": "34643",
-    "name": "PEŁOWA LAGUNA",
+    "name": " Naszyjnik stal chirurgiczna -  PEŁOWA LAGUNA",
     "price": "84.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -2149,7 +2149,7 @@ const necklaceStal = [
                                               },
  {
     "id": "34126",
-    "name": "PERŁA CYRKONIE",
+    "name": " Naszyjnik stal chirurgiczna -  PERŁA CYRKONIE",
     "price": "79.99 zł",
     
     "category": "stal",
@@ -2174,7 +2174,7 @@ const necklaceStal = [
  
  {
     id: "31023",
-    name: "WISIORKI Z PEREŁKAMI",
+    name: "Naszyjnik stal chirurgiczna - WISIORKI Z PEREŁKAMI",
     price: "99.99 zł",
      category: "stal",
     subCategory: "wykwintne",
@@ -2188,7 +2188,7 @@ const necklaceStal = [
   },
   {
     id: "30818",
-    name: "PEREŁKI I LISTKI",
+    name: "Naszyjnik stal chirurgiczna - PEREŁKI I LISTKI",
     price: "89.99 zł",
      category: "stal",
     subCategory: "wykwintne",
@@ -2203,7 +2203,7 @@ const necklaceStal = [
 
  {
     id: "30910",
-    name: "KRYSZTAŁ GÓRSKI ",
+    name: "Naszyjnik stal chirurgiczna - KRYSZTAŁ GÓRSKI ",
     price: "69.99 zł",
      category: "stal",
     subCategory: "wykwintne",
@@ -2217,7 +2217,7 @@ const necklaceStal = [
   },
 {
     id: "33876",
-    name: "WISZĄCE PEREŁKI",
+    name: "Naszyjnik stal chirurgiczna - WISZĄCE PEREŁKI",
     price: "79.99 zł",
     
     "category": "stal",
@@ -2231,7 +2231,7 @@ const necklaceStal = [
   },
     {
     id: "30909",
-    name: "KORALIKI I BIAŁY KAMIEŃ",
+    name: "Naszyjnik stal chirurgiczna - KORALIKI I BIAŁY KAMIEŃ",
     price: "69.99 zł",
      category: "stal",
     subCategory: "wykwintne",
@@ -2245,7 +2245,7 @@ const necklaceStal = [
   },
  {
     id: "30911",
-    name: "CZARNY KTYSZTAŁ POZIOMO",
+    name: "Naszyjnik stal chirurgiczna - CZARNY KTYSZTAŁ POZIOMO",
    price: "64.99 zł",
      category: "stal",
     subCategory: "wykwintne",
@@ -2259,7 +2259,7 @@ const necklaceStal = [
   },
   {
     id: "30913",
-    name: "KAMIEŃ GRANAT",
+    name: "Naszyjnik stal chirurgiczna - KAMIEŃ GRANAT",
    price: "64.99 zł",
      category: "stal",
     subCategory: "wykwintne",
@@ -2273,7 +2273,7 @@ const necklaceStal = [
   },
   {
     id: "30915",
-    name: "GÓRSKI KRYSZTAŁ BIAŁY",
+    name: "Naszyjnik stal chirurgiczna - GÓRSKI KRYSZTAŁ BIAŁY",
     price: "64.99 zł",
      category: "stal",
     subCategory: "wykwintne",
@@ -2287,7 +2287,7 @@ const necklaceStal = [
   },
   {
     id: "30918",
-    name: "BIAŁY KAMIEŃ",
+    name: "Naszyjnik stal chirurgiczna - BIAŁY KAMIEŃ",
     price: "64.99 zł",
      category: "stal",
     subCategory: "wykwintne",
@@ -2301,7 +2301,7 @@ const necklaceStal = [
   },
   {
     id: "30919",
-    name: "GÓRSKI KRYSZTAŁ CZARNY",
+    name: "Naszyjnik stal chirurgiczna - GÓRSKI KRYSZTAŁ CZARNY",
     price: "69.99 zł",
      category: "stal",
     subCategory: "wykwintne",
@@ -2315,7 +2315,7 @@ const necklaceStal = [
   },
   {
     id: "30920",
-    name: "GÓRSKI KRYSZTAŁ",
+    name: "Naszyjnik stal chirurgiczna - GÓRSKI KRYSZTAŁ",
     price: "69.99 zł",
      category: "stal",
     subCategory: "wykwintne",
@@ -2330,7 +2330,7 @@ const necklaceStal = [
 
 {
     id: "30951",
-    name: "NIEBIESKI KAMIEŃ",
+    name: "Naszyjnik stal chirurgiczna - NIEBIESKI KAMIEŃ",
     price: "69.99 zł",
      category: "stal",
     subCategory: "wykwinte",
@@ -2344,7 +2344,7 @@ const necklaceStal = [
   },
 {
     id: "27634",
-    name: "SKARABEUSZ",
+    name: "Naszyjnik stal chirurgiczna - SKARABEUSZ",
     price: "99.99 zł",
     category: "stal",
     subCategory: "wykwintne",
@@ -2358,7 +2358,7 @@ const necklaceStal = [
   },
   {
     id: "27215",
-    name: "KORALIKI Z PIÓRKAMI",
+    name: "Naszyjnik stal chirurgiczna - KORALIKI Z PIÓRKAMI",
     price: "84.99 zł",
     category: "stal",
     subCategory: "wykwintne",
@@ -2373,7 +2373,7 @@ const necklaceStal = [
   
   {
     id: "27615",
-    name: "KORALIKI Z MISIAMI",
+    name: "Naszyjnik stal chirurgiczna - KORALIKI Z MISIAMI",
     price: "109.99 zł",
     category: "stal",
     subCategory: "wykwintne",
@@ -2387,7 +2387,7 @@ const necklaceStal = [
   },
   {
     id: "23058",
-    name: "SZAMAŃSKI MEDALIK",
+    name: "Naszyjnik stal chirurgiczna - SZAMAŃSKI MEDALIK",
     price: "119.99 zł",
     category: "stal",
     subCategory: "wykwintne",
@@ -2403,7 +2403,7 @@ const necklaceStal = [
   },
     {
     id: "23306",
-    name: "Z CZARNYK KAMIENIEM",
+    name: "Naszyjnik stal chirurgiczna - Z CZARNYK KAMIENIEM",
     price: "89.99 zł",
     category: "stal",
     subCategory: "wykwintne",
@@ -2419,7 +2419,7 @@ const necklaceStal = [
   },
     {
     id: "30921",
-    name: "Naszyjnik Kryształ Górski stal szlachetna pozłacana 14k złotem NST1581B",
+    name: "Naszyjnik stal chirurgiczna - Naszyjnik Kryształ Górski stal szlachetna pozłacana 14k złotem NST1581B",
     price: "69.99 zł",
      category: "stal",
     subCategory: "wykwintne",
@@ -2433,7 +2433,7 @@ const necklaceStal = [
   },
   {
     id: "30923",
-    name: "BIAŁY KAMIEŃ",
+    name: "Naszyjnik stal chirurgiczna - BIAŁY KAMIEŃ",
     price: "64.99 zł",
      category: "stal",
     subCategory: "wykwintne",
@@ -2447,7 +2447,7 @@ const necklaceStal = [
   },
    {
     id: "28694",
-    name: "PEREŁKI",
+    name: "Naszyjnik stal chirurgiczna - PEREŁKI",
     price: "84.99 zł",
      category: "stal",
     subCategory: "wykwintne",
@@ -2461,7 +2461,7 @@ const necklaceStal = [
   },
   {
     "id": "34649",
-    "name": "CYRKONIOWA GWIAZDKA",
+    "name": " Naszyjnik stal chirurgiczna -  CYRKONIOWA GWIAZDKA",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -2482,7 +2482,7 @@ const necklaceStal = [
 
   {
     "id": "34366",
-    "name": "MIŁOSNE PRAGNIENIA",
+    "name": " Naszyjnik stal chirurgiczna -  MIŁOSNE PRAGNIENIA",
     "price": " 84.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2505,7 +2505,7 @@ const necklaceStal = [
   },
   {
     "id": "34411",
-    "name": "MAŁE / WIELKIE SERCE",
+    "name": " Naszyjnik stal chirurgiczna -  MAŁE / WIELKIE SERCE",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2530,7 +2530,7 @@ const necklaceStal = [
 
   {
     "id": "34600",
-    "name": "STRZAŁA AMORA",
+    "name": " Naszyjnik stal chirurgiczna -  STRZAŁA AMORA",
     "price": "84.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2555,7 +2555,7 @@ const necklaceStal = [
   
  {
     "id": "34604",
-    "name": "NA DOBRE I NA ZŁE",
+    "name": " Naszyjnik stal chirurgiczna -  NA DOBRE I NA ZŁE",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2580,7 +2580,7 @@ const necklaceStal = [
  
   {
     "id": "34648",
-    "name": "KRĄG MIŁOŚCI",
+    "name": " Naszyjnik stal chirurgiczna -  KRĄG MIŁOŚCI",
     "price": "84.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2598,7 +2598,7 @@ const necklaceStal = [
                                               },
 {
     "id": "34641",
-    "name": "SERCE MAT PERŁOWE",
+    "name": " Naszyjnik stal chirurgiczna -  SERCE MAT PERŁOWE",
     "price": "84.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2616,7 +2616,7 @@ const necklaceStal = [
                                               },
   {
     "id": "34642",
-    "name": "SERCA PEREŁKOWE",
+    "name": " Naszyjnik stal chirurgiczna -  SERCA PEREŁKOWE",
     "price": "72.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2634,7 +2634,7 @@ const necklaceStal = [
                                               },
 {
     "id": "34638",
-    "name": "TWOJA JEDYNA",
+    "name": " Naszyjnik stal chirurgiczna -  TWOJA JEDYNA",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2653,7 +2653,7 @@ const necklaceStal = [
                                              },
   {
     "id": "34637",
-    "name": "AŻUROWE SERCE",
+    "name": " Naszyjnik stal chirurgiczna -  AŻUROWE SERCE",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2671,7 +2671,7 @@ const necklaceStal = [
                                              },
 {
     "id": "34633",
-    "name": "MIĘSZANE SERCA",
+    "name": " Naszyjnik stal chirurgiczna -  MIĘSZANE SERCA",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2695,7 +2695,7 @@ const necklaceStal = [
                                               },
   {
     "id": "34634",
-    "name": "BIAŁE SERCE MAT",
+    "name": " Naszyjnik stal chirurgiczna -  BIAŁE SERCE MAT",
     "price": "74.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2719,7 +2719,7 @@ const necklaceStal = [
                                               },
 {
     "id": "34625",
-    "name": "PODWÓJNE SERCA",
+    "name": " Naszyjnik stal chirurgiczna -  PODWÓJNE SERCA",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2744,7 +2744,7 @@ const necklaceStal = [
                                               },
 {
     "id": "34630",
-    "name": "MIŁOSNE SERCA",
+    "name": " Naszyjnik stal chirurgiczna -  MIŁOSNE SERCA",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2768,7 +2768,7 @@ const necklaceStal = [
                                               },
   {
     "id": "34631",
-    "name": "MEGA PERŁA",
+    "name": " Naszyjnik stal chirurgiczna -  MEGA PERŁA",
     "price": "74.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2792,7 +2792,7 @@ const necklaceStal = [
                                               },
   {
     "id": "34628",
-    "name": "PODWÓJCE SERCA",
+    "name": " Naszyjnik stal chirurgiczna -  PODWÓJCE SERCA",
     "price": "74.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2817,7 +2817,7 @@ const necklaceStal = [
   
   {
     "id": "34626",
-    "name": "CZTERY SERCA",
+    "name": " Naszyjnik stal chirurgiczna -  CZTERY SERCA",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2841,7 +2841,7 @@ const necklaceStal = [
                                               },
   {
     "id": "34624",
-    "name": "POTRÓJNY NASZYJNIK SERDUSZKA",
+    "name": " Naszyjnik stal chirurgiczna -  POTRÓJNY NASZYJNIK SERDUSZKA",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2866,7 +2866,7 @@ const necklaceStal = [
   
 {
     "id": "34606",
-    "name": "MIŁOSNE PRZYWIĄZANIE",
+    "name": " Naszyjnik stal chirurgiczna -  MIŁOSNE PRZYWIĄZANIE",
     "price": "74.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2891,7 +2891,7 @@ const necklaceStal = [
   
 {
     "id": "34610",
-    "name": "DLA UKOCHANEJ",
+    "name": " Naszyjnik stal chirurgiczna -  DLA UKOCHANEJ",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2915,7 +2915,7 @@ const necklaceStal = [
   },
   {
     "id": "34611",
-    "name": "BIAŁA MIŁOŚĆ",
+    "name": " Naszyjnik stal chirurgiczna -  BIAŁA MIŁOŚĆ",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2939,7 +2939,7 @@ const necklaceStal = [
   },
 {
     "id": "34609",
-    "name": "OSTRE SERCE ",
+    "name": " Naszyjnik stal chirurgiczna -  OSTRE SERCE ",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -2965,7 +2965,7 @@ const necklaceStal = [
   
   {
     id: "33452",
-    name: "LEKKA KOKARDKA",
+    name: "Naszyjnik stal chirurgiczna - LEKKA KOKARDKA",
     price: "79.99 zł",
     
     "category": "stal",
@@ -2979,7 +2979,7 @@ const necklaceStal = [
   },
   {
     id: "33747",
-    name: "SERCA I KONICZYNKI",
+    name: "Naszyjnik stal chirurgiczna - SERCA I KONICZYNKI",
     price: "94.99 zł",
     
     "category": "stal",
@@ -2994,7 +2994,7 @@ const necklaceStal = [
 
 {
     id: "33898",
-    name: "MIŚ Z SERDUSZKIEM",
+    name: "Naszyjnik stal chirurgiczna - MIŚ Z SERDUSZKIEM",
     price: "99.99 zł",
     
     "category": "stal",
@@ -3008,7 +3008,7 @@ const necklaceStal = [
   },
  {
     "id": "34158",
-    "name": "KLASYCZNE SERDUSZKA Z KULĄ",
+    "name": " Naszyjnik stal chirurgiczna -  KLASYCZNE SERDUSZKA Z KULĄ",
     "price": "89.99 zł",
     
     "category": "stal",
@@ -3033,7 +3033,7 @@ const necklaceStal = [
  
   {
     id: "33605",
-    name: "PRAWDZIWE SERCE",
+    name: "Naszyjnik stal chirurgiczna - PRAWDZIWE SERCE",
     price: "79.99 zł",
     
     "category": "stal",
@@ -3047,7 +3047,7 @@ const necklaceStal = [
   },
   {
     id: "34051",
-    name: "ZŁOTE SERCE LINIA",
+    name: "Naszyjnik stal chirurgiczna - ZŁOTE SERCE LINIA",
     price: "64.99 zł",
     
     "category": "stal",
@@ -3061,7 +3061,7 @@ const necklaceStal = [
   },
   {
     id: "34052",
-    name: "KRYSZTAŁOWE SERCE",
+    name: "Naszyjnik stal chirurgiczna - KRYSZTAŁOWE SERCE",
     price: "84.99 zł",
     
     "category": "stal",
@@ -3075,7 +3075,7 @@ const necklaceStal = [
   },
   {
     id: "34053",
-    name: "DUŻE BIAŁE SERCE",
+    name: "Naszyjnik stal chirurgiczna - DUŻE BIAŁE SERCE",
     price: "69.99 zł",
     
     "category": "stal",
@@ -3089,7 +3089,7 @@ const necklaceStal = [
   },
  {
     id: "34056",
-    name: "SZARE I ZŁOTE SERCE",
+    name: "Naszyjnik stal chirurgiczna - SZARE I ZŁOTE SERCE",
     price: "64.99 zł",
     
     "category": "stal",
@@ -3103,7 +3103,7 @@ const necklaceStal = [
   },
   {
     id: "34058",
-    name: "ZŁOTE SERCE Z CYRKONIĄ",
+    name: "Naszyjnik stal chirurgiczna - ZŁOTE SERCE Z CYRKONIĄ",
     price: "79.99 zł",
     
     "category": "stal",
@@ -3117,7 +3117,7 @@ const necklaceStal = [
   },
   {
     id: "34059",
-    name: "BIAŁE RÓŻOWE SERCA",
+    name: "Naszyjnik stal chirurgiczna - BIAŁE RÓŻOWE SERCA",
     price: "64.99 zł",
     
     "category": "stal",
@@ -3131,7 +3131,7 @@ const necklaceStal = [
   },
   {
     id: "34061",
-    name: "BIAŁE SERCA",
+    name: "Naszyjnik stal chirurgiczna - BIAŁE SERCA",
     price: "64.99 zł",
     
     "category": "stal",
@@ -3145,7 +3145,7 @@ const necklaceStal = [
   },
   {
     id: "34062",
-    name: "ZŁOTE SERCA",
+    name: "Naszyjnik stal chirurgiczna - ZŁOTE SERCA",
     price: "64.99zł",
     
     "category": "stal",
@@ -3159,7 +3159,7 @@ const necklaceStal = [
   },
 {
     id: "31439",
-    name: "BŁYSZCZĄCE SERCE",
+    name: "Naszyjnik stal chirurgiczna - BŁYSZCZĄCE SERCE",
     price: "89.99 zł",
      category: "stal",
     subCategory: "serca-kokardy",
@@ -3172,7 +3172,7 @@ const necklaceStal = [
   },
   {
     id: "26021",
-    name: "Naszyjnik Miś stal szlachetna pozłacana 14k złotem NST1592Z",
+    name: "Naszyjnik stal chirurgiczna - Naszyjnik Miś stal szlachetna pozłacana 14k złotem NST1592Z",
     price: "99.99 zł",
     category: "stal",
     subCategory: "serca-kokardy",
@@ -3186,7 +3186,7 @@ const necklaceStal = [
   },
   {
     id: "26022",
-    name: "Naszyjnik Miś stal szlachetna pozłacana 14k złotem NST1592KR",
+    name: "Naszyjnik stal chirurgiczna - Naszyjnik Miś stal szlachetna pozłacana 14k złotem NST1592KR",
     price: "106.99 zł",
     category: "stal",
     subCategory: "serca-kokardy",
@@ -3200,7 +3200,7 @@ const necklaceStal = [
   },
   {
     id: "26024",
-    name: "Naszyjnik Miś stal szlachetna pozłacana 14k złotem NST1626",
+    name: "Naszyjnik stal chirurgiczna - Naszyjnik Miś stal szlachetna pozłacana 14k złotem NST1626",
     price: "89.99 zł",
     category: "stal",
     subCategory: "serca-kokardy",
@@ -3214,7 +3214,7 @@ const necklaceStal = [
   },
   {
     id: "26054",
-    name: "Naszyjnik Miś stal szlachetna pozłacana 14k złotem NST1592",
+    name: "Naszyjnik stal chirurgiczna - Naszyjnik Miś stal szlachetna pozłacana 14k złotem NST1592",
     price: "84.99 zł",
     category: "stal",
     subCategory: "serca-kokardy",
@@ -3228,7 +3228,7 @@ const necklaceStal = [
   },
   {
     id: "26102",
-    name: "Naszyjnik stal chirurgiczna pozłacana 14k gold NST1351",
+    name: "Naszyjnik stal chirurgiczna - Naszyjnik stal chirurgiczna pozłacana 14k gold NST1351",
     price: "79.99 zł",
     category: "stal",
     subCategory: "serca-kokardy",
@@ -3242,7 +3242,7 @@ const necklaceStal = [
   },
   {
     id: "26103",
-    name: "Naszyjnik stal chirurgiczna pozłacana 14k gold NST1393",
+    name: "Naszyjnik stal chirurgiczna - Naszyjnik stal chirurgiczna pozłacana 14k gold NST1393",
     price: "89.99 zł",
     category: "stal",
     subCategory: "serca-kokardy",
@@ -3256,7 +3256,7 @@ const necklaceStal = [
   },
   {
     id: "19329",
-    name: "ZŁOTE SERCA",
+    name: "Naszyjnik stal chirurgiczna - ZŁOTE SERCA",
     price: "79.99 zł",
 category: "stal",
     subCategory: "serca-kokardy",
@@ -3272,7 +3272,7 @@ category: "stal",
   },
     {
     id: "22215",
-    name: "DIAMENCIKI I SERCE",
+    name: "Naszyjnik stal chirurgiczna - DIAMENCIKI I SERCE",
     price: "104.99 zł",
     category: "stal",
     subCategory: "serca-kokardy",
@@ -3288,7 +3288,7 @@ category: "stal",
   },
     {
     id: "24089",
-    name: "KORALIKI Z SERCEM",
+    name: "Naszyjnik stal chirurgiczna - KORALIKI Z SERCEM",
     price: "119.99 zł",
     category: "stal",
     subCategory: "serca-kokardy",
@@ -3309,7 +3309,7 @@ category: "stal",
 
   {
     "id": "34368",
-    "name": "BIAŁA ZAMIEĆ",
+    "name": " Naszyjnik stal chirurgiczna -  BIAŁA ZAMIEĆ",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -3333,7 +3333,7 @@ category: "stal",
   },
   {
     "id": "34367",
-    "name": "NA SZCZĘŚCIE",
+    "name": " Naszyjnik stal chirurgiczna -  NA SZCZĘŚCIE",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -3357,7 +3357,7 @@ category: "stal",
   },
   {
     "id": "34372",
-    "name": "CZARNO BIAE KONICZYNY",
+    "name": " Naszyjnik stal chirurgiczna -  CZARNO BIAE KONICZYNY",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -3381,7 +3381,7 @@ category: "stal",
   },
   {
     "id": "34373",
-    "name": "BIAY BUKIET",
+    "name": " Naszyjnik stal chirurgiczna -  BIAY BUKIET",
     "price": "94.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -3405,7 +3405,7 @@ category: "stal",
   },
   {
     "id": "34374",
-    "name": "KONICZYNA RÓŻ MAT",
+    "name": " Naszyjnik stal chirurgiczna -  KONICZYNA RÓŻ MAT",
     "price": "94.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -3430,7 +3430,7 @@ category: "stal",
   
   {
     "id": "34407",
-    "name": "WIOSENNA RÓŻ",
+    "name": " Naszyjnik stal chirurgiczna -  WIOSENNA RÓŻ",
     "price": "17.84 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -3455,7 +3455,7 @@ category: "stal",
 
   {
     "id": "34408",
-    "name": "PERŁOWA KLASA",
+    "name": " Naszyjnik stal chirurgiczna -  PERŁOWA KLASA",
     "price": "78.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -3478,7 +3478,7 @@ category: "stal",
   },
   {
     "id": "34640",
-    "name": "LAWENDA",
+    "name": " Naszyjnik stal chirurgiczna -  LAWENDA",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -3495,7 +3495,7 @@ category: "stal",
                                               },
   {
     "id": "34616",
-    "name": "KONICZYNA  CZARNA 13mm",
+    "name": " Naszyjnik stal chirurgiczna -  KONICZYNA  CZARNA 13mm",
     "price": "16.61 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -3519,7 +3519,7 @@ category: "stal",
   },
   {
     "id": "34617",
-    "name": "KONICZYNA PERŁOWA 13mm",
+    "name": " Naszyjnik stal chirurgiczna -  KONICZYNA PERŁOWA 13mm",
     "price": "16.61 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -3543,7 +3543,7 @@ category: "stal",
   },
   {
     "id": "34618",
-    "name": "KONICZYNA RÓŻ 13mm",
+    "name": " Naszyjnik stal chirurgiczna -  KONICZYNA RÓŻ 13mm",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -3567,7 +3567,7 @@ category: "stal",
   },
   {
     "id": "34619",
-    "name": "KONICZYNA BIAŁA 13mm",
+    "name": " Naszyjnik stal chirurgiczna -  KONICZYNA BIAŁA 13mm",
     "price": "15.38 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -3591,7 +3591,7 @@ category: "stal",
   },
   {
     "id": "34620",
-    "name": "KONICZYNA PERŁOWA",
+    "name": " Naszyjnik stal chirurgiczna -  KONICZYNA PERŁOWA",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -3615,7 +3615,7 @@ category: "stal",
   },
   {
     "id": "34621",
-    "name": "KONICZYNA RÓŻ 9mm",
+    "name": " Naszyjnik stal chirurgiczna -  KONICZYNA RÓŻ 9mm",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -3639,7 +3639,7 @@ category: "stal",
   },
   {
     "id": "34622",
-    "name": "CZARNA KONICZYNA 9mm",
+    "name": " Naszyjnik stal chirurgiczna -  CZARNA KONICZYNA 9mm",
     "price": "74.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -3664,7 +3664,7 @@ category: "stal",
 ,
   {
     id: "33740",
-    name: "KONICZYNA MASA PERŁOWA",
+    name: "Naszyjnik stal chirurgiczna - KONICZYNA MASA PERŁOWA",
     price: "84.99 zł",
     
     "category": "stal",
@@ -3678,7 +3678,7 @@ category: "stal",
   },
 {
     id: "34087",
-    name: "RÓŻOWY KWIAT CYRKONIE",
+    name: "Naszyjnik stal chirurgiczna - RÓŻOWY KWIAT CYRKONIE",
     price: "99.99 zł",
     
     "category": "stal",
@@ -3692,7 +3692,7 @@ category: "stal",
   },
   {
     id: "34089",
-    name: "KORALIKI KWAITKI",
+    name: "Naszyjnik stal chirurgiczna - KORALIKI KWAITKI",
     price: "109.99 zł",
     
     "category": "stal",
@@ -3706,7 +3706,7 @@ category: "stal",
   },
 {
     "id": "34105",
-    "name": "KONICZYNKI",
+    "name": " Naszyjnik stal chirurgiczna -  KONICZYNKI",
     "price": "74.99 zł",
     
     "category": "stal",
@@ -3730,7 +3730,7 @@ category: "stal",
   },
   {
     id: "33111",
-    name: "RÓŻA Z LISTKAMI",
+    name: "Naszyjnik stal chirurgiczna - RÓŻA Z LISTKAMI",
     price: "69.99 zł",
     
     "category": "stal",
@@ -3744,7 +3744,7 @@ category: "stal",
   },
   {
     id: "33206",
-    name: "MIŚ KWIATOWY",
+    name: "Naszyjnik stal chirurgiczna - MIŚ KWIATOWY",
     price: "89.99 zł",
     
     "category": "stal",
@@ -3758,7 +3758,7 @@ category: "stal",
   },
   {
     id: "33900",
-    name: "SZARA KONICZYNA",
+    name: "Naszyjnik stal chirurgiczna - SZARA KONICZYNA",
     price: "64.99 zł",
     
     "category": "stal",
@@ -3771,7 +3771,7 @@ category: "stal",
     availability: "W magazynie"
   }, {
     id: "33906",
-    name: "KREMOWA KONICZYNA",
+    name: "Naszyjnik stal chirurgiczna - KREMOWA KONICZYNA",
     price: "69.99 zł",
     
     "category": "stal",
@@ -3785,7 +3785,7 @@ category: "stal",
   },
   {
     id: "34088",
-    name: "RUMIANEK",
+    name: "Naszyjnik stal chirurgiczna - RUMIANEK",
     price: "89.88 zł",
     
     "category": "stal",
@@ -3799,7 +3799,7 @@ category: "stal",
   },
  {
     "id": "34098",
-    "name": "BIAŁA KONICZYNA I GWIAZDA",
+    "name": " Naszyjnik stal chirurgiczna -  BIAŁA KONICZYNA I GWIAZDA",
     "price": "69.99zł",
     
     "category": "stal",
@@ -3823,7 +3823,7 @@ category: "stal",
   },
   {
     "id": "34099",
-    "name": "KONICZYNA BIAŁA MATOWA",
+    "name": " Naszyjnik stal chirurgiczna -  KONICZYNA BIAŁA MATOWA",
     "price": "64.99 zł",
     
     "category": "stal",
@@ -3848,7 +3848,7 @@ category: "stal",
   },
   {
     "id": "34100",
-    "name": "KONICZYNA RÓŻ MATOWA",
+    "name": " Naszyjnik stal chirurgiczna -  KONICZYNA RÓŻ MATOWA",
     "price": "64.99 zł",
     
     "category": "stal",
@@ -3873,7 +3873,7 @@ category: "stal",
   },
   {
     "id": "34101",
-    "name": "TRZY BIAŁE KONICZYNY",
+    "name": " Naszyjnik stal chirurgiczna -  TRZY BIAŁE KONICZYNY",
     "price": "69.99 zł",
     
     "category": "stal",
@@ -3898,7 +3898,7 @@ category: "stal",
   },
   {
     "id": "34102",
-    "name": "TRZY CZARNE KONICZYNY",
+    "name": " Naszyjnik stal chirurgiczna -  TRZY CZARNE KONICZYNY",
     "price": "69.99 zł",
     
     "category": "stal",
@@ -3923,7 +3923,7 @@ category: "stal",
   },
   {
     "id": "34103",
-    "name": "KONICZYNA FIOLETOWA",
+    "name": " Naszyjnik stal chirurgiczna -  KONICZYNA FIOLETOWA",
     "price": "64.99 zł",
     
     "category": "stal",
@@ -3947,7 +3947,7 @@ category: "stal",
   },
   {
     "id": "34104",
-    "name": "KONICZYNA RÓŻ",
+    "name": " Naszyjnik stal chirurgiczna -  KONICZYNA RÓŻ",
     "price": "64.99zł",
     
     "category": "stal",
@@ -3971,7 +3971,7 @@ category: "stal",
   },
     { 
     id: "30818",    
-    name: "KONICZYNKI I KRYSZTAŁKI",
+    name: "Naszyjnik stal chirurgiczna - KONICZYNKI I KRYSZTAŁKI",
     price: "89.99 zł",
     category: "stal",
     subCategory: "kwiaty",
@@ -4001,7 +4001,7 @@ category: "stal",
   },
     {
     "id": "33206",
-    "name": "KWIATOWY MIŚ",
+    "name": " Naszyjnik stal chirurgiczna -  KWIATOWY MIŚ",
     "price": "109.00 zł",
     "category": "stal",
     subCategory: "kwiaty",
@@ -4019,7 +4019,7 @@ category: "stal",
   },
  {
     "id": "34098",
-    "name": "BIAŁA KONICZYNA Z GWIAZDKĄ",
+    "name": " Naszyjnik stal chirurgiczna -  BIAŁA KONICZYNA Z GWIAZDKĄ",
     "price": "89.99 zł",
     "category": "stal",
     subCategory: "kwiaty",
@@ -4042,7 +4042,7 @@ category: "stal",
   },
  {
     id: "31438",
-    name: "RÓŻNE KONICZYNY",
+    name: "Naszyjnik stal chirurgiczna - RÓŻNE KONICZYNY",
     price: "139.99 zł",
      category: "stal",
     subCategory: "kwiaty",
@@ -4058,7 +4058,7 @@ category: "stal",
   
   {
     id: "18881",
-    name: "PODWÓJNY",
+    name: "Naszyjnik stal chirurgiczna - PODWÓJNY",
     price: "79.99 zł",
      category: "stal",
     subCategory: "pozlacane",
@@ -4075,7 +4075,7 @@ category: "stal",
 
   {
     id: "16788",
-    name: "NIEBO ",
+    name: "Naszyjnik stal chirurgiczna - NIEBO ",
     price: "89.99 zł",
      category: "stal",
     subCategory: "pozlacane",
@@ -4091,7 +4091,7 @@ category: "stal",
   },
   {
     id: "16849",
-    name: "MONARCHA",
+    name: "Naszyjnik stal chirurgiczna - MONARCHA",
     price: "99.99 zł",
      category: "stal",
     subCategory: "pozlacane",
@@ -4107,7 +4107,7 @@ category: "stal",
   },
   {
     id: "17060",
-    name: "POZNAJMY SIÉ",
+    name: "Naszyjnik stal chirurgiczna - POZNAJMY SIÉ",
     price: "94.99 zł",
      category: "stal",
     subCategory: "pozlacane",

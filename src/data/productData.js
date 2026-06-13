@@ -2,7 +2,7 @@
         // PLATEROWANE
          { 
     id: "27872",    
-    name:" ŚWIDERKI",
+    name:" Kolczyki ze stali - Świderki",
     price: "89.99 zł",
     category: "stal",
     "subCategory": "platerowane",
@@ -32,7 +32,7 @@
  
          {
     "id": "34115",
-    name:" KOKARDA Z KRYSZTAŁEM",
+    name:" Kolczyki ze stali - Kokardka z kryształem",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -54,7 +54,7 @@
  
          {
     "id": "32256",
-    name:" SPADAJĄCE KROPLE ",
+    name:" Kolczyki ze stali - Spadające krople ",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -78,7 +78,7 @@
   },
   {
     "id": "32258",
-    name:" FALOWANE PÓŁKOLA",
+    name:" Kolczyki ze stali - falowane półkola",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -103,7 +103,7 @@
  
         { 
     id: "30584",    
-    name:" ZAWIJANE ",
+    name:" Kolczyki ze stali - zawijane ",
     price: "89.99 zł",
     category: "stal",
     "subCategory": "platerowane",
@@ -133,7 +133,7 @@
   
         { 
     id: "27874",    
-    name:" SIATKA",
+    name:" Kolczyki ze stali - siatka",
     price: "89.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -160,7 +160,7 @@
   },
   { 
     id: "28468",    
-    name:" ZAKRÉCONE ",
+    name:" Kolczyki ze stali -zakręcone ",
     price: "79.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -185,7 +185,7 @@
   },
         {
     "id": "34323",
-    name:" W KSZTAŁCIE U",
+    name:" Kolczyki ze stali - w kształcie U",
     "price": "64.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -203,7 +203,7 @@
   },
   {
     "id": "34324",
-    name:" DUŻE ŁEZKI",
+    name:" Kolczyki ze stali - duże łezki",
     "price": "69,99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -221,7 +221,7 @@
   },
         {
     "id": "31780",
-    name:" KÓŁKA O ",
+    name:" Kolczyki ze stali - kółko O ",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -248,7 +248,7 @@
   },
     {
     "id": "33185",
-    name:" CYRKONIE MOTYLKI",
+    name:" Kolczyki ze stali - Cyrkonia Motylko",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -267,7 +267,7 @@
    
   {
     "id": "31781",
-    name:" STORCZYKI ",
+    name:" Kolczyki ze stali - Storczyki",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -295,7 +295,7 @@
   },
   {
     "id": "31785",
-    name:" OKRĄGŁE WISIENKI  ",
+    name:" Kolczyki ze stali - Okrągłe wisienki  ",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -323,7 +323,7 @@
   },
   { 
     id: "31268",    
-    name:" WISZĄCE PERŁY",
+    name:" Kolczyki ze stali - Wiszące perły",
     price: "89.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -353,7 +353,7 @@
   
         { 
     id: "30585",    
-    name:"  SERCA",
+    name:" Kolczyki ze stali  - Serca",
     price: "89.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -383,7 +383,7 @@
   },
   { 
     id: "30587",    
-    name:"  WISIENKI",
+    name:" Kolczyki ze stali - Wisienki ",
     price: "89.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -413,7 +413,7 @@
   },
         { 
     id: "31263",    
-    name:"  KOŁA geometryczne ",
+    name:" Kolczyki ze stali - Koła geometryczne ",
     price: "89.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -442,7 +442,7 @@
   },
          { 
     id: "31061",    
-    name:" MUSZELKI",
+    name:" Kolczyki ze stali - Muszelki",
     price: "89.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -470,7 +470,7 @@
   }, 
         { 
     id: "30814",    
-    name:" DUŻE OKRĄGŁE",
+    name:" Kolczyki ze stali - Duże okrągłe",
     price: "99.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -499,7 +499,7 @@
   
 { 
     id: "31009",    
-    name:" ŁEZKI ",
+    name:" Kolczyki ze stali - Łezki ",
     price: "89.99 zł",
     category: "stal",
     "subCategory": "platerowane",
@@ -526,7 +526,7 @@
   },
   { 
     id: "31031",    
-    name:" ŻAGLE ",
+    name:" Kolczyki ze stali - Żagle ",
     price: "89.99 zł",
     category: "stal",
     "subCategory": "platerowane",
@@ -553,7 +553,7 @@
   },
   ,{ 
     id: "30798",    
-    name:" WISZĄCE ZŁOTE",
+    name:" Kolczyki ze stali - Wiszące złote",
     price: "79.99 zł",
     category: "stal",
     "subCategory": "platerowane",
@@ -581,7 +581,7 @@
   
    {
     "id": "33989",
-    name:" KWIATY CYRKONIE ŚNIEŻNE",
+    name:" Kolczyki ze stali - Kwiaty cyrkonie śnieżne",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -603,7 +603,7 @@
   },
     { 
     id: "27862",    
-    name:" KWIATY ",
+    name:" Kolczyki ze stali - Kwiaty ",
     price: "99.99 zł", 
     category: "stal",
     "subCategory": "kwiaty",
@@ -631,7 +631,7 @@
   },
   {
     "id": "34298",
-    name:" CZTERY PERŁY",
+    name:" Kolczyki ze stali - Czarne perły",
     "price": "69.99zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -650,7 +650,7 @@
   
   { 
     id: "27871",    
-    name:" PODWÓJNE KWAITY",
+    name:" Kolczyki ze stali - Podwójne kwiaty",
     price: "99.99 zł",
      
     category: "stal",
@@ -677,7 +677,7 @@
     image3: ""
   },{ 
         id: "KST3409", 
-        name:" WISZĄCE", 
+        name:" Kolczyki ze stali - Wiszące", 
         price: "99.99 zł", 
         category: "stal",
         "subCategory": "platerowane",
@@ -699,7 +699,7 @@
     },
     { 
     id: "26317",    
-    name:" PÓŁKOLA  ",
+    name:" Kolczyki ze stali - Półkola",
     price: "99.99 zł",
         category: "stal",
         "subCategory": "platerowane",
@@ -725,7 +725,7 @@
   },
   { 
     id: "27837",    
-    name:" ZŁOTE PEREŁKI ",
+    name:" Kolczyki ze stali - Złote perłki ",
     price: "89.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -753,7 +753,7 @@
   
   { 
     id: "27847",    
-    name:" SZKIELETY MUSZELEK ",
+    name:" Kolczyki ze stali - Szkielety muszelek ",
     price: "79.91 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -780,7 +780,7 @@
   },
   { 
     id: "27852",    
-    name:" PEREŁKI ",
+    name:" Kolczyki ze stali - Perełki ",
     price: "79.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -807,7 +807,7 @@
   },
   {
     "id": "34347",
-    name:" PIĘKNE",
+    name:" Kolczyki ze stali - Piękne",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -826,7 +826,7 @@
   
   {
     "id": "34349",
-    name:" WISZĄCE Z PERŁĄ",
+    name:" Kolczyki ze stali - Wiszące z perłą",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -844,7 +844,7 @@
   },
   {
     "id": "34350",
-    name:" FAWORKI",
+    name:" Kolczyki ze stali - Faworki",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -862,7 +862,7 @@
   },
   {
     "id": "34337",
-    name:" PERŁĄ",
+    name:" Kolczyki ze stali - Perła",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -881,10 +881,10 @@
 
   {
     "id": "34339",
-    name:" SERCE DUŻE",
+    name:" Kolczyki ze stali - Serce duże",
     "price": "79.99 zł",
     "category": "stal",
-    "subCategory": "platerowane",
+    "subCategory": "serca-kokardy",
     "url": "/product/34339",
     "image": "https://hurt.ecarla.pl/203125-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-serce-duze-zapiecie-angielskie-kst3660.jpg",
     "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
@@ -900,7 +900,7 @@
 
 {
     "id": "34344",
-    name:" KRZYWE KOŁA",
+    name:" Kolczyki ze stali - Krzywe koła",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -918,7 +918,7 @@
   },
   {
     "id": "34346",
-    name:" KREMOWE",
+    name:" Kolczyki ze stali - Kremowe",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -936,7 +936,7 @@
   },
   {
     "id": "34330",
-    name:" CYRKONIE",
+    name:" Kolczyki ze stali - Cyrkonie",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -954,7 +954,7 @@
   },
   {
     "id": "34297",
-    name:" PODWÓJNE OKRĘGI",
+    name:" Kolczyki ze stali - Podwójne perełki",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -973,7 +973,7 @@
 
 { 
     id: "31216",    
-    name:" KOŁA CYRKONIE",
+    name:" Kolczyki ze stali - Kółka cyrkonie",
     price: "89.99 zł",
     category: "stal",
     "subCategory": "platerowane",
@@ -1003,7 +1003,7 @@
 
   {
     "id": "34128",
-    name:" PODWÓJNE OKRĘGI ",
+    name:" Kolczyki ze stali - Podwójne okręgi",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -1025,7 +1025,7 @@
   },
    { 
     id: "30800",    
-    name:" ŚWIDERKI",
+    name:" Kolczyki ze stali - Świderki",
     price: "79.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -1054,7 +1054,7 @@
  
   {
     "id": "34129",
-    name:" OKRĘGI BRĄZ",
+    name:" Kolczyki ze stali - Okręgi brąz",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -1076,7 +1076,7 @@
   },
   {
     "id": "34130",
-    name:" OWALE",
+    name:" Kolczyki ze stali - Owale",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -1098,7 +1098,7 @@
   },
   {
     "id": "34131",
-    name:" PERŁOWE CYRKONIE",
+    name:" Kolczyki ze stali - Perłowe cyrkonie",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -1120,7 +1120,7 @@
 },
 {
  "id": "34145",
- name:" CYRKONIE",
+ name:" Kolczyki ze stali - Cyrkoniee",
  "price": "89.99 zł",
  "category": "stal",
  "subCategory": "platerowane",
@@ -1138,7 +1138,7 @@
 },
   {
     "id": "34132",
-    name:" ZŁOTE",
+    name:" Kolczyki ze stali - Złote",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -1160,7 +1160,7 @@
   },
   {
     "id": "32836",
-    name:" DWA PÓŁKOLA ",
+    name:" Kolczyki ze stali - Dwa półkola ",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -1184,7 +1184,7 @@
   },
   {
     "id": "32838",
-    name:" PIĘKNE MUSZLE",
+    name:" Kolczyki ze stali - Piękne muszelki",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -1208,7 +1208,7 @@
   },
    { 
     id: "27411",    
-    name:" KRĘCONE MAKARONY ",
+    name:" Kolczyki ze stali - Kręcone makarony ",
     price: "79.98 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -1235,7 +1235,7 @@
   },
    {
     "id": "34119",
-    name:" PERŁOWE KWADRATY",
+    name:" Kolczyki ze stali - Perłowe kokardy",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -1257,7 +1257,7 @@
        
   {
     "id": "32850",
-    name:" KORONY ",
+    name:" Kolczyki ze stali - Korony ",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -1281,7 +1281,7 @@
   },
   {
     "id": "32852",
-    name:" MISIE",
+    name:" Kolczyki ze stali - Misie",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -1305,7 +1305,7 @@
   },
     { 
         id: "16431", 
-        name:" AŻUROWE ",
+        name:" Kolczyki ze stali - Ażurowe",
         price: "89.32 zł",
         category: "stal",
         "subCategory": "platerowane",
@@ -1325,7 +1325,7 @@
         image2: null
     },{ 
     id: "27864",    
-    name:" WISZĄCE FIGURY",
+    name:" Kolczyki ze stali - Wiszące figury",
     price: "89.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -1352,7 +1352,7 @@
   },
    {
     "id": "33990",
-    name:" MIŚ Z RÓŻOWYM SERCEM",
+    name:" Kolczyki ze stali - Miś z różowym sercem",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -1374,7 +1374,7 @@
   
   {
     "id": "34118",
-    name:" MINI KRYSZTAŁKI",
+    name:" Kolczyki ze stali - Mini kryształki",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -1396,7 +1396,7 @@
  
 { 
     id: "29454",    
-    name:" HACZYKI NA RYBY ",
+    name:" Kolczyki ze stali - Haczyki na rubach",
     price: "79.99 zł", 
     
     category: "stal",
@@ -1425,7 +1425,7 @@
   },
   { 
     id: "29455",    
-    name:" WIATRACZKI",
+    name:" Kolczyki ze stali - Wiatraczyki",
     price: "79.99 zł",
     category: "stal",
     "subCategory": "platerowane",
@@ -1453,7 +1453,7 @@
     image3: ""
   },{ 
     id: "29543",    
-    name:" W KSZTAŁCIE U",
+    name:" Kolczyki ze stali - W kształcie owala",
     price: "79.99 zł",
     category: "stal",
     "subCategory": "platerowane",
@@ -1484,7 +1484,7 @@
   
   { 
     id: "30802",    
-    name:" GWIAZDKKI WIELKANOCNE ",
+    name:" Kolczyki ze stali - Gwiazdki wielkanocne",
     price: "89.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -1513,7 +1513,7 @@
   },
     {
     "id": "31542",
-    name:" WISZĄCA CYRKONIA",
+    name:" Kolczyki ze stali - Wisząca cyrkonia",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -1542,7 +1542,7 @@
   
   {
     "id": "32842",
-    name:" GRECKIE SŁOŃCE",
+    name:" Kolczyki ze stali - Greckie słońce",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -1566,7 +1566,7 @@
   },
   {
     "id": "32845",
-    name: "MUSZELKA CYRKONIOWA",
+    name: "Kolczyki ze stali - Muszelka cyrkonia",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
@@ -1591,7 +1591,7 @@
   
 { 
     id: "9183", 
-    name: "Z ŻÓŁTYM ZLOTEM",
+    name: "Kolczyki ze stali - Z żółtym złotem",
     category: "stal",
     price: "94.99 zł", 
     "subCategory": "platerowane",
@@ -1616,7 +1616,7 @@
     
 { 
       id: "KST3325", 
-      name:" MUSZELKI ZŁOTE", 
+      name:" Kolczyki ze stali - Muszelki złote", 
       price: "99.99 zł", 
       category: "stal",
       "subCategory": "platerowane",
@@ -1639,7 +1639,7 @@
 }, 
   { 
     id: "26322",    
-    name:" SKARABEUSZ PRZY UCHU ",
+    name:" Kolczyki ze stali - Skarabeusz przy uchu",
     price: "89.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -1665,7 +1665,7 @@
     image3: ""
   },     { 
     id: "11896", 
-    name: "KOLCZYKI KLASYCZNA ",
+    name: "Kolczyki ze stali - Klasyczne",
     price: "99.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -1688,7 +1688,7 @@
 },
 { 
     id: "11722", 
-    name: "KOLCZYKI MINI",
+    name: "Kolczyki ze stali - Mini",
     price: "94.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -1712,7 +1712,7 @@
 },
 { 
     id: "11654", 
-    name: "KOLCZYKI PŁASKIE ŁEZKI",
+    name: "Kolczyki ze stali - Płaskie łezki",
     price: "99.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -1736,7 +1736,7 @@
 },
 { 
     id: "11952", 
-    name: "KOLCZYKI MINI KÓŁKA ",
+    name: "Kolczyki ze stali - Mini kółka",
     price: "94.99 zł", 
     category: "stal",
     "subCategory" : " platerowane",
@@ -1759,7 +1759,7 @@
 },
 { 
     id: "14525", 
-    name: "MINI KÓŁKA ",
+    name: "Kolczyki ze stali - Mini koła",
     price: "94.99 zł", 
     category: "stal",
     subCategory : "platerowane",
@@ -1798,7 +1798,7 @@
 // POZŁACANE
 {
     "id": "34116",
-    name:" PERŁOWE KOKARDKI",
+    name:" Kolczyki ze stali - Perłowe kokardki",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -1820,7 +1820,7 @@
   },
   {
     "id": "32849",
-    name:" ROZMYTE SERCA",
+    name:" Kolczyki ze stali - Rozmyte serca",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -1847,7 +1847,7 @@
   
  { 
     id: "27587",    
-    name:" PÓŁKSIĘŻYCE",
+    name:" Kolczyki ze stali - Półksiężyce",
     price: "89.99 zł",
         category: "stal",
         subCategory: "pozlacane",
@@ -1873,7 +1873,7 @@
   },
 {
     "id": "33882",
-    name:" KULKI ",
+    name:" Kolczyki ze stali - Kulki ",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1895,7 +1895,7 @@
   
  { 
     id: "27591",    
-    name:" KROPLE ",
+    name:" Kolczyki ze stali - Krople ",
     price: "89.99 zł",
      category: "stal",
      subCategory: "pozlacane",
@@ -1924,7 +1924,7 @@
  
  {
         id: "21985",
-        name:" Z SZAFIREM   ",
+        name:" Kolczyki ze stali - Z szyfrem   ",
         price: "89.9 zł",
         category: "stal",
         subCategory: "pozlacane",
@@ -1946,7 +1946,7 @@
     },
     {
         id: "21986",
-        name:" Z AGATEM",
+        name:" Kolczyki ze stali - Z agatem",
         price: "89.07 zł",
         category: "stal",
         subCategory: "pozlacane",
@@ -1971,7 +1971,7 @@
 
   {
     "id": "34475",
-    name:" BROŻKI ",
+    name:" Kolczyki ze stali - Brożki ",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -1990,7 +1990,7 @@
 
   {
     "id": "34477",
-    name:" WISZĄCE Z PERŁĄ",
+    name:" Kolczyki ze stali - Wiszące z perłą",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2008,7 +2008,7 @@
   },
   {
     "id": "34478",
-    name:" GEOMETRYCZNA KROPLA",
+    name:" Kolczyki ze stali - Geometryczne koła",
     "price": "89,99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2026,7 +2026,7 @@
   },
  {
     "id": "31761",
-    name:" PÓŁOWALE ",
+    name:" Kolczyki ze stali - Półowale",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2055,7 +2055,7 @@
  
 {
     "id": "33169",
-    name:" PRĘŻKOWANE KOŁA",
+    name:" Kolczyki ze stali - Prężone koła",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2073,7 +2073,7 @@
   },
   {
     "id": "33170",
-    name:" POTRÓJNE KOŁA",
+    name:" Kolczyki ze stali - Portójne koła",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2091,7 +2091,7 @@
   },
   {
     "id": "33171",
-    name:" PODWÓJNY OWAL",
+    name:" Kolczyki ze stali - Podwójny owal",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2109,7 +2109,7 @@
   },
   {
     "id": "33172",
-    name:" OWALE",
+    name:" Kolczyki ze stali - Owale",
     "price": "89.99  zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2127,7 +2127,7 @@
   },
   {
     "id": "33173",
-    name:" DEKORACYJNE",
+    name:" Kolczyki ze stali - Dekoracyjne",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2145,7 +2145,7 @@
   },
     {
     "id": "33193",
-    name:" PANTERKA",
+    name:" Kolczyki ze stali - Panterka",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2163,7 +2163,7 @@
   },
 { 
     id: "26230",    
-    name:" KŁY ",
+    name:" Kolczyki ze stali - Kły ",
     price: "89.99 zł", 
     category: "stal",
     subCategory: "pozlacane",
@@ -2190,7 +2190,7 @@
 
   {
     "id": "33162",
-    name:" WYRAZISTE POZŁACANE",
+    name:" Kolczyki ze stali - Wyraziste pozłacane",
     "price": "89.99 zł",
 
     "category": "stal",
@@ -2209,7 +2209,7 @@
   },
   {
     "id": "33163",
-    name:" DEKORACYJNE RÓŻ",
+    name:" Kolczyki ze stali - Dekoracyjne róż",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2227,7 +2227,7 @@
   },
   {
     "id": "33164",
-    name:" DEKORACYJNE CZARNE",
+    name:" Kolczyki ze stali - Dekoracyjne czarne",
     "price": "109.99zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2245,7 +2245,7 @@
   },
    {
     "id": "33147",
-    name:" MOTYLKI",
+    name:" Kolczyki ze stali - Motylki",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2263,7 +2263,7 @@
   },
   {
     "id": "33165",
-    name:" DEKORACYJNE ECRU",
+    name:" Kolczyki ze stali - Dekoracyjne ekru",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2283,7 +2283,7 @@
 
   {
     "id": "33156",
-    name:" CYRKONIE PEREŁKI",
+    name:" Kolczyki ze stali - Cyrkonie perełki",
     "price": "109.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2301,7 +2301,7 @@
   },
   {
     "id": "33159",
-    name:" CYRKONIE PERŁY",
+    name:" Kolczyki ze stali - Cyrkonie perły",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2319,7 +2319,7 @@
   },
   {
     "id": "34481",
-    name:" DUŻA KROPLA",
+    name:" Kolczyki ze stali - Duża kropla",
     "price": "89,99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2337,7 +2337,7 @@
   },
   {
     "id": "34482",
-    name:" KOŁA PRZEPLATANE",
+    name:" Kolczyki ze stali - Koła przeplatane",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2356,7 +2356,7 @@
   
   {
     "id": "34485",
-    name:" KULKI",
+    name:" Kolczyki ze stali - Kulki",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2375,7 +2375,7 @@
 
   {
     "id": "34487",
-    name:" OKRĄGŁE KWADRATY",
+    name:" Kolczyki ze stali - Okrągłe kwadraty",
     "price": "79.99 zł",
     "subCategory": "pozlacane",
     "category": "stal",
@@ -2393,7 +2393,7 @@
   },
   {
     "id": "33174",
-    name:" OKRĄGŁE ",
+    name:" Kolczyki ze stali - Okrągłe ",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2412,7 +2412,7 @@
 
   {
     "id": "33195",
-    name:" WISZĄCE LINKI",
+    name:" Kolczyki ze stali - Wiszące linki",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2433,7 +2433,7 @@
 
   {
     "id": "33204",
-    name:" PEREŁKI WISZĄCE LINKI ",
+    name:" Kolczyki ze stali - Wiszące linki ",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2451,7 +2451,7 @@
   },
            { 
         id: "19067", 
-        name:" MOTYLKI NIEBIESKIE KAMIENIE",
+        name:" Kolczyki ze stali - Motyli niebieskie kamyki",
         price: "89.87 zł", 
         category: "stal",
         subCategory: "pozlacane",
@@ -2476,7 +2476,7 @@
     
   {
     "id": "34325",
-    name:" KROPLE",
+    name:" Kolczyki ze stali - Krople",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2494,7 +2494,7 @@
   },
   {
     "id": "34326",
-    name:" PAPRYCZKI",
+    name:" Kolczyki ze stali - Papryczki",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2512,7 +2512,7 @@
   },
   {
     "id": "34327",
-    name:" KULE",
+    name:" Kolczyki ze stali - Kule",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2530,7 +2530,7 @@
   },
   {
     "id": "34328",
-    name:"  KROPLE NOWOCZESNE",
+    name:" Kolczyki ze stali  - Krople nowoczesne",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2548,7 +2548,7 @@
   },
   {
     "id": "34329",
-    name:" NOWOCZESNE",
+    name:" Kolczyki ze stali - Nowoczesne",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2566,7 +2566,7 @@
   },
       {
     "id": "34489",
-    name:" HACZYKI",
+    name:" Kolczyki ze stali - Haczyki",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2583,7 +2583,7 @@
     "availability": "W magazynie"
   },  {
     "id": "34480",
-    name:" WISZĄCE KROPELKI",
+    name:" Kolczyki ze stali - Wiszące kropelki",
     "price": "94.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2602,7 +2602,7 @@
   
   {
     "id": "33751",
-    name:" WISZĄCE BLASZKI ",
+    name:" Kolczyki ze stali - Wiszące blaszki ",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2625,7 +2625,7 @@
 
   {
     "id": "33753",
-    name:" EFEKTOWNE WISZĄCE PEREŁKI",
+    name:" Kolczyki ze stali - Efektowne wiszące perłki",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2647,7 +2647,7 @@
   },
   {
     "id": "34138",
-    name:" PLECIONE KÓŁKA",
+    name:" Kolczyki ze stali - Plecione kółka",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2669,7 +2669,7 @@
   },
   {
     "id": "34139",
-    name:" PŁASKIE KOŁA",
+    name:" Kolczyki ze stali - Płaskie koła",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2691,7 +2691,7 @@
   },
   {
     "id": "34140",
-    name:" PĄCZKI Z CYRKONIĄ",
+    name:" Kolczyki ze stali - Pączki z cyrkonią",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2713,7 +2713,7 @@
   },
   {
     "id": "34141",
-    name:" OKRĘGI Z CYRKONIAMI",
+    name:" Kolczyki ze stali - Okręgi z cyrkoniami",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2735,7 +2735,7 @@
   },
   {
     "id": "34142",
-    name:" KROPLE Z KRYSZTAŁKAMI",
+    name:" Kolczyki ze stali - Krople z kryształkami",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2757,7 +2757,7 @@
   },
   {
     "id": "34143",
-    name:" BYCZE ",
+    name:" Kolczyki ze stali - Bycze ",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2780,7 +2780,7 @@
   
   {
     "id": "34144",
-    name:" 2,1 cm, KROPLE",
+    name:" Kolczyki ze stali - Krople 2,1 cm",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2802,7 +2802,7 @@
   },
   {
     "id": "34152",
-    name:" OKRĘGI PEREŁKOWE 4cm ",
+    name:" Kolczyki ze stali - Okręgi perłowe 4cm ",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2820,7 +2820,7 @@
   },
   {
     "id": "34153",
-    name:" OKRĘGI PEREŁKOWE 3,5 cm",
+    name:" Kolczyki ze stali - Okręgi perłowe 3,5 cm",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2838,7 +2838,7 @@
   },
   {
     "id": "34154",
-    name:" OWALE Z CYRKONIAMI",
+    name:" Kolczyki ze stali - Okręgi z cyrkoniami",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2857,7 +2857,7 @@
   
   {
     "id": "34354",
-    name:" CYRKONIOWE ŁEZKI",
+    name:" Kolczyki ze stali - Cyrkoniowe łezki",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2876,7 +2876,7 @@
 
   {
     "id": "34479",
-    name:" WISZĄCE KORALIKI",
+    name:" Kolczyki ze stali - Wiszące kokardki",
     "price": "94,99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2894,7 +2894,7 @@
   },
   {
     "id": "34121",
-    name:" KŁY Z PERŁĄ",
+    name:" Kolczyki ze stali - Kły z perłą",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2916,7 +2916,7 @@
 ,
   {
     "id": "34133",
-    name:" KRYSZTAŁKI",
+    name:" Kolczyki ze stali - Kryształki",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2941,7 +2941,7 @@
 
   {
     "id": "34137",
-    name:" KOŁA 3,5 cm",
+    name:" Kolczyki ze stali - Koła 3,5 cm",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2965,7 +2965,7 @@
 
   {
     "id": "33462",
-    name:" MUSZELKI Z PERŁAMI ",
+    name:" Kolczyki ze stali - Muszelki z perełkami",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -2984,7 +2984,7 @@
 
   {
     "id": "33465",
-    name:" ŁAŃCUSZKI Z PERŁĄ ",
+    name:" Kolczyki ze stali - Łańcuszki z perłą ",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3002,7 +3002,7 @@
   },
   {
     "id": "33466",
-    name:" TRZY PÓŁKOLA ",
+    name:" Kolczyki ze stali - Trzy półkola ",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3020,7 +3020,7 @@
   },
   {
     "id": "33472",
-    name:" PIĘCIOKĄTY  ",
+    name:" Kolczyki ze stali - Pięciokąty  ",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3042,7 +3042,7 @@
   
   {
     "id": "33750",
-    name:" CYRKONIE",
+    name:" Kolczyki ze stali - Cyrkonie",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3067,7 +3067,7 @@
   
   {
     "id": "33878",
-    name:" WIEŻE",
+    name:" Kolczyki ze stali - Wieże",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3089,7 +3089,7 @@
   },
 {
         id: "22318",
-        name:" PZY UCHU",
+        name:" Kolczyki ze stali i Przy uchu",
         price: "79.99 zł",
         category: "stal",
         subCategory: "pozlacane",
@@ -3114,7 +3114,7 @@
     }, 
     { 
         id: "24143",    
-    name:" TORBY ",
+    name:" Kolczyki ze stali - Torby",
     price: "99.99 zł", 
     category: "stal",
     subCategory: "pozlacane",
@@ -3138,7 +3138,7 @@
   },
  ,{ 
     id: "25783",    
-    name:" KRĘCONE ",
+    name:" Kolczyki ze stali - Kręcone ",
     price: "99.99 zł", 
     category: "stal",
     subCategory: "pozlacane",
@@ -3164,7 +3164,7 @@
 },
 { 
     id: "31217",    
-    name:" ZAWIJANE CYRKONIE ",
+    name:" Kolczyki ze stali - Zawijane cyrkonie ",
     price: "79.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -3192,7 +3192,7 @@
   },
   { 
         id: "16793", 
-        name:" DWA ŚWIDERKI",
+        name:" Kolczyki ze stali - Dwa świderki",
         price: "99.93 zł",
         category: "stal",
         "subCategory": "pozlacane",
@@ -3215,7 +3215,7 @@
       
         { 
         id: "17107", 
-        name:" MINIGWIAZDKI",
+        name:" Kolczyki ze stali - Minigwiazdki",
         price: "89.30 zł", 
         category: "stal",
         subCategory: "pozlacane",
@@ -3237,7 +3237,7 @@
      
      { 
         id: "17377", 
-        name:" PIĘKNE",
+        name:" Kolczyki ze stali - Piękne",
         price: "89.99 zł", 
         category: "stal",
         subCategory: "pozlacane",
@@ -3261,7 +3261,7 @@
     },
       { 
         id: "18848", 
-        name:" SKRZYDŁA ASTERIXA",
+        name:" Kolczyki ze stali - Skrzydła Aasterixa",
         price: "89.00 zł", 
         category: "stal",
         subCategory: "pozlacane",
@@ -3284,7 +3284,7 @@
     },
      { 
         id: "18851", 
-        name:" KAJDANKI ",
+        name:" Kolczyki ze stali - Kajdanki ",
         price: "84.99 zł", 
         category: "stal",
         subCategory: "pozlacane",
@@ -3307,7 +3307,7 @@
     },
         { 
         id: "18868", 
-        name:" KROPELKI ",
+        name:" Kolczyki ze stali - Kropelki ",
         price: "84.99 zł", 
         category: "stal",
         subCategory: "pozlacane",
@@ -3330,7 +3330,7 @@
     },
     { 
         id: "19772", 
-        name:" SYMETRYCZNE KOŁA ",
+        name:" Kolczyki ze stali - Symetryczne koła",
         price: "89.99 zł", 
         category: "stal",
         subCategory: "pozlacane",
@@ -3354,7 +3354,7 @@
     },
      {
     "id": "23769",
-    name:" SZKIELET MUSZELKI",
+    name:" Kolczyki ze stali - Szkielety muszelki",
     "price": "79.46 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3375,7 +3375,7 @@
   },
   { 
     id: "6012", 
-    name: "KOLCZYKI MINI SŁONIE ",
+    name: "Kolczyki ze stali - Mini słońce",
     category: "stal",
     subCategory : "pozlacane",
     price: "99.99 zł", 
@@ -3396,7 +3396,7 @@
     image2: "https://hurt.ecarla.pl/67292-large_default/kolczyki-stal-chirurgiczna-kst618.jpg"
 },{ 
     id: "28679",    
-    name:" PEŁNIA KSIĘŻYCA ",
+    name:" Kolczyki ze stali - Pełnia księżyca ",
     price: "79.96 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -3423,7 +3423,7 @@
   },
   {
     "id": "24110",
-    name:" MAKARONY",
+    name:" Kolczyki ze stali - Makarony",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3450,7 +3450,7 @@
   },
   { 
     id: "31224",    
-    name: "WISIENKI PEREŁKI",
+    name: "Kolczyki ze stali - Wisienki perełki",
     price: "79.99 zł",
     category: "stal",
     subCategory: "pozlacane",
@@ -3479,7 +3479,7 @@
     image3: "https://hurt.ecarla.pl/184261-large_default/kolczyki-wisienki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-cyrkonie-sztyft-srebro-s925-perly-kst3334.jpg"
   },{
     "id": "31541",
-    name:" GRUBY MAKARON",
+    name:" Kolczyki ze stali - Gruby makaron",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3507,7 +3507,7 @@
   },
    {
     "id": "23716",
-    name:" WISZĄCE SKRZYDŁA ",
+    name:" Kolczyki ze stali - Wiszące skrzydła ",
     "price": "79.88 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3532,7 +3532,7 @@
   },
   {
     "id": "23719",
-    name:" LATAJĄCE WAŻKI ",
+    name:" Kolczyki ze stali - Latające ważki ",
     "price": "79.66 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3556,7 +3556,7 @@
   },
   {
     "id": "23722",
-    name:" ŚWIDERKOWY OWAL",
+    name:" Kolczyki ze stali - Świderkowy owal",
     "price": "79.78 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3579,7 +3579,7 @@
     "image3": "https://hurt.ecarla.pl/143829-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2926.jpg"
   },{ 
         id: "19786", 
-        name:" WISZĄCA GWIAZDKA",
+        name:" Kolczyki ze stali - Wiszące gwiazdki",
 
         price: "89.65 zł", 
         category: "stal",
@@ -3603,7 +3603,7 @@
         image3: null
     },  {
     "id": "23741",
-    name:" ZIELONE WIDMO ",
+    name:" Kolczyki ze stali - Zielono widmo",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3627,7 +3627,7 @@
   },
  {
         id: "22314",
-        name: "KÓŁKA MINI CYRKONIE",
+        name: "Kolczyki ze stali - Kółko mini cyrkonie",
         price: "79.24 zł",
         category: "stal",
         subCategory: "pozlacane",
@@ -3651,7 +3651,7 @@
     },
      {
         id: "22308",
-        name:" SKRZYDŁA Z CZARNYM AKCENTEM",
+        name:" Kolczyki ze stali - Skrzydła czarne",
         price: "79.55 zł",
         category: "stal",
         subCategory: "pozlacane",
@@ -3675,7 +3675,7 @@
         image3: null
     },{
         id: "22183",
-        name:" KÓŁKO I OZDOBY ",
+        name:" Kolczyki ze stali - Kółko i ozdoby",
         price: "109.23 zł",
         category: "stal",
         subCategory: "pozlacane",
@@ -3699,7 +3699,7 @@
     },
     {
         id: "22197",
-        name:" KWADRATKI WISZĄCE ",
+        name:" Kolczyki ze stali - Wiszące kwadraty",
         price: "104.99 zł",
         category: "stal",
         subCategory: "pozlacane",
@@ -3723,7 +3723,7 @@
     },
     {
         id: "22307",
-        name:" KÓŁKA Z SIATKĄ",
+        name:" Kolczyki ze stali - Kółka z siatką",
         price: "79.96 zł",
         category: "stal",
         subCategory: "pozlacane",
@@ -3748,7 +3748,7 @@
    
     { 
     id: "H_34487", // Oryginalne ID z hurtowni (zostaje do zamówień!)
-    name: "OKRĄGŁE KWADRAT",
+    name: "Kolczyki ze stali - Okrągłe kwadraty",
     category: "stal",
     "subCategory": "pozlacane",
     price: "99.99 zł",
@@ -3775,14 +3775,14 @@
 
  { 
         id: "19010", 
-        name: "Kolczyk NAUSZNICA",
+        name: "Kolczyki ze stali - Nausznica",
         price: "109.6 zł", 
         category: "stal",
         subCategory: "pozlacane",
         url: "/product/19010",
         image: "https://hurt.ecarla.pl/124527-large_default/-kolczyk-nausznica-ze-stali-szlachetnej-pozlacanej-kst2280-1-sztuka.jpg",
         description: [
-            "KOLCZYKI ZE STALI CHIRURGICZNEJ PLATEROWANEJ 14 KARATOWYM ZŁOTEM ",
+            "Kolczyki ze stali CHIRURGICZNEJ PLATEROWANEJ 14 KARATOWYM ZŁOTEM ",
             "Eleganckie i stylowe kolczyki. WYMIARY:",
             "wymiary produktu:",
             "element 1: 2.2 cm x 1 cm",
@@ -3802,7 +3802,7 @@
 
     { 
     id: "26039",    
-    name:" RÓŻOWY AKCENT ",
+    name:" Kolczyki ze stali - Różowy akcent",
     price: "79.99 zł", 
     category: "stal",
     subCategory: "pozlacane",
@@ -3828,7 +3828,7 @@
   },
   {
     "id": "32252",
-    name:" ŚNIEŻKI W OKRĘGU",
+    name:" Kolczyki ze stali - Śnieżki w okręgu",
     "price": "69.99 zł",
     "category": "stal",
     
@@ -3854,7 +3854,7 @@
 
   {
     "id": "32275",
-    name:" FIGURKI ",
+    name:" Kolczyki ze stali - Figurki",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3878,7 +3878,7 @@
   },
   {
     "id": "32276",
-    name:" KROPLA PERŁA WISZĄCA",
+    name:" Kolczyki ze stali - Wisząca kropla perła",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3902,7 +3902,7 @@
   },
 {
     "id": "23745",
-    name:" CZARNA PERŁA",
+    name:" Kolczyki ze stali - Czarna perła",
     "price": "74.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3926,7 +3926,7 @@
   },
   {
     "id": "23747",
-    name:" GWIAZDKA RÓŻOWA CYRKONIA",
+    name:" Kolczyki ze stali - Gwiazdka różowa cyrkonia",
     "price": "79.93 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3948,7 +3948,7 @@
   
   {
     "id": "23765",
-    name:" MINI WAŻKA ",
+    name:" Kolczyki ze stali - Mini ważka",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
@@ -3973,7 +3973,7 @@
   },
    { 
     id: "26233",    
-    name:" SKRZYDŁA ANIOŁA ",
+    name:" Kolczyki ze stali - Skrzydła anioła",
     price: "79.99 zł", 
     category: "stal",
     subCategory: "pozlacane",
@@ -3999,7 +3999,7 @@
   },
  {
         id: "21201",
-        name:" WISZĄCE SKRZYDEŁKA",
+        name:" Kolczyki ze stali - Wiszące skrzydełka",
         price: "79.9 zł",
         category: "stal",
         subCategory: "pozlacane",
@@ -4022,7 +4022,7 @@
     },
     {
         id: "20591",
-        name:" CZARNE PAZURY ",
+        name:" Kolczyki ze stali - Czarne pazury",
         price: "89.9 zł",
         category: "stal",
         subCategory: "pozlacane",
@@ -4048,7 +4048,7 @@
  
     {
         id: "21199",
-        name:" KÓŁKA KWIATKI ",
+        name:" Kolczyki ze stali - Kółka kwiatki",
         price: "89.9 zł",
         category: "stal",
         subCategory: "pozlacane",
@@ -4068,7 +4068,7 @@
     },
     {
         id: "20385",
-        name:" PÓŁ MOTYLKI ",
+        name:" Kolczyki ze stali - Pół motylki",
         price: "79.88 zł",
         category: "stal",
         subCategory: "pozlacane",
@@ -4092,7 +4092,7 @@
     },
     { 
         id: "19759", 
-        name:" MOTYLE W KÓŁKU ",
+        name:" Kolczyki ze stali - Motylki w kółku",
         price: "89.96 zł", 
         category: "stal",
         subCategory: "pozlacane",
@@ -4122,7 +4122,7 @@
 
 { 
     id: "4978", 
-    name: "ŚNIEŻKA",
+    name: "Kolczyki ze stali - Śnieżka",
     category: "stal",
     url: "/product/4978",
     "subCategory": "srebrne",
@@ -4146,7 +4146,7 @@
 },
       { 
         id: "16628", 
-        name:" RENIFER ",
+        name:" Kolczyki ze stali - Renifer",
         price: "99.96 zł", 
         category: "stal",
         subCategory : "srebrne",
@@ -4169,7 +4169,7 @@
 
 { 
     id: "12920", 
-    name:" GWIAZDY Z NIEBA",
+    name:" Kolczyki ze stali - Gwiazdy z nieba",
     price: "94.99 zł", 
     category: "stal",
     "subCategory":"srebrne",
@@ -4192,7 +4192,7 @@
 },
 { 
     id: "12040", 
-    name:" PŁATEK ŚNIEGU",
+    name:" Kolczyki ze stali - Płatki śniegu",
     price: "94.99 zł", 
     category: "stal",
     "subCategory":"srebrne",
@@ -4219,7 +4219,7 @@
 // WYKWINTNE
  {
     "id": "33177",
-    name:" LUKSUSOWY BLASK ",
+    name:" Kolczyki ze stali - Luksusowy blask",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4238,7 +4238,7 @@
  
 { 
     id: "30903",    
-    name:" CZARNY WISZĄCY KRYSZTAŁ GÓRSKI",
+    name:" Kolczyki ze stali - Wiszący czarny kryształ górski",
     price: "79.99 zł", 
     category: "stal",
     "subCategory": "wykwintne",
@@ -4265,7 +4265,7 @@
 
   { 
     id: "30900",    
-    name:" KRYSZTAŁ GÓRSKI GRUBA BIEL",
+    name:" Kolczyki ze stali - Wiszące kryształ górski biel",
     price: "69.99 zł",
         category: "stal",
         "subCategory": "wykwintne",
@@ -4290,7 +4290,7 @@
   },
   { 
     id: "30901",    
-    name:" KRYSZTAŁ GÓRSKI KREM ",
+    name:" Kolczyki ze stali - Wiszące kryształ górski biel",
     price: "69.99 zł",
         category: "stal",
   "subCategory": "wykwintne",
@@ -4315,7 +4315,7 @@
   },
   { 
     id: "30902",    
-    name:" KRYSZTAŁ GÓRSKI BORDO",
+    name:" Kolczyki ze stali - Wiszące kryształ górski bordo",
     price: "69.99 zł",
     category: "stal",
     "subCategory": "wykwintne",
@@ -4341,7 +4341,7 @@
   },
   {
     "id": "31543",
-    name:" FALE",
+    name:" Kolczyki ze stali - Fale",
     "price": "99.99 zł",
      "category" : "stal",
      "subCategory": "wykwintne",
@@ -4370,7 +4370,7 @@
   },
   { 
     id: "30896",    
-    name:" KRYSZTAŁ GÓRSKI FIOLET",
+    name:" Kolczyki ze stali - Wiszące kryształ górski fiolet",
     price: "69.99 zł", 
     category: "stal",
     "subCategory": "wykwintne",
@@ -4395,7 +4395,7 @@
   },
   { 
     id: "30897",    
-    name:" KRYSZTAŁ GÓRSKI",
+    name:" Kolczyki ze stali - Wiszące kryształ górski",
     price: "69.99 zł",
         category: "stal",
         "subCategory": "wykwintne",
@@ -4423,7 +4423,7 @@
   },
   { 
     id: "30898",    
-    name:" KRYSZTAŁ GÓRSKI BIEL",
+    name:" Kolczyki ze stali - Wiszące kryształ górski biel",
     price: "69.99 zł",
         category: "stal",
            "subCategory": "wykwintne",
@@ -4449,7 +4449,7 @@
   },
   { 
     id: "30899",    
-    name:" KRYSZTAŁ GÓRSKI CZERŃ",
+    name:" Kolczyki ze stali - Wiszące kryształ górski ",
     price: "69.99 zł",
             category: "stal",
          "subCategory": "wykwintne",
@@ -4475,7 +4475,7 @@
 
 {
     "id": "33179",
-    name:" CYRKONIE NIEBIESKI KAMYK",
+    name:" Kolczyki ze stali - Cyrkonie niebieski kamyk",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4493,7 +4493,7 @@
   },
   {
     "id": "33181",
-    name:" CYRKONIE NIEBIESKI",
+    name:" Kolczyki ze stali - Cyrkonie niebieskie",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4512,7 +4512,7 @@
 
 {
     "id": "32386",
-    name:" CYRKONIE",
+    name:" Kolczyki ze stali - Cyrkonie",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4536,7 +4536,7 @@
   },
   {
     "id": "32390",
-    name:" ZIELONE Z CYRKONIAMI",
+    name:" Kolczyki ze stali - Zielone z cyrkoniami",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4560,7 +4560,7 @@
   },
     {
     "id": "33463",
-    name:" WISZĄCE GWIAZDKI ",
+    name:" Kolczyki ze stali - Wiszące gwiazdki",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4578,7 +4578,7 @@
   },
     {
     "id": "34355",
-    name:" KÓŁKA CYRKONIE ",
+    name:" Kolczyki ze stali - Kółka cyrkonie",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4597,7 +4597,7 @@
   
   {
     "id": "34334",
-    name:" KOŁA CYRKONIE PERŁA ",
+    name:" Kolczyki ze stali - Kółka cyrkonie perła",
     "price": "69,99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4615,7 +4615,7 @@
   },
   {
     "id": "33874",
-    name:" MASA PERŁOWA ",
+    name:" Kolczyki ze stali - Masa perłowa",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4638,7 +4638,7 @@
   },
 {
     "id": "34134",
-    name:" DWA KWADRATY ",
+    name:" Kolczyki ze stali - Dwa kwadraty",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4660,7 +4660,7 @@
   },
    {
     "id": "34332",
-    name:" WISZĄCE CYRKONIE",
+    name:" Kolczyki ze stali - Wiszące cyrkonie",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4679,7 +4679,7 @@
 
   {
     "id": "34336",
-    name:" WIEŻE",
+    name:" Kolczyki ze stali - Wieże",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4697,7 +4697,7 @@
   },
   {
     "id": "34352",
-    name:" DELIKATNE Z CYRKONIAMI ",
+    name:" Kolczyki ze stali - Delikatne z cyrkoniami ",
     "price": "59.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4715,7 +4715,7 @@
   },   
   {
     "id": "34299",
-    name:" FIOLETOWA CYRKONIA",
+    name:" Kolczyki ze stali - Fioletowa cyrkonia",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4733,7 +4733,7 @@
   },
   {
     "id": "34120",
-    name:" CYRKONIOWY KWADRAT",
+    name:" Kolczyki ze stali - Cyrkoniowy kwadrat",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4753,10 +4753,10 @@
     "availability": "W magazynie"
   },  { 
     id: "29547",    
-    name:" piesek, sztyft S925, cyrkonie ",
+    name:"Kolczyki ze stali - Pieski ",
     price: "79.99 zł",
     category: "stal",
-    subCategory : "wykwintne",
+    subCategory : "srebro",
     url: "/product/29547", 
     image: "https://hurt.ecarla.pl/173541-large_default/kolczyki-ze-stali-szlachetnej-piesek-sztyft-s925-cyrkonie-kst3302.jpg",
     description: [
@@ -4782,7 +4782,7 @@
   },
   {
         id: "22036",
-        name:" KOLOROWE CIENKIE",
+        name:" Kolczyki ze stali - Kolorowe cienki",
         price: "89.99 zł",
         category: "stal",
         subCategory: "wykwintne",
@@ -4804,7 +4804,7 @@
     },
     {
         id: "22039",
-        name:" ZIELONE CIENKIE",
+        name:" Kolczyki ze stali - Zielone cienkie",
         price: "89.99 zł",
         category: "stal",
         subCategory: "wykwintne",
@@ -4826,7 +4826,7 @@
     },
       { 
         id: "19086", 
-        name:" KOLOROWA CYRKONIA ",
+        name:" Kolczyki ze stali - Kolarowe cyrkonie ",
         price: "89 zł", 
         category: "stal",
         subCategory: "wykwintne",
@@ -4850,7 +4850,7 @@
     },
     { 
     id: "3999", 
-    name: "KOLCZYKI STAL CHIRURGICZNA ",
+    name: "Kolczyki ze stali - piękne",
     category: "stal",
     price: "99.99 zł", 
     "subCategory": "wykwintne",
@@ -4876,7 +4876,7 @@
 
 { 
     id: "16068", 
-    name: " CZARNE KRYSZTAŁKI ",
+    name: "Kolczyki ze stali  - Czarne kryształki ",
     price: "94.99 zł", 
     category: "stal",
     "subCategory": "wykwintne",
@@ -4899,7 +4899,7 @@
 },
 {
     "id": "23756",
-    name:" ZIELONE GWIAZDKI",
+    name:" Kolczyki ze stali - Zielone gwiazdki",
     "price": "69.00 zł",
     "category": "stal",
     "subCategory": "wykwinte",
@@ -4921,7 +4921,7 @@
   
   {
     "id": "24018",
-    name:" CYRKONIOWE ROGI",
+    name:" Kolczyki ze stali - Cyrkonie rogi",
     "price": "99.76 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4947,7 +4947,7 @@
  
   {
     "id": "24108",
-    name:" CIENKIE KOŁA WISZĄCE",
+    name:" Kolczyki ze stali - Wiszące cienkie koła",
     "price": "89.96 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -4973,7 +4973,7 @@
   },
 { 
     id: "27624",    
-    name:" WISZĄCY SKARABEUSZ ",
+    name:" Kolczyki ze stali - Wiszące skarabeusz ",
     price: "89.99 zł",
             category: "stal",
             subCategory: "wykwintne",
@@ -4998,7 +4998,7 @@
   },
   { 
     id: "27625",    
-    name:" SKARABEUSZ ",
+    name:" Kolczyki ze stali - Skarabeusz ",
     price: "89.99 zł",
     category: "stal",
     subCategory: "wykwintne",
@@ -5023,7 +5023,7 @@
   },
   { 
     id: "27626",    
-    name:" KOŁA ZE SKARABEUSZEM ",
+    name:" Kolczyki ze stali - Koła ze skarabeuszem ",
     price: "89.83 zł",
     category: "stal",
     subCategory: "wykwintne",
@@ -5047,7 +5047,7 @@
   },
   {
         id: "22046",
-        name:" CZARNA PERŁA ",
+        name:" Kolczyki ze stali - Czarna perła",
         price: "89.99 zł",
         category: "stal",
         subCategory: "wykwintne",
@@ -5068,7 +5068,7 @@
     },
    { 
     id: "26028",    
-    name:" WISZĄCE KWADRATY CYRKONIOWE ",
+    name:" Kolczyki ze stali - Wiszące kwadraty z cyrkonia",
     price: "79.9 zł", 
     category: "stal",
     subCategory: "wykwintne",
@@ -5093,7 +5093,7 @@
   },
   { 
     id: "26033",    
-    name:" WISZĄCE MISIE CZARNE ",
+    name:" Kolczyki ze stali - Wiszące misie czarne",
     price: "79.99 zł", 
     category: "stal",
     subCategory: "wykwintne",
@@ -5117,7 +5117,7 @@
   },
   { 
     id: "26301",    
-    name:" CYRKONIOWE GWIAZDKI",
+    name:" Kolczyki ze stali - Cyrkoniowe gwiazdki",
     price: "69.75 zł", 
     category: "stal",
     subCategory: "wykwintne",
@@ -5143,7 +5143,7 @@
   },
    { 
     id: "26318",    
-    name:" WISZĄCY CYRKONIE ",
+    name:" Kolczyki ze stali - Wiszące cyrkonia",
     price: "79.99 zł", 
     category: "stal",
     "subCategory": "wykwintne",
@@ -5169,7 +5169,7 @@
   },
     {
     "id": "32253",
-    name:" CYRKONIOWA PIŁKA",
+    name:" Kolczyki ze stali - Piłka",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -5192,7 +5192,7 @@
     "image3": null
   },  {
     "id": "33144",
-    name:" CYRKONIA PRZY UCHU",
+    name:" Kolczyki ze stali - Cyrkonia przy uchu",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -5210,7 +5210,7 @@
   },
   {
     "id": "33153",
-    name:" CYRKONIOWY PĄCZEK ",
+    name:" Kolczyki ze stali - Cyrkonia pączek",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -5230,7 +5230,7 @@
   
 { 
       id: "26754",    
-      name:" WISZĄCE CYRKONIE",
+      name:" Kolczyki ze stali - Wisząca cyrkonia",
       price: "79.99zł", 
       category: "stal",
       subCategory: "wykwintne",
@@ -5256,7 +5256,7 @@
     },  
        {
         id: "21974",
-        name:" OKRĄG CYRKONI ",
+        name:" Kolczyki ze stali - Okrąg cyrkoni",
         price: "89.30 zł",
         category: "stal",
         subCategory: "wykwintne",
@@ -5280,14 +5280,14 @@
     
        { 
         id: "18996", 
-        name:" KRZYŻYK",
+        name:" Kolczyki ze stali - Krzyżyk",
         price: "89.84 zł", 
         category: "stal",
         subCategory: "wykwintne",
         url: "/product/18996",
         image: "https://hurt.ecarla.pl/124493-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2279.jpg",
         description: [
-            "KOLCZYKI ZE STALI CHIRURGICZNEJ PLATEROWANEJ 14 KARATOWYM ZŁOTEM ",
+            "Kolczyki ze stali CHIRURGICZNEJ PLATEROWANEJ 14 KARATOWYM ZŁOTEM ",
             "Eleganckie i stylowe kolczyki. WYMIARY:",
             "wymiary produktu: 1 cm x 0,5 cm",
             "rodzaj zapięcia: angielskie",
@@ -5304,7 +5304,7 @@
     },
         {
         id: "21219",
-        name:" SKRZYDEŁKA",
+        name:" Kolczyki ze stali - Skrzydełka",
         price: "89.82 zł",
         category: "stal",
         subCategory: "wykwintne",
@@ -5326,7 +5326,7 @@
         image3: null
     }, {
         id: "21207",
-        name:" PAPRYCZKA CHILLI",
+        name:" Kolczyki ze stali - Papryczki chili",
         price: "79.53 zł",
         category: "stal",
         subCategory: "wykwintne",
@@ -5349,7 +5349,7 @@
     },
      { 
         id: "19894", 
-        name:" DZWONKI I KÓŁKA ",
+        name:" Kolczyki ze stali - Dzwonki i kółka",
         price: "89.99 zł", 
         category: "stal",
         subCategory: "wykwintne",
@@ -5373,7 +5373,7 @@
     },
       {
     "id": "31789",
-    name:" WISZĄCE TRUSKAWKI",
+    name:" Kolczyki ze stali - Wiszące truskawki",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
@@ -5401,7 +5401,7 @@
   },
 { 
     id: "27681",    
-    name:" OCZY",
+    name:" Kolczyki ze stali - Oczy",
     price: "79.99 zł", 
     category: "stal",
     "subCategory": "platerowane",
@@ -5429,7 +5429,7 @@
   
   { 
     id: "29450",    
-    name:"  NIEBIESKI KAMYK ",
+    name:" Kolczyki ze stali - Niebieski kamyk ",
     price: "99.99 zł", 
     category: "stal",
     "subCategory": "wykwintne",
@@ -5458,7 +5458,7 @@
      
        { 
           id: "KST2951", 
-          name:" ZIELONE GWIAZDKI", 
+          name:" Kolczyki ze stali - Zielone gwiazdki", 
           price: "99.99 zł", 
           category: "stal",
           subCategory : "wykwintne",
@@ -5478,7 +5478,7 @@
     },
 { 
     id: "16081", 
-    name: "NAUSZNICE PODWÓJNE ",
+    name: "Kolczyki ze stali - Podwójny",
     price: "94.99 zł", 
     category: "stal",
     "subCategory": "wykwintne",
@@ -5501,7 +5501,7 @@
 },
      { 
     id: "11618", 
-    name: "SPINKI ",
+    name: "Kolczyki ze stali - Spinki",
     price: "94.99 zł", 
     category: "stal",
     "subCategory": "wykwintne",
@@ -5525,7 +5525,7 @@
 },
 { 
     id: "27434",    
-    name:" RÓŻOWY KAMIEŃ ",
+    name:" Kolczyki ze stali - Różowy kamień",
     price: "79.99 zł", 
     category: "stal",
     "subCategory": "wykwintne",
@@ -5556,7 +5556,7 @@
 // KWIATKI
 { 
     id: "27860",    
-    name:" WISZĄCE MINI KONICZYNY",
+    name:" Kolczyki ze stali - Wiszące mini koniczynki",
     price: "89.99 zł", 
     category: "stal",
     "subCategory": "kwiaty",
@@ -5584,7 +5584,7 @@
   
  {
     "id": "33205",
-    name:" KWIATOWY MIŚ ",
+    name:" Kolczyki ze stali - Kwiatowy miś",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -5602,7 +5602,7 @@
   },
 {
     "id": "33190",
-    name:" CYRKONIE WISZĄCE KWIATY",
+    name:" Kolczyki ze stali - Wiszące cyrkonie kwaity",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -5621,7 +5621,7 @@
  
   {
     "id": "34472",
-    name:" ZŁOTE KWIATY",
+    name:" Kolczyki ze stali - Złote kwiaty",
     "price": "69,99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -5638,7 +5638,7 @@
     "availability": "W magazynie"
   },  {
     "id": "34474",
-    name:" KWIATY KOŁA ",
+    name:" Kolczyki ze stali - Kwiaty koła ",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -5656,7 +5656,7 @@
   },
    {
     "id": "33168",
-    name:" KWIATY MASA PERŁOWA",
+    name:" Kolczyki ze stali - Kwiaty masa perłowa",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -5674,7 +5674,7 @@
   },
 {
     "id": "33154",
-    name:" CYRKONIE ZIELONE KWIATY",
+    name:" Kolczyki ze stali - Cyrkonia zielone kwaity",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -5692,7 +5692,7 @@
   },
 {
     "id": "33196",
-    name:" PANTERKA I KWIATY ",
+    name:" Kolczyki ze stali - Panterka i kwiaty",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -5710,7 +5710,7 @@
   },
  { 
     id: "29449",    
-    name:" DZWONKI ",
+    name:" Kolczyki ze stali - Dzwonki ",
     price: "89.99 zł",
     category: "stal",
     "subCategory": "kwiaty",
@@ -5738,7 +5738,7 @@
   },
 { 
     id: "30593",    
-    name:" KWIATY PEREŁKI",
+    name:" Kolczyki ze stali - Kwiaty perełki",
     price: "89.99 zł", 
     category: "stal",
     "subCategory": "kwiaty",
@@ -5771,7 +5771,7 @@
   
   {
     "id": "34095",
-    name:" CYRKONIA KONICZYNA",
+    name:" Kolczyki ze stali - Konieczyna",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "Kwiaty",
@@ -5792,7 +5792,7 @@
   },
   {
     "id": "34096",
-    name:" KONICZYNA CZARNA",
+    name:" Kolczyki ze stali - Koniczyna czarna",
     "price": "79.99 zł",
     "category": "stal",
    "subCategory": "kwaity",
@@ -5816,7 +5816,7 @@
 
   {
     "id": "34084",
-    name:" PUDROWE KWIATY",
+    name:" Kolczyki ze stali - Pudrowe kwiaty",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -5837,7 +5837,7 @@
   },
  {
     "id": "32835",
-    name:" PRZEBIŚNIEGI",
+    name:" Kolczyki ze stali - Przebiśniegi",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -5861,7 +5861,7 @@
   },
     {
     "id": "33475",
-    name:" KWIATUSZKI ",
+    name:" Kolczyki ze stali - Kwiatuszki",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -5879,7 +5879,7 @@
   },
   {
     "id": "34086",
-    name:" FUKSJOWE KWIATY",
+    name:" Kolczyki ze stali - Fuksiowe kwiaty",
     "price": "109.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -5901,7 +5901,7 @@
   },
 {
     "id": "33777",
-    name:" KWIATY PERŁY",
+    name:" Kolczyki ze stali - Kwiaty perły",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -5923,7 +5923,7 @@
   },
 {
     "id": "33187",
-    name:" WISZĄCE KWIATY",
+    name:" Kolczyki ze stali - Wiszące kwiaty",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -5941,7 +5941,7 @@
   },
   {
     "id": "33191",
-    name:" WISZĄCE LIŚCIE KWIAT",
+    name:" Kolczyki ze stali - Wiszące liście kwiat",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -5960,7 +5960,7 @@
 
 { 
     id: "27846",    
-    name:" KWIATY Z PERŁAMI",
+    name:" Kolczyki ze stali - Kwiaty z perłami",
     price: "89.99 zł", 
     category: "stal",
     "subCategory": "kwiaty",
@@ -5988,7 +5988,7 @@
 ,
   {
     "id": "33200",
-    name:" WISZĄCE KWIATY LIŚCIE ",
+    name:" Kolczyki ze stali - Wiszące kwiaty liście",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6006,7 +6006,7 @@
   },
   {
     "id": "33201",
-    name:" WISZĄCE KWIATY Z PERŁĄ ",
+    name:" Kolczyki ze stali - Wiszące kwiaty z perłą",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6024,7 +6024,7 @@
   },
 {
     "id": "33754",
-    name:" WISZĄCE KWIATY Z PEREŁKAMI",
+    name:" Kolczyki ze stali - Wiszące kwiaty z perłami",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6046,7 +6046,7 @@
   },
   {
     "id": "33755",
-    name:" POTRÓJNE WISZĄCE KWIATY",
+    name:" Kolczyki ze stali - Wiszące potrójne kwiaty",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6068,7 +6068,7 @@
   },
   {
     "id": "33756",
-    name:" WISZĄCE LIŚCIE LILI",
+    name:" Kolczyki ze stali - Wiszące kwiaty lili",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6090,7 +6090,7 @@
   },
   {
     "id": "33757",
-    name:" KWIATY CYRKONIE WISZĄCE",
+    name:" Kolczyki ze stali - Wiszące kwiaty cyrkoni",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6112,7 +6112,7 @@
   },
   {
     "id": "33758",
-    name:" KWIATY CYRKONIE WISZĄCE",
+    name:" Kolczyki ze stali Wiszące kwiaty cyrkonia",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6134,7 +6134,7 @@
   },
 {
     "id": "34348",
-    name:" GWIAŹDZISTE KWIATY",
+    name:" Kolczyki ze stali - Gwiaździste kwiaty",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6152,7 +6152,7 @@
   },
   {
     "id": "33875",
-    name:" WISZĄCE PERŁY Z KWIATEM",
+    name:" Kolczyki ze stali - Wiszące perły z kwiatem",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6175,7 +6175,7 @@
   },
   {
     "id": "34097",
-    name:" BIAŁE KONICZYNY",
+    name:" Kolczyki ze stali - Białe koniczyny",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwaity",
@@ -6197,7 +6197,7 @@
   },
 {
     "id": "34300",
-    name:" KONICZYNY RÓŻOWE CYRKONIE",
+    name:" Kolczyki ze stali - Koniczyny różowe górskie",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6215,7 +6215,7 @@
   },
   {
     "id": "34301",
-    name:"  KONICZYNY ZŁOTE CYRKONIE",
+    name:" Kolczyki ze stali - Koniczyny złote cyrkonie",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6233,7 +6233,7 @@
   },
   {
     "id": "34302",
-    name:" BIAŁE KONICZYNY CYRKONIE",
+    name:" Kolczyki ze stali - Białe koniczyny cyrkonie",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6251,7 +6251,7 @@
   },
   {
     "id": "34303",
-    name:" KONICZYNY BIAŁE CYRKONIE",
+    name:" Kolczyki ze stali - Koniczyny białe cyrkonie",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6269,7 +6269,7 @@
   },
   {
     "id": "34304",
-    name:" BIAŁE KONICZYNKI",
+    name:" Kolczyki ze stali - Białe koniczynki",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6287,7 +6287,7 @@
   },
   {
     "id": "34306",
-    name:" RÓŻ KONICZYNKI",
+    name:" Kolczyki ze stali - Różowe koniczynki",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6305,7 +6305,7 @@
   },
   {
     "id": "34307",
-    name:" KONICZYNA MASA PERŁA",
+    name:" Kolczyki ze stali - Koniczyna masa perłowa",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6323,7 +6323,7 @@
   },
   {
     "id": "34308",
-    name:" KONICZYNA MINI CZARNA",
+    name:" Kolczyki ze stali - Koniczyna mini czarna",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6341,7 +6341,7 @@
   },
   {
     "id": "34309",
-    name:" KONICZYNA MINI BIAŁA ",
+    name:" Kolczyki ze stali - Koniczyna mini czarna",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6359,7 +6359,7 @@
   },
   {
     "id": "34310",
-    name:" KONICZYNA MINI RÓŻOWA",
+    name:" Kolczyki ze stali - Koniczyna mini różowa",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6377,7 +6377,7 @@
   },
   {
     "id": "34311",
-    name:" KONICZYNA CZARNA",
+    name:" Kolczyki ze stali - Koniczyna czarna",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6395,7 +6395,7 @@
   },
   {
     "id": "34312",
-    name:" KONICZYNA PERŁOWA",
+    name:" Kolczyki ze stali - Koniczyna perłowa",
     "price": "79.99 zł",
     "category": "kwiaty",
     "subCategory": "platerowane",
@@ -6413,7 +6413,7 @@
   },
   {
     "id": "34313",
-    name:" KONICZYNA MASA PERŁOWA",
+    name:" Kolczyki ze stali - Koniczyna masa perłowa",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6431,7 +6431,7 @@
   },
   {
     "id": "34314",
-    name:" WISZĄCE BIAŁE KONICZYNY",
+    name:" Kolczyki ze stali - Wiszące białe koniczyny",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6450,7 +6450,7 @@
   
  { 
     id: "31436",    
-    name:" KONICZYNKA MASA PERŁOWA",
+    name:" Kolczyki ze stali - Koniczyna masa perłowa",
     price: "79.99 zł", 
     category: "stal",
     "subCategory": "kwiaty",
@@ -6479,7 +6479,7 @@
   },
   {
     "id": "34476",
-    name:" ZŁOTA KONIECZYNA",
+    name:" Kolczyki ze stali - Złota koniczyna",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6497,7 +6497,7 @@
   },
   {
     "id": "34387",
-    name:" WISZĄCE BIAŁE KONICZYNY ",
+    name:" Kolczyki ze stali - Wiszące białe koniczynki",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6515,7 +6515,7 @@
   },
   {
     "id": "34388",
-    name:" WISZĄCE RÓŻOWE KONICZYNY ",
+    name:" Kolczyki ze stali - Wiszące kremowe koniczyny",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6533,7 +6533,7 @@
   },
   {
     "id": "34386",
-    name:" WISZĄCE KONICZYNY CZARNE",
+    name:" Kolczyki ze stali - Wiszące koniczyna czarne",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6552,7 +6552,7 @@
    
   {
     "id": "33477",
-    name:" KINICZYNA Z WISZĄCĄ PERŁĄ ",
+    name:" Kolczyki ze stali - Wiszona koniczyna z perłą",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6570,7 +6570,7 @@
   },
    {
     "id": "33192",
-    name:" WISZĄCE LIŚCIE Z PERŁĄ ",
+    name:" Kolczyki ze stali - Wiszące liście z perłą",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6588,7 +6588,7 @@
   },
     {
     "id": "33199",
-    name:" KSIĘŻYC WISZĄCE LIŚCIE ",
+    name:" Kolczyki ze stali - Księżyc wiszące liście",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6606,7 +6606,7 @@
   },
     {
     "id": "33752",
-    name:" EFEKTOWNE WISZĄCE KWIATY",
+    name:" Kolczyki ze stali - Efektowne wiszące kwiaty",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6628,7 +6628,7 @@
   },
     {
     "id": "34136",
-    name:" WISZĄCE KRYSZTAŁKI DZWONKI",
+    name:" Kolczyki ze stali - Wiszące kryształki dzwonki",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6650,7 +6650,7 @@
   },
     {
     "id": "34353",
-    name:" TRZYLISTNA KONICZYNA WISZĄCE",
+    name:" Kolczyki ze stali - Wiszące trzylistna koniczyna",
     "price": "74.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6668,7 +6668,7 @@
   },
   {
     "id": "33189",
-    name:" PEREŁKI WISZĄCE KWIATY",
+    name:" Kolczyki ze stali - Wiszące kwaity perełki",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6686,7 +6686,7 @@
   },
      { 
         id: "17340", 
-        name:" KONIECZNE SERCA ",
+        name:" Kolczyki ze stali - Koniczyna serca",
         price: "95.99 zł", 
         category: "stal",
         subCategory: "serca-kokardy",
@@ -6711,7 +6711,7 @@
     
   {
     "id": "34331",
-    name:" NIESAMOWITE KWIATY",
+    name:" Kolczyki ze stali - Niesamowite kwiaty",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6729,7 +6729,7 @@
   },
   {
     "id": "34135",
-    name:" WIEŃCE Z CYERKONIAMI",
+    name:" Kolczyki ze stali - Wiszące z cyrkoniami",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6751,7 +6751,7 @@
   },
     {
     "id": "33988",
-    name:" TRZYLISTNA KONICZYNA",
+    name:" Kolczyki ze stali - Trzylistna koniczyna",
     "price": "89.99 zł",
     "category": "stal",
 "subCategory": "kwiaty",
@@ -6774,7 +6774,7 @@
   },
    {
     "id": "33178",
-    name:" CYRKONIOWY KWIAT",
+    name:" Kolczyki ze stali - Kwiat cyrkoni",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6792,7 +6792,7 @@
   },
   {
     "id": "23749",
-    name:" CYRKONIOWE LIŚCIE",
+    name:" Kolczyki ze stali - Liście cyrkoni",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
@@ -6821,7 +6821,7 @@
 // SERCA I KOKARDY
   {
     "id": "33160",
-    name:" KOKARDKI",
+    name:" Kolczyki ze stali Kokardki",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -6839,7 +6839,7 @@
   },
   {
     "id": "34473",
-    name:" SERCE KOŁA",
+    name:" Kolczyki ze stali - Serca koła",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -6858,7 +6858,7 @@
 
   {
     "id": "34338",
-    name:" BIAŁE SERCA",
+    name:" Kolczyki ze stali - Białe serca",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -6876,7 +6876,7 @@
   },
   {
     "id": "34341",
-    name:" SERCE Z PERŁĄ",
+    name:" Kolczyki ze stali - Serca z perłą",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -6894,7 +6894,7 @@
   },
   {
     "id": "34342",
-    name:" SERCE GEOMETRYCZNE Z PERŁĄ",
+    name:" Kolczyki ze stali - Serce geormetryczne z perłą",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -6912,7 +6912,7 @@
   },
     {
     "id": "33166",
-    name:" CZARNE SERCA",
+    name:" Kolczyki ze stali - Czarne serca",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -6930,7 +6930,7 @@
   },
     {
     "id": "33167",
-    name:" BIAŁE SERCA",
+    name:" Kolczyki ze stali - Białe serca",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -6948,7 +6948,7 @@
   },
  {
     "id": "34345",
-    name:" Z RÓŻOWYM SERCEM",
+    name:" Kolczyki ze stali - Z różowym sercem",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -6967,7 +6967,7 @@
  
 { 
     id: "31060",    
-    name:" SERCA CYRKONIE",
+    name:" Kolczyki ze stali - Serca cyrkonie",
     price: "89.99 zł",
     category: "stal",
     "subCategory": "serca-kokardy",
@@ -6998,7 +6998,7 @@
  
 {
     "id": "33420",
-    name:" DWUSTRONNE SERCA ",
+    name:" Kolczyki ze stali - Dwustronne serca",
     "price": "99.99 zł",
     "category": "stal",
   "subCategory": "serca-kokardy",
@@ -7016,7 +7016,7 @@
   },
  {
     "id": "33748",
-    name:" SERCA DELIKATNE",
+    name:" Kolczyki ze stali - Delikatne serca",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7039,7 +7039,7 @@
   },
 {
     "id": "32840",
-    name:" CIEŃKIE SERCA",
+    name:" Kolczyki ze stali - Cieńkie serca",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7064,7 +7064,7 @@
   
 { 
     id: "31227",    
-    name:" SERCA Z PERŁĄ ",
+    name:" Kolczyki ze stali - Seca z perłą",
     price: "79.99 zł",
     category: "stal",
     "subCategory": "serca-kokardy",
@@ -7093,7 +7093,7 @@
   },
   { 
     id: "31226",    
-    name:" CYRKONIE SERCA ",
+    name:" Kolczyki ze stali - Cyrkoniowe serce",
     price: "79.99 zł", 
     category: "stal",
     "subCategory": "serca-kokardy",
@@ -7123,7 +7123,7 @@
   
 { 
     id: "31229",    
-    name:" KOKARDY PERŁOWE",
+    name:" Kolczyki ze stali - Perłowe kokardy",
     price: "89.99 zł", 
     category: "stal",
     "subCategory": "serca-kokardy",
@@ -7152,7 +7152,7 @@
   },
    { 
     id: "31221",    
-    name:" KOKARDKI CYRKONIE",
+    name:" Kolczyki ze stali - Cyrkoniowe kokardy",
     price: "79.99 zł", 
     category: "stal",
     subCategory: "serca-kokardy",
@@ -7182,7 +7182,7 @@
   },
   {
         id: "20594",
-        name:" SERCA Z CYRKONIĄ",
+        name:" Kolczyki ze stali - Serca z cyrkonią",
         price: "109.39 zł",
         category: "stal",
         subCategory: "serca-kokardy",
@@ -7206,7 +7206,7 @@
     },
     {
     "id": "23755",
-    name:" ZIELONE SERCA ",
+    name:" Kolczyki ze stali - Zielone serce",
     "price": "69.26 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7230,7 +7230,7 @@
   },
     {
     "id": "23759",
-    name:" PERŁOWE SERCA Z KÓŁKIEM ",
+    name:" Kolczyki ze stali - Perłowe serce z kulką",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7252,7 +7252,7 @@
    
  {
     "id": "24111",
-    name:" PERŁOWE SERCA CYRKONIE",
+    name:" Kolczyki ze stali - Perłowe serca cyrkonie",
     "price": "89.99 zł",
     "category": "stal",
         "subCategory": "serca-kokardy",
@@ -7279,7 +7279,7 @@
    , 
   { 
     id: "31222",    
-    name:" KOKARDKI Z CYRKONIAMI",
+    name:" Kolczyki ze stali - Kokardki z cyrkoniami",
     price: "89.99 zł",
     category: "stal",
     subCategory: "serca-kokardy",
@@ -7310,7 +7310,7 @@
  
 { 
     id: "31437",    
-    name:" WISZĄCE SERCE Z CYRKONIAMI",
+    name:" Kolczyki ze stali - Wiszące serce",
     price: "89.99 zł", 
     category: "stal",
     subCategory: "serca-kokardy",
@@ -7340,7 +7340,7 @@
   },
    { 
     id: "31455",    
-    name:" SERCA RÓŻE",
+    name:" Kolczyki ze stali - Serca róż",
     price: "79.99 zł", 
     category: "stal",
     subCategory: "serca-kokardy",
@@ -7370,7 +7370,7 @@
 ,
   {
     "id": "31534",
-    name:" SERCA MINI CYRKONIE",
+    name:" Kolczyki ze stali - Serca mini cyrkonie",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7398,7 +7398,7 @@
   },
    {
     "id": "32776",
-    name:" KOKARDY WISZĄCE PEREŁKI ",
+    name:" Kolczyki ze stali - Wiszące kokardki perełka ",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7423,7 +7423,7 @@
  
  {
   "id": "33105",
-  name:" MINI SERCA CYRKONIE",
+  name:" Kolczyki ze stali - Mini cyrkoniowe serca",
   "price": "99.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7447,7 +7447,7 @@
 },
   {
     "id": "33145",
-    name:" ELEGANCKIE KOKARDKI",
+    name:" Kolczyki ze stali - Eleganckie kokardki",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7465,7 +7465,7 @@
   },
   {
     "id": "33146",
-    name:" SERCE / GWIAZDKA",
+    name:" Kolczyki ze stali - Serca i gwiazdki",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7483,7 +7483,7 @@
   },
 {
     "id": "33148",
-    name:" MINI SERCA Z CYRKONIĄ",
+    name:" Kolczyki ze stali - Mini serca z cyrkonią",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7501,7 +7501,7 @@
   },
   {
     "id": "33150",
-    name:" CYRKONIOWE SERCA ",
+    name:" Kolczyki ze stali - Cyrkoniowe serca",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7519,7 +7519,7 @@
   },
   {
     "id": "33152",
-    name:" CYRKONIOWE SERCE W SERCU",
+    name:" Kolczyki ze stali - Cyrkoniowe serce w sercu",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7538,7 +7538,7 @@
 
     {
     "id": "33176",
-    name:" PIĘKNE SERCA ",
+    name:" Kolczyki ze stali - Piękne serca",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7556,7 +7556,7 @@
   },
     {
     "id": "33186",
-    name:" KÓŁKA Z SERCEM ",
+    name:" Kolczyki ze stali - Kółka z sercem ",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7574,7 +7574,7 @@
   },
     {
     "id": "33473",
-    name:" MINI KOKARDKI ",
+    name:" Kolczyki ze stali - Mini kokardki",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7592,7 +7592,7 @@
   },
     {
     "id": "33886",
-    name:" ELEGANCKIE SERCA",
+    name:" Kolczyki ze stali - Eleganckie serca",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7614,7 +7614,7 @@
   
   {
     "id": "34041",
-    name:" BIAŁE SERCA ",
+    name:" Kolczyki ze stali - Białe serca ",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7635,7 +7635,7 @@
   },
   {
     "id": "34042",
-    name:" WĄSKIE SERCA",
+    name:" Kolczyki ze stali - Wiszące serca",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7656,7 +7656,7 @@
   },
   {
     "id": "34043",
-    name:" MINI SERCA PEREŁKI",
+    name:" Kolczyki ze stali - Mini perełka serca",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7676,7 +7676,7 @@
   },
   {
     "id": "34044",
-    name:" KRYSZTAŁOWE SERCA",
+    name:" Kolczyki ze stali - Kryształowe serca",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7695,7 +7695,7 @@
   },
   {
     "id": "34045",
-    name:" SERCA W PEREŁKI",
+    name:" Kolczyki ze stali - Serca w perełki",
     "price": "99.99 zł",
     "category": "stal", 
     "subCategory": "serca-kokardy",
@@ -7716,7 +7716,7 @@
   },
   {
     "id": "34046",
-    name:" CZARNE SERCA",
+    name:" Kolczyki ze stali - Czarne serca",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7737,7 +7737,7 @@
   },
   {
     "id": "34048",
-    name:" RÓŻOWE SERCA",
+    name:" Kolczyki ze stali - Różowe serca",
     "price": "99.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7758,7 +7758,7 @@
   },
   {
     "id": "34049",
-    name:" SERCA Z KRYSZTALKAMI",
+    name:" Kolczyki ze stali - Serca z kryształkami",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7779,7 +7779,7 @@
   },
   {
     "id": "34050",
-    name:" SERCA CYRKONIA",
+    name:" Kolczyki ze stali - Serca cyrkonia",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7801,7 +7801,7 @@
  
   {
     "id": "34117",
-    name:" MAŁE KOKARDKI ",
+    name:" Kolczyki ze stali - Małe kokardki",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7822,7 +7822,7 @@
   },
    { 
     id: "24185",    
-    name:" WISZĄCE SERCA  ",
+    name:" Kolczyki ze stali - Wiszące piękne serca",
     price: "89.99 zł",
     category: "stal",
     subCategory: "serca-kokardy",
@@ -7846,7 +7846,7 @@
   },
     {
     "id": "33188",
-    name:" CIEŃKA KOKARDA Z PERŁAMI ",
+    name:" Kolczyki ze stali - Cieńka kokardka",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7865,7 +7865,7 @@
   
   {
     "id": "34315",
-    name:" PRZYLEGAJĄCE SERCA ",
+    name:" Kolczyki ze stali - Przylegające serca",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7883,7 +7883,7 @@
   },
   {
     "id": "34316",
-    name:" SERCA I MOTYLKI ",
+    name:" Kolczyki ze stali - Serca i motylki",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7901,7 +7901,7 @@
   },
   {
     "id": "34317",
-    name:" PRZYLEGAJĄCE SERCA KOKARDY",
+    name:" Kolczyki ze stali - Przylegające serca kokardki",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7919,7 +7919,7 @@
   },
   {
     "id": "34318",
-    name:"  SERCA",
+    name:" Kolczyki ze stali - Serca",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7937,7 +7937,7 @@
   },
   {
     "id": "34319",
-    name:" ROZLANE SERCA ",
+    name:" Kolczyki ze stali - Rozlane serca ",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7955,7 +7955,7 @@
   },
   {
     "id": "34320",
-    name:" SERCA CYRKONIE",
+    name:" Kolczyki ze stali - Serce",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7972,7 +7972,7 @@
     "availability": "W magazynie"
   }, {
     "id": "34321",
-    name:" KREMOWE SERCA",
+    name:" Kolczyki ze stali - Kremowe serca",
     "price": "59.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -7990,7 +7990,7 @@
   },
   {
     "id": "34322",
-    name:" PRZYLEGAJĄCE SERCA CZARNE",
+    name:" Kolczyki ze stali - Przylegające serca",
     "price": "64.00 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -8008,7 +8008,7 @@
   },
   {
     "id": "34483",
-    name:" WISZĄCE PODWÓJNE SERCA",
+    name:" Kolczyki ze stali - Wiszące podwójne serca",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -8026,7 +8026,7 @@
   },
   {
     "id": "34484",
-    name:" SERCA WZORKI",
+    name:" Kolczyki ze stali - Serca wzorki",
     "price": "74.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -8044,7 +8044,7 @@
   },
     {
     "id": "34486",
-    name:" OKRĄGŁĘ SERCA",
+    name:" Kolczyki ze stali - Okrągłe serca",
     "price": "74.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -8062,7 +8062,7 @@
   },
   {
     "id": "34490",
-    name:" OKRĘGI Z SERCEM W SERCU",
+    name:" Kolczyki ze stali - Okręgi serca w sercu",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -8081,7 +8081,7 @@
 
   {
     "id": "34492",
-    name:" CIENKIE SERCA Z PERŁĄ",
+    name:" Kolczyki ze stali - Cienkie serca z perłą",
     "price": "69.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -8100,7 +8100,7 @@
   },
   {
     "id": "34654",
-    name:" RÓŻOWE PEREŁKI, SERCE",
+    name:" Kolczyki ze stali - Różowe perełki",
     "price": "74.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -8118,7 +8118,7 @@
     "availability": "W magazynie"
   },  { 
     id: "26118",    
-    name:" GWIAZDKI SERCA ",
+    name:" Kolczyki ze stali - Serca gwiazdki",
     price: "79.99 zł", 
     category: "stal",
     subCategory: "serca-kokardy",
@@ -8143,7 +8143,7 @@
   },
   {
     "id": "34488",
-    name:" WISZĄCE SERCA I KRYSZTAŁ",
+    name:" Kolczyki ze stali - Wiszące serca kryształki",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -8161,7 +8161,7 @@
   },
 { 
         id: "19783", 
-        name:" DŁUGIE WISZĄCE SERCE",
+        name:" Kolczyki ze stali - Długie wiszące serca",
         price: "84.15 zł", 
         category: "stal",
         subCategory: "serca-kokardy",
@@ -8185,7 +8185,7 @@
     },
   {
     "id": "32830",
-    name:" TRZY CYRKONIOWE SERCA",
+    name:" Kolczyki ze stali - Trzy serca",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
@@ -8219,7 +8219,7 @@
 //  ŚLUBLNE 
    {
         id: "20687",
-        name:" NIEZAPOMINAJKI ",
+        name:" Kolczyki ze stali - Niezapominajki ",
         price: "109.99 zł",
         category: "stal",
         "subCategory": "ślublne",
@@ -8240,7 +8240,7 @@
     },
   {
     "id": "23986",
-    name:" KWIECISTE PROMIENIE ",
+    name:" Kolczyki ze stali - Kwieciste promienie",
     "price": "119. zł",
     "category": "stal",
     "subCategory": "ślublne",
@@ -8261,7 +8261,7 @@
   },
  {
     "id": "23991",
-    name:" ZJAWISKOWA DAMA",
+    name:" Kolczyki ze stali - Zjawiskowa dama",
     "price": "159.74 zł",
     "category": "stal", 
     "subCategory": "ślublne",
@@ -8282,7 +8282,7 @@
   },
   {
     "id": "23992",
-    name:" PIERWSZY TANIEC",
+    name:" Kolczyki ze stali - Pierwszy taniec",
     "price": "159.99 zł",
     "category": "stal",
     "subCategory": "ślublne",
@@ -8303,7 +8303,7 @@
   },
   {
     "id": "23996",
-    name:" WYJĄTKOWA CHWILA ",
+    name:" Kolczyki ze stali - Wyjątkowa chwila",
     "price": "159.99 zł",
     "category": "stal",
     "subCategory": "ślublne",
@@ -8324,7 +8324,7 @@
   },
   {
     "id": "23998",
-    name:" GWIAZDA",
+    name:" Kolczyki ze stali - Gwaizda",
     "price": "159.99 zł",
     "category": "stal",
     "subCategory": "ślublne",
@@ -8345,7 +8345,7 @@
   },
   {
     "id": "24000",
-    name:" KRYSZTAŁ Z KOSMOSU",
+    name:" Kolczyki ze stali - Kryształ z kosmosu",
     "price": "109.99 zł",
     "category": "stal",
     "subCategory": "ślublne",
@@ -8367,7 +8367,7 @@
  
  {
     "id": "24001",
-    name:" ŚWIECISTA PANNA",
+    name:" Kolczyki ze stali - Świecista panna",
     "price": "109 zł",
     "category": "stal",
     "subCategory": "ślublne",
@@ -8388,7 +8388,7 @@
   },
  {
     "id": "34333",
-    name:" WISZĄCE CYRKONIE Z PERŁĄ",
+    name:" Kolczyki ze stali - Wiszące perła z cyrkonia",
     "price": "89.99 zł",
     "category": "stal",
     "subCategory": "ślublne",
@@ -8406,7 +8406,7 @@
   },
  {
     "id": "34335",
-    name:" WISZĄCE CYRKONIE",
+    name:" Kolczyki ze stali - Wisząca cyrkonia",
     "price": "79.99 zł",
     "category": "stal",
     "subCategory": "ślublne",
@@ -8425,7 +8425,7 @@
  
 { 
     id: "14505", 
-    name:" KSIĘŻYSTA CHWILA",
+    name:" Kolczyki ze stali - Księżysta chwila",
     category: "stal",
     url: "/product/14505",
     "subCategory": "ślublne",
@@ -8449,7 +8449,7 @@
 },
 { 
     id: "14504", 
-    name:"KRYSZTAŁOWY SZOK",
+    name:"KKolczyki ze stali - Kryształowy szok",
     price: "99.99 zł", 
     category: "stal",
     "subCategory": "ślublne",
@@ -8486,7 +8486,7 @@
 // LITERKI
 { 
     id: "27437",    
-    name:" platerowane 14k złotem, literka B 2szt. ",
+    name:" Kolczyki literka B ",
     price: "69.89 zł",
         category: "stal",
         "subCategory": "literki",
@@ -8514,7 +8514,7 @@
   },
   { 
     id: "27438",    
-    name:" platerowane 14k złotem, literka D 2szt. ",
+    name:" Kolczyki literka D. ",
     price: "69.89 zł", 
         category: "stal",
         "subCategory": "literki",
@@ -8542,7 +8542,7 @@
   },
   { 
     id: "27439",    
-    name:" platerowane 14k złotem, literka J 2szt. ",
+    name:" Kolczyki literka J ",
     price: "69.89 zł", 
         category: "stal",
         "subCategory": "literki",
@@ -8572,7 +8572,7 @@
   
  { 
         id: "16195", 
-        name:" pozłacane literka A ",
+        name:" Kolczyki literka A ",
         price: "89.89 zł", 
         category: "stal",
         "subCategory": "literki",
@@ -8595,7 +8595,7 @@
     },
        { 
         id: "16196", 
-        name:" pozłacane literka B ",
+        name:" Kolczyki literka B ",
         price: "89.89 zł", 
         category: "stal",
         subCategory: "literki",
@@ -8618,7 +8618,7 @@
     },
       { 
         id: "16199", 
-        name: "Kolczyk pozłacany literka E ",
+        name: "Kolczyki literka E ",
         price: "89.89 zł", 
         category: "stal",
         "subCategory": "literki",
@@ -8641,7 +8641,7 @@
     },
         { 
         id: "16200", 
-        name: "Kolczyk pozłacany literka F ",
+        name: "Kolczyki literka F ",
         price: "89.89 zł", 
         "subCategory": "literki",
         category: "stal",
@@ -8664,7 +8664,7 @@
     },
        { 
         id: "16201", 
-        name: "Kolczyk pozłacany literka G ",
+        name: "Kolczyki literka G ",
         price: "89.89 zł", 
         category: "stal",
         "subCategory": "literki",
@@ -8687,7 +8687,7 @@
     },
        { 
         id: "16202", 
-        name: "Kolczyk pozłacany literka I ",
+        name: "Kolczyki literka I ",
         price: "89.89 zł", 
         category: "stal",
         "subCategory": "literki",
@@ -8710,7 +8710,7 @@
     },
         { 
         id: "16208", 
-        name: "Kolczyk pozłacany literka O ",
+        name: "Kolczyki literka O ",
         price: "89.89 zł",
         category: "stal",
         "subCategory": "literki",
@@ -8733,7 +8733,7 @@
     },
     { 
         id: "16209", 
-        name: "Kolczyk pozłacany literka P ",
+        name: "Kolczyki literka P ",
         price: "89.89 zł", 
         category: "stal",
         subCategory: "literki",
@@ -8756,7 +8756,7 @@
     },
         { 
         id: "16210", 
-        name: "Kolczyk pozłacany literka S ",
+        name: "Kolczyki literka S ",
         price: "89.89 zł", 
         category: "stal",
         subCategory: "literki",
@@ -8779,7 +8779,7 @@
     },
         { 
         id: "16211", 
-        name: "Kolczyk pozłacany literka R ",
+        name: "Kolczyki literka R ",
         price: "89.89 zł", 
         category: "stal",
         subCategory: "literki",
@@ -8802,7 +8802,7 @@
     },
       { 
         id: "16212", 
-        name: "Kolczyk pozłacany literka T ",
+        name: "Kolczyki literka T ",
         price: "89.89 zł", 
         category: "stal",
         subCategory: "literki",
@@ -8825,7 +8825,7 @@
     },
         { 
         id: "16213", 
-        name: "Kolczyk pozłacany literka U ",
+        name: "Kolczyki literka U ",
         price: "89.89 zł", 
         category: "stal",
         subCategory: "literki",
@@ -8848,7 +8848,7 @@
     },
        { 
         id: "16214", 
-        name: "Kolczyk pozłacany literka W ",
+        name: "Kolczyki literka W ",
         price: "89.89 zł", 
         category: "stal",
         subCategory: "literki",
@@ -8871,7 +8871,7 @@
     },
         { 
         id: "16215", 
-        name: "Kolczyk pozłacany literka Z ",
+        name: "Kolczyki literka Z ",
         price: "89.89 zł", 
         category: "stal",
         subCategory: "literki",
@@ -8894,7 +8894,7 @@
     },
        { 
         id: "17103", 
-        name:" LITERKA A Z PERŁĄ ",
+        name:"  LITERKA A Z PERŁĄ ",
         price: "92.18 zł", 
         category: "stal",
             subCategory: "literki",
@@ -8915,7 +8915,7 @@
     },
      { 
         id: "17095", 
-        name:" LITERKA K Z PERŁĄ ",
+        name:" Kolczyki literka K Z PERŁĄ ",
         price: "99.18 zł", 
         category: "stal",
         subCategory: "literki",
