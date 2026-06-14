@@ -47,7 +47,7 @@ useEffect(() => {
         if(currentWidth === lastWidth)  return;
         // Poprawiona nazwa funkcji na setProductPerPage
         lastWidth = currentWidth;
-        newPerPage = currentWidth < 768 ? 20 : 32;
+        const  newPerPage = currentWidth < 768 ? 20 : 32;
         
 
         setProductPerPage(newPerPage)
