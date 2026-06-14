@@ -16,12 +16,41 @@ const NecklaceStal = () => {
      const [visible, setVisible] = useState(false);
      const [productToAdd, setProductToAdd] = useState(null);
      const { subcategory } = useParams(); 
- 
+  const [selectedImage, setSelectedImage] = useState(null);
+      
+          const [currentPaga, setCurrentPage] = useState(1);
+          const [productPerPage, setProductPerPage] = useState(window.innerWidth < 768 ? 20 : 32);
+          
+  
+
        const filteredProducts = necklaceStal.filter(p => 
                p.category === "stal" && 
                (!subcategory || p.subCategory === subcategory) 
            );
  
+  
+            
+                const indexOfLastProduct = currentPaga * productPerPage;
+                const indexFirstProduct = indexOfLastProduct - productPerPage; 
+                const currentProduct = filteredProducts.slice(indexFirstProduct, indexOfLastProduct);
+                const totalPage = Math.ceil(filteredProducts.length / productPerPage);
+            console.log("Liczba stron:", totalPage);
+            
+            useEffect(() => {
+                const handleResize = () => {
+                    // Poprawiona nazwa funkcji na setProductPerPage
+                    setProductPerPage(window.innerWidth < 768 ? 20 : 32);
+                    setCurrentPage(1);
+                };
+            
+                window.addEventListener('resize', handleResize);
+                return () => window.removeEventListener('resize', handleResize);
+            }, []);
+            
+                useEffect (() => {
+                    setCurrentPage(1);
+                }, [subcategory]);
+  
      const handleButtonClick = (product) => {
          addProduct(product); 
          setProductToAdd(product);  
@@ -40,10 +69,10 @@ const NecklaceStal = () => {
         
         <div className="row ear-v2-row-grid">
             {/* <--- 3. Tutaj zmień earRings.map na filteredProducts.map */}
-            {filteredProducts.map((product) => (
+            {currentProduct.map((product) => (
             <article
                 key={product.id}
-                className="col-6 col-md-3 mb-4 ear-v2-card"
+                className="col-6 col-sm-4 col-md-3 mb-4 ear-v2-card"
                 role="group"
                 aria-label={`${product.name}, cena ${product.price}`}
             >
@@ -58,6 +87,8 @@ const NecklaceStal = () => {
                     onMouseLeave={(e) => {
                     e.currentTarget.src = product.image;
                     }}
+                        onClick={() => setSelectedImage(product.image)}
+                    style={{ cursor: 'pointer' }}
                 />
                 <button
                     className="ear-v2-buy-btn"
@@ -82,6 +113,31 @@ const NecklaceStal = () => {
             </article>
             ))}
         </div>
+        
+         {totalPage > 1 && (
+    <div className='pagination'>
+        {Array.from({ length: totalPage }, (_, i) => (
+            <button
+                key={i + 1}
+    onClick={() => {
+        setCurrentPage(i + 1);
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Przewinięcie do góry
+    }}
+    className={currentPaga === i + 1 ? 'active' : ''}
+            >
+                {i + 1}
+            </button>
+        ))}
+    </div>
+)}
+{selectedImage && (
+    <div className="lightbox-overlay" onClick={() => setSelectedImage(null)}>
+        <div className="lightbox-content">
+            <button className="close-btn" onClick={() => setSelectedImage(null)}>×</button>
+            <img src={selectedImage} alt="Powiększenie" />
+        </div>
+    </div>
+)}
         {/* <UpperFooter /> */}
         </section>
   );

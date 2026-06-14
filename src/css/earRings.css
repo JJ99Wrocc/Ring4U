@@ -125,6 +125,60 @@ body{
     filter: brightness(0.97) contrast(1.08);
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    border: 1px solid #140303;
+    background-color: rgb(13, 2, 2);
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ważne, żeby było na wierzchu */
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 8px;
+}
+
+.close-btn {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 /* --- PRZYCISK KOSZYKA --- */
 .ear-v2-buy-btn {
     position: absolute;
@@ -204,10 +258,7 @@ body{
 .ear-v2-product-price{
     font-size: 12px;
 }
-}
-@media(max-width: 576px) {
-
-    #product-ear-rings .ear-v2-row-grid{
+   #product-ear-rings .ear-v2-row-grid{
             padding: 70px 10px;
     }
 }
