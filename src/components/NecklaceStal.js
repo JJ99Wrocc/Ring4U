@@ -119,7 +119,8 @@ const NecklaceStal = () => {
         {Array.from({ length: totalPage }, (_, i) => (
             <button
                 key={i + 1}
-    onClick={() => {
+    onClick={(e) => {
+        e.preventDefault();
         setCurrentPage(i + 1);
         window.scrollTo({ top: 0, behavior: 'smooth' }); // Przewinięcie do góry
     }}

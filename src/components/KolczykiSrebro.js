@@ -21,6 +21,7 @@ import '../css/earRings.css';
     const { addProduct } = useContext(CartContext);
     const [visible, setVisible] = useState(false);
     const [productToAdd, setProductToAdd] = useState(null); 
+     const [selectedImage, setSelectedImage] = useState(null);
 
 const filteredProducts = KolczykiSrebrne.filter(p => p.category === "srebro");
 
@@ -84,6 +85,14 @@ return <div className="container">Brak produktów w tej kategorii.</div>;
             </article>
             ))}
         </div>
+        {selectedImage && (
+    <div className="lightbox-overlay" onClick={() => setSelectedImage(null)}>
+        <div className="lightbox-content">
+            <button className="close-btn" onClick={() => setSelectedImage(null)}>×</button>
+            <img src={selectedImage} alt="Powiększenie" />
+        </div>
+    </div>
+)}
         {/* <UpperFooter /> */}
         </section>
     );

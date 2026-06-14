@@ -722,9 +722,9 @@ const necklaceStal = [
 {
     id: "9350",
     name: "Naszyjnik stal chirurgiczna - ŁAŃCUSZEK BIAŁE",
-    price: "15.99 zł",
+    price: "89.99 zł",
     category: "stal",
-    subCategory: "pozlacane",
+    subCategory: "srebro",
     url: "/product/9350",
     image: "https://hurt.ecarla.pl/78286-large_default/lancuszek-naszyjnik-stal-chirurgiczna-platerowana-bialym-zlotem-nst613.jpg",
     description: ["Stal nierdzewna, powlekana 18k złotem (elektroplated).", "Odporny na korozję."],
@@ -756,9 +756,9 @@ const necklaceStal = [
     {
     id: "13789",
     name: "Naszyjnik stal chirurgiczna - OBRĄCZKA",
-    price: "65.99 zł",
+    price: "94.99 zł",
     category: "stal",
-    subCategory: "pozlacane",
+    subCategory: "srebro",
     url: "/product/13789",
     image: "https://hurt.ecarla.pl/99832-large_default/naszyjnik-ze-stali-platerowanej-14-karatowym-zlotem-nst901s.jpg",
     description: ["Naszyjnik ze stali szlachetnej powlekanej białym złotem.", "Stal chirurgiczna jest odporna na korozję, nie rdzewieje i nie ciemnieje."],
