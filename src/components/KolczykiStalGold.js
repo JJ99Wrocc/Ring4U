@@ -41,10 +41,17 @@ import '../css/earRings.css';
 console.log("Liczba stron:", totalPage);
 
 useEffect(() => {
+    let lastWidth = window.innerHeight;
     const handleResize = () => {
+            const currentWidth = window.innerWidth
+        if(currentWidth === lastWidth)  return;
         // Poprawiona nazwa funkcji na setProductPerPage
-        setProductPerPage(window.innerWidth < 768 ? 20 : 32);
-        setCurrentPage(1);
+        lastWidth = currentWidth;
+        newPerPage = currentWidth < 768 ? 20 : 32;
+        
+
+        setProductPerPage(newPerPage)
+        setCurrentPage(1)
     };
 
     window.addEventListener('resize', handleResize);

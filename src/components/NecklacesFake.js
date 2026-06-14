@@ -33,16 +33,23 @@ const NecklaceStal = () => {
                const totalPage = Math.ceil(filteredProducts.length / productPerPage);
            console.log("Liczba stron:", totalPage);
            
-           useEffect(() => {
-               const handleResize = () => {
-                   // Poprawiona nazwa funkcji na setProductPerPage
-                   setProductPerPage(window.innerWidth < 768 ? 20 : 32);
-                   setCurrentPage(1);
-               };
+   useEffect(() => {
+       let lastWidth = window.innerHeight;
+       const handleResize = () => {
+               const currentWidth = window.innerWidth
+           if(currentWidth === lastWidth)  return;
+           // Poprawiona nazwa funkcji na setProductPerPage
+           lastWidth = currentWidth;
+           newPerPage = currentWidth < 768 ? 20 : 32;
            
-               window.addEventListener('resize', handleResize);
-               return () => window.removeEventListener('resize', handleResize);
-           }, []);
+   
+           setProductPerPage(newPerPage)
+           setCurrentPage(1)
+       };
+   
+       window.addEventListener('resize', handleResize);
+       return () => window.removeEventListener('resize', handleResize);
+   }, []);
            
                useEffect (() => {
                    setCurrentPage(1);
