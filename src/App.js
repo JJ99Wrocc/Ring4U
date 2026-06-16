@@ -27,10 +27,10 @@
   import { CartContext } from "./components/CartContext";
   import Footer from "./components/Footer";
   import CookieConsent from "./components/CookieConsent";
-  import Product, { products } from "./components/Products";
+  import Product from "./components/Products";
   import ProductDetail from "./components/ProductDetail";
 
-  import Bracelet from "./components/Bracelet";
+  import BraceletHandSteel from "./components/BraceletHandSteel";
   import Necklace from "./components/NecklaceStal";
   import Rings from "./components/Rings"
   import DeliveryAndReturns from "./components/DeliveryAndReturns";
@@ -40,9 +40,7 @@
 // import Necklace from "./components/NecklaceStal";
 import NecklaceStal from "./components/NecklaceStal";
 import NecklaceFake from "./components/NecklacesFake";
-  // import EcarlaImport from "./components/EcarlaImport";
-  // import { earRings } from "./components/EarRings";
-  // import { necklace } from "./components/Necklace";
+// import { necklacesFake } from "./data/NecklacesFake";
   function LayoutWithNavAndFooter({ children }) {
     return (
       <div className="app-container"> 
@@ -90,7 +88,7 @@ import NecklaceFake from "./components/NecklacesFake";
   path="/product/:productId"
   element={
     <LayoutWithNavAndFooter>
-      <ProductDetail products={[...products]} />
+      <ProductDetail  />
   
     </LayoutWithNavAndFooter>
   }
@@ -173,11 +171,21 @@ element={
   }
 />
         <Route
-          path="/bracelet"
+          path="/branzoletkiHand/stal/:subcategory"
           element={
             
               <LayoutWithNavAndFooter>
-                <Bracelet />
+                <BraceletHandSteel />
+              </LayoutWithNavAndFooter>
+            
+          }
+        />
+        <Route
+          path="/branzoletkiHand"
+          element={
+            
+              <LayoutWithNavAndFooter>
+                <BraceletHandSteel />
               </LayoutWithNavAndFooter>
             
           }

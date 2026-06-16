@@ -3,14 +3,27 @@ import { useParams } from "react-router-dom";
 import { CartContext } from "./CartContext";
 import ProductAdded from "./ProductsAdded";
 import "../css/ProductDetail.css"; 
+import  necklacesFake from "../data/NecklacesFake"; 
+import  productData  from "../data/productData";
+import  necklaceStal  from "../data/NecklacesStal";
+import  KolczykiSrebrne  from "../data/productDataSrebroKolcz";
+import  KolczykiSztuczne  from "../data/productDataSztuczneKolcz";
+import { products } from "./Products";
 
 const ProductDetail = ({ products }) => {
   const { productId } = useParams();
   const { addProduct, changeProductAmount } = useContext(CartContext);
   const [visible, setVisible] = useState(false);
+const allProducts = [
+    ...(Array.isArray(products) ? products : []),
+    ...(Array.isArray(necklacesFake) ? necklacesFake : []),
+    ...(Array.isArray(productData) ? productData : []),
+    ...(Array.isArray(necklaceStal) ? necklaceStal : []),
+    ...(Array.isArray(KolczykiSrebrne) ? KolczykiSrebrne : []),
+    ...(Array.isArray(KolczykiSztuczne) ? KolczykiSztuczne : [])
+  ];
 
-  // Szukanie produktu w tablicy danych
-  const product = products.find((p) => p.id.toString() === productId);
+const product = allProducts.find((p) => p && p.id && p.id.toString() === productId);
   
   // Stan dla głównego zdjęcia
   const [mainImage, setMainImage] = useState("");
@@ -31,7 +44,8 @@ const ProductDetail = ({ products }) => {
         Produkt nie znaleziony
       </p>
     );
-
+console.log("Czy products to tablica?", Array.isArray(products));
+  console.log("Co jest w necklacesFake?", necklacesFake);
   const handleAddToCart = () => {
     addProduct(product);
     setVisible(true);

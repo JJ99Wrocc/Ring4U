@@ -1272,12 +1272,11 @@ const necklacesFake = [
     image3: ""
   },
 // CHOKER
-
-
-  {
+// KOLIA
+{
     id: "602",
-    name: "Kolia Gwiazda kryształkowa NEW",
-    price: "24.60 zł",
+    name: "Naszyjnik - Kolia - Gwiazda kryształkowa",
+    price: "89.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/602",
@@ -1292,8 +1291,8 @@ const necklacesFake = [
   },
   {
     id: "647",
-    name: "Kolia Gwiazdeczki grafit",
-    price: "18.45 zł",
+    name: "Naszyjnik - Kolia - Gwiazdeczki ",
+    price: "84.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/647",
@@ -1308,8 +1307,8 @@ const necklacesFake = [
   },
   {
     id: "649",
-    name: "Kolia kwadraty i prostokąty grafit N415GRAF",
-    price: "30.00 zł",
+    name: "Naszyjnik - Kolia - Kwadraty i prostokąty",
+    price: "99.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/649",
@@ -1322,14 +1321,11 @@ const necklacesFake = [
     image2: "",
     image3: ""
   },
-
-
-
   ,
   {
     id: "2182",
-    name: "Kolia cristallo złoto, kryształy 3D N412Z",
-    price: "14.76 zł",
+    name: "naszyjnik - Kolia - Kryształy 3D",
+    price: "79.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/2182",
@@ -1351,8 +1347,8 @@ const necklacesFake = [
   },
   {
     id: "2190",
-    name: "Kolia cristallo, naszyjnik grafit, kryształy 3D N412GRAF",
-    price: "14.76 zł",
+    name: "Naszyjnik - Kolia - Cristallo",
+    price: "74.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/2190",
@@ -1375,8 +1371,8 @@ const necklacesFake = [
  
   {
     id: "2429",
-    name: "Naszyjnik Kolia rozety marmur N574",
-    price: "12.30 zł",
+    name: "Naszyjnik - Kolia - Rozety",
+    price: "69.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/2429",
@@ -1399,8 +1395,8 @@ const necklacesFake = [
   },
   {
     id: "2570",
-    name: "Naszyjnik srebry kółko N75",
-    price: "27.99 zł",
+    name: "Naszyjnik - Kolia - Srebrny kółko",
+    price: "99.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/2570",
@@ -1421,56 +1417,10 @@ const necklacesFake = [
     image2: "https://hurt.ecarla.pl/186913-large_default/naszyjnik-srebry-kolko-n75.jpg",
     image3: "https://hurt.ecarla.pl/186914-large_default/naszyjnik-srebry-kolko-n75.jpg"
   },
-  {
-    id: "2952",
-    name: "NASZYJNIK DELIKATNY CELEBRYTKA LISTKI SREBRO N122S",
-    price: "3.50 zł",
-    category: "sztuczna",
-    subCategory: "celebrytki",
-    url: "/product/2952",
-    image: "https://hurt.ecarla.pl/190685-large_default/naszyjnik-delikatny-celebrytka-listki-srebro-n122s.jpg",
-    description: [
-      "Naszyjnik w kolorze srebrnym z ażurowymi listkami.",
-      "Klasyczne, piękne wzornictwo.",
-      "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji."
-    ],
-    specs: {
-      "Kod producenta": "N122S"
-    },
-    material: "sztuczna",
-    color: "Srebrny",
-    availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/63413-large_default/naszyjnik-delikatny-celebrytka-listki-srebro-n122s.jpg",
-    image3: "https://hurt.ecarla.pl/190684-large_default/naszyjnik-delikatny-celebrytka-listki-srebro-n122s.jpg"
-  },
-  {
-    id: "3501",
-    name: "NASZYJNIK SZLIFOWANY KAMIEŃ N166CZE CZERWIEŃ",
-    price: "9.99 zł",
-    category: "sztuczna",
-    subCategory: "inne",
-    url: "/product/3501",
-    image: "https://hurt.ecarla.pl/63666-large_default/naszyjnik-szlifowany-kamien-n166cze-czerwien.jpg",
-    description: [
-      "Naszyjnik wielowarstwowy zdobiony podłużnym kamieniem.",
-      "Wykonany ze stopów metali nieszlachetnych."
-    ],
-    specs: {
-      "Długość": "46 cm",
-      "Długość wiszącego elementu": "5 cm + 1,3 cm",
-      "Kod producenta": "N166CZE",
-      "EAN": "5903678575212"
-    },
-    material: "sztuczna",
-    color: "Złoty / Srebrny / Czerwony",
-    availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/63667-large_default/naszyjnik-szlifowany-kamien-n166cze-czerwien.jpg",
-    image3: ""
-  },
-  {
+   {
     id: "3697",
-    name: "Kolia na perłach diadem morelowy N456MOR",
-    price: "19.68 zł",
+    name: "Naszyjnik - Kolia - Diadem morelowy",
+    price: "84.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/3697",
@@ -1490,8 +1440,8 @@ const necklacesFake = [
   },
   {
     id: "3702",
-    name: "Naszyjnik Kolia czarny Kamień i złoto N573",
-    price: "19.14 zł",
+    name: "Naszyjnik - Kolia - Boho pomarańczowy",
+    price: "84.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/3702",
@@ -1514,8 +1464,8 @@ const necklacesFake = [
   },
   {
     id: "3870",
-    name: "NASZYJNIK CZARNY SIATECZKA DUŻY N414",
-    price: "12.18 zł",
+    name: "Naszyjnik - Kolia - Czarny siateczka",
+    price: "74.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/3870",
@@ -1536,8 +1486,8 @@ const necklacesFake = [
 ,
   {
     id: "4221",
-    name: "Naszyjnik Kolia Diadem BIAŁY N73B",
-    price: "12.30 zł",
+    name: "Naszyjnik - Kolia - Diadem biały N73B",
+    price: "74.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/4221",
@@ -1559,8 +1509,8 @@ const necklacesFake = [
   },
   {
     id: "4496",
-    name: "NASZYJNIK KOLIA KRYSZTAŁKOWY WIANUSZEK TURKUS N224",
-    price: "17.99 zł",
+    name: "Naszyjnik - Kolia - Wianuszek Turkus",
+    price: "79.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/4496",
@@ -1582,57 +1532,10 @@ const necklacesFake = [
     image2: "https://hurt.ecarla.pl/64413-large_default/naszyjnik-kolia-krysztalkowy-wianuszek-turkus-n224.jpg",
     image3: "https://hurt.ecarla.pl/64414-large_default/naszyjnik-kolia-krysztalkowy-wianuszek-turkus-n224.jpg"
   },
-  {
-    id: "4578",
-    name: "NASZYJNIK DŁUGI ŻYŁKA Z KRYSZTAŁKAMI STARE ZŁOTO N230",
-    price: "9.84 zł",
-    category: "sztuczna",
-    subCategory: "inne",
-    url: "/product/4578",
-    image: "https://hurt.ecarla.pl/64577-large_default/naszyjnik-dlugi-zylka-z-krysztalkami-stare-zloto-n230.jpg",
-    description: [
-      "Naszyjnik w kolorze starego złota, zdobiony delikatnymi kryształkami.",
-      "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji."
-    ],
-    specs: {
-      "Kod producenta": "N230",
-      "Długość łańcuszka": "37 cm",
-      "Szerokość dekoru": "5 cm"
-    },
-    material: "sztuczna",
-    color: "Złoty (stare złoto)",
-    availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/64578-large_default/naszyjnik-dlugi-zylka-z-krysztalkami-stare-zloto-n230.jpg",
-    image3: "https://hurt.ecarla.pl/64579-large_default/naszyjnik-dlugi-zylka-z-krysztalkami-stare-zloto-n230.jpg"
-  },
-  {
-    id: "4644",
-    name: "NASZYJNIK SIMPLE KULE SREBRNY N241S",
-    price: "7.38 zł",
-    category: "sztuczna",
-    subCategory: "inne",
-    url: "/product/4644",
-    image: "https://hurt.ecarla.pl/190697-large_default/naszyjnik-simple-kule-srebrny-n241s.jpg",
-    description: [
-      "HIT SEZONU!",
-      "Klasyczne, piękne wzornictwo podkreśli naturalne piękno.",
-      "Idealny dodatek do sukienek, swetrów i bluzek."
-    ],
-    specs: {
-      "Kod producenta": "N241S",
-      "Długość": "ok. 40 cm",
-      "Szerokość kuli": "1,4 cm"
-    },
-    material: "sztuczna",
-    color: "Srebrny",
-    availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/190699-large_default/naszyjnik-simple-kule-srebrny-n241s.jpg",
-    image3: "https://hurt.ecarla.pl/64772-large_default/naszyjnik-simple-kule-srebrny-n241s.jpg"
-  },
-  {
+   {
     id: "4754",
-    name: "NASZYJNIK SOFT PASTEL",
-    price: "11.99 zł",
+    name: "Naszyjnik - Kolia - Soft pastel",
+    price: "74.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/4754",
@@ -1656,8 +1559,8 @@ const necklacesFake = [
   },
   {
     id: "5069",
-    name: "NASZYJNIK ORANGE SHAPE",
-    price: "18.99 zł",
+    name: "Naszyjnik - Kolia - Poparańczowy kształt",
+    price: "84.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/5069",
@@ -1683,8 +1586,8 @@ const necklacesFake = [
 
   {
     id: "5099",
-    name: "KOLIA FLORAL GRANAT",
-    price: "18.45 zł",
+    name: "Naszyjnik -Kolia - Floral Granat",
+    price: "79.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/5099",
@@ -1708,8 +1611,8 @@ const necklacesFake = [
   ,
     {
       id: "5246",
-      name: "NASZYJNIK KOLIA CZARNA, ZŁOTA DUŻA N373",
-      price: "13.53 zł",
+      name: "Naszyjnik - Kolia - Czarna",
+      price: "74.99 zł",
       category: "sztuczna",
       subCategory: "kolia",
       url: "/product/5246",
@@ -1733,8 +1636,8 @@ const necklacesFake = [
     },
   {
     id: "5315",
-    name: "NASZYJNIK BLUE DREAM",
-    price: "12.30 zł",
+    name: "Naszyjnik - Kolia - Niebieski sen",
+    price: "75.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/5315",
@@ -1758,8 +1661,8 @@ const necklacesFake = [
   },
   {
     id: "5335",
-    name: "NASZYJNIK SIATECZKA DUŻY ZŁOTY N414Z",
-    price: "12.18 zł",
+    name: "Naszyjnik - Kolia - Siateczka",
+    price: "69.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/5335",
@@ -1782,8 +1685,8 @@ const necklacesFake = [
   },
   {
     id: "5336",
-    name: "NASZYJNIK KOLIA MINERAL",
-    price: "20.30 zł",
+    name: "Naszyjnik - Kolia - Minerał",
+    price: "84.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/5336",
@@ -1806,8 +1709,8 @@ const necklacesFake = [
   },
   {
     id: "5397",
-    name: "NASZYJNIK KOLIA BOHO KWIATY ZŁOTO POMARAŃCZ N443",
-    price: "12.30 zł",
+    name: "Naszyjnik - Kolia - Boho Kwiaty Pomarańcz",
+    price: "69.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/5397",
@@ -1828,34 +1731,10 @@ const necklacesFake = [
     image2: "https://hurt.ecarla.pl/190714-large_default/naszyjnik-kolia-boho-kwiaty-zloto-pomarancz-n443.jpg",
     image3: ""
   },
-  {
-    id: "5473",
-    name: "NASZYJNIK KOLIA PODWÓJNA GOLD",
-    price: "18.45 zł",
-    category: "sztuczna",
-    subCategory: "długie",
-    url: "/product/5473",
-    image: "https://hurt.ecarla.pl/66038-large_default/naszyjnik-kolia-podwojna-gold.jpg",
-    description: [
-      "Długi naszyjnik z ozdobnymi elementami.",
-      "Elegancki dodatek na każdą okazję."
-    ],
-    specs: {
-      "Kod producenta": "N341",
-      "Długość łańcuszka": "42 cm",
-      "Długość ozdoby": "4,5 cm"
-    },
-    material: "sztuczna",
-    color: "Złoty",
-    availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/66039-large_default/naszyjnik-kolia-podwojna-gold.jpg",
-    image3: "https://hurt.ecarla.pl/66040-large_default/naszyjnik-kolia-podwojna-gold.jpg"
-  },
- 
-  {
+   {
     id: "5613",
-    name: "NASZYJNIK KOLOROWE ROZETY żółty",
-    price: "12.99 zł",
+    name: "Naszyjnik - Kolia - Kolorowe Rozety żółty",
+    price: "64.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/5613",
@@ -1877,8 +1756,8 @@ const necklacesFake = [
   },
   {
     id: "5620",
-    name: "NASZYJNIK KOLIA KRYSZTAŁOWY KOLOROWY N421",
-    price: "10.46 zł",
+    name: "Naszyjnik - Kolia - Kolorowy Kryształ",
+    price: "64.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/5620",
@@ -1898,8 +1777,8 @@ const necklacesFake = [
   },
   {
     id: "5622",
-    name: "Naszyjnik kolia elegancki, kamienie brąz i niebieski N363",
-    price: "13.49 zł",
+    name: "Naszyjnik - Kolia - Elegancki",
+    price: "69.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "/product/5622",
@@ -1917,13 +1796,416 @@ const necklacesFake = [
     image2: "https://hurt.ecarla.pl/186916-large_default/naszyjnik-kolia-elegancki-kamienie-braz-i-niebieski-n363.jpg",
     image3: ""
   },
+ {
+    id: "5473",
+    name: "Naszyjnik - Kolia - Podwójna",
+    price: "79.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "/product/5473",
+    image: "https://hurt.ecarla.pl/66038-large_default/naszyjnik-kolia-podwojna-gold.jpg",
+    description: [
+      "Długi naszyjnik z ozdobnymi elementami.",
+      "Elegancki dodatek na każdą okazję."
+    ],
+    specs: {
+      "Kod producenta": "N341",
+      "Długość łańcuszka": "42 cm",
+      "Długość ozdoby": "4,5 cm"
+    },
+    material: "sztuczna",
+    color: "Złoty",
+    availability: "W magazynie",
+    image2: "https://hurt.ecarla.pl/66039-large_default/naszyjnik-kolia-podwojna-gold.jpg",
+    image3: "https://hurt.ecarla.pl/66040-large_default/naszyjnik-kolia-podwojna-gold.jpg"
+  },
+ 
+   {
+    id: "33827",
+    name: "Naszyjnik - Kolia - Kwiaty pomarańczy",
+    price: "69.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "https://hurt.ecarla.pl/pl/naszyjniki/efektowny-naszyjnik-kolia-kwiaty-zloto-pomarancz-n1091.html",
+    image: "https://hurt.ecarla.pl/200015-large_default/efektowny-naszyjnik-kolia-kwiaty-zloto-pomarancz-n1091.jpg",
+    description: ["Efektowny naszyjnik Kolia.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
+    specs: { "Kod producenta": "N1091" },
+    material: "Stopy metali nieszlachetnych",
+    availability: "W magazynie"
+  },
+  {
+    id: "33828",
+    name: "Naszyjnik - Kolia - Kolorowe Krystałki",
+    price: "69.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "https://hurt.ecarla.pl/pl/naszyjniki/efektowny-naszyjnik-kolia-krysztaly-zielony-braz-bez-n1094.html",
+    image: "https://hurt.ecarla.pl/200017-large_default/efektowny-naszyjnik-kolia-krysztaly-zielony-braz-bez-n1094.jpg",
+    description: ["Efektowny naszyjnik Kolia.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
+    specs: { "Kod producenta": "N1094" },
+    material: "Stopy metali nieszlachetnych",
+    availability: "W magazynie"
+  },
+  {
+    id: "33829",
+    name: "Naszyjnik - Kolia - Kryształy czarno białe",
+    price: "69.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "https://hurt.ecarla.pl/pl/naszyjniki/efektowny-naszyjnik-kolia-krysztaly-czarno-biale-zloty-n1095.html",
+    image: "https://hurt.ecarla.pl/200019-large_default/efektowny-naszyjnik-kolia-krysztaly-czarno-biale-zloty-n1095.jpg",
+    description: ["Efektowny naszyjnik Kolia.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
+    specs: { "Kod producenta": "N1095" },
+    material: "Stopy metali nieszlachetnych",
+    availability: "W magazynie"
+  },
+  {
+    id: "33830",
+    name: "Naszyjnik - Kolia - Kryształy niebiesko białe ",
+    price: "69.99zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "https://hurt.ecarla.pl/pl/naszyjniki/efektowny-naszyjnik-kolia-krysztaly-turkus-zielony-opalizujacy-bialy-n1096.html",
+    image: "https://hurt.ecarla.pl/200028-large_default/efektowny-naszyjnik-kolia-krysztaly-turkus-zielony-opalizujacy-bialy-n1096.jpg",
+    description: ["Efektowny naszyjnik Kolia.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
+    specs: { "Kod producenta": "N1096" },
+    material: "Stopy metali nieszlachetnych",
+    availability: "W magazynie"
+  },
+  {
+    id: "33832",
+    name: "Naszyjnik - Kolia - Jarmarkowe kryształy",
+    price: "72.99zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "https://hurt.ecarla.pl/pl/naszyjniki/efektowny-naszyjnik-kolia-kolorowe-krysztaly-n1087kol.html",
+    image: "https://hurt.ecarla.pl/200024-large_default/efektowny-naszyjnik-kolia-kolorowe-krysztaly-n1087kol.jpg",
+    description: ["Efektowny naszyjnik Kolia.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
+    specs: { "Kod producenta": "N1087KOL" },
+    material: "Stopy metali nieszlachetnych",
+    availability: "W magazynie"
+  },
+  {
+    id: "33833",
+    name: "Naszyjnik - Kolia - Różowe kryształki",
+    price: "69.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "https://hurt.ecarla.pl/pl/naszyjniki/efektowny-naszyjnik-kolia-krysztaly-rozowy-pleciony-rzemyk-n1097.html",
+    image: "https://hurt.ecarla.pl/200029-large_default/efektowny-naszyjnik-kolia-krysztaly-rozowy-pleciony-rzemyk-n1097.jpg",
+    description: ["Efektowny naszyjnik Kolia.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
+    specs: { "Kod producenta": "N1097" },
+    material: "Stopy metali nieszlachetnych",
+    availability: "W magazynie"
+  },
+  {
+    id: "10136",
+    name: "Naszyjnik - Kolia - Błękitne łezki",
+    price: "69.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "/product/10136",
+    image: "https://hurt.ecarla.pl/81553-large_default/naszyjnik-kolia-lezki-geometria-z-kolczykami-n212.jpg",
+    description: ["Kolia z kolczykami w zestawie.", "Ekstrawaganckie wzornictwo."],
+    specs: { "Kod producenta": "N212M", "Obwód": "47 cm + 7 cm", "Kolczyki": "3,7 cm x 1,7 cm" },
+    material: "Stop metali nieszlachetnych",
+    color: "Nieokreślony",
+    availability: "W magazynie",
+    image2: "https://hurt.ecarla.pl/81554-large_default/naszyjnik-kolia-lezki-geometria-z-kolczykami-n212.jpg",
+    image3: ""
+  },
+  {
+    id: "10140",
+    name: "Naszyjnik - Kolia - Czarne łezki",
+    price: "69.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "/product/10140",
+    image: "https://hurt.ecarla.pl/81561-large_default/kolia-lezki-geometria-z-kolczykami-czarny.jpg",
+    description: ["Kolia z kolczykami w zestawie.", "Wersja kolorystyczna: czarny."],
+    specs: { "Kod producenta": "N212CZ", "Obwód": "47 cm + 7 cm", "Kolczyki": "3,7 cm x 1,7 cm" },
+    material: "Stop metali nieszlachetnych",
+    color: "Czarny",
+    availability: "W magazynie",
+    image2: "https://hurt.ecarla.pl/81562-large_default/kolia-lezki-geometria-z-kolczykami-czarny.jpg",
+    image3: ""
+  },
+  {
+    id: "32117",
+    name: "Naszyjnik - Kolia - Efektowne kryształy",
+    price: "109.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/naszyjnik-kolia-xxl-czarna-efektowne-krysztaly-n431b.html",
+    image: "https://hurt.ecarla.pl/190743-large_default/naszyjnik-kolia-xxl-czarna-efektowne-krysztaly-n431b.jpg",
+    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
+    specs: { "Kod producenta": "N431B", "Długość obwodu": "ok. 50 cm", "Regulacja": "2,8 cm", "Szerokość naszyjnika": "18 cm", "Długość ozdób": "ok. 15 cm" },
+    material: "Stopy metali nieszlachetnych",
+    availability: "W magazynie"
+  },
+  {
+    id: "32118",
+    name: "Naszyjnik - Kolia - Kwadraty i prostąkąty",
+    price: "94.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/kolia-kwadraty-i-prostokaty-srebro-cyrkonie-n415s.html",
+    image: "https://hurt.ecarla.pl/190746-large_default/kolia-kwadraty-i-prostokaty-srebro-cyrkonie-n415s.jpg",
+    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
+    specs: { "Kod producenta": "N415S", "Długość obwodu": "ok. 41 cm", "Szerokość ozdoby": "ok. 7,5 cm", "Regulacja": "8 cm" },
+    material: "Stopy metali nieszlachetnych",
+    availability: "W magazynie"
+  },
+   {
+    id: "10145",
+    name: "Naszyjnik - Kolia - Kremowe Kwiaty",
+    price: "59.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "/product/10145",
+    image: "https://hurt.ecarla.pl/81575-large_default/kolia-kwiaty-z-krysztalkami-kremowa-n214k.jpg",
+    description: ["Złota kolia z kryształkami.", "Motyw kwiatów."],
+    specs: { "Kod producenta": "N214K", "Obwód": "47 cm + 5 cm" },
+    material: "Stop metali nieszlachetnych",
+    color: "Złoty/Kremowy",
+    availability: "W magazynie",
+    image2: "",
+    image3: ""
+  },
+  {
+    id: "10191",
+    name: "Naszyjnik - kolia -  Siateczka Pazurki",
+    price: "64.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "/product/10191",
+    image: "https://hurt.ecarla.pl/182901-large_default/naszyjnik-kolia-siateczka-czarny-n413z.jpg",
+    description: ["Styl BOHO.", "Nie zawiera niklu ani chromu."],
+    specs: { "Kod producenta": "N413Z" },
+    material: "Stop metali nieszlachetnych",
+    color: "Srebrny",
+    availability: "W magazynie",
+    image2: "",
+    image3: ""
+  },
+   {
+    id: "32105",
+    name: "Naszyjnik - kolia - Wachlarz",
+    price: "94.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/naszyjnik-kolia-xxl-zlota-wachlarz-roz-n418r.html",
+    image: "https://hurt.ecarla.pl/190718-large_default/naszyjnik-kolia-xxl-zlota-wachlarz-roz-n418r.jpg",
+    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
+    specs: { "Kod producenta": "N418R" },
+    material: "Stopy metali nieszlachetnych",
+    availability: "W magazynie"
+  },
+  {
+    id: "32106",
+    name: "Naszyjnik - kolia - Błękitny wachlarz",
+    price: "99.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-kolia-efektowny-wachlarz-blekit-stare-zloto-n32bl.html",
+    image: "https://hurt.ecarla.pl/190720-large_default/naszyjnik-kolia-efektowny-wachlarz-blekit-stare-zloto-n32bl.jpg",
+    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
+    specs: { "Kod producenta": "N32BŁ" },
+    material: "Stopy metali nieszlachetnych",
+    availability: "W magazynie"
+  },
+  {
+    id: "32108",
+    name: "Naszyjnik - Kolia - Zarka",
+    price: "89.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "https://hurt.ecarla.pl/pl/naszyjniki/kolia-zarka-perly-na-zlotym-lancuchu-efektowna-n97.html",
+    image: "https://hurt.ecarla.pl/190724-large_default/kolia-zarka-perly-na-zlotym-lancuchu-efektowna-n97.jpg",
+    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
+    specs: { "Kod producenta": "N97", "Wymiary": "51 cm + regulacja 7 cm" },
+    material: "Stopy metali nieszlachetnych",
+    availability: "W magazynie"
+  },
+  {
+    id: "32109",
+    name: "Naszyjnik - Kolia - Szklane brązowe kwiaty",
+    price: "79.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "https://hurt.ecarla.pl/pl/naszyjniki/kolia-kwiaty-szklane-n74-braz.html",
+    image: "https://hurt.ecarla.pl/190726-large_default/kolia-kwiaty-szklane-n74-braz.jpg",
+    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
+    specs: { "Kod producenta": "N74BR", "Wymiary": "49 cm + regulacja" },
+    material: "Stopy metali nieszlachetnych",
+    availability: "W magazynie"
+  },
+  {
+    id: "32110",
+    name: "Naszyjnik - kolia - Kremowe cyrkonie",
+    price: "59.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-kolia-kremowy-cyrkonie-zloty-lancuch-n105.html",
+    image: "https://hurt.ecarla.pl/190728-large_default/naszyjnik-kolia-kremowy-cyrkonie-zloty-lancuch-n105.jpg",
+    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
+    specs: { "Kod producenta": "N105", "Długość łańcuszka": "49 cm", "Wymiary ozdoby": "14,5 cm" },
+    material: "Stopy metali nieszlachetnych",
+    availability: "W magazynie"
+  },
+  {
+    id: "32111",
+    name: "Naszyjnik - Kolia - Kremowo-złoty",
+    price: "74.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/kolia-naszyjnik-kremowo-zlota-duja-n162b.html",
+    image: "https://hurt.ecarla.pl/190730-large_default/kolia-naszyjnik-kremowo-zlota-duja-n162b.jpg",
+    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
+    specs: { "Kod producenta": "N162B", "Długość całkowita": "92 cm", "Szerokość ozdoby": "2,2 cm" },
+    material: "Stopy metali nieszlachetnych",
+    availability: "W magazynie"
+  },
+  {
+    id: "32116",
+    name: "Naszyjnik - Kolia - Ażurowe stare kwiaty",
+    price: "59.99 zł",
+    category: "sztuczna",
+    subCategory: "kolia",
+    url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/naszyjnik-azurowy-kwiatuszki-stare-zloto-n261z.html",
+    image: "https://hurt.ecarla.pl/190741-large_default/naszyjnik-azurowy-kwiatuszki-stare-zloto-n261z.jpg",
+    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
+    specs: { "Kod producenta": "N261Z", "Długość obwodu": "35 cm (bez regulacji)", "Szerokość ozdoby": "ok. 2,7 cm", "Regulacja": "10 cm" },
+    material: "Stopy metali nieszlachetnych",
+    availability: "W magazynie"
+  },
+  
+ 
+ 
+// KOLIA
 
+
+
+// FASHION
+
+{
+  id: "8500",
+  name: "Naszyjnik - Fashion - Srebrne listki",
+  price: "79.99 zł",
+  category: "sztuczna",
+  subCategory: "fashion",
+  url: "/product/8500",
+  image: "https://hurt.ecarla.pl/182783-large_default/naszyjnik-delikatny-srebrny-n582s.jpg",
+  description: ["Naszyjnik wykonany ze stopów metali nieszlachetnych.", "Nie zawiera niklu ani chromu."],
+  specs: { "Kod producenta": "N582S", "Długość": "28 cm + 10 cm" },
+  material: "Stop metali nieszlachetnych",
+  color: "Srebrny",
+  availability: "W magazynie",
+  image2: "https://hurt.ecarla.pl/182784-large_default/naszyjnik-delikatny-srebrny-n582s.jpg",
+  image3: ""
+},
+  {
+    id: "2952",
+    name: "Naszyjnik - Fashion - Listki",
+    price: "54.99 zł",
+    category: "sztuczna",
+    subCategory: "fashion",
+    url: "/product/2952",
+    image: "https://hurt.ecarla.pl/190685-large_default/naszyjnik-delikatny-celebrytka-listki-srebro-n122s.jpg",
+    description: [
+      "Naszyjnik w kolorze srebrnym z ażurowymi listkami.",
+      "Klasyczne, piękne wzornictwo.",
+      "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji."
+    ],
+    specs: {
+      "Kod producenta": "N122S"
+    },
+    material: "sztuczna",
+    color: "Srebrny",
+    availability: "W magazynie",
+    image2: "https://hurt.ecarla.pl/63413-large_default/naszyjnik-delikatny-celebrytka-listki-srebro-n122s.jpg",
+    image3: "https://hurt.ecarla.pl/190684-large_default/naszyjnik-delikatny-celebrytka-listki-srebro-n122s.jpg"
+  },
+  {
+    id: "3501",
+    name: "Naszyjnik - Fashion - Szlifowany kamień",
+    price: "69.99 zł",
+    category: "sztuczna",
+    subCategory: "fashion",
+    url: "/product/3501",
+    image: "https://hurt.ecarla.pl/63666-large_default/naszyjnik-szlifowany-kamien-n166cze-czerwien.jpg",
+    description: [
+      "Naszyjnik wielowarstwowy zdobiony podłużnym kamieniem.",
+      "Wykonany ze stopów metali nieszlachetnych."
+    ],
+    specs: {
+      "Długość": "46 cm",
+      "Długość wiszącego elementu": "5 cm + 1,3 cm",
+      "Kod producenta": "N166CZE",
+      "EAN": "5903678575212"
+    },
+    material: "sztuczna",
+    color: "Złoty / Srebrny / Czerwony",
+    availability: "W magazynie",
+    image2: "https://hurt.ecarla.pl/63667-large_default/naszyjnik-szlifowany-kamien-n166cze-czerwien.jpg",
+    image3: ""
+  },
+ 
+  {
+    id: "4578",
+    name: "Naszyjnik - Fashion - Kryształki start",
+    price: "59.99 zł",
+    category: "sztuczna",
+    subCategory: "fashion",
+    url: "/product/4578",
+    image: "https://hurt.ecarla.pl/64577-large_default/naszyjnik-dlugi-zylka-z-krysztalkami-stare-zloto-n230.jpg",
+    description: [
+      "Naszyjnik w kolorze starego złota, zdobiony delikatnymi kryształkami.",
+      "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji."
+    ],
+    specs: {
+      "Kod producenta": "N230",
+      "Długość łańcuszka": "37 cm",
+      "Szerokość dekoru": "5 cm"
+    },
+    material: "sztuczna",
+    color: "Złoty (stare złoto)",
+    availability: "W magazynie",
+    image2: "https://hurt.ecarla.pl/64578-large_default/naszyjnik-dlugi-zylka-z-krysztalkami-stare-zloto-n230.jpg",
+    image3: "https://hurt.ecarla.pl/64579-large_default/naszyjnik-dlugi-zylka-z-krysztalkami-stare-zloto-n230.jpg"
+  },
+  {
+    id: "4644",
+    name: "Naszyjnik - Fashion - Kule srebrne",
+    price: "64.99 zł",
+    category: "sztuczna",
+    subCategory: "fashion",
+    url: "/product/4644",
+    image: "https://hurt.ecarla.pl/190697-large_default/naszyjnik-simple-kule-srebrny-n241s.jpg",
+    description: [
+      "HIT SEZONU!",
+      "Klasyczne, piękne wzornictwo podkreśli naturalne piękno.",
+      "Idealny dodatek do sukienek, swetrów i bluzek."
+    ],
+    specs: {
+      "Kod producenta": "N241S",
+      "Długość": "ok. 40 cm",
+      "Szerokość kuli": "1,4 cm"
+    },
+    material: "sztuczna",
+    color: "Srebrny",
+    availability: "W magazynie",
+    image2: "https://hurt.ecarla.pl/190699-large_default/naszyjnik-simple-kule-srebrny-n241s.jpg",
+    image3: "https://hurt.ecarla.pl/64772-large_default/naszyjnik-simple-kule-srebrny-n241s.jpg"
+  },
+ 
+ 
   {
     id: "5794",
-    name: "NASZYJNIK N375S",
-    price: "14.99 zł",
+    name: "Naszyjnik - Fashion - Crebrne cyrkonie",
+    price: "64.99 zł",
     category: "sztuczna",
-    subCategory: "inne",
+    subCategory: "fashion",
     url: "/product/5794",
     image: "https://hurt.ecarla.pl/66448-large_default/naszyjnik-n375s.jpg",
     description: [
@@ -1941,10 +2223,10 @@ const necklacesFake = [
   },
   {
     id: "5795",
-    name: "NASZYJNIK N375Z",
-    price: "14.99 zł",
+    name: "Naszyjnik - Fashion - Białe złoto cyrkonie",
+    price: "64.99 zł",
     category: "sztuczna",
-    subCategory: "inne",
+    subCategory: "fashion",
     url: "/product/5795",
     image: "https://hurt.ecarla.pl/66451-large_default/naszyjnik-n375z.jpg",
     description: [
@@ -1961,28 +2243,13 @@ const necklacesFake = [
     image3: ""
   }
 ,
-  {
-    id: "5808",
-    name: "NASZYJNIK N376Z",
-    price: "5.99 zł",
-    category: "sztuczna",
-    subCategory: "naszyjniki",
-    url: "/product/5808",
-    image: "https://hurt.ecarla.pl/66493-large_default/naszyjnik-n376z.jpg",
-    description: ["Długość całkowita: 43 cm + 5 cm dodatkowej regulacji.", "Średnica kółka: 2,1 cm."],
-    specs: { "Kod producenta": "N376Z", "EAN": "5903678547653" },
-    material: "sztuczna",
-    color: "Złoty",
-    availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/66494-large_default/naszyjnik-n376z.jpg",
-    image3: "https://hurt.ecarla.pl/66495-large_default/naszyjnik-n376z.jpg"
-  },
+
   {
     id: "5815",
-    name: "NASZYJNIK N376S",
-    price: "5.99 zł",
+    name: "Naszyjnik - Fashion - Srebrne kółko",
+    price: "54.99 zł",
     category: "sztuczna",
-    subCategory: "naszyjniki",
+    subCategory: "fashion",
     url: "/product/5815",
     image: "https://hurt.ecarla.pl/66514-large_default/naszyjnik-n376s.jpg",
     description: ["Długość całkowita: 43 cm + 5 cm dodatkowej regulacji.", "Średnica kółka: 2,1 cm."],
@@ -1996,10 +2263,10 @@ const necklacesFake = [
 
   {
     id: "5808",
-    name: "NASZYJNIK N376Z",
-    price: "5.99 zł",
+    name: "Naszyjnik - Fashion - Złote koło",
+    price: "54.99 zł",
     category: "sztuczna",
-    subCategory: "naszyjniki",
+    subCategory: "fashion",
     url: "/product/5808",
     image: "https://hurt.ecarla.pl/66493-large_default/naszyjnik-n376z.jpg",
     description: ["Długość całkowita: 43 cm + 5 cm dodatkowej regulacji.", "Średnica kółka: 2,1 cm."],
@@ -2009,111 +2276,17 @@ const necklacesFake = [
     availability: "W magazynie",
     image2: "https://hurt.ecarla.pl/66494-large_default/naszyjnik-n376z.jpg",
     image3: "https://hurt.ecarla.pl/66495-large_default/naszyjnik-n376z.jpg"
-  },
-  {
-    id: "5815",
-    name: "NASZYJNIK N376S",
-    price: "5.99 zł",
-    category: "sztuczna",
-    subCategory: "naszyjniki",
-    url: "/product/5815",
-    image: "https://hurt.ecarla.pl/66514-large_default/naszyjnik-n376s.jpg",
-    description: ["Długość całkowita: 43 cm + 5 cm dodatkowej regulacji.", "Średnica kółka: 2,1 cm."],
-    specs: { "Kod producenta": "N376S", "EAN": "5903678547684" },
-    material: "sztuczna",
-    color: "Srebrny",
-    availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/66515-large_default/naszyjnik-n376s.jpg",
-    image3: "https://hurt.ecarla.pl/66516-large_default/naszyjnik-n376s.jpg"
-  },
-
-  {
-    id: "8500",
-    name: "NASZYJNIK DELIKATNY SREBRNY N582S",
-    price: "6.99 zł",
-    category: "sztuczna",
-    subCategory: "naszyjniki",
-    url: "/product/8500",
-    image: "https://hurt.ecarla.pl/182783-large_default/naszyjnik-delikatny-srebrny-n582s.jpg",
-    description: ["Naszyjnik wykonany ze stopów metali nieszlachetnych.", "Nie zawiera niklu ani chromu."],
-    specs: { "Kod producenta": "N582S", "Długość": "28 cm + 10 cm" },
-    material: "Stop metali nieszlachetnych",
-    color: "Srebrny",
-    availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/182784-large_default/naszyjnik-delikatny-srebrny-n582s.jpg",
-    image3: ""
   },
  
-  {
-    id: "10136",
-    name: "Naszyjnik Kolia łezki geometria z kolczykami N212",
-    price: "14.99 zł",
-    category: "sztuczna",
-    subCategory: "naszyjniki",
-    url: "/product/10136",
-    image: "https://hurt.ecarla.pl/81553-large_default/naszyjnik-kolia-lezki-geometria-z-kolczykami-n212.jpg",
-    description: ["Kolia z kolczykami w zestawie.", "Ekstrawaganckie wzornictwo."],
-    specs: { "Kod producenta": "N212M", "Obwód": "47 cm + 7 cm", "Kolczyki": "3,7 cm x 1,7 cm" },
-    material: "Stop metali nieszlachetnych",
-    color: "Nieokreślony",
-    availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/81554-large_default/naszyjnik-kolia-lezki-geometria-z-kolczykami-n212.jpg",
-    image3: ""
-  },
-  {
-    id: "10140",
-    name: "KOLIA ŁEZKI GEOMETRIA Z KOLCZYKAMI CZARNY",
-    price: "14.99 zł",
-    category: "sztuczna",
-    subCategory: "naszyjniki",
-    url: "/product/10140",
-    image: "https://hurt.ecarla.pl/81561-large_default/kolia-lezki-geometria-z-kolczykami-czarny.jpg",
-    description: ["Kolia z kolczykami w zestawie.", "Wersja kolorystyczna: czarny."],
-    specs: { "Kod producenta": "N212CZ", "Obwód": "47 cm + 7 cm", "Kolczyki": "3,7 cm x 1,7 cm" },
-    material: "Stop metali nieszlachetnych",
-    color: "Czarny",
-    availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/81562-large_default/kolia-lezki-geometria-z-kolczykami-czarny.jpg",
-    image3: ""
-  },
-  {
-    id: "10145",
-    name: "Kolia kwiaty z kryształkami w środku kremowa N214k",
-    price: "6.99 zł",
-    category: "sztuczna",
-    subCategory: "naszyjniki",
-    url: "/product/10145",
-    image: "https://hurt.ecarla.pl/81575-large_default/kolia-kwiaty-z-krysztalkami-kremowa-n214k.jpg",
-    description: ["Złota kolia z kryształkami.", "Motyw kwiatów."],
-    specs: { "Kod producenta": "N214K", "Obwód": "47 cm + 5 cm" },
-    material: "Stop metali nieszlachetnych",
-    color: "Złoty/Kremowy",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
-  {
-    id: "10191",
-    name: "Naszyjnik kolia siateczka czarny N413Z",
-    price: "12.18 zł",
-    category: "sztuczna",
-    subCategory: "naszyjniki",
-    url: "/product/10191",
-    image: "https://hurt.ecarla.pl/182901-large_default/naszyjnik-kolia-siateczka-czarny-n413z.jpg",
-    description: ["Styl BOHO.", "Nie zawiera niklu ani chromu."],
-    specs: { "Kod producenta": "N413Z" },
-    material: "Stop metali nieszlachetnych",
-    color: "Srebrny",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
+
+  
+ 
   {
     id: "10411",
-    name: "Naszyjnik delikatny złoty N582Z",
-    price: "6.99 zł",
+    name: "Naszyjnik - Fashion - Złote listki ",
+    price: "69.99 zł",
     category: "sztuczna",
-    subCategory: "naszyjniki",
+    subCategory: "fashion",
     url: "/product/10411",
     image: "https://hurt.ecarla.pl/182782-large_default/naszyjnik-delikatny-n597.jpg",
     description: ["Styl BOHO.", "Nie zawiera niklu ani chromu."],
@@ -2144,10 +2317,10 @@ const necklacesFake = [
 
   {
     id: "15479",
-    name: "NASZYJNIK SZTUCZNE perły z kłódką N710",
-    price: "3.94 zł",
+    name: "Naszyjnik - Fashion - Perły z kłódką",
+    price: "49.99 zł",
     category: "sztuczna",
-    subCategory: "naszyjniki",
+    subCategory: "fashion",
     url: "/product/15479",
     image: "https://hurt.ecarla.pl/108634-large_default/naszyjnik-sztuczne-perly-z-klodka-n710.jpg",
     description: ["Naszyjnik ze sztucznych pereł.", "Wykonany ze stopów metali nieszlachetnych."],
@@ -2160,10 +2333,10 @@ const necklacesFake = [
   },
   {
     id: "15712",
-    name: "Naszyjnik delikatny długi shell N711",
-    price: "8.00 zł",
+    name: "Naszyjnik - Fashion - Długi z kroplą",
+    price: "54.99 zł",
     category: "sztuczna",
-    subCategory: "naszyjniki",
+    subCategory: "fashion",
     url: "/product/15712",
     image: "https://hurt.ecarla.pl/110026-large_default/naszyjnik-delikatny-dlugi-shell-n711.jpg",
     description: ["Naszyjnik typu multi.", "Wykonany ze stopów metali nieszlachetnych."],
@@ -2176,10 +2349,10 @@ const necklacesFake = [
   },
   {
     id: "15926",
-    name: "Naszyjnik delikatny wisząca kłódka N724",
-    price: "2.58 zł",
+    name: "Naszyjnik - Fashion - Delikatny z kłódką",
+    price: "49.99 zł",
     category: "sztuczna",
-    subCategory: "naszyjniki",
+    subCategory: "fashion",
     url: "/product/15926",
     image: "https://hurt.ecarla.pl/110942-large_default/naszyjnik-delikatny-wiszaca-klodka-n724.jpg",
     description: ["Naszyjnik złoty typu multi.", "Wykonany ze stopów metali nieszlachetnych."],
@@ -2192,10 +2365,10 @@ const necklacesFake = [
   },
   {
     id: "15928",
-    name: "NASZYJNIK SZTUCZNE perły z kołem N709",
-    price: "4.31 zł",
+    name: "Naszyjnik - Fashion - Perła z kółkiem",
+    price: "49.99 zł",
     category: "sztuczna",
-    subCategory: "naszyjniki",
+    subCategory: "fashion",
     url: "/product/15928",
     image: "https://hurt.ecarla.pl/110948-large_default/naszyjnik-sztuczne-perly-z-kolem-n709.jpg",
     description: ["Naszyjnik ze sztucznych pereł.", "Wykonany ze stopów metali nieszlachetnych."],
@@ -2213,10 +2386,10 @@ const necklacesFake = [
 
   {
     id: "18109",
-    name: "Naszyjnik delikatny multi N748",
-    price: "9.35 zł",
+    name: "Naszyjnik - Fashion - Kwiaty i krzyżyk",
+    price: "54.99 zł",
     category: "sztuczna",
-    subCategory: "naszyjniki",
+    subCategory: "fashion",
     url: "/product/18109",
     image: "https://hurt.ecarla.pl/120700-large_default/naszyjnik-delikatny-multi-n748.jpg",
     description: ["Naszyjnik złoty typu multi.", "Wykonany ze stopów metali nieszlachetnych."],
@@ -2229,27 +2402,27 @@ const necklacesFake = [
   },
   {
     id: "18110",
-    name: "Naszyjnik delikatny multi N743",
-    price: "9.35 zł",
+    name: "Naszyjnik - Fashion - Multi",
+    price: "59.99 zł",
     category: "sztuczna",
-    subCategory: "naszyjniki",
+    subCategory: "fashion",
     url: "/product/18110",
-    image: "https://hurt.ecarla.pl/120703-large_default/naszyjnik-delikatny-multi-n743.jpg",
+    image: "    https://hurt.ecarla.pl/120704-large_default/naszyjnik-delikatny-multi-n743.jpg",
     description: ["Naszyjnik złoty typu multi.", "Wykonany ze stopów metali nieszlachetnych."],
     specs: { "Kod producenta": "N743", "Długość": "38 cm + 6 cm", "EAN": "5903678510756" },
     material: "Stop metali nieszlachetnych",
     color: "Złoty",
     availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/120704-large_default/naszyjnik-delikatny-multi-n743.jpg",
+    image2: "https://hurt.ecarla.pl/120703-large_default/naszyjnik-delikatny-multi-n743.jpg",
     image3: ""
   }
 ,
   {
     id: "18160",
-    name: "NASZYJNIK Celebrytka N742",
-    price: "8.36 zł",
+    name: "Naszyjnik - Fashion - Do okoła świata",
+    price: "54.99zł",
     category: "sztuczna",
-    subCategory: "naszyjniki",
+    subCategory: "fashion",
     url: "/product/18160",
     image: "https://hurt.ecarla.pl/120953-large_default/naszyjnik-celebrytka-n742.jpg",
     description: ["Naszyjnik celebrytka typu multi.", "Wykonany ze stopów metali nieszlachetnych."],
@@ -2262,10 +2435,10 @@ const necklacesFake = [
   },
   {
     id: "18238",
-    name: "Długi naszyjnik multi N757",
-    price: "6.40 zł",
+    name: "Naszyjnik - Fashion - Długi",
+    price: "54.99 zł",
     category: "sztuczna",
-    subCategory: "naszyjniki",
+    subCategory: "fashion",
     url: "/product/18238",
     image: "https://hurt.ecarla.pl/121273-large_default/dlugi-naszyjnik-multi-n757.jpg",
     description: ["Naszyjnik złoty typu multi.", "Wykonany ze stopów metali nieszlachetnych."],
@@ -2278,10 +2451,10 @@ const necklacesFake = [
   },
   {
     id: "18243",
-    name: "Długi naszyjnik multi N745",
-    price: "5.54 zł",
+    name: "Naszyjnik - Fashion - Trzy znaki",
+    price: "54.99 zł",
     category: "sztuczna",
-    subCategory: "naszyjniki",
+    subCategory: "fashion",
     url: "/product/18243",
     image: "https://hurt.ecarla.pl/121308-large_default/dlugi-naszyjnik-multi-n745.jpg",
     description: ["Naszyjnik złoty typu multi.", "Wykonany ze stopów metali nieszlachetnych."],
@@ -2300,7 +2473,7 @@ const necklacesFake = [
     name: "Ekspozytor na biżuterię wieszak- naszyjnik, pierścionki E36",
     price: "9.84 zł",
     category: "przechowywanie",
-    subCategory: "ekspozytory",
+    subCategory: "fashion",
     url: "/product/19463",
     image: "https://hurt.ecarla.pl/126066-large_default/ekspozytor-na-bizuterie-wieszak-naszyjnik-pierscionki-e36.jpg",
     description: ["Elegancki, czarny ekspozytor na biżuterię.", "Wysoki połysk."],
@@ -2314,10 +2487,10 @@ const necklacesFake = [
 ,
   {
     id: "19703",
-    name: "Długi naszyjnik delikatny N751",
-    price: "3.20 zł",
+    name: "Naszyjnik - Fashion - Medalik",
+    price: "49.99 zł",
     category: "sztuczna",
-    subCategory: "naszyjniki",
+    subCategory: "fashion",
     url: "/product/19703",
     image: "https://hurt.ecarla.pl/127380-large_default/dlugi-naszyjnik-delikatny-n751.jpg",
     description: ["Naszyjnik delikatny w kolorze złotym.", "Wykonany ze stopów metali nieszlachetnych.", "Nie zawiera niklu ani chromu."],
@@ -2333,10 +2506,10 @@ const necklacesFake = [
   
   {
     id: "23568",
-    name: "Łańcuszek BODY CHAIN KWS11",
-    price: "14.15 zł",
+    name: "Naszyjnik - Fashion - Body Chain",
+    price: "64.99 zł",
     category: "sztuczna",
-    subCategory: "naszyjniki",
+    subCategory: "fashion",
     url: "/product/23568",
     image: "https://hurt.ecarla.pl/143292-large_default/lancuszek-body-chain-kws11.jpg",
     description: ["Łańcuszek typu body chain.", "Wykonany ze stopów metali nieszlachetnych.", "Nie zawiera niklu ani chromu.", "Uwaga: produkt nie jest odporny na wodę."],
@@ -2349,10 +2522,10 @@ const necklacesFake = [
   },
   {
     id: "28552",
-    name: "Naszyjnik delikatny multi celebrytka czarne koraliki złoty N658Z",
-    price: "7.01 zł",
+    name: "Naszyjnik - Fashion - Delikatny",
+    price: "45.99 zł",
     category: "sztuczna",
-    subCategory: "naszyjniki",
+    subCategory: "fashion",
     url: "/product/28552",
     image: "https://hurt.ecarla.pl/166804-large_default/naszyjnik-delikatny-multi-celebrytka-czarne-koraliki-zloty-n658z-1.jpg",
     description: ["Wykonany ze stopów metali nieszlachetnych."],
@@ -2362,129 +2535,42 @@ const necklacesFake = [
     availability: "W magazynie"
   },
 
-  {
-    id: "32105",
-    name: "Naszyjnik kolia XXL złota wachlarz róż N418R",
-    price: "20.66 zł",
-    category: "sztuczna",
-    subCategory: "Naszyjniki",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/naszyjnik-kolia-xxl-zlota-wachlarz-roz-n418r.html",
-    image: "https://hurt.ecarla.pl/190718-large_default/naszyjnik-kolia-xxl-zlota-wachlarz-roz-n418r.jpg",
-    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
-    specs: { "Kod producenta": "N418R" },
-    material: "Stopy metali nieszlachetnych",
-    availability: "W magazynie"
-  },
-  {
-    id: "32106",
-    name: "Naszyjnik kolia efektowny wachlarz błękit, stare złoto N32BŁ",
-    price: "26.60 zł",
-    category: "sztuczna",
-    subCategory: "Naszyjniki",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-kolia-efektowny-wachlarz-blekit-stare-zloto-n32bl.html",
-    image: "https://hurt.ecarla.pl/190720-large_default/naszyjnik-kolia-efektowny-wachlarz-blekit-stare-zloto-n32bl.jpg",
-    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
-    specs: { "Kod producenta": "N32BŁ" },
-    material: "Stopy metali nieszlachetnych",
-    availability: "W magazynie"
-  },
-  {
-    id: "32108",
-    name: "Kolia Zarka perły na złotym łańcuchu, efektowna N97",
-    price: "18.90 zł",
-    category: "sztuczna",
-    subCategory: "Naszyjniki",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/kolia-zarka-perly-na-zlotym-lancuchu-efektowna-n97.html",
-    image: "https://hurt.ecarla.pl/190724-large_default/kolia-zarka-perly-na-zlotym-lancuchu-efektowna-n97.jpg",
-    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
-    specs: { "Kod producenta": "N97", "Wymiary": "51 cm + regulacja 7 cm" },
-    material: "Stopy metali nieszlachetnych",
-    availability: "W magazynie"
-  },
-  {
-    id: "32109",
-    name: "Efektowna Kolia naszyjnik, Kwiaty Szklane brązowe N74BR",
-    price: "15.39 zł",
-    category: "sztuczna",
-    subCategory: "Naszyjniki",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/kolia-kwiaty-szklane-n74-braz.html",
-    image: "https://hurt.ecarla.pl/190726-large_default/kolia-kwiaty-szklane-n74-braz.jpg",
-    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
-    specs: { "Kod producenta": "N74BR", "Wymiary": "49 cm + regulacja" },
-    material: "Stopy metali nieszlachetnych",
-    availability: "W magazynie"
-  },
-  {
-    id: "32110",
-    name: "Naszyjnik kolia kremowy cyrkonie, złoty łańcuch N105",
-    price: "9.43 zł",
-    category: "sztuczna",
-    subCategory: "Naszyjniki",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-kolia-kremowy-cyrkonie-zloty-lancuch-n105.html",
-    image: "https://hurt.ecarla.pl/190728-large_default/naszyjnik-kolia-kremowy-cyrkonie-zloty-lancuch-n105.jpg",
-    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
-    specs: { "Kod producenta": "N105", "Długość łańcuszka": "49 cm", "Wymiary ozdoby": "14,5 cm" },
-    material: "Stopy metali nieszlachetnych",
-    availability: "W magazynie"
-  },
-  {
-    id: "32111",
-    name: "Kolia naszyjnik kremowo złota duża N162B",
-    price: "12.60 zł",
-    category: "sztuczna",
-    subCategory: "Naszyjniki",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/kolia-naszyjnik-kremowo-zlota-duja-n162b.html",
-    image: "https://hurt.ecarla.pl/190730-large_default/kolia-naszyjnik-kremowo-zlota-duja-n162b.jpg",
-    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
-    specs: { "Kod producenta": "N162B", "Długość całkowita": "92 cm", "Szerokość ozdoby": "2,2 cm" },
-    material: "Stopy metali nieszlachetnych",
-    availability: "W magazynie"
-  },
-  {
-    id: "32116",
-    name: "NASZYJNIK AŻUROWY KWIATUSZKI STARE ZŁOTO N261Z",
-    price: "9.79 zł",
-    category: "sztuczna",
-    subCategory: "Naszyjniki",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/naszyjnik-azurowy-kwiatuszki-stare-zloto-n261z.html",
-    image: "https://hurt.ecarla.pl/190741-large_default/naszyjnik-azurowy-kwiatuszki-stare-zloto-n261z.jpg",
-    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
-    specs: { "Kod producenta": "N261Z", "Długość obwodu": "35 cm (bez regulacji)", "Szerokość ozdoby": "ok. 2,7 cm", "Regulacja": "10 cm" },
-    material: "Stopy metali nieszlachetnych",
-    availability: "W magazynie"
-  },
-  {
-    id: "32117",
-    name: "NASZYJNIK KOLIA XXL CZARNA, EFEKTOWNE KRYSZTAŁY N431B",
-    price: "32.19 zł",
-    category: "sztuczna",
-    subCategory: "Naszyjniki",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/naszyjnik-kolia-xxl-czarna-efektowne-krysztaly-n431b.html",
-    image: "https://hurt.ecarla.pl/190743-large_default/naszyjnik-kolia-xxl-czarna-efektowne-krysztaly-n431b.jpg",
-    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
-    specs: { "Kod producenta": "N431B", "Długość obwodu": "ok. 50 cm", "Regulacja": "2,8 cm", "Szerokość naszyjnika": "18 cm", "Długość ozdób": "ok. 15 cm" },
-    material: "Stopy metali nieszlachetnych",
-    availability: "W magazynie"
-  },
-  {
-    id: "32118",
-    name: "Kolia kwadraty i prostokąty srebro cyrkonie N415S",
-    price: "21.00 zł",
-    category: "sztuczna",
-    subCategory: "Naszyjniki",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/kolia-kwadraty-i-prostokaty-srebro-cyrkonie-n415s.html",
-    image: "https://hurt.ecarla.pl/190746-large_default/kolia-kwadraty-i-prostokaty-srebro-cyrkonie-n415s.jpg",
-    description: ["Efektowny naszyjnik.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
-    specs: { "Kod producenta": "N415S", "Długość obwodu": "ok. 41 cm", "Szerokość ozdoby": "ok. 7,5 cm", "Regulacja": "8 cm" },
-    material: "Stopy metali nieszlachetnych",
-    availability: "W magazynie"
-  },
-  {
+ 
+//  FASHION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // ZESTAWY 
+   {
     id: "32120",
-    name: "Kolia naszyjnik szpice, szara, złoty łańcuch N401",
-    price: "8.82 zł",
+    name: "Naszyjnik - Kolia - Szpice",
+    price: "59.99 zł",
     category: "sztuczna",
-    subCategory: "Naszyjniki",
+    subCategory: "kolia",
     url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/kolia-naszyjnik-szpice-szara-zloty-lancuch-n401.html",
     image: "https://hurt.ecarla.pl/190755-large_default/kolia-naszyjnik-szpice-szara-zloty-lancuch-n401.jpg",
     description: ["Efektowny naszyjnik.", "Idealny dodatek na każdą okazję, do sukienek i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Wykonane ze stopów metali nieszlachetnych.", "Biżuteria antyalergiczna, nie zawiera niklu ani chromu.", "Unikać kontaktu z wodą, perfumami."],
@@ -2492,13 +2578,12 @@ const necklacesFake = [
     material: "Stopy metali nieszlachetnych",
     availability: "W magazynie"
   },
- 
-  {
+   {
     id: "33624",
     name: "Elegancki Zestaw Biżuterii z Perłami i Kryształami – Naszyjnik + Kolczyki N1070BR",
-    price: "12.30 zł",
+    price: "54.99 zł",
     category: "sztuczna",
-    subCategory: "Naszyjniki kolie",
+    subCategory: "kolia",
     url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/elegancki-zestaw-bizuterii-z-perlami-i-krysztalami-naszyjnik-kolczyki-n1070.html",
     image: "https://hurt.ecarla.pl/198796-large_default/elegancki-zestaw-bizuterii-z-perlami-i-krysztalami-naszyjnik-kolczyki-n1070.jpg",
     description: ["Zestaw Biżuterii z Perłami i Kryształami – Naszyjnik + Kolczyki.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
@@ -2511,7 +2596,7 @@ const necklacesFake = [
     name: "Elegancki Zestaw Biżuterii z Perłami i Kryształami – Naszyjnik + Kolczyki, złoty N1071Z",
     price: "12.30 zł",
     category: "sztuczna",
-    subCategory: "Naszyjniki kolie",
+    subCategory: "kolia",
     url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/elegancki-zestaw-bizuterii-z-perlami-i-krysztalami-naszyjnik-kolczyki-zloty-n1071z.html",
     image: "https://hurt.ecarla.pl/198827-large_default/elegancki-zestaw-bizuterii-z-perlami-i-krysztalami-naszyjnik-kolczyki-zloty-n1071z.jpg",
     description: ["Zestaw Biżuterii z Perłami i Kryształami – Naszyjnik + Kolczyki.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
@@ -2524,7 +2609,7 @@ const necklacesFake = [
     name: "Elegancki Zestaw Biżuterii z Perłami i Kryształami – Naszyjnik + Kolczyki, srebrny N1071S",
     price: "12.30 zł",
     category: "sztuczna",
-    subCategory: "Naszyjniki kolie",
+    subCategory: "kolia",
     url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/elegancki-zestaw-bizuterii-z-perlami-i-krysztalami-naszyjnik-kolczyki-srebrny-n1071s.html",
     image: "https://hurt.ecarla.pl/198823-large_default/elegancki-zestaw-bizuterii-z-perlami-i-krysztalami-naszyjnik-kolczyki-srebrny-n1071s.jpg",
     description: ["Zestaw Biżuterii z Perłami i Kryształami – Naszyjnik + Kolczyki.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
@@ -2537,7 +2622,7 @@ const necklacesFake = [
     name: "Elegancki Zestaw Biżuterii Naszyjnik + kolczyki z Perłami i Kryształami, Listki srebrne N1072",
     price: "12.30 zł",
     category: "sztuczna",
-    subCategory: "Naszyjniki kolie",
+    subCategory: "kolia",
     url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/elegancki-zestaw-bizuterii-naszyjnik-kolczyki-z-perlami-i-krysztalami-listki-srebrne-n1072.html",
     image: "https://hurt.ecarla.pl/198858-large_default/elegancki-zestaw-bizuterii-naszyjnik-kolczyki-z-perlami-i-krysztalami-listki-srebrne-n1072.jpg",
     description: ["Zestaw z Perłami i Kryształami - Naszyjnik + kolczyki.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
@@ -2550,7 +2635,7 @@ const necklacesFake = [
     name: "Delikatny zestaw ślubny z perłami i kryształkami, naszyjnik oraz kolczyki N1073",
     price: "12.30 zł",
     category: "sztuczna",
-    subCategory: "Naszyjniki kolie",
+    subCategory: "kolia",
     url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/delikatny-zestaw-slubny-z-perlami-i-krysztalkami-naszyjnik-oraz-kolczyki-n1073.html",
     image: "https://hurt.ecarla.pl/198812-large_default/delikatny-zestaw-slubny-z-perlami-i-krysztalkami-naszyjnik-oraz-kolczyki-n1073.jpg",
     description: ["Zestaw ślubny z Perłami i Kryształami - Naszyjnik + kolczyki.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
@@ -2559,86 +2644,6 @@ const necklacesFake = [
     availability: "W magazynie"
   },
  
-  {
-    id: "33827",
-    name: "Efektowny naszyjnik KOLIA Kwiaty, złoto, pomarańcz N1091",
-    price: "14.15 zł",
-    category: "sztuczna",
-    subCategory: "Naszyjniki",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/efektowny-naszyjnik-kolia-kwiaty-zloto-pomarancz-n1091.html",
-    image: "https://hurt.ecarla.pl/200015-large_default/efektowny-naszyjnik-kolia-kwiaty-zloto-pomarancz-n1091.jpg",
-    description: ["Efektowny naszyjnik Kolia.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
-    specs: { "Kod producenta": "N1091" },
-    material: "Stopy metali nieszlachetnych",
-    availability: "W magazynie"
-  },
-  {
-    id: "33828",
-    name: "Efektowny naszyjnik KOLIA kryształy, zielony, brąz, beż N1094",
-    price: "14.15 zł",
-    category: "sztuczna",
-    subCategory: "Naszyjniki",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/efektowny-naszyjnik-kolia-krysztaly-zielony-braz-bez-n1094.html",
-    image: "https://hurt.ecarla.pl/200017-large_default/efektowny-naszyjnik-kolia-krysztaly-zielony-braz-bez-n1094.jpg",
-    description: ["Efektowny naszyjnik Kolia.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
-    specs: { "Kod producenta": "N1094" },
-    material: "Stopy metali nieszlachetnych",
-    availability: "W magazynie"
-  },
-  {
-    id: "33829",
-    name: "Efektowny naszyjnik KOLIA kryształy czarno białe, złoty N1095",
-    price: "14.15 zł",
-    category: "sztuczna",
-    subCategory: "Naszyjniki",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/efektowny-naszyjnik-kolia-krysztaly-czarno-biale-zloty-n1095.html",
-    image: "https://hurt.ecarla.pl/200019-large_default/efektowny-naszyjnik-kolia-krysztaly-czarno-biale-zloty-n1095.jpg",
-    description: ["Efektowny naszyjnik Kolia.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
-    specs: { "Kod producenta": "N1095" },
-    material: "Stopy metali nieszlachetnych",
-    availability: "W magazynie"
-  },
-  {
-    id: "33830",
-    name: "Efektowny naszyjnik KOLIA kryształy Turkus, zielony, opalizujący biały N1096",
-    price: "14.15 zł",
-    category: "sztuczna",
-    subCategory: "Naszyjniki",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/efektowny-naszyjnik-kolia-krysztaly-turkus-zielony-opalizujacy-bialy-n1096.html",
-    image: "https://hurt.ecarla.pl/200028-large_default/efektowny-naszyjnik-kolia-krysztaly-turkus-zielony-opalizujacy-bialy-n1096.jpg",
-    description: ["Efektowny naszyjnik Kolia.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
-    specs: { "Kod producenta": "N1096" },
-    material: "Stopy metali nieszlachetnych",
-    availability: "W magazynie"
-  },
-  {
-    id: "33832",
-    name: "Efektowny naszyjnik, KOLIA Kolorowe Kryształy N1087KOL",
-    price: "15.99 zł",
-    category: "sztuczna",
-    subCategory: "Naszyjniki",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/efektowny-naszyjnik-kolia-kolorowe-krysztaly-n1087kol.html",
-    image: "https://hurt.ecarla.pl/200024-large_default/efektowny-naszyjnik-kolia-kolorowe-krysztaly-n1087kol.jpg",
-    description: ["Efektowny naszyjnik Kolia.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
-    specs: { "Kod producenta": "N1087KOL" },
-    material: "Stopy metali nieszlachetnych",
-    availability: "W magazynie"
-  },
-  {
-    id: "33833",
-    name: "Efektowny naszyjnik KOLIA kryształy różowy, pleciony rzemyk N1097",
-    price: "14.15 zł",
-    category: "sztuczna",
-    subCategory: "Naszyjniki",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/efektowny-naszyjnik-kolia-krysztaly-rozowy-pleciony-rzemyk-n1097.html",
-    image: "https://hurt.ecarla.pl/200029-large_default/efektowny-naszyjnik-kolia-krysztaly-rozowy-pleciony-rzemyk-n1097.jpg",
-    description: ["Efektowny naszyjnik Kolia.", "Klasyczne, piękne wzornictwo naszyjnika idealnie podkreśli naturalne piękno i klasę kobiety.", "Idealny dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Unikać kontaktu z wodą, perfumami."],
-    specs: { "Kod producenta": "N1097" },
-    material: "Stopy metali nieszlachetnych",
-    availability: "W magazynie"
-  },
-  
-
 
 ];
 

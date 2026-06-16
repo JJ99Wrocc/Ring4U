@@ -13,10 +13,13 @@ const NavbarBurgerMenu = () => {
   const [socialOpen, setSocialOpen] = useState(false);
   const [openKolczyki, setOpenKolczyki] = useState(false);
   const [openNaszyjniki, setOpenNaszyjniki] = useState(false);
-const [openSztuczne, setOpenSztuczne] = useState(false);
-const [openStal, setOpenStal] = useState(false);
-const [openStalNaszyjnik, setOpenStalNaszyjnik] = useState(false);
-const [openSztuczneNaszyjniki, setOpenSztuczneNaszyjniki] = useState(false);
+  const [openBranzoletkiHand, setOpenBranzoletkiHand] = useState(false);
+  const [openSztuczne, setOpenSztuczne] = useState(false);
+  const [openStal, setOpenStal] = useState(false);
+  const [openStalNaszyjnik, setOpenStalNaszyjnik] = useState(false);
+  const [openSztuczneNaszyjniki, setOpenSztuczneNaszyjniki] = useState(false);
+  const [openBranzoletkiStalHand, setOpenBranzoletkiStalHand] = useState(false);
+  const [openBranzoletkiSztuczneHand, setOpenBranzoletkiSztuczneHand] = useState(false);
 
 
   const handleLinkClick = (path) => {
@@ -42,6 +45,10 @@ const [openSztuczneNaszyjniki, setOpenSztuczneNaszyjniki] = useState(false);
   }
   const toggleSubmenu2 = (submenu) => {
     if(submenu === "naszyjniki") {setOpenNaszyjniki((prev) => !prev)}
+  } 
+  
+  const toggleSubmenu3 = (submenu) => {
+    if(submenu === "branzoletkiHand") {setOpenBranzoletkiHand((prev) => !prev)}
   } 
   
   const toggleZakupy = () => setZakupyOpen((prev) => !prev);
@@ -187,25 +194,61 @@ const [openSztuczneNaszyjniki, setOpenSztuczneNaszyjniki] = useState(false);
       
     
       <ul className={`submenu list-unstyled ps-4 ${openSztuczneNaszyjniki ? "submenu-open" : ""}`}>
-        <li><Link className="nav-link" onClick={() => handleLinkClick("/necklace/sztuczna/pozlacane")}>Pozłacane</Link></li>
         <li><Link className="nav-link" onClick={() => handleLinkClick("/necklace/sztuczna/choker")}>Chokery</Link></li>
-        <li><Link className="nav-link" onClick={() => handleLinkClick("/necklace/sztuczna/serca-kokardy")}>Serca i Kokardy</Link></li>
-        <li><Link className="nav-link" onClick={() => handleLinkClick("/necklace/sztuczna/literki")}>Literki / Napisy</Link></li>
-        <li><Link className="nav-link" onClick={() => handleLinkClick("/necklace/sztuczna/kwiaty")}>Kwiaty</Link></li>
-        <li><Link className="nav-link" onClick={() => handleLinkClick("/necklace/sztuczna/wykwintne")}>Wykwintne</Link></li>
-        <li><Link className="nav-link" onClick={() => handleLinkClick("/necklace/sztuczna/srebro")}>Srebrne</Link></li>
+        <li><Link className="nav-link" onClick={() => handleLinkClick("/necklace/sztuczna/kolia")}>Kolia</Link></li>
+        <li><Link className="nav-link" onClick={() => handleLinkClick("/necklace/sztuczna/fashion")}>Fashion</Link></li>
+ 
       </ul>
     </li>
   </ul>
 </li>
     <hr />
+<li>
+<button
+  className="nav-link w-100 text-start d-flex justify-content-between align-items-center"
+  onClick={() => toggleSubmenu3("branzoletkiHand")}
+>
+  Branzoletki na ręce 
+  <i className={`fa-solid fa-arrow-down transition ${openBranzoletkiHand ? "rotate-180" : ""}`}></i>
+</button>
 
-    {/* 3. BRANSOLETKI */}
-    <li>
-      <Link to="/bracelet" className="nav-link" onClick={(e) => { e.preventDefault(); handleLinkClick("/bracelet"); }}>
-        Bransoletki <i className="fa-solid fa-arrow-right"></i>
-      </Link>
-    </li>
+<ul className={`submenu list-unstyled ps-3 ${openBranzoletkiHand ? "submenu-open" : ""}`}>
+  <li className="nav-item">
+    <button
+      className="nav-link w-100 text-start d-flex justify-content-between align-items-center"
+      onClick={() => setOpenBranzoletkiStalHand(!openBranzoletkiStalHand)}
+    >
+      Stal Chirurgiczna
+      <i className={`fa-solid fa-arrow-down transition ${openBranzoletkiStalHand ? "rotate-180" : ""}`}></i>
+    </button>
+    
+    
+    <ul className={`submenu list-unstyled ps-4 ${openBranzoletkiStalHand ? "submenu-open" : ""}`}>
+      <li><Link className="nav-link" onClick={() => handleLinkClick("/branzoletkiHand/stal/pozlacane")}>Pozłacane</Link></li>
+      <li><Link className="nav-link" onClick={() => handleLinkClick("/branzoletkiHand/stal/serca-kokardy")}>Serca i kokardy</Link></li>
+      <li><Link className="nav-link" onClick={() => handleLinkClick("/branzoletkiHand/stal/kwiaty")}>Motywy kwiatowe</Link></li>
+      <li><Link className="nav-link" onClick={() => handleLinkClick("/branzoletkiHand/stal/fasion")}>Fashion</Link></li>
+    </ul>
+  </li>
+  <li className="nav-item">
+    <button
+      className="nav-link w-100 text-start d-flex justify-content-between align-items-center"
+      onClick={() => setOpenBranzoletkiSztuczneHand(!openBranzoletkiSztuczneHand)}
+    >
+      Fashion
+      <i className={`fa-solid fa-arrow-down transition ${openBranzoletkiSztuczneHand ? "rotate-180" : ""}`}></i>
+    </button>
+    
+    
+    <ul className={`submenu list-unstyled ps-4 ${openBranzoletkiSztuczneHand ? "submenu-open" : ""}`}>
+      <li><Link className="nav-link" onClick={() => handleLinkClick("/branzoletkiHand/sztuczne/choker")}>Chokery</Link></li>
+      <li><Link className="nav-link" onClick={() => handleLinkClick("/branzoletkiHand/sztuczne/kolia")}>Kolia</Link></li>
+      <li><Link className="nav-link" onClick={() => handleLinkClick("/branzoletkiHand/sztuczne/fashion")}>Fashion</Link></li>
+    </ul>
+  </li>
+</ul>
+
+</li>
     <hr />
 
     {/* 4. PIERŚCIONKI */}
