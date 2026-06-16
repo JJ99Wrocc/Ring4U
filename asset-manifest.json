@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bc63cd4c.css",
-    "main.js": "/static/js/main.331c26ab.js",
+    "main.js": "/static/js/main.73346cb8.js",
     "static/js/453.e8ec925d.chunk.js": "/static/js/453.e8ec925d.chunk.js",
     "static/media/jewelry_header_1920px.png": "/static/media/jewelry_header_1920px.dc8d695296007ab79af5.png",
     "static/media/jewelry_header_1200px.png": "/static/media/jewelry_header_1200px.969090e30e0a317ff61c.png",
@@ -10,11 +10,11 @@
     "index.html": "/index.html",
     "static/media/blik-logo.webp": "/static/media/blik-logo.c5e3c4421dd71c8a3f4d.webp",
     "main.bc63cd4c.css.map": "/static/css/main.bc63cd4c.css.map",
-    "main.331c26ab.js.map": "/static/js/main.331c26ab.js.map",
+    "main.73346cb8.js.map": "/static/js/main.73346cb8.js.map",
     "453.e8ec925d.chunk.js.map": "/static/js/453.e8ec925d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc63cd4c.css",
-    "static/js/main.331c26ab.js"
+    "static/js/main.73346cb8.js"
   ]
 }
