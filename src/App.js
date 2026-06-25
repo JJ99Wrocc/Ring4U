@@ -31,8 +31,11 @@
   import ProductDetail from "./components/ProductDetail";
 
   import BraceletHandSteel from "./components/BraceletHandSteel";
+  import BraceletHandFake from "./components/BranceletHandFake";
+  import BraceletFootFake from "./components/BranceletFootFake";
+  import BraceletFootStal from "./components/BraceletFootStal";
   import Necklace from "./components/NecklaceStal";
-  import Rings from "./components/Rings"
+  // import Rings from "./components/Rings"
   import DeliveryAndReturns from "./components/DeliveryAndReturns";
   import EarRingsStalGold from "./components/KolczykiStalGold";
   import EarRingsSztuczneGold from "./components/KolczykiSztuczneGold"
@@ -40,6 +43,7 @@
 // import Necklace from "./components/NecklaceStal";
 import NecklaceStal from "./components/NecklaceStal";
 import NecklaceFake from "./components/NecklacesFake";
+import RingStal from "./components/RingStal";
 // import { necklacesFake } from "./data/NecklacesFake";
   function LayoutWithNavAndFooter({ children }) {
     return (
@@ -181,6 +185,46 @@ element={
           }
         />
         <Route
+          path="/branzoletkiFoot/stal/:subcategory"
+          element={
+            
+              <LayoutWithNavAndFooter>
+                <BraceletFootStal />
+              </LayoutWithNavAndFooter>
+            
+          }
+        />
+        <Route
+          path="/branzoletkiFoot/sztuczna/:subcategory"
+          element={
+            
+              <LayoutWithNavAndFooter>
+                <BraceletFootFake />
+              </LayoutWithNavAndFooter>
+            
+          }
+        />
+        <Route
+          path="/branzoletkiHand/sztuczna/:subcategory"
+          element={
+            
+              <LayoutWithNavAndFooter>
+                <BraceletHandFake />
+              </LayoutWithNavAndFooter>
+            
+          }
+        />
+        <Route
+          path="/pierscionekStal/stal/:subcategory"
+          element={
+            
+              <LayoutWithNavAndFooter>
+                <RingStal />
+              </LayoutWithNavAndFooter>
+            
+          }
+        />
+        <Route
           path="/branzoletkiHand"
           element={
             
@@ -190,7 +234,27 @@ element={
             
           }
         />
-     
+        <Route
+          path="/pierscionekStal"
+          element={
+            
+              <LayoutWithNavAndFooter>
+                <RingStal />
+              </LayoutWithNavAndFooter>
+            
+          }
+        />
+        <Route
+          path="/branzoletkiHand"
+          element={
+            
+              <LayoutWithNavAndFooter>
+                <BraceletFootFake />
+              </LayoutWithNavAndFooter>
+            
+          }
+        />
+{/*      
         <Route
           path="/rings"
           element={
@@ -200,7 +264,7 @@ element={
               </LayoutWithNavAndFooter>
             
           }
-        />
+        /> */}
         <Route
     path="/reset-password"
     element={
