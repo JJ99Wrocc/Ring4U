@@ -43,6 +43,7 @@ const CartAddedProduct = ({ show }) => {
     );
     return sum + numericPrice * (product.amount || 1);
   }, 0);
+  const finalCost = totalCost === 0 ? 0 : totalCost < 400 ? totalCost + 20 : totalCost;
 
   return (
     <div className="Navbar-squeres Nav-added-product-box" aria-live="polite">
@@ -115,11 +116,7 @@ const CartAddedProduct = ({ show }) => {
       <div className="product-box-total-cost">
         Razem:{" "}
         <span className="costt">
-          {totalCost === 0
-            ? "0.00zł"
-            : totalCost < 400
-            ? totalCost + 20
-            : totalCost}{" "}
+          {finalCost.toFixed(2)}
        
         </span>{" "}
         zł

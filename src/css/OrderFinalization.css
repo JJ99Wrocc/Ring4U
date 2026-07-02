@@ -101,9 +101,12 @@
 .phone-error,
 .e-mail-error {
   color: red;
-  font-size: 12px;
+  font-size: 12px !important;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+.e-mail-error{
+  padding: 10px !important;
 }
 .order-line{
   width: 80%;
@@ -202,9 +205,12 @@ footer{
   }
   @media(max-width:992px){
      .order-segment-name{
-    
         font-size: 13.5px;
      }
+     .order-line{
+  width: 80%;
+  margin: 15px 0;
+}
   }
   @media(max-width:768px){
      .order-segment-name{

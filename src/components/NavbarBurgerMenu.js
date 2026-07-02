@@ -245,7 +245,7 @@ const [openRingFake, setOpenRingFake] = useState(false);
                     </button>
                     
                     <ul className={`submenu list-unstyled ps-4 ${openBranzoletkiSztuczneHand ? "submenu-open" : ""}`}>
-                      <li><Link className="nav-link" onClick={() => handleLinkClick("/branzoletkiHand/sztuczna/bransoletki")}>Branzoletki</Link></li>
+                     
                       <li><Link className="nav-link" onClick={() => handleLinkClick("/branzoletkiHand/sztuczna/fashion")}>Fashion</Link></li>
                     </ul>
                   </li>

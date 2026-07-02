@@ -80,7 +80,7 @@ const DeliveryAndReturns = () => {
         </p>
         <h3>Jak dokonać zwrotu krok po kroku:</h3>
         <ol>
-          <li>Poinformuj nas o swojej decyzji wysyłając jednoznaczne oświadczenie na adres e-mail: <a href="mailto:esangbedojoachim@gmail.com" className="delivery-link">esangbedojoachim@gmail.com</a>.</li>
+          <li>Poinformuj nas o swojej decyzji wysyłając jednoznaczne oświadczenie na adres e-mail: <a href="mailto:joachimek1@interia.pl" className="delivery-link">joachimek1@interia.pl</a>.</li>
           <li>Zabezpiecz produkt (biżuteria nie może nosić śladów użytkowania, musi posiadać oryginalne metki/opakowanie ochronne ze względów higienicznych) i odeślij go na nasz krajowy adres korespondencyjny: <strong>ul. Na Szańcach 8/2, 50-320 Wrocław</strong>.</li>
           <li>Koszt odesłania zwracanego towaru pokrywa Kupujący. Nie przyjmujemy paczek za pobraniem ani nadanych do automatów paczkowych bez wcześniejszego uzgodnienia.</li>
           <li>Zwrot środków (obejmujący cenę produktu oraz koszt najtańszego oferowanego w sklepie sposobu dostawy podstawowej) zostanie zrealizowany niezwłocznie, nie później niż w ciągu 14 dni od otrzymania przez nas zwracanego towaru przez operatora <strong>HotPay</strong>.</li>
@@ -95,7 +95,7 @@ const DeliveryAndReturns = () => {
         </p>
         <ul>
           <li><strong>Szkoda w transporcie:</strong> Zalecamy sprawdzenie stanu przesyłki przy kurierze lub przy paczkomacie. W przypadku stwierdzenia zniszczenia opakowania zewnętrznego lub produktu, prosimy o sporządzenie protokołu szkody i kontakt z nami.</li>
-          <li><strong>Zgłoszenie reklamacyjne:</strong> Opis wady wraz ze zdjęciami poglądowymi prześlij na e-mail: <a href="mailto:esangbedojoachim@gmail.com" className="delivery-link">esangbedojoachim@gmail.com</a>. Każda reklamacja rozpatrywana jest w ustawowym terminie <strong>do 14 dni</strong>.</li>
+          <li><strong>Zgłoszenie reklamacyjne:</strong> Opis wady wraz ze zdjęciami poglądowymi prześlij na e-mail: <a href="mailto:joachimek1@interia.pl" className="delivery-link">joachimek1@interia.pl</a>. Każda reklamacja rozpatrywana jest w ustawowym terminie <strong>do 14 dni</strong>.</li>
         </ul>
       </section>
 

@@ -40,11 +40,29 @@
     background: transparent;
 }
 
-/* --- LISTA LINKÓW --- */
-.navbar-ul-list {  
+/* --- LISTA LINKÓW ORAZ BEZWZGLĘDNY RESET KROPEK --- */
+.navbar-ul-list,
+.Navbar-squeres.desktop-only ul,
+.Navbar-squeres.desktop-only li {  
     list-style: none !important;
+    list-style-type: none !important;
     padding: 0 !important;
     margin: 0 !important;
+}
+
+/* Wymuszenie usunięcia ukrytych kropek generowanych przez Semantic UI / Bootstrap */
+.Navbar-squeres.desktop-only ul::before,
+.Navbar-squeres.desktop-only li::before,
+.Navbar-squeres.desktop-only span::before {
+    content: none !important;
+    display: none !important;
+}
+
+/* Margines dla wewnętrznych list (poziom 1 i poziom 2), żeby ładnie wyglądało jako drzewo */
+.Navbar-squeres.desktop-only ul ul {
+    padding-left: 15px !important; 
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
 }
 
 .navbar-ul-list li {
@@ -54,7 +72,11 @@
 
 /* LINKI W LIŚCIE (Kolczyki, Bransoletki itp.) */
 .navbar-li-list {
-    display: block;
+    display: flex !important; /* Zamiana na flex, aby ikona i tekst były w jednej linii */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
     padding: 12px 20px;
     color: #444 !important;
     text-decoration: none !important;
@@ -72,14 +94,36 @@
     border-left: 3px solid #1b365d;
 }
 
+/* Dodatkowy styl dla najgłębszych spanów-linków (np. Pozłacane, Srebrne) */
+.Navbar-squeres.desktop-only ul ul ul li span {
+    display: block;
+    padding: 6px 20px;
+    color: #666;
+    font-size: 13px;
+    transition: color 0.2s ease;
+}
+
+.Navbar-squeres.desktop-only ul ul ul li span:hover {
+    color: #1b365d !important;
+    font-weight: 600;
+}
+
 /* --- EFEKT WEJŚCIA (ANIMACJA) --- */
 .Navbar-squeres.desktop-only {
-  
     left: 50px !important;
     animation: menuEntrance 0.3s ease-out forwards;
     transform-origin: top center;
 }
 
+/* --- OBRACANIE STRZAŁEK (Opcjonalne, ale przydatne) --- */
+.rotate-90 {
+    transform: rotate(90deg) !important;
+}
+.transition {
+    transition: transform 0.2s ease !important;
+}
+
+/* --- RESPONSYWNOŚĆ (RWD) --- */
 @media(max-width:1200px) {
     .Navbar-squeres.desktop-only {  
         left: 240px !important;
@@ -95,6 +139,7 @@
         display: none !important;
     }
 }
+
 @keyframes menuEntrance {
     0% {
         opacity: 0;

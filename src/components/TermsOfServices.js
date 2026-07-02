@@ -16,9 +16,9 @@ const TermsOfService = () => {
             <li>Właściciel: <strong>Joachim Esangbedo</strong> prowadzący działalność gospodarczą / działalność nieewidencjonowaną zgodnie z przepisami prawa polskiego.</li>
             <li>PESEL: <strong>99111209437</strong></li>
             <li>Seria i numer dokumentu tożsamości: <strong>DAZ615970</strong></li>
-            <li>Adres zameldowania: <strong>ul. Na Szańcach 8/2, 50-320 Wrocław, Polska</strong></li>
+            <li>Adres zameldowania: <strong>ul. Na Szańcach 8/2, 50-240 Wrocław, Polska</strong></li>
             <li>Adres korespondencyjny i prowadzenia działalności: <strong>ul. Na Szańcach 8/2, 50-240 Wrocław, Polska</strong></li>
-            <li>E-mail: <a href="mailto:esangbedojoachim@gmail.com">esangbedojoachim@gmail.com</a> (Kontakt HotPay: <a href="mailto:joachimek1@int.pl">joachimek1@int.pl</a>)</li>
+            <li>E-mail: <a href="mailto:joachimek1@interia.pl">joachimek1@interia.pl</a> (Kontakt HotPay: <a href="mailto:joachimek1@int.pl">joachimek1@int.pl</a>)</li>
             <li>Telefon: <strong>791881256</strong></li>
             <li>Data wejścia w życie: <strong>21 września 2025 r.</strong></li>
           </ul>
@@ -85,7 +85,7 @@ const TermsOfService = () => {
           <ul>
             <li>Sprzedawca ma obowiązek dostarczyć Klientowi produkt bez wad. Sklep odpowiada przed Klientem, w tym z tytułu niezgodności produktu z umową lub za wady fizyczne i prawne (rękojmia) na zasadach określonych w Kodeksie cywilnym oraz ustawie o prawach konsumenta.</li>
             <li>Klient ma prawo do złożenia reklamacji w przypadku stwierdzenia niezgodności produktu z umową, wad technicznych lub uszkodzeń powstałych w trakcie transportu.</li>
-            <li>Reklamacje należy zgłaszać e-mailowo na adres: <a href="mailto:esangbedojoachim@gmail.com">esangbedojoachim@gmail.com</a> lub telefonicznie pod numerem: <strong>791881256</strong>. W zgłoszeniu zaleca się podać numer zamówienia, opis wady oraz załączyć zdjęcia uszkodzeń, co przyspieszy proces rozpatrzenia.</li>
+            <li>Reklamacje należy zgłaszać e-mailowo na adres: <a href="mailto:joachimek1@interia.pl">joachimek1@interia.pl</a> lub telefonicznie pod numerem: <strong>791881256</strong>. W zgłoszeniu zaleca się podać numer zamówienia, opis wady oraz załączyć zdjęcia uszkodzeń, co przyspieszy proces rozpatrzenia.</li>
             <li>Sprzedawca zobowiązuje się do rozpatrzenia reklamacji zgłoszonej przez Konsumenta w terminie 14 dni od dnia jej otrzymania i poinformowania Klienta o podjętych krokach.</li>
           </ul>
         </section>

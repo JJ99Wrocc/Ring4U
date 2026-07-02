@@ -13,6 +13,10 @@ import  necklaceStal  from "../data/NecklacesStal";
 import  KolczykiSrebrne  from "../data/productDataSrebroKolcz";
 import  KolczykiSztuczne  from "../data/productDataSztuczneKolcz";
 import  PierścionekStal  from "../data/RingSteel";
+import branzoletkaStopaSztuczna from "../data/BransoletFootFake";
+import branzoletkiStopyStal from "../data/BransoletFootStal";
+import bransoletkaRekaSztuczna from "../data/BransoletHandFake";
+import BranzoletkiStal from "../data/BransoletHandStal";
 import { products } from "./Products";
 
 const ProductDetail = ({ products: propsProducts }) => {
@@ -38,9 +42,13 @@ const ProductDetail = ({ products: propsProducts }) => {
     ...(Array.isArray(necklaceStal) ? necklaceStal : []),
     ...(Array.isArray(KolczykiSrebrne) ? KolczykiSrebrne : []),
     ...(Array.isArray(KolczykiSztuczne) ? KolczykiSztuczne : []),
-    ...(Array.isArray(PierścionekStal) ? PierścionekStal : [])
-  ];
-  }, [propsProducts]);
+    ...(Array.isArray(BranzoletkiStal) ? BranzoletkiStal : [] ),
+    ...(Array.isArray(bransoletkaRekaSztuczna) ? bransoletkaRekaSztuczna : []),
+    ...(Array.isArray(branzoletkiStopyStal) ? branzoletkiStopyStal : [] ),
+    ...(Array.isArray(branzoletkaStopaSztuczna) ? branzoletkaStopaSztuczna : [] ),
+        ...(Array.isArray(PierścionekStal) ? PierścionekStal : [])
+  
+  ]}, [propsProducts]);
 
   // 2. Szukanie wszystkich wariantów, których bazowe ID (przed myślnikiem) zgadza się z URL
   const matchingVariants = useMemo(() => {
@@ -139,11 +147,12 @@ const ProductDetail = ({ products: propsProducts }) => {
 
   // Twoja oryginalna funkcja obsługi zoomu (efekt lupy)
   const handleMouseMove = (e) => {
-    const { left, top, width, height } =
-      imageRef.current.getBoundingClientRect();
+   if (window.innerWidth > 768) {
+    const { left, top, width, height } = imageRef.current.getBoundingClientRect();
     const x = ((e.clientX - left) / width) * 100;
     const y = ((e.clientY - top) / height) * 100;
     setZoom({ x, y, visible: true });
+  }
   };
 
   // Twoja oryginalna funkcja opuszczenia obszaru lupy

@@ -1,11 +1,14 @@
-/* ProductDetail.css */
 
 .product-detail {
   position: relative;
   font-family: 'Inter', sans-serif;
   color: #222;
 }
-
+.product-image-container {
+  position: relative;
+  height: 800px;width: 800px;
+  overflow: hidden; /* KLUCZOWE: Obcina wszystko, co wychodzi poza kadr */
+}
 .product-image-wrapper {
   position: relative;
   display: flex;
@@ -21,7 +24,9 @@
 .product-add-btn {
   border: 1px solid rgb(248, 2, 125);
 }
-
+.content-grow, .app-container{
+  background-color: #061310;
+}
 .product-image-detail {
   max-width: 100%;
   border-radius: 16px;
@@ -170,9 +175,10 @@
 }
 
 @media(max-width:992px){
-  .product-image-detail{
-    height: 300px;width: 300px;
-  }
+
+  /* .product-image-detail,.product-image-container{
+    height: 350px;width: 350px;
+  } */
   .product-image-small,
 .product-image-small2,
 .product-image-small3,
@@ -227,3 +233,5 @@
 @media (max-width: 450px) and (max-width:568px){
  .product-detail-container{margin-right: 20px !important;}
 }
+
+/* Gwarantujemy, że kontener zdjęcia ma stały wymiar i nic z niego nie „wystaje” */
