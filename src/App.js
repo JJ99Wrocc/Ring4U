@@ -29,6 +29,7 @@
   import CookieConsent from "./components/CookieConsent";
   import Product from "./components/Products";
   import ProductDetail from "./components/ProductDetail";
+  import OurMision from "./components/OurMision";
 
   import BraceletHandSteel from "./components/BraceletHandSteel";
   import BraceletHandFake from "./components/BranceletHandFake";
@@ -94,6 +95,15 @@ import RingStal from "./components/RingStal";
     <LayoutWithNavAndFooter>
       <ProductDetail  />
   
+    </LayoutWithNavAndFooter>
+  }
+/>
+
+<Route
+  path="/our-mission"
+  element={
+    <LayoutWithNavAndFooter>
+      <OurMision />
     </LayoutWithNavAndFooter>
   }
 />

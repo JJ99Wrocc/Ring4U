@@ -3,7 +3,7 @@ import "../css/navbarBurgerMenu.css";
 import bootstrap from "bootstrap/dist/js/bootstrap.bundle";
 import Pierscionek from "../img/Pierscionek.png";
 import { Link, useNavigate } from "react-router-dom";
-
+import ourMission from "./OurMision";
 const NavbarBurgerMenu = () => {
   const offcanvasRef = useRef(null);
   const navigate = useNavigate();
@@ -102,7 +102,7 @@ const [openRingFake, setOpenRingFake] = useState(false);
             </button>
 
             {/* GŁÓWNE SUBMENU ZAKUPÓW */}
-            <ul className={`submenu list-unstyled ps-3 ${zakupyOpen ? "submenu-open" : ""}`}>
+            <ul className={`submenu list-unstyled  ${zakupyOpen ? "submenu-open" : ""}`}>
               <hr />
 
               {/* 1. KOLCZYKI */}
@@ -115,7 +115,7 @@ const [openRingFake, setOpenRingFake] = useState(false);
                   <i className={`fa-solid fa-arrow-down transition ${openKolczyki ? "rotate-180" : ""}`}></i>
                 </button>
 
-                <ul className={`submenu list-unstyled ps-3 ${openKolczyki ? "submenu-open" : ""}`}>
+                <ul className={`submenu list-unstyled  ${openKolczyki ? "submenu-open" : ""}`}>
                   {/* Stal Chirurgiczna - podkategorie */}
                   <li className="nav-item">
                     <button className="nav-link w-100 text-start d-flex justify-content-between align-items-center" onClick={() => setOpenStal(!openStal)}>
@@ -169,7 +169,7 @@ const [openRingFake, setOpenRingFake] = useState(false);
                   <i className={`fa-solid fa-arrow-down transition ${openNaszyjniki ? "rotate-180" : ""}`}></i>
                 </button>
                 
-                <ul className={`submenu list-unstyled ps-3 ${openNaszyjniki ? "submenu-open" : ""}`}>
+                <ul className={`submenu list-unstyled  ${openNaszyjniki ? "submenu-open" : ""}`}>
                   {/* Stal Chirurgiczna - podkategorie */}
                   <li className="nav-item">
                     <button 
@@ -218,7 +218,7 @@ const [openRingFake, setOpenRingFake] = useState(false);
                   <i className={`fa-solid fa-arrow-down transition ${openBranzoletkiHand ? "rotate-180" : ""}`}></i>
                 </button>
 
-                <ul className={`submenu list-unstyled ps-3 ${openBranzoletkiHand ? "submenu-open" : ""}`}>
+                <ul className={`submenu list-unstyled  ${openBranzoletkiHand ? "submenu-open" : ""}`}>
                   <li className="nav-item">
                     <button
                       className="nav-link w-100 text-start d-flex justify-content-between align-items-center"
@@ -263,7 +263,7 @@ const [openRingFake, setOpenRingFake] = useState(false);
                   <i className={`fa-solid fa-arrow-down transition ${openBranzoletkiSztuczneFake ? "rotate-180" : ""}`}></i>
                 </button>
 
-                <ul className={`submenu list-unstyled ps-3 ${openBranzoletkiSztuczneFake ? "submenu-open" : ""}`}>
+                <ul className={`submenu list-unstyled  ${openBranzoletkiSztuczneFake ? "submenu-open" : ""}`}>
                   <li className="nav-item">
                     <button
                       className="nav-link w-100 text-start d-flex justify-content-between align-items-center"
@@ -306,7 +306,7 @@ const [openRingFake, setOpenRingFake] = useState(false);
   </button>
 
   {/* Główne menu pierścionków sterowane stanem openRingMain */}
-  <ul className={`submenu list-unstyled ps-3 ${openRingMain ? "submenu-open" : ""}`}>
+  <ul className={`submenu list-unstyled  ${openRingMain ? "submenu-open" : ""}`}>
     
     {/* Podkategoria: Stal Chirurgiczna */}
     <li className="nav-item">
@@ -359,10 +359,10 @@ const [openRingFake, setOpenRingFake] = useState(false);
               O nas
               <i className={`fa-solid fa-arrow-down transition ${aboutOpen ? "rotate-180" : ""}`}></i>
             </button>
-            <ul className={`submenu list-unstyled ps-3 ${aboutOpen ? "submenu-open" : ""}`}>
+            <ul className={`submenu list-unstyled  ${aboutOpen ? "submenu-open" : ""}`}>
               <hr />
               <li>
-                <a href="#mission" className="nav-link" onClick={handleLinkClick}>
+                <a href="#mission" className="nav-link" onClick={() => handleLinkClick("/our-mission")}>
                   Nasza misja
                 </a>
               </li>
@@ -380,7 +380,7 @@ const [openRingFake, setOpenRingFake] = useState(false);
               <i className={`fa-solid fa-arrow-down transition ${kontaktOpen ? "rotate-180" : ""}`}></i>
             </button>
 
-            <ul className={`submenu list-unstyled ps-3 ${kontaktOpen ? "submenu-open" : ""}`}>
+            <ul className={`submenu list-unstyled  ${kontaktOpen ? "submenu-open" : ""}`}>
               <li>
                 <a href="#contact" className="nav-link" onClick={handleLinkClick}>
                   Formularz
@@ -396,7 +396,7 @@ const [openRingFake, setOpenRingFake] = useState(false);
                   <i className={`fa-solid fa-arrow-down transition ${socialOpen ? "rotate-180" : ""}`}></i>
                 </button>
 
-                <ul className={`submenu list-unstyled ps-3 ${socialOpen ? "submenu-open" : ""}`}>
+                <ul className={`submenu list-unstyled  ${socialOpen ? "submenu-open" : ""}`}>
                   <hr />
                   <li>
                     <a href="https://www.instagram.com" className="nav-link" onClick={handleLinkClick}>

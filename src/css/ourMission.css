@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,400;0,700;1,200&display=swap');
+
+/* Główny kontener centrujący całą podstronę (nie pozwala rozjechać się na 100%) */
+.mission-page-wrapper {
+  max-width: 1200px; /* Tutaj kontrolujesz maksymalną szerokość całej sekcji */
+  margin: 0 auto;    /* Centrowanie na środku ekranu */
+  padding: 0 20px;   /* Bezpieczny odstęp od krawędzi ekranu na mniejszych monitorach */
+}
+
+.mission-page-wrapper, .terms-container {
+  border-radius: 40px 40px 40px 40px; /* Zaokrąglenie górnych rogów */
+
+  --primary-glow: #F1E5AC;
+  --bg-gradient: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+  --text-dim: #999;
+
+  background: var(--bg-gradient);
+  color: #ffffff;
+}
+
+.terms-container {
+  padding: 80px 0;   /* Zmienione z 80px 20px na górny/dolny padding, boki kontroluje wrapper */
+  background-color: #050505; 
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  
+  /* PRO DETAIL: Subtelna, niebieska poświata na samym dole całego kontenera, która pięknie odetnie go od stopki */
+  /* box-shadow: 0 30px 70px rgba(0, 122, 255, 0.15); */
+}
+
+/* Nagłówek główny - Typografia kinowa */
+.terms-container h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  text-align: center !important;
+  margin-bottom: 40px; 
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: -2px;
+  text-transform: none;
+  
+  /* PRO DETAIL: Kinowy, neonowy efekt poświaty dla głównego tytułu */
+  text-shadow: 0 0 20px rgba(0, 122, 255, 0.4),
+               0 0 40px rgba(0, 122, 255, 0.2);
+}
+
+.lead-text {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.8;
+  font-weight: 200;
+  text-align: center !important;
+  max-width: 800px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Sekcja Hero (Wstępna) */
+.mission-hero {
+  background: transparent !important;
+  border: none !important;
+  backdrop-filter: none !important;
+  margin-bottom: 80px;
+  padding: 0 !important;
+}
+
+/* Główne podtytuły na stronie */
+.terms-container > h2 {
+  font-size: 1.8rem;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center !important;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: -1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 15px;
+}
+
+/* Sekcje - Efekt szklanych paneli */
+.terms-container section {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: 24px !important;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* PRO DETAIL: Rozbudowany hover o głęboką, niebieską poświatę (szklany panel zaczyna lewitować i świecić) */
+.terms-container section:hover {
+  border-color: rgba(0, 122, 255, 0.4);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 10px 30px rgba(0, 122, 255, 0.25),
+              0 0 15px rgba(0, 122, 255, 0.1);
+  transform: translateY(-2px); /* Delikatne uniesienie panelu dla lepszego efektu */
+}
+
+/* Nagłówki wewnątrz szklanych boksów */
+.terms-container h3 {
+  font-size: 1.3rem;
+  margin-top: 0;
+  text-align: center !important;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+/* Teksty wewnątrz sekcji */
+.terms-container section p {
+  font-weight: 200; 
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.terms-container strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Sekcja podsumowująca misję */
+.mission-summary {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  
+  /* PRO DETAIL: Delikatna stała poświata dla sekcji podsumowującej na samym dole */
+  box-shadow: 0 0 25px rgba(0, 122, 255, 0.1);
+}
+
+/* Styl dla luksusowej linii odgradzającej z neonową poświatą 2027 */
+.hr-line {
+  border: none;                     /* Usuwamy domyślną, brzydką ramkę przeglądarki */
+  height: 2px;                      /* Nadajemy linii delikatną grubość, aby cień miał się od czego odbić */
+  background: linear-gradient(
+    90deg, 
+    rgba(0, 122, 255, 0) 0%,        /* Płynne zanikanie linii po lewej stronie */
+    rgba(0, 122, 255, 1) 50%,       /* Pełny niebieski kolor na środku */
+    rgba(0, 122, 255, 0) 100%       /* Płynne zanikanie linii po prawej stronie */
+  );
+  margin: 60px auto;                /* Odstęp nad i pod linią (możesz go zmniejszyć np. do 40px) */
+  max-width: 80%;                   /* Linia nie ciągnie się od brzegu do brzegu – wygląda bardziej elegancko */
+  
+  /* Twoja poświata + dodatkowe rozmycie dla efektu "Glow" */
+  box-shadow: 0 0 15px rgba(0, 122, 255, 0.6), 
+              0 4px 15px rgba(0, 122, 255, 0.3);
+  
+  opacity: 0.8;                     /* Delikatna przezroczystość, żeby idealnie siedziało w mrocznym klimacie */
+  transition: opacity 0.3s ease;
+}
+.mobile-toggle-content {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+/* RWD */
+@media (max-width: 992px) {
+  .terms-container h1 {
+    font-size: 2.2rem;
+    text-align: left;
+    text-shadow: 0 0 15px rgba(0, 122, 255, 0.3); /* Dostosowana poświata na mobile */
+  }
+
+  .lead-text {
+    text-align: left;
+  }
+
+  .terms-container section {
+    padding: 25px;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  /* Wyłączenie efektów transformacji i poświaty hover na ekranach dotykowych dla lepszej wydajności */
+  .terms-container section:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .terms-container > h2 {
+    font-size: 1.4rem;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* Kursor wskazujący możliwość kliknięcia w nagłówek */
+  .mission-h2 {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    -webkit-user-select: none;
+    padding: 15px 10px;
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* Dodanie ikony plusa po prawej stronie h2 */
+  .mission-h2::after {
+    content: '+';
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: #fff;
+    transition: transform 0.4s ease;
+  }
+
+  /* Kiedy sekcja jest aktywna, plus zmienia się w x (obraca się) */
+  .mission-h2.active::after {
+    transform: rotate(45deg);
+  }
+
+  /* Ukrywanie zawartości na telefonach, jeśli klasa .open nie jest aktywna */
+  .mobile-toggle-content {
+    display: none;
+    opacity: 0;
+  }
+
+  /* Pokazywanie zawartości z płynną animacją pojawiania się */
+  .mobile-toggle-content.open {
+    display: block;
+    opacity: 1;
+    animation: fadeInMission 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+/* Animacja wejścia tekstu */
+@keyframes fadeInMission {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

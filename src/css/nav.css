@@ -8,26 +8,15 @@
   }
   /* Klasa dodawana przez React po scrollu > 150px */
 .navbar.scroll {
-  /* Tło staje się lekko przezroczyste (białe lub ciemne, zależy od Twojego stylu) */
-  background-color: rgba(255, 255, 255, 0.7) !important; 
-
-  /* KLUCZ: Efekt rozmycia tła pod nawigacją */
+  background-color: rgb(42, 39, 39) !important; 
   backdrop-filter: blur(12px); 
-  -webkit-backdrop-filter: blur(12px); /* Wsparcie dla Safari */
-  
-  /* Opcjonalnie: dodaj subtelny cień i obramowanie, by nav "odkleił się" od strony */
+  -webkit-backdrop-filter: blur(12px); 
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  
-  /* Przyspieszenie przejścia dla płynności */
   transition: all 0.4s ease-in-out;
-  
-  /* Jeśli chcesz, by nav przy scrollu był niższy (np. 80px zamiast 100px) */
   height: 90px !important; 
 }
 
-/* Jeśli Twoja strona jest ciemna, użyj tego zamiast powyższego backgroundu: */
-/* background-color: rgba(0, 0, 0, 0.6) !important; */
   .nav-sticky-wrapper {
     position: -webkit-sticky;
     position: sticky;
@@ -146,7 +135,7 @@
   }
 
   div.ui.right.floated.header {
-    right: -450px !important;
+    right: -250px !important;
   }
   .nav-link {
     display: flex;
@@ -159,7 +148,7 @@
       left: 70px;
     }
     div.ui.right.floated.header {
-      right: -350px !important;
+      right: -420px !important;
     }
   }
   @media(max-width:1200px){
@@ -167,7 +156,7 @@
       left: 250px;
     }
     div.ui.right.floated.header {
-      right: -270px !important;
+      right: -340px !important;
     }
   }
   @media(max-width:992px){
@@ -175,7 +164,7 @@
       left: 440px;
     }
     div.ui.right.floated.header {
-      right: -100px !important;font-size: 18px !important;
+      right: -190px !important;font-size: 18px !important;
     }
     .nav-title{
       font-size: 28px !important;
@@ -183,6 +172,9 @@
             .navbar-toggler{
               right: 0;
             }
+            .mobile-only.burger-btn{
+    margin-right: 10px;
+  }
   
   }
   @media(max-width:768px){
@@ -208,7 +200,7 @@
         z-index: 9999;
       }
       div.ui.right.floated.header {
-        right: -50px !important;font-size: 1px !important;
+        right: -120px !important;font-size: 1px !important;
       }
       .search-bar {height: 30px;width: 150px;
         input {
@@ -235,7 +227,7 @@
   @media(max-width:600px){
     div.ui.right.floated.header {
       
-      right: -25px !important;font-size: 15px !important;
+      right: -80px !important;font-size: 15px !important;
     }
  
     .search-bar {height: 25px;width: 130px;
@@ -248,6 +240,7 @@
       }
       button{height: 20px;width: 20px;}
   }
+  
   .icon-circle{width: 22px;height: 22px;}
   .fa-bag-shopping,.fa-user{font-size: 10px !important;}
   .icon-circle::after{width: 15px;height: 15px;}
@@ -255,7 +248,7 @@
   }
   @media(max-width:450px){
     div.ui.right.floated.header {
-      right: 0px !important;font-size: 15px !important;gap: 3px !important;
+      right: -50px !important;font-size: 15px !important;gap: 3px !important;
     }
     .search-bar {height: 20px;width: 100px;
       input {
@@ -292,7 +285,7 @@
   }
   @media(max-width:330px){
     div.ui.right.floated.header {
-      right: 70px !important;font-size: 15px !important;
+      right: -17px !important;font-size: 15px !important;
     }
     .search-bar {height: 20px;width: 70px;
       input {
@@ -306,7 +299,10 @@
   }
   .navbar-toggler {position: absolute;right: 30px;top: 18px;font-size: 10px;
   }
-
+    .mobile-only.burger-btn{
+      margin-top: 12px;
+    margin-right: -7px;
+  }
   }
 
 

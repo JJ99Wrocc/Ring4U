@@ -84,7 +84,7 @@ const Navbar = () => {
           }}
           role="menubar"
         >
-          <div
+          {/* <div
             className=" search-bar"
             onMouseEnter={() => setShowSearch(true)}
             onMouseLeave={() => setShowSearch(false)}
@@ -99,7 +99,7 @@ const Navbar = () => {
              <button><i className="fa-solid fa-magnifying-glass"></i></button>
            
            
-          </div>
+          </div> */}
 
           <div
             onMouseEnter={handleMouseEnter}

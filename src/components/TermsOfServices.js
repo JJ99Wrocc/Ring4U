@@ -14,8 +14,8 @@ const TermsOfService = () => {
           <ul>
             <li>Nazwa sklepu: <strong>Ring4U</strong></li>
             <li>Właściciel: <strong>Joachim Esangbedo</strong> prowadzący działalność gospodarczą / działalność nieewidencjonowaną zgodnie z przepisami prawa polskiego.</li>
-            <li>PESEL: <strong>99111209437</strong></li>
-            <li>Seria i numer dokumentu tożsamości: <strong>DAZ615970</strong></li>
+            {/* <li>PESEL: <strong>99111209437</strong></li> */}
+            <li>NIP:  <strong>8943268275</strong></li>
             <li>Adres zameldowania: <strong>ul. Na Szańcach 8/2, 50-240 Wrocław, Polska</strong></li>
             <li>Adres korespondencyjny i prowadzenia działalności: <strong>ul. Na Szańcach 8/2, 50-240 Wrocław, Polska</strong></li>
             <li>E-mail: <a href="mailto:joachimek1@interia.pl">joachimek1@interia.pl</a> (Kontakt HotPay: <a href="mailto:joachimek1@int.pl">joachimek1@int.pl</a>)</li>
@@ -64,8 +64,8 @@ const TermsOfService = () => {
 
         <section aria-label="Płatności">
           <h2>5. Płatności</h2>
-          <ul>
-            <li>Sklep umożliwia bezpieczne płatności online za pośrednictwem licencjonowanych operatorów płatności zewnętrznych, w tym w szczególności za pośrednictwem systemu <strong>HotPay</strong> (oraz opcjonalnie PayU, Przelewy24, Stripe).</li>
+        <ul>
+            <li>Sklep umożliwia bezpieczne płatności online. Podmiotem świadczącym obsługę płatności online jest <strong>HotPay – ePłatności sp. z o.o. sp. k. z siedzibą w Andrychowie</strong> (oraz opcjonalnie PayU, Przelewy24, Stripe).</li>
             <li>Sprzedawca nie zbiera, nie przetwarza ani nie przechowuje pełnych danych kart płatniczych ani danych logowania do bankowości elektronicznej Klientów. Wszystkie transakcje są szyfrowane i procesowane na bezpiecznych stronach operatora płatności.</li>
             <li>Płatność przez Klienta jest realizowana w chwili złożenia zamówienia (z góry), jako warunek konieczny do przystąpienia przez Sklep do realizacji zamówienia, chyba że indywidualna umowa lub oferta stanowi inaczej.</li>
           </ul>
