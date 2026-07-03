@@ -153,7 +153,7 @@ min-height: 300px;
 
   @media(max-width:1200px){
     .img-header{
-        background-image: url('../img/Header-img\ 920px.webp');
+        background-image: url('../img/Header-img\ 1490px.webp');
         background-size: cover;
         width: 100%;
       }
