@@ -6,7 +6,7 @@
   --bg-gradient: linear-gradient(145deg, #0a0a0a, #1a1a1a);
   --text-dim: #999;
   
-  background: var(--bg-gradient);
+  background: #c2b4b4 !important;
   color: #ffffff;
   padding: 80px 40px 30px 40px;
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -60,7 +60,7 @@
   font-weight: 700;
   background: none;
   border: none;
-  color: #fff;
+  color: #5f4c4c;
   cursor: pointer;
   margin-bottom: 25px;
   width: 100%;
@@ -76,7 +76,7 @@
   content: '↓'; /* Bardziej nowoczesny symbol niż + */
   font-size: 1.2rem;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  color: var(--primary-glow);
+  color: #5f4c4c;
 }
 
 .footer-title[aria-expanded="true"]::after {
@@ -93,7 +93,7 @@
 }
 
 .footer-links a {
-  color: var(--text-dim);
+  color: rgb(84, 72, 72);
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 300;
@@ -125,15 +125,16 @@
 
 .footer-bottom {
   max-width: 1200px;
-  margin: 60px auto 0 auto;
+  margin: 20px auto 0 auto;
   padding-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   text-align: center;
   font-size: 0.8rem;
-  color: #555;
+  color: #504747;
   letter-spacing: 1px;
 }
 .payment-methods-wrapper {
+ background-color: #836b6b !important;
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 20px;
@@ -141,14 +142,14 @@
     text-align: center;
     margin-bottom: 60px;
     margin-top: 40px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
 }
 .payment-text {
     font-family: 'Roboto Mono', monospace;
     font-size: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(8, 0, 0, 0.3);
     margin-bottom: 20px;
 }
 .payment-icons {
@@ -183,7 +184,7 @@
         align-items: center;
         text-align: center;
 
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(194, 181, 181, 0.2);
     font-family: 'Roboto Mono', monospace;
     font-size: 11px;
 }
@@ -235,6 +236,7 @@
     color: #your-accent-color;
 }
 .footer-company-info.is-open .company-details-content {
+  color: #3b3434;
     display: block !important; /* Na próbę, żeby sprawdzić czy działa */
     max-height: 500px !important;
     opacity: 1 !important;

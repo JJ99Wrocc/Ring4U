@@ -346,7 +346,6 @@ const ProductDetail = ({ products: propsProducts }) => {
         )}
       </div>
 
-      {/* KROK 2: POPRAWIONA SPECYFIKACJA (Z ZASTOSOWANIEM ROZWIĄZANIA .specs) */}
       <div id="product-specs" className="product-specs mb-4">
         <h5>Specyfikacje:</h5>
         {baseProduct.specs ? (
