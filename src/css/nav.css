@@ -164,7 +164,7 @@
       left: 440px;
     }
     div.ui.right.floated.header {
-      right: -190px !important;font-size: 18px !important;
+      right: -170px !important;font-size: 18px !important;
     }
     .nav-title{
       font-size: 28px !important;
@@ -209,7 +209,7 @@
         z-index: 9999;
       }
       div.ui.right.floated.header {
-        right: -120px !important;font-size: 1px !important;
+        right: -100px !important;font-size: 1px !important;
       }
       .search-bar {height: 30px;width: 150px;
         input {
@@ -236,7 +236,7 @@
   @media(max-width:600px){
     div.ui.right.floated.header {
       
-      right: -80px !important;font-size: 15px !important;
+      right: -60px !important;font-size: 15px !important;
     }
  
     .search-bar {height: 25px;width: 130px;
@@ -253,7 +253,7 @@
   }
   @media(max-width:450px){
     div.ui.right.floated.header {
-      right: -50px !important;font-size: 15px !important;gap: 3px !important;
+      right: -30px !important;font-size: 15px !important;gap: 3px !important;
     }
    
     .search-bar {height: 20px;width: 100px;
@@ -294,7 +294,7 @@
   }
   @media(max-width:330px){
     div.ui.right.floated.header {
-      right: -17px !important;font-size: 15px !important;
+      right: -7px !important;font-size: 15px !important;
     }
     .search-bar {height: 20px;width: 70px;
       input {

@@ -9,9 +9,7 @@
   /* 1. TŁO NA CAŁĄ SZEROKOŚĆ (Bez ucięć po bokach) */
   width: 100%;
   background: 
-      url("https://www.transparenttextures.com/patterns/dark-dot-2.png"),
-      radial-gradient(circle at 50% 50%, #1a1a1a 0%, #050505 100%),
-      #0a0a0a;
+     #353232;
   background-blend-mode: overlay, normal, normal;
 
   /* 2. KLUCZ DO ZNIKNIĘCIA BOKÓW: Podwójna maska 2D */
@@ -53,7 +51,7 @@
 
 /* 2. KARTA PRODUKTU (Bez zmian typografii i układu) */
 .product {
-    margin-bottom: 70px !important;
+    margin-bottom: 10px !important;
     text-align: left;
     transition: transform 0.5s ease;
     position: relative;
@@ -137,8 +135,9 @@
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 1.2px;
+    text-align: center !important;
     text-transform: uppercase;
-    color: #888;
+    color: #ffffff;
 }
 
 .product h5 a {
@@ -152,6 +151,7 @@
 }
 
 .product p {
+    text-align: center !important;
     font-size: 19px;
     font-weight: 800;
     color: #fff;
