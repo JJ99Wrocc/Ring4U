@@ -18,7 +18,7 @@ const TermsOfService = () => {
             <li>NIP:  <strong>8943268275</strong></li>
             <li>Adres zameldowania: <strong>ul. Na Szańcach 8/2, 50-240 Wrocław, Polska</strong></li>
             <li>Adres korespondencyjny i prowadzenia działalności: <strong>ul. Na Szańcach 8/2, 50-240 Wrocław, Polska</strong></li>
-            <li>E-mail: <a href="mailto:joachimek1@interia.pl">joachimek1@interia.pl</a> (Kontakt HotPay: <a href="mailto:joachimek1@int.pl">joachimek1@int.pl</a>)</li>
+            <li>E-mail: <a href="mailto:joachimek1@interia.pl">joachimek1@interia.pl</a> (Kontakt HotPay: <a href="mailto:joachimek1@int.pl">joachimek1@interia.pl</a>)</li>
             <li>Telefon: <strong>791881256</strong></li>
             <li>Data wejścia w życie: <strong>21 września 2025 r.</strong></li>
           </ul>

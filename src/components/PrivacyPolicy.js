@@ -93,7 +93,7 @@ const PrivacyPolicy = () => {
           <p className="privacy-policy-pkt">## 6) Odbiorcy danych</p>
           <ul>
             <li className="li-privacy-polcy">1. Dostawcy usług IT/Chmurowych: Firebase (baza danych i uwierzytelnianie), SendGrid (obsługa powiadomień systemowych), z którymi zawarto oficjalne umowy powierzenia przetwarzania danych (DPA).</li>
-            <li className="li-privacy-polcy">2. Krajowi i międzynarodowi operatorzy płatności: <strong>HotPay</strong> (eMerchant Sp. z o.o.) jako główny procesor transakcji (oraz opcjonalnie PayU / Przelewy24 / Stripe), w zakresie niezbędnym do autoryzacji i poprawnego rozliczenia płatności internetowej.</li>
+            <li className="li-privacy-polcy">2. Krajowi i międzynarodowi operatorzy płatności: <strong className="strong">HotPay</strong> (eMerchant Sp. z o.o.) jako główny procesor transakcji (oraz opcjonalnie PayU / Przelewy24 / Stripe), w zakresie niezbędnym do autoryzacji i poprawnego rozliczenia płatności internetowej.</li>
             <li className="li-privacy-polcy">3. Dostawcy oraz zautomatyzowane magazyny dropshippingowe realizujące kompletację zamówień, z którymi obowiązuje rygorystyczna umowa powierzenia przetwarzania danych osobowych.</li>
             <li className="li-privacy-polcy">4. Licencjonowane firmy kurierskie i operatorzy pocztowi: InPost, DPD, DHL, w zakresie niezbędnym do wygenerowania etykiety logistycznej i fizycznego dostarczenia paczki do Użytkownika.</li>
             <li className="li-privacy-polcy">5. Zewnętrzne biuro rachunkowo-księgowe obsługujące finanse Administratora, na podstawie umowy powierzenia przetwarzania danych.</li>
@@ -181,7 +181,7 @@ const PrivacyPolicy = () => {
         <section aria-label="Płatności">
           <p className="privacy-policy-pkt">## 15) Płatności</p>
           <ul>
-            <li className="li-privacy-polcy">1. Wszystkie płatności elektroniczne realizowane są poza strukturą techniczną Serwisu za pośrednictwem certyfikowanych i w pełni licencjonowanych operatorów płatności zewnętrznych, ze szczególnym uwzględnieniem systemu <strong>HotPay</strong>.</li>
+            <li className="li-privacy-polcy">1. Wszystkie płatności elektroniczne realizowane są poza strukturą techniczną Serwisu za pośrednictwem certyfikowanych i w pełni licencjonowanych operatorów płatności zewnętrznych, ze szczególnym uwzględnieniem systemu <strong className="strong">HotPay</strong>.</li>
             <li className="li-privacy-polcy">2. Serwis nie zbiera, nie przetwarza ani nie przechowuje pełnych numerów kart płatniczych, kodów CVV/CVC ani haseł dostępowych do bankowości elektronicznej. Dane te są przesyłane bezpośrednio kanałem szyfrowanym na bezpieczne serwery transakcyjne operatora płatności.</li>
           </ul>
         </section>
@@ -196,11 +196,11 @@ const PrivacyPolicy = () => {
         <section aria-label="Newsletter i komunikacja marketingowa">
           <p className="privacy-policy-pkt">### 17. Newsletter i komunikacja marketingowa</p>
           <ol>
-            <li><strong> Dobrowolność</strong> – Zapis na newsletter sklepu <strong>Ring4U</strong> jest całkowicie dobrowolny i niezależny od procesu składania standardowych zamówień.</li>
-            <li><strong> Brak spamu</strong> – Nie rozsyłamy niezamówionych informacji handlowych. Newsletter służy wyłącznie do przekazywania istotnych informacji związanych bezpośrednio z działalnością i ofertą sklepu.</li>
-            <li><strong> Częstotliwość</strong> – Newsletter jest wysyłany sporadycznie, z poszanowaniem prywatności Użytkownika i skrzynki odbiorczej.</li>
-            <li><strong> Rezygnacja</strong> – W każdej chwili Użytkownik może zrezygnować z subskrypcji bez ponoszenia jakichkolwiek kosztów, klikając w link „Wypisz się” załączony na dole każdej wiadomości.</li>
-            <li><strong> Podstawa prawna</strong> – Art. 6 ust. 1 lit. a RODO (dobrowolna zgoda osoby, której dane dotyczą).</li>
+            <li><strong className="strong"> Dobrowolność</strong> – Zapis na newsletter sklepu <strong className="strong">Ring4U</strong> jest całkowicie dobrowolny i niezależny od procesu składania standardowych zamówień.</li>
+            <li><strong className="strong"> Brak spamu</strong> – Nie rozsyłamy niezamówionych informacji handlowych. Newsletter służy wyłącznie do przekazywania istotnych informacji związanych bezpośrednio z działalnością i ofertą sklepu.</li>
+            <li><strong className="strong"> Częstotliwość</strong> – Newsletter jest wysyłany sporadycznie, z poszanowaniem prywatności Użytkownika i skrzynki odbiorczej.</li>
+            <li><strong className="strong"> Rezygnacja</strong> – W każdej chwili Użytkownik może zrezygnować z subskrypcji bez ponoszenia jakichkolwiek kosztów, klikając w link „Wypisz się” załączony na dole każdej wiadomości.</li>
+            <li><strong className="strong"> Podstawa prawna</strong> – Art. 6 ust. 1 lit. a RODO (dobrowolna zgoda osoby, której dane dotyczą).</li>
           </ol>
           <hr />
         </section>
@@ -219,9 +219,9 @@ const PrivacyPolicy = () => {
         <section aria-label="Załączniki i dokumenty uzupełniające">
           <p className="privacy-policy-pkt"># Załączniki i dokumenty uzupełniające</p>
           <ul>
-            <li className="li-privacy-polcy"><strong>1. Załącznik A:</strong> Aktualny wykaz podmiotów przetwarzających dane (procesorów technicznych i logistycznych).</li>
-            <li className="li-privacy-polcy"><strong>2. Załącznik B:</strong> Wzór oraz klauzula zgody newsletterowej (procedura double opt‑in).</li>
-            <li className="li-privacy-polcy"><strong>3. Załącznik C:</strong> Szczegółowa polityka plików cookies, technologii pikselowych i narzędzi śledzących.</li>
+            <li className="li-privacy-polcy"><strong className="strong">1. Załącznik A:</strong> Aktualny wykaz podmiotów przetwarzających dane (procesorów technicznych i logistycznych).</li>
+            <li className="li-privacy-polcy"><strong className="strong">2. Załącznik B:</strong> Wzór oraz klauzula zgody newsletterowej (procedura double opt‑in).</li>
+            <li className="li-privacy-polcy"><strong className="strong">3. Załącznik C:</strong> Szczegółowa polityka plików cookies, technologii pikselowych i narzędzi śledzących.</li>
           </ul>
           <hr />
           <p>

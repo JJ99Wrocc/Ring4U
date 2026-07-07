@@ -2,7 +2,7 @@
 
 /* --- FUNDAMENT --- */
 :root {
-  --bg-color: #050505;
+  --bg-color: #bcb7b2;
   --accent-white: #ffffff;
   --glass-bg: rgba(255, 255, 255, 0.02);
   --glass-border: rgba(255, 255, 255, 0.07);
@@ -18,6 +18,8 @@
   color: var(--text-dim);
   font-family: 'Plus Jakarta Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
+  margin-top: 50px;
+  border-radius: 40px;
 }
 
 /* Nagłówek - Apple Style */
@@ -25,7 +27,7 @@
   font-size: 40px;
   text-align: center;
   margin-bottom: 120px;
-  color: var(--accent-white);
+  color: #464141;
   font-weight: 800;
   letter-spacing: -4px;
   line-height: 0.9;
@@ -53,7 +55,8 @@
   cursor: pointer;
   padding: 40px;
   margin: 0;
-  color: var(--accent-white);
+  background-color: #958a81;
+  color: #393737;
   font-size: 1.3rem;
   font-weight: 600;
   display: flex;
@@ -67,7 +70,7 @@
   content: '';
   width: 20px;
   height: 2px;
-  background: var(--accent-white);
+  background: #393737;
   transition: var(--transition-main);
   position: relative;
 }
@@ -77,7 +80,7 @@
   content: '';
   width: 2px;
   height: 20px;
-  background: var(--accent-white);
+  background: #393737;
   position: absolute;
   right: 49px; /* Dopasuj do paddingu */
   transition: var(--transition-main);
@@ -109,12 +112,15 @@
 .privacy-policy-pkt.active + ul,
 .privacy-policy-pkt.active + ol,
 .privacy-policy-pkt.active + p {
+  background-color: #958a81 !important;
   max-height: 1000px; /* Dowolna duża wartość */
   opacity: 1;
   padding-bottom: 40px;
   margin-top: -10px;
 }
-
+p{
+  color:#635c57;
+}
 /* --- STYLIZACJA LISTY --- */
 .li-privacy-polcy {
   list-style: none;
@@ -122,17 +128,19 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.03);
   font-weight: 300;
   font-size: 1.05rem;
-  color: var(--text-dim);
+  color: rgba(40, 39, 39, 0.7);
 }
-
+.li-privacy-polcy strong{
+  color:#484747;
+}
 .strong{
-    color: #ffffff !important;
+    color: #484747 !important;
     font-size: 15px !important;
 }
 
 /* Linki - Silver Glow */
 .privacy-content a {
-  color: var(--accent-white);
+  color: #e9d1d1;
   text-decoration: none;
   position: relative;
   transition: var(--transition-main);
@@ -163,7 +171,7 @@
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 0.7rem;
-  color: var(--accent-white);
+  color: #464141;
   margin-bottom: 8px;
 }
 
