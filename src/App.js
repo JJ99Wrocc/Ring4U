@@ -310,17 +310,14 @@ element={
             </PrivateRoute>
           }
         />
-        <Route
-          path="/terms-of-services"
-          element={
-            <PrivateRoute>
-              <LayoutWithNavAndFooter>
-                <TermsOfService />
-              </LayoutWithNavAndFooter>
-     
-            </PrivateRoute>
-          }
-        />
+      <Route
+  path="/terms-of-services"
+  element={
+    <LayoutWithNavAndFooter>
+      <TermsOfService />
+    </LayoutWithNavAndFooter>
+  }
+/>
         <Route 
           path="/deliveryandreturns"
           element={

@@ -9,7 +9,7 @@
   /* 1. TŁO NA CAŁĄ SZEROKOŚĆ (Bez ucięć po bokach) */
   width: 100%;
   background: 
-     #353232;
+     #d0d5d4;
   background-blend-mode: overlay, normal, normal;
 
   /* 2. KLUCZ DO ZNIKNIĘCIA BOKÓW: Podwójna maska 2D */
@@ -27,7 +27,7 @@
 
   /* 3. MOCNE WYGŁADZENIE KRAWĘDZI (Wewnętrzna winieta) */
   box-shadow: 
-      inset 0 0 150px 50px #0a0a0a; /* To "zjada" wszelkie pozostałe ostre krawędzie wewnątrz */
+     #d0d5d4; /* To "zjada" wszelkie pozostałe ostre krawędzie wewnątrz */
       
   overflow: visible !important;
 }
@@ -140,14 +140,14 @@
     color: #ffffff;
 }
 
-.product h5 a {
+.product h5 a, .product p  {
     text-decoration: none !important;
     transition: color 0.3s ease;
-    color: inherit;
+    color: #3a3532 !important;
 }
 
 .product h5 a:hover {
-    color: #fff !important;
+    color: #ffffff !important;
 }
 
 .product p {

@@ -23,7 +23,7 @@
 
 .discount-img {
     position: relative;
-    background-image: url('../img/color_bar_for_header.png');
+    background-color: #c2b4b4;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -31,7 +31,7 @@
     justify-content: center;
     font-weight: 800; /* Mocniejszy font 2026 */
     height: 100px;
-    color: #FFF8E7;
+    color: #3a3532;
     
     /* Subtelny blask zamiast cienia */
     filter: drop-shadow(0 0 15px rgba(248, 2, 125, 0.2));

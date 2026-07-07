@@ -1,6 +1,7 @@
 .img-header{
     position: relative;
-    background-image: url('../img/Header-img\ 1490px.webp');
+    background-image: url('../img/header-1400px.webp');
+filter: sepia(0.15) brightness(0.95) !important;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -56,16 +57,17 @@ min-height: 300px;
     font-size: 35px; 
     font-weight: 900;
     line-height: 0.9;
-    color: #ffffff;
+    color: #635a55;
     text-transform: none; 
     filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3)) 
             drop-shadow(0 0 80px rgba(255, 255, 255, 0.1));
-    mix-blend-mode: screen; 
+    /* mix-blend-mode: color;  */
     opacity: 0; /* Startujemy od zera dla animacji */
     max-width: 800px;
     white-space: normal !important; 
     letter-spacing: 2px;
 
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); */
     /* DODAJEMY TO: */
     animation: textEntrance 3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
     will-change: transform, opacity, filter;
@@ -94,7 +96,7 @@ min-height: 300px;
     font-size: 13px; /* Mniejszy font + większy spacing = High-End */
     font-weight: 700;
     letter-spacing: 3px;
-    color: #ffffff;
+    color: #3a3532;
     
     /* GLASSMORPHISM 2026 */
     background: rgba(255, 255, 255, 0.05);
@@ -128,7 +130,7 @@ min-height: 300px;
     background: linear-gradient(
         120deg, 
         transparent, 
-        rgba(255, 255, 255, 0.3), 
+        rgba(122, 118, 118, 0.3), 
         transparent
     );
     transition: all 0.6s;
@@ -136,10 +138,10 @@ min-height: 300px;
 }
 
 .header-button:hover {
-    background: #ffffff; /* Odwrócenie luksusowe: biały na hover */
+    background: #bdbbbb; /* Odwrócenie luksusowe: biały na hover */
     color: #000000;
     transform: translateY(-5px) scale(1.02);
-    border-color: #ffffff;
+    border-color: #dabfbf;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 
 }
@@ -153,7 +155,7 @@ min-height: 300px;
 
   @media(max-width:1200px){
     .img-header{
-        background-image: url('../img/Header-img\ 1490px.webp');
+        background-image: url('../img/header-920px.webp');
         background-size: cover;
         width: 100%;
       }
@@ -173,7 +175,8 @@ font-size: 12px;   width: 200px; height: 50px;
   }
   @media(max-width:768px){
     .img-header{
-        padding: 0;align-items: center;
+        /* margin: 0 0 0 40px    !important;   */
+        align-items: center;
         background-size: cover;
       }
       .img-header-shadow {

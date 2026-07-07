@@ -96,21 +96,40 @@ const ProductDetail = ({ products: propsProducts }) => {
   // Sprawdzenie, czy produkt ma tylko jeden uniwersalny rozmiar (np. naszyjniki)
   const isOneSize = sizesList.length === 1 && sizesList[0].size === "One Size";
 
-  // AKTUALIZACJA ZDJĘCIA PRZY ZMIANIE PRODUKTU (Zmieniono referencję z product na baseProduct)
+// =========================================================================
+  // HOOKI (Zawsze na samej górze komponentu, jeden pod drugim)
+  // =========================================================================
+
+  // 1. Zmiana zdjęcia głównego przy przełączaniu produktu
   useEffect(() => {
     if (baseProduct) {
       setMainImage(baseProduct.image || "");
-      setSelectedVariant(null); // Resetujemy wybrany rozmiar przy zmianie podstrony pierścionka
+      setSelectedVariant(null); 
     }
   }, [baseProduct]);
 
-  if (!baseProduct)
+  // 2. Dynamiczne zarządzanie tłem całej strony (TERAZ JEST W DOBRYM MIEJSCU!)
+  useEffect(() => {
+    document.body.classList.add("product-page-active");
+
+    return () => {
+      document.body.classList.remove("product-page-active");
+    };
+  }, []);
+
+
+  // =========================================================================
+  // WARUNKI PRZERWANIA (Dopiero TUTAJ mogą się pojawić instrukcje return)
+  // =========================================================================
+  if (!baseProduct) {
     return (
       <p className="text-center mt-5" role="alert">
         Produkt nie znaleziony
       </p>
     );
+  }
 
+  // ... dalej idzie reszta Twojego kodu (funkcje obsługi przycisków i główny return HTML)
   // Twoje oryginalne logi w konsoli
   console.log("Czy products to tablica?", Array.isArray(propsProducts));
   console.log("Co jest w necklacesFake?", necklacesFake);

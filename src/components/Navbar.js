@@ -51,7 +51,18 @@ const Navbar = () => {
     setShowCartPreview(false);
   };
   const offcanvasRef = useRef(null);
+const capitalizeName = (name) => {
+  if (!name) return "Użytkowniku";
 
+  return name
+    .toLowerCase()
+    .split(" ")
+    .filter(Boolean)
+    .map(
+      (word) => word.charAt(0).toUpperCase() + word.slice(1)
+    )
+    .join(" ");
+};
 
   return (
     <div className="nav-sticky-wrapper">
@@ -131,9 +142,9 @@ const Navbar = () => {
               <div 
                 className="user-name-after-log-in" 
                 tabIndex="0"
-                aria-label={`Zalogowany użytkownik: ${user.displayName || "Użytkownik"}`}
+                aria-label={`Zalogowany użytkownik: ${capitalizeName(user.displayName) || "Użytkownik"}`}
               >
-                Cześć, {user.displayName || "Użytkowniku"}
+                Cześć, {capitalizeName(user.displayName) || "Użytkowniku"}
               </div>
               <LogInAfter show={showLogin} setShow={setShowLogin}/>
             </>

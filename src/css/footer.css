@@ -342,3 +342,17 @@
         font-size: 11px !important ;
     }
   }
+
+  button .footer-title {
+  background: none;
+  border: none;
+  color: #5f4c4c;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+}
