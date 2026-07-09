@@ -41,14 +41,13 @@ const ProductAdded = ({ visible, setVisible, products }) => {
         DODANO DO KOSZYKA!
       </div>
 
-      <button  
-        onClick={handleClose} 
-        style={{ cursor: "pointer" }} 
-        aria-label="Zamknij podsumowanie koszyka"
-      >
-        <i className="fa-solid fa-x"></i>
-      </button>
-
+    <button
+  className="close-btn"
+  onClick={handleClose}
+  aria-label="Zamknij podsumowanie koszyka"
+>
+  <i className="fa-solid fa-x"></i>
+</button>
       <div className="container product-2">
         <div className="row">
           <div className="col-6" role="region" aria-label="Dodane produkty">

@@ -22,7 +22,9 @@ const PrivacyPolicy = () => {
   useToggleSections();
   return (
     <>
-
+<div className="container">
+   <div className="row">
+    
       <main className="privacy-content" role="document" aria-label="Polityka Prywatności Ring4U">
         <h1>Polityka Prywatności – Ring4U</h1>
 
@@ -230,7 +232,8 @@ const PrivacyPolicy = () => {
           </p>
         </section>
               </main>
-   
+   </div>
+</div>
     </>
   );
 };

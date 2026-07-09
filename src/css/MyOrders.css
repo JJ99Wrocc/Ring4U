@@ -17,12 +17,13 @@
   font-weight: 800;
   letter-spacing: 1.5px !important;
   text-align: center;
-  margin-bottom: 80px;
-  color: var(--text-primary);
+  margin-bottom: 50px;
+  margin-top: 20px !important;
+
   letter-spacing: -3px;
-  background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,0.2) 100%);
+  background: linear-gradient(180deg, #746868 0%, #3a3532 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
   filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
 }
 
@@ -35,6 +36,8 @@
   margin-bottom: 40px;
   position: relative;
   overflow: hidden;
+  border: 1px solid #94908e;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(30px) saturate(150%);
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -50,9 +53,9 @@
 
 /* Pola tekstowe - Styl dyskretny */
 .my-order-p {
-  margin: 12px 0;
+  margin: 2px 0;
   font-size: 1rem;
-  color: var(--text-secondary);
+  color:#e6c666 !important;
   font-weight: 300;
   display: flex;
   justify-content: space-between; /* Rozbicie na lewo i prawo dla elegancji */
@@ -61,15 +64,16 @@
 }
 
 .my-order-p strong {
-  color: var(--text-primary);
-  font-weight: 500;
+  color: #343128;
+  font-weight: 550;
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 2px;
   opacity: 0.6;
 }
 .my-order-box p {
-    color:white !important;
+    color:rgb(98, 82, 82) !important;
+    font-weight: 600;
 }
 /* LISTA PRODUKTÓW - Industrialny sznyt */
 .my-order-box ul {
@@ -77,10 +81,10 @@
 }
 
 .my-order-box ul li {
-  background: rgba(0, 0, 0, 0.3);
+  background: #c2b4b4;
   border-radius: 20px;
   padding: 20px !important;
-  margin-bottom: 15px !important;
+  /* margin-bottom: 15px !important; */
   border: 1px solid rgba(255, 255, 255, 0.02);
   transition: 0.3s;
 }
@@ -100,7 +104,7 @@
 /* Wartości liczbowe - Monospace luksus */
 .order-total {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  color: #fff;
+  color: #363131;
   font-weight: 800;
   font-size: 1.2rem;
   letter-spacing: -0.5px;

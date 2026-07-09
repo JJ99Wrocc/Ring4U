@@ -48,7 +48,9 @@ const MyDm = () => {
   if (messages.length === 0) return <p role="status">Brak wiadomości.</p>;
 
   return (
-    <div className="messages-wrapper">
+   <div className="container">
+        <div className="row">
+              <div className="messages-wrapper">
       <h2 className="my-order-title">Moje wiadomości</h2>
       <div className="messages-container" role="list">
         {messages.map(msg => (
@@ -88,6 +90,8 @@ const MyDm = () => {
         ))}
       </div>
     </div>
+        </div>
+   </div>
   );
 };
 

@@ -45,7 +45,9 @@ const PaymentWithProduct = () => {
     .reduce((sum, p) => sum + (p.amount || 1), 0);
 
   return (
-    <div className="payment-box" role="region" aria-label="Koszyk użytkownika">
+   <div className="container">
+         <div className="row">
+                <div className="payment-box" role="region" aria-label="Koszyk użytkownika">
       <div className="payment-left beyond768a">
         <div className="payment-left-title">TWÓJ KOSZYK</div>
         <p className="payment-left-title-p">
@@ -151,7 +153,7 @@ const PaymentWithProduct = () => {
       </div>
 
       <div className="payment-right hide-above768">
-        <p className="payment-right-title">PODSUMOWANIE ZAMÓWIENIA</p>
+        <h2 className="payment-right-title">PODSUMOWANIE ZAMÓWIENIA</h2>
         <p>
           {" "}
           {selectedCount} Produkty:{" "}
@@ -194,6 +196,8 @@ const PaymentWithProduct = () => {
         </button>
       </div>
     </div>
+         </div>
+   </div>
   );
 };
 

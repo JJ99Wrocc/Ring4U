@@ -2,7 +2,7 @@
 
 .discount {
     /* Twoje pozycjonowanie i odstępy */
-    margin: 60px auto;
+    margin: 3   0px auto;
     cursor: pointer;
     font-family: 'Plus Jakarta Sans', sans-serif;
     
@@ -21,6 +21,26 @@
     transform: scale(1.02);
 }
 
+.hr-discount{
+  border: none;
+  height: 3px;
+  width: 36%;
+
+  margin: 10px auto 20px auto;
+  opacity: 0.6;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #c2b4b4 20%,
+    #c2b4b4  50%,
+    #c2b4b4 80%,
+    transparent
+  );
+
+  border-radius: 999px;
+  box-shadow: 0 0 8px rgba(140, 122, 112, 0.15);
+}
 .discount-img {
     position: relative;
     background-color: #c2b4b4;
@@ -76,6 +96,11 @@
 }
 
 @media(max-width:768px){
+    .hr-discount{
+
+  margin: 3px auto 5px auto;
+
+}
     .discount-img{
         height: 100px;
     }

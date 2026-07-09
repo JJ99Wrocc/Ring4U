@@ -35,7 +35,9 @@ const MyOrders = () => {
   if (!orders.length) return <p role="status">Brak zamówień.</p>;
 
   return (
-    <div>
+  <div className="container">
+       <div className="row">
+              <div>
       <h2 className="my-order-title">Moje zamówienia</h2>
       <ul role="list">
         {orders.map(order => {
@@ -86,6 +88,8 @@ const MyOrders = () => {
         })}
       </ul>
     </div>
+       </div>
+  </div>
   );
 };
 

@@ -3,7 +3,7 @@
   --bg-gradient: linear-gradient(145deg, #0a0a0a, #1a1a1a);
   --text-dim: #999;
   
-  background: var(--bg-gradient);
+  background:  rgb(153, 130, 130);
   padding: 40px;
   border-radius: 18px;
   position: relative;
@@ -12,7 +12,10 @@
   min-width: 0;
  
   margin-bottom: 60px;
-  color: white;
+  color: rgb(74, 63, 63);
+}
+.right-order-finalization-box a {
+  color: #eaa2a2;
 }
 .order-summary,.shipping-summary{
   display: flex;
@@ -58,10 +61,17 @@
 }
 
 .order-discount-section input {
+  background-color: #685454;
+  color: #f6f4ea !important;
   border-radius: 8px;
   height: 30px;        
   padding: 0 10px;
   box-sizing: border-box; 
+}
+.order-discount-section input::placeholder {
+ 
+  color: #c5a0a0 !important;
+
 }
 
 .order-discount-btn {
@@ -71,6 +81,8 @@
   align-items: center;   
   justify-content: center; /* Daj mu trochę oddechu po bokach */
   cursor: pointer;
+   background-color: #7c5f5f;
+  color: #ac7070; 
 }
 .order-checks {
   display: flex;
@@ -94,7 +106,8 @@
   align-items: center;   
   justify-content: center;
   cursor: pointer;
-  color: #fff;                  /* Zakładając, że tło strony jest ciemne (#333) */
+  background-color: #7c5f5f;
+  color: #ac7070;                  /* Zakładając, że tło strony jest ciemne (#333) */
 }
 
 /* Styl dla rozwijanej treści pod spodem */
@@ -148,8 +161,9 @@
 }
 @media(max-width: 992px){
   .right-order-finalization-box{
-    display: block;
-    margin-top: 20px;
+   flex:none;
+    width:100%;
+    margin-top:0;
    
   }
   .order-segment{

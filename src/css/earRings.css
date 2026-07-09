@@ -65,10 +65,10 @@ body{
 
 /* --- LUXURY OBSIDIAN GRID --- */
 #product-ear-rings .ear-v2-row-grid {
-    background: linear-gradient(165deg, #161616 0%, #0d0d0d 100%);
+    background: #c2b4b4 ;
     border-radius: 30px;
     padding: 70px 50px;
-    margin: 50px 0 !important;
+    margin: 25px 0 !important;
     box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8), inset 0 1px 1px rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(197, 160, 89, 0.1); 
     backdrop-filter: blur(10px);
@@ -135,12 +135,12 @@ body{
 .pagination button {
     padding: 10px 15px;
     border: 1px solid #140303;
-    background-color: rgb(60, 12, 12);
+    background-color: rgb(141, 85, 85);
     cursor: pointer;
 }
 
 .pagination button.active {
-    background-color: #000;
+    background-color: #ee7878;
     color: #fff;
     border-color: #000;
 }
@@ -168,7 +168,10 @@ body{
     max-height: 80vh;
     border-radius: 8px;
 }
-
+  .h5-ear-rings{
+        
+    color:rgba(40, 39, 39, 0.7);
+}
 .close-btn {
     position: absolute;
     top: -40px;
@@ -186,9 +189,9 @@ body{
     left: 12px;
     padding: 12px 14px;
     border-radius: 50px;
-    border: 1px solid rgba(255,255,255,0.3);
-    background-color: #111111;
-    color: #ffffff !important;
+    border: 1px solid rgba(238, 113, 113, 0.3);
+    background-color: #9d6464;
+    color: #d6b0b0 !important;
     font-size: 11px;
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
@@ -199,7 +202,7 @@ body{
 }
 
 .ear-v2-buy-btn:hover {
-    background-color: #c5a059;
+    background-color: #7a705d;
     border-color: #c5a059;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(197, 160, 89, 0.3);
@@ -210,7 +213,10 @@ body{
     margin-top: 1.5rem;
     text-align: center;
 }
-
+  .ear-v2-title {
+    margin-top: 50px  !important ;
+    margin-bottom: 0px !important;
+  }
 .ear-v2-product-link {
     font-size: 11.5px;
     font-weight: 500;
@@ -226,19 +232,16 @@ body{
     letter-spacing: 3.5px;
 }
 
-.ear-v2-product-price {
+.ear-v2-product-price, .ear-v2-title {
     font-size: 15px;
-    color: #888;
-    font-weight: 300;
+    color: rgba(36, 32, 32, 0.7);
+    font-weight:550;
     margin-top: 5px;
 }
 
 /* --- RESPONSYWNOŚĆ --- */
 @media (max-width: 992px) {
-    .ear-v2-row-grid {
-        padding: 40px 20px;
-        margin: 20px 10px !important;
-    }
+
     .ear-v2-title {
         font-size: 18px;
         letter-spacing: 5px;
@@ -253,6 +256,7 @@ body{
         margin: 30px auto;
     }
     .h5-ear-rings{
+
     font-size: 13px;
 }
 .ear-v2-product-price{

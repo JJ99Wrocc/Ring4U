@@ -5,7 +5,9 @@ import '../css/DeliveryAndReturns.css';
 
 const DeliveryAndReturns = () => {
   return (
-    <div className="delivery-page-container">
+<div className="container">
+   <div className="row">
+        <div className="delivery-page-container">
       
       {/* NAGŁÓWEK GŁÓWNY */}
       <header className="delivery-header">
@@ -100,9 +102,10 @@ const DeliveryAndReturns = () => {
       </section>
 
       {/* FOOTER PODSTRONY */}
-    <Footer />
 
     </div>
+   </div>
+</div>
   );
 };
 

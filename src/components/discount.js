@@ -7,6 +7,7 @@ const Discount = () => {
     const [showBox, setShowBox] = useState(false);
     return(
         <>
+        <hr className="hr-discount"></hr>
         <div  
             className="discount container" 
             onClick={() => setShowBox(true)} 
