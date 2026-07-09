@@ -155,8 +155,8 @@
   }
 
   .place-order-btn {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    color: white;
+    background: linear-gradient(135deg, #96766e, #6d5151);
+    color: rgb(239, 200, 200);
     padding: 14px 28px;
     border: none;
     border-radius: 8px;
@@ -170,10 +170,14 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding-bottom: 30px;
     margin-bottom: 30px;
+    margin-top: 10px;
   }
-
+  .payment-option.selected,.delivery-boxes.selected{
+    background-color: #9d7d98;
+    color: #6b5454 !important;
+  }
   .place-order-btn:hover {
-    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    background: linear-gradient(135deg, #7e5f57, #744d4d);
     transform: translateY(-3px);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
   }

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "./CartContext";
 import OrderFinalizationRightBox from "./OrderFinalizationRightBox";
@@ -26,6 +26,19 @@ const OrderFinalization = () => {
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState(null);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+
+  // --- OBSŁUGA ALERTU PO POWROCIE Z UDANEJ PŁATNOŚCI HOTPAY ---
+  useEffect(() => {
+    const queryParams = new URLSearchParams(window.location.search);
+    const status = queryParams.get("status");
+
+    if (status === "success") {
+      alert("Zamówienie zostało złożone!");
+      // Czyszczenie parametrów z adresu URL, aby alert nie wyskakiwał ponownie po odświeżeniu strony
+      navigate("/", { replace: true });
+    }
+  }, [navigate]);
+  // -------------------------------------------------------------
 
   const baseTotalCost = selectedProducts.reduce((sum, product) => {
     if (!product.selected) return sum;
@@ -172,7 +185,45 @@ const OrderFinalization = () => {
       }
       
       setSelectedProducts([]);
+      
+      // HOTPAY - Wariant uproszczony (GET za pomocą URLSearchParams)
+      if (selectedPaymentMethod === "HotPay") {
+        const SEKC_SEKRET_USLUGI = "ejZDV0NadmozellCYjJPQTdFR3ErV0txbHhWMW5uczY3VEtJa1d3YkF2WT0,"; 
+
+        const cena = baseTotalCost >= 400 
+          ? parseFloat(totalCost) 
+          : (parseFloat(totalCost) + 20);
+          
+        if (isNaN(cena) || cena <= 0) {
+          alert("Błąd kwoty zamówienia!");
+          setLoading(false);
+          return;
+        }
+
+        const KWOTA = cena.toFixed(2);
+        const orderId = orderReference.id;
+        const nazwaUslugi = "Ring4U"; 
+
+        const params = new URLSearchParams({
+          SEKRET: SEKC_SEKRET_USLUGI,
+          KWOTA: KWOTA,
+          NAZWA_USLUGI: nazwaUslugi,
+          ID_ZAMOWIENIA: orderId,
+          ADRES_WWW: window.location.origin,
+          ADRES_SUCCESS: `${window.location.origin}/?status=success&oid=${orderId}`,
+          ADRES_FAILURE: `${window.location.origin}/?status=error`,
+          EMAIL: orderData.email
+        });
+
+        const hotPayUrl = `https://platnosc.hotpay.pl/?${params.toString()}`;
+        console.log("Finalny URL przekierowania HotPay:", hotPayUrl);
+        window.location.href = hotPayUrl;
+        return; 
+      }
+
+      // Alert dla metod innych niż HotPay (jeśli zostaną kiedyś dodane)
       alert("Zamówienie zostało złożone!");
+
       navigate("/");
       setOrderData({
         email: "",
@@ -212,14 +263,8 @@ const OrderFinalization = () => {
           productPrice: "",
         },
         useDifferentBilling: false,
-  //       acceptedAge: showAgeAlert,
-  // acceptedRodo: showRodoAlert,
       });
-      if(selectedPaymentMethod === "HotPay"){
-        const hotpayLink = `https://hotpay.pl/pay/${parseFloat(totalCost).toFixed(2)}pln`
-        window.open(hotpayLink, "_blank");
-        return;
-      }
+
     } catch (error) {
       console.error("Błąd przy składaniu zamówienia:", error);
       alert("Wystąpił problem, spróbuj ponownie.");
