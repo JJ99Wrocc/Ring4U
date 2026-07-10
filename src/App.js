@@ -9,8 +9,7 @@
   import TermsOfService from "./components/TermsOfServices";
   import LogIn from "./components/LogIn"; 
   import Discount from "./components/discount";
-  // import Product from "./components/Products";
-  // import Payment from "./components/Payment";
+
   import CartProvider from "./components/CartContext";
   import CartAddedProduct from "./components/CartPreview2";
   import OrderFinalization from "./components/OrderFinalization";
@@ -36,16 +35,16 @@
   import BraceletFootFake from "./components/BranceletFootFake";
   import BraceletFootStal from "./components/BraceletFootStal";
   import Necklace from "./components/NecklaceStal";
-  // import Rings from "./components/Rings"
+ 
   import DeliveryAndReturns from "./components/DeliveryAndReturns";
   import EarRingsStalGold from "./components/KolczykiStalGold";
   import EarRingsSztuczneGold from "./components/KolczykiSztuczneGold"
   import EarRingsSrebro from "./components/KolczykiSrebro"
-// import Necklace from "./components/NecklaceStal";
+
 import NecklaceStal from "./components/NecklaceStal";
 import NecklaceFake from "./components/NecklacesFake";
 import RingStal from "./components/RingStal";
-// import { necklacesFake } from "./data/NecklacesFake";
+import ContactForm from "./components/ContactForm"
   function LayoutWithNavAndFooter({ children }) {
     return (
       <div className="app-container"> 
@@ -88,6 +87,14 @@ import RingStal from "./components/RingStal";
             </PublicRoute>
           }
         />
+      <Route
+  path="/contactForm"
+  element={
+    <LayoutWithNavAndFooter>
+      <ContactForm />
+    </LayoutWithNavAndFooter>
+  }
+/>
 
 <Route
   path="/product/:productId"

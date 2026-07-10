@@ -2,7 +2,7 @@
 
 /* Reset i baza */
 .login-page-wrapper {
-  background: #050505 !important; /* Głęboka czerń */
+  background: #c7c6c4 !important; /* Głęboka czerń */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@
   --input-bg: #121212;
   --border: rgba(255, 255, 255, 0.08);
   margin: 0 auto !important;
-  background: #0f0f0f !important;
+  background: #7d6464 !important;
   border: 1px solid var(--border) !important;
   border-radius: 28px !important;
   padding: 48px !important;
@@ -27,7 +27,7 @@
 
 /* Nagłówek - Zero efektów kiczowatych, czysty font */
 .login-card h2.header {
-  color: #ffffff !important;
+  color: #523030  !important;
   font-size: 1.8rem !important;
   font-weight: 700 !important;
   letter-spacing: -0.03em !important;
@@ -41,8 +41,7 @@
 }
 
 .ui.input input {
-  background: var(--input-bg) !important;
-  color: #ffffff !important; /* Wyraźny biały tekst */
+ 
   border: 1px solid var(--border) !important;
   border-radius: 14px !important;
   padding: 16px 16px 16px 48px !important;
@@ -53,8 +52,9 @@
 
 /* Stan focus - tylko delikatna niebieska ramka */
 .ui.input input:focus {
-  border-color: var(--primary) !important;
-  background: #161616 !important;
+  border-color: rgb(162, 85, 85)  !important;
+  background: #6e4f4f !important;
+ 
   box-shadow: none !important;
 }
 
@@ -67,8 +67,8 @@
 }
 
 /* PRZYCISK GŁÓWNY */
-.ui.submit.button {
-  background: var(--primary) !important;
+.ui.submit.button  {
+  background: #c2b4b4 !important;
   color: #fff !important;
   border-radius: 14px !important;
   padding: 18px !important;
@@ -80,7 +80,7 @@
 
 .ui.submit.button:hover {
   opacity: 0.9 !important;
-  background: var(--primary) !important;
+  background-color: white !important;
 }
 
 /* PRZYCISKI SOCIAL - Minimalizm */
@@ -94,15 +94,15 @@
   font-size: 0.95rem !important;
   font-weight: 500 !important;
   border: 1px solid var(--border) !important;
-  background: transparent !important;
-  color: #eee !important;
+  background: #c2b4b4 !important;
+  color: #573434 !important;
   cursor: pointer;
   margin-bottom: 12px;
   transition: background 0.2s !important;
 }
 
 .social-btn:hover {
-  background: rgba(255, 255, 255, 0.05) !important;
+  background: rgba(142, 10, 10, 0.05) !important;
 }
 
 .social-btn i.icon {
@@ -128,28 +128,35 @@
 }
 
 .separator span {
+  color: #201111;
+  font-weight: 500;
   padding: 0 15px;
 }
 
 /* Linki i komunikaty */
 .password-reset-p {
-  color: white;
+  color: rgb(203, 194, 194) !important;
   font-size: 0.85rem;
+  font-weight: 550;
   margin-top: 8px;
   cursor: pointer;
   text-align: right;
 }
+.password-reset-p:hover {
+  color: #eabdbd !important;
+  font-weight: 700;
+}
 
 .ui.message {
   background: transparent !important;
-  color: #666 !important;
+  color: #b59f9f !important;
   font-size: 0.9rem !important;
   margin-top: 24px !important;
   text-align: center !important;
 }
 
 .ui.message a {
-  color: var(--primary) !important;
+  color: white !important;
   font-weight: 600 !important;
   text-decoration: none !important;
 }
@@ -226,5 +233,9 @@
 /* Dodatkowy fix dla widoczności tekstu w inputach, o który prosiłeś wcześniej */
 .ui.input input {
   color: #ffffff !important;
-  background: #111 !important;
+  background: #754e4e !important;
+}
+
+.ui.form .field .ui.input input, .ui.form .fields .field .ui.input input{
+background-color: #bf9f9f !important;
 }

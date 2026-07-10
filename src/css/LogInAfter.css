@@ -19,7 +19,7 @@
 .Navbar-squeres.after-log-in {
 
     
-    background: rgba(10, 10, 10, 0.8) !important; /* Głęboka czerń */
+    background: rgba(93, 73, 73, 0.8)!important; /* Głęboka czerń */
     backdrop-filter: blur(20px) saturate(180%); /* Efekt szkła 2030 */
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     
@@ -57,6 +57,7 @@
 }
 
 .custom-link {
+    background-color: rgba(115, 88, 88, 0.8);
     padding: 10px 15px !important; /* Zwiększony padding dla UX */
     margin: 2px 5px !important;
     border-radius: 12px;
@@ -67,7 +68,7 @@
 
 .custom-link a, 
 .custom-link {
-    color: rgba(255, 255, 255, 0.6) !important;
+    color: rgba(24, 17, 17, 0.8) !important;
     text-decoration: none;
 
     font-weight: 500;
@@ -77,17 +78,19 @@
 }
 .custom-link:last-child,.custom-link a, 
 .custom-link{
+
     font-size: 11px !important;
 }
 /* HOVER NA OPCJE */
 .custom-link:hover {
-    background: rgba(255, 255, 255, 0.07);
+    background-color:rgba(115, 88, 88, 0.8)  !important;
 }
 
 .custom-link:hover a,
 .custom-link:hover {
-    color: #ffffff !important;
-    transform: translateX(3px); /* Lekkie wysunięcie pro */
+    background-color:rgba(115, 88, 88, 0.8) ;
+    color: #cda6a6 !important;
+    
 }
 
 /* Wyloguj - Czerwony akcent 2030 */

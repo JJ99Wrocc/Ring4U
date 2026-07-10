@@ -4,6 +4,7 @@ import bootstrap from "bootstrap/dist/js/bootstrap.bundle";
 import Pierscionek from "../img/Pierscionek.png";
 import { Link, useNavigate } from "react-router-dom";
 import ourMission from "./OurMision";
+
 const NavbarBurgerMenu = () => {
   const offcanvasRef = useRef(null);
   const navigate = useNavigate();
@@ -371,42 +372,45 @@ const [openRingFake, setOpenRingFake] = useState(false);
           <hr />
 
           {/* 📞 KONTAKT */}
-          <li className="nav-item">
-            <button
-              className="nav-link w-100 text-start d-flex justify-content-between align-items-center"
-              onClick={toggleKontakt}
-            >
-              Kontakt
-              <i className={`fa-solid fa-arrow-down transition ${kontaktOpen ? "rotate-180" : ""}`}></i>
-            </button>
+         {/* 📞 KONTAKT */}
+<li className="nav-item">
+  <button
+    className="nav-link w-100 text-start d-flex justify-content-between align-items-center"
+    onClick={toggleKontakt}
+  >
+    Kontakt
+    <i className={`fa-solid fa-arrow-down transition ${kontaktOpen ? "rotate-180" : ""}`}></i>
+  </button>
 
-            <ul className={`submenu list-unstyled  ${kontaktOpen ? "submenu-open" : ""}`}>
-              <li>
-                <a href="#contact" className="nav-link" onClick={handleLinkClick}>
-                  Formularz
-                </a>
-              </li>
+  <ul className={`submenu list-unstyled  ${kontaktOpen ? "submenu-open" : ""}`}>
+    <li>
+      {/* POPRAWKA: Przekazujemy adres "/contactForm" wewnątrz funkcji strzałkowej */}
+      <Link className="nav-link" onClick={() => handleLinkClick("/contactForm")}>
+        Formularz
+      </Link>
+    </li>
 
-              <li>
-                <button
-                  className="nav-link w-100 text-start d-flex justify-content-between align-items-center"
-                  onClick={toggleSocial}
-                >
-                  Social Media
-                  <i className={`fa-solid fa-arrow-down transition ${socialOpen ? "rotate-180" : ""}`}></i>
-                </button>
+    <li>
+      <button
+        className="nav-link w-100 text-start d-flex justify-content-between align-items-center"
+        onClick={toggleSocial}
+      >
+        Social Media
+        <i className={`fa-solid fa-arrow-down transition ${socialOpen ? "rotate-180" : ""}`}></i>
+      </button>
 
-                <ul className={`submenu list-unstyled  ${socialOpen ? "submenu-open" : ""}`}>
-                  <hr />
-                  <li>
-                    <a href="https://www.instagram.com" className="nav-link" onClick={handleLinkClick}>
-                      <i className="fa-brands fa-instagram"></i> Instagram
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
+      <ul className={`submenu list-unstyled  ${socialOpen ? "submenu-open" : ""}`}>
+        <hr />
+        <li>
+          {/* POPRAWKA: Jeśli link prowadzi na zewnętrzną stronę (Instagram), wywołujemy funkcję bez przekazywania ścieżki do routera */}
+          <a href="https://www.instagram.com/ring4upl/" className="nav-link" target="_blank" rel="noreferrer" onClick={() => handleLinkClick()}>
+            <i className="fa-brands fa-instagram"></i> Instagram
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</li>
           <hr />
         </ul>
       </div>

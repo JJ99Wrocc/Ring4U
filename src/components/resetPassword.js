@@ -27,6 +27,7 @@ const ForgotPassword = () => {
         Zapomniałeś hasła?
       </h2>
       <input
+      
         type="email"
         placeholder="Wpisz swój e-mail"
         value={email}

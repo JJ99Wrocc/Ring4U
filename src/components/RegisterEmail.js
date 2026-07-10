@@ -107,6 +107,7 @@ const RegisterEmail = () => {
               <div className="ui left icon input">
                 <i className="user icon" aria-hidden="true"></i>
                 <input
+                className="placeholder-reser-password-input"
                   type="text"
                   name="email"
                   id="email"
@@ -132,6 +133,7 @@ const RegisterEmail = () => {
               <div className="ui icon input">
                 <i className="lock icon" aria-hidden="true"></i>
                 <input
+                className="placeholder-reser-password-input"
                   type="password"
                   name="password"
                   id="password"

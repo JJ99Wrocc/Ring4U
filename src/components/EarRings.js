@@ -79,7 +79,7 @@ const EarRings = ({ category }) => {
           </article>
         ))}
       </div>
-      {/* <UpperFooter /> */}
+
     </section>
   );
 }

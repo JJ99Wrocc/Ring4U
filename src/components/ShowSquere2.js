@@ -112,8 +112,6 @@ const ShowSquare2 = ({ show, setShow }) => {
             left: "0",
             top: "40px",
             position: "absolute",   
-            backgroundColor: "#fff", 
-            boxShadow: "0px 4px 12px rgba(0,0,0,0.15)",
             zIndex: 9999,
             padding: "10px"
           }}

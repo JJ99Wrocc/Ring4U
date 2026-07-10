@@ -2,7 +2,7 @@
 
 /* Główne tło - absolutna czerń */
 main[aria-label="Rejestracja użytkownika"] {
-  background: #000000 !important;
+  background: #bdacac !important;
   min-height: 100vh !important;
   display: flex !important;
   align-items: center !important;
@@ -12,7 +12,7 @@ main[aria-label="Rejestracja użytkownika"] {
 
 /* KARTA - teraz z wyraźniejszym tłem i ramką */
 .ui.container.register-card {
-  background: #0a0a0a !important; /* Bardzo ciemny szary, żeby odcinał się od tła */
+  background: #7d6464 !important; /* Bardzo ciemny szary, żeby odcinał się od tła */
   border: 1px solid #333 !important; /* Wyraźna ramka */
   border-radius: 24px !important;
   padding: 40px !important;
@@ -23,11 +23,18 @@ main[aria-label="Rejestracja użytkownika"] {
 
 /* NAGŁÓWEK - Czysta biel */
 .register-card h2.header .content {
-  color: #ffffff !important;
+  color: #352020 !important;
   font-weight: 800 !important;
   font-size: 1.8rem !important;
-  text-align: center !important;
+
+ 
   display: block !important;
+}
+
+.ui.header .content {
+  text-align: center !important;
+  margin: 0 auto !important;
+
 }
 
 /* FORMULARZ I SEGMENTY - Usuwamy białe tła z Semantic UI */
@@ -37,7 +44,10 @@ main[aria-label="Rejestracja użytkownika"] {
   box-shadow: none !important;
   padding: 0 !important;
 }
-
+.ui.form .ui.stacked.segment button {
+  background-color: #7b5252 !important;
+  color: #e8d1d1 !important;
+}
 /* INPUTY - Tutaj naprawiamy widoczność */
 .ui.form .field label {
   color: #a1a1a6 !important; /* Szary label */
@@ -46,9 +56,9 @@ main[aria-label="Rejestracja użytkownika"] {
 }
 
 .ui.form .field .ui.input input {
-  background: #1a1a1a !important; /* Wyraźnie jaśniejsze tło pola */
+  background: #684f4f !important; /* Wyraźnie jaśniejsze tło pola */
   color: #ffffff !important; /* TEKST WPISYWANY - BIAŁY */
-  border: 1px solid #333 !important;
+  border: 1px solid #866767 !important;
   border-radius: 12px !important;
   padding: 14px 14px 14px 45px !important;
   font-size: 1rem !important;
@@ -56,12 +66,12 @@ main[aria-label="Rejestracja użytkownika"] {
 
 /* Żeby tekst był widoczny podczas pisania (fix dla przeglądarek) */
 .ui.form .field .ui.input input::placeholder {
-  color: #666 !important;
+  color: #b4a3a3 !important;
 }
 
 .ui.form .field .ui.input input:focus {
-  background: #222 !important;
-  border-color: #007aff !important; /* Niebieski focus */
+  background: #c68080 !important;
+  border-color: #573f3f !important; /* Niebieski focus */
   color: #ffffff !important;
 }
 
@@ -73,7 +83,7 @@ main[aria-label="Rejestracja użytkownika"] {
 
 /* PRZYCISK - Solidny Blue */
 .ui.submit.button {
-  background-color: #007aff !important;
+  background-color: #cea2a2 !important;
   color: #ffffff !important;
   font-weight: 700 !important;
   border-radius: 12px !important;
@@ -83,7 +93,7 @@ main[aria-label="Rejestracja użytkownika"] {
 }
 
 .ui.submit.button:hover {
-  background-color: #005bb5 !important;
+  background-color: #874f4f !important;
 }
 
 .ui.submit.button:disabled {
@@ -94,15 +104,19 @@ main[aria-label="Rejestracja użytkownika"] {
 
 /* LISTA WALIDACJI - Czytelna i kolorowa */
 #passwordHelp {
-  background: #111 !important;
-  border: 1px solid #222 !important;
+  background: #684f4f !important;
+  border: 1px solid #866767 !important;
   border-radius: 12px !important;
   padding: 15px !important;
   list-style: none !important;
   margin-top: 15px !important;
-}
 
+}
+.ui.form .field .ui.input input{
+  background-color:  wheat;
+}
 #passwordHelp li {
+
   font-size: 0.85rem !important;
   margin-bottom: 5px !important;
 }
@@ -117,12 +131,17 @@ main[aria-label="Rejestracja użytkownika"] {
 /* WIADOMOŚĆ NA DOLE */
 .ui.message {
   background: transparent !important;
-  color: #a1a1a6 !important;
+  color: #b4a3a3 !important;
   border: none !important;
   box-shadow: none !important;
 }
 
 .ui.message a {
-  color: #007aff !important;
+  color: #542e2e !important;
   font-weight: 700 !important;
+}
+
+@media(max-width: 992px){
+  .register-card h2.header .content{
+    font-size: 1.3rem !important;  }
 }
