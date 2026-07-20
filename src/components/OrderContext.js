@@ -10,25 +10,25 @@ const OrderProvider = ({ children }) => {
     
   
 
-    shippingAddress: {
-      costumerName: "",
-      costumerSurname: "",
-      address: "",
-      company: "",
-      postalCode: "",
-      city: "",
-      phoneNumber: "",
-      phonePrefix:"",
-      selectedCount: "",
-      totalCost:"",
-      shipping: "",
-      productImage: "",
-      productName: "",
-      productPrice: "",
-      discountApplied: false,
-      discountValue: 0
-     
-    },
+ shippingAddress: {
+  costumerName: "",
+  costumerSurname: "",
+  address: "",
+  company: "",
+  postalCode: "",
+  city: "",
+  phoneNumber: "",
+  phonePrefix:"",
+  selectedCount: "",
+  totalCost:"",
+  shipping: "",
+  productImage: "",
+  productName: "",
+  productPrice: "",
+  discountApplied: false,
+  discountValue: 0,
+  wantInvoice: false
+},
 
     billingAddress: {
       costumerName: "",

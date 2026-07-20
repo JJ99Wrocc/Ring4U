@@ -1,6 +1,8 @@
 import React, { useContext, useState } from "react";
 import '../css/index.css';
 import { CartContext } from "./CartContext";
+import InPostMap from "./InPostMap";
+
 
 const DeliveryMethod = ({ onSelect }) => {
   const { selectedProducts } = useContext(CartContext);
@@ -39,6 +41,15 @@ const DeliveryMethod = ({ onSelect }) => {
         onKeyDown={(e) => e.key === "Enter" && handleSelect("inpost")}
       >
         <p>Data dostawy do paczkomatu Inpost (time)</p>
+       {selectedDelivery === "inpost" && (
+    <InPostMap
+        onSelectPoint={(locker) => {
+            console.log("Wybrany paczkomat:", locker);
+
+            // tutaj później zapiszesz do OrderContext
+        }}
+    />
+)}
         <p>{getPriceText()}</p>
         <span className="delivery-flag">
           <i className="fa-solid fa-truck"></i>

@@ -28,16 +28,30 @@ const OrderFinalization = () => {
   const navigate = useNavigate();
 
   // --- OBSŁUGA ALERTU PO POWROCIE Z UDANEJ PŁATNOŚCI HOTPAY ---
-  useEffect(() => {
-    const queryParams = new URLSearchParams(window.location.search);
-    const status = queryParams.get("status");
+ useEffect(() => {
+  const queryParams = new URLSearchParams(window.location.search);
 
-    if (status === "success") {
-      alert("Zamówienie zostało złożone!");
-      // Czyszczenie parametrów z adresu URL, aby alert nie wyskakiwał ponownie po odświeżeniu strony
-      navigate("/", { replace: true });
-    }
-  }, [navigate]);
+  const status = queryParams.get("status");
+  const orderId = queryParams.get("oid");
+
+  if (status === "success" && orderId) {
+    console.log("HOTPAY SUCCESS:", orderId);
+
+    alert("Płatność zakończona pomyślnie!");
+
+    // czyścimy koszyk dopiero po opłaceniu
+    setSelectedProducts([]);
+
+    // usuwamy parametry z adresu
+    navigate("/", { replace: true });
+  }
+
+  if (status === "error") {
+    alert("Płatność nie została wykonana.");
+    navigate("/", { replace: true });
+  }
+
+}, [navigate, setSelectedProducts]);
   // -------------------------------------------------------------
 
   const baseTotalCost = selectedProducts.reduce((sum, product) => {
@@ -106,7 +120,7 @@ const OrderFinalization = () => {
         shippingAddress: orderData.shippingAddress,
         billingAddress: orderData.billingAddress,
         useDifferentBilling: orderData.useDifferentBilling,
-        email: orderData.email,
+        email: orderData.email.trim(),
       },
     };
 
@@ -177,23 +191,31 @@ const OrderFinalization = () => {
         orderId: orderReference.id,
         createdAt: Timestamp.now()
       });
-      try {
-        await sendOrderEmail(orderData, selectedProducts, totalCost);
-        console.log("Potwierdzenie zamówienia wysłane na email!");
-      } catch (err) {
-        console.error("Błąd wysyłania maila:", err);
-      }
-      
-      setSelectedProducts([]);
+   try {
+  console.log("START EMAILJS");
+
+  const result = await sendOrderEmail(
+    orderData,
+    selectedProducts,
+    totalCost
+  );
+
+  console.log("EMAILJS OK:", result);
+
+} catch (err) {
+  console.error("EMAILJS ERROR:", err);
+}
+   
       
       // HOTPAY - Wariant uproszczony (GET za pomocą URLSearchParams)
       if (selectedPaymentMethod === "HotPay") {
         const SEKC_SEKRET_USLUGI = "ejZDV0NadmozellCYjJPQTdFR3ErV0txbHhWMW5uczY3VEtJa1d3YkF2WT0,"; 
 
-        const cena = baseTotalCost >= 400 
-          ? parseFloat(totalCost) 
-          : (parseFloat(totalCost) + 20);
-          
+   const cena = baseTotalCost === 0
+  ? 1
+  : baseTotalCost >= 400
+    ? parseFloat(totalCost)
+    : (parseFloat(totalCost) + 20);
         if (isNaN(cena) || cena <= 0) {
           alert("Błąd kwoty zamówienia!");
           setLoading(false);

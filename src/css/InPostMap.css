@@ -1,0 +1,197 @@
+.premium-map-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.map-interface-layer {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.search-container-pro {
+    pointer-events: auto;
+    display: flex;
+    width: 90%;
+    max-width: 450px;
+    background: rgba(15, 15, 15, 0.85);
+    backdrop-filter: blur(12px);
+    padding: 6px;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 204, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.pro-input {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    flex-grow: 1;
+    font-size: 14px;
+    outline: none;
+}
+
+.pro-search-btn {
+    background: #ffcc00;
+    color: black;
+    border: none;
+    height: 45px;
+    font-size: 10px;
+    
+    border-radius: 100px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pro-search-btn:hover {
+    background: white;
+    transform: scale(1.02);
+}
+
+.error-toast {
+    background: #ff4444;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.main-leaflet-map {
+    width: 100%;
+    height: 100%;
+}
+
+/* Stylizacja Popupów */
+.inpost-popup-style .leaflet-popup-content-wrapper {
+    background: #111 !important;
+    color: white !important;
+    border-radius: 15px !important;
+    padding: 5px !important;
+    border: 1px solid #ffcc00;
+}
+
+.popup-premium-content h3 {
+    color: #ffcc00;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+.locker-id {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.locker-addr {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.select-point-btn {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #ffcc00;
+    color: #ffcc00;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.select-point-btn:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+/* Loading Overlay */
+.map-loading-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shimmer-text {
+    color: #ffcc00;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+.mini-spinner {
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+/* Kontener pod mapą */
+.selected-point-info {
+    background: #000000 !important; /* Twoje czarne tło */
+    color: #ffffff !important;      /* BIAŁY TEKST - inaczej go nie zobaczysz */
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #ffcc00; /* Żółty pasek InPost */
+    min-height: 360px;
+    min-width: 320px !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.selected-point-info p {
+    margin: 2px 0;
+    font-size: 14px;
+    color: #ffffff; /* Wymuszenie białego koloru */
+}
+
+.selected-point-info strong {
+    font-size: 14px;
+    color: #ffcc00; /* Złoty kolor dla kodu paczkomatu */
+}
+
+.placeholder-text {
+    color: #888;
+    font-style: italic;
+}
+@media(max-width: 600px) {
+   
+    
+    .pro-search-btn {
+
+        padding: 0 5px;
+        font-size: 9px;
+    }
+}
+@keyframes spin { 100% { transform: rotate(360deg); } }

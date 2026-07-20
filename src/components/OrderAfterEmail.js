@@ -16,38 +16,56 @@ const OrderAfterEmail = ({ setIsNextValid }) => {
   const [showOrderReadMore, setShowOrderReadMore] = useState(false);
   const [showOrderData, setShowOrderData] = useState(false);
   const [changeText, setChangeText] = useState(false);
+  const [WantInvoice ,setWantInvoice] = useState(false)
+const {
+  isOrderFormValid,
+  setIsOrderFormValid,
+  isOrderInvoiceFormValid,
+  setIsOrderInvoiceFormValid,
+  updateOrderData,
+  updateNestedOrderData,
+  orderData,
+} = useContext(OrderContext); 
 
-  const {
-    isOrderFormValid,
-    setIsOrderFormValid,
-    isOrderInvoiceFormValid,
-    setIsOrderInvoiceFormValid,
-    updateOrderData, // 🔽 będziemy aktualizować zgody w orderData
-  } = useContext(OrderContext);
-
+const wantInvoice = orderData.billingAddress?.wantInvoice || false;
   const handleClick = () => {
     if (!showAgeAlert) {
       alert("Musisz mieć ukończone 16 lat.");
       return;
     }
+
     if (!showRodoAlert) {
       alert("Musisz potwierdzić politykę RODO.");
       return;
     }
-    if (sameAddress) {
-      if (!isOrderFormValid) {
-        alert("Uzupełnij dane do dostawy.");
-        return;
-      }
-      console.log("Ustawiono isNextValid na true (sameAddress)");
-      setShowOrderData(true);
-      setIsNextValid(true);
-      return;
-    }
+
+  if (sameAddress) {
+
+  if (!isOrderFormValid) {
+    alert("Uzupełnij dane do dostawy.");
+    return;
+  }
+
+
+  if (wantInvoice && !isOrderInvoiceFormValid) {
+    alert("Uzupełnij dane do faktury.");
+    return;
+  }
+
+
+  console.log("Ustawiono isNextValid na true");
+
+  setShowOrderData(true);
+  setIsNextValid(true);
+
+  return;
+}
+
     if (!isOrderInvoiceFormValid && !sameAddress) {
       alert("Uzupełnij dane do faktury.");
       return;
     }
+
     console.log("Ustawiono isNextValid na true (different address)");
     setShowOrderData(true);
     setIsNextValid(true);
@@ -56,10 +74,9 @@ const OrderAfterEmail = ({ setIsNextValid }) => {
   return (
     <div role="form" aria-label="Formularz zamówienia">
       {showOrderData ? (
-        sameAddress ? <OrderData /> : <OrderInvoiceData />
+        wantInvoice ? <OrderInvoiceData /> : <OrderData />
       ) : (
         <>
-          {/* FORMULARZ DOSTAWY */}
           <OrderForm
             onValidSubmit={setIsOrderFormValid}
             showAgeAlert={showAgeAlert}
@@ -74,7 +91,7 @@ const OrderAfterEmail = ({ setIsNextValid }) => {
             onKeyDown={(e) =>
               e.key === "Enter" && setSameAddress(!sameAddress)
             }
-            aria-label="Adres dostawy i faktury są takie same"
+            aria-label="Adres dostawy i adres faktury są takie same"
           >
             <div
               onClick={() => setSameAddress(!sameAddress)}
@@ -83,14 +100,49 @@ const OrderAfterEmail = ({ setIsNextValid }) => {
             >
               {sameAddress && <i className="fa-solid fa-check"></i>}
             </div>
+
             <span>
               Adres dostawy i adres do wystawienia faktury są takie same
             </span>
           </div>
 
-          {!sameAddress && (
-            <OrderInvoiceForm onValidSubmit={setIsOrderInvoiceFormValid} />
-          )}
+
+          {/* CHECKBOX: faktura */}
+          <div
+            className="order-checks"
+            role="checkbox"
+            aria-checked={wantInvoice}
+            tabIndex="0"
+            aria-label="Chcę fakturę bez VAT"
+          >
+            <div
+              onClick={() => {
+                const value = !wantInvoice;
+                setWantInvoice(value);
+                updateNestedOrderData(
+  "billingAddress",
+  "wantInvoice",
+  value
+);
+              }}
+              className="checkbox-box"
+              aria-hidden="true"
+            >
+              {wantInvoice && <i className="fa-solid fa-check"></i>}
+            </div>
+
+            <span>
+              Chcę fakturę bez VAT
+            </span>
+          </div>
+
+
+          {wantInvoice && (
+  <OrderInvoiceForm 
+    onValidSubmit={setIsOrderInvoiceFormValid} 
+  />
+)}
+
 
           {/* CHECKBOX: wiek 16 lat */}
           <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
@@ -107,21 +159,24 @@ const OrderAfterEmail = ({ setIsNextValid }) => {
               <div
                 onClick={() => {
                   setShowAgeAlert(!showAgeAlert);
-                  updateOrderData("acceptedAge", !showAgeAlert); // 🔽 zapis do kontekstu
+                  updateOrderData("acceptedAge", !showAgeAlert);
                 }}
                 className="checkbox-box"
                 aria-hidden="true"
               >
                 {showAgeAlert && <i className="fa-solid fa-check"></i>}
               </div>
+
               <span>Mam ukończone 16 lat.</span>
             </div>
+
             {!showAgeAlert && (
               <p className="name-error order-check-p">
                 Jesteś zbyt młoda/y, by się zarejestrować/złożyć zamówienie.
               </p>
             )}
           </div>
+
 
           {/* CHECKBOX: RODO */}
           <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
@@ -138,13 +193,14 @@ const OrderAfterEmail = ({ setIsNextValid }) => {
               <div
                 onClick={() => {
                   setShowRodoAlert(!showRodoAlert);
-                  updateOrderData("acceptedRodo", !showRodoAlert); 
+                  updateOrderData("acceptedRodo", !showRodoAlert);
                 }}
                 className="checkbox-box"
                 aria-hidden="true"
               >
                 {showRodoAlert && <i className="fa-solid fa-check"></i>}
               </div>
+
               <span style={{ paddingBottom: "10px" }}>
                 Wyrażam zgodę na przetwarzanie moich danych osobowych przez
                 ring4u.pl w celu realizacji zamówienia zgodnie z{" "}
@@ -158,6 +214,7 @@ const OrderAfterEmail = ({ setIsNextValid }) => {
                 .
               </span>
             </div>
+
             {!showRodoAlert && (
               <p className="name-error order-check-p">
                 Musisz potwierdzić politykę RODO!!
@@ -165,10 +222,12 @@ const OrderAfterEmail = ({ setIsNextValid }) => {
             )}
           </div>
 
+
           {/* CHECKBOX: brak marketingu */}
           <p style={{ fontWeight: "bold" }}>
             Nie chcesz otrzymywać spersonalizowanych wiadomości marketingowych?
           </p>
+
           <div
             className="order-checks"
             role="checkbox"
@@ -186,17 +245,20 @@ const OrderAfterEmail = ({ setIsNextValid }) => {
             >
               {showUnCheck && <i className="fa-solid fa-check"></i>}
             </div>
+
             <span>
               Odznacz pole, jeśli nie chcesz otrzymywać wiadomości
               marketingowych...
             </span>
           </div>
 
+
           <p style={{ fontWeight: "bold" }}>
             Bądź w gronie pierwszych, którzy otrzymują promocje...
           </p>
+
           <div
-            className="order-checks "
+            className="order-checks"
             role="checkbox"
             aria-checked={showUnCheckk}
             tabIndex="0"
@@ -212,6 +274,7 @@ const OrderAfterEmail = ({ setIsNextValid }) => {
             >
               {showUnCheckk && <i className="fa-solid fa-check"></i>}
             </div>
+
             <span>
               Tak, chcę otrzymywać oferty i wiadomości...{" "}
               <button
@@ -224,8 +287,11 @@ const OrderAfterEmail = ({ setIsNextValid }) => {
                 aria-controls="order-read-more"
               >
                 {changeText ? "Czytaj mniej" : "Czytaj więcej"}
-              </button >
-              {showOrderReadMore && <OrderReadMore id="order-read-more" />}
+              </button>
+
+              {showOrderReadMore && (
+                <OrderReadMore id="order-read-more" />
+              )}
             </span>
           </div>
 
@@ -238,6 +304,7 @@ const OrderAfterEmail = ({ setIsNextValid }) => {
           >
             DALEJ
           </button>
+
         </>
       )}
     </div>
@@ -245,3 +312,5 @@ const OrderAfterEmail = ({ setIsNextValid }) => {
 };
 
 export default OrderAfterEmail;
+
+

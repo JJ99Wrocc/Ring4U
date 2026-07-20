@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { CartContext } from "./CartContext";
 import ProductAdded from "./ProductsAdded";
 import { Link } from "react-router-dom"; // <-- dodane dla linków do lokalnych podstron
@@ -283,6 +283,13 @@ const Product = () => {
     setProductToAdd(product);  
     setVisible(true);  
   };
+  useEffect(() => {
+    fetch("http://localhost:5000/api/test")
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+        });
+}, []);
 
 
   return (
