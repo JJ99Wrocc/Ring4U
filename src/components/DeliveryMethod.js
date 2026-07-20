@@ -2,11 +2,16 @@ import React, { useContext, useState } from "react";
 import '../css/index.css';
 import { CartContext } from "./CartContext";
 import InPostMap from "./InPostMap";
+import { OrderContext } from "./CartContext";
 
 
 const DeliveryMethod = ({ onSelect }) => {
   const { selectedProducts } = useContext(CartContext);
   const [selectedDelivery, setSelectedDelivery] = useState(null);
+const [pickupPoint, setPickupPoint] = useState(null);
+const { updateOrderData } = useContext(OrderContext);
+
+
 
   const totalCost = selectedProducts.reduce((sum, product) => {
     if (!product.selected) return sum;
@@ -18,6 +23,7 @@ const DeliveryMethod = ({ onSelect }) => {
 
   const handleSelect = (method) => {
     setSelectedDelivery(method);
+    updateOrderData("deliveryMethod", method);
     if (onSelect) onSelect(method);
   };
 
@@ -43,12 +49,26 @@ const DeliveryMethod = ({ onSelect }) => {
         <p>Data dostawy do paczkomatu Inpost (time)</p>
        {selectedDelivery === "inpost" && (
     <InPostMap
-        onSelectPoint={(locker) => {
-            console.log("Wybrany paczkomat:", locker);
+    onSelectPoint={(point) => {
+        setPickupPoint(point);
 
-            // tutaj później zapiszesz do OrderContext
-        }}
-    />
+        console.log("Wybrany paczkomat:", point);
+           updateOrderData("pickupPoint", {
+            id: point.id,
+            name: point.name,
+            address: point.address,
+            lat: point.lat,
+            lng: point.lng
+        });
+
+        if(onSelect){
+            onSelect({
+                delivery: "inpost",
+                pickupPoint: point
+            });
+        }
+    }}
+/>
 )}
         <p>{getPriceText()}</p>
         <span className="delivery-flag">

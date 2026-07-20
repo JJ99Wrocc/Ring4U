@@ -23,6 +23,7 @@ const InPostMap = ({ onSelectPoint }) => {
     const [errorMsg, setErrorMsg] = useState(null);
     const mapRef = useRef(null);
     const [selectedLocker, setSelectedLocker] = useState(null);
+  
 
     // Wczytywanie Google SDK
     useEffect(() => {
@@ -34,7 +35,7 @@ const InPostMap = ({ onSelectPoint }) => {
             document.head.appendChild(script);
             
             script.onload = () => {
-                console.log("Google SDK załadowane dynamicznie");
+      
             };
         }
     }, []);
@@ -42,7 +43,7 @@ const InPostMap = ({ onSelectPoint }) => {
     // Szukanie paczkomatów przez Places API
     const searchLockersNearby = useCallback((lat, lng) => {
         if (!window.google) {
-            console.error("Google Maps SDK nie załadowane!");
+   
             return;
         }
         setIsLoading(true);
@@ -56,16 +57,22 @@ const InPostMap = ({ onSelectPoint }) => {
         };
 
         service.textSearch(request, (results, status) => {
-            console.log("Places API Status:", status);
+           
             if (status === window.google.maps.places.PlacesServiceStatus.OK) {
-                const points = results.map(place => ({
-                    id: place.place_id,
-                    name: place.name.replace("Paczkomat InPost ", ""),
-                    address: place.formatted_address,
-                    lat: place.geometry.location.lat(),
-                    lng: place.geometry.location.lng()
-                }));
-                setFoundLockers(points);
+                
+               const points = results
+    .filter(place => place.geometry)
+    .map(place => ({
+        id: place.place_id,
+        name: place.name || "Punkt InPost",
+        address: place.formatted_address || "Brak adresu",
+        lat: place.geometry.location.lat(),
+        lng: place.geometry.location.lng()
+    }));
+
+
+
+setFoundLockers(points);
             } else {
                 setErrorMsg(`Błąd Google: ${status}`);
             }
@@ -74,11 +81,18 @@ const InPostMap = ({ onSelectPoint }) => {
     }, []);
 
     const handleLockerSelect = (locker) => {
+          const point = {
+        id: locker.id,
+        name: locker.name,
+        address: locker.address,
+        lat: locker.lat,
+        lng: locker.lng
+    };
         setSelectedLocker(locker);
         if (onSelectPoint) {
             onSelectPoint(locker);
         }
-        console.log("Wybrany paczkomat dla wysyłającego:", locker.name, locker.address);
+        
     };
 
     const handleSearch = () => {
@@ -175,6 +189,7 @@ const InPostMap = ({ onSelectPoint }) => {
                 {/* Kontroler musi być tutaj */}
                 <MapController />
 
+            
                 {foundLockers.map(locker => (
                     <Marker key={locker.id} position={[locker.lat, locker.lng]} icon={goldIcon}>
                         <Popup className="inpost-popup-style">
@@ -192,15 +207,14 @@ const InPostMap = ({ onSelectPoint }) => {
             </MapContainer>
 
             <div className="selected-point-info">
-                {selectedLocker ? (
-                    <>
-                        <p><strong>Wybrany punkt:</strong> {selectedLocker.name}</p>
-                        <p><strong>Adres:</strong> {selectedLocker.address}</p>
-                        <input type="hidden" name="paczkomat_id" value={selectedLocker.name} />
-                    </>
-                ) : (
-                    <p>Proszę wybrać paczkomat na mapie</p>
-                )}
+             {selectedLocker ? (
+    <>
+        <p><strong>Wybrany punkt:</strong> {selectedLocker.name}</p>
+        <p><strong>Adres:</strong> {selectedLocker.address}</p>
+    </>
+) : (
+    <p>Proszę wybrać paczkomat na mapie</p>
+)}
             </div>
 
             {isLoading && (

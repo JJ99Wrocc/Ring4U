@@ -8,7 +8,8 @@ const OrderProvider = ({ children }) => {
   const [orderData, setOrderData] = useState({
     email: "",
     
-  
+    deliveryMethod: "",
+     pickupPoint: null,
 
  shippingAddress: {
   costumerName: "",
