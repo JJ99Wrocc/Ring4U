@@ -94,18 +94,21 @@ const LogIn = () => {
       });
   };
 
-  const signInWithFacebook = () => {
-    signInWithPopup(auth, facebookProvider)
-      .then((result) => {
-        console.log("Zalogowano Facebook:", result.user);
-        navigate("/");
-      })
-      .catch((error) => {
-        console.error("Błąd logowania Facebook:", error.message);
-        alert("Błąd logowania Facebook.");
-      });
-  };
+ const signInWithFacebook = async () => {
+  try {
+    const result = await signInWithPopup(auth, facebookProvider);
 
+    console.log("Zalogowano Facebook:", result.user);
+
+    navigate("/");
+  } catch (error) {
+    console.error(error);
+    console.log("Kod błędu:", error.code);
+    console.log("Treść:", error.message);
+
+    alert(error.message);
+  }
+};
   return (
     <div className="login-page-wrapper">
       <div className="ui container login-card">

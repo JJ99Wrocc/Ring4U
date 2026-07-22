@@ -4,65 +4,73 @@ export const OrderContext = createContext();
 
 const OrderProvider = ({ children }) => {
   const [isOrderFormValid, setIsOrderFormValid] = useState(false);
-  const [isOrderInvoiceFormValid, setIsOrderInvoiceFormValid] = useState(false)
+  const [isOrderInvoiceFormValid, setIsOrderInvoiceFormValid] = useState(false);
+
   const [orderData, setOrderData] = useState({
     email: "",
-    
-    deliveryMethod: "",
-     pickupPoint: null,
 
- shippingAddress: {
-  costumerName: "",
-  costumerSurname: "",
-  address: "",
-  company: "",
-  postalCode: "",
-  city: "",
-  phoneNumber: "",
-  phonePrefix:"",
-  selectedCount: "",
-  totalCost:"",
-  shipping: "",
-  productImage: "",
-  productName: "",
-  productPrice: "",
-  discountApplied: false,
-  discountValue: 0,
-  wantInvoice: false
-},
+    deliveryMethod: {
+      method: "",
+      pickupPoint: null
+    },
+
+    shippingAddress: {
+      costumerName: "",
+      costumerSurname: "",
+      address: "",
+      company: "",
+      postalCode: "",
+      city: "",
+      phoneNumber: "",
+      phonePrefix: "",
+      selectedCount: "",
+      totalCost: "",
+      shipping: "",
+      productImage: "",
+      productName: "",
+      productPrice: "",
+      discountApplied: false,
+      discountValue: 0,
+      wantInvoice: false
+    },
 
     billingAddress: {
       costumerName: "",
       costumerSurname: "",
-      address: "", 
+      address: "",
       company: "",
       postalCode: "",
       city: "",
       phoneNumber: "",
       nip: "",
-      phonePrefix:"",
+      phonePrefix: "",
       selectedCount: "",
-      totalCost:"",
+      totalCost: "",
       shipping: "",
       productImage: "",
       productName: "",
-      productPrice: "",
-      
+      productPrice: ""
     },
 
     useDifferentBilling: false,
+
     acceptedAge: false,
-  acceptedRodo: false,
+    acceptedRodo: false,
   });
+
+
   const [showAgeAlert, setShowAgeAlert] = useState(false);
   const [showRodoAlert, setShowRodoAlert] = useState(false);
+
+
   const updateOrderData = (key, value) => {
     setOrderData(prev => ({
       ...prev,
       [key]: value,
     }));
   };
-  
+
+
   const updateNestedOrderData = (section, key, value) => {
     setOrderData(prev => ({
       ...prev,
@@ -70,14 +78,32 @@ const OrderProvider = ({ children }) => {
         ...prev[section],
         [key]: value,
       }
-    }))
-  }
-  
+    }));
+  };
+
+
   return (
-    <OrderContext.Provider value={{ orderData, updateOrderData, updateNestedOrderData, isOrderFormValid, setIsOrderFormValid, isOrderInvoiceFormValid, setIsOrderInvoiceFormValid,setOrderData, showRodoAlert,
-      setShowRodoAlert,
-      showAgeAlert,
-      setShowAgeAlert }}>
+    <OrderContext.Provider 
+      value={{
+        orderData,
+        updateOrderData,
+        updateNestedOrderData,
+
+        isOrderFormValid,
+        setIsOrderFormValid,
+
+        isOrderInvoiceFormValid,
+        setIsOrderInvoiceFormValid,
+
+        setOrderData,
+
+        showRodoAlert,
+        setShowRodoAlert,
+
+        showAgeAlert,
+        setShowAgeAlert
+      }}
+    >
       {children}
     </OrderContext.Provider>
   );

@@ -11,6 +11,7 @@
 
 .map-interface-layer {
     position: absolute;
+    /* background-color: #fff; */
     top: 20px;
     left: 0;
     right: 0;
@@ -19,6 +20,7 @@
     align-items: center;
     z-index: 1000;
     pointer-events: none;
+
 }
 .leaflet-popup-content p{
     color: #ffffff !important;
@@ -28,7 +30,7 @@
     display: flex;
     width: 90%;
     max-width: 450px;
-    background: rgba(15, 15, 15, 0.85);
+    background: rgba(210, 191, 191, 0.85);
     backdrop-filter: blur(12px);
     padding: 6px;
     border-radius: 100px;
@@ -39,15 +41,18 @@
 .pro-input {
     background: transparent;
     border: none;
-    color: white;
+    color: rgb(104, 82, 82);
     padding: 12px 20px;
     flex-grow: 1;
     font-size: 14px;
+    font-weight: 600;
     outline: none;
 }
-
+.my-tile-layer {
+    background-color: #372121 !important;
+}
 .pro-search-btn {
-    background: #ffcc00;
+    background: #805353;
     color: black;
     border: none;
     height: 45px;
@@ -61,13 +66,13 @@
 }
 
 .pro-search-btn:hover {
-    background: white;
+    background: rgb(125, 71, 71);
     transform: scale(1.02);
 }
 
 .error-toast {
     background: #ff4444;
-    color: white;
+    color: rgb(210, 159, 159);
     padding: 10px 20px;
     border-radius: 8px;
     margin-top: 15px;
@@ -79,11 +84,13 @@
 .main-leaflet-map {
     width: 100%;
     height: 360px;
+    /* background-color: #928989 !important; */
 }
+
 
 /* Stylizacja Popupów */
 .inpost-popup-style .leaflet-popup-content-wrapper {
-    background: #111 !important;
+    background-color: #b69292 !important;
     color: white !important;
     border-radius: 15px !important;
     padding: 5px !important;
@@ -121,7 +128,7 @@
 }
 
 .select-point-btn:hover {
-    background: #ffcc00;
+    background: #ab6d6d;
     color: black;
 }
 
@@ -129,14 +136,16 @@
 .map-loading-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6) !important;
     backdrop-filter: blur(4px);
     z-index: 2000;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.main-leaflet-map .leaflet-tile {
+    filter: brightness(0.85) contrast(1) !important;
+}
 .shimmer-text {
     color: #ffcc00;
     font-weight: bold;
@@ -160,12 +169,12 @@
 }
 /* Kontener pod mapą */
 .selected-point-info {
-    background: #000000 !important;
+    background: #805353 !important;
 
     margin-top: 10px;
     padding: 15px;
     border-radius: 8px;
-    border-left: 4px solid #ffcc00;
+    border-left: 4px solid #5b4b4b;
     height: 60px; /* było 360 */
     width: 100%;
     display: flex;
@@ -175,7 +184,7 @@
 .selected-point-info p {
     margin: 2px 0;
     font-size: 14px;
-    color: #ffffff !important; /* Wymuszenie białego koloru */
+    color: #cac3c3 !important; /* Wymuszenie białego koloru */
 }
 
 .selected-point-info strong {

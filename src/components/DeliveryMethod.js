@@ -1,15 +1,18 @@
 import React, { useContext, useState } from "react";
 import '../css/index.css';
 import { CartContext } from "./CartContext";
+import { OrderContext } from "./OrderContext";
 import InPostMap from "./InPostMap";
-import { OrderContext } from "./CartContext";
+import DhlMap from "./DhlMap";
+
 
 
 const DeliveryMethod = ({ onSelect }) => {
   const { selectedProducts } = useContext(CartContext);
+  const { updateOrderData } = useContext(OrderContext);
+
   const [selectedDelivery, setSelectedDelivery] = useState(null);
 const [pickupPoint, setPickupPoint] = useState(null);
-const { updateOrderData } = useContext(OrderContext);
 
 
 
@@ -21,11 +24,18 @@ const { updateOrderData } = useContext(OrderContext);
     return sum + numericPrice * (product.amount || 1);
   }, 0);
 
-  const handleSelect = (method) => {
+const handleSelect = (method) => {
     setSelectedDelivery(method);
-    updateOrderData("deliveryMethod", method);
-    if (onSelect) onSelect(method);
-  };
+
+    updateOrderData("deliveryMethod", {
+        method: method,
+        pickupPoint: null
+    });
+
+    if (onSelect) {
+        onSelect(method);
+    }
+};
 
   const getPriceText = () => {
     if (totalCost === 0) return "0.00zł";
@@ -53,13 +63,17 @@ const { updateOrderData } = useContext(OrderContext);
         setPickupPoint(point);
 
         console.log("Wybrany paczkomat:", point);
-           updateOrderData("pickupPoint", {
-            id: point.id,
-            name: point.name,
-            address: point.address,
-            lat: point.lat,
-            lng: point.lng
-        });
+      updateOrderData("deliveryMethod", {
+    method: "inpost",
+    pickupPoint: {
+        id: point.id,
+        name: point.name,
+        address: point.address,
+        lat: point.lat,
+        lng: point.lng,
+        carrier: "inpost"
+    }
+});
 
         if(onSelect){
             onSelect({
@@ -77,22 +91,85 @@ const { updateOrderData } = useContext(OrderContext);
       </div>
 
       <div
-        className={`ui segment second-delivery-box delivery-boxes ${
-          selectedDelivery === "orlen" ? "selected" : ""
-        }`}
-        onClick={() => handleSelect("orlen")}
-        role="button"
-        tabIndex={0}
-        aria-pressed={selectedDelivery === "orlen"}
-        aria-label={`Wybierz dostawę do paczkomatu Orlen, cena: ${getPriceText()}`}
-        onKeyDown={(e) => e.key === "Enter" && handleSelect("orlen")}
-      >
-        <p>Data dostawy do paczkomatu Orlen (time)</p>
-        <p>{getPriceText()}</p>
-        <span className="delivery-flag">
-          <i className="fa-solid fa-house-flag"></i>
-        </span>
-      </div>
+  className={`ui segment second-delivery-box delivery-boxes ${
+    selectedDelivery === "dhl" ? "selected" : ""
+  }`}
+  onClick={() => handleSelect("dhl")}
+>
+  <p>Data dostawy do paczkomatu DHL (time)</p>
+
+
+  {selectedDelivery === "dhl" && (
+    <DhlMap
+      onSelectPoint={(point) => {
+
+        setPickupPoint(point);
+
+        console.log("Wybrany punkt DHL:", point);
+
+
+    updateOrderData("deliveryMethod", {
+    method: "dhl",
+    pickupPoint: {
+        id: point.id,
+        name: point.name,
+        address: point.address,
+        lat: point.lat,
+        lng: point.lng,
+        carrier: "dhl"
+    }
+});
+
+
+        if(onSelect){
+
+          onSelect({
+            delivery:"dhl",
+            pickupPoint:point
+          });
+
+        }
+
+      }}
+    />
+  )}
+
+
+  <p>{getPriceText()}</p>
+
+  <span className="delivery-flag">
+    <i className="fa-solid fa-house-flag"></i>
+  </span>
+
+</div>
+    <div
+  className={`ui segment third-delivery-box delivery-boxes ${
+    selectedDelivery === "kurier-inpost" ? "selected" : ""
+  }`}
+  onClick={() => handleSelect("kurier-inpost")}
+>
+  <p>Dostawa kurierska Inpost</p>
+  <p>{getPriceText()}</p>
+
+  <span className="delivery-flag">
+    <i className="fa-solid fa-store"></i>
+  </span>
+
+</div>
+    <div
+  className={`ui segment third-delivery-box delivery-boxes ${
+    selectedDelivery === "kurier-dhl" ? "selected" : ""
+  }`}
+  onClick={() => handleSelect("kurier-dhl")}
+>
+  <p>Dostawa kurierska DHL</p>
+  <p>{getPriceText()}</p>
+
+  <span className="delivery-flag">
+    <i className="fa-solid fa-store"></i>
+  </span>
+
+</div>
     </div>
   );
 };

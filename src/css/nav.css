@@ -204,7 +204,7 @@
         list-style: none !important;
       }
       .navbar-li-list:hover{
-        color: green;
+        color: rgb(123, 76, 76);
       }
       .Navbar-squeres{
         border: 1px solid black;

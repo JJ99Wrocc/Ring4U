@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { CartContext } from "./CartContext";
 import OrderFinalizationRightBox from "./OrderFinalizationRightBox";
 import { OrderContext } from "./OrderContext";
+// import { OrderContext } from "./CartContext"; 
 import OrderAfterEmail from "./OrderAfterEmail";
 import DeliveryMethod from "./DeliveryMethod.js";
 import PaymentMethods from "./PaymentMethods.js";
@@ -27,7 +28,7 @@ const OrderFinalization = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  // --- OBSŁUGA ALERTU PO POWROCIE Z UDANEJ PŁATNOŚCI HOTPAY ---
+
  useEffect(() => {
   const queryParams = new URLSearchParams(window.location.search);
 
