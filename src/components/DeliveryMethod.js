@@ -77,7 +77,7 @@ const handleSelect = (method) => {
 
         if(onSelect){
             onSelect({
-                delivery: "inpost",
+                method: "inpost",
                 pickupPoint: point
             });
         }
@@ -124,7 +124,7 @@ const handleSelect = (method) => {
         if(onSelect){
 
           onSelect({
-            delivery:"dhl",
+            method: "dhl",
             pickupPoint:point
           });
 

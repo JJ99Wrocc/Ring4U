@@ -136,7 +136,7 @@ const OrderFinalization = () => {
 
   const handleDeliverySelect = (method) => {
     setSelectedDeliveryMethod(method);
-    updateOrderData("deliveryMethod", method);
+    // updateOrderData("deliveryMethod", method);
   };
 
   const handleEmailChange = (event) => {
@@ -180,7 +180,7 @@ const OrderFinalization = () => {
         status: "processing",
         products: selectedProducts.filter((product) => product.selected),
         customer: orderData,
-        deliveryMethod: selectedDeliveryMethod,
+        deliveryMethod: orderData.deliveryMethod,
         paymentMethod: selectedPaymentMethod,
         totalCost: totalCost
       });
