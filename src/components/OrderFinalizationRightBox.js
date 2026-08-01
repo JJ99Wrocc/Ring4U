@@ -27,7 +27,7 @@ const OrderFinalizationRightBox = () => {
     .reduce((sum, p) => sum + (p.amount || 1), 0);
 
   const shippingPrice = () => {
-    return baseTotalCost === 0 ? 0 : baseTotalCost >= 400 ? "Za darmo" : "20.00zł";
+    return baseTotalCost === 0 ? 0 : baseTotalCost >= 198 ? "Za darmo" : "20.00zł";
   };
   const shipping = shippingPrice();
 
@@ -60,7 +60,7 @@ const OrderFinalizationRightBox = () => {
       status: "Oczekujące",
       discountApplied: orderData.shippingAddress.discountApplied,
       discountValue: orderData.shippingAddress.discountValue,
-      totalCost: parseFloat(totalCost) + (baseTotalCost < 400 ? 20 : 0),
+      totalCost: parseFloat(totalCost) + (baseTotalCost < 198 ? 20 : 0),
       shipping: shipping,
       products: selectedProducts
         .filter((p) => p.selected)
@@ -139,7 +139,7 @@ const OrderFinalizationRightBox = () => {
         <div className="order-total" aria-label={`Łączny koszt: ${totalCost} zł`}>
           {baseTotalCost === 0
             ? "0.00zł"
-            : baseTotalCost >= 400
+            : baseTotalCost >= 198
             ? totalCost
             : (parseFloat(totalCost) + 20).toFixed(2)}{" "}
           zł

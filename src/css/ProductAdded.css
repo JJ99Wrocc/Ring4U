@@ -134,7 +134,7 @@
     border-radius: 10px; 
     border: 1px solid #664a4a;
     background-color: #503c3c;
-    color: #e5c4c4;
+    color: #dea6a6;
     font-size: 9px;
     font-weight: 700;
     cursor: pointer;
@@ -143,10 +143,10 @@
 }
 
 .product-right-button:hover {
-    background-color: transparent;
-    color: #1a1a1a;
+    background-color: #5c3e3e;
+    color: #a99191;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(150, 114, 114, 0.1) !important;
 }
 
 /* TWOJA RESPONSYWNOŚĆ - NIENARUSZONA */

@@ -165,7 +165,13 @@
 .payment-right p{
     color: #584949;
     font-weight: 600;
-    /* font-size: 0.9rem; */
+}
+.payment-discount-show{
+    color: #fadede !important;
+    cursor: pointer;
+}
+.payment-discount-show:hover {
+    scale: 1.05;
 }
 .payment-right-title {
     font-weight: 700; /* Lżejszy dla elegancji */

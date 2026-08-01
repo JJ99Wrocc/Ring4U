@@ -183,7 +183,6 @@
    flex-direction: column;
         align-items: center;
         text-align: center;
-
     color: rgba(194, 181, 181, 0.2);
     font-family: 'Roboto Mono', monospace;
     font-size: 11px;
@@ -194,19 +193,16 @@
   right: 25px;
   width: 30px;
   height: 30px;
-  
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  background: rgba(0, 0, 0, 0.8); /* Nieco ciemniejsze dla lepszej czytelności */
+  background: rgb(111, 81, 81) !important; /* Nieco ciemniejsze dla lepszej czytelności */
   backdrop-filter: blur(4px);
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px; /* Mniejsze zaokrąglenie pasuje do małego rozmiaru */
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -220,7 +216,7 @@
 }
 
 .scroll-to-top:hover {
-  background: rgba(0, 0, 0, 1);
+  background: rgb(100, 64, 64) !important;
   transform: translateY(-3px);
 }
 .scroll-to-top.show {
@@ -229,7 +225,7 @@
 }
 
 .scroll-to-top:hover {
-  background-color: #053555;
+  background-color: #4f6d81;
   transform: scale(1.1);
 }
 .footer-company-info.is-open .footer-title {

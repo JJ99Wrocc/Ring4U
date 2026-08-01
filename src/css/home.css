@@ -57,7 +57,7 @@ min-height: 300px;
     font-size: 35px; 
     font-weight: 900;
     line-height: 0.9;
-    color: #635a55;
+    color: #573030 !important;
     text-transform: none; 
     filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3)) 
             drop-shadow(0 0 80px rgba(255, 255, 255, 0.1));
@@ -210,6 +210,7 @@ font-size: 12px;   width: 200px; height: 50px;
 
   }
   @media(max-width:768px){
+
     .img-header{
         /* margin: 0 0 0 40px    !important;   */
         align-items: center;
@@ -296,3 +297,63 @@ font-size: 12px;   width: 200px; height: 50px;
 }
 /* Klasa dla Twojego obrazka */
 
+
+
+/* ==========================================
+   URZĄDZENIA MOBILNE I TABLETY (< 768px)
+   ========================================== */
+
+@media (max-width: 768px) {
+  /* 1. KONTENER GŁÓWNY */
+  .home-segment {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* 2. NAGŁÓWEK I TŁO */
+  .img-header {
+    align-items: center;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .img-header-shadow {
+    width: 98% !important;
+    border-radius: 28px;
+    z-index: 0;
+  }
+
+  /* 3. TEKST I PRZYCISK */
+  .header-text {
+    top: 40%;
+    font-size: 17px;
+  }
+
+  .header-button {
+    top: 55%;
+    width: 150px;
+    height: 40px;
+    font-size: 10px;
+  }
+
+  /* 4. STRZAŁKA W DÓŁ (Idealne centrowanie) */
+  .arrow-down-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .arrow-down {
+    position: relative;
+    top: -30px;
+    left: auto; /* Kasujemy przesunięcie procentowe */
+    transform: none; /* Centrowanie przejmuje flexbox */
+    margin: 0 auto;
+  }
+}

@@ -23,7 +23,7 @@ body.product-page-active .product-image-wrapper {
 .product-image-small3,
 .product-image-small4,
 .product-add-btn {
-  border: 1px solid rgb(248, 2, 125);
+  border: 1px solid rgb(240, 183, 183);
 }
 
 /* Zamiast starego zapisu, użyj klasy nakładanej na body */
@@ -97,14 +97,15 @@ body.product-page-active .app-container
 }
 .ui.segment:last-child{
 
-  background-color: rgb(221, 207, 207) !important;
+  background-color: rgb(192 162 162)  !important;
+  border-radius: 15px;
 }
 .segment-product-detail-amount select {
-  background-color: rgb(220, 200, 200) !important;
+  background-color: rgb(184, 147, 147) !important;
   
   padding: 0.4rem 0.8rem;
   border-radius: 8px;
-  border: 1px solid rgb(248, 2, 125);
+  border: 1px solid rgb(180, 126, 153);
 
 }
 
@@ -116,14 +117,14 @@ body.product-page-active .app-container
   align-items: center;
   gap: 0.5rem;
   background-color: rgb(192 162 162) !important;
-  color: rgb(248, 2, 125);
-  border: 1px solid rgb(248, 2, 125);
+  color: rgb(95, 58, 58) !important;
+  border: 1px solid rgb(143, 86, 86);
   cursor: pointer;
 }
 
 .product-add-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 26px rgb(248, 2, 125);
+  box-shadow: 0 8px 26px rgb(136, 94, 94);
   color: #ff4d4f;
 }
 
@@ -132,9 +133,9 @@ body.product-page-active .app-container
 .product-specs {
   margin-top: 20px;
   padding: 1.5rem;
-  background-color: rgb(216, 211, 211);
+  background-color: rgb(174, 152, 152) !important;
   border-radius: 12px;
-  border: 1px solid rgb(226, 165, 195);
+  border: 1px solid rgb(162, 137, 137) !important;
 }
 
 .product-description { margin-top: 30px;  }
@@ -142,6 +143,7 @@ body.product-page-active .app-container
 .product-description h5,
 .product-details h5,
 .product-specs h5 {
+  color: #443434 !important;
   font-weight: 600;
   margin-bottom: 0.75rem;
 }
@@ -151,6 +153,7 @@ body.product-page-active .app-container
 .product-specs ul {
   font-size: 1rem;
   line-height: 1.6;
+  color: #443434 !important;
 }
 
 .product-details ul,

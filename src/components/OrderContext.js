@@ -63,12 +63,20 @@ const OrderProvider = ({ children }) => {
   const [showRodoAlert, setShowRodoAlert] = useState(false);
 
 
-  const updateOrderData = (key, value) => {
-    setOrderData(prev => ({
+ const updateOrderData = (key, value) => {
+  console.log("CONTEXT UPDATE:", key, value);
+
+  setOrderData((prev) => {
+    const newData = {
       ...prev,
       [key]: value,
-    }));
-  };
+    };
+
+    console.log("NEW ORDER DATA:", newData);
+
+    return newData;
+  });
+};
 
 
   const updateNestedOrderData = (section, key, value) => {

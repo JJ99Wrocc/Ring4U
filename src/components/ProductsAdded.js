@@ -73,7 +73,7 @@ const ProductAdded = ({ visible, setVisible, products }) => {
               <p className="product-added-p">
                 Dostawa:{" "}
                 <span className="product-added-cost">
-                  {totalCost === 0 ? "Za darmo" : totalCost < 400 ? "20.00 zł" : "Za darmo"}
+                  {totalCost === 0 ? "Za darmo" : totalCost < 198 ? "20.00 zł" : "Za darmo"}
                 </span>
               </p>
               <hr style={{ border: "1px solid", backgroundColor: "black" }} />
@@ -81,7 +81,7 @@ const ProductAdded = ({ visible, setVisible, products }) => {
                 Razem:{" "}
                 <span className="product-added-cost">
                   <span className="product-added-cost-fwb">
-                    {totalCost === 0 ? "Za darmo" : totalCost < 400 ? (totalCost + 20).toFixed(2) : totalCost.toFixed(2)}
+                    {totalCost === 0 ? "Za darmo" : totalCost < 198 ? (totalCost + 20).toFixed(2) : totalCost.toFixed(2)}
                   </span>{" "}
                   zł
                 </span>

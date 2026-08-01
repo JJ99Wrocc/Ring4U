@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "./CartContext";
 import "../css/PaymentWithProduct.css";
+import DiscountBox from "./discountbox";
 
 const PaymentWithProduct = () => {
+   const [showBox, setShowBox] = useState(false);
   const {
     selectedProducts,
     changeProductAmount,
@@ -55,7 +57,7 @@ const PaymentWithProduct = () => {
           <span style={{ fontWeight: "bold" }}>
             {totalCost === 0
               ? "0.00zł"
-              : totalCost < 400
+              : totalCost < 198
               ? (totalCost + 20).toFixed(2)
               : totalCost.toFixed(2)}{" "}
             zł
@@ -164,7 +166,7 @@ const PaymentWithProduct = () => {
           <span className="total-cost">
             {totalCost === 0
               ? "Za darmo"
-              : totalCost < 400
+              : totalCost < 198
               ? "20.00 zł"
               : "Za darmo"}
           </span>
@@ -176,7 +178,7 @@ const PaymentWithProduct = () => {
           <span className="total-cost">
   {totalCost === 0
     ? "0.00"
-    : (totalCost < 400 ? totalCost + 20 : totalCost).toFixed(2)
+    : (totalCost < 198 ? totalCost + 20 : totalCost).toFixed(2)
   } zł
 </span>
         </p>
@@ -184,9 +186,16 @@ const PaymentWithProduct = () => {
           (Łącznie z podatkiem{" "}
           {totalCost !== 0 ? (totalCost * 0.23).toFixed(2) : null} zł )
         </p>
-        <p>
-          <i className="fa-solid fa-tags"></i> Wpisz kod promocyjny
+        <p  className="payment-discount-show"
+            onClick={() => setShowBox(true)} 
+            role="button"
+            tabIndex={0}
+            aria-label="Odbierz 10% zniżki"
+            aria-expanded={showBox}
+            onKeyDown={(e) => e.key === "Enter" && setShowBox(true)}>
+          <i className="fa-solid fa-tags"></i> Odbierz kod promocyjny
         </p>
+         {showBox && <DiscountBox onClose={() => setShowBox(false)} aria-live="polite"/>}
         <button
           onClick={() => navigate("/order-finalization")}
           className="product-right-button2"

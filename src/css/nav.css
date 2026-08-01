@@ -73,7 +73,7 @@
       i {
         font-size: 14px;
       }
-    }button:hover{color:blue !important}
+    }button:hover{color:rgb(199, 199, 220) !important}
   }
   .navbar.scroll {
     opacity: 0.95  ;
@@ -113,7 +113,7 @@
   }
   
   .icon-circle:hover {
-    background-color: blue;
+    background-color: rgb(125, 76, 76);
   }
   
   .icon-circle:hover i {
@@ -148,6 +148,7 @@
     align-items: center;
   } 
 .navbarr-menu-img{display: none !important;}
+
   @media(max-width:1300px){
     .nav-shopping-text{
       left: 70px;

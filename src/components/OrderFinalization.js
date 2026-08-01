@@ -65,12 +65,22 @@ const OrderFinalization = () => {
     ? (baseTotalCost * (1 - orderData.shippingAddress.discountValue)).toFixed(2)
     : baseTotalCost.toFixed(2);
 
+    const shippingCost = baseTotalCost === 0
+  ? 0
+  : baseTotalCost < 198
+  ? 20
+  : 0;
+
+const finalTotalCost = (
+  parseFloat(totalCost) + shippingCost
+).toFixed(2);
+
   const selectedCount = selectedProducts
     .filter((p) => p.selected)
     .reduce((sum, p) => sum + (p.amount || 1), 0);
 
   const shippingPrice = () => {
-    return baseTotalCost === 0 ? 0 : baseTotalCost >= 400 ? "Za darmo" : "20.00zł";
+    return baseTotalCost === 0 ? 0 : baseTotalCost >= 198 ? "Za darmo" : "20.00zł";
   };
   const shipping = shippingPrice();
 
@@ -106,7 +116,7 @@ const OrderFinalization = () => {
       status: "Oczekujące",
       discountApplied: orderData.shippingAddress.discountApplied,
       discountValue: orderData.shippingAddress.discountValue,
-      totalCost: parseFloat(totalCost) + (baseTotalCost < 400 ? 20 : 0),
+      totalCost: parseFloat(totalCost) + (baseTotalCost < 198 ? 20 : 0),
       shipping: shipping,
       products: selectedProducts
         .filter((p) => p.selected)
@@ -134,10 +144,18 @@ const OrderFinalization = () => {
     }
   };
 
-  const handleDeliverySelect = (method) => {
-    setSelectedDeliveryMethod(method);
-    // updateOrderData("deliveryMethod", method);
-  };
+const handleDeliverySelect = (method) => {
+
+  console.log("FINAL DELIVERY SELECT:", method);
+
+  setSelectedDeliveryMethod(method);
+
+  updateOrderData(
+    "deliveryMethod",
+    method
+  );
+
+};
 
   const handleEmailChange = (event) => {
     const email = event.target.value;
@@ -180,9 +198,9 @@ const OrderFinalization = () => {
         status: "processing",
         products: selectedProducts.filter((product) => product.selected),
         customer: orderData,
-        deliveryMethod: orderData.deliveryMethod,
+        deliveryMethod: selectedDeliveryMethod,
         paymentMethod: selectedPaymentMethod,
-        totalCost: totalCost
+        totalCost: finalTotalCost
       });
 
       await addDoc(collection(db, "userMessages", userId, "messages"), {
@@ -195,11 +213,13 @@ const OrderFinalization = () => {
    try {
   console.log("START EMAILJS");
 
-  const result = await sendOrderEmail(
-    orderData,
-    selectedProducts,
-    totalCost
-  );
+
+
+const result = await sendOrderEmail(
+  orderData,
+  selectedProducts,
+  finalTotalCost
+);
 
   console.log("EMAILJS OK:", result);
 
@@ -211,18 +231,15 @@ const OrderFinalization = () => {
       // HOTPAY - Wariant uproszczony (GET za pomocą URLSearchParams)
       if (selectedPaymentMethod === "HotPay") {
         const SEKC_SEKRET_USLUGI = "ejZDV0NadmozellCYjJPQTdFR3ErV0txbHhWMW5uczY3VEtJa1d3YkF2WT0,"; 
-
-   const cena = baseTotalCost === 0
-  ? 1
-  : baseTotalCost >= 400
-    ? parseFloat(totalCost)
-    : (parseFloat(totalCost) + 20);
+const cena = parseFloat(finalTotalCost);
         if (isNaN(cena) || cena <= 0) {
           alert("Błąd kwoty zamówienia!");
           setLoading(false);
           return;
         }
-
+console.log("baseTotalCost:", baseTotalCost);
+console.log("totalCost:", totalCost);
+console.log("cena do HotPay:", cena);
         const KWOTA = cena.toFixed(2);
         const orderId = orderReference.id;
         const nazwaUslugi = "Ring4U"; 
@@ -312,7 +329,7 @@ const OrderFinalization = () => {
 
       <div className="order-finalization-title">FINALIZACJA ZAMÓWIENIA</div>
       <div className="order-finalization-under-title-line">
-        ({selectedCount} PRODUKTY) {totalCost} ZŁ
+       ({selectedCount} PRODUKTY) {finalTotalCost} ZŁ
       </div>
 
       <div className="container order-box2">
@@ -382,7 +399,7 @@ const OrderFinalization = () => {
                   <div>
                     {selectedCount} produkt{selectedCount !== 1 ? "y" : ""}
                   </div>
-                  <div className="order-total-cost">{totalCost} zł</div>
+                  <div className="order-total-cost">{finalTotalCost} zł</div>
                 </div>
                 <div className="shipping-summary">
                   <div>dostawa </div>
@@ -408,16 +425,11 @@ const OrderFinalization = () => {
                   {error && <p style={{ color: "red" }} role="alert">{error}</p>} 
                 </div>
                 <div className="total-summary">
-                  <div>Razem </div>
-                  <div className="order-total">
-                    {baseTotalCost === 0
-                      ? "0.00zł"
-                      : baseTotalCost >= 400
-                      ? totalCost
-                      : (parseFloat(totalCost) + 20).toFixed(2)}{" "}
-                    zł
-                  </div>
-                </div>
+  <div>Razem</div>
+  <div className="order-total">
+    {finalTotalCost} zł
+  </div>
+</div>
               </div>
               <button 
                 className="place-order-btn" 
