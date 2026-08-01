@@ -12,6 +12,7 @@ html,body, .page-wrapper {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #c7c6c4;
+    overflow-x: hidden !important;
     
     font-family: 'Playfair Display', 'Montserrat', serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
