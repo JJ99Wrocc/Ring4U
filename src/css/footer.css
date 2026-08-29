@@ -6,7 +6,7 @@
   --bg-gradient: linear-gradient(145deg, #0a0a0a, #1a1a1a);
   --text-dim: #999;
   
-  background: #c2b4b4 !important;
+  background: rgb(245, 197, 219)!important;
   color: #ffffff;
   padding: 80px 40px 30px 40px;
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -134,8 +134,8 @@
   letter-spacing: 1px;
 }
 .payment-methods-wrapper {
- background-color: #836b6b !important;
-    background: rgba(255, 255, 255, 0.02);
+ background-color: #cb80a2 !important;
+    background: rgba(228, 142, 191, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 20px;
     padding: 30px;

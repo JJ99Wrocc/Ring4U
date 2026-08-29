@@ -2,7 +2,7 @@
 
 /* Reset i baza */
 .login-page-wrapper {
-  background: #c7c6c4 !important; /* Głęboka czerń */
+  background: #ffffff !important; /* Głęboka czerń */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@
   --input-bg: #121212;
   --border: rgba(255, 255, 255, 0.08);
   margin: 0 auto !important;
-  background: #7d6464 !important;
+  background: rgb(245, 197, 219)  !important;
   border: 1px solid var(--border) !important;
   border-radius: 28px !important;
   padding: 48px !important;
@@ -53,7 +53,7 @@
 /* Stan focus - tylko delikatna niebieska ramka */
 .ui.input input:focus {
   border-color: rgb(162, 85, 85)  !important;
-  background: #6e4f4f !important;
+  background: #ffffff !important;
  
   box-shadow: none !important;
 }
@@ -68,7 +68,7 @@
 
 /* PRZYCISK GŁÓWNY */
 .ui.submit.button  {
-  background: #c2b4b4 !important;
+  background-color: #d882aa  !important;
   color: #fff !important;
   border-radius: 14px !important;
   padding: 18px !important;
@@ -94,7 +94,7 @@
   font-size: 0.95rem !important;
   font-weight: 500 !important;
   border: 1px solid var(--border) !important;
-  background: #c2b4b4 !important;
+  background: #d882aa !important;
   color: #573434 !important;
   cursor: pointer;
   margin-bottom: 12px;
@@ -135,7 +135,7 @@
 
 /* Linki i komunikaty */
 .password-reset-p {
-  color: rgb(203, 194, 194) !important;
+  color: rgb(82, 72, 80) !important;
   font-size: 0.85rem;
   font-weight: 550;
   margin-top: 8px;
@@ -143,8 +143,9 @@
   text-align: right;
 }
 .password-reset-p:hover {
-  color: #eabdbd !important;
+  color: #292323 !important;
   font-weight: 700;
+  border-radius: 24px;
 }
 
 .ui.message {
@@ -237,5 +238,5 @@
 }
 
 .ui.form .field .ui.input input, .ui.form .fields .field .ui.input input{
-background-color: #bf9f9f !important;
+background-color: #ffffff !important;
 }

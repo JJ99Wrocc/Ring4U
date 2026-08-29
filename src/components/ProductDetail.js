@@ -383,4 +383,4 @@ const ProductDetail = ({ products: propsProducts }) => {
   );
 };
 
-export default ProductDetail;
+export default ProductDetail; 

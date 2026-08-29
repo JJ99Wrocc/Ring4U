@@ -15,11 +15,11 @@
     
     /* STYLIZACJA 2026 */
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background: rgb(225 192 192 / 95%);
+    background:rgb(247, 203, 223)!important;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-radius: 24px; /* Nowoczesne, ale nie za obłe */
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(140, 76, 76, 0.1);
     /* Soft shadow zamiast twardego 3px 3px */
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     z-index: 123123213123123 !important;
@@ -32,7 +32,7 @@
     font-size: 27px;
     font-weight: 800;
     letter-spacing: -0.5px;
-    color: #5a3d3d;
+    color: #6b4444;
 }
 
 /* Przycisk X - Twoja pozycja, nowy look */
@@ -90,13 +90,13 @@
     font-weight: 600;
     /* text-transform: uppercase; */
     letter-spacing: 0.5px;
-    color: #2d2222;
+    color: #241010;
 }
 
 .product-added-p {
     font-size: 9px; 
     white-space: nowrap;
-    color: #503c3c;
+    color: #733b3b;
     margin-bottom: 5px;
 }
 
@@ -124,7 +124,7 @@
 
 .product-added-cost-fwb {
     font-weight: 800;
-    color: #000;
+    color: #7c4b4b;
 }
 
 /* Przycisk ZOBACZ KOSZYK - Twoje wymiary 100px */
@@ -132,8 +132,8 @@
     width: 100px; 
     height: 55px; 
     border-radius: 10px; 
-    border: 1px solid #664a4a;
-    background-color: #503c3c;
+    border: 1px solid #b58a8a;
+    background-color: #cb80a2 !important;
     color: #dea6a6;
     font-size: 9px;
     font-weight: 700;
@@ -143,8 +143,8 @@
 }
 
 .product-right-button:hover {
-    background-color: #5c3e3e;
-    color: #a99191;
+    background-color: #c66969;
+    color: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(150, 114, 114, 0.1) !important;
 }

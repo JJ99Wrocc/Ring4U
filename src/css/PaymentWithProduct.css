@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     font-family: 'Plus Jakarta Sans', sans-serif;
     /* Głęboki gradient radialny - efekt oświetlenia studyjnego */
-    background: rgb(167, 141, 141);
+    background:rgb(245, 197, 219)!important;
     border-radius: 40px;
     color: #fff;
 }
@@ -110,7 +110,7 @@
     left: 230px !important;
     top: 20px;
     color: #362f2f;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.1rem;
 }
 
@@ -142,8 +142,8 @@
 
 /* CHECKBOXY - CUSTOM STYLE */
 .payment-accept-box, .payment-accept-all {
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
-    background-color: #d8bcbc !important;
+    border: 1px solid rgba(178, 140, 140, 0.3) !important;
+    background-color: #ffffff !important;
     border-radius: 4px;
     transition: 0.3s;
 }
@@ -167,7 +167,7 @@
     font-weight: 600;
 }
 .payment-discount-show{
-    color: #fadede !important;
+    color: #4a1f1f !important;
     cursor: pointer;
 }
 .payment-discount-show:hover {
@@ -199,7 +199,7 @@
     width: 100%;
     border-radius: 14px;
     border: 1px solid #bc6c6c;
-    background-color: #956969;
+    background-color: #cb80a2 !important;
     color: #4a3c3c;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: pointer;
@@ -359,7 +359,23 @@ font-size: 13px;
         font-size: 11px;
     }
     .ui.segment:last-child{
+        /* margin-left: 0px; */
+        margin: 0 auto !important;
         font-size: 10px;
     }
+}
+@media(max-width: 450px) {
+ 
+    .ui.segment:last-child{
+        margin-left: -100px;
+        margin: 0 auto !important;
+        min-width: 200px;
+        font-size: 10px;
+    }
+    .order-img{
+        width: 85px !important;
+        height: 85px !important;
+    }
+
 }
 

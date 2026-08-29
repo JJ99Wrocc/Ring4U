@@ -53,17 +53,19 @@ const DeliveryMethod = ({ onSelect }) => {
   };
 
 
+const getDeliveryPrice = (method) => {
+    if (totalCost === 0) return "0.00 zł";
+    if (totalCost >= 198) return "Za darmo";
 
-  const getPriceText = () => {
+    const prices = {
+      inpost: "11.49 zł",
+      dhl: "9.90 zł",
+      "kurier-inpost": "14.49 zł",
+      "kurier-dhl": "14.80 zł"
+    };
 
-    if (totalCost === 0) return "0.00zł";
-
-    if (totalCost < 198) return "20.00 zł";
-
-    return "Za darmo";
-
+    return prices[method] || "0.00 zł";
   };
-
 
 
   return (
@@ -86,7 +88,7 @@ const DeliveryMethod = ({ onSelect }) => {
 
         aria-pressed={selectedDelivery === "inpost"}
 
-        aria-label={`Wybierz dostawę do paczkomatu Inpost, cena: ${getPriceText()}`}
+        aria-label={`Wybierz dostawę do paczkomatu Inpost, cena: ${getDeliveryPrice("inpost")}`}
 
         onKeyDown={(e) => e.key === "Enter" && handleSelect("inpost")}
 
@@ -165,7 +167,7 @@ const DeliveryMethod = ({ onSelect }) => {
 
 
 
-        <p>{getPriceText()}</p>
+        <p>{getDeliveryPrice("inpost")}</p>
 
 
         <span className="delivery-flag">
@@ -238,10 +240,7 @@ const DeliveryMethod = ({ onSelect }) => {
                 "DELIVERY SAVE:",
                 delivery
               );
-
-
-
-             
+           
 
 
 
@@ -267,7 +266,7 @@ const DeliveryMethod = ({ onSelect }) => {
 
 
 
-        <p>{getPriceText()}</p>
+        <p>{getDeliveryPrice("dhl")}</p>
 
 
         <span className="delivery-flag">
@@ -296,7 +295,7 @@ const DeliveryMethod = ({ onSelect }) => {
 
         <p>Dostawa kurierska Inpost</p>
 
-        <p>{getPriceText()}</p>
+        <p>{getDeliveryPrice("kurier-inpost")}</p>
 
 
         <span className="delivery-flag">
@@ -325,7 +324,7 @@ const DeliveryMethod = ({ onSelect }) => {
 
         <p>Dostawa kurierska DHL</p>
 
-        <p>{getPriceText()}</p>
+        <p>{getDeliveryPrice("kurier-dhl")}</p>
 
 
         <span className="delivery-flag">

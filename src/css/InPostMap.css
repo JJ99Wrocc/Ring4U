@@ -30,18 +30,18 @@
     display: flex;
     width: 90%;
     max-width: 450px;
-    background: rgba(210, 191, 191, 0.85);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
     padding: 6px;
     border-radius: 100px;
-    border: 1px solid rgba(255, 204, 0, 0.3);
+    border: 1px solid rgba(255, 0, 144, 0.3);
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
 .pro-input {
     background: transparent;
     border: none;
-    color: rgb(104, 82, 82);
+    color: rgb(29, 26, 26) !important;
     padding: 12px 20px;
     flex-grow: 1;
     font-size: 14px;
@@ -52,7 +52,7 @@
     background-color: #372121 !important;
 }
 .pro-search-btn {
-    background: #805353;
+    background: #cb80a2 !important;
     color: black;
     border: none;
     height: 45px;
@@ -66,7 +66,7 @@
 }
 
 .pro-search-btn:hover {
-    background: rgb(125, 71, 71);
+    background: #c7789c !important;
     transform: scale(1.02);
 }
 
@@ -172,7 +172,7 @@
 }
 /* Kontener pod mapą */
 .selected-point-info {
-    background: #805353 !important;
+    background: #b46a8b !important;
 
     margin-top: 10px;
     padding: 15px;
@@ -187,7 +187,7 @@
 .selected-point-info p {
     margin: 2px 0;
     font-size: 14px;
-    color: #cac3c3 !important; /* Wymuszenie białego koloru */
+    color: #ffffff !important; /* Wymuszenie białego koloru */
 }
 
 .selected-point-info strong {
@@ -206,6 +206,22 @@
 
         padding: 0 5px;
         font-size: 9px;
+    }
+}
+@media(max-width: 450px) {
+   
+    
+    .pro-search-btn {
+        right: 75px !important;
+
+    }
+}
+@media(max-width: 380px) {
+   
+    
+    .pro-search-btn {
+        right: 90px !important;
+  
     }
 }
 @keyframes spin { 100% { transform: rotate(360deg); } }

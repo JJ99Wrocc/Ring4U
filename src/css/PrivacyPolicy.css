@@ -14,7 +14,7 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 120px 40px;
-  background-color: var(--bg-color);
+  background-color: rgb(245, 197, 219)!important;
   color: var(--text-dim);
   font-family: 'Plus Jakarta Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,7 +27,7 @@
   font-size: 40px;
   text-align: center;
   margin-bottom: 120px;
-  color: #464141;
+  color: #ffffff;
   font-weight: 800;
   letter-spacing: -4px;
   line-height: 0.9;
@@ -55,8 +55,8 @@
   cursor: pointer;
   padding: 40px;
   margin: 0;
-  background-color: #958a81;
-  color: #393737;
+  background-color: #cb80a2 !important;
+  color: #ffffff;
   font-size: 1.3rem;
   font-weight: 600;
   display: flex;
@@ -112,14 +112,14 @@
 .privacy-policy-pkt.active + ul,
 .privacy-policy-pkt.active + ol,
 .privacy-policy-pkt.active + p {
-  background-color: #958a81 !important;
+  background-color: #c8759a !important;
   max-height: 1000px; /* Dowolna duża wartość */
   opacity: 1;
   padding-bottom: 40px;
   margin-top: -10px;
 }
 p{
-  color:#635c57;
+  color:#ffffff;
 }
 /* --- STYLIZACJA LISTY --- */
 .li-privacy-polcy {
@@ -128,7 +128,7 @@ p{
   border-bottom: 1px solid rgba(255, 255, 255, 0.03);
   font-weight: 300;
   font-size: 1.05rem;
-  color: rgba(40, 39, 39, 0.7);
+  color: rgba(255, 246, 246, 0.7);
 }
 .li-privacy-polcy strong{
   color:#484747;

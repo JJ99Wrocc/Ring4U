@@ -17,10 +17,10 @@
 }
 .offcanvas-header, #offcanvasNavbar,.submenu.submenu-open, .submenu,.list-unstyled{
     --primary-glow: #F1E5AC;
-  --bg-gradient: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+  --bg-gradient: rgb(243, 208, 224);
   --text-dim: #999;
 
-  background-color: #ac968a !important;
+  background-color: rgb(247, 203, 223) !important;
   /* color: #ea0202 !important; */
   border: none !important;  
   border-radius: 18px !important;
@@ -78,7 +78,7 @@
 }
 
 .nav-link:hover {
-  color: #c7d9f5 !important;
+  color: #4f132d !important;
   padding-left: 10px !important;
 }
 
@@ -87,7 +87,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  background: rgba(27, 54, 93, 0.02);
+  background:rgb(243, 208, 224);
 }
 
 .submenu-open {
@@ -199,7 +199,7 @@ body.offcanvas-open {
   --b-gap: 8px;            
   --b-margin-left: 30px;   
   --b-color: #565553;      
-  --b-hover-color: #031ed1; 
+  --b-hover-color: #492e2e; 
   
   border: none !important;
   padding: 12px;
@@ -253,7 +253,7 @@ body.offcanvas-open {
 }
 .submenu.submenu-open {
   display: block !important; /* Wymuszenie wyświetlenia po kliknięciu */
-  background-color: #f8f9fa; /* Dodaj tło, żeby zobaczyć czy menu zajmuje miejsce */
+  background-color: #faf8fa; /* Dodaj tło, żeby zobaczyć czy menu zajmuje miejsce */
   padding-left: 20px !important;
   border: none !important;
 

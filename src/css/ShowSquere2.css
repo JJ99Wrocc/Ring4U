@@ -1,7 +1,7 @@
 /* --- KONTENER GŁÓWNY (NAWIGACJA) --- */
 .nav-shopping-text {
     text-decoration: none !important;
-    color: #1b365d; /* Twój luksusowy niebieski */
+    color: #d176b4; /* Twój luksusowy niebieski */
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -17,7 +17,7 @@
 /* --- ROZWIJANE MENU (OKNO) --- */
 .Navbar-squeres.desktop-only {
     position: absolute;
-    background: #8d7474 !important;
+    background: rgb(247, 203, 223)!important;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(27, 54, 93, 0.1); /* Delikatny granatowy obrys */
@@ -66,7 +66,7 @@
 }
 
 .navbar-ul-list li {
-    background-color: #8d7474 !important;
+    background-color: rgb(247, 203, 223)!important;
     padding: 0;
     margin: 0;
 }
@@ -90,7 +90,7 @@
 
 .navbar-li-list:hover {
     background: rgba(27, 54, 93, 0.05); 
-    color: #f4bcbf !important;
+    color: #39092c !important;
     padding-left: 25px; /* Delikatne przesunięcie w prawo przy najechaniu */
     border-left: 3px solid #9c5e68;
 }

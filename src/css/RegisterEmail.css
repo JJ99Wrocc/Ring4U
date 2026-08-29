@@ -12,7 +12,7 @@ main[aria-label="Rejestracja użytkownika"] {
 
 /* KARTA - teraz z wyraźniejszym tłem i ramką */
 .ui.container.register-card {
-  background: #7d6464 !important; /* Bardzo ciemny szary, żeby odcinał się od tła */
+  background: rgb(245, 197, 219)  !important; /* Bardzo ciemny szary, żeby odcinał się od tła */
   border: 1px solid #333 !important; /* Wyraźna ramka */
   border-radius: 24px !important;
   padding: 40px !important;
@@ -45,9 +45,10 @@ main[aria-label="Rejestracja użytkownika"] {
   padding: 0 !important;
 }
 .ui.form .ui.stacked.segment button {
-  background-color: #7b5252 !important;
+  background-color: #d882aa !important;
   color: #e8d1d1 !important;
 }
+
 /* INPUTY - Tutaj naprawiamy widoczność */
 .ui.form .field label {
   color: #a1a1a6 !important; /* Szary label */
@@ -56,7 +57,7 @@ main[aria-label="Rejestracja użytkownika"] {
 }
 
 .ui.form .field .ui.input input {
-  background: #684f4f !important; /* Wyraźnie jaśniejsze tło pola */
+  background: #ffffff !important; /* Wyraźnie jaśniejsze tło pola */
   color: #ffffff !important; /* TEKST WPISYWANY - BIAŁY */
   border: 1px solid #866767 !important;
   border-radius: 12px !important;
@@ -66,24 +67,24 @@ main[aria-label="Rejestracja użytkownika"] {
 
 /* Żeby tekst był widoczny podczas pisania (fix dla przeglądarek) */
 .ui.form .field .ui.input input::placeholder {
-  color: #b4a3a3 !important;
+  color: #ffffff !important;
 }
 
 .ui.form .field .ui.input input:focus {
-  background: #c68080 !important;
+  background: #ffffff !important;
   border-color: #573f3f !important; /* Niebieski focus */
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 
 /* IKONY */
 .ui.left.icon.input > i.icon {
-  color: #007aff !important; /* Niebieskie ikony dla kontrastu */
+  color: #dd00ff !important; /* Niebieskie ikony dla kontrastu */
   opacity: 1 !important;
 }
 
 /* PRZYCISK - Solidny Blue */
 .ui.submit.button {
-  background-color: #cea2a2 !important;
+  background-color: rgb(240, 177, 201) !important;
   color: #ffffff !important;
   font-weight: 700 !important;
   border-radius: 12px !important;
@@ -93,7 +94,7 @@ main[aria-label="Rejestracja użytkownika"] {
 }
 
 .ui.submit.button:hover {
-  background-color: #874f4f !important;
+  background-color: rgb(227, 135, 170) !important;
 }
 
 .ui.submit.button:disabled {
@@ -104,8 +105,8 @@ main[aria-label="Rejestracja użytkownika"] {
 
 /* LISTA WALIDACJI - Czytelna i kolorowa */
 #passwordHelp {
-  background: #684f4f !important;
-  border: 1px solid #866767 !important;
+  background: #ffffff !important;
+  border: 1px solid #f6a8a8 !important;
   border-radius: 12px !important;
   padding: 15px !important;
   list-style: none !important;

@@ -295,6 +295,7 @@ const Product = () => {
   return (
     <section id="product" className="container" role="region" aria-label="Lista produktów">
   <div className="row">
+    <div className="product-h1"> BESTSELLER</div> 
     {products.map((product) => (
       <article 
         key={product.id} 

@@ -11,8 +11,8 @@ html,body, .page-wrapper {
     letter-spacing: 0.01em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #c7c6c4;
-    overflow-x: hidden !important;
+    background: #ffffff ;
+    /* overflow-x: hidden !important; */
     
     font-family: 'Playfair Display', 'Montserrat', serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
@@ -85,13 +85,13 @@ html,body, .page-wrapper {
  
 
 .look{
-    color: #5e5d5c;
+    color: #be228a;
     text-decoration: none;
     font-size: 25px;
     transition: color 0.3s;
 }
 .look:hover{
-    color: #000dc3;
+    color: #c3007f;
 }
 
 .arro{

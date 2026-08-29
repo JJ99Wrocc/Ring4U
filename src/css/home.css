@@ -280,7 +280,7 @@ font-size: 12px;   width: 200px; height: 50px;
         background-position: 52% 48%; /* Lekki ruch po skosie udaje ruch 3D */
     }
 }
-/* Definicja animacji: Płynne pojawienie się + lekki ruch w górę */
+Definicja animacji: Płynne pojawienie się + lekki ruch w górę
 @keyframes textEntrance {
   0% {
       opacity: 0;
