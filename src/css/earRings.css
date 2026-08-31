@@ -1,11 +1,12 @@
 body{
-    overflow: scroll !important;
+    overflow: auto !important;
 }
 
 
-.ear-rings-box{  position: fixed;
-    height: 100vh;
-   }
+.ear-rings-box {
+    min-height: 100vh;
+    width: 100%;
+}
 /* --- LUXURY RING TITLE 2026 --- */
 
 .ear-rings-title {
@@ -264,5 +265,300 @@ body{
 }
    #product-ear-rings .ear-v2-row-grid{
             padding: 70px 10px;
+    }
+}
+
+
+body {
+    overflow: scroll !important;
+}
+
+.ear-rings-box {
+    position: fixed;
+    height: 100vh;
+}
+
+/* --- LUXURY RING TITLE 2026 --- */
+.ear-rings-title {
+    text-align: center;
+    margin: 40px auto;
+    display: block;
+    width: 100%;
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    line-height: 1.2;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 20px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    transition: all 0.6s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.h5-ear-rings {
+    color: rgb(185, 179, 179);
+    font-size: 15px;
+}
+
+.ear-rings-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #c5a059, transparent);
+    transition: width 0.8s ease;
+}
+
+.ear-rings-title:hover {
+    letter-spacing: 12px;
+    color: #c5a059;
+    cursor: default;
+}
+
+.ear-rings-title:hover::after {
+    width: 80px;
+}
+
+/* --- LUXURY OBSIDIAN GRID --- */
+#product-ear-rings .ear-v2-row-grid {
+    background: rgb(243, 208, 224);
+    border-radius: 30px;
+    padding: 70px 50px;
+    margin: 25px 0 !important;
+    border: 1px solid rgba(197, 160, 89, 0.1);
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* --- TYTUŁ --- */
+.ear-v2-title {
+    text-align: center;
+    margin: 40px auto;
+    font-family: 'Inter', 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 20px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.ear-v2-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #c5a059, transparent);
+}
+
+/* --- OBRAZEK PRODUKTU --- */
+.ear-v2-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.ear-v2-img {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.98) contrast(1.02);
+    transition: transform 1.2s cubic-bezier(0.2, 1, 0.3, 1), filter 0.5s ease;
+    display: block;
+}
+
+.ear-v2-card:hover .ear-v2-img {
+    transform: scale(1.05);
+    filter: brightness(0.97) contrast(1.08);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    border: 1px solid #140303;
+    background-color: rgb(141, 85, 85);
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #ee7878;
+    color: #fff;
+    border-color: #000;
+}
+
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 8px;
+}
+
+.h5-ear-rings {
+    color: rgba(40, 39, 39, 0.7);
+}
+
+.close-btn {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* --- PRZYCISK KOSZYKA --- */
+.ear-v2-buy-btn {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    padding: 12px 14px;
+    border-radius: 50px;
+    border: 1px solid rgba(238, 113, 113, 0.3);
+    background-color: #9d6464;
+    color: #d6b0b0 !important;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.ear-v2-buy-btn:hover {
+    background-color: #7a705d;
+    border-color: #c5a059;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(197, 160, 89, 0.3);
+}
+
+/* --- PRZYCISK ULUBIONE / LIKE --- */
+.ear-v2-fav-btn {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    padding: 12px 14px;
+    border-radius: 50px;
+    border: 1px solid rgba(238, 113, 113, 0.3);
+    background-color: #9d6464;
+    color: #d6b0b0 !important;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.ear-v2-fav-btn:hover {
+    background-color: #7a705d;
+    border-color: #c5a059;
+    color: #e25c5c !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(197, 160, 89, 0.3);
+}
+
+.ear-v2-fav-btn.active {
+    background-color: #7a705d;
+    color: #e25c5c !important;
+    border-color: #c5a059;
+}
+
+/* --- INFO O PRODUKCIE --- */
+.ear-v2-product-info {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.ear-v2-title {
+    margin-top: 50px !important;
+    margin-bottom: 0px !important;
+}
+
+.ear-v2-product-link {
+    font-size: 11.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff !important;
+    text-decoration: none !important;
+    transition: all 0.4s ease;
+}
+
+.ear-v2-product-link:hover {
+    color: #c5a059 !important;
+    letter-spacing: 3.5px;
+}
+
+.ear-v2-product-price, .ear-v2-title {
+    font-size: 15px;
+    color: rgba(36, 32, 32, 0.7);
+    font-weight: 550;
+    margin-top: 5px;
+}
+
+/* --- RESPONSYWNOŚĆ --- */
+@media (max-width: 992px) {
+    .ear-v2-title {
+        font-size: 18px;
+        letter-spacing: 5px;
+    }
+    .ear-v2-product-link {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+    .ear-rings-title {
+        font-size: 18px;
+        letter-spacing: 5px;
+        margin: 30px auto;
+    }
+    .h5-ear-rings {
+        font-size: 13px;
+    }
+    .ear-v2-product-price {
+        font-size: 12px;
+    }
+    #product-ear-rings .ear-v2-row-grid {
+        padding: 70px 10px;
     }
 }

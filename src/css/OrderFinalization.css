@@ -156,7 +156,7 @@
   }
 
   .place-order-btn {
-    background: linear-gradient(135deg, #96766e, #6d5151);
+    background: #cb80a2 !important;
     color: rgb(239, 200, 200);
     padding: 14px 28px;
     border: none;

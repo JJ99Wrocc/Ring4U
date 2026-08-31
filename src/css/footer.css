@@ -97,15 +97,17 @@
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 300;
-  transition: all 0.3s ease;
   display: inline-block;
   position: relative;
+
+  transition: font-weigh
+   0.4s ease, transform 0.4s ease, color 0.4s ease;
 }
 
-/* Efekt hover 2026 - wysuwana kreska */
+/* Efekt hover */
 .footer-links a:hover {
-  color: #fff;
   transform: translateX(8px);
+  font-weight:  550;
 }
 
 .footer-links a::before {

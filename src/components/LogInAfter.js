@@ -37,6 +37,9 @@ const LogInPreview = ({ show, setShow }) => {
                             <Link to="/my-orders">Moje zamówienia</Link>
                         </li>
                         <li className="custom-link" role="menuitem">
+                            <Link to="/my-favorites">Moje ulubione</Link>
+                        </li>
+                        <li className="custom-link" role="menuitem">
                             <Link to="/my-dm">Moje wiadomości</Link>
                         </li>
                         <li

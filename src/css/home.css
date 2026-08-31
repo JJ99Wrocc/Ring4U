@@ -314,12 +314,7 @@ font-size: 12px;   width: 200px; height: 50px;
     align-items: center;
   }
 
-  /* 2. NAGŁÓWEK I TŁO */
-  .img-header {
-    align-items: center;
-    background-size: cover;
-    width: 100%;
-  }
+
 
   .img-header-shadow {
     width: 98% !important;
@@ -340,20 +335,5 @@ font-size: 12px;   width: 200px; height: 50px;
     font-size: 10px;
   }
 
-  /* 4. STRZAŁKA W DÓŁ (Idealne centrowanie) */
-  .arrow-down-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .arrow-down {
-    position: relative;
-    top: -30px;
-    left: auto; /* Kasujemy przesunięcie procentowe */
-    transform: none; /* Centrowanie przejmuje flexbox */
-    margin: 0 auto;
-  }
 }
+

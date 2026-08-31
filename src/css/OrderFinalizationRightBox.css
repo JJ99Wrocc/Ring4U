@@ -77,10 +77,11 @@
 .order-discount-btn {
   display: flex;
   height: 30px !important;
-  padding: 0 20px; 
+  padding: 0 0px; 
   align-items: center;   
   justify-content: center; /* Daj mu trochę oddechu po bokach */
   cursor: pointer;
+  
    background-color: #cb80a2 !important;
   color: #ffffff; 
 }

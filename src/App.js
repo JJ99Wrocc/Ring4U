@@ -3,7 +3,7 @@
   import 'aos/dist/aos.css';
   import 'bootstrap/dist/css/bootstrap.min.css';
   import Navbar from "./components/Navbar";
-
+import { FavoritesProvider } from "./components/FavoriteContext";
   import Header from "./components/Home";
   import PasswordReset from "./components/PasswordReset";
   import TermsOfService from "./components/TermsOfServices";
@@ -29,7 +29,10 @@
   import Product from "./components/Products";
   import ProductDetail from "./components/ProductDetail";
   import OurMision from "./components/OurMision";
-
+ import EarRingsAll from "./components/EarRingsAll";
+ import NecklacesAll from "./components/NecklacesAll";
+ import BraceletsHandAll from "./components/BraceletsHandAll";
+ import BraceletsFootAll from "./components/BranceletsFootAll";
   import BraceletHandSteel from "./components/BraceletHandSteel";
   import BraceletHandFake from "./components/BranceletHandFake";
   import BraceletFootFake from "./components/BranceletFootFake";
@@ -114,6 +117,40 @@ import ContactForm from "./components/ContactForm"
     </LayoutWithNavAndFooter>
   }
 />
+
+<Route
+  path="/kolczyki"
+  element={
+    <LayoutWithNavAndFooter>
+      <EarRingsAll />
+    </LayoutWithNavAndFooter>
+  }
+/>
+<Route
+  path="/naszyjniki"
+  element={
+    <LayoutWithNavAndFooter>
+      <NecklacesAll />
+    </LayoutWithNavAndFooter>
+  }
+/>
+<Route
+  path="/bransoletkiDlon"
+  element={
+    <LayoutWithNavAndFooter>
+      <BraceletsHandAll />
+    </LayoutWithNavAndFooter>
+  }
+/>
+<Route
+  path="/bransoletkiStopa"
+  element={
+    <LayoutWithNavAndFooter>
+      <BraceletsFootAll />
+    </LayoutWithNavAndFooter>
+  }
+/>
+
 
 
 
@@ -388,6 +425,7 @@ element={
     return (
       <OrderProvider>
         <CartProvider>
+          <FavoritesProvider>
           <BrowserRouter >
             <div className="page-wrapper">
               <main className="main-content">
@@ -398,6 +436,7 @@ element={
             </div>
             <CookieConsent />
           </BrowserRouter>
+          </FavoritesProvider>
         </CartProvider>
       </OrderProvider>
     );

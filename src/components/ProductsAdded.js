@@ -68,7 +68,7 @@ const ProductAdded = ({ visible, setVisible, products }) => {
               <p className="product-added-right-title">Twój koszyk</p>
               <p className="product-added-p"> {selectedCount} Produkty </p>
               <p className="product-added-p">
-                Cena produktów: <span className="product-added-cost">{totalCost}</span> zł
+               Cena produktów: <span className="product-added-cost">{Number(totalCost).toFixed(2)}</span> zł
               </p>
               <p className="product-added-p">
                 Dostawa:{" "}

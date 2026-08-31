@@ -2593,8 +2593,8 @@ const necklacesFake = [
   },
   {
     id: "33626",
-    name: "Elegancki Zestaw Biżuterii z Perłami i Kryształami – Naszyjnik + Kolczyki, złoty N1071Z",
-    price: "12.30 zł",
+    name: "Elegancki Zestaw Biżuterii z Perłami i Kryształami – Naszyjnik + Kolczyki, złoty ",
+    price: "59.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/elegancki-zestaw-bizuterii-z-perlami-i-krysztalami-naszyjnik-kolczyki-zloty-n1071z.html",
@@ -2606,8 +2606,8 @@ const necklacesFake = [
   },
   {
     id: "33627",
-    name: "Elegancki Zestaw Biżuterii z Perłami i Kryształami – Naszyjnik + Kolczyki, srebrny N1071S",
-    price: "12.30 zł",
+    name: "Elegancki Zestaw Biżuterii z Perłami i Kryształami – Naszyjnik + Kolczyki, srebrny ",
+    price: "54.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/elegancki-zestaw-bizuterii-z-perlami-i-krysztalami-naszyjnik-kolczyki-srebrny-n1071s.html",
@@ -2619,8 +2619,8 @@ const necklacesFake = [
   },
   {
     id: "33628",
-    name: "Elegancki Zestaw Biżuterii Naszyjnik + kolczyki z Perłami i Kryształami, Listki srebrne N1072",
-    price: "12.30 zł",
+    name: "Elegancki Zestaw Biżuterii Naszyjnik + kolczyki z Perłami i Kryształami, Listki srebrne",
+    price: "59.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/elegancki-zestaw-bizuterii-naszyjnik-kolczyki-z-perlami-i-krysztalami-listki-srebrne-n1072.html",
@@ -2632,8 +2632,8 @@ const necklacesFake = [
   },
   {
     id: "33629",
-    name: "Delikatny zestaw ślubny z perłami i kryształkami, naszyjnik oraz kolczyki N1073",
-    price: "12.30 zł",
+    name: "Delikatny zestaw ślubny z perłami i kryształkami, naszyjnik oraz kolczyki",
+    price: "54.99 zł",
     category: "sztuczna",
     subCategory: "kolia",
     url: "https://hurt.ecarla.pl/pl/naszyjniki-kolie/delikatny-zestaw-slubny-z-perlami-i-krysztalkami-naszyjnik-oraz-kolczyki-n1073.html",

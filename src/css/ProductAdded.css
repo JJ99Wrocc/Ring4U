@@ -134,7 +134,7 @@
     border-radius: 10px; 
     border: 1px solid #b58a8a;
     background-color: #cb80a2 !important;
-    color: #dea6a6;
+    color: white;
     font-size: 9px;
     font-weight: 700;
     cursor: pointer;
@@ -152,6 +152,11 @@
 /* TWOJA RESPONSYWNOŚĆ - NIENARUSZONA */
 @media(max-width: 600px){
     .product-add { width: 400px; }
+ .product-right-button {
+   margin-top: 60px;
+
+}
+
 }
 
 @media(max-width:450px){
@@ -159,6 +164,4 @@
     .product-title { font-size: 15px !important; }
    
     .product-img { width: 90px !important; height: 90px !important; }
-    .product-name { top: 200px; }
-    .product-added-p { font-size: 7px !important; }
-}
+ }

@@ -123,7 +123,7 @@ const OrderFinalizationRightBox = () => {
           tabIndex={0}
         />
         <button
-          className='order-discount-btn'
+          className="order-discount-btn"
           onClick={applyDiscount}
           disabled={orderData.shippingAddress.discountApplied}
           aria-label="Zastosuj kod rabatowy"
