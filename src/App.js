@@ -43,7 +43,7 @@ import { FavoritesProvider } from "./components/FavoriteContext";
   import EarRingsStalGold from "./components/KolczykiStalGold";
   import EarRingsSztuczneGold from "./components/KolczykiSztuczneGold"
   import EarRingsSrebro from "./components/KolczykiSrebro"
-
+import MyFavorites from "./components/MyFivorites";
 import NecklaceStal from "./components/NecklaceStal";
 import NecklaceFake from "./components/NecklacesFake";
 import RingStal from "./components/RingStal";
@@ -117,7 +117,14 @@ import ContactForm from "./components/ContactForm"
     </LayoutWithNavAndFooter>
   }
 />
-
+<Route
+        path="/my-favorites"
+        element={
+          <LayoutWithNavAndFooter>
+            <MyFavorites />
+          </LayoutWithNavAndFooter>
+        }
+      />
 <Route
   path="/kolczyki"
   element={

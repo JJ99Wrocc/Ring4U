@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "../Firebase";
 import  "../css/LogInAfter.css"
+import MyFavorites from "./MyFivorites";
 
 const LogInPreview = ({ show, setShow }) => {
-    const uid = auth.currentUser.uid;
+const uid = auth.currentUser?.uid;
     console.log(uid); 
 
     return (
@@ -37,7 +38,7 @@ const LogInPreview = ({ show, setShow }) => {
                             <Link to="/my-orders">Moje zamówienia</Link>
                         </li>
                         <li className="custom-link" role="menuitem">
-                            <Link to="/my-favorites">Moje ulubione</Link>
+                           <Link to="/my-favorites">Moje ulubione</Link>
                         </li>
                         <li className="custom-link" role="menuitem">
                             <Link to="/my-dm">Moje wiadomości</Link>

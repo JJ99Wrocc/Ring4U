@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;800&display=swap');
+
+/* Główny kontener sekcji ulubionych */
+.ear-v2-main-container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px 25px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #db99b7 !important;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  animation: fadeInSlide 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+/* Nagłówek sekcji */
+.ear-v2-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -2px;
+  margin-bottom: 40px;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Grid kart produktów */
+.ear-v2-row-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+/* Karta pojedynczego produktu */
+.ear-v2-card {
+  padding-right: 12px;
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Opakowanie zdjęcia i przycisku polubienia */
+.ear-v2-image-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ear-v2-card:hover .ear-v2-image-wrapper {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.ear-v2-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.ear-v2-card:hover .ear-v2-img {
+  transform: scale(1.05);
+}
+
+/* Przycisk usuwania z ulubionych (Serduszko) */
+.ear-v2-fav-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  color: #ff453a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+  font-size: 1.1rem;
+}
+
+.ear-v2-fav-btn:hover {
+  background: rgba(255, 69, 58, 0.2);
+  transform: scale(1.15);
+}
+
+/* Informacje o produkcie */
+.ear-v2-product-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 10px 5px 0 5px;
+}
+
+.h5-ear-rings {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 6px;
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+}
+
+.h5-ear-rings a:hover {
+  color: #e0e0e0 !important;
+}
+
+.ear-v2-product-price {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #3a3532;
+  margin-bottom: 12px;
+}
+
+/* Przycisk Dodaj do koszyka */
+.ear-v2-product-info .btn-primary {
+  background: #bd638b  !important;
+  border: none !important;
+  color: #2b2626 !important;
+  border-radius: 100px;
+  padding: 10px 16px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  transition: all 0.3s ease;
+}
+
+.ear-v2-product-info .btn-primary:hover {
+  background: #a7467f !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Stan pusty (gdy brak ulubionych) */
+.container.favorites {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 80px 20px;
+  background-color: #918585;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #ffffff;
+  animation: fadeInSlide 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.container.favorites h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.container.favorites p {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.container.favorites .btn-primary {
+  background: #c2b4b4 !important;
+  border: none !important;
+  color: #2b2626 !important;
+  border-radius: 100px;
+  padding: 12px 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.container.favorites .btn-primary:hover {
+  background: #e0e0e0 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsywność */
+@media (max-width: 992px) {
+  .ear-v2-main-container {
+    padding: 30px 15px;
+    border-radius: 30px;
+  }
+
+  .h5-ear-rings {
+    font-size: 0.95rem;
+  }
+
+  .ear-v2-product-price {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ear-v2-fav-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+    top: 8px;
+    right: 8px;
+  }
+
+  .ear-v2-product-info .btn-primary {
+    font-size: 0.75rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ear-v2-main-container,
+  .container.favorites {
+    border-radius: 24px;
+    margin: 30px auto;
+  }
+
+  .h5-ear-rings {
+    font-size: 0.85rem;
+  }
+
+  .ear-v2-product-price {
+    font-size: 0.9rem;
+  }
+
+  .ear-v2-product-info .btn-primary {
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Animacja wejścia */
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
