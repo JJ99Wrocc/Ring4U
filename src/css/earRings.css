@@ -2,7 +2,9 @@ body{
     overflow: auto !important;
 }
 
-
+    .ear-v2-main-container{
+        background-color:white !important;
+    } 
 .ear-rings-box {
     min-height: 100vh;
     width: 100%;
@@ -25,7 +27,7 @@ body{
     line-height: 1.2;
     
     /* 3. KOLORYSTYKA I EFEKT ŚWIETLNY */
-    color: #ffffff; /* Białe napisy na czarnym tle */
+    color: #7e3232; /* Białe napisy na czarnym tle */
     position: relative;
     padding-bottom: 20px;
     
@@ -65,18 +67,7 @@ body{
 
 
 /* --- LUXURY OBSIDIAN GRID --- */
-#product-ear-rings .ear-v2-row-grid {
-    background: rgb(243, 208, 224) ;
-    border-radius: 30px;
-    padding: 70px 50px;
-    margin: 25px 0 !important;
 
-    border: 1px solid rgba(197, 160, 89, 0.1); 
-    backdrop-filter: blur(10px);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
 
 /* --- TYTUŁ "KOLCZYKI" --- */
 .ear-v2-title {
@@ -87,7 +78,8 @@ body{
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 8px;
-    color: #ffffff;
+    color: #5e2b2b !important;
+    background-color: rgb(90, 50, 50);
     position: relative;
     padding-bottom: 20px;
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
@@ -346,7 +338,7 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 8px;
-    color: #ffffff;
+    color: #5e2b2b !important;
     position: relative;
     padding-bottom: 20px;
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
@@ -540,7 +532,7 @@ body {
 /* --- RESPONSYWNOŚĆ --- */
 @media (max-width: 992px) {
     .ear-v2-title {
-        font-size: 18px;
+        font-size: 20px;
         letter-spacing: 5px;
     }
     .ear-v2-product-link {
@@ -558,7 +550,50 @@ body {
     .ear-v2-product-price {
         font-size: 12px;
     }
-    #product-ear-rings .ear-v2-row-grid {
-        padding: 70px 10px;
-    }
+
+}
+
+/* Kontener na ceny */
+.ear-v2-price-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+/* Stara cena - przekreślona */
+.ear-v2-old-price {
+  text-decoration: line-through;
+  color: #8c8c8c;
+  font-size: 0.9em;
+}
+
+/* Cena po rabacie */
+.ear-v2-sale-price {
+  color: #e53935;
+  font-weight: bold;
+}
+
+/* Standardowa cena */
+.ear-v2-regular-price {
+  font-weight: 500;
+  color: #333333;
+}
+
+/* Badge SALE na zdjęciu */
+.ear-v2-image-wrapper {
+  position: relative;
+}
+
+.sale-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: #e53935;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 3px 6px;
+  border-radius: 4px;
+  z-index: 2;
 }

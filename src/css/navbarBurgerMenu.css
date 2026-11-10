@@ -17,10 +17,10 @@
 }
 .offcanvas-header, #offcanvasNavbar,.submenu.submenu-open, .submenu,.list-unstyled{
     --primary-glow: #F1E5AC;
-  --bg-gradient: rgb(243, 208, 224);
-  --text-dim: #999;
+  --bg-gradient: #121216;
+  --text-dim: #f4f4f6;
 
-  background-color: rgb(247, 203, 223) !important;
+  background-color: #121216;
   /* color: #ea0202 !important; */
   border: none !important;  
   border-radius: 18px !important;
@@ -28,7 +28,7 @@
 
 .offcanvas-title {
   font-family: 'Playfair Display', serif; /* Podstawowy font luksusowy */
-  color: #3a3532;
+  color: #f4f4f6;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -66,7 +66,7 @@
 }
 
 .nav-link {
-  color: #3a3532 !important;
+  color: #f4f4f6 !important;
   font-size: 18px !important;
   font-weight: 400 !important;
   text-transform: uppercase;

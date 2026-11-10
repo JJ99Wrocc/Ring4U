@@ -1,9 +1,7 @@
-import react, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { CartContext } from './CartContext';
 import { Link } from 'react-router-dom';
-import ProductAdded from './ProductsAdded'; // DODANO
-// import UpperFooter from './Footer';
-// import "../css/EarRings.css";
+import ProductAdded from './ProductsAdded';
 import { earRings } from "./Products";
 import bransoletkaRekaSztuczna from "../data/BransoletHandFake";
 import { useParams } from 'react-router-dom';
@@ -42,7 +40,6 @@ const BranceletHandFake = ({ category }) => {
         const handleResize = () => {
             const currentWidth = window.innerWidth;
             if(currentWidth === lastWidth) return;
-            // Poprawiona nazwa funkcji na setProductPerPage
             lastWidth = currentWidth;
             const newPerPage = currentWidth < 768 ? 20 : 32;
             
@@ -71,7 +68,6 @@ const BranceletHandFake = ({ category }) => {
     return (
         <section id="product-ear-rings" className="ear-v2-main-container container" role="region" aria-label="product-ear-rings">
             {/* MODAL PO DODANIU */}
-            
             <ProductAdded visible={visible} setVisible={setVisible} products={productToAdd ? [productToAdd] : []} />
             
             <h1 className="ear-v2-title">Branzoletki Na Dłonie {subcategory ? `- ${subcategory}` : '- Fashions'}</h1>
@@ -88,6 +84,10 @@ const BranceletHandFake = ({ category }) => {
                             aria-label={`${product.name}, cena ${product.price}`}
                         >
                             <div className="ear-v2-image-wrapper">
+                                {product.oldPrice && (
+                                    <span className="sale-badge">SALE</span>
+                                )}
+
                                 <img
                                     src={product.image}
                                     className="img-fluid ear-v2-img"
@@ -118,7 +118,7 @@ const BranceletHandFake = ({ category }) => {
                                     <i className="fa-solid fa-bag-shopping fa-fw"></i>
                                 </button>
                             </div>
-                            
+                                
                             <div className="ear-v2-product-info">
                                 <h5 className='h5-ear-rings'>
                                     <Link 
@@ -128,7 +128,16 @@ const BranceletHandFake = ({ category }) => {
                                         {product.name}
                                     </Link>
                                 </h5>
-                                <p className="ear-v2-product-price">{product.price}</p>
+                                <div className="ear-v2-price-container">
+                                    {product.oldPrice ? (
+                                        <>
+                                            <span className="ear-v2-old-price">{product.oldPrice}</span>
+                                            <span className="ear-v2-sale-price">{product.price}</span>
+                                        </>
+                                    ) : (
+                                        <span className="ear-v2-regular-price">{product.price}</span>
+                                    )}
+                                </div>
                             </div>
                         </article>
                     );
@@ -161,7 +170,6 @@ const BranceletHandFake = ({ category }) => {
                     </div>
                 </div>
             )}
-            {/* <UpperFooter /> */}
         </section>
     );
 }

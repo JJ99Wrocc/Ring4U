@@ -1,4 +1,2355 @@
     export const kolczykiStal = [
+      // POZŁACANE
+{
+    "id": "34116",
+    name:" Kolczyki ze stali - Perłowe kokardki",
+    "price": "89.99 zł",
+    "oldPrice": "99.99 zł",
+    "category": "stal",
+    "subCategory": "serca-kokardy",
+    "url": "/product/34116",
+    "image": "https://hurt.ecarla.pl/201810-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-perelkowe-kokardki-kst3511.jpg",
+    "description": [
+      "Eleganckie i stylowe kolczyki w kształcie kokardek z perełkami, wykonane platerowanej 14-karatowym złotem.",
+      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Wymiary": "1,4 cm x 1,6 cm",
+      "Waga": "4g netto / 7g brutto",
+      "Model": "KST3511"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/201911-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-perelkowe-kokardki-kst3511.jpg"
+  },
+  {
+    "id": "32849",
+    name:" Kolczyki ze stali - Rozmyte serca",
+    "price": "69.99 zł",
+    "category": "stal",
+    "subCategory": "serca-kokardy",
+    "url": "/product/32849",
+    "image": "https://hurt.ecarla.pl/194954-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-zapiecie-sztyfit-kst3436.jpg",
+    "description": [
+      "Kolczyki platerowane 14-karatowym złotem, sztyft.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "WYMIARY": "2 cm x 2 cm",
+      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
+      "Model": "KST3436"
+    },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie",
+    "image2": null,
+    "image3": null
+  },
+ 
+
+  
+ { 
+    id: "27587",    
+    name:" Kolczyki ze stali - Półksiężyce",
+    price: "89.99 zł",
+    oldPrice: "99.99 zł",
+        category: "stal",
+        subCategory: "pozlacane",
+    url: "/product/27587", 
+    image: "https://hurt.ecarla.pl/201001-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3171.jpg",
+    description: [
+      "Kolczyki platerowane 14-karatowym złotem.",
+      "Eleganckie i stylowe kolczyki.",
+      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    specs: {
+      "Wymiary": "1,8 cm x 1,8 cm",
+      "Wymiar kartonika z opakowaniem": "6,5 cm x 10,5 cm",
+      "Waga": "15 g netto / 17 g brutto",
+      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
+      "Model": "KST3171" 
+    },
+    material: "Stal chirurgiczna", 
+    color: "Jasne złoto", 
+    availability: "W magazynie", 
+    image2: "",
+    image3: ""
+  },
+{
+    "id": "33882",
+    name:" Kolczyki ze stali - Kulki ",
+    "price": "69.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33882",
+    "image": "https://hurt.ecarla.pl/200261-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-kulki-kst3567.jpg",
+    "description": [
+      "Eleganckie i stylowe kolczyki w kształcie kulek, wykonane ze stali chirurgicznej platerowanej 14-karatowym złotem.",
+      "Zapięcie typu sztyft. Produkt marki Xuping."
+    ],
+    "specs": {
+      "Wymiary": "0,5 cm x 0,5 cm",
+      "Waga": "2g netto / 5g brutto",
+      "Model": "KST3567"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  
+ { 
+    id: "27591",    
+    name:" Kolczyki ze stali - Krople ",
+    price: "89.99 zł",
+     category: "stal",
+     subCategory: "pozlacane",
+
+    url: "/product/27591", 
+    image: "https://hurt.ecarla.pl/161847-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-wkretki-31-cm-kst3172.jpg",
+    description: [
+      "Kolczyki platerowane 14-karatowym złotem.",
+      "Eleganckie i stylowe kolczyki.",
+      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    specs: {
+      "Wymiary": "1,5 cm x 3,2 cm",
+      "Wymiar kartonika z opakowaniem": "6,5 cm x 9,5 cm",
+      "Waga": "10 g netto / 12 g brutto",
+      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
+      "Rodzaj zapięcia": "Wkrętki / Sztyft",
+      "Model": "KST3172" 
+    },
+    material: "Stal chirurgiczna", 
+    color: "Jasne złoto", 
+    availability: "W magazynie", 
+    image2: "",
+    image3: ""
+  },
+ 
+ {
+        id: "21985",
+        name:" Kolczyki ze stali - Z szyfrem   ",
+        price: "89.9 zł",
+        oldPrice: "99.9 zł",
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/21985",
+        image: "https://hurt.ecarla.pl/137031-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2801zie.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. Kolor:  Jasne złoto Wymiary: Średnica: 2cm ",
+            "rodzaj zapięcia:  zapięcie angielskie STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje. Producent: Xuping"
+        ],
+        specs: {
+            "Model": "KST2801ZIE"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
+        color: "Pozłacany",
+        availability: "W magazynie",
+        image2: null,
+        image3: null
+    },
+    {
+        id: "21986",
+        name:" Kolczyki ze stali - Z agatem",
+        price: "89.07 zł",
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/21986",
+        image: "https://hurt.ecarla.pl/137033-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2801cz.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. Kolor:  Jasne złoto Wymiary: Średnica: 2cm ",
+            "rodzaj zapięcia:  zapięcie angielskie STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje. Producent: Xuping"
+        ],
+        specs: {
+            "Model": "KST2801CZ"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
+        color: "Pozłacany",
+        availability: "W magazynie",
+        image2: null,
+        image3: null
+    },
+   
+
+
+  {
+    "id": "34475",
+    name:" Kolczyki ze stali - Brożki ",
+    "price": "69.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34475",
+    "image": "https://hurt.ecarla.pl/203473-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kola-kst3598.jpg",
+    "description": "Eleganckie i stylowe kolczyki damskie.",
+    "specs": {
+      "Wymiary": "2,4cm x 2,5cm x 1,7cm",
+      "Waga": "10g netto / 13g brutto",
+      "Zapięcie": "angielskie",
+      "Model": "KST3598"
+    },
+    "material": "Stal szlachetna, pozłacane 14K złotem",
+    "availability": "W magazynie"
+  },
+
+  {
+    "id": "34477",
+    name:" Kolczyki ze stali - Wiszące z perłą",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34477",
+    "image": "https://hurt.ecarla.pl/203474-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-z-perla-kst3639.jpg",
+    "description": "Eleganckie i stylowe kolczyki damskie.",
+    "specs": {
+      "Wymiary": "1,8cm x 0,7cm x 0,6cm; Perełka: 0,4cm x 0,4cm; Cyrkonia: 0,4cm x 0,4cm",
+      "Waga": "1g netto / 4g brutto",
+      "Zapięcie": "sztyft",
+      "Model": "KST3639"
+    },
+    "material": "Stal szlachetna, pozłacane 14K złotem",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "34478",
+    name:" Kolczyki ze stali - Geometryczne koła",
+    "price": "79,99 zł",
+    "oldPrice": "99,99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34478",
+    "image": "https://hurt.ecarla.pl/203470-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-geometryczna-kropla-kst3641.jpg",
+    "description": "Eleganckie i stylowe kolczyki damskie.",
+    "specs": {
+      "Wymiary": "2cm x 1,4cm x 1,5cm",
+      "Waga": "8g netto / 11g brutto",
+      "Zapięcie": "sztyft",
+      "Model": "KST3641"
+    },
+    "material": "Stal szlachetna, pozłacane 14K złotem",
+    "availability": "W magazynie"
+  },
+ {
+    "id": "31761",
+    name:" Kolczyki ze stali - Półowale",
+    "price": "99.99 zł",
+    "oldPrice": "109.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/31761",
+    "image": "https://hurt.ecarla.pl/188325-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-sztyft-srebro-s925-kst3404.jpg",
+    "description": [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
+      "Eleganckie i stylowe kolczyki.",
+      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "WYMIARY": "2,1cm x 2cm x 0,9cm",
+      "Wymiar kartonika": "6cm x 5,5 cm",
+      "Waga": "4g netto / 9g brutto",
+      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
+      "Rodzaj zapięcia": "Sztyft (sztyft ze srebra S925)",
+      "Producent": "Inny",
+      "Model": "KST3404"
+    },
+    "material": "Stal chirurgiczna",
+    "color": "Złoto",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/188322-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-sztyft-srebro-s925-kst3404.jpg",
+    "image3": "https://hurt.ecarla.pl/188324-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-sztyft-srebro-s925-kst3404.jpg"
+  },
+ 
+{
+    "id": "33169",
+    name:" Kolczyki ze stali - Prężone koła",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33169",
+    "image": "https://hurt.ecarla.pl/196559-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kola-kst3455.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "1,2 x 3 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3455" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "33170",
+    name:" Kolczyki ze stali - Portójne koła",
+    "price": "99.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33170",
+    "image": "https://hurt.ecarla.pl/196561-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-potrojne-kola-kst3457.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "1,6 x 2,5 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3457" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "33171",
+    name:" Kolczyki ze stali - Podwójny owal",
+    "price": "69.99 zł",
+    "oldPrice": "89.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33171",
+    "image": "https://hurt.ecarla.pl/196554-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-podwojny-owal-kst3458.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "2,5 x 1,1 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3458" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "33172",
+    name:" Kolczyki ze stali - Owale",
+    "price": "89.99  zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33172",
+    "image": "https://hurt.ecarla.pl/196565-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-owalne-kst3459.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "2,5 x 1,8 x 0,4 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3459" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "33173",
+    name:" Kolczyki ze stali - Dekoracyjne",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33173",
+    "image": "https://hurt.ecarla.pl/196563-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-dekoracyjne-kst3461.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "1 x 1 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3461" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+    {
+    "id": "33193",
+    name:" Kolczyki ze stali - Panterka",
+    "price": "79.99 zł",
+    "oldPrice": "99.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33193",
+    "image": "https://hurt.ecarla.pl/196566-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-panterka-kst3448.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "2,8 x 2,3 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3448" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+{ 
+    id: "26230",    
+    name:" Kolczyki ze stali - Kły ",
+    price: "89.99 zł", 
+    category: "stal",
+    subCategory: "pozlacane",
+    url: "/product/26230",
+    image: "https://hurt.ecarla.pl/154762-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3173.jpg",
+    description: [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
+      "Eleganckie i stylowe kolczyki.",
+      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    specs: {
+      "Wymiary": "0,8 x 2,1 cm",
+      "Waga": "5 g",
+      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
+      "Rodzaj zapięcia": "Sztyft",
+      "Model": "KST3173" 
+    },
+    material: "Stal chirurgiczna", 
+    color: "Jasne złoto", 
+    availability: "W magazynie", 
+    image2: "",
+    image3: ""
+  },
+
+  {
+    "id": "33162",
+    name:" Kolczyki ze stali - Wyraziste pozłacane",
+    "price": "89.99 zł",
+
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33162",
+    "image": "https://hurt.ecarla.pl/196471-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wyraziste-nowoczesne-kst3478.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "2,5 x 3 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3478" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "33163",
+    name:" Kolczyki ze stali - Dekoracyjne róż",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33163",
+    "image": "https://hurt.ecarla.pl/196473-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-dekoracyjne-roz-kst3479r.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "2,4 x 2,6 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3479R" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "33164",
+    name:" Kolczyki ze stali - Dekoracyjne czarne",
+    "price": "109.99zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33164",
+    "image": "https://hurt.ecarla.pl/196475-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-dekoracyjne-czarne-kst3479cz.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "2,4 x 2,6 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3479CZ" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+   {
+    "id": "33147",
+    name:" Kolczyki ze stali - Motylki",
+    "price": "99.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33147",
+    "image": "https://hurt.ecarla.pl/196546-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-motylki-kst3491.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "1 x 0,8 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3491" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "33165",
+    name:" Kolczyki ze stali - Dekoracyjne ekru",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33165",
+    "image": "https://hurt.ecarla.pl/196477-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-dekoracyjne-ecru-kst3479b.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "2,4 x 2,6 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3479B" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+
+
+  {
+    "id": "33156",
+    name:" Kolczyki ze stali - Cyrkonie perełki",
+    "price": "109.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33156",
+    "image": "https://hurt.ecarla.pl/196451-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-perly-kst3474.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "2 x 2,5 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3474" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "33159",
+    name:" Kolczyki ze stali - Cyrkonie perły",
+    "price": "99.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33159",
+    "image": "https://hurt.ecarla.pl/196461-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-perly-kst3515.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "1,2 x 2,2 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3515" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "34481",
+    name:" Kolczyki ze stali - Duża kropla",
+    "price": "79,99 zł",
+    "oldPrice": "89,99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34481",
+    "image": "https://hurt.ecarla.pl/203469-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kropla-kst3645.jpg",
+    "description": "Eleganckie i stylowe kolczyki damskie.",
+    "specs": {
+      "Wymiary": "21cm x 1,4cm x 0,6cm",
+      "Waga": "4g netto / 8g brutto",
+      "Zapięcie": "sztyft",
+      "Model": "KST3645"
+    },
+    "material": "Stal szlachetna, pozłacane 14K złotem",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "34482",
+    name:" Kolczyki ze stali - Koła przeplatane",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34482",
+    "image": "https://hurt.ecarla.pl/203472-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kola-przeplatane-kst3646.jpg",
+    "description": "Eleganckie i stylowe kolczyki damskie.",
+    "specs": {
+      "Wymiary": "2,1cm x 2,3cm x 0,3cm",
+      "Waga": "6g netto / 9g brutto",
+      "Zapięcie": "kreol",
+      "Model": "KST3646"
+    },
+    "material": "Stal szlachetna, pozłacane 14K złotem",
+    "availability": "W magazynie"
+  },
+  
+  {
+    "id": "34485",
+    name:" Kolczyki ze stali - Kulki",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34485",
+    "image": "https://hurt.ecarla.pl/203438-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kulki-kst3649.jpg",
+    "description": "Eleganckie i stylowe kolczyki damskie.",
+    "specs": {
+      "Wymiary": "1,5cm x 1,1cm x 1,3cm",
+      "Waga": "8g netto / 11g brutto",
+      "Zapięcie": "sztyft",
+      "Model": "KST3649"
+    },
+    "material": "Stal szlachetna, pozłacane 14K złotem",
+    "availability": "W magazynie"
+  },
+
+  {
+    "id": "34487",
+    name:" Kolczyki ze stali - Okrągłe kwadraty",
+    "price": "79.99 zł",
+    "subCategory": "pozlacane",
+    "category": "stal",
+    "url": "/product/34487",
+    "image": "https://hurt.ecarla.pl/203436-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okragle-kwadrat-kst3653.jpg",
+    "description": "Eleganckie i stylowe kolczyki damskie.",
+    "specs": {
+      "Wymiary": "1,1cm x 1,1cm; Kwadracik: 0,4cm x 0,4cm",
+      "Waga": "2g netto / 4g brutto",
+      "Zapięcie": "sztyft zatrzaskowy",
+      "Model": "KST3653"
+    },
+    "material": "Stal szlachetna, pozłacane 14K złotem",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "33174",
+    name:" Kolczyki ze stali - Okrągłe ",
+    "price": "89.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33174",
+    "image": "https://hurt.ecarla.pl/196564-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okragle-kst3462.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "3 x 1,8 x 0,4 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3462" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+
+  {
+    "id": "33195",
+    name:" Kolczyki ze stali - Wiszące linki",
+    "price": "89.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33195",
+    "image": "https://hurt.ecarla.pl/196572-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kst3446.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "8 x 1 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3446" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+
+  
+
+  {
+    "id": "33204",
+    name:" Kolczyki ze stali - Wiszące linki ",
+    "price": "99.99 zł",
+    "oldPrice": "109.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33204",
+    "image": "https://hurt.ecarla.pl/196577-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-z-perla-kst3437.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "6,8 x 1,2 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3437" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+           { 
+        id: "19067", 
+        name:" Kolczyki ze stali - Motyli niebieskie kamyki",
+        price: "89.87 zł", 
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/19067",
+        image: "https://hurt.ecarla.pl/124653-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2287.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 18 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. WYMIARY:",
+            "wymiary produktu: 1,2 x 1,2 cm",
+            "rodzaj zapięcia: sztyft",
+            "Producent Xuping"
+        ],
+        specs: {
+            "Model": "KST2287"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
+        color: "Pozłacany", 
+        availability: "W magazynie", 
+        image2: null,
+        image3: null
+    },
+    
+  {
+    "id": "34325",
+    name:" Kolczyki ze stali - Krople",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34325",
+    "image": "https://hurt.ecarla.pl/202790-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-krople-kst3670.jpg",
+    "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
+    "specs": {
+      "Wymiary": "1,2cm x 0,7cm x 0,6cm",
+      "Waga": "4g netto / 6g brutto",
+      "Zapięcie": "sztyft",
+      "Model": "KST3670"
+    },
+    "material": "Stal szlachetna, platerowane 14K złotem",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "34326",
+    name:" Kolczyki ze stali - Papryczki",
+    "price": "89.99 zł",
+    "oldPrice": "99.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34326",
+    "image": "https://hurt.ecarla.pl/202792-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst3667.jpg",
+    "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
+    "specs": {
+      "Wymiary": "2cm x 0,9cm x 0,5cm",
+      "Waga": "2g netto / 5g brutto",
+      "Zapięcie": "sztyft",
+      "Model": "KST3667"
+    },
+    "material": "Stal szlachetna, platerowane 14K złotem",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "34327",
+    name:" Kolczyki ze stali - Kule",
+    "price": "89.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34327",
+    "image": "https://hurt.ecarla.pl/203142-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kulki-kst3669.jpg",
+    "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
+    "specs": {
+      "Wymiary": "1,5cm x 1,5cm",
+      "Waga": "8g netto / 11g brutto",
+      "Zapięcie": "sztyft",
+      "Model": "KST3669"
+    },
+    "material": "Stal szlachetna, platerowane 14K złotem",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "34328",
+    name:" Kolczyki ze stali  - Krople nowoczesne",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34328",
+    "image": "https://hurt.ecarla.pl/203088-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-krople-nowoczesne-kst3662.jpg",
+    "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
+    "specs": {
+      "Wymiary": "2,6cm x 2cm x 0,7cm",
+      "Waga": "12g netto / 17g brutto",
+      "Zapięcie": "sztyft",
+      "Model": "KST3662"
+    },
+    "material": "Stal szlachetna, platerowane 14K złotem",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "34329",
+    name:" Kolczyki ze stali - Nowoczesne",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34329",
+    "image": "https://hurt.ecarla.pl/203089-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-nowoczesne-kst3661.jpg",
+    "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
+    "specs": {
+      "Wymiary": "3cm x 2,1cm x 0,5cm",
+      "Waga": "12g netto / 19g brutto",
+      "Zapięcie": "sztyft",
+      "Model": "KST3661"
+    },
+    "material": "Stal szlachetna, platerowane 14K złotem",
+    "availability": "W magazynie"
+  },
+      {
+    "id": "34489",
+    name:" Kolczyki ze stali - Haczyki",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34489",
+    "image": "https://hurt.ecarla.pl/203384-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-falowane-kola-kst3657.jpg",
+    "description": "Eleganckie i stylowe kolczyki damskie.",
+    "specs": {
+      "Wymiary": "2,4cm x 1,3cm x 0,5cm",
+      "Waga": "4g netto / 6g brutto",
+      "Zapięcie": "sztyft",
+      "Model": "KST3657"
+    },
+    "material": "Stal szlachetna, pozłacane 14K złotem",
+    "availability": "W magazynie"
+  },  {
+    "id": "34480",
+    name:" Kolczyki ze stali - Wiszące kropelki",
+    "price": "94.99 zł",
+    "oldPrice": "104.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34480",
+    "image": "https://hurt.ecarla.pl/203432-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kropelki-kst3643.jpg",
+    "description": "Eleganckie i stylowe kolczyki damskie.",
+    "specs": {
+      "Wymiary": "Długość całkowita: 5,7cm; Kropelka: 0,8cm x 0,5cm",
+      "Waga": "2g netto / 5g brutto",
+      "Zapięcie": "sztyft",
+      "Model": "KST3643"
+    },
+    "material": "Stal szlachetna, pozłacane 14K złotem",
+    "availability": "W magazynie"
+  },
+  
+  {
+    "id": "33751",
+    name:" Kolczyki ze stali - Wiszące blaszki ",
+    "price": "89.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33751",
+    "image": "https://hurt.ecarla.pl/199762-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-perly-efektowne-wiszace-blaszki-kst3505.jpg",
+    "description": [
+      "Eleganckie, wiszące kolczyki damskie z perłami.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Wymiary": "8,5 cm x 3 cm",
+      "Waga": "8g netto / 11g brutto",
+      "Model": "KST3505"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/199725-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-perly-efektowne-wiszace-blaszki-kst3505.jpg"
+  },
+
+  {
+    "id": "33753",
+    name:" Kolczyki ze stali - Efektowne wiszące perłki",
+    "price": "89.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33753",
+    "image": "https://hurt.ecarla.pl/199768-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-efektowne-wiszace-perelki-kst3507.jpg",
+    "description": [
+      "Eleganckie, wiszące kolczyki z perełkami.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Wymiary": "8 cm x 1 cm x 0,5 cm",
+      "Waga": "12g netto / 16g brutto",
+      "Model": "KST3507"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/199727-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-efektowne-wiszace-perelki-kst3507.jpg"
+  },
+  {
+    "id": "34138",
+    name:" Kolczyki ze stali - Plecione kółka",
+    "price": "69.99 zł",
+    "oldPrice": "89.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34138",
+    "image": "https://hurt.ecarla.pl/201806-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-plecione-kola-kst3627.jpg",
+    "description": [
+      "Eleganckie i stylowe kolczyki w kształcie plecionych kół, wykonane platerowanej 14-karatowym złotem.",
+      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Wymiary": "1,9 cm x 0,2 cm x 1 cm",
+      "Waga": "2g netto / 4g brutto",
+      "Model": "KST3627",
+      "Zapięcie": "angielskie"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "34139",
+    name:" Kolczyki ze stali - Płaskie koła",
+    "price": "69.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34139",
+    "image": "https://hurt.ecarla.pl/201808-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-plaskie-kola-kst3628.jpg",
+    "description": [
+      "Eleganckie i stylowe kolczyki w kształcie płaskich kół, wykonane platerowanej 14-karatowym złotem.",
+      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Wymiary": "2,3 cm x 0,2 cm x 1,2 cm",
+      "Waga": "3g netto / 6g brutto",
+      "Model": "KST3628",
+      "Zapięcie": "angielskie"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "34140",
+    name:" Kolczyki ze stali - Pączki z cyrkonią",
+    "price": "69.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34140",
+    "image": "https://hurt.ecarla.pl/201921-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kola-cyrkonie-kst3629.jpg",
+    "description": [
+      "Eleganckie i stylowe kolczyki w kształcie kół z cyrkoniami, wykonane platerowanej 14-karatowym złotem.",
+      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Wymiary": "1,8 cm x 1,4 cm",
+      "Waga": "3g netto / 6g brutto",
+      "Model": "KST3629",
+      "Zapięcie": "sztyft"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "34141",
+    name:" Kolczyki ze stali - Okręgi z cyrkoniami",
+    "price": "69.99 zł",
+    "oldPrice": "89.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34141",
+    "image": "https://hurt.ecarla.pl/201923-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okregi-z-cyrkoniami-kst3631.jpg",
+    "description": [
+      "Eleganckie i stylowe kolczyki w kształcie okręgów z cyrkoniami, wykonane platerowanej 14-karatowym złotem.",
+      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Wymiary": "1,9 cm x 0,3 cm x 1,2 cm",
+      "Waga": "4g netto / 6g brutto",
+      "Model": "KST3631",
+      "Zapięcie": "angielskie"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "34142",
+    name:" Kolczyki ze stali - Krople z kryształkami",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34142",
+    "image": "https://hurt.ecarla.pl/201815-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-krople-krysztalki-kst3632.jpg",
+    "description": [
+      "Eleganckie i stylowe kolczyki w kształcie kropli z kryształkami, wykonane platerowanej 14-karatowym złotem.",
+      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Wymiary": "1,5 cm x 0,8 cm",
+      "Waga": "6g netto / 10g brutto",
+      "Model": "KST3632",
+      "Zapięcie": "sztyft"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "34143",
+    name:" Kolczyki ze stali - Bycze ",
+    "price": "69.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34143",
+    "image": "https://hurt.ecarla.pl/201925-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kst3635.jpg",
+    "description": [
+      "Eleganckie i stylowe kolczyki, wykonane platerowanej 14-karatowym złotem.",
+      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Wymiary": "1 cm x 0,3 cm",
+      "Waga": "2g netto / 5g brutto",
+      "Model": "KST3635",
+      "Zapięcie": "angielskie"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  
+  {
+    "id": "34144",
+    name:" Kolczyki ze stali - Krople 2,1 cm",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34144",
+    "image": "https://hurt.ecarla.pl/201828-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-wkretki-21-cm-krople-kst3139.jpg",
+    "description": [
+      "Eleganckie i stylowe kolczyki wkrętki w kształcie kropli, wykonane platerowanej 14-karatowym złotem.",
+      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Wymiary": "2,1 cm x 2 cm",
+      "Waga": "5g netto / 7g brutto",
+      "Model": "KST3139",
+      "Zapięcie": "wkrętki"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "34152",
+    name:" Kolczyki ze stali - Okręgi perłowe 4cm ",
+    "price": "89.99 zł",
+    "oldPrice": "109.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34152",
+    "image": "https://hurt.ecarla.pl/201897-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okregi-perelkowe-4-cm-kst3575.jpg",
+    "description": "Eleganckie kolczyki w kształcie okręgów perełkowych, platerowane 14-karatowym złotem.",
+    "specs": {
+      "Wymiary": "4 cm x 2 cm",
+      "Waga": "16g netto / 19g brutto",
+      "Zapięcie": "angielskie",
+      "Model": "KST3575"
+    },
+    "material": "Stal szlachetna, pozłacane 14K złotem",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "34153",
+    name:" Kolczyki ze stali - Okręgi perłowe 3,5 cm",
+    "price": "99.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34153",
+    "image": "https://hurt.ecarla.pl/201898-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okregi-perelkowe-35-cm-kst3576.jpg",
+    "description": "Stylowe kolczyki - okręgi perełkowe platerowane 14-karatowym złotem.",
+    "specs": {
+      "Wymiary": "2,8 cm x 2 cm",
+      "Waga": "10g netto / 12g brutto",
+      "Zapięcie": "angielskie",
+      "Model": "KST3576"
+    },
+    "material": "Stal szlachetna, pozłacane 14K złotem",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "34154",
+    name:" Kolczyki ze stali - Okręgi z cyrkoniami",
+    "price": "89.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34154",
+    "image": "https://hurt.ecarla.pl/201922-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okregi-z-cyrkoniami-kst3630.jpg",
+    "description": "Subtelne okręgi z cyrkoniami, platerowane 14-karatowym złotem.",
+    "specs": {
+      "Wymiary": "1,2 cm x 0,2 cm",
+      "Waga": "2g netto / 5g brutto",
+      "Zapięcie": "angielskie",
+      "Model": "KST3630"
+    },
+    "material": "Stal szlachetna, pozłacane 14K złotem",
+    "availability": "W magazynie"
+  },
+  
+  {
+    "id": "34354",
+    name:" Kolczyki ze stali - Cyrkoniowe łezki",
+    "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34354",
+    "image": "https://hurt.ecarla.pl/202866-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-lezki-kst3447.jpg",
+    "description": "Eleganckie i stylowe kolczyki.",
+    "specs": {
+      "Wymiary": "1cm x 1,6cm",
+      "Waga": "4g netto / 5g brutto",
+      "Zapięcie": "sztyft",
+      "Model": "KST3447"
+    },
+    "material": "Stal szlachetna, platerowane 14K złotem",
+    "availability": "W magazynie"
+  },
+
+  {
+    "id": "34479",
+    name:" Kolczyki ze stali - Wiszące kokardki",
+    "price": "94,99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34479",
+    "image": "https://hurt.ecarla.pl/203435-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonia-wiszace-koraliki-kst3642.jpg",
+    "description": "Eleganckie i stylowe kolczyki damskie.",
+    "specs": {
+      "Wymiary": "Długość całkowita: 6cm; Kwadracik: 0,6cm x 0,6cm",
+      "Waga": "4g netto / 6g brutto",
+      "Zapięcie": "sztyft",
+      "Model": "KST3642"
+    },
+    "material": "Stal szlachetna, pozłacane 14K złotem",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "34121",
+    name:" Kolczyki ze stali - Kły z perłą",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34121",    
+    "image": "https://hurt.ecarla.pl/201776-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-perła-kst3550.jpg",
+    "description": [
+      "Eleganckie i stylowe kolczyki z perłami, wykonane platerowanej 14-karatowym złotem.",
+      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Wymiary": "2 cm x 1,8 cm",
+      "Waga": "4g netto / 6g brutto",
+      "Model": "KST3550"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  }
+,
+  {
+    "id": "34133",
+    name:" Kolczyki ze stali - Kryształki",
+    "price": "89.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34133",
+    "image": "https://hurt.ecarla.pl/201796-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-krysztalki-kst3546.jpg",
+    "description": [
+      "Eleganckie i stylowe kolczyki z kryształkami, wykonane platerowanej 14-karatowym złotem.",
+      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Wymiary": "1,5 cm x 0,8 cm",
+      "Waga": "6g netto / 9g brutto",
+      "Model": "KST3546",
+      "Zapięcie": "angielskie"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  
+  
+
+  {
+    "id": "34137",
+    name:" Kolczyki ze stali - Koła 3,5 cm",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/34137",
+    "image": "https://hurt.ecarla.pl/201949-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kola-35-cm-kst3626.jpg",
+    "description": [
+      "Eleganckie i stylowe kolczyki w kształcie kół o średnicy 3,5 cm, wykonane platerowanej 14-karatowym złotem.",
+      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Wymiary": "3,5 cm",
+      "Waga": "5g netto / 8g brutto",
+      "Model": "KST3626",
+      "Zapięcie": "angielskie"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+
+
+  {
+    "id": "33462",
+    name:" Kolczyki ze stali - Muszelki z perełkami",
+    "price": "89.99 zł",
+    "oldPrice": "109.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33462",
+    "image": "https://hurt.ecarla.pl/198051-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kst3521.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "2,6 x 1 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3521" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+
+  {
+    "id": "33465",
+    name:" Kolczyki ze stali - Łańcuszki z perłą ",
+    "price": "99.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33465",
+    "image": "https://hurt.ecarla.pl/198057-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-z-perla-kst3522.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "4,8 x 0,8 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3522" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "33466",
+    name:" Kolczyki ze stali - Trzy półkola ",
+    "price": "89.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33466",
+    "image": "https://hurt.ecarla.pl/198059-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kst3516.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "1,5 x 1,2 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3516" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "33472",
+    name:" Kolczyki ze stali - Pięciokąty  ",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33472",
+    "image": "https://hurt.ecarla.pl/198081-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kst3517.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": { "WYMIARY": "2,2 x 1,5 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3517" },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie"
+  },
+
+
+ 
+  
+  {
+    "id": "33750",
+    name:" Kolczyki ze stali - Cyrkonie",
+    "price": "89.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33750",
+    "image": "https://hurt.ecarla.pl/199751-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-z-cyrkoniami-kst3536.jpg",
+    "description": [
+      "Kolczyki damskie platerowane złotem z cyrkoniami.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Wymiary": "0,9 cm x 0,9 cm x 0,3 cm",
+      "Waga": "2g netto / 4g brutto",
+      "Model": "KST3536"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/199734-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-z-cyrkoniami-kst3536.jpg"
+  },
+  
+  
+  {
+    "id": "33878",
+    name:" Kolczyki ze stali - Wieże",
+    "price": "99.99 zł",
+    "oldPrice": "109.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/33878",
+    "image": "https://hurt.ecarla.pl/200254-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-cyrkonie-kst2225.jpg",
+    "description": [
+      "Eleganckie i stylowe kolczyki ze stali chirurgicznej platerowanej 14-karatowym złotem.",
+      "Zapięcie typu sztyft. Produkt marki Xuping."
+    ],
+    "specs": {
+      "Wymiary": "1,9 cm x 0,8 cm x 0,9 cm",
+      "Waga": "2g netto / 5g brutto",
+      "Model": "KST2225"
+    },
+    "material": "Biżuteria ze stali chirurgicznej",
+    "color": "Jasne złoto",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/200250-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-cyrkonie-kst2225.jpg"
+  },
+{
+        id: "22318",
+        name:" Kolczyki ze stali i Przy uchu",
+        price: "79.99 zł",
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/22318",
+        image: "https://hurt.ecarla.pl/138031-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyft-kst2163.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki.",
+            "WYMIARY:",
+            "1,2 x 1,0 cm",
+            "rodzaj zapięcia: sztyft",
+            "Producent Xuping"
+        ],
+        specs: {
+            "Model": "KST2163"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
+        color: "Pozłacany",
+        availability: "W magazynie",
+        image2: null,
+        image3: null
+    }, 
+    { 
+        id: "24143",    
+    name:" Kolczyki ze stali - Torby",
+    price: "99.99 zł", 
+    category: "stal",
+    subCategory: "pozlacane",
+    url: "/product/24143",
+    image: "https://hurt.ecarla.pl/145647-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-kst3011.jpg",
+    description: [
+      "Eleganckie kolczyki wykonane z wysokiej jakości stali chirurgicznej, pokryte warstwą złota.",
+      "Klasyczny design sprawia, że idealnie pasują zarówno do wieczorowych kreacji, jak i codziennego looku.",
+      "Produkt w 100% antyalergiczny – bezpieczny dla delikatnej skóry, nie ciemnieje podczas użytkowania."
+    ],
+    specs: {
+      "Rodzaj zapięcia": "Angielskie",
+      "Materiał wykonania": "Stal chirurgiczna 316L",
+      "Model": "KST3011" 
+    },
+    material: "Stal chirurgiczna", 
+    color: "Złoty", 
+    availability: "W magazynie", 
+    image2: "https://hurt.ecarla.pl/145647-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-kst3011.jpg", // duplikaty linków zabezpieczone pod galerię
+    image3: "https://hurt.ecarla.pl/145647-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-kst3011.jpg"
+  },
+ ,{ 
+    id: "25783",    
+    name:" Kolczyki ze stali - Kręcone ",
+    price: "99.99 zł", 
+    category: "stal",
+    subCategory: "pozlacane",
+    url: "/product/25783",
+    image: "https://hurt.ecarla.pl/152784-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst3114.jpg",
+    description: [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem. Eleganckie i stylowe.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje.",
+      "Wysokiej jakości produkt od zaufanego producenta Xuping."
+    ],
+    specs: {
+        "Wymiary": "3,5 x 3,5 cm",
+        "Waga": "18 g",
+        "Rodzaj zapięcia": "Bigiel zamknięty",
+        "Producent": "Xuping",
+        "Model": "KST3114" 
+    },
+    material: "Stal chirurgiczna", 
+    color: "Jasne złoto", 
+    availability: "W magazynie", 
+    image2: "",
+    image3: ""
+},
+{ 
+    id: "31217",    
+    name:" Kolczyki ze stali - Zawijane cyrkonie ",
+    price: "79.99 zł",
+    oldPrice: "89.99 zł",
+    category: "stal",
+    subCategory: "pozlacane",
+    url: "/product/31217", 
+    image: "https://hurt.ecarla.pl/184503-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-z-cyrkoniami-sztyft-srebro-s925-kst3327.jpg",
+    description: [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
+      "Eleganckie i stylowe kolczyki.",
+      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    specs: {
+      "Wymiary": "2cm x 1,2cm x 1,7cm",
+      "Wymiar kartonika": "6cm x 5,5 cm",
+      "Waga": "4g netto / 7g brutto",
+      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
+      "Rodzaj zapięcia": "Sztyft ze srebra S925",
+      "Dodatki": "Cyrkonie",
+      "Model": "KST3327" 
+    },
+    material: "Stal chirurgiczna", 
+    color: "Jasne złoto", 
+    availability: "W magazynie", 
+    image2: "https://hurt.ecarla.pl/184160-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-z-cyrkoniami-sztyft-srebro-s925-kst3327.jpg",
+    image3: "https://hurt.ecarla.pl/184162-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-z-cyrkoniami-sztyft-srebro-s925-kst3327.jpg"
+  },
+  { 
+        id: "16793", 
+        name:" Kolczyki ze stali - Dwa świderki",
+        price: "99.93 zł",
+        category: "stal",
+        "subCategory": "pozlacane",
+        url: "/product/16793", 
+        image: "https://hurt.ecarla.pl/115303-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyfty-kst1891.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
+            "Eleganckie i stylowe kolczyki."
+        ],
+        specs: {
+            "Wymiary": "2,8 x 1,3 cm",
+            "Model": "KST1891"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
+        color: "Pozłacany", 
+        availability: "W magazynie", 
+        image2: null
+    },
+    
+      
+        { 
+        id: "17107", 
+        name:" Kolczyki ze stali - Minigwiazdki",
+        price: "89.30 zł", 
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/17107",
+        image: "https://hurt.ecarla.pl/116600-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-kst1925.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
+            "Eleganckie i stylowe kolczyki."
+        ],
+        specs: {
+            "Wymiary": "4,2 x 1,8 cm",
+            "Model": "KST1925"
+        },
+        material: "Biżuteria ze stali chirurgicznej", 
+        color: "Pozłacany", 
+        availability: "W magazynie", 
+        image2: null
+    },
+     
+     { 
+        id: "17377", 
+        name:" Kolczyki ze stali - Piękne",
+        price: "89.99 zł", 
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/17377",
+        image: "https://hurt.ecarla.pl/117803-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst1992.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
+            "Eleganckie i stylowe kolczyki.",
+            "Producent Xuping."
+        ],
+        specs: {
+            "Średnica produktu": "0,6 cm",
+            "Rodzaj zapięcia": "Sztyft",
+            "Model": "KST1992"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
+        color: "Pozłacany", 
+        availability: "W magazynie", 
+        image2: "https://hurt.ecarla.pl/117802-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst1992.jpg",
+        image3: null
+    },
+      { 
+        id: "18848", 
+        name:" Kolczyki ze stali - Skrzydła Aasterixa",
+        price: "89.00 zł", 
+        oldPrice: "99.00 zł",
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/18848",
+        image: "https://hurt.ecarla.pl/123946-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2238.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. WYMIARY:",
+            "wymiary produktu: 1,9 cm  x 0,4 cm",
+            "rodzaj zapięcia: sztyft producent: Xuping"
+        ],
+        specs: {
+            "Model": "KST2238"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
+        color: "Pozłacany", 
+        availability: "W magazynie", 
+        image2: null,
+        image3: null
+    },
+     { 
+        id: "18851", 
+        name:" Kolczyki ze stali - Kajdanki ",
+        price: "84.99 zł", 
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/18851",
+        image: "https://hurt.ecarla.pl/123951-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2232.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. WYMIARY:",
+            "wymiary produktu: 2,3 cm  x 1,2 cm",
+            "rodzaj zapięcia: sztyft producent: Xuping"
+        ],
+        specs: {
+            "Model": "KST2232"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
+        color: "Pozłacany", 
+        availability: "W magazynie", 
+        image2: null,
+        image3: null
+    },
+        { 
+        id: "18868", 
+        name:" Kolczyki ze stali - Kropelki ",
+        price: "84.99 zł", 
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/18868",
+        image: "https://hurt.ecarla.pl/123986-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2224.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. WYMIARY:",
+            "wymiary produktu: 0,1 cm  x 0,1 cm",
+            "rodzaj zapięcia: sztyft producent: Xuping"
+        ],
+        specs: {
+            "Model": "KST2224"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
+        color: "Pozłacany", 
+        availability: "W magazynie", 
+        image2: null,
+        image3: null
+    },
+    { 
+        id: "19772", 
+        name:" Kolczyki ze stali - Symetryczne koła",
+        price: "89.99 zł", 
+        oldPrice: "99.99 zł",
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/19772",
+        image: "https://hurt.ecarla.pl/127544-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2449.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. WYMIARY:",
+            "średnica produktu:  1 x 1 cm",
+            "rodzaj zapięcia: Sztyft",
+            "Producent Xuping"
+        ],
+        specs: {
+            "Model": "KST2449"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
+        color: "Pozłacany", 
+        availability: "W magazynie", 
+        image2: null,
+        image3: null
+    },
+     {
+    "id": "23769",
+    name:" Kolczyki ze stali - Szkielety muszelki",
+    "price": "79.46 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/23769",
+    "image": "https://hurt.ecarla.pl/143940-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2953.jpg",
+    "description": [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem Eleganckie i stylowe kolczyki.Kolor: jasne złotoWYMIARY:3  cm x 1,5cm rodzaj zapięcia: sztyftProducent Xuping"
+    ],
+    "specs": {
+      "Model": "KST2953",
+      "EAN": "5903678556785"
+    },
+    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
+    "color": "Pozłacany",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/144116-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2953.jpg",
+    "image3": null
+  },
+  { 
+    id: "6012", 
+    name: "Kolczyki ze stali - Mini słońce",
+    category: "stal",
+    subCategory : "pozlacane",
+    price: "99.99 zł", 
+    url: "/product/6012",
+    image: "https://hurt.ecarla.pl/67291-large_default/kolczyki-stal-chirurgiczna-kst618.jpg",
+    description: [
+        "Eleganckie i subtelne kolczyki damskie wykonane z wysokiej jakości stali.",
+        "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    specs: {
+        "Wysokość": "0,7 cm",
+        "Szerokość": "ok. 0,8 cm",
+        "Model": "KST618"
+    },
+    material: "Stal chirurgiczna", 
+    color: "Złoty", 
+    availability: "W magazynie", 
+    image2: "https://hurt.ecarla.pl/67292-large_default/kolczyki-stal-chirurgiczna-kst618.jpg"
+},{ 
+    id: "28679",    
+    name:" Kolczyki ze stali - Pełnia księżyca ",
+    price: "79.96 zł",
+    oldPrice: "89.96 zł",
+    category: "stal",
+    subCategory: "pozlacane",
+    url: "/product/28679", 
+    image: "https://hurt.ecarla.pl/167622-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3115.jpg",
+    description: [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
+      "Eleganckie i stylowe kolczyki.",
+      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    specs: {
+      "Wymiary": "1,8 x 1,8 cm",
+      "Waga": "11 g",
+      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
+      "Rodzaj zapięcia": "Sztyft",
+      "Producent": "Xuping",
+      "Model": "KST3115" 
+    },
+    material: "Stal chirurgiczna", 
+    color: "Jasne złoto", 
+    availability: "W magazynie", 
+    image2: "",
+    image3: ""
+  },
+  {
+    "id": "24110",
+    name:" Kolczyki ze stali - Makarony",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/24110",
+    "image": "https://hurt.ecarla.pl/145556-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2999.jpg",
+    "description": [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+      "Eleganckie i stylowe kolczyki.",
+      "Kolor: Jasne złoto WYMIARY:",
+      "0,8 x 2 cm",
+      "rodzaj zapięcia: angielskie zapięcie",
+      "Producent inny",
+      "Waga: 4g STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Model": "KST2999",
+      "EAN": "5903678559663"
+    },
+    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
+    "color": "Pozłacany",
+    "availability": "W magazynie",
+    "image2": null,
+    "image3": null
+  },
+  { 
+    id: "31224",    
+    name: "Kolczyki ze stali - Wisienki perełki",
+    price: "79.99 zł",
+    category: "stal",
+    subCategory: "pozlacane",
+    url: "/product/31224", 
+    image: "https://hurt.ecarla.pl/184416-large_default/kolczyki-wisienki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-cyrkonie-sztyft-srebro-s925-perly-kst3334.jpg",
+    description: [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
+      "Eleganckie i stylowe kolczyki.",
+      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    specs: {
+      "Wymiary": "1,7cm x 1,2",
+      "Wymiar kartonika": "6cm x 5,5 cm",
+      "Waga": "2g netto / 4g brutto",
+      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
+      "Rodzaj zapięcia": "Sztyft ze srebra S925",
+      "Motyw": "Wisienki",
+      "Dodatki": "Cyrkonie, perły",
+      "Producent": "Inny",
+      "Model": "KST3334" 
+    },
+    material: "Stal chirurgiczna", 
+    color: "Złoto", 
+    availability: "W magazynie", 
+    image2: "https://hurt.ecarla.pl/184264-large_default/kolczyki-wisienki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-cyrkonie-sztyft-srebro-s925-perly-kst3334.jpg",
+    image3: "https://hurt.ecarla.pl/184261-large_default/kolczyki-wisienki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-cyrkonie-sztyft-srebro-s925-perly-kst3334.jpg"
+  },{
+    "id": "31541",
+    name:" Kolczyki ze stali - Gruby makaron",
+    "price": "79.99 zł",
+    "oldPrice": "99.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/31541",
+    "image": "https://hurt.ecarla.pl/186711-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-grube-kola-sztyft-kst3324.jpg",
+    "description": [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
+      "Eleganckie i stylowe kolczyki.",
+      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "WYMIARY": "2,5cm x 2,5cm x 0,7cm",
+      "Wymiar kartonika": "6cm x 5,5 cm",
+      "Waga": "8g netto / 11g brutto",
+      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
+      "Rodzaj zapięcia": "Sztyft (sztyft ze srebra S925)",
+      "Producent": "Inny",
+      "Model": "KST3324"
+    },
+    "material": "Stal chirurgiczna",
+    "color": "Złoto",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/186596-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-grube-kola-sztyft-kst3324.jpg",
+    "image3": "https://hurt.ecarla.pl/186595-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-grube-kola-sztyft-kst3324.jpg"
+  },
+   {
+    "id": "23716",
+    name:" Kolczyki ze stali - Wiszące skrzydła ",
+    "price": "79.88 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/23716",
+    "image": "https://hurt.ecarla.pl/143816-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyfty-kst2064.jpg",
+    "description": [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+      "Eleganckie i stylowe kolczyki. WYMIARY:",
+      "4,0 x 0,9 cm",
+      "rodzaj zapięcia: sztyft",
+      "Producent Xuping"
+    ],
+    "specs": {
+      "Model": "KST2064",
+      "EAN": "5903678539122"
+    },
+    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
+    "color": "Pozłacany",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/143815-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyfty-kst2064.jpg",
+    "image3": "https://hurt.ecarla.pl/143817-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyfty-kst2064.jpg"
+  },
+  {
+    "id": "23719",
+    name:" Kolczyki ze stali - Latające ważki ",
+    "price": "79.66 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/23719",
+    "image": "https://hurt.ecarla.pl/143823-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2916.jpg",
+    "description": [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+      "Eleganckie i stylowe kolczyki. Kolor:  Jasne złoto Wymiary:",
+      "0,9 x 0,9 cm",
+      "Rodzaj zapięcia: sztyft STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Model": "KST2916",
+      "EAN": "5903678552541"
+    },
+    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
+    "color": "Pozłacany",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/145641-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2916.jpg",
+    "image3": null
+  },
+  {
+    "id": "23722",
+    name:" Kolczyki ze stali - Świderkowy owal",
+    "price": "79.78 zł",
+    "oldPrice": "89.78 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/23722",
+    "image": "https://hurt.ecarla.pl/143832-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2926.jpg",
+    "description": [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+      "Eleganckie i stylowe kolczyki. Kolor:  Jasne złoto Wymiary:",
+      "0,9 x 0,9 cm",
+      "Rodzaj zapięcia: sztyft STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Model": "KST2926",
+      "EAN": "5903678552657"
+    },
+    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
+    "color": "Pozłacany",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/143830-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2926.jpg",
+    "image3": "https://hurt.ecarla.pl/143829-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2926.jpg"
+  },{ 
+        id: "19786", 
+        name:" Kolczyki ze stali - Wiszące gwiazdki",
+
+        price: "89.65 zł", 
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/19786",
+        image: "https://hurt.ecarla.pl/127573-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2433.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. WYMIARY:",
+            "średnica produktu: 3 x 1 cm",
+            "rodzaj zapięcia: Zapięcie angielskie",
+            "Producent Xuping"
+        ],
+        specs: {
+            "Model": "KST2433"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
+        color: "Pozłacany", 
+        availability: "W magazynie", 
+        image2: null,
+        image3: null
+    },  {
+    "id": "23741",
+    name:" Kolczyki ze stali - Zielono widmo",
+    "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/23741",
+    "image": "https://hurt.ecarla.pl/143930-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2976.jpg",
+    "description": [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+      "Eleganckie i stylowe kolczyki. Kolor:  Jasne złoto Wymiary:",
+      "1,9 x 0,4 cm",
+      "Rodzaj zapięcia: sztyft STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Model": "KST2976",
+      "EAN": "5903678556792"
+    },
+    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
+    "color": "Pozłacany",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/143931-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2976.jpg",
+    "image3": null
+  },
+ {
+        id: "22314",
+        name: "Kolczyki ze stali - Kółko mini cyrkonie",
+        price: "79.24 zł",
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/22314",
+        image: "https://hurt.ecarla.pl/138026-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyft-kst2143.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. WYMIARY:",
+            "1,2 cm rodzaj zapięcia: sztyft",
+            "Producent Xuping"
+        ],
+        specs: {
+            "Model": "KST2143",
+            "EAN": "5903678537654"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
+        color: "Pozłacany",
+        availability: "W magazynie",
+        image2: "https://hurt.ecarla.pl/138027-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyft-kst2143.jpg",
+        image3: null
+    },
+     {
+        id: "22308",
+        name:" Kolczyki ze stali - Skrzydła czarne",
+        price: "79.55 zł",
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/22308",
+        image: "https://hurt.ecarla.pl/138018-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2091.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 18 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. WYMIARY:",
+            "wymiary produktu: 1,5 0,7 cm",
+            "rodzaj zapięcia: sztyft",
+            "Producent Xuping"
+        ],
+        specs: {
+            "Model": "KST2091",
+            "EAN": "5903678541149"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
+        color: "Pozłacany",
+        availability: "W magazynie",
+        image2: null,
+        image3: null
+    },{
+        id: "22183",
+        name:" Kolczyki ze stali - Kółko i ozdoby",
+        price: "104.23 zł",
+        oldPrice: "119.23 zł",
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/22183",
+        image: "https://hurt.ecarla.pl/137589-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2818.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. WYMIARY:",
+            "7 x 1,8 cm",
+            "rodzaj zapięcia: sztyft",
+            "Producent Xuping"
+        ],
+        specs: {
+            "Model": "KST2818"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
+        color: "Pozłacany",
+        availability: "W magazynie",
+        image2: null,
+        image3: null
+    },
+    {
+        id: "22197",
+        name:" Kolczyki ze stali - Wiszące kwadraty",
+        price: "104.99 zł",
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/22197",
+        image: "https://hurt.ecarla.pl/137617-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2832.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. WYMIARY:",
+            "6,5 x 1 cm",
+            "rodzaj zapięcia: sztyft",
+            "Producent Xuping"
+        ],
+        specs: {
+            "Model": "KST2832"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
+        color: "Pozłacany",
+        availability: "W magazynie",
+        image2: null,
+        image3: null
+    },
+    {
+        id: "22307",
+        name:" Kolczyki ze stali - Kółka z siatką",
+        price: "79.96 zł",
+        oldPrice: "89.96 zł",
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/22307",
+        image: "https://hurt.ecarla.pl/138017-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2090.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 18 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. WYMIARY:",
+            "wymiary produktu: 1,2 x 1,2 cm",
+            "rodzaj zapięcia: sztyft",
+            "Producent Xuping"
+        ],
+        specs: {
+            "Model": "KST2090"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
+        color: "Pozłacany",
+        availability: "W magazynie",
+        image2: null,
+        image3: null
+    },
+   
+    { 
+    id: "H_34487", // Oryginalne ID z hurtowni (zostaje do zamówień!)
+    name: "Kolczyki ze stali - Okrągłe kwadraty",
+    category: "stal",
+    "subCategory": "pozlacane",
+    price: "99.99 zł",
+    image: "https://hurt.ecarla.pl/203436-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okragle-kwadrat-kst3653.jpg",
+    url: "/product/H_34487", // URL przekazuje ID do komponentu ProductDetail
+    description: [
+        "Kolczyki damskie. Eleganckie i stylowe kolczyki.",
+        "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    // Zmienione ze 'specs' na 'desc', aby pasowało do Twojej tablicy produktów!
+    specs: {
+        "Wymiar kolczyków": "1,1cm x 1,1 cm (Kwadracik: 0,4cm x 0,4cm)",
+        "Wymiar kartonika": "5,5cm x 6cm",
+        "Waga": "2g netto / 4g brutto",
+        "Kolor": "jasne złoto",
+        "Rodzaj zapięcia": "sztyft zatrzaskowy",
+        "Model": "KST3653"
+    },
+    material: "Stal chirurgiczna",
+    color: "Jasne złoto", 
+    availability: "W magazynie",
+    image2: null
+},
+
+ { 
+        id: "19010", 
+        name: "Kolczyki ze stali - Nausznica",
+        price: "109.6 zł", 
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/19010",
+        image: "https://hurt.ecarla.pl/124527-large_default/-kolczyk-nausznica-ze-stali-szlachetnej-pozlacanej-kst2280-1-sztuka.jpg",
+        description: [
+            "Kolczyki ze stali CHIRURGICZNEJ PLATEROWANEJ 14 KARATOWYM ZŁOTEM ",
+            "Eleganckie i stylowe kolczyki. WYMIARY:",
+            "wymiary produktu:",
+            "element 1: 2.2 cm x 1 cm",
+            "element 2: 3,5 cm średnicy",
+            "rodzaj zapięcia: sztyft",
+            "producent: Xuping"
+        ],
+        specs: {
+            "Model": "KST2280"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
+        color: "Pozłacany", 
+        availability: "W magazynie", 
+        image2: null,
+        image3: null
+        },
+
+    { 
+    id: "26039",    
+    name:" Kolczyki ze stali - Różowy akcent",
+    price: "79.99 zł", 
+    category: "stal",
+    subCategory: "pozlacane",
+    url: "/product/26039",
+    image: "https://hurt.ecarla.pl/153777-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst3043r.jpg",
+    description: [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
+      "Eleganckie i stylowe kolczyki.",
+      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    specs: {
+      "Wymiary": "Długość: 1,3 cm, Szerokość: 0,3 cm",
+      "Waga": "4 g",
+      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
+      "Rodzaj zapięcia": "Angielskie",
+      "Model": "KST3043R" 
+    },
+    material: "Stal chirurgiczna", 
+    color: "Jasne złoto", 
+    availability: "W magazynie", 
+    image2: "",
+    image3: ""
+  },
+  {
+    "id": "32252",
+    name:" Kolczyki ze stali - Śnieżki w okręgu",
+    "price": "69.99 zł",
+    "oldPrice": "79.99 zł",
+    "category": "stal",
+    
+    "subCategory": "pozlacane",
+    "url": "/product/32252",
+    "image": "https://hurt.ecarla.pl/191512-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kst2093.jpg",
+    "description": [
+      "Kolczyki damskie.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "WYMIARY": "1,2 cm x 1,2 cm",
+      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
+      "Model": "KST2093"
+    },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/191513-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kst2093.jpg",
+    "image3": null
+  },
+
+  {
+    "id": "32275",
+    name:" Kolczyki ze stali - Figurki",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/32275",
+    "image": "https://hurt.ecarla.pl/191588-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3001.jpg",
+    "description": [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "WYMIARY": "1,5 x 7,5 cm",
+      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
+      "Model": "KST3001"
+    },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/191587-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3001.jpg",
+    "image3": null
+  },
+  {
+    "id": "32276",
+    name:" Kolczyki ze stali - Wisząca kropla perła",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/32276",
+    "image": "https://hurt.ecarla.pl/191590-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3002.jpg",
+    "description": [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
+      "Eleganckie i stylowe kolczyki.",
+      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "WYMIARY": "1,9 x 6 cm",
+      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
+      "Model": "KST3002"
+    },
+    "material": "Stal chirurgiczna",
+    "color": "Jasne złoto",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/191589-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3002.jpg",
+    "image3": null
+  },
+{
+    "id": "23745",
+    name:" Kolczyki ze stali - Czarna perła",
+    "price": "74.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/23745",
+    "image": "https://hurt.ecarla.pl/143913-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2931cz.jpg",
+    "description": [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+      "Eleganckie i stylowe kolczyki. Kolor:  Jasne złoto Wymiary:",
+      "Długość: 2 cm",
+      "średnica kółka 1,4 cm  Rodzaj zapięcia: sztyft STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Model": "KST2931CZ",
+      "EAN": "5903678556501"
+    },
+    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
+    "color": "Pozłacany",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/144122-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2931cz.jpg",
+    "image3": null
+  },
+  {
+    "id": "23747",
+    name:" Kolczyki ze stali - Gwiazdka różowa cyrkonia",
+    "price": "79.93 zł",
+    "oldPrice": "89.93 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/23747",
+    "image": "https://hurt.ecarla.pl/143923-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2971.jpg",
+    "description": [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem Eleganckie i stylowe kolczyki.Kolor:  Jasne złotoWymiary:1,2 cm x 1 cm Rodzaj zapięcia: sztyftSTAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Model": "KST2971",
+      "EAN": "5903678556815"
+    },
+    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
+    "color": "Pozłacany",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/143868-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2971.jpg",
+    "image3": null
+  },
+  
+  {
+    "id": "23765",
+    name:" Kolczyki ze stali - Mini ważka",
+    "price": "89.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "/product/23765",
+    "image": "https://hurt.ecarla.pl/143938-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2947.jpg",
+    "description": [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+      "Eleganckie i stylowe kolczyki. Kolor: jasne złoto",
+      "WYMIARY:",
+      "6 cm x 3 cm ",
+      "rodzaj zapięcia: sztyft Producent Xuping"
+    ],
+    "specs": {
+      "Model": "KST2947",
+      "EAN": "5903678556440"
+    },
+    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
+    "color": "Pozłacany",
+    "availability": "W magazynie",
+    "image2": "https://hurt.ecarla.pl/143939-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2947.jpg",
+    "image3": null
+  },
+   { 
+    id: "26233",    
+    name:" Kolczyki ze stali - Skrzydła anioła",
+    price: "79.99 zł", 
+    category: "stal",
+    subCategory: "pozlacane",
+    url: "/product/26233",
+    image: "https://hurt.ecarla.pl/154766-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3176.jpg",
+    description: [
+      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
+      "Eleganckie i stylowe kolczyki.",
+      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    specs: {
+      "Wymiary": "1 x 2 cm",
+      "Waga": "1 g",
+      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
+      "Rodzaj zapięcia": "Sztyft",
+      "Model": "KST3176" 
+    },
+    material: "Stal chirurgiczna", 
+    color: "Jasne złoto", 
+    availability: "W magazynie", 
+    image2: "",
+    image3: ""
+  },
+ {
+        id: "21201",
+        name:" Kolczyki ze stali - Wiszące skrzydełka",
+        price: "79.9 zł",
+        oldPrice: "89.9 zł",
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/21201",
+        image: "https://hurt.ecarla.pl/133940-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2644.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. Kolor:  Jasne złoto Wymiary:",
+            "10,0 x 0,5 cm",
+            "Rodzaj zapięcia: sztyft STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje. Producent: Xuping"
+        ],
+        specs: {
+            "Model": "KST2644"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
+        color: "Pozłacany",
+        availability: "W magazynie",
+        image2: null,
+        image3: null
+    },
+    {
+        id: "20591",
+        name:" Kolczyki ze stali - Czarne pazury",
+        price: "89.9 zł",
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/20591",
+        image: "https://hurt.ecarla.pl/131387-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2605cz.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. Kolor: Jasne Złoto WYMIARY:",
+            "wymiary produktu: 3 x 1,5 cm",
+            "rodzaj zapięcia: Sztyft",
+            "Producent Xuping"
+        ],
+        specs: {
+            "Model": "KST2605CZ"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
+        color: "Pozłacany",
+        availability: "W magazynie",
+        image2: null,
+        image3: null
+    },
+    
+ 
+    {
+        id: "21199",
+        name:" Kolczyki ze stali - Kółka kwiatki",
+        price: "89.9 zł",
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/21199",
+        image: "https://hurt.ecarla.pl/133936-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2642.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem Eleganckie i stylowe kolczyki.Kolor:  Jasne złotoWymiary:1,3 x 1,3 cmRodzaj zapięcia: sztyftSTAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje.Producent: Xuping"
+        ],
+        specs: {
+            "Model": "KST2642"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
+        color: "Pozłacany",
+        availability: "W magazynie",
+        image2: null,
+        image3: null
+    },
+    {
+        id: "20385",
+        name:" Kolczyki ze stali - Pół motylki",
+        price: "79.88 zł",
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/20385",
+        image: "https://hurt.ecarla.pl/130397-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2568.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 18 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. Kolor: Złoto WYMIARY:",
+            "wymiary produktu:  1,7 x 1 cm",
+            "rodzaj zapięcia: Angielskie Zapięcie",
+            "Producent Xuping"
+        ],
+        specs: {
+            "Model": "KST2568"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
+        color: "Pozłacany",
+        availability: "W magazynie",
+        image2: null,
+        image3: null
+    },
+    { 
+        id: "19759", 
+        name:" Kolczyki ze stali - Motylki w kółku",
+        price: "89.96 zł", 
+        category: "stal",
+        subCategory: "pozlacane",
+        url: "/product/19759",
+        image: "https://hurt.ecarla.pl/127516-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2408.jpg",
+        description: [
+            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
+            "Eleganckie i stylowe kolczyki. WYMIARY:",
+            "średnica produktu: 1,2 x 1,2 cm",
+            "rodzaj zapięcia: sztyft",
+            "Producent Xuping"
+        ],
+        specs: {
+            "Model": "KST2408"
+        },
+        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
+        color: "Pozłacany", 
+        availability: "W magazynie", 
+        image2: null,
+        image3: null
+    },
+    
+//   POZLACANE
+
         // PLATEROWANE
          { 
     id: "27872",    
@@ -33,7 +2384,8 @@
          {
     "id": "34115",
     name:" Kolczyki ze stali - Kokardka z kryształem",
-    "price": "99.99 zł",
+    "price": "89.99 zł",
+    "oldPrice": "99.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
     "url": "/product/34115",
@@ -105,6 +2457,7 @@
     id: "30584",    
     name:" Kolczyki ze stali - zawijane ",
     price: "89.99 zł",
+    oldPrice: "99.99 zł",
     category: "stal",
     "subCategory": "platerowane",
     url: "/product/30584", 
@@ -187,6 +2540,7 @@
     "id": "34323",
     name:" Kolczyki ze stali - w kształcie U",
     "price": "64.99 zł",
+    "oldPrice": "74.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
     "url": "/product/34323",
@@ -269,6 +2623,7 @@
     "id": "31781",
     name:" Kolczyki ze stali - Storczyki",
     "price": "99.99 zł",
+    "oldPrice": "109.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
     url: "/product/31781",
@@ -325,6 +2680,7 @@
     id: "31268",    
     name:" Kolczyki ze stali - Wiszące perły",
     price: "89.99 zł", 
+    oldPrice: "99.99 zł",
     category: "stal",
     "subCategory": "platerowane",
     url: "/product/31268",
@@ -528,6 +2884,7 @@
     id: "31031",    
     name:" Kolczyki ze stali - Żagle ",
     price: "89.99 zł",
+    oldPrice: "99.99 zł",
     category: "stal",
     "subCategory": "platerowane",
     url: "/product/31031",
@@ -701,6 +3058,7 @@
     id: "26317",    
     name:" Kolczyki ze stali - Półkola",
     price: "99.99 zł",
+    oldPrice: "109.99 zł",
         category: "stal",
         "subCategory": "platerowane",
     url: "/product/26317", 
@@ -864,6 +3222,7 @@
     "id": "34337",
     name:" Kolczyki ze stali - Perła",
     "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
     "url": "/product/34337",
@@ -956,6 +3315,7 @@
     "id": "34297",
     name:" Kolczyki ze stali - Podwójne perełki",
     "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
     "url": "/product/34297",
@@ -1078,6 +3438,7 @@
     "id": "34130",
     name:" Kolczyki ze stali - Owale",
     "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
     "url": "/product/34130",
@@ -1186,6 +3547,7 @@
     "id": "32838",
     name:" Kolczyki ze stali - Piękne muszelki",
     "price": "99.99 zł",
+    "oldPrice": "109.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
     "url": "/product/32838",
@@ -1376,6 +3738,7 @@
     "id": "34118",
     name:" Kolczyki ze stali - Mini kryształki",
     "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "platerowane",
     "url": "/product/34118",
@@ -1427,6 +3790,7 @@
     id: "29455",    
     name:" Kolczyki ze stali - Wiatraczyki",
     price: "79.99 zł",
+    oldPrice: "89.99 zł",
     category: "stal",
     "subCategory": "platerowane",
     url: "/product/29455", 
@@ -1593,7 +3957,8 @@
     id: "9183", 
     name: "Kolczyki ze stali - Z żółtym złotem",
     category: "stal",
-    price: "94.99 zł", 
+    price: "94.99 zł",
+    oldPrice: "104.99 zł",
     "subCategory": "platerowane",
     url: "/product/9183",
     image: "https://hurt.ecarla.pl/77907-large_default/kolczyki-ze-stali-platerowanej-zoltym-zlotem-kst762.jpg",
@@ -1714,6 +4079,7 @@
     id: "11654", 
     name: "Kolczyki ze stali - Płaskie łezki",
     price: "99.99 zł", 
+    oldPrice: "109.99 zł",
     category: "stal",
     "subCategory": "platerowane",
     url: "/product/11654",
@@ -1795,2327 +4161,6 @@
 
 
 
-// POZŁACANE
-{
-    "id": "34116",
-    name:" Kolczyki ze stali - Perłowe kokardki",
-    "price": "89.99 zł",
-    "category": "stal",
-    "subCategory": "serca-kokardy",
-    "url": "/product/34116",
-    "image": "https://hurt.ecarla.pl/201810-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-perelkowe-kokardki-kst3511.jpg",
-    "description": [
-      "Eleganckie i stylowe kolczyki w kształcie kokardek z perełkami, wykonane platerowanej 14-karatowym złotem.",
-      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Wymiary": "1,4 cm x 1,6 cm",
-      "Waga": "4g netto / 7g brutto",
-      "Model": "KST3511"
-    },
-    "material": "Biżuteria ze stali chirurgicznej",
-    "color": "Jasne złoto",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/201911-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-perelkowe-kokardki-kst3511.jpg"
-  },
-  {
-    "id": "32849",
-    name:" Kolczyki ze stali - Rozmyte serca",
-    "price": "69.99 zł",
-    "category": "stal",
-    "subCategory": "serca-kokardy",
-    "url": "/product/32849",
-    "image": "https://hurt.ecarla.pl/194954-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-zapiecie-sztyfit-kst3436.jpg",
-    "description": [
-      "Kolczyki platerowane 14-karatowym złotem, sztyft.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "WYMIARY": "2 cm x 2 cm",
-      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
-      "Model": "KST3436"
-    },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie",
-    "image2": null,
-    "image3": null
-  },
- 
-
-  
- { 
-    id: "27587",    
-    name:" Kolczyki ze stali - Półksiężyce",
-    price: "89.99 zł",
-        category: "stal",
-        subCategory: "pozlacane",
-    url: "/product/27587", 
-    image: "https://hurt.ecarla.pl/201001-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3171.jpg",
-    description: [
-      "Kolczyki platerowane 14-karatowym złotem.",
-      "Eleganckie i stylowe kolczyki.",
-      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    specs: {
-      "Wymiary": "1,8 cm x 1,8 cm",
-      "Wymiar kartonika z opakowaniem": "6,5 cm x 10,5 cm",
-      "Waga": "15 g netto / 17 g brutto",
-      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
-      "Model": "KST3171" 
-    },
-    material: "Stal chirurgiczna", 
-    color: "Jasne złoto", 
-    availability: "W magazynie", 
-    image2: "",
-    image3: ""
-  },
-{
-    "id": "33882",
-    name:" Kolczyki ze stali - Kulki ",
-    "price": "69.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33882",
-    "image": "https://hurt.ecarla.pl/200261-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-kulki-kst3567.jpg",
-    "description": [
-      "Eleganckie i stylowe kolczyki w kształcie kulek, wykonane ze stali chirurgicznej platerowanej 14-karatowym złotem.",
-      "Zapięcie typu sztyft. Produkt marki Xuping."
-    ],
-    "specs": {
-      "Wymiary": "0,5 cm x 0,5 cm",
-      "Waga": "2g netto / 5g brutto",
-      "Model": "KST3567"
-    },
-    "material": "Biżuteria ze stali chirurgicznej",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  
- { 
-    id: "27591",    
-    name:" Kolczyki ze stali - Krople ",
-    price: "89.99 zł",
-     category: "stal",
-     subCategory: "pozlacane",
-
-    url: "/product/27591", 
-    image: "https://hurt.ecarla.pl/161847-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-wkretki-31-cm-kst3172.jpg",
-    description: [
-      "Kolczyki platerowane 14-karatowym złotem.",
-      "Eleganckie i stylowe kolczyki.",
-      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    specs: {
-      "Wymiary": "1,5 cm x 3,2 cm",
-      "Wymiar kartonika z opakowaniem": "6,5 cm x 9,5 cm",
-      "Waga": "10 g netto / 12 g brutto",
-      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
-      "Rodzaj zapięcia": "Wkrętki / Sztyft",
-      "Model": "KST3172" 
-    },
-    material: "Stal chirurgiczna", 
-    color: "Jasne złoto", 
-    availability: "W magazynie", 
-    image2: "",
-    image3: ""
-  },
- 
- {
-        id: "21985",
-        name:" Kolczyki ze stali - Z szyfrem   ",
-        price: "89.9 zł",
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/21985",
-        image: "https://hurt.ecarla.pl/137031-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2801zie.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. Kolor:  Jasne złoto Wymiary: Średnica: 2cm ",
-            "rodzaj zapięcia:  zapięcie angielskie STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje. Producent: Xuping"
-        ],
-        specs: {
-            "Model": "KST2801ZIE"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
-        color: "Pozłacany",
-        availability: "W magazynie",
-        image2: null,
-        image3: null
-    },
-    {
-        id: "21986",
-        name:" Kolczyki ze stali - Z agatem",
-        price: "89.07 zł",
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/21986",
-        image: "https://hurt.ecarla.pl/137033-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2801cz.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. Kolor:  Jasne złoto Wymiary: Średnica: 2cm ",
-            "rodzaj zapięcia:  zapięcie angielskie STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje. Producent: Xuping"
-        ],
-        specs: {
-            "Model": "KST2801CZ"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
-        color: "Pozłacany",
-        availability: "W magazynie",
-        image2: null,
-        image3: null
-    },
-   
-
-
-  {
-    "id": "34475",
-    name:" Kolczyki ze stali - Brożki ",
-    "price": "69.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34475",
-    "image": "https://hurt.ecarla.pl/203473-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kola-kst3598.jpg",
-    "description": "Eleganckie i stylowe kolczyki damskie.",
-    "specs": {
-      "Wymiary": "2,4cm x 2,5cm x 1,7cm",
-      "Waga": "10g netto / 13g brutto",
-      "Zapięcie": "angielskie",
-      "Model": "KST3598"
-    },
-    "material": "Stal szlachetna, pozłacane 14K złotem",
-    "availability": "W magazynie"
-  },
-
-  {
-    "id": "34477",
-    name:" Kolczyki ze stali - Wiszące z perłą",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34477",
-    "image": "https://hurt.ecarla.pl/203474-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-z-perla-kst3639.jpg",
-    "description": "Eleganckie i stylowe kolczyki damskie.",
-    "specs": {
-      "Wymiary": "1,8cm x 0,7cm x 0,6cm; Perełka: 0,4cm x 0,4cm; Cyrkonia: 0,4cm x 0,4cm",
-      "Waga": "1g netto / 4g brutto",
-      "Zapięcie": "sztyft",
-      "Model": "KST3639"
-    },
-    "material": "Stal szlachetna, pozłacane 14K złotem",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "34478",
-    name:" Kolczyki ze stali - Geometryczne koła",
-    "price": "89,99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34478",
-    "image": "https://hurt.ecarla.pl/203470-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-geometryczna-kropla-kst3641.jpg",
-    "description": "Eleganckie i stylowe kolczyki damskie.",
-    "specs": {
-      "Wymiary": "2cm x 1,4cm x 1,5cm",
-      "Waga": "8g netto / 11g brutto",
-      "Zapięcie": "sztyft",
-      "Model": "KST3641"
-    },
-    "material": "Stal szlachetna, pozłacane 14K złotem",
-    "availability": "W magazynie"
-  },
- {
-    "id": "31761",
-    name:" Kolczyki ze stali - Półowale",
-    "price": "99.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/31761",
-    "image": "https://hurt.ecarla.pl/188325-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-sztyft-srebro-s925-kst3404.jpg",
-    "description": [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
-      "Eleganckie i stylowe kolczyki.",
-      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "WYMIARY": "2,1cm x 2cm x 0,9cm",
-      "Wymiar kartonika": "6cm x 5,5 cm",
-      "Waga": "4g netto / 9g brutto",
-      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
-      "Rodzaj zapięcia": "Sztyft (sztyft ze srebra S925)",
-      "Producent": "Inny",
-      "Model": "KST3404"
-    },
-    "material": "Stal chirurgiczna",
-    "color": "Złoto",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/188322-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-sztyft-srebro-s925-kst3404.jpg",
-    "image3": "https://hurt.ecarla.pl/188324-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-sztyft-srebro-s925-kst3404.jpg"
-  },
- 
-{
-    "id": "33169",
-    name:" Kolczyki ze stali - Prężone koła",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33169",
-    "image": "https://hurt.ecarla.pl/196559-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kola-kst3455.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "1,2 x 3 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3455" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "33170",
-    name:" Kolczyki ze stali - Portójne koła",
-    "price": "99.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33170",
-    "image": "https://hurt.ecarla.pl/196561-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-potrojne-kola-kst3457.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "1,6 x 2,5 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3457" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "33171",
-    name:" Kolczyki ze stali - Podwójny owal",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33171",
-    "image": "https://hurt.ecarla.pl/196554-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-podwojny-owal-kst3458.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "2,5 x 1,1 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3458" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "33172",
-    name:" Kolczyki ze stali - Owale",
-    "price": "89.99  zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33172",
-    "image": "https://hurt.ecarla.pl/196565-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-owalne-kst3459.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "2,5 x 1,8 x 0,4 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3459" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "33173",
-    name:" Kolczyki ze stali - Dekoracyjne",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33173",
-    "image": "https://hurt.ecarla.pl/196563-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-dekoracyjne-kst3461.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "1 x 1 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3461" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-    {
-    "id": "33193",
-    name:" Kolczyki ze stali - Panterka",
-    "price": "89.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33193",
-    "image": "https://hurt.ecarla.pl/196566-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-panterka-kst3448.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "2,8 x 2,3 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3448" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-{ 
-    id: "26230",    
-    name:" Kolczyki ze stali - Kły ",
-    price: "89.99 zł", 
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/26230",
-    image: "https://hurt.ecarla.pl/154762-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3173.jpg",
-    description: [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
-      "Eleganckie i stylowe kolczyki.",
-      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    specs: {
-      "Wymiary": "0,8 x 2,1 cm",
-      "Waga": "5 g",
-      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
-      "Rodzaj zapięcia": "Sztyft",
-      "Model": "KST3173" 
-    },
-    material: "Stal chirurgiczna", 
-    color: "Jasne złoto", 
-    availability: "W magazynie", 
-    image2: "",
-    image3: ""
-  },
-
-  {
-    "id": "33162",
-    name:" Kolczyki ze stali - Wyraziste pozłacane",
-    "price": "89.99 zł",
-
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33162",
-    "image": "https://hurt.ecarla.pl/196471-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wyraziste-nowoczesne-kst3478.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "2,5 x 3 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3478" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "33163",
-    name:" Kolczyki ze stali - Dekoracyjne róż",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33163",
-    "image": "https://hurt.ecarla.pl/196473-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-dekoracyjne-roz-kst3479r.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "2,4 x 2,6 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3479R" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "33164",
-    name:" Kolczyki ze stali - Dekoracyjne czarne",
-    "price": "109.99zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33164",
-    "image": "https://hurt.ecarla.pl/196475-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-dekoracyjne-czarne-kst3479cz.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "2,4 x 2,6 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3479CZ" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-   {
-    "id": "33147",
-    name:" Kolczyki ze stali - Motylki",
-    "price": "99.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33147",
-    "image": "https://hurt.ecarla.pl/196546-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-motylki-kst3491.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "1 x 0,8 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3491" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "33165",
-    name:" Kolczyki ze stali - Dekoracyjne ekru",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33165",
-    "image": "https://hurt.ecarla.pl/196477-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-dekoracyjne-ecru-kst3479b.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "2,4 x 2,6 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3479B" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-
-
-  {
-    "id": "33156",
-    name:" Kolczyki ze stali - Cyrkonie perełki",
-    "price": "109.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33156",
-    "image": "https://hurt.ecarla.pl/196451-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-perly-kst3474.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "2 x 2,5 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3474" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "33159",
-    name:" Kolczyki ze stali - Cyrkonie perły",
-    "price": "99.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33159",
-    "image": "https://hurt.ecarla.pl/196461-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-perly-kst3515.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "1,2 x 2,2 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3515" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "34481",
-    name:" Kolczyki ze stali - Duża kropla",
-    "price": "89,99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34481",
-    "image": "https://hurt.ecarla.pl/203469-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kropla-kst3645.jpg",
-    "description": "Eleganckie i stylowe kolczyki damskie.",
-    "specs": {
-      "Wymiary": "21cm x 1,4cm x 0,6cm",
-      "Waga": "4g netto / 8g brutto",
-      "Zapięcie": "sztyft",
-      "Model": "KST3645"
-    },
-    "material": "Stal szlachetna, pozłacane 14K złotem",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "34482",
-    name:" Kolczyki ze stali - Koła przeplatane",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34482",
-    "image": "https://hurt.ecarla.pl/203472-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kola-przeplatane-kst3646.jpg",
-    "description": "Eleganckie i stylowe kolczyki damskie.",
-    "specs": {
-      "Wymiary": "2,1cm x 2,3cm x 0,3cm",
-      "Waga": "6g netto / 9g brutto",
-      "Zapięcie": "kreol",
-      "Model": "KST3646"
-    },
-    "material": "Stal szlachetna, pozłacane 14K złotem",
-    "availability": "W magazynie"
-  },
-  
-  {
-    "id": "34485",
-    name:" Kolczyki ze stali - Kulki",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34485",
-    "image": "https://hurt.ecarla.pl/203438-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kulki-kst3649.jpg",
-    "description": "Eleganckie i stylowe kolczyki damskie.",
-    "specs": {
-      "Wymiary": "1,5cm x 1,1cm x 1,3cm",
-      "Waga": "8g netto / 11g brutto",
-      "Zapięcie": "sztyft",
-      "Model": "KST3649"
-    },
-    "material": "Stal szlachetna, pozłacane 14K złotem",
-    "availability": "W magazynie"
-  },
-
-  {
-    "id": "34487",
-    name:" Kolczyki ze stali - Okrągłe kwadraty",
-    "price": "79.99 zł",
-    "subCategory": "pozlacane",
-    "category": "stal",
-    "url": "/product/34487",
-    "image": "https://hurt.ecarla.pl/203436-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okragle-kwadrat-kst3653.jpg",
-    "description": "Eleganckie i stylowe kolczyki damskie.",
-    "specs": {
-      "Wymiary": "1,1cm x 1,1cm; Kwadracik: 0,4cm x 0,4cm",
-      "Waga": "2g netto / 4g brutto",
-      "Zapięcie": "sztyft zatrzaskowy",
-      "Model": "KST3653"
-    },
-    "material": "Stal szlachetna, pozłacane 14K złotem",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "33174",
-    name:" Kolczyki ze stali - Okrągłe ",
-    "price": "89.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33174",
-    "image": "https://hurt.ecarla.pl/196564-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okragle-kst3462.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "3 x 1,8 x 0,4 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3462" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-
-  {
-    "id": "33195",
-    name:" Kolczyki ze stali - Wiszące linki",
-    "price": "89.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33195",
-    "image": "https://hurt.ecarla.pl/196572-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kst3446.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "8 x 1 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3446" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-
-  
-
-  {
-    "id": "33204",
-    name:" Kolczyki ze stali - Wiszące linki ",
-    "price": "99.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33204",
-    "image": "https://hurt.ecarla.pl/196577-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-z-perla-kst3437.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "6,8 x 1,2 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3437" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-           { 
-        id: "19067", 
-        name:" Kolczyki ze stali - Motyli niebieskie kamyki",
-        price: "89.87 zł", 
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/19067",
-        image: "https://hurt.ecarla.pl/124653-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2287.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 18 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. WYMIARY:",
-            "wymiary produktu: 1,2 x 1,2 cm",
-            "rodzaj zapięcia: sztyft",
-            "Producent Xuping"
-        ],
-        specs: {
-            "Model": "KST2287"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
-        color: "Pozłacany", 
-        availability: "W magazynie", 
-        image2: null,
-        image3: null
-    },
-    
-  {
-    "id": "34325",
-    name:" Kolczyki ze stali - Krople",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34325",
-    "image": "https://hurt.ecarla.pl/202790-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-krople-kst3670.jpg",
-    "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
-    "specs": {
-      "Wymiary": "1,2cm x 0,7cm x 0,6cm",
-      "Waga": "4g netto / 6g brutto",
-      "Zapięcie": "sztyft",
-      "Model": "KST3670"
-    },
-    "material": "Stal szlachetna, platerowane 14K złotem",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "34326",
-    name:" Kolczyki ze stali - Papryczki",
-    "price": "89.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34326",
-    "image": "https://hurt.ecarla.pl/202792-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst3667.jpg",
-    "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
-    "specs": {
-      "Wymiary": "2cm x 0,9cm x 0,5cm",
-      "Waga": "2g netto / 5g brutto",
-      "Zapięcie": "sztyft",
-      "Model": "KST3667"
-    },
-    "material": "Stal szlachetna, platerowane 14K złotem",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "34327",
-    name:" Kolczyki ze stali - Kule",
-    "price": "89.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34327",
-    "image": "https://hurt.ecarla.pl/203142-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kulki-kst3669.jpg",
-    "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
-    "specs": {
-      "Wymiary": "1,5cm x 1,5cm",
-      "Waga": "8g netto / 11g brutto",
-      "Zapięcie": "sztyft",
-      "Model": "KST3669"
-    },
-    "material": "Stal szlachetna, platerowane 14K złotem",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "34328",
-    name:" Kolczyki ze stali  - Krople nowoczesne",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34328",
-    "image": "https://hurt.ecarla.pl/203088-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-krople-nowoczesne-kst3662.jpg",
-    "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
-    "specs": {
-      "Wymiary": "2,6cm x 2cm x 0,7cm",
-      "Waga": "12g netto / 17g brutto",
-      "Zapięcie": "sztyft",
-      "Model": "KST3662"
-    },
-    "material": "Stal szlachetna, platerowane 14K złotem",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "34329",
-    name:" Kolczyki ze stali - Nowoczesne",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34329",
-    "image": "https://hurt.ecarla.pl/203089-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-nowoczesne-kst3661.jpg",
-    "description": "Eleganckie i stylowe kolczyki platerowane 14-karatowym złotem.",
-    "specs": {
-      "Wymiary": "3cm x 2,1cm x 0,5cm",
-      "Waga": "12g netto / 19g brutto",
-      "Zapięcie": "sztyft",
-      "Model": "KST3661"
-    },
-    "material": "Stal szlachetna, platerowane 14K złotem",
-    "availability": "W magazynie"
-  },
-      {
-    "id": "34489",
-    name:" Kolczyki ze stali - Haczyki",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34489",
-    "image": "https://hurt.ecarla.pl/203384-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-falowane-kola-kst3657.jpg",
-    "description": "Eleganckie i stylowe kolczyki damskie.",
-    "specs": {
-      "Wymiary": "2,4cm x 1,3cm x 0,5cm",
-      "Waga": "4g netto / 6g brutto",
-      "Zapięcie": "sztyft",
-      "Model": "KST3657"
-    },
-    "material": "Stal szlachetna, pozłacane 14K złotem",
-    "availability": "W magazynie"
-  },  {
-    "id": "34480",
-    name:" Kolczyki ze stali - Wiszące kropelki",
-    "price": "94.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34480",
-    "image": "https://hurt.ecarla.pl/203432-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kropelki-kst3643.jpg",
-    "description": "Eleganckie i stylowe kolczyki damskie.",
-    "specs": {
-      "Wymiary": "Długość całkowita: 5,7cm; Kropelka: 0,8cm x 0,5cm",
-      "Waga": "2g netto / 5g brutto",
-      "Zapięcie": "sztyft",
-      "Model": "KST3643"
-    },
-    "material": "Stal szlachetna, pozłacane 14K złotem",
-    "availability": "W magazynie"
-  },
-  
-  {
-    "id": "33751",
-    name:" Kolczyki ze stali - Wiszące blaszki ",
-    "price": "89.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33751",
-    "image": "https://hurt.ecarla.pl/199762-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-perly-efektowne-wiszace-blaszki-kst3505.jpg",
-    "description": [
-      "Eleganckie, wiszące kolczyki damskie z perłami.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Wymiary": "8,5 cm x 3 cm",
-      "Waga": "8g netto / 11g brutto",
-      "Model": "KST3505"
-    },
-    "material": "Biżuteria ze stali chirurgicznej",
-    "color": "Jasne złoto",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/199725-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-perly-efektowne-wiszace-blaszki-kst3505.jpg"
-  },
-
-  {
-    "id": "33753",
-    name:" Kolczyki ze stali - Efektowne wiszące perłki",
-    "price": "89.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33753",
-    "image": "https://hurt.ecarla.pl/199768-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-efektowne-wiszace-perelki-kst3507.jpg",
-    "description": [
-      "Eleganckie, wiszące kolczyki z perełkami.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Wymiary": "8 cm x 1 cm x 0,5 cm",
-      "Waga": "12g netto / 16g brutto",
-      "Model": "KST3507"
-    },
-    "material": "Biżuteria ze stali chirurgicznej",
-    "color": "Jasne złoto",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/199727-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-efektowne-wiszace-perelki-kst3507.jpg"
-  },
-  {
-    "id": "34138",
-    name:" Kolczyki ze stali - Plecione kółka",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34138",
-    "image": "https://hurt.ecarla.pl/201806-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-plecione-kola-kst3627.jpg",
-    "description": [
-      "Eleganckie i stylowe kolczyki w kształcie plecionych kół, wykonane platerowanej 14-karatowym złotem.",
-      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Wymiary": "1,9 cm x 0,2 cm x 1 cm",
-      "Waga": "2g netto / 4g brutto",
-      "Model": "KST3627",
-      "Zapięcie": "angielskie"
-    },
-    "material": "Biżuteria ze stali chirurgicznej",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "34139",
-    name:" Kolczyki ze stali - Płaskie koła",
-    "price": "69.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34139",
-    "image": "https://hurt.ecarla.pl/201808-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-plaskie-kola-kst3628.jpg",
-    "description": [
-      "Eleganckie i stylowe kolczyki w kształcie płaskich kół, wykonane platerowanej 14-karatowym złotem.",
-      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Wymiary": "2,3 cm x 0,2 cm x 1,2 cm",
-      "Waga": "3g netto / 6g brutto",
-      "Model": "KST3628",
-      "Zapięcie": "angielskie"
-    },
-    "material": "Biżuteria ze stali chirurgicznej",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "34140",
-    name:" Kolczyki ze stali - Pączki z cyrkonią",
-    "price": "69.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34140",
-    "image": "https://hurt.ecarla.pl/201921-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kola-cyrkonie-kst3629.jpg",
-    "description": [
-      "Eleganckie i stylowe kolczyki w kształcie kół z cyrkoniami, wykonane platerowanej 14-karatowym złotem.",
-      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Wymiary": "1,8 cm x 1,4 cm",
-      "Waga": "3g netto / 6g brutto",
-      "Model": "KST3629",
-      "Zapięcie": "sztyft"
-    },
-    "material": "Biżuteria ze stali chirurgicznej",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "34141",
-    name:" Kolczyki ze stali - Okręgi z cyrkoniami",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34141",
-    "image": "https://hurt.ecarla.pl/201923-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okregi-z-cyrkoniami-kst3631.jpg",
-    "description": [
-      "Eleganckie i stylowe kolczyki w kształcie okręgów z cyrkoniami, wykonane platerowanej 14-karatowym złotem.",
-      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Wymiary": "1,9 cm x 0,3 cm x 1,2 cm",
-      "Waga": "4g netto / 6g brutto",
-      "Model": "KST3631",
-      "Zapięcie": "angielskie"
-    },
-    "material": "Biżuteria ze stali chirurgicznej",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "34142",
-    name:" Kolczyki ze stali - Krople z kryształkami",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34142",
-    "image": "https://hurt.ecarla.pl/201815-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-krople-krysztalki-kst3632.jpg",
-    "description": [
-      "Eleganckie i stylowe kolczyki w kształcie kropli z kryształkami, wykonane platerowanej 14-karatowym złotem.",
-      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Wymiary": "1,5 cm x 0,8 cm",
-      "Waga": "6g netto / 10g brutto",
-      "Model": "KST3632",
-      "Zapięcie": "sztyft"
-    },
-    "material": "Biżuteria ze stali chirurgicznej",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "34143",
-    name:" Kolczyki ze stali - Bycze ",
-    "price": "69.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34143",
-    "image": "https://hurt.ecarla.pl/201925-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kst3635.jpg",
-    "description": [
-      "Eleganckie i stylowe kolczyki, wykonane platerowanej 14-karatowym złotem.",
-      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Wymiary": "1 cm x 0,3 cm",
-      "Waga": "2g netto / 5g brutto",
-      "Model": "KST3635",
-      "Zapięcie": "angielskie"
-    },
-    "material": "Biżuteria ze stali chirurgicznej",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  
-  {
-    "id": "34144",
-    name:" Kolczyki ze stali - Krople 2,1 cm",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34144",
-    "image": "https://hurt.ecarla.pl/201828-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-wkretki-21-cm-krople-kst3139.jpg",
-    "description": [
-      "Eleganckie i stylowe kolczyki wkrętki w kształcie kropli, wykonane platerowanej 14-karatowym złotem.",
-      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Wymiary": "2,1 cm x 2 cm",
-      "Waga": "5g netto / 7g brutto",
-      "Model": "KST3139",
-      "Zapięcie": "wkrętki"
-    },
-    "material": "Biżuteria ze stali chirurgicznej",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "34152",
-    name:" Kolczyki ze stali - Okręgi perłowe 4cm ",
-    "price": "99.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34152",
-    "image": "https://hurt.ecarla.pl/201897-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okregi-perelkowe-4-cm-kst3575.jpg",
-    "description": "Eleganckie kolczyki w kształcie okręgów perełkowych, platerowane 14-karatowym złotem.",
-    "specs": {
-      "Wymiary": "4 cm x 2 cm",
-      "Waga": "16g netto / 19g brutto",
-      "Zapięcie": "angielskie",
-      "Model": "KST3575"
-    },
-    "material": "Stal szlachetna, pozłacane 14K złotem",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "34153",
-    name:" Kolczyki ze stali - Okręgi perłowe 3,5 cm",
-    "price": "99.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34153",
-    "image": "https://hurt.ecarla.pl/201898-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okregi-perelkowe-35-cm-kst3576.jpg",
-    "description": "Stylowe kolczyki - okręgi perełkowe platerowane 14-karatowym złotem.",
-    "specs": {
-      "Wymiary": "2,8 cm x 2 cm",
-      "Waga": "10g netto / 12g brutto",
-      "Zapięcie": "angielskie",
-      "Model": "KST3576"
-    },
-    "material": "Stal szlachetna, pozłacane 14K złotem",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "34154",
-    name:" Kolczyki ze stali - Okręgi z cyrkoniami",
-    "price": "89.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34154",
-    "image": "https://hurt.ecarla.pl/201922-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okregi-z-cyrkoniami-kst3630.jpg",
-    "description": "Subtelne okręgi z cyrkoniami, platerowane 14-karatowym złotem.",
-    "specs": {
-      "Wymiary": "1,2 cm x 0,2 cm",
-      "Waga": "2g netto / 5g brutto",
-      "Zapięcie": "angielskie",
-      "Model": "KST3630"
-    },
-    "material": "Stal szlachetna, pozłacane 14K złotem",
-    "availability": "W magazynie"
-  },
-  
-  {
-    "id": "34354",
-    name:" Kolczyki ze stali - Cyrkoniowe łezki",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34354",
-    "image": "https://hurt.ecarla.pl/202866-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonie-lezki-kst3447.jpg",
-    "description": "Eleganckie i stylowe kolczyki.",
-    "specs": {
-      "Wymiary": "1cm x 1,6cm",
-      "Waga": "4g netto / 5g brutto",
-      "Zapięcie": "sztyft",
-      "Model": "KST3447"
-    },
-    "material": "Stal szlachetna, platerowane 14K złotem",
-    "availability": "W magazynie"
-  },
-
-  {
-    "id": "34479",
-    name:" Kolczyki ze stali - Wiszące kokardki",
-    "price": "94,99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34479",
-    "image": "https://hurt.ecarla.pl/203435-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-cyrkonia-wiszace-koraliki-kst3642.jpg",
-    "description": "Eleganckie i stylowe kolczyki damskie.",
-    "specs": {
-      "Wymiary": "Długość całkowita: 6cm; Kwadracik: 0,6cm x 0,6cm",
-      "Waga": "4g netto / 6g brutto",
-      "Zapięcie": "sztyft",
-      "Model": "KST3642"
-    },
-    "material": "Stal szlachetna, pozłacane 14K złotem",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "34121",
-    name:" Kolczyki ze stali - Kły z perłą",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34121",    
-    "image": "https://hurt.ecarla.pl/201776-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-perła-kst3550.jpg",
-    "description": [
-      "Eleganckie i stylowe kolczyki z perłami, wykonane platerowanej 14-karatowym złotem.",
-      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Wymiary": "2 cm x 1,8 cm",
-      "Waga": "4g netto / 6g brutto",
-      "Model": "KST3550"
-    },
-    "material": "Biżuteria ze stali chirurgicznej",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  }
-,
-  {
-    "id": "34133",
-    name:" Kolczyki ze stali - Kryształki",
-    "price": "89.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34133",
-    "image": "https://hurt.ecarla.pl/201796-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-krysztalki-kst3546.jpg",
-    "description": [
-      "Eleganckie i stylowe kolczyki z kryształkami, wykonane platerowanej 14-karatowym złotem.",
-      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Wymiary": "1,5 cm x 0,8 cm",
-      "Waga": "6g netto / 9g brutto",
-      "Model": "KST3546",
-      "Zapięcie": "angielskie"
-    },
-    "material": "Biżuteria ze stali chirurgicznej",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  
-  
-
-  {
-    "id": "34137",
-    name:" Kolczyki ze stali - Koła 3,5 cm",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/34137",
-    "image": "https://hurt.ecarla.pl/201949-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kola-35-cm-kst3626.jpg",
-    "description": [
-      "Eleganckie i stylowe kolczyki w kształcie kół o średnicy 3,5 cm, wykonane platerowanej 14-karatowym złotem.",
-      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Wymiary": "3,5 cm",
-      "Waga": "5g netto / 8g brutto",
-      "Model": "KST3626",
-      "Zapięcie": "angielskie"
-    },
-    "material": "Biżuteria ze stali chirurgicznej",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-
-
-  {
-    "id": "33462",
-    name:" Kolczyki ze stali - Muszelki z perełkami",
-    "price": "99.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33462",
-    "image": "https://hurt.ecarla.pl/198051-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kst3521.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "2,6 x 1 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3521" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-
-  {
-    "id": "33465",
-    name:" Kolczyki ze stali - Łańcuszki z perłą ",
-    "price": "99.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33465",
-    "image": "https://hurt.ecarla.pl/198057-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-z-perla-kst3522.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "4,8 x 0,8 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3522" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "33466",
-    name:" Kolczyki ze stali - Trzy półkola ",
-    "price": "89.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33466",
-    "image": "https://hurt.ecarla.pl/198059-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kst3516.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "1,5 x 1,2 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3516" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "33472",
-    name:" Kolczyki ze stali - Pięciokąty  ",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33472",
-    "image": "https://hurt.ecarla.pl/198081-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-wiszace-kst3517.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": { "WYMIARY": "2,2 x 1,5 cm", "Materiał wykonania": "Stal chirurgiczna platerowana złotem", "Model": "KST3517" },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie"
-  },
-
-
- 
-  
-  {
-    "id": "33750",
-    name:" Kolczyki ze stali - Cyrkonie",
-    "price": "89.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33750",
-    "image": "https://hurt.ecarla.pl/199751-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-z-cyrkoniami-kst3536.jpg",
-    "description": [
-      "Kolczyki damskie platerowane złotem z cyrkoniami.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Wymiary": "0,9 cm x 0,9 cm x 0,3 cm",
-      "Waga": "2g netto / 4g brutto",
-      "Model": "KST3536"
-    },
-    "material": "Biżuteria ze stali chirurgicznej",
-    "color": "Jasne złoto",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/199734-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-z-cyrkoniami-kst3536.jpg"
-  },
-  
-  
-  {
-    "id": "33878",
-    name:" Kolczyki ze stali - Wieże",
-    "price": "99.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/33878",
-    "image": "https://hurt.ecarla.pl/200254-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-cyrkonie-kst2225.jpg",
-    "description": [
-      "Eleganckie i stylowe kolczyki ze stali chirurgicznej platerowanej 14-karatowym złotem.",
-      "Zapięcie typu sztyft. Produkt marki Xuping."
-    ],
-    "specs": {
-      "Wymiary": "1,9 cm x 0,8 cm x 0,9 cm",
-      "Waga": "2g netto / 5g brutto",
-      "Model": "KST2225"
-    },
-    "material": "Biżuteria ze stali chirurgicznej",
-    "color": "Jasne złoto",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/200250-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-sztyft-cyrkonie-kst2225.jpg"
-  },
-{
-        id: "22318",
-        name:" Kolczyki ze stali i Przy uchu",
-        price: "79.99 zł",
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/22318",
-        image: "https://hurt.ecarla.pl/138031-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyft-kst2163.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki.",
-            "WYMIARY:",
-            "1,2 x 1,0 cm",
-            "rodzaj zapięcia: sztyft",
-            "Producent Xuping"
-        ],
-        specs: {
-            "Model": "KST2163"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
-        color: "Pozłacany",
-        availability: "W magazynie",
-        image2: null,
-        image3: null
-    }, 
-    { 
-        id: "24143",    
-    name:" Kolczyki ze stali - Torby",
-    price: "99.99 zł", 
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/24143",
-    image: "https://hurt.ecarla.pl/145647-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-kst3011.jpg",
-    description: [
-      "Eleganckie kolczyki wykonane z wysokiej jakości stali chirurgicznej, pokryte warstwą złota.",
-      "Klasyczny design sprawia, że idealnie pasują zarówno do wieczorowych kreacji, jak i codziennego looku.",
-      "Produkt w 100% antyalergiczny – bezpieczny dla delikatnej skóry, nie ciemnieje podczas użytkowania."
-    ],
-    specs: {
-      "Rodzaj zapięcia": "Angielskie",
-      "Materiał wykonania": "Stal chirurgiczna 316L",
-      "Model": "KST3011" 
-    },
-    material: "Stal chirurgiczna", 
-    color: "Złoty", 
-    availability: "W magazynie", 
-    image2: "https://hurt.ecarla.pl/145647-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-kst3011.jpg", // duplikaty linków zabezpieczone pod galerię
-    image3: "https://hurt.ecarla.pl/145647-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-kst3011.jpg"
-  },
- ,{ 
-    id: "25783",    
-    name:" Kolczyki ze stali - Kręcone ",
-    price: "99.99 zł", 
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/25783",
-    image: "https://hurt.ecarla.pl/152784-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst3114.jpg",
-    description: [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem. Eleganckie i stylowe.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje.",
-      "Wysokiej jakości produkt od zaufanego producenta Xuping."
-    ],
-    specs: {
-        "Wymiary": "3,5 x 3,5 cm",
-        "Waga": "18 g",
-        "Rodzaj zapięcia": "Bigiel zamknięty",
-        "Producent": "Xuping",
-        "Model": "KST3114" 
-    },
-    material: "Stal chirurgiczna", 
-    color: "Jasne złoto", 
-    availability: "W magazynie", 
-    image2: "",
-    image3: ""
-},
-{ 
-    id: "31217",    
-    name:" Kolczyki ze stali - Zawijane cyrkonie ",
-    price: "79.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/31217", 
-    image: "https://hurt.ecarla.pl/184503-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-z-cyrkoniami-sztyft-srebro-s925-kst3327.jpg",
-    description: [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
-      "Eleganckie i stylowe kolczyki.",
-      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    specs: {
-      "Wymiary": "2cm x 1,2cm x 1,7cm",
-      "Wymiar kartonika": "6cm x 5,5 cm",
-      "Waga": "4g netto / 7g brutto",
-      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
-      "Rodzaj zapięcia": "Sztyft ze srebra S925",
-      "Dodatki": "Cyrkonie",
-      "Model": "KST3327" 
-    },
-    material: "Stal chirurgiczna", 
-    color: "Jasne złoto", 
-    availability: "W magazynie", 
-    image2: "https://hurt.ecarla.pl/184160-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-z-cyrkoniami-sztyft-srebro-s925-kst3327.jpg",
-    image3: "https://hurt.ecarla.pl/184162-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-z-cyrkoniami-sztyft-srebro-s925-kst3327.jpg"
-  },
-  { 
-        id: "16793", 
-        name:" Kolczyki ze stali - Dwa świderki",
-        price: "99.93 zł",
-        category: "stal",
-        "subCategory": "pozlacane",
-        url: "/product/16793", 
-        image: "https://hurt.ecarla.pl/115303-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyfty-kst1891.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
-            "Eleganckie i stylowe kolczyki."
-        ],
-        specs: {
-            "Wymiary": "2,8 x 1,3 cm",
-            "Model": "KST1891"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
-        color: "Pozłacany", 
-        availability: "W magazynie", 
-        image2: null
-    },
-    
-      
-        { 
-        id: "17107", 
-        name:" Kolczyki ze stali - Minigwiazdki",
-        price: "89.30 zł", 
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/17107",
-        image: "https://hurt.ecarla.pl/116600-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-kst1925.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
-            "Eleganckie i stylowe kolczyki."
-        ],
-        specs: {
-            "Wymiary": "4,2 x 1,8 cm",
-            "Model": "KST1925"
-        },
-        material: "Biżuteria ze stali chirurgicznej", 
-        color: "Pozłacany", 
-        availability: "W magazynie", 
-        image2: null
-    },
-     
-     { 
-        id: "17377", 
-        name:" Kolczyki ze stali - Piękne",
-        price: "89.99 zł", 
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/17377",
-        image: "https://hurt.ecarla.pl/117803-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst1992.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
-            "Eleganckie i stylowe kolczyki.",
-            "Producent Xuping."
-        ],
-        specs: {
-            "Średnica produktu": "0,6 cm",
-            "Rodzaj zapięcia": "Sztyft",
-            "Model": "KST1992"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
-        color: "Pozłacany", 
-        availability: "W magazynie", 
-        image2: "https://hurt.ecarla.pl/117802-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst1992.jpg",
-        image3: null
-    },
-      { 
-        id: "18848", 
-        name:" Kolczyki ze stali - Skrzydła Aasterixa",
-        price: "89.00 zł", 
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/18848",
-        image: "https://hurt.ecarla.pl/123946-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2238.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. WYMIARY:",
-            "wymiary produktu: 1,9 cm  x 0,4 cm",
-            "rodzaj zapięcia: sztyft producent: Xuping"
-        ],
-        specs: {
-            "Model": "KST2238"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
-        color: "Pozłacany", 
-        availability: "W magazynie", 
-        image2: null,
-        image3: null
-    },
-     { 
-        id: "18851", 
-        name:" Kolczyki ze stali - Kajdanki ",
-        price: "84.99 zł", 
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/18851",
-        image: "https://hurt.ecarla.pl/123951-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2232.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. WYMIARY:",
-            "wymiary produktu: 2,3 cm  x 1,2 cm",
-            "rodzaj zapięcia: sztyft producent: Xuping"
-        ],
-        specs: {
-            "Model": "KST2232"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
-        color: "Pozłacany", 
-        availability: "W magazynie", 
-        image2: null,
-        image3: null
-    },
-        { 
-        id: "18868", 
-        name:" Kolczyki ze stali - Kropelki ",
-        price: "84.99 zł", 
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/18868",
-        image: "https://hurt.ecarla.pl/123986-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2224.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. WYMIARY:",
-            "wymiary produktu: 0,1 cm  x 0,1 cm",
-            "rodzaj zapięcia: sztyft producent: Xuping"
-        ],
-        specs: {
-            "Model": "KST2224"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
-        color: "Pozłacany", 
-        availability: "W magazynie", 
-        image2: null,
-        image3: null
-    },
-    { 
-        id: "19772", 
-        name:" Kolczyki ze stali - Symetryczne koła",
-        price: "89.99 zł", 
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/19772",
-        image: "https://hurt.ecarla.pl/127544-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2449.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. WYMIARY:",
-            "średnica produktu:  1 x 1 cm",
-            "rodzaj zapięcia: Sztyft",
-            "Producent Xuping"
-        ],
-        specs: {
-            "Model": "KST2449"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
-        color: "Pozłacany", 
-        availability: "W magazynie", 
-        image2: null,
-        image3: null
-    },
-     {
-    "id": "23769",
-    name:" Kolczyki ze stali - Szkielety muszelki",
-    "price": "79.46 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/23769",
-    "image": "https://hurt.ecarla.pl/143940-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2953.jpg",
-    "description": [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem Eleganckie i stylowe kolczyki.Kolor: jasne złotoWYMIARY:3  cm x 1,5cm rodzaj zapięcia: sztyftProducent Xuping"
-    ],
-    "specs": {
-      "Model": "KST2953",
-      "EAN": "5903678556785"
-    },
-    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
-    "color": "Pozłacany",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/144116-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2953.jpg",
-    "image3": null
-  },
-  { 
-    id: "6012", 
-    name: "Kolczyki ze stali - Mini słońce",
-    category: "stal",
-    subCategory : "pozlacane",
-    price: "99.99 zł", 
-    url: "/product/6012",
-    image: "https://hurt.ecarla.pl/67291-large_default/kolczyki-stal-chirurgiczna-kst618.jpg",
-    description: [
-        "Eleganckie i subtelne kolczyki damskie wykonane z wysokiej jakości stali.",
-        "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    specs: {
-        "Wysokość": "0,7 cm",
-        "Szerokość": "ok. 0,8 cm",
-        "Model": "KST618"
-    },
-    material: "Stal chirurgiczna", 
-    color: "Złoty", 
-    availability: "W magazynie", 
-    image2: "https://hurt.ecarla.pl/67292-large_default/kolczyki-stal-chirurgiczna-kst618.jpg"
-},{ 
-    id: "28679",    
-    name:" Kolczyki ze stali - Pełnia księżyca ",
-    price: "79.96 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/28679", 
-    image: "https://hurt.ecarla.pl/167622-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3115.jpg",
-    description: [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
-      "Eleganckie i stylowe kolczyki.",
-      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    specs: {
-      "Wymiary": "1,8 x 1,8 cm",
-      "Waga": "11 g",
-      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
-      "Rodzaj zapięcia": "Sztyft",
-      "Producent": "Xuping",
-      "Model": "KST3115" 
-    },
-    material: "Stal chirurgiczna", 
-    color: "Jasne złoto", 
-    availability: "W magazynie", 
-    image2: "",
-    image3: ""
-  },
-  {
-    "id": "24110",
-    name:" Kolczyki ze stali - Makarony",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/24110",
-    "image": "https://hurt.ecarla.pl/145556-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2999.jpg",
-    "description": [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-      "Eleganckie i stylowe kolczyki.",
-      "Kolor: Jasne złoto WYMIARY:",
-      "0,8 x 2 cm",
-      "rodzaj zapięcia: angielskie zapięcie",
-      "Producent inny",
-      "Waga: 4g STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Model": "KST2999",
-      "EAN": "5903678559663"
-    },
-    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
-    "color": "Pozłacany",
-    "availability": "W magazynie",
-    "image2": null,
-    "image3": null
-  },
-  { 
-    id: "31224",    
-    name: "Kolczyki ze stali - Wisienki perełki",
-    price: "79.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/31224", 
-    image: "https://hurt.ecarla.pl/184416-large_default/kolczyki-wisienki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-cyrkonie-sztyft-srebro-s925-perly-kst3334.jpg",
-    description: [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
-      "Eleganckie i stylowe kolczyki.",
-      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    specs: {
-      "Wymiary": "1,7cm x 1,2",
-      "Wymiar kartonika": "6cm x 5,5 cm",
-      "Waga": "2g netto / 4g brutto",
-      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
-      "Rodzaj zapięcia": "Sztyft ze srebra S925",
-      "Motyw": "Wisienki",
-      "Dodatki": "Cyrkonie, perły",
-      "Producent": "Inny",
-      "Model": "KST3334" 
-    },
-    material: "Stal chirurgiczna", 
-    color: "Złoto", 
-    availability: "W magazynie", 
-    image2: "https://hurt.ecarla.pl/184264-large_default/kolczyki-wisienki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-cyrkonie-sztyft-srebro-s925-perly-kst3334.jpg",
-    image3: "https://hurt.ecarla.pl/184261-large_default/kolczyki-wisienki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-cyrkonie-sztyft-srebro-s925-perly-kst3334.jpg"
-  },{
-    "id": "31541",
-    name:" Kolczyki ze stali - Gruby makaron",
-    "price": "99.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/31541",
-    "image": "https://hurt.ecarla.pl/186711-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-grube-kola-sztyft-kst3324.jpg",
-    "description": [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
-      "Eleganckie i stylowe kolczyki.",
-      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "WYMIARY": "2,5cm x 2,5cm x 0,7cm",
-      "Wymiar kartonika": "6cm x 5,5 cm",
-      "Waga": "8g netto / 11g brutto",
-      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
-      "Rodzaj zapięcia": "Sztyft (sztyft ze srebra S925)",
-      "Producent": "Inny",
-      "Model": "KST3324"
-    },
-    "material": "Stal chirurgiczna",
-    "color": "Złoto",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/186596-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-grube-kola-sztyft-kst3324.jpg",
-    "image3": "https://hurt.ecarla.pl/186595-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-grube-kola-sztyft-kst3324.jpg"
-  },
-   {
-    "id": "23716",
-    name:" Kolczyki ze stali - Wiszące skrzydła ",
-    "price": "79.88 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/23716",
-    "image": "https://hurt.ecarla.pl/143816-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyfty-kst2064.jpg",
-    "description": [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-      "Eleganckie i stylowe kolczyki. WYMIARY:",
-      "4,0 x 0,9 cm",
-      "rodzaj zapięcia: sztyft",
-      "Producent Xuping"
-    ],
-    "specs": {
-      "Model": "KST2064",
-      "EAN": "5903678539122"
-    },
-    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
-    "color": "Pozłacany",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/143815-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyfty-kst2064.jpg",
-    "image3": "https://hurt.ecarla.pl/143817-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyfty-kst2064.jpg"
-  },
-  {
-    "id": "23719",
-    name:" Kolczyki ze stali - Latające ważki ",
-    "price": "79.66 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/23719",
-    "image": "https://hurt.ecarla.pl/143823-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2916.jpg",
-    "description": [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-      "Eleganckie i stylowe kolczyki. Kolor:  Jasne złoto Wymiary:",
-      "0,9 x 0,9 cm",
-      "Rodzaj zapięcia: sztyft STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Model": "KST2916",
-      "EAN": "5903678552541"
-    },
-    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
-    "color": "Pozłacany",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/145641-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2916.jpg",
-    "image3": null
-  },
-  {
-    "id": "23722",
-    name:" Kolczyki ze stali - Świderkowy owal",
-    "price": "79.78 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/23722",
-    "image": "https://hurt.ecarla.pl/143832-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2926.jpg",
-    "description": [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-      "Eleganckie i stylowe kolczyki. Kolor:  Jasne złoto Wymiary:",
-      "0,9 x 0,9 cm",
-      "Rodzaj zapięcia: sztyft STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Model": "KST2926",
-      "EAN": "5903678552657"
-    },
-    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
-    "color": "Pozłacany",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/143830-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2926.jpg",
-    "image3": "https://hurt.ecarla.pl/143829-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2926.jpg"
-  },{ 
-        id: "19786", 
-        name:" Kolczyki ze stali - Wiszące gwiazdki",
-
-        price: "89.65 zł", 
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/19786",
-        image: "https://hurt.ecarla.pl/127573-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2433.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. WYMIARY:",
-            "średnica produktu: 3 x 1 cm",
-            "rodzaj zapięcia: Zapięcie angielskie",
-            "Producent Xuping"
-        ],
-        specs: {
-            "Model": "KST2433"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
-        color: "Pozłacany", 
-        availability: "W magazynie", 
-        image2: null,
-        image3: null
-    },  {
-    "id": "23741",
-    name:" Kolczyki ze stali - Zielono widmo",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/23741",
-    "image": "https://hurt.ecarla.pl/143930-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2976.jpg",
-    "description": [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-      "Eleganckie i stylowe kolczyki. Kolor:  Jasne złoto Wymiary:",
-      "1,9 x 0,4 cm",
-      "Rodzaj zapięcia: sztyft STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Model": "KST2976",
-      "EAN": "5903678556792"
-    },
-    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
-    "color": "Pozłacany",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/143931-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2976.jpg",
-    "image3": null
-  },
- {
-        id: "22314",
-        name: "Kolczyki ze stali - Kółko mini cyrkonie",
-        price: "79.24 zł",
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/22314",
-        image: "https://hurt.ecarla.pl/138026-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyft-kst2143.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. WYMIARY:",
-            "1,2 cm rodzaj zapięcia: sztyft",
-            "Producent Xuping"
-        ],
-        specs: {
-            "Model": "KST2143",
-            "EAN": "5903678537654"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
-        color: "Pozłacany",
-        availability: "W magazynie",
-        image2: "https://hurt.ecarla.pl/138027-large_default/kolczyki-ze-stali-chirurgicznej-pozlacane-sztyft-kst2143.jpg",
-        image3: null
-    },
-     {
-        id: "22308",
-        name:" Kolczyki ze stali - Skrzydła czarne",
-        price: "79.55 zł",
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/22308",
-        image: "https://hurt.ecarla.pl/138018-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2091.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 18 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. WYMIARY:",
-            "wymiary produktu: 1,5 0,7 cm",
-            "rodzaj zapięcia: sztyft",
-            "Producent Xuping"
-        ],
-        specs: {
-            "Model": "KST2091",
-            "EAN": "5903678541149"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
-        color: "Pozłacany",
-        availability: "W magazynie",
-        image2: null,
-        image3: null
-    },{
-        id: "22183",
-        name:" Kolczyki ze stali - Kółko i ozdoby",
-        price: "109.23 zł",
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/22183",
-        image: "https://hurt.ecarla.pl/137589-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2818.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. WYMIARY:",
-            "7 x 1,8 cm",
-            "rodzaj zapięcia: sztyft",
-            "Producent Xuping"
-        ],
-        specs: {
-            "Model": "KST2818"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
-        color: "Pozłacany",
-        availability: "W magazynie",
-        image2: null,
-        image3: null
-    },
-    {
-        id: "22197",
-        name:" Kolczyki ze stali - Wiszące kwadraty",
-        price: "104.99 zł",
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/22197",
-        image: "https://hurt.ecarla.pl/137617-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2832.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. WYMIARY:",
-            "6,5 x 1 cm",
-            "rodzaj zapięcia: sztyft",
-            "Producent Xuping"
-        ],
-        specs: {
-            "Model": "KST2832"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
-        color: "Pozłacany",
-        availability: "W magazynie",
-        image2: null,
-        image3: null
-    },
-    {
-        id: "22307",
-        name:" Kolczyki ze stali - Kółka z siatką",
-        price: "79.96 zł",
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/22307",
-        image: "https://hurt.ecarla.pl/138017-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2090.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 18 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. WYMIARY:",
-            "wymiary produktu: 1,2 x 1,2 cm",
-            "rodzaj zapięcia: sztyft",
-            "Producent Xuping"
-        ],
-        specs: {
-            "Model": "KST2090"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
-        color: "Pozłacany",
-        availability: "W magazynie",
-        image2: null,
-        image3: null
-    },
-   
-    { 
-    id: "H_34487", // Oryginalne ID z hurtowni (zostaje do zamówień!)
-    name: "Kolczyki ze stali - Okrągłe kwadraty",
-    category: "stal",
-    "subCategory": "pozlacane",
-    price: "99.99 zł",
-    image: "https://hurt.ecarla.pl/203436-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-okragle-kwadrat-kst3653.jpg",
-    url: "/product/H_34487", // URL przekazuje ID do komponentu ProductDetail
-    description: [
-        "Kolczyki damskie. Eleganckie i stylowe kolczyki.",
-        "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    // Zmienione ze 'specs' na 'desc', aby pasowało do Twojej tablicy produktów!
-    specs: {
-        "Wymiar kolczyków": "1,1cm x 1,1 cm (Kwadracik: 0,4cm x 0,4cm)",
-        "Wymiar kartonika": "5,5cm x 6cm",
-        "Waga": "2g netto / 4g brutto",
-        "Kolor": "jasne złoto",
-        "Rodzaj zapięcia": "sztyft zatrzaskowy",
-        "Model": "KST3653"
-    },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto", 
-    availability: "W magazynie",
-    image2: null
-},
-
- { 
-        id: "19010", 
-        name: "Kolczyki ze stali - Nausznica",
-        price: "109.6 zł", 
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/19010",
-        image: "https://hurt.ecarla.pl/124527-large_default/-kolczyk-nausznica-ze-stali-szlachetnej-pozlacanej-kst2280-1-sztuka.jpg",
-        description: [
-            "Kolczyki ze stali CHIRURGICZNEJ PLATEROWANEJ 14 KARATOWYM ZŁOTEM ",
-            "Eleganckie i stylowe kolczyki. WYMIARY:",
-            "wymiary produktu:",
-            "element 1: 2.2 cm x 1 cm",
-            "element 2: 3,5 cm średnicy",
-            "rodzaj zapięcia: sztyft",
-            "producent: Xuping"
-        ],
-        specs: {
-            "Model": "KST2280"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
-        color: "Pozłacany", 
-        availability: "W magazynie", 
-        image2: null,
-        image3: null
-        },
-
-    { 
-    id: "26039",    
-    name:" Kolczyki ze stali - Różowy akcent",
-    price: "79.99 zł", 
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/26039",
-    image: "https://hurt.ecarla.pl/153777-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst3043r.jpg",
-    description: [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
-      "Eleganckie i stylowe kolczyki.",
-      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    specs: {
-      "Wymiary": "Długość: 1,3 cm, Szerokość: 0,3 cm",
-      "Waga": "4 g",
-      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
-      "Rodzaj zapięcia": "Angielskie",
-      "Model": "KST3043R" 
-    },
-    material: "Stal chirurgiczna", 
-    color: "Jasne złoto", 
-    availability: "W magazynie", 
-    image2: "",
-    image3: ""
-  },
-  {
-    "id": "32252",
-    name:" Kolczyki ze stali - Śnieżki w okręgu",
-    "price": "69.99 zł",
-    "category": "stal",
-    
-    "subCategory": "pozlacane",
-    "url": "/product/32252",
-    "image": "https://hurt.ecarla.pl/191512-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kst2093.jpg",
-    "description": [
-      "Kolczyki damskie.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "WYMIARY": "1,2 cm x 1,2 cm",
-      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
-      "Model": "KST2093"
-    },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/191513-large_default/kolczyki-ze-stali-szlachetnej-pozlacane-14k-zlotem-kst2093.jpg",
-    "image3": null
-  },
-
-  {
-    "id": "32275",
-    name:" Kolczyki ze stali - Figurki",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/32275",
-    "image": "https://hurt.ecarla.pl/191588-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3001.jpg",
-    "description": [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "WYMIARY": "1,5 x 7,5 cm",
-      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
-      "Model": "KST3001"
-    },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/191587-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3001.jpg",
-    "image3": null
-  },
-  {
-    "id": "32276",
-    name:" Kolczyki ze stali - Wisząca kropla perła",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/32276",
-    "image": "https://hurt.ecarla.pl/191590-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3002.jpg",
-    "description": [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
-      "Eleganckie i stylowe kolczyki.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "WYMIARY": "1,9 x 6 cm",
-      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
-      "Model": "KST3002"
-    },
-    "material": "Stal chirurgiczna",
-    "color": "Jasne złoto",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/191589-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3002.jpg",
-    "image3": null
-  },
-{
-    "id": "23745",
-    name:" Kolczyki ze stali - Czarna perła",
-    "price": "74.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/23745",
-    "image": "https://hurt.ecarla.pl/143913-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2931cz.jpg",
-    "description": [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-      "Eleganckie i stylowe kolczyki. Kolor:  Jasne złoto Wymiary:",
-      "Długość: 2 cm",
-      "średnica kółka 1,4 cm  Rodzaj zapięcia: sztyft STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Model": "KST2931CZ",
-      "EAN": "5903678556501"
-    },
-    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
-    "color": "Pozłacany",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/144122-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2931cz.jpg",
-    "image3": null
-  },
-  {
-    "id": "23747",
-    name:" Kolczyki ze stali - Gwiazdka różowa cyrkonia",
-    "price": "79.93 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/23747",
-    "image": "https://hurt.ecarla.pl/143923-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2971.jpg",
-    "description": [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem Eleganckie i stylowe kolczyki.Kolor:  Jasne złotoWymiary:1,2 cm x 1 cm Rodzaj zapięcia: sztyftSTAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Model": "KST2971",
-      "EAN": "5903678556815"
-    },
-    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
-    "color": "Pozłacany",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/143868-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2971.jpg",
-    "image3": null
-  },
-  
-  {
-    "id": "23765",
-    name:" Kolczyki ze stali - Mini ważka",
-    "price": "89.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "/product/23765",
-    "image": "https://hurt.ecarla.pl/143938-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2947.jpg",
-    "description": [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-      "Eleganckie i stylowe kolczyki. Kolor: jasne złoto",
-      "WYMIARY:",
-      "6 cm x 3 cm ",
-      "rodzaj zapięcia: sztyft Producent Xuping"
-    ],
-    "specs": {
-      "Model": "KST2947",
-      "EAN": "5903678556440"
-    },
-    "material": "Biżuteria ze stali chirurgicznej / Kolczyki",
-    "color": "Pozłacany",
-    "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/143939-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2947.jpg",
-    "image3": null
-  },
-   { 
-    id: "26233",    
-    name:" Kolczyki ze stali - Skrzydła anioła",
-    price: "79.99 zł", 
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/26233",
-    image: "https://hurt.ecarla.pl/154766-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst3176.jpg",
-    description: [
-      "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem.",
-      "Eleganckie i stylowe kolczyki.",
-      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    specs: {
-      "Wymiary": "1 x 2 cm",
-      "Waga": "1 g",
-      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
-      "Rodzaj zapięcia": "Sztyft",
-      "Model": "KST3176" 
-    },
-    material: "Stal chirurgiczna", 
-    color: "Jasne złoto", 
-    availability: "W magazynie", 
-    image2: "",
-    image3: ""
-  },
- {
-        id: "21201",
-        name:" Kolczyki ze stali - Wiszące skrzydełka",
-        price: "79.9 zł",
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/21201",
-        image: "https://hurt.ecarla.pl/133940-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2644.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. Kolor:  Jasne złoto Wymiary:",
-            "10,0 x 0,5 cm",
-            "Rodzaj zapięcia: sztyft STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje. Producent: Xuping"
-        ],
-        specs: {
-            "Model": "KST2644"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
-        color: "Pozłacany",
-        availability: "W magazynie",
-        image2: null,
-        image3: null
-    },
-    {
-        id: "20591",
-        name:" Kolczyki ze stali - Czarne pazury",
-        price: "89.9 zł",
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/20591",
-        image: "https://hurt.ecarla.pl/131387-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2605cz.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. Kolor: Jasne Złoto WYMIARY:",
-            "wymiary produktu: 3 x 1,5 cm",
-            "rodzaj zapięcia: Sztyft",
-            "Producent Xuping"
-        ],
-        specs: {
-            "Model": "KST2605CZ"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
-        color: "Pozłacany",
-        availability: "W magazynie",
-        image2: null,
-        image3: null
-    },
-    
- 
-    {
-        id: "21199",
-        name:" Kolczyki ze stali - Kółka kwiatki",
-        price: "89.9 zł",
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/21199",
-        image: "https://hurt.ecarla.pl/133936-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-14k-zlotem-kst2642.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem Eleganckie i stylowe kolczyki.Kolor:  Jasne złotoWymiary:1,3 x 1,3 cmRodzaj zapięcia: sztyftSTAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje.Producent: Xuping"
-        ],
-        specs: {
-            "Model": "KST2642"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
-        color: "Pozłacany",
-        availability: "W magazynie",
-        image2: null,
-        image3: null
-    },
-    {
-        id: "20385",
-        name:" Kolczyki ze stali - Pół motylki",
-        price: "79.88 zł",
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/20385",
-        image: "https://hurt.ecarla.pl/130397-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-kst2568.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 18 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. Kolor: Złoto WYMIARY:",
-            "wymiary produktu:  1,7 x 1 cm",
-            "rodzaj zapięcia: Angielskie Zapięcie",
-            "Producent Xuping"
-        ],
-        specs: {
-            "Model": "KST2568"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki",
-        color: "Pozłacany",
-        availability: "W magazynie",
-        image2: null,
-        image3: null
-    },
-    { 
-        id: "19759", 
-        name:" Kolczyki ze stali - Motylki w kółku",
-        price: "89.96 zł", 
-        category: "stal",
-        subCategory: "pozlacane",
-        url: "/product/19759",
-        image: "https://hurt.ecarla.pl/127516-large_default/kolczyki-ze-stali-szlachetnej-pozlacanej-sztyft-kst2408.jpg",
-        description: [
-            "Kolczyki ze stali chirurgicznej platerowanej 14 karatowym złotem ",
-            "Eleganckie i stylowe kolczyki. WYMIARY:",
-            "średnica produktu: 1,2 x 1,2 cm",
-            "rodzaj zapięcia: sztyft",
-            "Producent Xuping"
-        ],
-        specs: {
-            "Model": "KST2408"
-        },
-        material: "Biżuteria ze stali chirurgicznej / Kolczyki", 
-        color: "Pozłacany", 
-        availability: "W magazynie", 
-        image2: null,
-        image3: null
-    },
-    
-//   POZLACANE
 
 // SREBRNEEE
 
@@ -4148,6 +4193,7 @@
         id: "16628", 
         name:" Kolczyki ze stali - Renifer",
         price: "99.96 zł", 
+        oldPrice: "109.96 zł",
         category: "stal",
         subCategory : "srebrne",
         url: "/product/16628",
@@ -4292,6 +4338,7 @@
     id: "30901",    
     name:" Kolczyki ze stali - Wiszące kryształ górski biel",
     price: "69.99 zł",
+    oldPrice: "79.99 zł",
         category: "stal",
   "subCategory": "wykwintne",
     url: "/product/30901", 
@@ -4425,6 +4472,7 @@
     id: "30898",    
     name:" Kolczyki ze stali - Wiszące kryształ górski biel",
     price: "69.99 zł",
+    oldPrice: "79.99 zł",
         category: "stal",
            "subCategory": "wykwintne",
     url: "/product/30898", 
@@ -4562,6 +4610,7 @@
     "id": "33463",
     name:" Kolczyki ze stali - Wiszące gwiazdki",
     "price": "99.99 zł",
+    "oldPrice": "109.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
     "url": "/product/33463",
@@ -4717,6 +4766,7 @@
     "id": "34299",
     name:" Kolczyki ze stali - Fioletowa cyrkonia",
     "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
     "url": "/product/34299",
@@ -4806,6 +4856,7 @@
         id: "22039",
         name:" Kolczyki ze stali - Zielone cienkie",
         price: "89.99 zł",
+        oldPrice: "99.99 zł",
         category: "stal",
         subCategory: "wykwintne",
         url: "/product/22039",
@@ -4923,6 +4974,7 @@
     "id": "24018",
     name:" Kolczyki ze stali - Cyrkonie rogi",
     "price": "99.76 zł",
+    "oldPrice": "109.76 zł",
     "category": "stal",
     "subCategory": "wykwintne",
     "url": "/product/24018",
@@ -5049,6 +5101,7 @@
         id: "22046",
         name:" Kolczyki ze stali - Czarna perła",
         price: "89.99 zł",
+        oldPrice: "99.99 zł",
         category: "stal",
         subCategory: "wykwintne",
         url: "/product/22046",
@@ -5171,6 +5224,7 @@
     "id": "32253",
     name:" Kolczyki ze stali - Piłka",
     "price": "69.99 zł",
+    "oldPrice": "79.99 zł",
     "category": "stal",
     "subCategory": "wykwintne",
     "url": "/product/32253",
@@ -5257,7 +5311,8 @@
        {
         id: "21974",
         name:" Kolczyki ze stali - Okrąg cyrkoni",
-        price: "89.30 zł",
+        price: "69.30 zł",
+        oldPrice: "99.30 zł",
         category: "stal",
         subCategory: "wykwintne",
         url: "/product/21974",
@@ -5328,6 +5383,7 @@
         id: "21207",
         name:" Kolczyki ze stali - Papryczki chili",
         price: "79.53 zł",
+        oldPrice: "89.53 zł",
         category: "stal",
         subCategory: "wykwintne",
         url: "/product/21207",
@@ -5479,7 +5535,8 @@
 { 
     id: "16081", 
     name: "Kolczyki ze stali - Podwójny",
-    price: "94.99 zł", 
+    price: "84.99 zł", 
+    oldPrice: "104.99 zł",
     category: "stal",
     "subCategory": "wykwintne",
     url: "/product/16081",
@@ -6414,7 +6471,8 @@
   {
     "id": "34313",
     name:" Kolczyki ze stali - Koniczyna masa perłowa",
-    "price": "79.99 zł",
+    "price": "  79.99 zł",
+    "oldPrice": "  89.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
     "url": "/product/34313",
@@ -6554,6 +6612,7 @@
     "id": "33477",
     name:" Kolczyki ze stali - Wiszona koniczyna z perłą",
     "price": "89.99 zł",
+    "oldPrice": "99.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
     "url": "/product/33477",
@@ -6630,6 +6689,7 @@
     "id": "34136",
     name:" Kolczyki ze stali - Wiszące kryształki dzwonki",
     "price": "99.99 zł",
+    "oldPrice": "109.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
     "url": "/product/34136",
@@ -6731,6 +6791,7 @@
     "id": "34135",
     name:" Kolczyki ze stali - Wiszące z cyrkoniami",
     "price": "69.99 zł",
+    "oldPrice": "79.99 zł",
     "category": "stal",
     "subCategory": "kwiaty",
     "url": "/product/34135",
@@ -6823,6 +6884,7 @@
     "id": "33160",
     name:" Kolczyki ze stali Kokardki",
     "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
     "url": "/product/33160",
@@ -6877,7 +6939,8 @@
   {
     "id": "34341",
     name:" Kolczyki ze stali - Serca z perłą",
-    "price": "69.99 zł",
+    "price": "59.99 zł",
+    "oldPrice": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
     "url": "/product/34341",
@@ -6969,6 +7032,7 @@
     id: "31060",    
     name:" Kolczyki ze stali - Serca cyrkonie",
     price: "89.99 zł",
+    oldPrice: "99.99 zł",
     category: "stal",
     "subCategory": "serca-kokardy",
     url: "/product/31060", 
@@ -7066,6 +7130,7 @@
     id: "31227",    
     name:" Kolczyki ze stali - Seca z perłą",
     price: "79.99 zł",
+    oldPrice: "89.99 zł",
     category: "stal",
     "subCategory": "serca-kokardy",
     url: "/product/31227", 
@@ -7154,6 +7219,7 @@
     id: "31221",    
     name:" Kolczyki ze stali - Cyrkoniowe kokardy",
     price: "79.99 zł", 
+    oldPrice: "89.99 zł",
     category: "stal",
     subCategory: "serca-kokardy",
     url: "/product/31221",
@@ -7253,7 +7319,8 @@
  {
     "id": "24111",
     name:" Kolczyki ze stali - Perłowe serca cyrkonie",
-    "price": "89.99 zł",
+    "price": "79.99 zł",
+    "oldPrice": "99.99 zł",
     "category": "stal",
         "subCategory": "serca-kokardy",
     "url": "/product/24111",
@@ -7342,6 +7409,7 @@
     id: "31455",    
     name:" Kolczyki ze stali - Serca róż",
     price: "79.99 zł", 
+    oldPrice: "89.99 zł",
     category: "stal",
     subCategory: "serca-kokardy",
     url: "/product/31455",
@@ -7424,7 +7492,8 @@
  {
   "id": "33105",
   name:" Kolczyki ze stali - Mini cyrkoniowe serca",
-  "price": "99.99 zł",
+  "price": "89.99 zł",
+  "oldPrice": "109.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
     "url": "/product/33105",
@@ -7521,6 +7590,7 @@
     "id": "33152",
     name:" Kolczyki ze stali - Cyrkoniowe serce w sercu",
     "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
     "url": "/product/33152",
@@ -7593,7 +7663,8 @@
     {
     "id": "33886",
     name:" Kolczyki ze stali - Eleganckie serca",
-    "price": "69.99 zł",
+    "price": "59.99 zł",
+    "oldPrice": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
     "url": "/product/33886",
@@ -7678,6 +7749,7 @@
     "id": "34044",
     name:" Kolczyki ze stali - Kryształowe serca",
     "price": "99.99 zł",
+    "oldPrice": "109.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
     "url": "/product/34044",
@@ -7738,7 +7810,8 @@
   {
     "id": "34048",
     name:" Kolczyki ze stali - Różowe serca",
-    "price": "99.99 zł",
+    "price": "89.99 zł",
+    "oldPrice": "109.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
     "url": "/product/34048",
@@ -7824,6 +7897,7 @@
     id: "24185",    
     name:" Kolczyki ze stali - Wiszące piękne serca",
     price: "89.99 zł",
+    oldPrice: "99.99 zł",
     category: "stal",
     subCategory: "serca-kokardy",
     url: "/product/24185", 
@@ -7885,6 +7959,7 @@
     "id": "34316",
     name:" Kolczyki ze stali - Serca i motylki",
     "price": "89.99 zł",
+    "oldPrice": "99.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
     "url": "/product/34316",
@@ -7974,6 +8049,7 @@
     "id": "34321",
     name:" Kolczyki ze stali - Kremowe serca",
     "price": "59.99 zł",
+    "oldPrice": "79.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
     "url": "/product/34321",
@@ -8064,6 +8140,7 @@
     "id": "34490",
     name:" Kolczyki ze stali - Okręgi serca w sercu",
     "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "serca-kokardy",
     "url": "/product/34490",
@@ -8120,6 +8197,7 @@
     id: "26118",    
     name:" Kolczyki ze stali - Serca gwiazdki",
     price: "79.99 zł", 
+    oldPrice: "89.99 zł",
     category: "stal",
     subCategory: "serca-kokardy",
     url: "/product/26118",
@@ -8263,6 +8341,7 @@
     "id": "23991",
     name:" Kolczyki ze stali - Zjawiskowa dama",
     "price": "159.74 zł",
+    "oldPrice": "179.74 zł",
     "category": "stal", 
     "subCategory": "ślublne",
     "url": "/product/23991",
@@ -8305,6 +8384,7 @@
     "id": "23996",
     name:" Kolczyki ze stali - Wyjątkowa chwila",
     "price": "159.99 zł",
+    "oldPrice": "179.99 zł",
     "category": "stal",
     "subCategory": "ślublne",
     "url": "/product/23996",
@@ -8369,6 +8449,7 @@
     "id": "24001",
     name:" Kolczyki ze stali - Świecista panna",
     "price": "109 zł",
+    "oldPrice": "129 zł",
     "category": "stal",
     "subCategory": "ślublne",
     "url": "/product/24001",
@@ -8408,6 +8489,7 @@
     "id": "34335",
     name:" Kolczyki ze stali - Wisząca cyrkonia",
     "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "ślublne",
     "url": "/product/34335",
@@ -8516,6 +8598,7 @@
     id: "27438",    
     name:" Kolczyki literka D. ",
     price: "69.89 zł", 
+    oldPrice: "79.89 zł",
         category: "stal",
         "subCategory": "literki",
     url: "/product/27438",
@@ -8643,6 +8726,7 @@
         id: "16200", 
         name: "Kolczyki literka F ",
         price: "89.89 zł", 
+        oldPrice: "99.89 zł",
         "subCategory": "literki",
         category: "stal",
         url: "/product/16200",
@@ -8850,6 +8934,7 @@
         id: "16214", 
         name: "Kolczyki literka W ",
         price: "89.89 zł", 
+        oldPrice: "99.89 zł",
         category: "stal",
         subCategory: "literki",
         url: "/product/16214",

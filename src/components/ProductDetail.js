@@ -17,7 +17,7 @@ import branzoletkaStopaSztuczna from "../data/BransoletFootFake";
 import branzoletkiStopyStal from "../data/BransoletFootStal";
 import bransoletkaRekaSztuczna from "../data/BransoletHandFake";
 import BranzoletkiStal from "../data/BransoletHandStal";
-import { products } from "./Products";
+import products from './Products';
 
 const ProductDetail = ({ products: propsProducts }) => {
   const { productId } = useParams();

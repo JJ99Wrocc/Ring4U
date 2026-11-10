@@ -16,6 +16,7 @@ const EarRings = ({ category }) => {
 
   const [visible, setVisible] = useState(false);
   const [productToAdd, setProductToAdd] = useState(null); 
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
@@ -81,6 +82,10 @@ const EarRings = ({ category }) => {
                 aria-label={`${product.name}, cena ${product.price}`}
               >
                 <div className="ear-v2-image-wrapper">
+                  {product.oldPrice && (
+                    <span className="sale-badge">SALE</span>
+                  )}
+
                   <img
                     src={product.image}
                     className="img-fluid ear-v2-img"
@@ -91,6 +96,8 @@ const EarRings = ({ category }) => {
                     onMouseLeave={(e) => {
                       e.currentTarget.src = product.image;
                     }}
+                    onClick={() => setSelectedImage(product.image)}
+                    style={{ cursor: 'pointer' }}
                   />
 
                   {/* Szybki przycisk koszyka na zdjęciu */}
@@ -124,9 +131,18 @@ const EarRings = ({ category }) => {
                       {product.name}
                     </Link>
                   </h5>
-                  <p className="ear-v2-product-price">{product.price}</p>
+                  <div className="ear-v2-price-container">
+                    {product.oldPrice ? (
+                      <>
+                        <span className="ear-v2-old-price">{product.oldPrice}</span>
+                        <span className="ear-v2-sale-price">{product.price}</span>
+                      </>
+                    ) : (
+                      <span className="ear-v2-regular-price">{product.price}</span>
+                    )}
+                  </div>
                   
-                  {/* Glówny przycisk dodawania do koszyka */}
+                  {/* Główny przycisk dodawania do koszyka */}
                   <button 
                     className="btn btn-primary btn-sm w-100 mt-2"
                     onClick={() => handleButtonClick(product)}
@@ -172,6 +188,15 @@ const EarRings = ({ category }) => {
                 &raquo;
               </button>
             )}
+          </div>
+        )}
+
+        {selectedImage && (
+          <div className="lightbox-overlay" onClick={() => setSelectedImage(null)}>
+            <div className="lightbox-content">
+              <button className="close-btn" onClick={() => setSelectedImage(null)}>×</button>
+              <img src={selectedImage} alt="Powiększenie" />
+            </div>
           </div>
         )}
       </section>

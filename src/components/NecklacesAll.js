@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState, useMemo } from 'react';
 import { CartContext } from './CartContext';
 import { Link, useParams } from 'react-router-dom';
 import ProductAdded from './ProductsAdded';
@@ -6,6 +6,34 @@ import necklaceStal from '../data/NecklacesStal';
 import necklacesFake from '../data/NecklacesFake';
 import '../css/earRings.css';
 import { FavoritesContext } from './FavoriteContext';
+
+// FUNKCJA GRUPUJĄCA WARIANTY (BEZ WYŚWIETLANIA PRZYCISKÓW ROZMIARÓW)
+function groupProductsByModel(productsList) {
+    const grouped = {};
+    
+    productsList.forEach((item) => {
+        if (!item || !item.id) return;
+        
+        // Bazowe ID, np. "24029" z "24029-2371"
+        const baseId = item.id.toString().split('-')[0];
+        
+        // Czyszczenie nazwy ze zbędnych oznaczeń rozmiarów
+        const cleanName = item.name.replace(/(?:Rozmiar\s*:\s*|:\s*)?US\d+\s+EU\d+\s*/gi, '').trim();
+
+        if (!grouped[baseId]) {
+            grouped[baseId] = { 
+                ...item, 
+                id: baseId, 
+                name: cleanName, 
+                variants: [] 
+            };
+        }
+        
+        grouped[baseId].variants.push(item);
+    });
+    
+    return Object.values(grouped);
+}
 
 const NecklacesAll = ({ category }) => {
     const { subcategory } = useParams();
@@ -19,22 +47,29 @@ const NecklacesAll = ({ category }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const [productPerPage, setProductPerPage] = useState(window.innerWidth < 768 ? 20 : 32);
 
-    // Safely combine arrays and filter out null/undefined elements or items without required properties
-    const wszystkieNaszyjniki = [
-        ...(Array.isArray(necklaceStal) ? necklaceStal : []), 
-        ...(Array.isArray(necklacesFake) ? necklacesFake : []),
-    ].filter(Boolean);
+    // 1. Łączenie i filtrowanie tablic po kategoria/podkategoria
+    const filteredProducts = useMemo(() => {
+        const wszystkieNaszyjniki = [
+            ...(Array.isArray(necklaceStal) ? necklaceStal : []), 
+            ...(Array.isArray(necklacesFake) ? necklacesFake : []),
+        ].filter(Boolean);
 
-    const filteredProducts = wszystkieNaszyjniki.filter(p => 
-        p && p.name && 
-        (!category || p.category === category) && 
-        (!subcategory || p.subCategory === subcategory) 
-    );
+        return wszystkieNaszyjniki.filter(p => 
+            p && p.name && 
+            (!category || p.category === category) && 
+            (!subcategory || p.subCategory === subcategory) 
+        );
+    }, [category, subcategory]);
+
+    // 2. Grupowanie w unikalne modele kafelków
+    const groupedProducts = useMemo(() => {
+        return groupProductsByModel(filteredProducts);
+    }, [filteredProducts]);
 
     const indexOfLastProduct = currentPage * productPerPage;
     const indexFirstProduct = indexOfLastProduct - productPerPage; 
-    const currentProduct = filteredProducts.slice(indexFirstProduct, indexOfLastProduct);
-    const totalPage = Math.ceil(filteredProducts.length / productPerPage);
+    const currentProduct = groupedProducts.slice(indexFirstProduct, indexOfLastProduct);
+    const totalPage = Math.ceil(groupedProducts.length / productPerPage);
 
     useEffect(() => {
         let lastWidth = window.innerWidth;
@@ -59,8 +94,12 @@ const NecklacesAll = ({ category }) => {
 
     const handleButtonClick = (product) => {
         if (!product) return;
-        addProduct(product); 
-        setProductToAdd(product);  
+        const productToBasket = product.variants && product.variants.length > 0 
+            ? product.variants[0] 
+            : product;
+
+        addProduct(productToBasket); 
+        setProductToAdd(productToBasket);  
         setVisible(true);  
     };
 
@@ -101,7 +140,7 @@ const NecklacesAll = ({ category }) => {
                 {currentProduct.map((product, index) => {
                     if (!product) return null;
 
-                    const isFavorite = favorites?.some(fav => fav.id === product.id);
+                    const isFavorite = favorites?.some(fav => String(fav.id) === String(product.id));
 
                     return (
                         <article
@@ -111,6 +150,10 @@ const NecklacesAll = ({ category }) => {
                             aria-label={`${product.name ?? 'Produkt'}, cena ${product.price ?? ''}`}
                         >
                             <div className="ear-v2-image-wrapper">
+                                {product.oldPrice && (
+                                    <span className="sale-badge">SALE</span>
+                                )}
+
                                 <img
                                     src={product.image}
                                     className="img-fluid ear-v2-img"
@@ -124,21 +167,21 @@ const NecklacesAll = ({ category }) => {
                                     onClick={() => setSelectedImage(product.image)}
                                     style={{ cursor: 'pointer' }}
                                 />
-                                <button
-                                    className="ear-v2-buy-btn"
-                                    onClick={() => handleButtonClick(product)}
-                                    aria-label={`Dodaj ${product.name ?? ''} do koszyka`}
-                                >
-                                    <i className="fa-solid fa-bag-shopping fa-fw"></i>
-                                </button>
 
-                                {/* Przycisk Ulubione / Like (Prawy Dolny Róg) */}
                                 <button
                                     className={`ear-v2-fav-btn ${isFavorite ? 'active' : ''}`}
                                     onClick={() => toggleFavorite && toggleFavorite(product)}
                                     aria-label={`Dodaj ${product.name ?? ''} do ulubionych`}
                                 >
                                     <i className={`${isFavorite ? 'fa-solid' : 'fa-regular'} fa-heart fa-fw`}></i>
+                                </button>
+
+                                <button
+                                    className="ear-v2-buy-btn"
+                                    onClick={() => handleButtonClick(product)}
+                                    aria-label={`Dodaj ${product.name ?? ''} do koszyka`}
+                                >
+                                    <i className="fa-solid fa-bag-shopping fa-fw"></i>
                                 </button>
                             </div>
                             
@@ -151,7 +194,17 @@ const NecklacesAll = ({ category }) => {
                                         {product.name}
                                     </Link>
                                 </h5>
-                                <p className="ear-v2-product-price">{product.price}</p>
+
+                                <div className="ear-v2-price-container">
+                                    {product.oldPrice ? (
+                                        <>
+                                            <span className="ear-v2-old-price">{product.oldPrice}</span>
+                                            <span className="ear-v2-sale-price">{product.price}</span>
+                                        </>
+                                    ) : (
+                                        <span className="ear-v2-regular-price">{product.price}</span>
+                                    )}
+                                </div>
                             </div>
                         </article>
                     );

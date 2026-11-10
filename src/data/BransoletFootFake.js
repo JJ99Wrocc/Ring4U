@@ -6,6 +6,7 @@
     "id": "31574",
     "name": "Bransoletka na stope - Fashion - Muszelki rozgwiazdy",
     "price": "79.99 zł",
+    "oldPrice": "99.99 zł",
     "category": "sztuczna",
     "subCategory": "fashion",
     "url": "/product/31574",
@@ -61,6 +62,7 @@
     "id": "31573",
     "name": "Bransoletka na stope - Fashion - Hawajaski",
     "price": "79.99 zł",
+    "oldPrice": "99.99 zł",
     "category": "sztuczna",
     "subCategory": "fashion",
     "url": "/product/31573",
@@ -141,9 +143,9 @@
    {
     "id": "10119",
     "name": "Bransoletka na stopę - Fashion - Nieskończoność",
-    "price": "74.99 zł",
+    "price": "64.99 zł",
     "category": "sztuczna",
-    
+    "oldPrice": "79.99 zł",
     "subCategory": "fashion",
     "url": "/product/10119",
     "image": "https://hurt.ecarla.pl/81503-large_default/bransoletka-na-noge-kostke-infinity-zlota-b434z.jpg",
@@ -190,7 +192,8 @@
   {
     "id": "10766",
     "name": "Beransoletka na stopę - Fashion - Celebrytka srebrna",
-    "price": "74.99 zł",
+    "price": "64.99 zł",
+    "oldPrice": "79.99 zł",
     "category": "sztuczna",
     
     "subCategory": "fashion",
@@ -239,6 +242,7 @@
     "id": "14114",
     "name": "Bransoletka na stopę - Fashion - Koraliki i blaski",
     "price": "74.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "sztuczna",
     
     "subCategory": "fashion",
@@ -294,6 +298,7 @@
     "id": "18235",
     "name": "Bransoletki na stope - Fashion - 5 sztuk",
     "price": "84.99 zł",
+    "oldPrice": "99.99 zł",
     "category": "sztuczna",
     
     "subCategory": "fashion",
@@ -325,6 +330,7 @@
     "id": "20734",
     "name": "Bransoletka na stopę - Fashion - Fioletowe koraliki",
     "price": "74.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "sztuczna",
     "subCategory": "fashion",
     "url": "/product/20734",

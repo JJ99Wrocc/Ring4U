@@ -66,7 +66,7 @@ const capitalizeName = (name) => {
 
   return (
     <div className="nav-sticky-wrapper">
-  <div className="container">
+
 <div>
       <nav
         id="nav"
@@ -174,7 +174,7 @@ const capitalizeName = (name) => {
       
     </div>
 
-  </div>
+
   </div>
       );
 };

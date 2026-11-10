@@ -26,7 +26,7 @@ const uid = auth.currentUser?.uid;
                     className="Navbar-squeres after-log-in"
                     style={{
                         width: "170px",
-                        height: "150px",
+                        height: "200px",
                         left: "-100px",
                         top: "40px",
                     }}

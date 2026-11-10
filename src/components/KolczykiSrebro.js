@@ -1,62 +1,169 @@
-import react, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState, useMemo } from 'react';
 import { CartContext } from './CartContext';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import ProductAdded from './ProductsAdded'; 
-
-import { earRings } from "./Products";
 import KolczykiSrebrne from "../data/productDataSrebroKolcz";
 import '../css/earRings.css';
-
 import { FavoritesContext } from './FavoriteContext';
 
+// FUNKCJA GRUPUJĄCA WARIANTY
+function groupProductsByModel(productsList) {
+    const grouped = {};
+    
+    productsList.forEach((item) => {
+        if (!item || !item.id) return;
+        
+        // Bazowe ID, np. "24029" z "24029-2371"
+        const baseId = item.id.toString().split('-')[0];
+        
+        // Czyszczenie nazwy ze zbędnych oznaczeń rozmiarów
+        const cleanName = item.name.replace(/(?:Rozmiar\s*:\s*|:\s*)?US\d+\s+EU\d+\s*/gi, '').trim();
+        
+        // Wyciąganie tekstu rozmiaru
+        let sizeText = "Rozmiar";
+        const sizeMatch = item.name.match(/US\d+\s+EU\d+/i);
+        if (sizeMatch) { 
+            sizeText = sizeMatch[0]; 
+        } else if (item.specs && item.specs["Ring size"]) { 
+            sizeText = item.specs["Ring size"]; 
+        } else if (item.name.toLowerCase().includes("gumce")) { 
+            sizeText = "One Size"; 
+        }
+
+        if (!grouped[baseId]) {
+            grouped[baseId] = { 
+                ...item, 
+                id: baseId, 
+                name: cleanName, 
+                variants: [] 
+            };
+        }
+        
+        const exists = grouped[baseId].variants.some(v => v.size === sizeText);
+        if (!exists) {
+            grouped[baseId].variants.push({
+                size: sizeText,
+                fullProductObject: item,
+                availability: item.availability,
+                stock: item.stock
+            });
+        }
+    });
+    
+    return Object.values(grouped);
+}
+
 const EarRingsSrebro = ({ category }) => {
+    const { subcategory } = useParams();
 
     console.log("Kategoria:", category);
+    console.log("Dane produktów:", KolczykiSrebrne);
 
     const { addProduct } = useContext(CartContext);
+    const { favorites, toggleFavorite } = useContext(FavoritesContext);
+
     const [visible, setVisible] = useState(false);
     const [productToAdd, setProductToAdd] = useState(null); 
     const [selectedImage, setSelectedImage] = useState(null);
 
-    const { favorites, toggleFavorite } = useContext(FavoritesContext);
+    const [currentPaga, setCurrentPage] = useState(1);
+    const [productPerPage, setProductPerPage] = useState(window.innerWidth < 768 ? 20 : 32);
 
-    const filteredProducts = KolczykiSrebrne.filter(p => p.category === "srebro");
+    // 1. Filtrowanie surowych danych po kategorii "srebro" oraz ewentualnej podkategorii
+    const filteredProducts = useMemo(() => {
+        return KolczykiSrebrne.filter(p => 
+            p.category === "srebro" && 
+            (!subcategory || p.subCategory === subcategory)
+        );
+    }, [subcategory]);
 
+    // 2. Grupowanie w unikalne modele kafelków
+    const groupedProducts = useMemo(() => {
+        return groupProductsByModel(filteredProducts);
+    }, [filteredProducts]);
+
+    // Przeliczenia stronicowania
+    const indexOfLastProduct = currentPaga * productPerPage;
+    const indexFirstProduct = indexOfLastProduct - productPerPage; 
+    const currentProduct = groupedProducts.slice(indexFirstProduct, indexOfLastProduct);
+    const totalPage = Math.ceil(groupedProducts.length / productPerPage);
+
+    console.log("Liczba stron:", totalPage);
+
+    useEffect(() => {
+        let lastWidth = window.innerWidth;
+        const handleResize = () => {
+            const currentWidth = window.innerWidth;
+            if (currentWidth === lastWidth) return;
+            
+            lastWidth = currentWidth;
+            const newPerPage = currentWidth < 768 ? 20 : 32;
+            
+            setProductPerPage(newPerPage);
+            setCurrentPage(1);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [subcategory]);
+
+    // Dodanie domyślnego wariantu do koszyka z ikony na zdjęciu
     const handleButtonClick = (product) => {
-        addProduct(product); 
-        setProductToAdd(product);  
+        const productToBasket = product.variants && product.variants.length > 0 
+            ? product.variants[0].fullProductObject 
+            : product;
+
+        addProduct(productToBasket); 
+        setProductToAdd(productToBasket);  
         setVisible(true);  
     };
+
+    // Dodanie konkretnego rozmiaru/wariantu
+    const handleSizeClick = (variantObject) => {
+        const exactProductSize = variantObject.fullProductObject;
+        addProduct(exactProductSize); 
+        setProductToAdd(exactProductSize);  
+        setVisible(true);  
+    };
+
     if (!filteredProducts || filteredProducts.length === 0) {
         return <div className="container">Brak produktów w tej kategorii.</div>;
     }
 
     return (
         <section id="product-ear-rings" className="ear-v2-main-container container" role="region" aria-label="product-ear-rings">
+            
             {/* MODAL PO DODANIU */}
             <ProductAdded visible={visible} setVisible={setVisible} products={productToAdd ? [productToAdd] : []} />
             
-            <h1 className="ear-v2-title">Kolczyki { 'Srebro'}</h1>
+            <h1 className="ear-v2-title">Kolczyki {subcategory ? `- ${subcategory}` : '- Srebro'}</h1>
             
             <div className="row ear-v2-row-grid">
-                {/* <--- 3. Tutaj zmień earRings.map na filteredProducts.map */}
-                {filteredProducts.map((product) => {
-                    const isFav = favorites?.some(fav => fav.id === product.id);
+                {currentProduct.map((product) => {
+                    const isFav = favorites?.some(fav => String(fav.id) === String(product.id));
 
                     return (
                         <article
                             key={product.id}
-                            className="col-6 col-md-3 mb-4 ear-v2-card"
+                            className="col-6 col-sm-4 col-md-3 mb-4 ear-v2-card"
                             role="group"
                             aria-label={`${product.name}, cena ${product.price}`}
                         >
                             <div className="ear-v2-image-wrapper">
+                                {product.oldPrice && (
+                                    <span className="sale-badge">SALE</span>
+                                )}
+
                                 <img
                                     src={product.image}
                                     className="img-fluid ear-v2-img"
                                     alt={product.name}
                                     onMouseEnter={(e) => {
-                                        if(product.image2) e.currentTarget.src = product.image2;
+                                        if (product.image2) e.currentTarget.src = product.image2;
                                     }}
                                     onMouseLeave={(e) => {
                                         e.currentTarget.src = product.image;
@@ -91,12 +198,43 @@ const EarRingsSrebro = ({ category }) => {
                                         {product.name}
                                     </Link>
                                 </h5>
-                                <p className="ear-v2-product-price">{product.price}</p>
+
+                                <div className="ear-v2-price-container">
+                                    {product.oldPrice ? (
+                                        <>
+                                            <span className="ear-v2-old-price">{product.oldPrice}</span>
+                                            <span className="ear-v2-sale-price">{product.price}</span>
+                                        </>
+                                    ) : (
+                                        <span className="ear-v2-regular-price">{product.price}</span>
+                                    )}
+                                </div>
+
+                  
                             </div>
                         </article>
                     );
                 })}
             </div>
+            
+            {totalPage > 1 && (
+                <div className='pagination'>
+                    {Array.from({ length: totalPage }, (_, i) => (
+                        <button
+                            key={i + 1}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                setCurrentPage(i + 1);
+                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }}
+                            className={currentPaga === i + 1 ? 'active' : ''}
+                        >
+                            {i + 1}
+                        </button>
+                    ))}
+                </div>
+            )}
+            
             {selectedImage && (
                 <div className="lightbox-overlay" onClick={() => setSelectedImage(null)}>
                     <div className="lightbox-content">
@@ -105,9 +243,8 @@ const EarRingsSrebro = ({ category }) => {
                     </div>
                 </div>
             )}
-            {/* <UpperFooter /> */}
         </section>
     );
-}
+};
 
 export default EarRingsSrebro;

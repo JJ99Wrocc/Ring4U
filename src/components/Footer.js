@@ -56,7 +56,7 @@
               <li role="none"><Link to="/kolczyki" role="menuitem">Kolczyki</Link></li>
               <li role="none"><Link to="/naszyjniki" role="menuitem">Naszyjniki</Link></li>
               <li role="none"><Link to="/bransoletkiDlon" role="menuitem">Bransoletki Dłoń</Link></li>
-              <li role="none"><Link to="/bransoletkiStopa" role="menuitem">Bransoletki na Stope</Link></li>
+              <li role="none"><Link to="/bransoletkiStopa" role="menuitem">Bransoletki na kostke</Link></li>
             </ul>
           </div>
 
@@ -78,6 +78,17 @@
               <li role="none"><Link to="/terms-of-services" role="menuitem">Regulamin sklepu</Link></li>
               <li role="none"><Link to="/privacypolicy" role="menuitem">Polityka prywatności / RODO / Cookies</Link></li>
               <li role="none"><Link to="/deliveryandreturns" role="menuitem">Dostawa i Zwroty</Link></li>
+              <li role="none">
+  <a 
+    href="https://www.instagram.com/ring4upl/" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    role="menuitem"
+  >
+    Instagram
+  </a>
+</li>
+              
             </ul>
           </div>
 

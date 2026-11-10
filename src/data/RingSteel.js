@@ -1,7 +1,311 @@
 const PierścionekStal = [
   // POZŁACANE
-
    {
+    "id": "21726-2241",
+    "name": "Pierścionek - Stal - Serce Rozmiar: US7 EU14",
+    "price": "74.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst829.html",
+    "image": "https://hurt.ecarla.pl/136081-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst829.jpg",
+    "description": [
+      "Nowa kolekcja biżuterii ze stali szlachetnej",
+      "Pierścionek platerowany 14-karatowym złotem",
+      "Kolor: jasny odcień złota",
+      "Producent: Xuping",
+      "STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Kod producenta": "PST829R7",
+      "Ring size": "US7 EU14"
+    },
+    "material": "stal szlachetna",
+    "color": "Jasny odcień złota",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "21726-2242",
+    "name": "Pierścionek - Stal - Serce Rozmiar: US8 EU17",
+    "price": "74.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst829.html",
+    "image": "https://hurt.ecarla.pl/136081-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst829.jpg",
+    "description": [
+      "Nowa kolekcja biżuterii ze stali szlachetnej",
+      "Pierścionek platerowany 14-karatowym złotem",
+      "Kolor: jasny odcień złota",
+      "Producent: Xuping",
+      "STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Kod producenta": "PST829R8",
+      "Ring size": "US8 EU17"
+    },
+    "material": "stal szlachetna",
+    "color": "Jasny odcień złota",
+    "availability": "Brak w magazynie"
+  },
+  {
+    "id": "21733-2278",
+    "name": "Pierścionek - Stal - Żółta cyrkonia Rozmiar: US7 EU14",
+    "price": "74.99 zł",
+    "oldPrice": "84.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst835.html",
+    "image": "https://hurt.ecarla.pl/136095-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst835.jpg",
+    "description": [
+      "Nowa kolekcja biżuterii ze stali szlachetnej",
+      "Pierścionek platerowany 14-karatowym złotem Kolor: jasny odcień złota",
+      "Producent: Xuping STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Kod producenta": "PST835R7",
+      "Ring size": "US7 EU14"
+    },
+    "material": "stal szlachetna",
+    "color": "Jasny odcień złota",
+    "availability": "W magazynie"
+  },
+
+  {
+    "id": "21194-2113",
+    "name": "Pierścionek - Stal - Mini cyrkonia Rozmiar: US7 EU14",
+    "price": "72.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "https://hurt.ecarla.pl/gb/rings/copy-of-pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst806.html",
+    "image": "https://hurt.ecarla.pl/133926-large_default/copy-of-pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst806.jpg",
+    "description": [
+      "Nowa kolekcja biżuterii ze stali szlachetnej",
+      "Pierścionek platerowany 14-karatowym złotem Kolor: jasny odcień złota",
+      "Producent: Xuping STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Kod producenta": "PST807R7",
+      "Ring size": "US7 EU14"
+    },
+    "material": "stal szlachetna",
+    "color": "Jasny odcień złota",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "21194-2114",
+    "name": "Pierścionek - Stal - Mini cyrkonia Rozmiar: US8 EU17",
+    "price": "72.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "https://hurt.ecarla.pl/gb/rings/copy-of-pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst806.html",
+    "image": "https://hurt.ecarla.pl/133926-large_default/copy-of-pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst806.jpg",
+    "description": [
+      "Nowa kolekcja biżuterii ze stali szlachetnej",
+      "Pierścionek platerowany 14-karatowym złotem Kolor: jasny odcień złota",
+      "Producent: Xuping STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Kod producenta": "PST807R8",
+      "Ring size": "US8 EU17"
+    },
+    "material": "stal szlachetna",
+    "color": "Jasny odcień złota",
+    "availability": "W magazynie"
+  },
+{
+    "id": "26871-2520",
+    "name": "Pierścionek - Stal - Żyłka 3mm Rozmiar: US9 EU20",
+    "price": "69.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-pozlacany-stal-chirurgiczna-platerowana-zlotem-pst923.html",
+    "image": "https://hurt.ecarla.pl/158631-large_default/pierscionek-pozlacany-stal-chirurgiczna-platerowana-zlotem-pst923.jpg",
+    "description": [
+      "PLATEROWANY 18 karatowym złotem pierścionek ze stali szlachetnej",
+      "Kolor: złoty STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Kod producenta": "PST923R9",
+      "Ring size": "US9 EU20"
+    },
+    "material": "stal chirurgiczna",
+    "color": "Złoty",
+    "availability": "Brak w magazynie"
+  },
+  {
+    "id": "26871-2521",
+    "name": "Pierścionek - Stal - Żyłka 3mm Rozmiar: US6 EU11",
+    "price": "69.99 zł",
+    "oldPrice": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-pozlacany-stal-chirurgiczna-platerowana-zlotem-pst923.html",
+    "image": "https://hurt.ecarla.pl/158631-large_default/pierscionek-pozlacany-stal-chirurgiczna-platerowana-zlotem-pst923.jpg",
+    "description": [
+      "PLATEROWANY 18 karatowym złotem pierścionek ze stali szlachetnej",
+      "Kolor: złoty STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Kod producenta": "PST923R6",
+      "Ring size": "US6 EU11"
+    },
+    "material": "stal chirurgiczna",
+    "color": "Złoty",
+    "availability": "W magazynie"
+  },
+
+  {
+    "id": "21722-2222",
+    "name": "Pierścionek - Stal - Zielony kamień Rozmiar: US7 EU14",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst825.html",
+    "image": "https://hurt.ecarla.pl/136192-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst825.jpg",
+    "description": [
+      "Nowa kolekcja biżuterii ze stali szlachetnej",
+      "Pierścionek platerowany 14-karatowym złotem Kolor: jasny odcień złota",
+      "Producent: Xuping STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Kod producenta": "PST825R7",
+      "Ring size": "US7 EU14"
+    },
+    "material": "stal szlachetna",
+    "color": "Jasny odcień złota",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "21722-2223",
+    "name": "Pierścionek - Stal - Zielony kamień Rozmiar: US8 EU17",
+    "price": "79.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst825.html",
+    "image": "https://hurt.ecarla.pl/136192-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst825.jpg",
+    "description": [
+      "Nowa kolekcja biżuterii ze stali szlachetnej",
+      "Pierścionek platerowany 14-karatowym złotem Kolor: jasny odcień złota",
+      "Producent: Xuping STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Kod producenta": "PST825R8",
+      "Ring size": "US8 EU17"
+    },
+    "material": "stal szlachetna",
+    "color": "Jasny odcień złota",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "21726-2243",
+    "name": "Pierścionek - Stal - Serce Rozmiar: US5 EU8",
+    "price": "74.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst829.html",
+    "image": "https://hurt.ecarla.pl/136081-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst829.jpg",
+    "description": [
+      "Nowa kolekcja biżuterii ze stali szlachetnej",
+      "Pierścionek platerowany 14-karatowym złotem",
+      "Kolor: jasny odcień złota",
+      "Producent: Xuping",
+      "STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Kod producenta": "PST829R5",
+      "Ring size": "US5 EU8"
+    },
+    "material": "stal szlachetna",
+    "color": "Jasny odcień złota",
+    "availability": "W magazynie"
+  },
+  {
+    "id": "21726-2244",
+    "name": "Pierścionek - Stal - Serce Rozmiar: US9 EU20",
+    "price": "74.99 zł",
+    "oldPrice": "84.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst829.html",
+    "image": "https://hurt.ecarla.pl/136081-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst829.jpg",
+    "description": [
+      "Nowa kolekcja biżuterii ze stali szlachetnej",
+      "Pierścionek platerowany 14-karatowym złotem",
+      "Kolor: jasny odcień złota",
+      "Producent: Xuping",
+      "STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Kod producenta": "PST829R9",
+      "Ring size": "US9 EU20"
+    },
+    "material": "stal szlachetna",
+    "color": "Jasny odcień złota",
+    "availability": "Brak w magazynie"
+  },
+  {
+    "id": "21733-2276",
+    "name": "Pierścionek - Stal - Żółta cyrkonia Rozmiar: US8 EU17",
+    "price": "74.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst835.html",
+    "image": "https://hurt.ecarla.pl/136095-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst835.jpg",
+    "description": [
+      "Nowa kolekcja biżuterii ze stali szlachetnej",
+      "Pierścionek platerowany 14-karatowym złotem Kolor: jasny odcień złota",
+      "Producent: Xuping STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Kod producenta": "PST835R8",
+      "Ring size": "US8 EU17"
+    },
+    "material": "stal szlachetna",
+    "color": "Jasny odcień złota",
+    "availability": "Brak w magazynie"
+  },
+  {
+    "id": "21733-2277",
+    "name": "Pierścionek - Stal - Żółta cyrkonia Rozmiar: US6 EU11",
+    "price": "74.99 zł",
+    "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst835.html",
+    "image": "https://hurt.ecarla.pl/136095-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst835.jpg",
+    "description": [
+      "Nowa kolekcja biżuterii ze stali szlachetnej",
+      "Pierścionek platerowany 14-karatowym złotem Kolor: jasny odcień złota",
+      "Producent: Xuping STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Kod producenta": "PST835R6",
+      "Ring size": "US6 EU11"
+    },
+    "material": "stal szlachetna",
+    "color": "Jasny odcień złota",
+    "availability": "W magazynie"
+  },
+  
+    {
+    "id": "32783",
+    "name": "Pierścionek - Stal - Mini cyrkonie Rozmiar: US6 EU11",
+    "price": "79.99 zł",
+   "category": "stal",
+    "subCategory": "pozlacane",
+    "url": "https://hurt.ecarla.pl/gb/rings/gold-plated-surgical-steel-ring-gold-plated-pst957.html",
+    "image": "https://hurt.ecarla.pl/194520-large_default/gold-plated-surgical-steel-ring-gold-plated-pst957.jpg",
+    "description": [
+      "Nowa kolekcja biżuterii ze stali nierdzewnej",
+      "PLATEROWANY 18 karatowym złotem pierścionek z dużą cyrkonią.",
+      "STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
+    ],
+    "specs": {
+      "Kod producenta": "PST957"
+    },
+    "material": "stal nierdzewna",
+    "color": "Złoty (18k), duża cyrkonia",
+    "availability": "W magazynie",
+
+  }, {
     "id": "21724-2231",
     "name": "Pierścionek - Stal - Świderki Rozmiar: US7 EU14",
     "price": "84.99 zł",
@@ -47,6 +351,7 @@ const PierścionekStal = [
     "id": "21724-2233",
     "name": "Pierścionek - Stal - Świderki Rozmiar: US6 EU11",
     "price": "84.99 zł",
+    "oldPrice": "94.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst827.html",
@@ -132,27 +437,6 @@ const PierścionekStal = [
   },
     {
     "id": "32783",
-    "name": "Pierścionek - Stal - Mini cyrkonie Rozmiar: US6 EU11",
-    "price": "79.99 zł",
-   "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/gb/rings/gold-plated-surgical-steel-ring-gold-plated-pst957.html",
-    "image": "https://hurt.ecarla.pl/194520-large_default/gold-plated-surgical-steel-ring-gold-plated-pst957.jpg",
-    "description": [
-      "Nowa kolekcja biżuterii ze stali nierdzewnej",
-      "PLATEROWANY 18 karatowym złotem pierścionek z dużą cyrkonią.",
-      "STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "PST957"
-    },
-    "material": "stal nierdzewna",
-    "color": "Złoty (18k), duża cyrkonia",
-    "availability": "W magazynie",
-
-  },
-    {
-    "id": "32783",
     "name": "Pierścionek - Stal - Mini cyrkonie Rozmiar: US9 EU20",
     "price": "79.99 zł",
    "category": "stal",
@@ -175,6 +459,7 @@ const PierścionekStal = [
     "id": "32783",
     "name": "Pierścionek - Stal - Mini cyrkonie Rozmiar: US8 EU17",
     "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
    "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/rings/gold-plated-surgical-steel-ring-gold-plated-pst957.html",
@@ -297,6 +582,7 @@ const PierścionekStal = [
     "id": "32281",
     "name": "Pierścionek - Stal - Biała Koniczyna 7mm - Regulowana",
     "price": "64.99 zł",
+    "oldPrice": "74.99 zł",
    "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-szlachetna-platerowana-14k-zlotem-6mm-pst903b.html",
@@ -387,6 +673,7 @@ const PierścionekStal = [
     "id": "11100-635",
     "name": "Pierścionek - Stal - Cyrkoniowy trójkąt Rozmiar: US10 EU22",
     "price": "68.99 zł",
+    "oldPrice": "78.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-krysztalki-stal-chirurgiczna-pst490.html",
@@ -406,204 +693,7 @@ const PierścionekStal = [
     "availability": "W magazynie"
   }
 ,
-  {
-    "id": "21726-2241",
-    "name": "Pierścionek - Stal - Serce Rozmiar: US7 EU14",
-    "price": "74.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst829.html",
-    "image": "https://hurt.ecarla.pl/136081-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst829.jpg",
-    "description": [
-      "Nowa kolekcja biżuterii ze stali szlachetnej",
-      "Pierścionek platerowany 14-karatowym złotem",
-      "Kolor: jasny odcień złota",
-      "Producent: Xuping",
-      "STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "PST829R7",
-      "Ring size": "US7 EU14"
-    },
-    "material": "stal szlachetna",
-    "color": "Jasny odcień złota",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "21726-2242",
-    "name": "Pierścionek - Stal - Serce Rozmiar: US8 EU17",
-    "price": "74.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst829.html",
-    "image": "https://hurt.ecarla.pl/136081-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst829.jpg",
-    "description": [
-      "Nowa kolekcja biżuterii ze stali szlachetnej",
-      "Pierścionek platerowany 14-karatowym złotem",
-      "Kolor: jasny odcień złota",
-      "Producent: Xuping",
-      "STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "PST829R8",
-      "Ring size": "US8 EU17"
-    },
-    "material": "stal szlachetna",
-    "color": "Jasny odcień złota",
-    "availability": "Brak w magazynie"
-  },
-  {
-    "id": "21726-2243",
-    "name": "Pierścionek - Stal - Serce Rozmiar: US5 EU8",
-    "price": "74.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst829.html",
-    "image": "https://hurt.ecarla.pl/136081-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst829.jpg",
-    "description": [
-      "Nowa kolekcja biżuterii ze stali szlachetnej",
-      "Pierścionek platerowany 14-karatowym złotem",
-      "Kolor: jasny odcień złota",
-      "Producent: Xuping",
-      "STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "PST829R5",
-      "Ring size": "US5 EU8"
-    },
-    "material": "stal szlachetna",
-    "color": "Jasny odcień złota",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "21726-2244",
-    "name": "Pierścionek - Stal - Serce Rozmiar: US9 EU20",
-    "price": "74.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst829.html",
-    "image": "https://hurt.ecarla.pl/136081-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst829.jpg",
-    "description": [
-      "Nowa kolekcja biżuterii ze stali szlachetnej",
-      "Pierścionek platerowany 14-karatowym złotem",
-      "Kolor: jasny odcień złota",
-      "Producent: Xuping",
-      "STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "PST829R9",
-      "Ring size": "US9 EU20"
-    },
-    "material": "stal szlachetna",
-    "color": "Jasny odcień złota",
-    "availability": "Brak w magazynie"
-  },
-  {
-    "id": "21733-2276",
-    "name": "Pierścionek - Stal - Żółta cyrkonia Rozmiar: US8 EU17",
-    "price": "74.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst835.html",
-    "image": "https://hurt.ecarla.pl/136095-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst835.jpg",
-    "description": [
-      "Nowa kolekcja biżuterii ze stali szlachetnej",
-      "Pierścionek platerowany 14-karatowym złotem Kolor: jasny odcień złota",
-      "Producent: Xuping STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "PST835R8",
-      "Ring size": "US8 EU17"
-    },
-    "material": "stal szlachetna",
-    "color": "Jasny odcień złota",
-    "availability": "Brak w magazynie"
-  },
-  {
-    "id": "21733-2277",
-    "name": "Pierścionek - Stal - Żółta cyrkonia Rozmiar: US6 EU11",
-    "price": "74.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst835.html",
-    "image": "https://hurt.ecarla.pl/136095-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst835.jpg",
-    "description": [
-      "Nowa kolekcja biżuterii ze stali szlachetnej",
-      "Pierścionek platerowany 14-karatowym złotem Kolor: jasny odcień złota",
-      "Producent: Xuping STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "PST835R6",
-      "Ring size": "US6 EU11"
-    },
-    "material": "stal szlachetna",
-    "color": "Jasny odcień złota",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "21733-2278",
-    "name": "Pierścionek - Stal - Żółta cyrkonia Rozmiar: US7 EU14",
-    "price": "74.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst835.html",
-    "image": "https://hurt.ecarla.pl/136095-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst835.jpg",
-    "description": [
-      "Nowa kolekcja biżuterii ze stali szlachetnej",
-      "Pierścionek platerowany 14-karatowym złotem Kolor: jasny odcień złota",
-      "Producent: Xuping STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "PST835R7",
-      "Ring size": "US7 EU14"
-    },
-    "material": "stal szlachetna",
-    "color": "Jasny odcień złota",
-    "availability": "W magazynie"
-  },
-
-  {
-    "id": "21194-2113",
-    "name": "Pierścionek - Stal - Mini cyrkonia Rozmiar: US7 EU14",
-    "price": "72.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/gb/rings/copy-of-pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst806.html",
-    "image": "https://hurt.ecarla.pl/133926-large_default/copy-of-pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst806.jpg",
-    "description": [
-      "Nowa kolekcja biżuterii ze stali szlachetnej",
-      "Pierścionek platerowany 14-karatowym złotem Kolor: jasny odcień złota",
-      "Producent: Xuping STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "PST807R7",
-      "Ring size": "US7 EU14"
-    },
-    "material": "stal szlachetna",
-    "color": "Jasny odcień złota",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "21194-2114",
-    "name": "Pierścionek - Stal - Mini cyrkonia Rozmiar: US8 EU17",
-    "price": "72.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/gb/rings/copy-of-pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst806.html",
-    "image": "https://hurt.ecarla.pl/133926-large_default/copy-of-pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst806.jpg",
-    "description": [
-      "Nowa kolekcja biżuterii ze stali szlachetnej",
-      "Pierścionek platerowany 14-karatowym złotem Kolor: jasny odcień złota",
-      "Producent: Xuping STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "PST807R8",
-      "Ring size": "US8 EU17"
-    },
-    "material": "stal szlachetna",
-    "color": "Jasny odcień złota",
-    "availability": "W magazynie"
-  },
+ 
   {
     "id": "21194-2115",
     "name": "Pierścionek - Stal - Mini cyrkonia Rozmiar: US9 EU20",
@@ -671,6 +761,7 @@ const PierścionekStal = [
     "id": "19886-1920",
     "name": "Pierścionek - Stal - Gwiazdka z nieba Rozmiar: US8 EU17",
     "price": "84.99 zł",
+    "oldPrice": "94.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-chirurgiczna-platerowana-zlotem-pst768.html",
@@ -812,6 +903,7 @@ const PierścionekStal = [
     "id": "21720-2212",
     "name": "Pierścionek - Stal - Skrzydła Asterixa Rozmiar: US7 EU14",
     "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst823.html",
@@ -918,6 +1010,7 @@ const PierścionekStal = [
     "id": "23192",
     "name": "Pierścionek - Stal - Nieskończoność ",
     "price": "74.99 zł",
+    "oldPrice": "84.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-pozlacany-stal-chirurgiczna-platerowana-zlotem-pst887.html",
@@ -1074,6 +1167,7 @@ const PierścionekStal = [
     "id": "25525-2484",
     "name": "Pierścionek - Stal - Biała cyrkonia Rozmiar: US6 EU11",
     "price": "82.99 zł",
+    "oldPrice": "92.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-chirurgiczna-platerowana-zlotem-z-cyrkonia-pst894b.html",
@@ -1220,6 +1314,7 @@ const PierścionekStal = [
     "id": "26872-2523",
     "name": "Pierścionek - Stal - Żyłka 5mm Rozmiar: US8 EU17",
     "price": "72.99 zł",
+    "oldPrice": "82.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-pozlacany-stal-chirurgiczna-platerowana-zlotem-pst925.html",
@@ -1317,89 +1412,7 @@ const PierścionekStal = [
     "color": "Złoty",
     "availability": "Brak w magazynie"
   },
-  {
-    "id": "26871-2520",
-    "name": "Pierścionek - Stal - Żyłka 3mm Rozmiar: US9 EU20",
-    "price": "69.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-pozlacany-stal-chirurgiczna-platerowana-zlotem-pst923.html",
-    "image": "https://hurt.ecarla.pl/158631-large_default/pierscionek-pozlacany-stal-chirurgiczna-platerowana-zlotem-pst923.jpg",
-    "description": [
-      "PLATEROWANY 18 karatowym złotem pierścionek ze stali szlachetnej",
-      "Kolor: złoty STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "PST923R9",
-      "Ring size": "US9 EU20"
-    },
-    "material": "stal chirurgiczna",
-    "color": "Złoty",
-    "availability": "Brak w magazynie"
-  },
-  {
-    "id": "26871-2521",
-    "name": "Pierścionek - Stal - Żyłka 3mm Rozmiar: US6 EU11",
-    "price": "69.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-pozlacany-stal-chirurgiczna-platerowana-zlotem-pst923.html",
-    "image": "https://hurt.ecarla.pl/158631-large_default/pierscionek-pozlacany-stal-chirurgiczna-platerowana-zlotem-pst923.jpg",
-    "description": [
-      "PLATEROWANY 18 karatowym złotem pierścionek ze stali szlachetnej",
-      "Kolor: złoty STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "PST923R6",
-      "Ring size": "US6 EU11"
-    },
-    "material": "stal chirurgiczna",
-    "color": "Złoty",
-    "availability": "W magazynie"
-  },
-
-  {
-    "id": "21722-2222",
-    "name": "Pierścionek - Stal - Zielony kamień Rozmiar: US7 EU14",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst825.html",
-    "image": "https://hurt.ecarla.pl/136192-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst825.jpg",
-    "description": [
-      "Nowa kolekcja biżuterii ze stali szlachetnej",
-      "Pierścionek platerowany 14-karatowym złotem Kolor: jasny odcień złota",
-      "Producent: Xuping STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "PST825R7",
-      "Ring size": "US7 EU14"
-    },
-    "material": "stal szlachetna",
-    "color": "Jasny odcień złota",
-    "availability": "W magazynie"
-  },
-  {
-    "id": "21722-2223",
-    "name": "Pierścionek - Stal - Zielony kamień Rozmiar: US8 EU17",
-    "price": "79.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst825.html",
-    "image": "https://hurt.ecarla.pl/136192-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst825.jpg",
-    "description": [
-      "Nowa kolekcja biżuterii ze stali szlachetnej",
-      "Pierścionek platerowany 14-karatowym złotem Kolor: jasny odcień złota",
-      "Producent: Xuping STAL NIERDZEWNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "PST825R8",
-      "Ring size": "US8 EU17"
-    },
-    "material": "stal szlachetna",
-    "color": "Jasny odcień złota",
-    "availability": "W magazynie"
-  },
+  
   {
     "id": "21722-2224",
     "name": "Pierścionek - Stal - Zielony kamień Rozmiar: US9 EU20",
@@ -1509,6 +1522,7 @@ const PierścionekStal = [
     "id": "21719-2211",
     "name": "Pierścionek - Stal - Wianueszek Rozmiar: US9 EU20",
     "price": "74.99 zł",
+    "oldPrice": "84.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst822.html",
@@ -1608,8 +1622,9 @@ const PierścionekStal = [
    {
     "id": "32279",
     "name": "Pierścionek - Stal - Niebieski kamień Rozmiar: US10 EU22",
-    "price": "89.99 zł",
-   "category": "stal",
+    "price": "79.99 zł",
+    "oldPrice": "99.99 zł",
+    "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-pozlacany-stal-chirurgiczna-platerowana-zlotem-niebieski-kamien-pst855.html",
     "image": "https://hurt.ecarla.pl/191596-large_default/pierscionek-pozlacany-stal-chirurgiczna-platerowana-zlotem-niebieski-kamien-pst855.jpg",
@@ -1756,8 +1771,9 @@ const PierścionekStal = [
    {
     "id": "34457",
     "name": "Pierścionek - Stal - Kulki - Regulowany",
-    "price": "79.99 zł",
-   "category": "stal",
+    "price": "69.99 zł",
+    "oldPrice": "89.99 zł",
+    "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-szlachetna-platerowana-14k-zlotem-regulowany-zlote-kulki-pst1002.html",
     "image": "https://hurt.ecarla.pl/203096-large_default/pierscionek-stal-szlachetna-platerowana-14k-zlotem-regulowany-zlote-kulki-pst1002.jpg",
@@ -1902,6 +1918,7 @@ const PierścionekStal = [
     "id": "26873-2528",
     "name": "Pierścionek - stal Świderki, Rozmiar: US9 EU20",
     "price": "84.99 zł",
+    "oldPrice": "94.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-pozlacany-stal-chirurgiczna-platerowana-zlotem-pst922.html",
@@ -2025,7 +2042,8 @@ const PierścionekStal = [
 {
     "id": "20371-1998",
     "name": "Pierścionek - Stal - Gwiazda Rozmiar: US8 EU17",
-    "price": "79.99 zł",
+    "price": "69.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-chirurgiczna-platerowana-zlotem-pst790.html",
@@ -2175,6 +2193,7 @@ const PierścionekStal = [
     "id": "9143-591",
     "name": "Pierścionek - Stal - Kryształki Swarovski Ważka, Rozmiar: US6 EU11",
     "price": "99.99 zł",
+    "oldPrice": "109.99 zł",
     "category": "stal",
     "subCategory": "srebro",
     "url": "https://hurt.ecarla.pl/gb/swarovski-rings/pierscionek-krysztalek-swarovski-stal-platerowana-bialym-zlotem-pst452.html",
@@ -2246,7 +2265,8 @@ const PierścionekStal = [
   {
     "id": "9143-594",
        "name": "Pierścionek - Stal - Kryształki Swarovski Ważka, Rozmiar: US9 EU20",
-    "price": "99.99 zł",
+    "price": "89.99 zł",
+    "oldPrice": "109.99 zł",
     "category": "stal",
     "subCategory": "srebro",
     "url": "https://hurt.ecarla.pl/gb/swarovski-rings/pierscionek-krysztalek-swarovski-stal-platerowana-bialym-zlotem-pst452.html",
@@ -2360,7 +2380,8 @@ const PierścionekStal = [
     {
     "id": "9314",
       "name": "Pierścionek - Stal - Krywształek Swarovski  Rozmiar: US6 EU11",
-    "price": "99.99 zł",
+    "price": "89.99 zł",
+    "oldPrice": "109.99 zł",
     "category": "stal",
     "subCategory": "srebro",
     "url": "https://hurt.ecarla.pl/gb/swarovski-rings/pierscionek-krysztalek-swarovski-stal-platerowana-bialym-zlotem-pst456.html",
@@ -2563,6 +2584,7 @@ const PierścionekStal = [
     "id": "9316-618",
     "name": "Pierścionek - Stal - Kryształy swarovski Rozmiar: US7 EU14",
       "price": "109.99 zł",
+      "oldPrice": "119.99 zł",
     "category": "stal",
     "subCategory": "srebro",
     "url": "https://hurt.ecarla.pl/gb/swarovski-rings/pierscionek-krysztalek-swarovski-stal-platerowana-bialym-zlotem-pst458.html",
@@ -2716,6 +2738,7 @@ const PierścionekStal = [
         "id": "19874",
             "name": "Pierścionek - Stal - Poroże jelenia Rozmiar: US7 EU14",
         "price": "74.99 zł",
+        "oldPrice": "84.99 zł",
         "category": "stal",
         "subCategory": "srebro",
         "url": "https://hurt.ecarla.pl/gb/rings/copy-of-pierscionek-stal-chirurgiczna-platerowana-zlotem-pst753.html",
@@ -2881,6 +2904,7 @@ const PierścionekStal = [
         "id": "19876",
         "name": "Pierścionek - Stal - Piękne listki Rozmiar: US7 EU14 ",
         "price": "79.99 zł",
+        "oldPrice": "89.99 zł",
         "category": "stal",
         "subCategory": "srebro",
         "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-chirurgiczna-platerowana-bialym-zlotem-pst758.html",
@@ -3219,6 +3243,7 @@ const PierścionekStal = [
     "id": "20372-2002",
     "name": "Pierścionek - Stal - Duża cyrkonia Rozmiar: US9 EU20",
     "price": "74.99 zł",
+    "oldPrice": "84.99 zł",
     "category": "stal",
     "subCategory": "fashion",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-chirurgiczna-platerowana-zlotem-pst791.html",
@@ -3670,6 +3695,7 @@ const PierścionekStal = [
         "id": "19879-1899",
         "name": "Pierścionek - Stal - Cyrkoniowe słońce Rozmiar: US6 EU11",
         "price": "84.99 zł",
+        "oldPrice": "94.99 zł",
         "category": "stal",
         "subCategory": "fashion",
         "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-chirurgiczna-platerowana-zlotem-pst761.html",
@@ -4140,6 +4166,7 @@ const PierścionekStal = [
         "id": "21963-2324",
         "name": "Pierścionek - stal - Geometryczne cyrkonie zielone Rozamiar: US6 EU11",
         "price": "79.99 zł",
+        "oldPrice": "89.99 zł",
         "category": "stal",
         "subCategory": "fashion",
         "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-pozlacany-cyrkonie-kolor-stal-chirurgiczna-platerowana-zlotem-pst579zie.html",
@@ -4419,6 +4446,7 @@ const PierścionekStal = [
     "id": "21731-2268",
     "name": "Pierścionek - stal - Zielone cyrkonie Rozmiar: US6 EU20",
     "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "fashion",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst852.html",
@@ -4461,6 +4489,7 @@ const PierścionekStal = [
     "id": "21731-2270",
     "name": "Pierścionek - stal - Zielone cyrkonie Rozmiar: US6 EU11",
     "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "fashion",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst852.html",
@@ -4482,6 +4511,7 @@ const PierścionekStal = [
     "id": "19804-1868",
        "name": "Pierścionek - Stal - Cyrkoniowe serca Rozmiar: US7 EU14",
     "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "fashion",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-chirurgiczna-platerowana-zlotem-pst753.html",
@@ -4526,6 +4556,7 @@ const PierścionekStal = [
     "id": "19804-1871",
     "name": "Pierścionek - Stal - Cyrkoniowe serca Rozmiar: US6 EU11",
     "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "fashion",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-chirurgiczna-platerowana-zlotem-pst753.html",
@@ -4646,6 +4677,7 @@ const PierścionekStal = [
     "id": "25569-2506",
      "name": "Pierścionek - Stal - Cyrkonie, Rozmiar: US9 EU20",
     "price": "84.99 zł",
+    "oldPrice": "94.99 zł",
     "category": "stal",
     "subCategory": "fashion",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-pozlacany-cyrkonie-kolor-stal-chirurgiczna-platerowana-zlotem-pst579kol.html",
@@ -4709,6 +4741,7 @@ const PierścionekStal = [
     "id": "19349",
     "name": "Pierścionek - Stal - Wąż",
     "price": "79.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "fashion",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-na-gumce-stal-chirurgiczna-pozlacana-pst741.html",
@@ -4788,7 +4821,8 @@ const PierścionekStal = [
     {
     "id": "25685",
     "name": "Pierścionek - Stal - Diadem",
-    "price": "79.99 zł",
+    "price": "69.99 zł",
+    "oldPrice": "89.99 zł",
     "category": "stal",
     "subCategory": "fashion",
     "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-z-cyrkoniami-pst917.html",
@@ -4852,6 +4886,7 @@ const PierścionekStal = [
     "id": "21723-2230",
     "name": "Pierścionek - Stal - Diadem Rozmiar: US6 EU11",
     "price": "74.99 zł",
+    "oldPrice": "84.99 zł",
     "category": "stal",
     "subCategory": "fashion",
     "url": "https://hurt.ecarla.pl/gb/stainless-steel-jewelry/pierscionek-stal-szlachetna-platerowana-14k-zlotem-pst826.html",
@@ -4880,7 +4915,7 @@ const PierścionekStal = [
   {
     "id": "20770-2021",
     "name": "PIERŚCIONEK STAL CHIRURGICZNA PST414, Rozmiar: US7 EU14",
-    "price": "11.99 zł",
+    "price": "75.99 zł",
     "category": "stal",
     "subCategory": "klasyczne",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-chirurgiczna-pst414.html",
@@ -4900,7 +4935,8 @@ const PierścionekStal = [
   {
     "id": "20770-2022",
     "name": "PIERŚCIONEK STAL CHIRURGICZNA PST414, Rozmiar: US8 EU17",
-    "price": "11.99 zł",
+    "price": "*61.99 zł",
+    "oldPrice": "71.99 zł",
     "category": "stal",
     "subCategory": "klasyczne",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-chirurgiczna-pst414.html",
@@ -4920,7 +4956,8 @@ const PierścionekStal = [
   {
     "id": "20770-2023",
     "name": "PIERŚCIONEK STAL CHIRURGICZNA PST414, Rozmiar: US9 EU20",
-    "price": "11.99 zł",
+    "price": "64.99 zł",
+    "oldPrice": "74.99 zł",
     "category": "stal",
     "subCategory": "klasyczne",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-chirurgiczna-pst414.html",
@@ -4940,7 +4977,7 @@ const PierścionekStal = [
   {
     "id": "20770-2024",
     "name": "PIERŚCIONEK STAL CHIRURGICZNA PST414, Rozmiar: US6 EU11",
-    "price": "11.99 zł",
+    "price": "76.99 zł",
     "category": "stal",
     "subCategory": "klasyczne",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-chirurgiczna-pst414.html",
@@ -4966,7 +5003,7 @@ const PierścionekStal = [
   {
     "id": "24967-2397",
     "name": "Pierścionek stal chirurgiczna platerowana złotem PST894, Rozmiar: US7 EU14",
-    "price": "18.45 zł",
+    "price": "79.45 zł",
     "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-chirurgiczna-platerowana-zlotem-pst894.html",
@@ -4987,7 +5024,8 @@ const PierścionekStal = [
   {
     "id": "24967-2398",
     "name": "Pierścionek stal chirurgiczna platerowana złotem PST894, Rozmiar: US8 EU17",
-    "price": "18.45 zł",
+    "price": "79.45 zł",
+    "oldPrice": "89.45 zł",
     "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-chirurgiczna-platerowana-zlotem-pst894.html",
@@ -5008,7 +5046,8 @@ const PierścionekStal = [
   {
     "id": "24967-2399",
     "name": "Pierścionek stal chirurgiczna platerowana złotem PST894, Rozmiar: US9 EU20",
-    "price": "18.45 zł",
+    "price": "89.45 zł",
+ 
     "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-chirurgiczna-platerowana-zlotem-pst894.html",
@@ -5029,7 +5068,7 @@ const PierścionekStal = [
   {
     "id": "24967-2400",
     "name": "Pierścionek stal chirurgiczna platerowana złotem PST894, Rozmiar: US6 EU11",
-    "price": "18.45 zł",
+    "price": "78.45 zł",
     "category": "stal",
     "subCategory": "pozlacane",
     "url": "https://hurt.ecarla.pl/gb/rings/pierscionek-stal-chirurgiczna-platerowana-zlotem-pst894.html",

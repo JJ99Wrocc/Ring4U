@@ -3,9 +3,9 @@
     top: 0;    
     width: 100%;
     height: 100px !important;
-    background-color: rgb(247, 203, 223)!important;
+    background-color: #121216;
     color: #3a3532 !important;
-    z-index: 1000; border-radius: 28px;
+    z-index: 1000; 
     
   }
   /* Klasa dodawana przez React po scrollu > 150px */
@@ -19,6 +19,7 @@
   height: 90px !important; 
 }
     .nav-title-span{
+      
       color: #faa2a2;
     font-size: 39px !important;
           }
@@ -43,7 +44,7 @@
     width: 200px;
     margin: 0 auto;
     background-color: white;
-    border-radius: 50px;
+  
     padding: 5px 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     input {
@@ -52,7 +53,7 @@
       outline: none;
       background: transparent;
       padding: 10px 15px;
-      border-radius: 50px;
+
       font-size: 16px;
       padding-left: 20px;
       text-align: left;
@@ -138,6 +139,7 @@
     text-decoration: none;  
     color: #fff;
     font-size: 40px;
+    margin-left: 30px;
   }
 
   div.ui.right.floated.header {
@@ -189,7 +191,7 @@
   .icon-circle{width: 35px;height: 35px;}
   .fa-bag-shopping,.fa-user{font-size: 16px !important;}
   .icon-circle::after{width: 26px;height: 26px;}
-  .ui.header.nav-title{font-size: 22px !important;margin-right: 20px !important;}
+  .ui.header.nav-title{font-size: 22px !important;margin-right: 20px !important; margin-left: 20px !important;}
     .nav-title-span{
   
     font-size: 23px !important;

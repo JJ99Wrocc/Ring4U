@@ -29,7 +29,6 @@ const NecklaceStal = () => {
     const indexFirstProduct = indexOfLastProduct - productPerPage; 
     const currentProduct = filteredProducts.slice(indexFirstProduct, indexOfLastProduct);
     const totalPage = Math.ceil(filteredProducts.length / productPerPage);
-    console.log("Liczba stron:", totalPage);
 
     useEffect(() => {
         let lastWidth = window.innerHeight;
@@ -81,6 +80,11 @@ const NecklaceStal = () => {
                             aria-label={`${product.name}, cena ${product.price}`}
                         >
                             <div className="ear-v2-image-wrapper">
+                                {/* Plakietka SALE dla produktów w promocji */}
+                                {product.oldPrice && (
+                                    <span className="sale-badge">SALE</span>
+                                )}
+
                                 <img
                                     src={product.image}
                                     className="img-fluid ear-v2-img"
@@ -121,7 +125,18 @@ const NecklaceStal = () => {
                                         {product.name}
                                     </Link>
                                 </h5>
-                                <p className="ear-v2-product-price">{product.price}</p>
+
+                                {/* SEKCJA CEN Z OBSŁUGĄ PRZECENY */}
+                                <div className="ear-v2-price-container">
+                                    {product.oldPrice ? (
+                                        <>
+                                            <span className="ear-v2-old-price">{product.oldPrice}</span>
+                                            <span className="ear-v2-sale-price">{product.price}</span>
+                                        </>
+                                    ) : (
+                                        <span className="ear-v2-regular-price">{product.price}</span>
+                                    )}
+                                </div>
                             </div>
                         </article>
                     );
@@ -136,7 +151,7 @@ const NecklaceStal = () => {
                             onClick={(e) => {
                                 e.preventDefault();
                                 setCurrentPage(i + 1);
-                                window.scrollTo({ top: 0, behavior: 'smooth' }); // Przewinięcie do góry
+                                window.scrollTo({ top: 0, behavior: 'smooth' });
                             }}
                             className={currentPaga === i + 1 ? 'active' : ''}
                         >
@@ -154,7 +169,6 @@ const NecklaceStal = () => {
                     </div>
                 </div>
             )}
-            {/* <UpperFooter /> */}
         </section>
     );
 };

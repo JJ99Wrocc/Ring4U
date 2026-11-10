@@ -86,6 +86,10 @@ const BranceletFootStal = ({ category }) => {
                             aria-label={`${product.name}, cena ${product.price}`}
                         >
                             <div className="ear-v2-image-wrapper">
+                                {product.oldPrice && (
+                                    <span className="sale-badge">SALE</span>
+                                )}
+
                                 <img
                                     src={product.image}
                                     className="img-fluid ear-v2-img"
@@ -127,7 +131,16 @@ const BranceletFootStal = ({ category }) => {
                                         {product.name}
                                     </Link>
                                 </h5>
-                                <p className="ear-v2-product-price">{product.price}</p>
+                                <div className="ear-v2-price-container">
+                                    {product.oldPrice ? (
+                                        <>
+                                            <span className="ear-v2-old-price">{product.oldPrice}</span>
+                                            <span className="ear-v2-sale-price">{product.price}</span>
+                                        </>
+                                    ) : (
+                                        <span className="ear-v2-regular-price">{product.price}</span>
+                                    )}
+                                </div>
                             </div>
                         </article>
                     );

@@ -57,7 +57,8 @@
 }
 
 .custom-link {
-    background-color: rgba(115, 88, 88, 0.8);
+    background-color: rgba(224, 137, 191, 0.8);
+
     padding: 10px 15px !important; /* Zwiększony padding dla UX */
     margin: 2px 5px !important;
     border-radius: 12px;
@@ -83,13 +84,13 @@
 }
 /* HOVER NA OPCJE */
 .custom-link:hover {
-    background-color:rgba(115, 88, 88, 0.8)  !important;
+    background-color:rgba(212, 121, 172, 0.8) !important;
 }
 
 .custom-link:hover a,
 .custom-link:hover {
-    background-color:rgba(115, 88, 88, 0.8) ;
-    color: #cda6a6 !important;
+    background-color:rgba(212, 121, 172, 0.8) !important;
+    color: #ffffff !important;
     
 }
 

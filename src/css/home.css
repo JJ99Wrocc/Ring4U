@@ -1,58 +1,43 @@
-.img-header{
-    position: relative;
-    background-image: url('../img/header-1400px.webp');
-filter: sepia(0.15) brightness(0.95) !important;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 28px;
-height: 500px;
-min-height: 300px;
-    width: 100%;
-    margin: 0;
-    padding: 0; 
-    border: none !important;
+.img-box {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url('../img/Header-img 920px.webp');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.75),
+    0 0 30px rgba(212, 175, 55, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
 
-
-    -webkit-mask-image: radial-gradient(
-        ellipse 90% 80% at center, 
-        black 30%, 
-        rgba(0, 0, 0, 0.05) 60%, 
-        transparent 98%
-    );
-    mask-image: radial-gradient(
-        ellipse 90% 80% at center, 
-        black 30%, 
-        rgba(0, 0, 0, 0.05) 60%, 
-        transparent 98%
-    );
-
-    /* 3. EFEKT SEAMLESS: To sprawia, że zdjęcie "wypływa" z tła strony */
-    filter: drop-shadow(0 0 60px rgba(0, 0, 0, 0.1));
-    
-
-    backdrop-filter: blur(4px);
+/* Krawędź/nakładka cieniująca (zastępuje .img-shadow-box w HTML) */
+.img-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Przyciemnienie od dołu i prawej strony, pozwalające lewej biżuterii lśnić */
+  background: linear-gradient(
+    135deg, 
+    rgba(10, 10, 12, 0.2) 0%, 
+    rgba(10, 10, 12, 0.65) 60%, 
+    rgba(10, 10, 12, 0.85) 100%
+  );
+  z-index: 1;
 }
 .home-segment{
     margin: 0 auto;
 }
-.img-header-shadow {
-    position: absolute;
-    inset: 0;
-    border: none !important;
-    border-radius: 50px;
-    background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, transparent 80%);
-    -webkit-mask-image: radial-gradient(ellipse 90% 80% at center, black 30%, transparent 98%);
-    mask-image: radial-gradient(ellipse 90% 80% at center, black 30%, transparent 98%);
-    
-    pointer-events: none;
-  }
+
   .header-text {
     position: absolute;
     top: 30%; 
     left: 50%;
-    transform: translateX(-50%); /* Centrowanie, skoro dajesz left 50% */
-    
+    transform: translateX(-50%);
     z-index: 100;
     font-size: 35px; 
     font-weight: 900;
@@ -66,14 +51,10 @@ min-height: 300px;
     max-width: 800px;
     white-space: normal !important; 
     letter-spacing: 2px;
-
-    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); */
-    /* DODAJEMY TO: */
     animation: textEntrance 3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
     will-change: transform, opacity, filter;
 }
 
-/* DODATEK DLA SŁOWA "Biżuteria" (jeśli używasz span lub chcesz wyróżnić pierwsze słowo) */
 .header-text::first-line {
     font-weight: 950;
     letter-spacing: -0.06em;
@@ -162,7 +143,7 @@ min-height: 300px;
 
 .arrow-down {
   position: relative;
-  left: 50%; top: -30px;
+  left: 50%; top: -100px;
   margin: 0 auto;
   font-size: 34px;
   color: #8c7a70;
@@ -190,17 +171,17 @@ min-height: 300px;
   }
 }
   @media(max-width:1200px){
-    .img-header{
-        background-image: url('../img/header-920px.webp');
-        background-size: cover;
-        width: 100%;
-      }
+
       .header-button{
 font-size: 12px;   width: 200px; height: 50px;
       }
 
   }
   @media(max-width:992px){
+  .img-box {
+  position: relative;
+  width: 100%;
+  height: 600px;}
     .header-button{
         font-size: 11px;   width: 170px; height: 45px;
               }
@@ -211,20 +192,11 @@ font-size: 12px;   width: 200px; height: 50px;
   }
   @media(max-width:768px){
 
-    .img-header{
-        /* margin: 0 0 0 40px    !important;   */
-        align-items: center;
-        background-size: cover;
-      }
+
        .home-segment{
         height: 100vh !important;
     }
-      .img-header-shadow {
-      
-        border-radius: 28px;width: 98% !important;
-  
-        z-index: 0;
-      }
+
       .home-segment{
         height: 50vh; display: flex;
         justify-content: center; /* wyśrodkowanie poziome */
@@ -254,32 +226,33 @@ font-size: 12px;   width: 200px; height: 50px;
               }
   }
 @media(max-width:450px){
-    .img-header{width: 95%;margin: 10px;}
-    .img-header-shadow {
-    
-        border-radius: 28px;width: 95% !important;
-    
-        z-index: 0;
-      }
+ .img-box {
+  position: relative;
+  width: 100%;
+  height: 840px;}
 
 
 
 }
-  @media(max-width:360px){ .img-header{width: 90%;margin: 10px;}}
-  @media(max-width:330px){
-    .img-header{width: 85% !important;margin-left: -10px !important;} 
-  } 
+@media(max-width:400px){
+ .img-box {
+  position: relative;
+  width: 100%;
+  height: 800px;}
 
-  @keyframes breathe {
-    0% {
-        background-size: 105% auto;
-        background-position: 50% 50%;
-    }
-    100% {
-        background-size: 115% auto;
-        background-position: 52% 48%; /* Lekki ruch po skosie udaje ruch 3D */
-    }
+
+
 }
+@media(max-width:380px){
+ .img-box {
+  position: relative;
+  width: 100%;
+  height: 700px;}
+
+
+
+}
+
 
 @keyframes textEntrance {
   0% {
@@ -314,13 +287,6 @@ font-size: 12px;   width: 200px; height: 50px;
     align-items: center;
   }
 
-
-
-  .img-header-shadow {
-    width: 98% !important;
-    border-radius: 28px;
-    z-index: 0;
-  }
 
   /* 3. TEKST I PRZYCISK */
   .header-text {

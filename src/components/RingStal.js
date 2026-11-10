@@ -1,13 +1,12 @@
 import React, { useContext, useEffect, useState, useMemo } from 'react';
 import { CartContext } from './CartContext';
 import { Link } from 'react-router-dom';
-import ProductAdded from './ProductsAdded'; // DODANO
-// import UpperFooter from './Footer';
-// import "../css/EarRings.css";
+import ProductAdded from './ProductsAdded';
 import { earRings } from "./Products";
 import PierścionekStal from "../data/RingSteel";
 import { useParams } from 'react-router-dom';
 import '../css/earRings.css';
+import { FavoritesContext } from './FavoriteContext';
 
 // FUNKCJA GRUPUJĄCA WARIANTY (Działa poza komponentem, aby nie obciążać renderowania)
 function groupProductsByModel(productsList) {
@@ -64,6 +63,8 @@ const RingStal = ({ category }) => {
     console.log("Dane produktów:", PierścionekStal);
     
     const { addProduct } = useContext(CartContext);
+    const { favorites, toggleFavorite } = useContext(FavoritesContext);
+
     const [visible, setVisible] = useState(false);
     const [productToAdd, setProductToAdd] = useState(null); 
     const [selectedImage, setSelectedImage] = useState(null);
@@ -144,87 +145,113 @@ const RingStal = ({ category }) => {
             <h1 className="ear-v2-title">Pierścionki {subcategory ? `- ${subcategory}` : '- Stal'}</h1>
             
             <div className="row ear-v2-row-grid">
-                {currentProduct.map((product) => (
-                    <article
-                        key={product.id}
-                        className="col-6 col-sm-4 col-md-3 mb-4 ear-v2-card"
-                        role="group"
-                        aria-label={`${product.name}, cena ${product.price}`}
-                    >
-                        <div className="ear-v2-image-wrapper">
-                            <img
-                                src={product.image}
-                                className="img-fluid ear-v2-img"
-                                alt={product.name}
-                                onMouseEnter={(e) => {
-                                    if (product.image2) e.currentTarget.src = product.image2;
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.currentTarget.src = product.image;
-                                }}
-                                onClick={() => setSelectedImage(product.image)}
-                                style={{ cursor: 'pointer' }}
-                            />
-                            <button
-                                className="ear-v2-buy-btn"
-                                onClick={() => handleButtonClick(product)}
-                                aria-label={`Dodaj ${product.name} do koszyka`}
-                            >
-                                <i className="fa-solid fa-bag-shopping fa-fw"></i>
-                            </button>
-                        </div>
-                        
-                        <div className="ear-v2-product-info">
-                            <h5 className='h5-ear-rings'>
-                                <Link 
-                                    to={`/product/${product.id}`} 
-                                    style={{ textDecoration: 'none', color: 'inherit' }}
-                                >
-                                    {product.name}
-                                </Link>
-                            </h5>
-                            <p className="ear-v2-product-price">{product.price}</p>
-                            
-                            {/* Sekcja wyboru i podglądu rozmiarów pod ceną na liście produktów */}
-                            <div className="product-card-sizes" style={{ marginTop: '8px', display: 'flex', gap: '4px', flexWrap: 'wrap' }}>
-                                {product.variants.length === 1 && product.variants[0].size === "One Size" ? (
-                                    <button 
-                                        className="size-badge-btn single-size"
-                                        onClick={() => handleSizeClick(product.variants[0])}
-                                        style={{ fontSize: '10px', padding: '3px 6px', background: '#f0f0f0', border: '1px solid #ccc', borderRadius: '4px', cursor: 'pointer', width: '100%' }}
-                                    >
-                                        Uniwersalny <i className="fa-solid fa-bag-shopping" style={{ marginLeft: '4px', fontSize: '9px' }}></i>
-                                    </button>
-                                ) : (
-                                    product.variants.map((v) => {
-                                        const isOutOfStock = v.availability === "Brak w magazynie" || v.stock === 0;
-                                        const shortSize = v.size.replace("US", "").replace("EU", "EU ");
-                                        return (
-                                            <button
-                                                key={v.size}
-                                                disabled={isOutOfStock}
-                                                onClick={() => handleSizeClick(v)}
-                                                className={`size-badge-btn ${isOutOfStock ? 'disabled' : ''}`}
-                                                style={{
-                                                    fontSize: '9px',
-                                                    padding: '2px 5px',
-                                                    backgroundColor: isOutOfStock ? '#f5f5f5' : '#fff',
-                                                    color: isOutOfStock ? '#ccc' : '#333',
-                                                    border: isOutOfStock ? '1px solid #e5e5e5' : '1px solid #333',
-                                                    borderRadius: '4px',
-                                                    cursor: isOutOfStock ? 'not-allowed' : 'pointer',
-                                                    textDecoration: isOutOfStock ? 'line-through' : 'none'
-                                                }}
-                                            >
-                                                {shortSize}
-                                            </button>
-                                        );
-                                    })
+                {currentProduct.map((product) => {
+                    const isFav = favorites?.some(fav => String(fav.id) === String(product.id));
+
+                    return (
+                        <article
+                            key={product.id}
+                            className="col-6 col-sm-4 col-md-3 mb-4 ear-v2-card"
+                            role="group"
+                            aria-label={`${product.name}, cena ${product.price}`}
+                        >
+                            <div className="ear-v2-image-wrapper">
+                                {product.oldPrice && (
+                                    <span className="sale-badge">SALE</span>
                                 )}
+
+                                <img
+                                    src={product.image}
+                                    className="img-fluid ear-v2-img"
+                                    alt={product.name}
+                                    onMouseEnter={(e) => {
+                                        if (product.image2) e.currentTarget.src = product.image2;
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.src = product.image;
+                                    }}
+                                    onClick={() => setSelectedImage(product.image)}
+                                    style={{ cursor: 'pointer' }}
+                                />
+
+                                <button
+                                    className={`ear-v2-fav-btn ${isFav ? 'active' : ''}`}
+                                    onClick={() => toggleFavorite(product)}
+                                    aria-label={isFav ? `Usuń ${product.name} z ulubionych` : `Dodaj ${product.name} do ulubionych`}
+                                >
+                                    <i className={isFav ? "fa-solid fa-heart" : "fa-regular fa-heart"}></i>
+                                </button>
+
+                                <button
+                                    className="ear-v2-buy-btn"
+                                    onClick={() => handleButtonClick(product)}
+                                    aria-label={`Dodaj ${product.name} do koszyka`}
+                                >
+                                    <i className="fa-solid fa-bag-shopping fa-fw"></i>
+                                </button>
                             </div>
-                        </div>
-                    </article>
-                ))}
+                            
+                            <div className="ear-v2-product-info">
+                                <h5 className='h5-ear-rings'>
+                                    <Link 
+                                        to={`/product/${product.id}`} 
+                                        style={{ textDecoration: 'none', color: 'inherit' }}
+                                    >
+                                        {product.name}
+                                    </Link>
+                                </h5>
+                                <div className="ear-v2-price-container">
+                                    {product.oldPrice ? (
+                                        <>
+                                            <span className="ear-v2-old-price">{product.oldPrice}</span>
+                                            <span className="ear-v2-sale-price">{product.price}</span>
+                                        </>
+                                    ) : (
+                                        <span className="ear-v2-regular-price">{product.price}</span>
+                                    )}
+                                </div>
+                                
+                                {/* Sekcja wyboru i podglądu rozmiarów pod ceną na liście produktów */}
+                                <div className="product-card-sizes" style={{ marginTop: '8px', display: 'flex', gap: '4px', flexWrap: 'wrap' }}>
+                                    {product.variants.length === 1 && product.variants[0].size === "One Size" ? (
+                                        <button 
+                                            className="size-badge-btn single-size"
+                                            onClick={() => handleSizeClick(product.variants[0])}
+                                            style={{ fontSize: '10px', padding: '3px 6px', background: '#f0f0f0', border: '1px solid #ccc', borderRadius: '4px', cursor: 'pointer', width: '100%' }}
+                                        >
+                                            Uniwersalny <i className="fa-solid fa-bag-shopping" style={{ marginLeft: '4px', fontSize: '9px' }}></i>
+                                        </button>
+                                    ) : (
+                                        product.variants.map((v) => {
+                                            const isOutOfStock = v.availability === "Brak w magazynie" || v.stock === 0;
+                                            const shortSize = v.size.replace("US", "").replace("EU", "EU ");
+                                            return (
+                                                <button
+                                                    key={v.size}
+                                                    disabled={isOutOfStock}
+                                                    onClick={() => handleSizeClick(v)}
+                                                    className={`size-badge-btn ${isOutOfStock ? 'disabled' : ''}`}
+                                                    style={{
+                                                        fontSize: '9px',
+                                                        padding: '2px 5px',
+                                                        backgroundColor: isOutOfStock ? '#f5f5f5' : '#fff',
+                                                        color: isOutOfStock ? '#ccc' : '#333',
+                                                        border: isOutOfStock ? '1px solid #e5e5e5' : '1px solid #333',
+                                                        borderRadius: '4px',
+                                                        cursor: isOutOfStock ? 'not-allowed' : 'pointer',
+                                                        textDecoration: isOutOfStock ? 'line-through' : 'none'
+                                                    }}
+                                                >
+                                                    {shortSize}
+                                                </button>
+                                            );
+                                        })
+                                    )}
+                                </div>
+                            </div>
+                        </article>
+                    );
+                })}
             </div>
             
             {totalPage > 1 && (
