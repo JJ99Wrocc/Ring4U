@@ -196,7 +196,8 @@ font-size: 12px;   width: 200px; height: 50px;
         font-size: 11px;   width: 170px; height: 45px;
               }
               .header-text{
-        font-size: 23px;
+        font-size: 28px !important;
+        text-align: center;
               }
 
   }
@@ -231,37 +232,17 @@ font-size: 12px;   width: 200px; height: 50px;
         font-size: 9px;   width: 150px; height: 40px;
               }
               .header-text{
-                top: 45%;
+                top: 40% !important;
         font-size: 16px;
               }
+                  .header-button {
+        top: 55%;
+        width: 180px !important;
+        height: 60px !important;
+        font-size: 10px;
+    }
   }
-@media(max-width:450px){
- .img-box {
-  position: relative;
-  width: 100%;
-  height: 840px;}
 
-
-
-}
-@media(max-width:400px){
- .img-box {
-  position: relative;
-  width: 100%;
-  height: 800px;}
-
-
-
-}
-@media(max-width:380px){
- .img-box {
-  position: relative;
-  width: 100%;
-  height: 700px;}
-
-
-
-}
 
 
 @keyframes textEntrance {
