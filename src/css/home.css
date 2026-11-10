@@ -42,7 +42,7 @@
     margin: 0 auto;
 }
 
-  .header-text {
+.header-text {
     position: absolute;
     top: 39%; 
     left: 50%;
@@ -51,19 +51,28 @@
     font-size: 35px; 
     font-weight: 900;
     line-height: 0.9;
-    color: #bc9600 !important;
-    text-transform: none; 
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3)) 
-            drop-shadow(0 0 80px rgba(255, 255, 255, 0.1));
-    /* mix-blend-mode: color;  */
-    opacity: 0; /* Startujemy od zera dla animacji */
+    
+    /* Luksusowy, trójwymiarowy złoty gradient, który wygląda naturalnie i drogo */
+    background: linear-gradient(180deg, #a89650 0%, #bc9600 60%, #89876b07 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    /* Zostawiamy normalne mieszanie, żeby tekst nigdy nie zniknął */
+    mix-blend-mode: normal; 
+    
+    /* Magia 2026: Kontrastowy cień odcinający + potężna, miękka złota łuna wokół liter dająca efekt "życia" */
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.95)) 
+            drop-shadow(0 0 25px rgba(188, 150, 0, 0.6)) 
+            drop-shadow(0 0 50px rgba(255, 229, 127, 0.2));
+            
+    opacity: 0; 
     max-width: 800px;
     white-space: normal !important; 
     letter-spacing: 2px;
     animation: textEntrance 3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
     will-change: transform, opacity, filter;
 }
-
 .header-text::first-line {
     font-weight: 950;
     letter-spacing: -0.06em;
