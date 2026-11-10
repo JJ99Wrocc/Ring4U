@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd7e6b83.css",
-    "main.js": "/static/js/main.f02a1853.js",
+    "main.css": "/static/css/main.ab1f341e.css",
+    "main.js": "/static/js/main.f9515a26.js",
     "static/js/453.e8ec925d.chunk.js": "/static/js/453.e8ec925d.chunk.js",
     "static/media/Pierscionek.png": "/static/media/Pierscionek.978af942031fc6805e27.png",
-    "static/media/header-1400px.webp": "/static/media/header-1400px.b1cca32ecb5669cadd60.webp",
-    "static/media/Header-img 1490px.webp": "/static/media/Header-img 1490px.ccbe9f193bbcc5fc5c77.webp",
-    "static/media/header-920px.webp": "/static/media/header-920px.d90ff45ac5ee9a6d6e38.webp",
+    "static/media/Header-img 1490px.webp": "/static/media/Header-img 1490px.2ab85d1d3b0fc3fc99a3.webp",
+    "static/media/Header-img 920px.webp": "/static/media/Header-img 920px.ea96797792b1efe10a7c.webp",
     "static/media/hotpay-logo.webp": "/static/media/hotpay-logo.15a1ec354bf5153c43ab.webp",
     "index.html": "/index.html",
     "static/media/blik-logo.webp": "/static/media/blik-logo.c5e3c4421dd71c8a3f4d.webp",
-    "main.fd7e6b83.css.map": "/static/css/main.fd7e6b83.css.map",
-    "main.f02a1853.js.map": "/static/js/main.f02a1853.js.map",
+    "main.ab1f341e.css.map": "/static/css/main.ab1f341e.css.map",
+    "main.f9515a26.js.map": "/static/js/main.f9515a26.js.map",
     "453.e8ec925d.chunk.js.map": "/static/js/453.e8ec925d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd7e6b83.css",
-    "static/js/main.f02a1853.js"
+    "static/css/main.ab1f341e.css",
+    "static/js/main.f9515a26.js"
   ]
 }
