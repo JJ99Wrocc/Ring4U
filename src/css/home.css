@@ -44,7 +44,7 @@
 
   .header-text {
     position: absolute;
-    top: 30%; 
+    top: 39%; 
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
@@ -71,7 +71,7 @@
 .header-button {
     /* POZYCJA TWOJA - BEZ ZMIAN */
     position: absolute;
-    top: 50%;
+    top: 70% !important;
     left: 50%;
     z-index: 100;
 
@@ -94,7 +94,7 @@
     -webkit-backdrop-filter: blur(10px);
     
     /* BORDER - SUBTELNY, NIE CHAMSKI */
-    border: 1px solid rgba(255, 255, 255, 0.2);
+
     border-radius: 100px; /* Full Pill Shape to teraz standard pro */
     
     /* GŁĘBIA */
@@ -128,8 +128,8 @@
 }
 
 .header-button:hover {
-    background: #bdbbbb; /* Odwrócenie luksusowe: biały na hover */
-    color: #000000;
+    background: rgba(255, 255, 255, 0.05); /* Odwrócenie luksusowe: biały na hover */
+    color: #eac11d;
     transform: translateY(-5px) scale(1.02);
     border-color: #dabfbf;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -183,7 +183,7 @@
   @media(max-width:1200px){
 
       .header-button{
-font-size: 12px;   width: 200px; height: 50px;
+font-size: 12px;   width: 200px; height: 60px;
       }
 
   }
@@ -196,33 +196,12 @@ font-size: 12px;   width: 200px; height: 50px;
         font-size: 11px;   width: 170px; height: 45px;
               }
               .header-text{
-        font-size: 28px !important;
+        font-size: 32px !important;
         text-align: center;
               }
 
   }
-  @media(max-width:768px){
 
-
-       .home-segment{
-        height: 100vh !important;
-    }
-
-      .home-segment{
-        height: 50vh; display: flex;
-        justify-content: center; /* wyśrodkowanie poziome */
-        align-items: center; width: 100%;
-      }
-      .header-button{
-        top: 55%;
-        font-size: 10px;   width: 150px; height: 40px;
-              }
-              .header-text{
-                top: 40%;
-        font-size: 17px;
-              }
-
-  }
   @media(max-width:576px){
     .home-segment{
         height: 60vh !important;
@@ -235,12 +214,8 @@ font-size: 12px;   width: 200px; height: 50px;
                 top: 40% !important;
         font-size: 16px;
               }
-                  .header-button {
-        top: 55%;
-        width: 180px !important;
-        height: 60px !important;
-        font-size: 10px;
-    }
+                 
+
   }
 
 
@@ -283,13 +258,6 @@ font-size: 12px;   width: 200px; height: 50px;
   .header-text {
     top: 40%;
     font-size: 17px;
-  }
-
-  .header-button {
-    top: 55%;
-    width: 150px;
-    height: 40px;
-    font-size: 10px;
   }
 
 }
