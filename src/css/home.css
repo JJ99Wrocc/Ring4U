@@ -205,7 +205,7 @@ font-size: 12px;   width: 200px; height: 60px;
         font-size: 11px;   width: 170px; height: 45px;
               }
               .header-text{
-        font-size: 32px !important;
+        font-size: 34px !important;
         text-align: center;
               }
 
@@ -221,7 +221,7 @@ font-size: 12px;   width: 200px; height: 60px;
               }
               .header-text{
                 top: 40% !important;
-        font-size: 16px;
+      
               }
                  
 
@@ -251,23 +251,4 @@ font-size: 12px;   width: 200px; height: 60px;
    URZĄDZENIA MOBILNE I TABLETY (< 768px)
    ========================================== */
 
-@media (max-width: 768px) {
-  /* 1. KONTENER GŁÓWNY */
-  .home-segment {
-    height: 50vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-  /* 3. TEKST I PRZYCISK */
-  .header-text {
-    top: 40%;
-    font-size: 17px;
-  }
-
-}
 
