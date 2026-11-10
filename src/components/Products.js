@@ -196,8 +196,8 @@ const AllProducts = ({ category }) => {
     }
 
     return (
-      <div className='container'>
-        <div className='row'>
+      
+       
             <section id="product-ear-rings" className="ear-v2-main-container container" role="region" aria-label="Lista wszystkich produktów">
             <ProductAdded visible={visible} setVisible={setVisible} products={productToAdd ? [productToAdd] : []} />
             
@@ -347,8 +347,8 @@ const AllProducts = ({ category }) => {
                 </div>
             )}
         </section>
-        </div>
-      </div>
+    
+    
     );
 };
 

@@ -33,7 +33,7 @@
       return () => window.removeEventListener('scroll', toggleVisibility);
     }, [])
     return (
-      <footer className="footer container" role="contentinfo" aria-label="Stopka strony Ring4U">
+      <footer className="footer " role="contentinfo" aria-label="Stopka strony Ring4U">
         <div className="footer-container">
 
           {/* Kolumna 1 - Menu / Nawigacja */}

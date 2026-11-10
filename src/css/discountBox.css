@@ -10,6 +10,7 @@
     background: rgba(0, 0, 0, 0.4); 
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,14 +20,14 @@
 
 .discount-content {
     /* Glassmorphism 2030 */
-    background: rgb(245, 197, 219)!important;
+    background: rgb(15, 15, 15)!important;
     padding: 60px 40px;
     border-radius: 40px; /* Bardziej luksusowy promień */
     margin: 20px;
     position: relative;
     max-width: 500px;
     width: 90%;
-    
+     
     /* Efekt 3D: Cień wielowarstwowy + wewnętrzny blask */
     box-shadow: 
         0 30px 60px rgba(0,0,0,0.2), 
@@ -69,7 +70,7 @@
     margin-bottom: 15px;
     text-align: center;
     letter-spacing: -1px;
-    color: #503c3c;
+    color: #bc9600 !important;
 }
 
 /* Koniczynka jako "płynne złoto" */

@@ -7,8 +7,8 @@ const TermsOfService = () => {
   return (
     <>
  
-<div className="container">
-    <div className="row">
+
+    <div>
             <main className="terms-container" role="main" aria-label="Regulamin sklepu Ring4U">
         <h1>Regulamin Sklepu Internetowego Ring4U</h1>
 <section aria-label="Dane Sprzedawcy">
@@ -156,7 +156,7 @@ const TermsOfService = () => {
         </section>
       </main>
     </div>
-</div>
+
       {/* <Footer /> */}
     </>
   );

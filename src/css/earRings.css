@@ -3,7 +3,10 @@ body{
 }
 
     .ear-v2-main-container{
-        background-color:white !important;
+        background-color: #000000 !important; /* Gładka, luksusowa szarość tła */
+   border: none;
+    padding: 16px;
+    color: #f4f4f6 !important;
     } 
 .ear-rings-box {
     min-height: 100vh;
@@ -37,7 +40,7 @@ body{
     transition: all 0.6s cubic-bezier(0.2, 1, 0.3, 1);
 }
 .h5-ear-rings{
-    color: rgb(185, 179, 179);
+    color: #bc9600 !important;
     font-size: 15px;
 }
 /* 4. DEKORACYJNA LINIA POD TYTUŁEM (MINIMAL) */
@@ -72,14 +75,14 @@ body{
 /* --- TYTUŁ "KOLCZYKI" --- */
 .ear-v2-title {
     text-align: center;
-    margin: 40px auto;
+    /* margin: 40px auto; */
     font-family: 'Inter', 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 8px;
-    color: #5e2b2b !important;
-    background-color: rgb(90, 50, 50);
+    color: #bc9600 !important;
+    background-color: #bc9600;
     position: relative;
     padding-bottom: 20px;
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
@@ -183,8 +186,8 @@ body{
     padding: 12px 14px;
     border-radius: 50px;
     border: 1px solid rgba(238, 113, 113, 0.3);
-    background-color: #9d6464;
-    color: #d6b0b0 !important;
+  
+    color: #ed0707 !important;
     font-size: 11px;
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
@@ -318,8 +321,8 @@ body {
 
 /* --- LUXURY OBSIDIAN GRID --- */
 #product-ear-rings .ear-v2-row-grid {
-    background: rgb(243, 208, 224);
-    border-radius: 30px;
+  background-color: #060500!important;
+    border:none !important;
     padding: 70px 50px;
     margin: 25px 0 !important;
     border: 1px solid rgba(197, 160, 89, 0.1);
@@ -446,7 +449,7 @@ body {
     border-radius: 50px;
     border: 1px solid rgba(238, 113, 113, 0.3);
     background-color: #9d6464;
-    color: #d6b0b0 !important;
+    color: #bc9600 !important;
     font-size: 11px;
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
@@ -456,12 +459,7 @@ body {
     z-index: 2;
 }
 
-.ear-v2-buy-btn:hover {
-    background-color: #7a705d;
-    border-color: #c5a059;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(197, 160, 89, 0.3);
-}
+
 
 /* --- PRZYCISK ULUBIONE / LIKE --- */
 .ear-v2-fav-btn {
@@ -471,8 +469,8 @@ body {
     padding: 12px 14px;
     border-radius: 50px;
     border: 1px solid rgba(238, 113, 113, 0.3);
-    background-color: #9d6464;
-    color: #d6b0b0 !important;
+    background-color: #121215!important;
+    color: #bc9600 !important;
     font-size: 11px;
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
@@ -483,17 +481,17 @@ body {
 }
 
 .ear-v2-fav-btn:hover {
-    background-color: #7a705d;
-    border-color: #c5a059;
-    color: #e25c5c !important;
+    background-color: #bc9600;
+    border-color: #bc9600;
+    color: #bc9600 !important;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(197, 160, 89, 0.3);
 }
 
 .ear-v2-fav-btn.active {
-    background-color: #7a705d;
-    color: #e25c5c !important;
-    border-color: #c5a059;
+    background-color: #bc9600;
+    color: #bc9600 !important;
+    border-color: #bc9600;
 }
 
 /* --- INFO O PRODUKCIE --- */
@@ -577,7 +575,9 @@ body {
 /* Standardowa cena */
 .ear-v2-regular-price {
   font-weight: 500;
-  color: #333333;
+  color: #f9f9f6 !important;
+  text-align: center !important;
+  align-items: center !important;
 }
 
 /* Badge SALE na zdjęciu */
@@ -596,4 +596,10 @@ body {
   padding: 3px 6px;
   border-radius: 4px;
   z-index: 2;
+}
+.ear-v2-buy-btn {
+   background: linear-gradient(135deg, #1a1a1e 0%, #2a2a32 50%, #121215 100%) !important;
+   
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0, 0.3);
 }

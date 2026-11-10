@@ -7,7 +7,7 @@
     height: 350px; /* Zwiększyłem lekko wysokość dla lepszego UX, zachowując proporcje */
     top: 35px;                   
     right: -70px;                   
-    background: rgb(167, 141, 141);
+    background: linear-gradient(135deg, #1a1a1e 0%, #2a2a32 50%, #121215 100%) !important;
     backdrop-filter: blur(20px); /* Efekt szkła */
     -webkit-backdrop-filter: blur(20px);
     z-index: 1000000;
@@ -26,7 +26,7 @@
 /* --- POJEDYNCZY PRODUKT --- */
 .added-product-box.ui.segment {
     position: relative;
-    background: rgba(248, 249, 250, 0.5);
+    background: linear-gradient(335deg, #1a1a1e 0%, #2a2a32 70%, #121215 100%) !important;
     border: none !important;
     border-radius: 16px !important;
     margin-bottom: 15px !important;
@@ -49,7 +49,7 @@
     justify-content: center;
     width: 24px;
     height: 24px;  
-    border: 2px solid #e0e0e0; 
+    border: 2px solid #bc9600; 
     border-radius: 8px;    
     background-color: white;  
     color: transparent;     
@@ -58,9 +58,9 @@
 }
 
 .accept-product-box.selected {
-    background-color: #682d2d;  
+    background-color: #fff;  
     color: white;             
-    border-color: #650b14;
+    border-color: #bc9600;
     box-shadow: 0 4px 10px rgba(237, 32, 196, 0.3);
 }
 
@@ -88,7 +88,7 @@
     top: 15px;
     left: 140px;
     font-weight: 700;
-    color: #724141;
+    color: #bc9600;
     font-size: 12px;
     letter-spacing: -0.3px;
 }
@@ -99,7 +99,7 @@
     left: 140px;
     font-weight: 800;
     font-size: 12px !important;
-    color: #682d2d;
+    color: #bc9600;
     font-size: 16px;
 }
 
@@ -134,7 +134,7 @@
     top: 50%;
     right: 15px;
     transform: translateY(-50%);
-    color: #682d2d;
+    color: #bc9600;
     font-size: 18px;
     cursor: pointer;
     transition: color 0.2s, transform 0.2s;
@@ -156,17 +156,18 @@
     width: 22px;
     height: 22px;
     border-radius: 8px;
-    border: 2px solid #682d2d ;
+    border: 2px solid #bc9600 ;
     background: white;
     margin-top: 20px;
     cursor: pointer;
     transition: all 0.3s;
 }
 .accept-all:hover {
-    background: #682d2d;
+    background: #bc9600;
     box-shadow: 0 0 15px rgba(237, 32, 196, 0.4);
 }
 .accept-all-text{
+    color: #bc9600;
     position: sticky;
     margin-left: 3px;
     font-size: 10px;
@@ -175,7 +176,7 @@
 .product-box-total-cost {
     margin-top: 20px;
     padding: 20px;
-    background: #896161;
+    background: #bc9600;
     color: white;
     border-radius: 16px;
     border: none;

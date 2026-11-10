@@ -8,19 +8,20 @@
   box-shadow: -10px 0 50px rgba(0, 0, 0, 0.05);
 
 }
+.offcanvas{
+  background: linear-gradient(135deg, #1a1a1e 0%, #2a2a32 50%, #121215 100%) !important;;
+}
 
 /* --- HEADER --- */
 .offcanvas-header {
   
   padding: 30px 40px;
-  background: #fff;
+   background: linear-gradient(135deg, #1a1a1e 0%, #2a2a32 50%, #121215 100%) !important;;
 }
 .offcanvas-header, #offcanvasNavbar,.submenu.submenu-open, .submenu,.list-unstyled{
-    --primary-glow: #F1E5AC;
-  --bg-gradient: #121216;
-  --text-dim: #f4f4f6;
 
-  background-color: #121216;
+
+  /* background-color :#94404000 !important; s */
   /* color: #ea0202 !important; */
   border: none !important;  
   border-radius: 18px !important;
@@ -45,7 +46,7 @@
 }
 
 .btn-close {
-  color: #e8eef5 !important;
+  color: #f1f2f3 !important;
   opacity: 0.5;
   transition: all 0.3s;
   background-size: 15px;
@@ -66,20 +67,22 @@
 }
 
 .nav-link {
-  color: #f4f4f6 !important;
+
+  color: #bc9600 !important;
   font-size: 18px !important;
   font-weight: 400 !important;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   padding: 20px 0 !important;
+   padding-left: 10px !important;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
   border: none !important;
-  background: none !important;
+  background: linear-gradient(135deg, #1a1a1e 0%, #2a2a32 30%, #121215 100%) !important;;
 }
 
 .nav-link:hover {
-  color: #4f132d !important;
-  padding-left: 10px !important;
+  color: #dbb931 !important;
+  padding-left: 12px !important;
 }
 
 /* --- SUBMENU (ANIMACJA) --- */
@@ -87,7 +90,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  background:rgb(243, 208, 224);
+  background:linear-gradient(335deg, #1a1a1e 0%, #2a2a32 50%, #121215 100%) !important;;
 }
 
 .submenu-open {
@@ -98,7 +101,7 @@
 .submenu li .nav-link {
   font-size: 14px !important;
   padding: 12px 20px !important;
-  color: #3a3532 !important;
+  color: #bc9600 !important;
   letter-spacing: 1px;
   display: flex;
   justify-content: space-between;
@@ -148,7 +151,7 @@ hr {
 }
 
 .offcanvas-body::-webkit-scrollbar-thumb {
-  background: #1b365d;
+  background: linear-gradient(135deg, #1a1a1e 0%, #2a2a32 50%, #121215 100%) !important;
   border-radius: 10px;
 }
 

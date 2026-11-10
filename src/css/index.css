@@ -11,7 +11,8 @@ html,body, .page-wrapper {
     letter-spacing: 0.01em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #0a0a0c ;
+    background-color: #000000 !important; /* Gładka, luksusowa szarość tła */
+  
     /* overflow-x: hidden !important; */
     
     font-family: 'Playfair Display', 'Montserrat', serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -85,7 +86,7 @@ html,body, .page-wrapper {
  
 
 .look{
-    color: #be228a;
+    color: #bc9600 !important;
     text-decoration: none;
     font-size: 25px;
     transition: color 0.3s;
@@ -103,7 +104,7 @@ html,body, .page-wrapper {
   top: 10px;
   left: 90px;
   font-size: 15px;
-  color: #faa2a2;
+  color: #bc9600 !important;
 }
 .log-in-after-log-in{
   display: inline-block;

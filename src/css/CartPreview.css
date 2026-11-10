@@ -9,7 +9,7 @@
     
     /* STYLIZACJA LUXURY */
     position: absolute;
-    background: rgb(247, 203, 223)!important;
+    background: linear-gradient(135deg, #1a1a1e 0%, #2a2a32 50%, #121215 100%) !important;;
     backdrop-filter: blur(15px) saturate(180%);
     -webkit-backdrop-filter: blur(1222px) saturate(180%);
     border: 1px solid rgba(27, 54, 93, 0.1);
@@ -29,7 +29,7 @@
     text-align: center;
     font-size: 50px;
     margin: 20px;
-    color: #ae7f85; /* Twój granat */
+    color: #bc9600; /* Twój granat */
     filter: drop-shadow(0 4px 10px rgba(27, 54, 93, 0.2));
     animation: cartFloat 3s ease-in-out infinite; /* Delikatne pływanie ikony */
 }
@@ -39,7 +39,7 @@
     text-align: center;
     margin: 8px 10px;
     font-size: 13px;
-    color: #ae7f85;
+    color: #bc9600 !important;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.3px;

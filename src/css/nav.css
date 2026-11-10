@@ -20,7 +20,7 @@
 }
     .nav-title-span{
       
-      color: #faa2a2;
+      color: #bc9600;
     font-size: 39px !important;
           }
   .nav-sticky-wrapper {
@@ -88,7 +88,7 @@
     width: 30px;
     height: 30px;
     /* background-color: #fff; */
-    border: 2px solid #d3d3d3;
+    border: 2px solid #c2ab4f;
     border-radius: 50%;
     transition: background-color 0.2s, color 0.2s;
   }
@@ -100,7 +100,7 @@
     left: 50%;
     width: 23px;
     height: 23px;
-    background-color: #d3d3d3;
+    background-color: #bc9600;
     border-radius: 50%;
     z-index: 0;
     transform: translate(-50%, -50%);
@@ -146,6 +146,7 @@
     right: -250px !important;
   }
   .nav-link {
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
