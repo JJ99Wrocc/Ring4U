@@ -534,9 +534,7 @@ left: 300px !important;
 
   }
   @media(max-width: 768px){
-    .ui.header.nav-title{
-      font-size: 30px;
-    }.main-page-mobile,a.look {color: white;}
+  .main-page-mobile,a.look {color: white;}
     a.look{
       font-size: 20px;
 
@@ -606,9 +604,7 @@ left: 300px !important;
 
   @media (min-width:450px) and (max-width: 568px){
     
-    .ui.header.nav-title{
-      font-size: 25px !important;
-    }
+  
     a.look{
       font-size: 19px !important;
       }
@@ -651,9 +647,6 @@ left: 300px !important;
     font-size: 12px;
   }
 
-  .ui.header.nav-title{
-    font-size: 20px !important;
-  }
 
 
 

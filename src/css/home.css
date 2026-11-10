@@ -194,6 +194,11 @@
       .header-button{
 font-size: 12px;   width: 200px; height: 60px;
       }
+         .header-text{
+        font-size: 34px !important;
+        text-align: center;
+              top: 30% !important;
+              }
 
   }
   @media(max-width:992px){
@@ -201,13 +206,12 @@ font-size: 12px;   width: 200px; height: 60px;
   position: relative;
   width: 100%;
   height: 600px;}
-    .header-button{
-        font-size: 11px;   width: 170px; height: 45px;
+       .header-button{
+        top: 60%;
+        font-size: 13px;   width: 180px; height: 60px;
               }
-              .header-text{
-        font-size: 34px !important;
-        text-align: center;
-              }
+        
+           
 
   }
 
@@ -215,14 +219,7 @@ font-size: 12px;   width: 200px; height: 60px;
     .home-segment{
         height: 60vh !important;
     }
-    .header-button{
-        top: 60%;
-        font-size: 9px;   width: 150px; height: 40px;
-              }
-              .header-text{
-                top: 40% !important;
       
-              }
                  
 
   }
