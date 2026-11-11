@@ -246,6 +246,11 @@ ui.header.nav-title{
   } 
 
   
+  @media(max-width:576px){
+    div.ui.right.floated.header {
+      right: -30px !important;font-size: 15px !important;gap: 3px !important;
+    }
+  }
   @media(max-width:450px){
     div.ui.right.floated.header {
       right: -30px !important;font-size: 15px !important;gap: 3px !important;

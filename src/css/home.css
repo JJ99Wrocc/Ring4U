@@ -53,7 +53,7 @@
     line-height: 0.9;
     
     /* Luksusowy, trójwymiarowy złoty gradient, który wygląda naturalnie i drogo */
-    background: linear-gradient(180deg, #a89650 0%, #bc9600 60%, #89876b07 100%);
+    background: linear-gradient(180deg, #a89650 0%, #bc9600 60%, #89876b07 120%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

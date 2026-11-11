@@ -15,7 +15,7 @@
     
     /* STYLIZACJA 2026 */
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background:rgb(247, 203, 223)!important;
+    background:linear-gradient(145deg, #0a0a0a, #1a1a1a) !important;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-radius: 24px; /* Nowoczesne, ale nie za obłe */
@@ -32,7 +32,7 @@
     font-size: 27px;
     font-weight: 800;
     letter-spacing: -0.5px;
-    color: #6b4444;
+    color: #bc9600;
 }
 
 /* Przycisk X - Twoja pozycja, nowy look */
@@ -51,10 +51,9 @@
 
     border: 1px solid #1a1a1a;
     border-radius: 12px;
-    background: #9f7b7b !important;
+    background: #bc9600 !important;
     cursor: pointer;
-
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .close-btn:hover {
@@ -96,9 +95,9 @@
 .product-added-p {
     font-size: 9px; 
     white-space: nowrap;
-    color: #733b3b;
+    color: #bc9600 !important;
     margin-bottom: 5px;
-}
+}.product-right-button
 
 .custom-border {
     height: 300px;
@@ -111,6 +110,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 15px;
+    color: #bc9600 !important;
 }
 
 /* Ceny - Twoja pozycja absolute */
@@ -124,7 +124,7 @@
 
 .product-added-cost-fwb {
     font-weight: 800;
-    color: #7c4b4b;
+    color: #bc9600 !important;
 }
 
 /* Przycisk ZOBACZ KOSZYK - Twoje wymiary 100px */
@@ -133,7 +133,7 @@
     height: 55px; 
     border-radius: 10px; 
     border: 1px solid #b58a8a;
-    background-color: #cb80a2 !important;
+    background-color: #bc9600 !important;
     color: white;
     font-size: 9px;
     font-weight: 700;

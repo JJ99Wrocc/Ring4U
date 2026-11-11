@@ -100,7 +100,7 @@
     display: block;
     padding: 6px 20px;
     color: #e3abab;
-    font-size: 13px;
+    font-size: 15px !important;
     transition: color 0.2s ease;
 }
 

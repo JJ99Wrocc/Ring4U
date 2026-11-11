@@ -27,7 +27,7 @@
 /* --- IKONA KOSZYKA --- */
 .fa-cart-shop {
     text-align: center;
-    font-size: 50px;
+    font-size: 35px !important;
     margin: 20px;
     color: #bc9600; /* Twój granat */
     filter: drop-shadow(0 4px 10px rgba(27, 54, 93, 0.2));
@@ -38,7 +38,7 @@
 .test {
     text-align: center;
     margin: 8px 10px;
-    font-size: 13px;
+    font-size: 15px !important;
     color: #bc9600 !important;
     font-weight: 500;
     line-height: 1.5;
@@ -58,7 +58,7 @@
 .test:last-of-type {
     color: #a59c9c; /* Subtelniejszy szary dla tekstu pomocniczego */
     font-weight: 500;
-    font-size: 11px;
+    font-size: 15px !important;
     opacity: 0.8;
 }
 
@@ -78,32 +78,48 @@
         font-size: 35px !important;
     }
     .test{
-        font-size: 12px;
+        font-size: 12px !important;
     }
+ 
+.test:last-of-type {
+
+    font-size: 13px !important;
+  
+}
+
 }
 @media(max-width:768) {
-    .fa-cart-shop {
-        font-size: 30px !important;
+   .fa-cart-shop {
+        font-size: 50px !important;
     }
     .test{
-        font-size: 11px !important;
+        font-size: 12px !important;
     }
+ 
+.test:last-of-type {
+
+    font-size: 13px !important;
+  
+}
 }
 @media(max-width:576px) {
     .Navbar-squeres.Cart {
-        height: 210px;
+        height: 230px;
         width: 200px !important;
         left: -140px !important;
     }
-    .test:last-of-type {
-        font-size: 9px; /* Dopasowanie do małego ekranu */
-    }
-    .fa-cart-shop {
-        font-size: 25px !important;
+   .fa-cart-shop {
+        font-size: 20px !important;
     }
     .test{
-        font-size: 9px !important;
+        font-size: 12px !important;
     }
+ 
+.test:last-of-type {
+
+    font-size: 11px !important;
+  
+}
 }
 
 /* --- DODATEK: "MOST" DLA MYSZKI --- */
