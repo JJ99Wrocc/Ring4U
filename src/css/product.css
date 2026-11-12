@@ -94,6 +94,9 @@ font-family: 'Montserrat', sans-serif !important;
         0 25px 50px -10px rgba(0, 0, 0, 0.7),
         0 0 35px 10px rgba(10, 10, 10, 1);
 }
+.ear-v2-title{
+    padding-bottom: 30px !important;
+}
 
 .img-fluid {
     display: block;

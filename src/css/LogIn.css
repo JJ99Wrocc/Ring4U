@@ -2,7 +2,7 @@
 
 /* Reset i baza */
 .login-page-wrapper {
-  background: #ffffff !important; /* Głęboka czerń */
+  background: #060500!important; /* Głęboka czerń */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -12,11 +12,11 @@
 
 /* KARTA - Subtelna elegancja */
 .ui.container.login-card {
-  --primary: #007aff;
+  --primary: #bc0600;
   --input-bg: #121212;
   --border: rgba(255, 255, 255, 0.08);
   margin: 0 auto !important;
-  background: rgb(245, 197, 219)  !important;
+  background: linear-gradient(135deg, #1a1a1e 0%, #2a2a32 50%, #121215 100%) !important;
   border: 1px solid var(--border) !important;
   border-radius: 28px !important;
   padding: 48px !important;
@@ -27,12 +27,15 @@
 
 /* Nagłówek - Zero efektów kiczowatych, czysty font */
 .login-card h2.header {
-  color: #523030  !important;
-  font-size: 1.8rem !important;
+  color: #bc9600  !important;
+
   font-weight: 700 !important;
   letter-spacing: -0.03em !important;
   margin-bottom: 32px !important;
   text-align: center !important;
+}
+.ui.header .content{
+  font-size: 18px !important;
 }
 
 /* INPUTY - Maksymalna czytelność */
@@ -52,8 +55,8 @@
 
 /* Stan focus - tylko delikatna niebieska ramka */
 .ui.input input:focus {
-  border-color: rgb(162, 85, 85)  !important;
-  background: #ffffff !important;
+  border-color: #bc9600  !important;
+  background: #aa9e9e !important;
  
   box-shadow: none !important;
 }
@@ -68,8 +71,8 @@
 
 /* PRZYCISK GŁÓWNY */
 .ui.submit.button  {
-  background-color: #d882aa  !important;
-  color: #fff !important;
+  background-color: linear-gradient(274deg, #1a1a1e 0%, #2a2a32 70%, #121215 100%) !important;
+  color: #bc9600 !important;
   border-radius: 14px !important;
   padding: 18px !important;
   font-size: 1rem !important;
@@ -80,7 +83,7 @@
 
 .ui.submit.button:hover {
   opacity: 0.9 !important;
-  background-color: white !important;
+  background-color:  linear-gradient(274deg, #1a1a1e 0%, #2a2a32 70%, #121215 100%)   !important;
 }
 
 /* PRZYCISKI SOCIAL - Minimalizm */
@@ -91,11 +94,10 @@
   width: 100%;
   padding: 14px !important;
   border-radius: 14px !important;
-  font-size: 0.95rem !important;
+  font-size: 1rem !important;
   font-weight: 500 !important;
-  border: 1px solid var(--border) !important;
-  background: #d882aa !important;
-  color: #573434 !important;
+  background: linear-gradient(274deg, #1a1a1e 0%, #2a2a32 70%, #121215 100%) !important;
+  color: #bc9600 !important;
   cursor: pointer;
   margin-bottom: 12px;
   transition: background 0.2s !important;
@@ -128,14 +130,14 @@
 }
 
 .separator span {
-  color: #201111;
+  color: #bc9600;
   font-weight: 500;
   padding: 0 15px;
 }
 
 /* Linki i komunikaty */
 .password-reset-p {
-  color: rgb(82, 72, 80) !important;
+  color: #bc9600 !important;
   font-size: 0.85rem;
   font-weight: 550;
   margin-top: 8px;
@@ -143,7 +145,7 @@
   text-align: right;
 }
 .password-reset-p:hover {
-  color: #292323 !important;
+  color: #eac73b !important;
   font-weight: 700;
   border-radius: 24px;
 }
@@ -192,7 +194,7 @@
 
 .password-check-list li {
   font-size: 10px !important; /* Bardzo mały, czytelny font */
-  color: #666 !important; /* Domyślny szary kolor dla niespełnionych */
+  color: #bc9600 !important; /* Domyślny szary kolor dla niespełnionych */
   line-height: 1.4 !important;
   margin-bottom: 4px !important;
   display: flex !important;
@@ -233,10 +235,10 @@
 
 /* Dodatkowy fix dla widoczności tekstu w inputach, o który prosiłeś wcześniej */
 .ui.input input {
-  color: #ffffff !important;
-  background: #754e4e !important;
+  color: #bc9600 !important;
+  background: linear-gradient(274deg, #1a1a1e 0%, #2a2a32 70%, #121215 100%) !important;
 }
 
 .ui.form .field .ui.input input, .ui.form .fields .field .ui.input input{
-background-color: #ffffff !important;
+background-color: #1c1c19 !important;
 }

@@ -450,7 +450,7 @@ font-weight: bold;
 .password-wrapper p {
   margin-top: 15px;
   font-size: 13px;
-  color: #555;
+  color: red !important;
 }
 
 .after-log-in ul {

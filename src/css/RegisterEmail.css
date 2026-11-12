@@ -57,12 +57,13 @@ main[aria-label="Rejestracja użytkownika"] {
 }
 
 .ui.form .field .ui.input input {
-  background: #ffffff !important; /* Wyraźnie jaśniejsze tło pola */
-  color: #ffffff !important; /* TEKST WPISYWANY - BIAŁY */
+  background: linear-gradient(274deg, #1a1a1e 0%, #2a2a32 70%, #121215 100%) !important; /* Wyraźnie jaśniejsze tło pola */
+  color: #bc9600!important; /* TEKST WPISYWANY - BIAŁY */
   border: 1px solid #866767 !important;
   border-radius: 12px !important;
   padding: 14px 14px 14px 45px !important;
   font-size: 1rem !important;
+
 }
 
 /* Żeby tekst był widoczny podczas pisania (fix dla przeglądarek) */
@@ -71,21 +72,21 @@ main[aria-label="Rejestracja użytkownika"] {
 }
 
 .ui.form .field .ui.input input:focus {
-  background: #ffffff !important;
+  background: linear-gradient(1374deg, #1a1a1e 0%, #2a2a32 10%, #121215 10%) !important;
   border-color: #573f3f !important; /* Niebieski focus */
-  color: #000000 !important;
+  color: #bc9600 !important;
 }
 
 /* IKONY */
 .ui.left.icon.input > i.icon {
-  color: #dd00ff !important; /* Niebieskie ikony dla kontrastu */
+  color: #bc9600 !important; /* Niebieskie ikony dla kontrastu */
   opacity: 1 !important;
 }
 
 /* PRZYCISK - Solidny Blue */
 .ui.submit.button {
-  background-color: rgb(240, 177, 201) !important;
-  color: #ffffff !important;
+  background-color: #bc9600;
+  color: #000000 !important;
   font-weight: 700 !important;
   border-radius: 12px !important;
   padding: 16px !important;
@@ -94,7 +95,7 @@ main[aria-label="Rejestracja użytkownika"] {
 }
 
 .ui.submit.button:hover {
-  background-color: rgb(227, 135, 170) !important;
+  background-color: #ffd52b;
 }
 
 .ui.submit.button:disabled {
@@ -113,9 +114,7 @@ main[aria-label="Rejestracja użytkownika"] {
   margin-top: 15px !important;
 
 }
-.ui.form .field .ui.input input{
-  background-color:  wheat;
-}
+
 #passwordHelp li {
 
   font-size: 0.85rem !important;
@@ -138,7 +137,7 @@ main[aria-label="Rejestracja użytkownika"] {
 }
 
 .ui.message a {
-  color: #542e2e !important;
+  color: #bc9700 !important;
   font-weight: 700 !important;
 }
 

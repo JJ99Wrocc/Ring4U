@@ -74,6 +74,7 @@
 .product-img {
     position: absolute;
     left: 30px;
+    top: 90px;
     width: 120px !important;
     height: 120px !important;
     border-radius: 15px;
@@ -83,9 +84,9 @@
 
 .product-name {
     position: absolute;
-    top: 230px;
+    top: 260px;
     left: 40px;
-    font-size: 11px;
+    font-size: 12px !important; 
     font-weight: 600;
     /* text-transform: uppercase; */
     letter-spacing: 0.5px;
@@ -93,11 +94,11 @@
 }
 
 .product-added-p {
-    font-size: 9px; 
+    font-size: 12px; 
     white-space: nowrap;
     color: #bc9600 !important;
     margin-bottom: 5px;
-}.product-right-button
+}
 
 .custom-border {
     height: 300px;
@@ -105,7 +106,7 @@
 }
 
 .product-added-right-title {
-    font-size: 10px !important; 
+    font-size: 12px !important; 
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -130,15 +131,16 @@
 /* Przycisk ZOBACZ KOSZYK - Twoje wymiary 100px */
 .product-right-button {
     width: 100px; 
-    height: 55px; 
+    height: 70px; 
     border-radius: 10px; 
     border: 1px solid #b58a8a;
     background-color: #bc9600 !important;
     color: white;
-    font-size: 9px;
+    font-size: 12px;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
+
     margin-top: 20px;
 }
 
@@ -163,5 +165,5 @@
     .product-add { width: 340px !important; }
     .product-title { font-size: 15px !important; }
    
-    .product-img { width: 90px !important; height: 90px !important; }
+    .product-img { width: 110px !important; height: 110px !important; }
  }
