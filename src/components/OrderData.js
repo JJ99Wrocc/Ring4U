@@ -19,22 +19,22 @@ const OrderData = () => {
 
     return (
         <>
-            <p>Imię: {costumerName}</p>
-            <p>Nazwisko: {costumerSurname}</p>
-            <p>Adres dostawy: {address}</p>
-            <p>Firma/lokal: {company}</p>
-            <p>Kod pocztowy: {postalCode}</p>
-            <p>Miasto: {city}</p>
-            <p>Numer telefonu: {phonePrefix} {phoneNumber}</p>
+            <p className="order-in-input">Imię: {costumerName}</p>
+            <p className="order-in-input">Nazwisko: {costumerSurname}</p>
+            <p className="order-in-input">Adres dostawy: {address}</p>
+            <p className="order-in-input">Firma/lokal: {company}</p>
+            <p className="order-in-input">Kod pocztowy: {postalCode}</p>
+            <p className="order-in-input">Miasto: {city}</p>
+            <p className="order-in-input">Numer telefonu: {phonePrefix} {phoneNumber}</p>
 
             {pickupPoint && (
                 <>
-                    <p style={{ fontWeight: "bold", marginTop: "15px" }}>
+                    <p style={{ fontWeight: "bold", marginTop: "15px" }} className="order-p">
                         WYBRANY PACZKOMAT:
                     </p>
 
-                    <p>Nazwa: {pickupPoint.name}</p>
-                    <p>Adres: {pickupPoint.address}</p>
+                    <p className="order-in-input">Nazwa: {pickupPoint.name}</p>
+                    <p className="order-in-input">Adres: {pickupPoint.address}</p>
                 </>
             )}
 

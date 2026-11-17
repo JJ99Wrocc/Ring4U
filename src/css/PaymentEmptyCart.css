@@ -7,20 +7,21 @@
     width: 100%;
     left: 150px;
     font-family: 'Plus Jakarta Sans', sans-serif;
+
 }
 
 .Payment-empty-title {
     font-size: 35px;
     font-weight: 800;
     letter-spacing: -1.5px;
-     color: #4e4545;
+     color: #bc9600;
     text-transform: uppercase;
 }
 
 .Payment-empty-p {
     padding: 20px 0;
     font-size: 15px;
-    color: #554b4b !important;
+    color: #bc9600 !important;
     
     font-weight: 300;
     max-width: 500px;
@@ -42,9 +43,9 @@
 .Payment-empty-button {
     position: relative;
     font-size: 20px;
-    background-color: #cb80a2 !important; /* Czysta biel */
+
     color: #ffffff !important; /* Ciemny tekst */
-    border: 1px solid #b99d9d;
+    border: 1px solid #bc9600;
     border-radius: 18px;
     cursor: pointer;
     overflow: hidden;
@@ -54,17 +55,20 @@
 
 .Payment-empty-button:hover {
     background-color:#a18f8f ;
-    color: #483b3b;
+    color: #ecca41;
     transform: scale(1.05);
     /* box-shadow: 0 15px 40px rgba(255, 255, 255, 0.9); */
 }
-
+p[aria-live="polite"]{
+    border: 0.1px solid #bc9600 !important; 
+}
 .Payment-empty-text {
     font-weight: 800;
     letter-spacing: 2px;
     padding: 15px 40px;
     display: inline-block;
-    color: inherit; /* Dziedziczy kolor od buttona */
+    color: #bc9600 !important; /* Dziedziczy kolor od buttona */
+  
 }
 
 /* --- RESPONSYWNOŚĆ (TWOJA LOGIKA) --- */

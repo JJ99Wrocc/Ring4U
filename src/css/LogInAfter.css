@@ -71,6 +71,7 @@
 .custom-link {
     color: #bc9600 !important;
     text-decoration: none;
+
     font-weight: 500;
     font-family: 'Plus Jakarta Sans', sans-serif;
     display: flex;
@@ -121,7 +122,7 @@
     
     }
     .Navbar-squeres ,.after-log-in{
-        left: -125px !important;
+        left: -px !important;
     }
 
 }

@@ -14,7 +14,8 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 120px 40px;
-  background-color: rgb(245, 197, 219)!important;
+  background: linear-gradient(135deg, #1a1a1e 0%, #2a2a32 50%, #121215 100%) !important;
+  border: 1px solid #bc9600 !important;
   color: var(--text-dim);
   font-family: 'Plus Jakarta Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,15 +28,17 @@
   font-size: 40px;
   text-align: center;
   margin-bottom: 120px;
-  color: #ffffff;
+  color: #bc9600;
   font-weight: 800;
   letter-spacing: -4px;
   line-height: 0.9;
+  
 }
 
 /* --- SEKCJE JAKO SZKLANE PANELE --- */
 .privacy-content section {
-  background: var(--glass-bg);
+  background: linear-gradient(135deg, #1a1a1e 0%, #2a2a32 50%, #121215 100%) !important;
+  border: 1px solid #bc9600 !important;
   border: 1px solid var(--glass-border);
   border-radius: 32px;
   margin-bottom: 24px;
@@ -55,8 +58,8 @@
   cursor: pointer;
   padding: 40px;
   margin: 0;
-  background-color: #cb80a2 !important;
-  color: #ffffff;
+  background:linear-gradient(274deg, #1a1a1e 0%, #2a2a32 70%, #121215 100%) !important;
+  color: #bc9600 !important;
   font-size: 1.3rem;
   font-weight: 600;
   display: flex;
@@ -112,7 +115,7 @@
 .privacy-policy-pkt.active + ul,
 .privacy-policy-pkt.active + ol,
 .privacy-policy-pkt.active + p {
-  background-color: #c8759a !important;
+  background: linear-gradient(274deg, #1a1a1e 0%, #2a2a32 70%, #121215 100%) !important;
   max-height: 1000px; /* Dowolna duża wartość */
   opacity: 1;
   padding-bottom: 40px;
@@ -128,19 +131,19 @@ p{
   border-bottom: 1px solid rgba(255, 255, 255, 0.03);
   font-weight: 300;
   font-size: 1.05rem;
-  color: rgba(255, 246, 246, 0.7);
+  color: #bc9600;
 }
-.li-privacy-polcy strong{
-  color:#484747;
+.li-privacy-polcy strong, li{
+  color:#bc9600;
 }
 .strong{
-    color: #484747 !important;
+    color: #00bc0d !important;
     font-size: 15px !important;
 }
 
 /* Linki - Silver Glow */
 .privacy-content a {
-  color: #e9d1d1;
+  color: #00bc0d !important;
   text-decoration: none;
   position: relative;
   transition: var(--transition-main);

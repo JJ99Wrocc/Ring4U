@@ -1,9 +1,7 @@
 .right-order-finalization-box{
-    --primary-glow: #F1E5AC;
-  --bg-gradient: linear-gradient(145deg, #0a0a0a, #1a1a1a);
-  --text-dim: #999;
+ 
   
-  background:  rgb(252, 204, 226) !important;
+  background:  linear-gradient(135deg, #1a1a1e 0%, #2a2a32 50%, #121215 100%) !important;
   padding: 40px;
   border-radius: 18px;
   position: relative;
@@ -12,10 +10,10 @@
   min-width: 0;
  
   margin-bottom: 60px;
-  color: rgb(74, 63, 63);
+  color: #bc9600 !important;
 }
 .right-order-finalization-box a {
-  color: #eaa2a2;
+  color: #bc9600 !important;
 }
 .order-summary,.shipping-summary{
   display: flex;
@@ -96,9 +94,10 @@
 
 .order-checks span {
   display: flex;
-  align-items: center;
+  align-items: center;  
   flex-wrap: wrap;
   gap: 8px;
+  color: #bc9600 !important;
 }
 
 .order-read-more-btn {

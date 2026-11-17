@@ -112,7 +112,7 @@ const OrderFinalizationRightBox = () => {
       </div>
 
       <div className="order-discount-section">
-        <p className="order-discount-enter">KOD RABATOWY:</p>
+        <p className="order-discount-enter  order-p">KOD RABATOWY:</p>
         <input
           type="text"
           value={discountCode}

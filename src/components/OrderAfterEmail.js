@@ -208,6 +208,7 @@ const wantInvoice = orderData.billingAddress?.wantInvoice || false;
                   to="/privacypolicy"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="order-p"
                 >
                   Informacją o polityce prywatności
                 </Link>
@@ -224,7 +225,7 @@ const wantInvoice = orderData.billingAddress?.wantInvoice || false;
 
 
           {/* CHECKBOX: brak marketingu */}
-          <p style={{ fontWeight: "bold" }}>
+          <p style={{ fontWeight: "bold" }} className="order-p">
             Nie chcesz otrzymywać spersonalizowanych wiadomości marketingowych?
           </p>
 
@@ -246,14 +247,14 @@ const wantInvoice = orderData.billingAddress?.wantInvoice || false;
               {showUnCheck && <i className="fa-solid fa-check"></i>}
             </div>
 
-            <span>
+            <span className="order-p">
               Odznacz pole, jeśli nie chcesz otrzymywać wiadomości
               marketingowych...
             </span>
           </div>
 
 
-          <p style={{ fontWeight: "bold" }}>
+          <p style={{ fontWeight: "bold" }} className="order-p">
             Bądź w gronie pierwszych, którzy otrzymują promocje...
           </p>
 

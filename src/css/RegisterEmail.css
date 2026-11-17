@@ -108,6 +108,7 @@ main[aria-label="Rejestracja użytkownika"] {
 #passwordHelp {
   background: #ffffff !important;
   border: 1px solid #f6a8a8 !important;
+  color: #bc9600 !important;
   border-radius: 12px !important;
   padding: 15px !important;
   list-style: none !important;

@@ -170,7 +170,9 @@ const OrderForm = ({ onValidSubmit, showAgeAlert, showInvoiceForm,showRodoAlert 
             Wpisz poprawną ulicę
           </p>
         ) : (
-          <p id="addressHelp">Np. ul. Zamkowa 5</p>
+          <p id="addressHelp" className="order-under-input">
+            Np. ul. Zamkowa 5
+          </p>
         )}
 
         <input
@@ -201,7 +203,9 @@ const OrderForm = ({ onValidSubmit, showAgeAlert, showInvoiceForm,showRodoAlert 
             Podaj prawdziwą nazwę firmy
           </p>
         ) : (
-          <p id="companyHelp">Np. Firma, Lokal</p>
+          <p id="companyHelp" className="order-under-input">
+            Np. Firma, Lokal
+          </p>
         )}
 
         <div className="order-row">
@@ -269,12 +273,16 @@ const OrderForm = ({ onValidSubmit, showAgeAlert, showInvoiceForm,showRodoAlert 
                 Wpisz poprawną nazwę miasta
               </p>
             ) : (
-              <p id="cityHelp">Np. Warszawa</p>
+              <p id="cityHelp" className="order-under-input">
+                Np. Warszawa
+              </p>
             )}
           </div>
         </div>
 
-        <p>PAŃSTWO: Poland</p>
+        <p className="order-under-input">
+          PAŃSTWO: Poland
+        </p>
 
         <div className="order-phone-container">
           <div style={{ display: "flex", gap: "8px" }}>
@@ -320,7 +328,7 @@ const OrderForm = ({ onValidSubmit, showAgeAlert, showInvoiceForm,showRodoAlert 
 
           <div style={{ marginTop: "4px" }}>
             {orderData.shippingAddress.phoneNumber.length === 0 ? null : isPhoneValid ? (
-              <p style={{ margin: 0 }} id="phoneHelp">
+              <p style={{ margin: 0 }} id="phoneHelp" className="order-under-input">
                 Np. 667 667 668
               </p>
             ) : (

@@ -187,7 +187,7 @@ const OrderInvoiceForm = () => {
             Wpisz poprawną ulice
           </p>
         ) : (
-          <p tabIndex="0" aria-label="Przykład adresu: ul. Zamkowa 5">
+          <p tabIndex="0" aria-label="Przykład adresu: ul. Zamkowa 5" className="order-in-input">
             Np. ul. Zamkowa 5
           </p>
         )}
@@ -305,6 +305,7 @@ const OrderInvoiceForm = () => {
                 className="name-error"
                 tabIndex="0"
                 aria-label="Wpisz poprawną nazwę miasta"
+                
               >
                 Wpisz poprawną nazwę miasta
               </p>
@@ -312,6 +313,7 @@ const OrderInvoiceForm = () => {
               <p
                 tabIndex="0"
                 aria-label="Przykład miasta: Warszawa"
+                className="order-under-input"
               >
                 Np. Warszawa
               </p>

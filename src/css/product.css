@@ -80,7 +80,7 @@ font-family: 'Montserrat', sans-serif !important;
     width: 100%;
     overflow: hidden;
     border-radius: 20px;
-    background: transparent;
+    background: linear-gradient(274deg, #1a1a1e 0%, #2a2a32 70%, #121215 100%) !important;
     border: none !important;
     box-shadow: 
         0 15px 35px -5px rgba(0, 0, 0, 0.6),
@@ -94,9 +94,7 @@ font-family: 'Montserrat', sans-serif !important;
         0 25px 50px -10px rgba(0, 0, 0, 0.7),
         0 0 35px 10px rgba(10, 10, 10, 1);
 }
-.ear-v2-title{
-    padding-bottom: 30px !important;
-}
+
 
 .img-fluid {
     display: block;

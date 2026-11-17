@@ -73,16 +73,9 @@ html,body, .page-wrapper {
     align-items: center;  
     justify-content: center;
     font-weight: bold;
+    color: #bc9600 !important;
   }
-  .Navbar-squeres
-  ,.burger-dropdown
-  ,.product-price,
-  .segment-product-price
-  , .delivery-flag
-  {
-    position: absolute;
-  }
- 
+
  
 
 .look{
@@ -292,7 +285,13 @@ font-weight: bold;
 
 
 
-
+.order-p {
+  font-weight: 550;
+  color: #00ac0e !important;
+}
+.order-in-input {
+  color: #bc9600 !important;
+}
 .order-row {
   display: flex;
   flex-wrap: wrap; 
@@ -309,6 +308,7 @@ font-weight: bold;
   font-size: 12px;
   margin-top: 5px;
   margin-bottom: 5px;
+  color: #bc9600 !important;
 }
 
 .order-adress, .order-information, .nip{
@@ -317,7 +317,7 @@ font-weight: bold;
 .checkbox-box {
   width: 15px;
   height: 15px;
-  border: 1px solid #000;
+  border: 1px solid #bc9600;
 
   cursor: pointer;
   font-size: 10px;
@@ -334,7 +334,7 @@ font-weight: bold;
 .checkbox-box{
   width: 20px;
   height: 20px;
-  border: 1px solid rgb(84, 63, 63);
+  border: 1px solid #bc9600;
  
   cursor: pointer;
 }

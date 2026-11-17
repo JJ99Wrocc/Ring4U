@@ -306,7 +306,8 @@ const ProductDetail = ({ products: propsProducts }) => {
           <div className="amount-box">
             <div className="segment-product-detail-amount ui segment">
               <label htmlFor={`amount-${currentActiveId}`} className="sr-only">
-                Ilość produktu {cleanName}
+                
+                
               </label>
               <select
                 id={`amount-${currentActiveId}`}

@@ -109,7 +109,7 @@ const PaymentWithProduct = () => {
               <div className="amount-box">
                 <div className="segment-product-amount-payment ui segment">
                   <label htmlFor={`amount-${product.id}`} className="sr-only">
-                    Ilość produktu {product.name}
+                   
                   </label>
                   <select
                     id={`amount-${product.id}`}

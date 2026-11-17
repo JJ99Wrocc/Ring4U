@@ -36,7 +36,8 @@
   }
   .order-finalization-title,.order-finalization-under-title-line{
       text-align: center;
-      color: rgb(79, 45, 45);
+      color: #bc9600 !important;
+      font-size: 20px !important;
     
   }
 
@@ -63,7 +64,7 @@
     --bg-gradient: linear-gradient(145deg, #0a0a0a, #1a1a1a);
     --text-dim: #999;
     
-    background: rgb(245, 197, 219)!important;
+    background: linear-gradient(135deg, #1a1a1e 0%, #2a2a32 50%, #121215 100%) !important;
 
   } 
   .left-order-finalization-box a{
@@ -83,7 +84,7 @@
     font-size: 20px;
     margin: 15px 0;
     font-weight: bold;
-    color: #362828;
+    color: #bc9600 !important;
   } 
   .email{
     width: 70%;
@@ -94,12 +95,17 @@
     height: 45px;
     padding-left: 10px;
     font-size: 12px !important;
+    background: fixed linear-gradient(135deg, #1a1a1e 0%, #2a2a32 50%, #121215 100%) !important;
+    color: #bc9600 !important;
+    font-weight: 550;
   }
   .order-input::placeholder {
-    color: #6b5454 !important;        
+    color: #e3cb68 !important;        
     font-size: 12px;    
     border: 1px;
+    font-weight: 550;
   }
+
   .name-error,
   .surname-error,
   .adres-error,
@@ -107,7 +113,7 @@
   .city-error,
   .phone-error,
   .e-mail-error {
-    color: red;
+    color: red !important;
     font-size: 12px !important;
     margin-top: 5px;
     margin-bottom: 5px;

@@ -23,7 +23,7 @@ const OrderReadMore = () => {
          którzy mogą prowadzić działalność poza moim krajem zamieszkania. Więcej informacji na temat tych działań
          znajduje się w    
          <span style={{marginLeft: "10px"}}>
-         <Link to="/privacypolicy" target="_blank" rel="noopener noreferrer">
+         <Link to="/privacypolicy" target="_blank" rel="noopener noreferrer" className="order-p" >
   Informacji o polityce prywatności
 </Link>
          </span>
