@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9750a30c.css",
-    "main.js": "/static/js/main.f9515a26.js",
+    "main.css": "/static/css/main.e50a789b.css",
+    "main.js": "/static/js/main.154d2283.js",
     "static/js/453.e8ec925d.chunk.js": "/static/js/453.e8ec925d.chunk.js",
     "static/media/Pierscionek.png": "/static/media/Pierscionek.978af942031fc6805e27.png",
     "static/media/Header-img 1490px.webp": "/static/media/Header-img 1490px.2ab85d1d3b0fc3fc99a3.webp",
@@ -9,12 +9,12 @@
     "static/media/hotpay-logo.webp": "/static/media/hotpay-logo.15a1ec354bf5153c43ab.webp",
     "index.html": "/index.html",
     "static/media/blik-logo.webp": "/static/media/blik-logo.c5e3c4421dd71c8a3f4d.webp",
-    "main.9750a30c.css.map": "/static/css/main.9750a30c.css.map",
-    "main.f9515a26.js.map": "/static/js/main.f9515a26.js.map",
+    "main.e50a789b.css.map": "/static/css/main.e50a789b.css.map",
+    "main.154d2283.js.map": "/static/js/main.154d2283.js.map",
     "453.e8ec925d.chunk.js.map": "/static/js/453.e8ec925d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9750a30c.css",
-    "static/js/main.f9515a26.js"
+    "static/css/main.e50a789b.css",
+    "static/js/main.154d2283.js"
   ]
 }
