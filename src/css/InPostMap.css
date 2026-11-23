@@ -52,8 +52,8 @@
     background-color: #372121 !important;
 }
 .pro-search-btn {
-    background: #cb80a2 !important;
-    color: black;
+    background: linear-gradient(274deg, #1a1a1e 0%, #2a2a32 70%, #121215 100%) !important;
+    color: #bc9600 !important;
     border: none;
     height: 45px;
     font-size: 10px;
@@ -66,7 +66,7 @@
 }
 
 .pro-search-btn:hover {
-    background: #c7789c !important;
+    background: #2c2b2b !important;
     transform: scale(1.02);
 }
 
@@ -172,7 +172,7 @@
 }
 /* Kontener pod mapą */
 .selected-point-info {
-    background: #b46a8b !important;
+    background: linear-gradient(274deg, #1a1a1e 0%, #2a2a32 10%, #121215 100%) !important;
 
     margin-top: 10px;
     padding: 15px;

@@ -38,7 +38,7 @@ const OrderData = () => {
                 </>
             )}
 
-            <p style={{ fontWeight: "bold", marginTop: "15px" }}>
+            <p style={{ fontWeight: "bold", marginTop: "15px" }}  className="delivery-title">
                 ADRES DOSTAWY JEST TAKI SAM JAK ADRES DO FAKTURY
             </p>
         </>

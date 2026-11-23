@@ -73,7 +73,7 @@
   content: '';
   width: 20px;
   height: 2px;
-  background: #393737;
+  background: #bc9600;
   transition: var(--transition-main);
   position: relative;
 }
@@ -83,7 +83,7 @@
   content: '';
   width: 2px;
   height: 20px;
-  background: #393737;
+  background: #bc9600;
   position: absolute;
   right: 49px; /* Dopasuj do paddingu */
   transition: var(--transition-main);

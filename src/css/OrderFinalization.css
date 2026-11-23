@@ -143,6 +143,7 @@
 
   .delivery-title{
     font-weight: bold;
+    color: #bc9600 !important;
     
     margin-bottom: 15px;
   }
@@ -179,11 +180,19 @@
     margin-bottom: 30px;
     margin-top: 10px;
   }
+  .delivery-boxes
   .payment-option.selected,.delivery-boxes.selected{
-    background-color: #cb80a2 !important;
-    color: #6b5454 !important;
-    border-color: rgb(185, 122, 122);
+    background: linear-gradient(274deg, #1a1a1e 0%, #2a2a32 10%, #121215 100%) !important;
+    color: #bc9600 !important;
+    border-color: #bc9600 !important;
     border-radius: 24px;
+  }
+  .delivery-boxes{
+ background: linear-gradient(274deg, #262629 0%, #2a2a32 90%, #121215 100%) !important;
+    color: #bc9600 !important;
+  }
+  .delivery-boxes p{
+    color: #bc9600 !important;
   }
   .place-order-btn:hover {
     background: linear-gradient(135deg, #7e5f57, #744d4d);
