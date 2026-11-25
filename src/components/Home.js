@@ -5,14 +5,14 @@ import { FaChevronDown } from "react-icons/fa";
 
 const Header = () =>{
   const handleClick = () => {
-    document.getElementById('product').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('product-ear-rings').scrollIntoView({ behavior: 'smooth' });
   }
     return(
        
         <div>  <div className="img-box">
                 <div className="img-shadow-box"></div>
                 <h1 className="header-text">Biżuteria, która podkreśla każdą chwilę</h1>
-                <a  href="#product" className="header-button">Poznaj ofertę </a>
+                <a  href="#product-ear-rings" className="header-button">Poznaj ofertę </a>
           </div>
                 
                 <FaChevronDown className="arrow-down" onClick={handleClick} /></div>

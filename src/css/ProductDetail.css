@@ -247,12 +247,7 @@ body.product-page-active  .product-image-wrapper {
     align-items: flex-start;
   }
   .product-info-detail {
-    /* position: relative; */
-    /* display: flex;
-    flex-direction: column;right: 0;
-    justify-content: flex-start; */
-    top: 400px;
-    /* margin-top: 200px; */
+    top: 400px;  
   }
   .amount-box {
     margin-top: 10px !important;
