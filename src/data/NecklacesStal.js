@@ -86,37 +86,8 @@ const necklaceStal = [
     availability: "W magazynie",
     image2: "",
     image3: ""
-  },{
-    id: "27636",
-    name: "Naszyjnik stal chirurgiczna - MINI KULKI",
-    price: "89.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/27636",
-    image: "https://hurt.ecarla.pl/161932-large_default/naszyjnik-stal-chirurgiczna-platerowana-zlotem-nst2095.jpg",
-    description: ["Naszyjnik ze stali szlachetnej platerowany 14k złotem.", "Odporny na korozję, nie rdzewieje, nie śniedzieje."],
-    specs: { "Kod producenta": "NST2095", "Długość": "40,5 cm + 5 cm regulacji", "Wymiar zawieszki": "0,2 x 10 cm", "Waga": "4 g", "EAN": "5903678580001" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie"
   },
-   {
-    id: "19815",
-    name: "Naszyjnik stal chirurgiczna - Podwójna gwiazda",
-    price: "93.49 zł",
-    oldPrice: "109.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/19815",
-    image: "https://hurt.ecarla.pl/127658-large_default/naszyjnik-stal-chirurgiczna-pozlacana-14k-gold-nst1355.jpg",
-    description: ["Stal nierdzewna platerowana 14k złotem.", "Jasny odcień złota.", "Nie ulega korozji, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1355", "Długość": "48 cm + 5 cm" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
+
   {
     id: "9350",
     name: "Naszyjnik stal chirurgiczna - ŁAŃCUSZEK BIAŁE",
@@ -124,100 +95,16 @@ const necklaceStal = [
     category: "stal",
     subCategory: "srebro",
     url: "/product/9350",
-    image: "https://hurt.ecarla.pl/78286-large_default/lancuszek-naszyjnik-stal-chirurgiczna-platerowana-bialym-zlotem-nst613.jpg",
+    image: "https://hurt.ecarla.pl/78287-large_default/lancuszek-naszyjnik-stal-chirurgiczna-platerowana-bialym-zlotem-nst613.jpg",
     description: ["Stal nierdzewna, powlekana 18k złotem (elektroplated).", "Odporny na korozję."],
     specs: { "Kod producenta": "NST613", "Długość": "45 cm" },
     material: "Stal chirurgiczna",
     color: "Białe złoto",
     availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/78287-large_default/lancuszek-naszyjnik-stal-chirurgiczna-platerowana-bialym-zlotem-nst613.jpg",
-    image3: ""
-  },
-
-  {
-    id: "19840",
-    name: "Naszyjnik stal chirurgiczna - Polemonia",
-    price: "79.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/19840",
-    image: "https://hurt.ecarla.pl/127687-large_default/naszyjnik-stal-chirurgiczna-pozlacana-14k-gold-nst1382.jpg",
-    description: ["Stal nierdzewna platerowana 14k złotem.", "Jasny odcień złota.", "Nie ulega korozji, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1382", "Długość": "42 cm + 5 cm", "Ozdoba": "5 cm", "EAN": "5903678557867" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie",
     image2: "",
     image3: ""
   },
-   {
-    id: "19860",
-    name: "Naszyjnik stal chirurgiczna - KRZYŻYKI I GWIAZDKA",
-    price: "79.99 zł",
-    oldPrice: "99.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/19860",
-    image: "https://hurt.ecarla.pl/127690-large_default/naszyjnik-stal-chirurgiczna-pozlacana-14k-gold-nst1384.jpg",
-    description: ["Stal nierdzewna platerowana 14k złotem.", "Jasny odcień złota.", "Nie ulega korozji, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1384", "Długość": "41 cm + 5 cm" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
-  {
-    id: "22081",
-    name: "Naszyjnik stal chirurgiczna - MAGICZNY",
-    price: "79.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/22081",
-    image: "https://hurt.ecarla.pl/137419-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst1573.jpg",
-    description: ["Stal szlachetna platerowana 14k złotem.", "Producent: Xuping.", "Nie ulega korozji, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1573", "Długość": "41 cm + 6 cm" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  }
-,
-  {
-    id: "22211",
-    name: "Naszyjnik stal chirurgiczna - MAGNETO",
-    price: "84.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/22211",
-    image: "https://hurt.ecarla.pl/137641-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst1576.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14k złotem.", "Producent: Xuping.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1576", "Długość łańcuszka": "41 cm + 6 cm", "EAN": "5903678555689" },
-    material: "Stal chirurgiczna",
-    color: "Złoty, czarny",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
-
-  {
-    id: "22349",
-    name: "Naszyjnik stal chirurgiczna - MONETA",
-    price: "79.99zł",
-    oldPrice: "99.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/22349",
-    image: "https://hurt.ecarla.pl/138070-large_default/naszyjnik-stal-chirurgiczna-pozlacana-14k-gold-nst1214.jpg",
-    description: ["Naszyjnik ze stali nierdzewnej platerowanej 14k złotem.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1214", "Długość": "39 cm + 5 cm", "Ozdoba": "1,8 x 1,8 cm" },
-    material: "Stal chirurgiczna",
-    color: "Złoty",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
+  
   {
     id: "22601",
     name: "Naszyjnik stal chirurgiczna - Z ZIELONYM KAMYKIEM",
@@ -225,13 +112,13 @@ const necklaceStal = [
     category: "stal",
     subCategory: "pozlacane",
     url: "/product/22601",
-    image: "https://hurt.ecarla.pl/139086-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst1586.jpg",
+    image: "https://hurt.ecarla.pl/139150-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst1586.jpg",
     description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14k złotem.", "Producent: Xuping.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
     specs: { "Kod producenta": "NST1586", "Długość łańcuszka": "42 cm + 5 cm", "EAN": "5903678555696" },
     material: "Stal chirurgiczna",
     color: "Jasne złoto",
     availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/139150-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst1586.jpg",
+    image2: "",
     image3: ""
   },
   
@@ -243,149 +130,15 @@ const necklaceStal = [
     category: "stal",
     subCategory: "pozlacane",
     url: "/product/23687",
-    image: "https://hurt.ecarla.pl/143734-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst1541.jpg",
+
     description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14k złotem.", "Producent: Xuping.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
     specs: { "Kod producenta": "NST1541", "Długość": "43 cm", "Regulacja": "6 cm", "EAN": "5903678540173" },
     material: "Stal chirurgiczna",
     color: "Jasne złoto",
     availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/143735-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst1541.jpg",
+    image: "https://hurt.ecarla.pl/143735-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst1541.jpg",
     image3: ""
   },
-
-
-  
-  {
-    id: "25315",
-    name: "Naszyjnik stal chirurgiczna - CZARNY MIŚ",
-    price: "69.99 zł",
-    OldPrice: "89.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/25315",
-    image: "https://hurt.ecarla.pl/150762-large_default/naszyjnik-mis-stal-szlachetna-pozlacana-14k-zlotem-nst2064.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14k złotem.", "Odporny na korozję, nie rdzewieje, nie śniedzieje."],
-    specs: { "Kod producenta": "NST2064", "Długość łańcuszka": "41 cm + 1,5 cm + 5 cm", "Waga": "4 g", "EAN": "5903678570460" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
-  {
-    id: "25681",
-    name: "Naszyjnik stal chirurgiczna - CZŁOWIEK Z SERCEM",
-    price: "79.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/25681",
-    image: "https://hurt.ecarla.pl/152331-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst2067.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14k złotem.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST2067", "Długość": "40 cm + 1,8 cm", "Regulacja": "5 cm", "EAN": "5903678571009" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  }
-,
-
-  {
-    id: "26016",
-    name: "Naszyjnik stal chirurgiczna - ZŁOTY MIŚ",
-    price: "89.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/26016",
-    image: "https://hurt.ecarla.pl/153733-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst2044.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14k złotem.", "Odporny na korozję, nie rdzewieje, nie śniedzieje."],
-    specs: { "Kod producenta": "NST2044", "Długość": "42,5 cm + 2,8 cm", "Regulacja": "5,8 cm", "Waga": "20g", "EAN": "5903678559410" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie"
-  },
-  {
-    id: "27197",
-    name: "Naszyjnik stal chirurgiczna - FIGURY GEOMETRYCZNE",
-    price: "74.99 zł",
-    oldPrice: "84.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/27197",
-    image: "https://hurt.ecarla.pl/160051-large_default/naszyjnik-stal-chirurgiczna-pozłacana-14k-gold-nst1371.jpg",
-    description: ["Naszyjnik ze stali nierdzewnej platerowanej 14k złotem.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1371", "Długość": "41 cm + 5 cm" },
-    material: "Stal chirurgiczna",
-    color: "Jasny odcień złota",
-    availability: "W magazynie"
-  },
-  
-  {
-    id: "27231",
-    name: "Naszyjnik stal chirurgiczna - GWIAZDKI I PIÓRKO",
-    price: "64.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/27231",
-    image: "https://hurt.ecarla.pl/160095-large_default/naszyjnik-stal-chirurgiczna-pozlacana-nst1332.jpg",
-    description: ["Naszyjnik ze stali nierdzewnej platerowanej 14k złotem.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1332", "Długość": "41 cm", "Regulacja": "6 cm" },
-    material: "Stal chirurgiczna",
-    color: "Nieokreślony",
-    availability: "W magazynie"
-  }
-,
-  {
-    id: "27213",
-    name: "Naszyjnik stal chirurgiczna - PŁOMIENNE SŁOŃCE",
-    price: "89.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/27213",
-    image: "https://hurt.ecarla.pl/160072-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst2043.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14k złotem.", "Odporny na korozję, nie rdzewieje, nie śniedzieje."],
-    specs: { "Kod producenta": "NST2043", "Długość": "43 cm + 8,5 cm", "Regulacja": "5,6 cm", "Waga": "6g", "EAN": "5903678559441" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie"
-  },
-  
-  
-  {
-    id: "27614",
-    name: "Naszyjnik stal chirurgiczna - KRZYŻYKI",
-    price: "84.99 zł",
-    oldPrice: "94.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/27614",
-    image: "https://hurt.ecarla.pl/161878-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst2060.jpg",
-    description: ["Naszyjnik ze stali szlachetnej platerowany 14k złotem.", "Odporny na korozję, nie rdzewieje, nie śniedzieje."],
-    specs: { "Kod producenta": "NST2060", "Długość": "4 cm + 12 cm", "Regulacja": "5 cm", "Waga": "5 g", "EAN": "5903678568016" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie"
-  },
- 
-  {
-    id: "30001",
-    name: "Naszyjnik stal chirurgiczna - KLASYCZNY Z CYRKONIAMI",
-    price: "89.99 zł",
-     category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/30001",
-    image: "https://hurt.ecarla.pl/176511-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-zloty-z-cyrkoniami-nst2119.jpg",
-    description: ["Naszyjnik ze stali nierdzewnej platerowanej 14k złotem.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST2119", "Regulacja": "5 cm", "Waga": "3 g", "EAN": "5903678587772" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie"
-  },
-
- 
- 
-  
- 
   {
     id: "31024",
     name: "Naszyjnik stal chirurgiczna - WISIENKI",
@@ -677,30 +430,7 @@ const necklaceStal = [
                                                 "image2": "",
     "image3": ""
   },
-  {
-    "id": "34164",
-    "name": " Naszyjnik stal chirurgiczna -  KRYSZTALIK",
-    "price": "64.99 zł",
-    "oldPrice": "84.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst2281.html",
-    "image": "https://hurt.ecarla.pl/201902-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst2281.jpg",
-    "description": [
-      "Modny naszyjnik ze stali chirurgicznej",
-      "Nowa kolekcja biżuterii ze stali nierdzewnej platerowanej 14 karatowym złotem",
-      "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji."
-    ],
-    "specs": {
-      "Kod producenta": "NST2281",
-      "Długość łańcuszka": "37 cm",
-      "Długość regulacji": "5 cm"
-    },
-    "material": "Stal chirurgiczna platerowana 14k złotem",
-    "color": "Złoty",
-                                                 "image2": "",
-    "image3": ""
-  },
+
    {
     id: "13789",
     name: "Naszyjnik stal chirurgiczna - OBRĄCZKA",
@@ -708,13 +438,13 @@ const necklaceStal = [
     category: "stal",
     subCategory: "srebro",
     url: "/product/13789",
-    image: "https://hurt.ecarla.pl/99832-large_default/naszyjnik-ze-stali-platerowanej-14-karatowym-zlotem-nst901s.jpg",
+    
     description: ["Naszyjnik ze stali szlachetnej powlekanej białym złotem.", "Stal chirurgiczna jest odporna na korozję, nie rdzewieje i nie ciemnieje."],
     specs: { "Kod producenta": "NST901S", "Długość": "40,5 cm + 5 cm", "Ozdoba": "1,4 x 1,4 cm" },
     material: "Stal chirurgiczna",
     color: "Białe złoto",
     availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/99833-large_default/naszyjnik-ze-stali-platerowanej-14-karatowym-zlotem-nst901s.jpg",
+    image: "https://hurt.ecarla.pl/99833-large_default/naszyjnik-ze-stali-platerowanej-14-karatowym-zlotem-nst901s.jpg",
     image3: ""
   },
     {
@@ -1181,25 +911,6 @@ const necklaceStal = [
     },
                                              },
 
-  
-
-  {
-    "id": "34644",
-    "name": " Naszyjnik stal chirurgiczna -  ŻYŁKA KULECZKA",
-    "price": "99.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-zylka-kuleczki-cyrkonie-nst2367.html",
-    "image": "https://hurt.ecarla.pl/203464-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-zylka-kuleczki-cyrkonie-nst2367.jpg",
-    "specs": {
-      "Kod producenta": "NST2367",
-      "EAN": "5903843916024",
-      "Długość łańcuszka": "max 64 cm (regulacja ściągana)",
-      "Wymiary kuleczki": "1 cm x 1 cm",
-      "Waga": "17g netto / 27g brutto",
-      "Kolor": "jasny odcień złota"
-    },
-                                        },
   {
     "id": "34645",
     "name": " Naszyjnik stal chirurgiczna -  PODWÓJNY ŁEZKI",
@@ -1275,58 +986,10 @@ const necklaceStal = [
     image2: "",
     image3: ""
   },
-  
-  {
-    id: "18492",
-    name: "Naszyjnik stal chirurgiczna - KÓŁKA MOTYLA",
-    price: "99.99 zł",
-     category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/18492",
-    image: "https://hurt.ecarla.pl/122293-large_default/naszyjnik-stal-chirurgiczna-pancerka-zloty-nst1280.jpg",
-    description: ["Stal nierdzewna platerowana 14k złotem.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1280", "Długość": "45 cm + 5 cm", "EAN": "5903678525163" },
-    material: "Stal chirurgiczna",
-    color: "Złoty",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
-  {
-      id: "17398",
-      name: "Naszyjnik stal chirurgiczna - BRAKUJÁCA GWIAZDKA",
-      price: "69.99 zł",
-      oldPrice: "79.99 zł",
-       category: "stal",
-      subCategory: "pozlacane",
-      url: "/product/17398",
-      image: "https://hurt.ecarla.pl/117864-large_default/naszyjnik-stal-chirurgiczna-nst1179.jpg",
-      description: ["Stal nierdzewna platerowana 14k złotem.", "Producent: Xuping.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
-      specs: { "Kod producenta": "NST1179", "Długość": "42 cm + 5 cm", "Średnica zawieszek": "1,2 cm" },
-      material: "Stal chirurgiczna",
-      color: "Złoty",
-      availability: "W magazynie",
-      image2: "",
-      image3: ""
-    },
+
 // POZŁACANE
 // WYKWINTNE
-  {
-    id: "16777",
-    name: "Naszyjnik stal chirurgiczna - CHCESZ MNIE",
-    price: "89.99 zł",
-     category: "stal",
-    subCategory: "wykwintne",
-    url: "/product/16777",
-    image: "https://hurt.ecarla.pl/115285-large_default/naszyjnik-stal-chirurgiczna-nst1050.jpg",
-    description: ["Stal nierdzewna platerowana 14k złotem.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1050", "Długość": "39 cm + 5 cm", "Wymiar ozdoby": "1,8 cm" },
-    material: "Stal chirurgiczna",
-    color: "Złoty",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
+
   {
     "id": "34653",
     "name": " Naszyjnik stal chirurgiczna -  DZIŚ ALBO NIGDY",
@@ -1489,20 +1152,7 @@ const necklaceStal = [
     availability: "W magazynie"
   },
 
- {
-    id: "30910",
-    name: "Naszyjnik stal chirurgiczna - KRYSZTAŁ GÓRSKI ",
-    price: "69.99 zł",
-     category: "stal",
-    subCategory: "wykwintne",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-krysztal-gorski-nst1585.html",
-    image: "https://hurt.ecarla.pl/182310-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-krysztal-gorski-nst1585.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14-karatowym złotem.", "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"],
-    specs: { "Kod producenta": "NST1585", "Długość łańcuszka": "43 cm + 5 cm", "EAN": "5903678544614", "Producent": "Xuping" },
-    material: "Stal chirurgiczna platerowana 14k złotem",
-    color: "Jasne złoto",
-    availability: "W magazynie"
-  },
+
 {
     id: "33876",
     name: "Naszyjnik stal chirurgiczna - WISZĄCE PEREŁKI",
@@ -1517,104 +1167,8 @@ const necklaceStal = [
     material: "Stal chirurgiczna platerowana 14k złotem",
     availability: "W magazynie"
   },
-    {
-    id: "30909",
-    name: "Naszyjnik stal chirurgiczna - KORALIKI I BIAŁY KAMIEŃ",
-    price: "69.99 zł",
-     category: "stal",
-    subCategory: "wykwintne",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-chirurgiczna-pozlacana-z-krysztalem-gorskim-14k-nst2051.html",
-    image: "https://hurt.ecarla.pl/182307-large_default/naszyjnik-stal-chirurgiczna-pozlacana-z-krysztalem-gorskim-14k-nst2051.jpg",
-    description: ["Modny naszyjnik ze stali chirurgicznej.", "Nowa kolekcja biżuterii ze stali nierdzewnej platerowanej 14 karatowym złotem.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"],
-    specs: { "Kod producenta": "NST2051", "Długość łańcuszka": "40 cm + 5,5 cm regulacja", "EAN": "5903678564513" },
-    material: "Stal chirurgiczna platerowana 14k złotem",
-    color: "Jasne złoto",
-    availability: "W magazynie"
-  },
- {
-    id: "30911",
-    name: "Naszyjnik stal chirurgiczna - CZARNY KTYSZTAŁ POZIOMO",
-   price: "64.99 zł",
-     category: "stal",
-    subCategory: "wykwintne",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-krysztal-gorski-nst1585cz.html",
-    image: "https://hurt.ecarla.pl/182313-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-krysztal-gorski-nst1585cz.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14-karatowym złotem.", "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"],
-    specs: { "Kod producenta": "NST1585CZ", "EAN": "5903678552107" },
-    material: "Stal chirurgiczna platerowana 14k złotem",
-    color: "Jasne złoto",
-    availability: "W magazynie"
-  },
-  {
-    id: "30913",
-    name: "Naszyjnik stal chirurgiczna - KAMIEŃ GRANAT",
-   price: "64.99 zł",
-     category: "stal",
-    subCategory: "wykwintne",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-krysztal-gorski-stal-szlachetna-pozlacana-14k-zlotem-nst1581gran.html",
-    image: "https://hurt.ecarla.pl/182320-large_default/naszyjnik-krysztal-gorski-stal-szlachetna-pozlacana-14k-zlotem-nst1581gran.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14-karatowym złotem z kryształem górskim.", "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"],
-    specs: { "Kod producenta": "NST1581GRAN", "Długość łańcuszka": "46 cm + 5,5 cm", "Długość kamienia": "3,5 cm", "EAN": "5903678544737", "Producent": "Xuping" },
-    material: "Stal chirurgiczna platerowana 14k złotem",
-    color: "Jasne złoto",
-    availability: "W magazynie"
-  },
-  {
-    id: "30915",
-    name: "Naszyjnik stal chirurgiczna - GÓRSKI KRYSZTAŁ BIAŁY",
-    price: "64.99 zł",
-     category: "stal",
-    subCategory: "wykwintne",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-krysztal-gorski-nst1604.html",
-    image: "https://hurt.ecarla.pl/182322-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-krysztal-gorski-nst1604.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14-karatowym złotem.", "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"],
-    specs: { "Kod producenta": "NST1604", "Długość łańcuszka": "46 cm", "EAN": "5903678552534" },
-    material: "Stal chirurgiczna platerowana 14k złotem",
-    color: "Jasne złoto",
-    availability: "W magazynie"
-  },
-  {
-    id: "30918",
-    name: "Naszyjnik stal chirurgiczna - BIAŁY KAMIEŃ",
-    price: "64.99 zł",
-     category: "stal",
-    subCategory: "wykwintne",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst1600.html",
-    image: "https://hurt.ecarla.pl/182325-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst1600.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14-karatowym złotem.", "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"],
-    specs: { "Kod producenta": "NST1600", "Długość łańcuszka": "46 cm", "EAN": "5903678552497" },
-    material: "Stal chirurgiczna platerowana 14k złotem",
-    color: "Jasne złoto",
-    availability: "W magazynie"
-  },
-  {
-    id: "30919",
-    name: "Naszyjnik stal chirurgiczna - GÓRSKI KRYSZTAŁ CZARNY",
-    price: "69.99 zł",
-     category: "stal",
-    subCategory: "wykwintne",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/copy-of-naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst1581cz.html",
-    image: "https://hurt.ecarla.pl/182327-large_default/copy-of-naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst1581cz.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14-karatowym złotem z kryształem górskim.", "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"],
-    specs: { "Kod producenta": "NST1581CZ", "Długość łańcuszka": "46 cm + 5,5 cm", "Długość kamienia": "3,5 cm", "EAN": "5903678544713", "Producent": "Xuping" },
-    material: "Stal chirurgiczna platerowana 14k złotem",
-    color: "Jasne złoto",
-    availability: "W magazynie"
-  },
-  {
-    id: "30920",
-    name: "Naszyjnik stal chirurgiczna - GÓRSKI KRYSZTAŁ",
-    price: "69.99 zł",
-     category: "stal",
-    subCategory: "wykwintne",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-krysztal-gorski-stal-szlachetna-pozlacana-14k-zlotem-nst1581fio.html",
-    image: "https://hurt.ecarla.pl/182329-large_default/naszyjnik-krysztal-gorski-stal-szlachetna-pozlacana-14k-zlotem-nst1581fio.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14-karatowym złotem z kryształem górskim.", "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"],
-    specs: { "Kod producenta": "NST1581FIO", "Długość łańcuszka": "46 cm + 5,5 cm", "Długość kamienia": "3,5 cm", "EAN": "5903678544720", "Producent": "Xuping" },
-    material: "Stal chirurgiczna platerowana 14k złotem",
-    color: "Jasne złoto",
-    availability: "W magazynie"
-  },
+
+  
 
 {
     id: "30951",
@@ -1644,21 +1198,7 @@ const necklaceStal = [
     color: "Jasne złoto",
     availability: "W magazynie"
   },
-  {
-    id: "27215",
-    name: "Naszyjnik stal chirurgiczna - KORALIKI Z PIÓRKAMI",
-    price: "84.99 zł",
-    category: "stal",
-    subCategory: "wykwintne",
-    url: "/product/27215",
-    image: "https://hurt.ecarla.pl/160074-large_default/naszyjnik-stal-chirurgiczna-pozlacana-nst1319.jpg",
-    description: ["Naszyjnik ze stali nierdzewnej platerowanej 14k złotem.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1319", "Długość krótszego łańcuszka": "38 cm", "Długość dłuższego łańcuszka": "41 cm", "Regulacja": "5,5 cm" },
-    material: "Stal chirurgiczna",
-    color: "Nieokreślony",
-    availability: "W magazynie"
-  },
-  
+
   {
     id: "27615",
     name: "Naszyjnik stal chirurgiczna - KORALIKI Z MISIAMI",
@@ -1689,117 +1229,7 @@ const necklaceStal = [
     image2: "https://hurt.ecarla.pl/140885-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst1591.jpg",
     image3: ""
   },
-    {
-    id: "23306",
-    name: "Naszyjnik stal chirurgiczna - Z CZARNYK KAMIENIEM",
-    price: "89.99 zł",
-    category: "stal",
-    subCategory: "wykwintne",
-    url: "/product/23306",
-    image: "https://hurt.ecarla.pl/141762-large_default/-naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst1597.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14k złotem.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1597", "Długość łańcuszka": "46 cm", "EAN": "5903678552374" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
-    {
-    id: "30921",
-    name: "Naszyjnik stal chirurgiczna - Naszyjnik Kryształ Górski stal szlachetna pozłacana 14k złotem NST1581B",
-    price: "69.99 zł",
-     category: "stal",
-    subCategory: "wykwintne",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-krysztal-gorski-stal-szlachetna-pozlacana-14k-zlotem-nst1581b.html",
-    image: "https://hurt.ecarla.pl/182332-large_default/naszyjnik-krysztal-gorski-stal-szlachetna-pozlacana-14k-zlotem-nst1581b.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14-karatowym złotem z kryształem górskim.", "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"],
-    specs: { "Kod producenta": "NST1581B", "Długość łańcuszka": "46 cm + 5,5 cm", "Długość kamienia": "3,5 cm", "EAN": "5903678544706", "Producent": "Xuping" },
-    material: "Stal chirurgiczna platerowana 14k złotem",
-    color: "Jasne złoto",
-    availability: "W magazynie"
-  },
-  {
-    id: "30923",
-    name: "Naszyjnik stal chirurgiczna - BIAŁY KAMIEŃ",
-    price: "64.99 zł",
-     category: "stal",
-    subCategory: "wykwintne",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-krysztal-gorski-nst1479.html",
-    image: "https://hurt.ecarla.pl/182336-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-krysztal-gorski-nst1479.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14-karatowym złotem.", "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"],
-    specs: { "Kod producenta": "NST1479", "Długość łańcuszka": "43,5 cm", "Regulacja": "5 cm", "Wymiary przywieszki": "3,2 x 0,8 cm", "Producent": "Xuping" },
-    material: "Stal chirurgiczna platerowana 14k złotem",
-    color: "Jasne złoto",
-    availability: "W magazynie"
-  },
-  {
-    id: "19810",
-    name: "Naszyjnik stal chirurgiczna - Dla Wyjątkowej",
-    price: "89.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/19810",
-    image: "https://hurt.ecarla.pl/127653-large_default/naszyjnik-stal-chirurgiczna-pozlacana-14k-gold-nst1350.jpg",
-    description: ["Stal nierdzewna platerowana 14k złotem.", "Jasny odcień złota.", "Nie ulega korozji, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1350", "Długość łańcuszków": "36+6cm, 40+6cm, 42+6cm, 62+6cm" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
- 
-  {
-    id: "19822",
-    name: "Naszyjnik stal chirurgiczna - PODWÓJNY GWIAZDKI",
-    price: "89.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/19822",
-    image: "https://hurt.ecarla.pl/127668-large_default/naszyjnik-stal-chirurgiczna-pozlacana-14k-gold-nst1363.jpg",
-    description: ["Stal nierdzewna platerowana 14k złotem.", "Jasny odcień złota.", "Nie ulega korozji, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1363", "Długość": "42 cm + 5 cm" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
-  {
-    id: "19827",
-    name: "Naszyjnik stal chirurgiczna - MEDALIKI",
-    price: "79.99 zł",
-    oldPrice: "99.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/19827",
-    image: "https://hurt.ecarla.pl/127673-large_default/naszyjnik-stal-chirurgiczna-pozlacana-14k-gold-nst1368.jpg",
-    description: ["Stal nierdzewna platerowana 14k złotem.", "Jasny odcień złota.", "Nie ulega korozji, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1368", "Długość": "45 cm + 5 cm" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
-  {
-    id: "19834",
-    name: "Naszyjnik stal chirurgiczna - DLA GWIAZD",
-    price: "84.99 zł",
-    category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/19834",
-    image: "https://hurt.ecarla.pl/127680-large_default/naszyjnik-stal-chirurgiczna-pozlacana-14k-gold-nst1376.jpg",
-    description: ["Stal nierdzewna platerowana 14k złotem.", "Jasny odcień złota.", "Nie ulega korozji, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1376", "Długość": "40 cm + 5 cm", "EAN": "5903678558505" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
-    
+
    {
     id: "28694",
     name: "Naszyjnik stal chirurgiczna - PEREŁKI",
@@ -2626,39 +2056,7 @@ const necklaceStal = [
     color: "Jasny odcień złota",
     availability: "W magazynie"
   },
-  {
-    id: "19329",
-    name: "Naszyjnik stal chirurgiczna - ZŁOTE SERCA",
-    price: "79.99 zł",
-    oldPrice: "89.99 zł",
-    category: "stal",
-    subCategory: "serca-kokardy",
-    url: "/product/19329",
-    image: "https://hurt.ecarla.pl/125611-large_default/naszyjnik-stal-chirurgiczna-pozlacana-nst1344.jpg",
-    description: ["Stal nierdzewna platerowana 14k złotem.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1344", "Długość": "krótszy 40,5 cm, dłuższy 45 cm", "Regulacja": "6 cm" },
-    material: "Stal chirurgiczna",
-    color: "Złoty",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
-    {
-    id: "22215",
-    name: "Naszyjnik stal chirurgiczna - DIAMENCIKI I SERCE",
-    price: "104.99 zł",
-    category: "stal",
-    subCategory: "serca-kokardy",
-    url: "/product/22215",
-    image: "https://hurt.ecarla.pl/137649-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst1579.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14k złotem.", "Producent: Xuping.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1579", "Długość łańcuszka": "41 cm + 6 cm" },
-    material: "Stal chirurgiczna",
-    color: "Złoty, czarny",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
+ 
     {
     id: "24089",
     name: "Naszyjnik stal chirurgiczna - KORALIKI Z SERCEM",
@@ -2869,31 +2267,7 @@ const necklaceStal = [
       "Waga": "5g netto / 13g brutto"
     },
                                               },
-  {
-    "id": "34616",
-    "name": " Naszyjnik stal chirurgiczna -  KONICZYNA  CZARNA 13mm",
-    "price": "76.61 zł",
-    "oldPrice": "86.61 zł",
-    "category": "stal",
-    "subCategory": "kwiaty",
-    "url": "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-koniczynka-13mm-czarna-nst2300.html",
-    "image": "https://hurt.ecarla.pl/203427-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-koniczynka-13mm-czarna-nst2300.jpg",
-    "description": [
-      "Modny naszyjnik ze stali chirurgicznej",
-      "Nowa kolekcja biżuterii ze stali nierdzewnej platerowanej 14 karatowym złotem",
-      "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji."
-    ],
-    "specs": {
-      "Kod producenta": "NST2300",
-      "Długość łańcuszka": "40 cm",
-      "Długość regulacji": "5 cm",
-      "Wymiary zawieszki": "1,3 cm x 1,3 cm"
-    },
-    "material": "Stal chirurgiczna platerowana 14k złotem",
-    "color": "Jasny odcień złota",
-                                                 "image2": "",
-    "image3": ""
-  },
+
   {
     "id": "34617",
     "name": " Naszyjnik stal chirurgiczna -  KONICZYNA PERŁOWA 13mm",
@@ -3016,31 +2390,7 @@ const necklaceStal = [
                                                  "image2": "",
     "image3": ""
   },
-  {
-    "id": "34622",
-    "name": " Naszyjnik stal chirurgiczna -  CZARNA KONICZYNA 9mm",
-    "price": "74.99 zł",
-    "oldPrice": "84.99 zł",
-    "category": "stal",
-    "subCategory": "kwiaty",
-    "url": "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-koniczynka-9mm-czarna-nst2253.html",
-    "image": "https://hurt.ecarla.pl/203446-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-koniczynka-9mm-czarna-nst2253.jpg",
-    "description": [
-      "Modny naszyjnik ze stali chirurgicznej",
-      "Nowa kolekcja biżuterii ze stali nierdzewnej platerowanej 14 karatowym złotem",
-      "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji."
-    ],
-    "specs": {
-      "Kod producenta": "NST2253",
-      "Długość łańcuszka": "42 cm",
-      "Długość regulacji": "5 cm",
-      "Wymiary zawieszki": "0,9 cm x 0,9 cm"
-    },
-    "material": "Stal chirurgiczna platerowana 14k złotem",
-    "color": "Jasny odcień złota",
-                                                 "image2": "",
-    "image3": ""
-  }
+
 ,
   {
     id: "33740",
@@ -3420,20 +2770,7 @@ const necklaceStal = [
     "image2": "https://hurt.ecarla.pl/201722-large_default/naszyjnik-stal-szlachetna-pozłacana-14k-zlotem-cyrkonie-koniczynka-nst2196.jpg",
     "image3": "https://hurt.ecarla.pl/201721-large_default/naszyjnik-stal-szlachetna-pozłacana-14k-zlotem-cyrkonie-koniczynka-nst2196.jpg"
   },
- {
-    id: "31438",
-    name: "Naszyjnik stal chirurgiczna - RÓŻNE KONICZYNY",
-    price: "139.99 zł",
-    oldPrice: "149.99 zł",
-     category: "stal",
-    subCategory: "kwiaty",
-    url: "https://hurt.ecarla.pl/pl/naszyjniki/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-koniczynki-masa-perlowa-cyrkonie-nst2175.html",
-    image: "https://hurt.ecarla.pl/185800-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-koniczynki-masa-perlowa-cyrkonie-nst2175.jpg",
-    description: ["Modny naszyjnik ze stali chirurgicznej, dwustronny.", "Nowa kolekcja biżuterii ze stali nierdzewnej platerowanej 14 karatowym złotem.", "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji.", "Elegancki dodatek na każdą okazję, do sukienek, swetrów i bluzek.", "Biżuteria ze stali chirurgicznej nie ulega korozji, nie rdzewieje, nie ciemnieje!"],
-    specs: { "Kod producenta": "NST2175", "Długość łańcuszka": "41cm / 44cm", "Długość regulacji": "3cm / 6,5cm", "Waga": "8g / 24g brutto", "Kolor": "Jasne złoto", "EAN": "5903678597245" },
-    material: "Stal chirurgiczna platerowana 14k złotem",
-    availability: "W magazynie"
-  },
+
     
 // KWIATKI
   
@@ -3444,49 +2781,16 @@ const necklaceStal = [
      category: "stal",
     subCategory: "pozlacane",
     url: "/product/18881",
-    image: "https://hurt.ecarla.pl/124022-large_default/naszyjnik-stal-chirurgiczna-platerowany-zlotem-nst1293.jpg",
+  
     description: ["Stal nierdzewna platerowana 14k złotem.", "Producent: Xuping.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
     specs: { "Kod producenta": "NST1293", "Długość": "krótszy 40,5 cm, dłuższy 47,5 cm", "Regulacja": "5 cm", "EAN": "5903678550530" },
     material: "Stal chirurgiczna",
     color: "Złoty",
     availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/124021-large_default/naszyjnik-stal-chirurgiczna-platerowany-zlotem-nst1293.jpg",
+    image: "https://hurt.ecarla.pl/124021-large_default/naszyjnik-stal-chirurgiczna-platerowany-zlotem-nst1293.jpg",
     image3: ""
   },
 
-  {
-    id: "16788",
-    name: "Naszyjnik stal chirurgiczna - NIEBO ",
-    price: "89.99 zł",
-    oldPrice: "99.99 zł",
-     category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/16788",
-    image: "https://hurt.ecarla.pl/115293-large_default/naszyjnik-stal-chirurgiczna-zloty-podwojny-z-ozdobna-zawieszka-nst1053.jpg",
-    description: ["Stal nierdzewna platerowana 14k złotem.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1053", "Długość": "41 cm + 5 cm", "Wymiary zawieszki": "1,8 cm / 0,9 cm", "EAN": "5903678559304" },
-    material: "Stal chirurgiczna",
-    color: "Złoty",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
-  {
-    id: "16849",
-    name: "Naszyjnik stal chirurgiczna - MONARCHA",
-    price: "99.99 zł",
-     category: "stal",
-    subCategory: "pozlacane",
-    url: "/product/16849",
-    image: "https://hurt.ecarla.pl/115462-large_default/naszyjnik-stal-chirurgiczna-nst1094.jpg",
-    description: ["Stal nierdzewna platerowana 14k złotem.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST1094", "Długość": "44 cm + 36 cm + 6 cm + 5 cm", "Wymiar": "1,5 cm" },
-    material: "Stal chirurgiczna",
-    color: "Złoty",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
   {
     id: "17060",
     name: "Naszyjnik stal chirurgiczna - POZNAJMY SIÉ",
@@ -3495,13 +2799,13 @@ const necklaceStal = [
      category: "stal",
     subCategory: "pozlacane",
     url: "/product/17060",
-    image: "https://hurt.ecarla.pl/117179-large_default/naszyjnik-stal-chirurgiczna-nst1066.jpg",
+
     description: ["Stal nierdzewna platerowana 14k złotem.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
     specs: { "Kod producenta": "NST1066", "Długość": "42 cm + 5 cm", "Średnica ozdoby": "ok. 1 cm" },
     material: "Stal chirurgiczna",
     color: "Złoty",
     availability: "W magazynie",
-    image2: "https://hurt.ecarla.pl/116499-large_default/naszyjnik-stal-chirurgiczna-nst1066.jpg",
+    image: "https://hurt.ecarla.pl/116499-large_default/naszyjnik-stal-chirurgiczna-nst1066.jpg",
     image3: ""
   },
   //   LITERKI
@@ -3823,53 +3127,8 @@ const necklaceStal = [
     availability: "W magazynie",
     image2: "https://hurt.ecarla.pl/112806-large_default/naszyjnik-stal-chirurgiczna-literka-platerowana-zlotem-nst100l.jpg",
     image3: "https://hurt.ecarla.pl/112804-large_default/naszyjnik-stal-chirurgiczna-literka-platerowana-zlotem-nst100l.jpg"
-  },{
-    id: "25085",
-    name: "Naszyjnik stal chirurgiczna - LITERKA A",
-    price: "64.99 zł",
-    category: "stal",
-    subCategory: "literki",
-    url: "/product/25085",
-    image: "https://hurt.ecarla.pl/149957-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst2058a.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14k złotem.", "Odporny na korozję, nie rdzewieje, nie śniedzieje."],
-    specs: { "Kod producenta": "NST2058A", "Długość": "40 cm + 1,5 cm", "Regulacja": "5 cm", "Waga": "5 g", "EAN": "5903678568009" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
   },
-  {
-    id: "25086",
-    name: "Naszyjnik stal chirurgiczna - LITERKA K",
-      price: "64.99 zł",
-    category: "stal",
-    subCategory: "literki",
-    url: "/product/25086",
-    image: "https://hurt.ecarla.pl/149956-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst2058k.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14k złotem.", "Odporny na korozję, nie rdzewieje, nie śniedzieje."],
-    specs: { "Kod producenta": "NST2058K", "Długość": "40 cm + 1,5 cm", "Regulacja": "5 cm", "Waga": "5 g", "EAN": "5903678567996" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
-    {
-    id: "25682",
-    name: "Naszyjnik stal chirurgiczna - LITERKA M",
-    price: "64.99 zł",
-    oldPrice: "74.99 zł",
-    category: "stal",
-    subCategory: "literki",
-    url: "/product/25682",
-    image: "https://hurt.ecarla.pl/152332-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-literka-m-nst2065.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14k złotem.", "Odporny na korozję, nie rdzewieje, nie ciemnieje."],
-    specs: { "Kod producenta": "NST2065", "Długość": "40 cm + 5 cm regulacji", "EAN": "5903678570989" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie"
-  },
+
   {
     id: "27444",
     name: "Naszyjnik stal chirurgiczna - LITERKA D",
@@ -3900,22 +3159,7 @@ const necklaceStal = [
     availability: "W magazynie",
     image2: "https://hurt.ecarla.pl/161024-large_default/naszyjnik-stal-chirurgiczna-platerowana-zlotem-literka-j-nst2086j.jpg"
   },
-  {
-    id: "25087",
-    name: "Naszyjnik stal chirurgiczna - LITERKA M",
-        price: "64.99 zł",
-    category: "stal",
-    subCategory: "literki",
-    url: "/product/25087",
-    image: "https://hurt.ecarla.pl/149955-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst2058m.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14k złotem.", "Odporny na korozję, nie rdzewieje, nie śniedzieje."],
-    specs: { "Kod producenta": "NST2058M", "Długość": "40 cm + 1,5 cm", "Regulacja": "5 cm", "Waga": "5 g", "EAN": "5903678567965" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
+
     {
     id: "25083",
     name: "Naszyjnik stal chirurgiczna - SERCE LITERKA K",
@@ -3932,22 +3176,7 @@ const necklaceStal = [
     image2: "https://hurt.ecarla.pl/149998-large_default/naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst2063k.jpg",
     image3: ""
   },
-  {
-    id: "25088",
-    name: "Naszyjnik stal chirurgiczna - LITERKA N",
-    price: "64.99 zł",
-    category: "stal",
-    subCategory: "literki",
-    url: "/product/25088",
-    image: "https://hurt.ecarla.pl/149954-large_default/copy-of-naszyjnik-stal-szlachetna-pozlacana-14k-zlotem-nst2047.jpg",
-    description: ["Modny naszyjnik ze stali szlachetnej platerowanej 14k złotem.", "Odporny na korozję, nie rdzewieje, nie śniedzieje."],
-    specs: { "Kod producenta": "NST2058N", "Długość": "40 cm + 1,5 cm", "Regulacja": "5 cm", "Waga": "5 g", "EAN": "5903678567972" },
-    material: "Stal chirurgiczna",
-    color: "Jasne złoto",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
+ 
       {
     id: "752",
     name: "Naszyjnik stal chirurgiczna - NAPIS SWEET",
@@ -4113,23 +3342,7 @@ const necklaceStal = [
   },
 //   LITERKI
 // SREBRO
-{
-  id: "7627",
-  name: "Naszyjnik stal chirurgiczna - KÓŁECZKO",
-  price: "89.99 zł",
-  oldPrice: "99.99 zł",
-  category: "stal",
-  subCategory: "srebro",
-  url: "/product/7627",
-  image: "https://hurt.ecarla.pl/72517-large_default/naszyjnik-koleczko-stal-chirurgiczna-nst549s.jpg",
-  description: ["Odporny na warunki atmosferyczne, nie koroduje.", "Naszyjnik z motywem kółeczka."],
-  specs: { "Kod producenta": "NST549S", "Długość": "40 cm - 46 cm" },
-  material: "Stal chirurgiczna",
-  color: "Złoty/Srebrny",
-  availability: "W magazynie",
-  image2: "",
-  image3: ""
-},
+
 {
   id: "981",
   name: "Naszyjnik stal chirurgiczna - ŻÓŁWIK",
@@ -4162,22 +3375,7 @@ const necklaceStal = [
     image2: "",
     image3: ""
   },
-    {
-    id: "7625",
-    name: "Naszyjnik stal chirurgiczna - PODWÓJNE KÓŁKO",
-    price: "99.99 zł",
-    category: "stal",
-    subCategory: "srebro",
-    url: "/product/7625",
-    image: "https://hurt.ecarla.pl/72515-large_default/naszyjnik-podwojny-stal-chirurgiczna-nst547s.jpg",
-    description: ["Odporny na warunki atmosferyczne, nie koroduje.", "Podwójny naszyjnik ze stali chirurgicznej.", "Średnica kółeczka 1 cm."],
-    specs: { "Kod producenta": "NST547S", "EAN": "5903678558451", "Długość": "40 cm - 46 cm" },
-    material: "Stal chirurgiczna",
-    color: "Złoty/Srebrny",
-    availability: "W magazynie",
-    image2: "",
-    image3: ""
-  },
+
 // SREBROO
 
 

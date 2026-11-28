@@ -51,15 +51,15 @@ body.product-page-active .product-image-wrapper {
 .product-image-small4 {
   position: absolute;
   top: 420px;
-  height: 100px;
-  width: 100px;
+  height: 100px !important;
+  width: 100px !important;
   cursor: pointer;
 }
 
-.product-image-small { left: 10px; }
-.product-image-small2 { left: 130px; }
-.product-image-small3 { left: 250px; }
-.product-image-small4 { left: 370px; }
+.product-image-small { left: 10px !important; }
+.product-image-small2 { left: 130px !important; }
+.product-image-small3 { left: 250px !important; }
+.product-image-small4 { left: 370px !important; }
 
 .product-image:hover {
   transform: scale(1.05);

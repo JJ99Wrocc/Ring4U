@@ -481,33 +481,7 @@ const BranzoletkiStal = [
     "color": "Jasne Złoto",
     "availability": "W magazynie"
   },
-  {
-    "id": "34570",
-    "name": "Bransoletka na rękę - Stal - Kolorowe serca",
-    "price": "79.99 zł",
-    "oldPrice": "89.99 zł",
-    "category": "stal",
-    "subCategory": "serca-kokardy",
-    "url": "https://hurt.ecarla.pl/pl/bransoletki/bransoletka-na-reke-stal-chirurgiczna-pozlacana-14k-zlotem-serca-zylka-bst1659.html",
-    "image": "https://hurt.ecarla.pl/203340-large_default/bransoletka-na-reke-stal-chirurgiczna-pozlacana-14k-zlotem-serca-zylka-bst1659.jpg",
-    "description": [
-      "Modna bransoletka ze stali nierdzewnej platerowana 14-karatowym złotem",
-      "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji",
-      "Elegancki dodatek na każdą okazję, do sukienek, spódnic, spodenek.",
-      "Stal szlachetna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "BST1659",
-      "EAN": "5903843913047",
-      "Wymiary": "17cm + 5cm regulacji",
-      "Serce": "0,9cm x 0,7cm",
-      "Wymiar kartonika": "10 cm x 8 cm",
-      "Waga": "4g netto / 9g brutto"
-    },
-    "material": "stal chirurgiczna",
-    "color": "Jasne Złoto",
-    "availability": "W magazynie"
-  },
+
    {
     "id": "34554",
     "name": "Bransoletka na rękę - Stal - Serca cyrkonia i zlota",
@@ -970,7 +944,7 @@ const BranzoletkiStal = [
     "category": "stal",
     "subCategory": "serca-kokardy",
     "url": "/product/34066",
-    "image": "https://hurt.ecarla.pl/201914-large_default/bransoletka-na-reke-stal-chirurgiczna-pozlacana-18k-zlotem-serce-kamienie-rozowy-kwarc-bst1623.jpg",
+   
     "description": [
       "Modna bransoletka ze stali nierdzewnej platerowana 18-karatowym złotem",
       "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji",
@@ -987,7 +961,7 @@ const BranzoletkiStal = [
     "material": "stal chirurgiczna",
     "color": "Jasne Złoto / Różowy",
     "availability": "W magazynie",
-    "image2": "https://hurt.ecarla.pl/203397-large_default/bransoletka-na-reke-stal-chirurgiczna-pozlacana-18k-zlotem-serce-kamienie-rozowy-kwarc-bst1623.jpg",
+    "image": "https://hurt.ecarla.pl/203397-large_default/bransoletka-na-reke-stal-chirurgiczna-pozlacana-18k-zlotem-serce-kamienie-rozowy-kwarc-bst1623.jpg",
     "image3": ""
   },
   {
@@ -1589,34 +1563,7 @@ const BranzoletkiStal = [
     "image2": "https://hurt.ecarla.pl/200314-large_default/bransoletka-na-reke-stal-chirurgiczna-pozlacana-14k-zlotem-koniczynka-bst1594.jpg",
     "image3": ""
   },
-    {
-    "id": "33742",
-    "name": "Bransoletka na rękę - Stal - Cztery czarne koniczyny",
-    "price": "99.99 zł",
-    "oldPrice": "109.99 zł",
-    "category": "stal",
-    "subCategory": "kwiaty",
-    "url": "/product/33742",
-    "image": "https://hurt.ecarla.pl/199606-large_default/bransoletka-na-reke-stal-chirurgiczna-pozlacana-14k-zlotem-czarna-koniczynki-bst1570.jpg",
-    "description": [
-      "Modna bransoletka ze stali nierdzewnej platerowana 14 karatowym złotem",
-      "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji",
-      "Elegancki dodatek na każdą okazję, do sukienek, spódnic, spodenek.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "BST1570",
-      "EAN": "5903843901679",
-      "Wymiary": "16 cm + 3 cm regulacja",
-      "Wymiar kartonika": "10 cm x 8 cm",
-      "Waga": "3 g netto / 5 g brutto"
-    },
-    "material": "stal chirurgiczna",
-    "color": "Jasne Złoto / Czarny",
-    "availability": "W magazynie",
-    "image2": "",
-    "image3": ""
-  },
+ 
    {
     "id": "31820",
     "name": "Bransoletka na rękę - Stal - Symbol szczęścia",
@@ -2558,32 +2505,6 @@ const BranzoletkiStal = [
     "availability": "W magazynie"
   },
 
-   {
-    "id": "34550",
-    "name": "Bransoletka na rękę - Stal - Masa perłowa",
-    "price": "84.99 zł",
-    "oldPrice": "94.99 zł",
-    "category": "stal",
-    "subCategory": "pozlacane",
-    "url": "https://hurt.ecarla.pl/pl/bransoletki/bransoletka-na-reke-stal-chirurgiczna-pozlacana-14k-zlotem-obrecz-cyrkonie-masa-perlowa-bst1757.html",
-    "image": "https://hurt.ecarla.pl/203315-large_default/bransoletka-na-reke-stal-chirurgiczna-pozlacana-14k-zlotem-obrecz-cyrkonie-masa-perlowa-bst1757.jpg",
-    "description": [
-      "Modna bransoletka ze stali nierdzewnej platerowana 14 karatowym złotem",
-      "Świetnie pasuje do eleganckich, jak również do codziennych stylizacji",
-      "Elegancki dodatek na każdą okazję, do sukienek, spódnic, spodenek.",
-      "STAL CHIRURGICZNA jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    "specs": {
-      "Kod producenta": "BST1757",
-      "EAN": "5903843915607",
-      "Wymiary": "6,1cm x 5cm x 0,3cm",
-      "Wymiar kartonika": "10 cm x 8 cm",
-      "Waga": "12g netto / 18g brutto"
-    },
-    "material": "stal chirurgiczna",
-    "color": "Jasne Złoto",
-    "availability": "W magazynie"
-  },
 
   {
     "id": "34579",

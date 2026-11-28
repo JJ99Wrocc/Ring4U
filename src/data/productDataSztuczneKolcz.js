@@ -2936,40 +2936,7 @@
 "availability": "W magazynie"
 
 },
-{
-    "id": "34289",
-    "name": "TULIOWE KRYSZTAŁKI RÓŻ",
-    "price": "89.99 zł",
-    "category": "sztuczne",
-    "subCategory": "kwiaty",
-    "image": "https://hurt.ecarla.pl/202684-large_default/kolczyki-wiszące-efektowne-tiulowe-z-kryształkami-róż-złote-sztyft-k1723r.jpg",
-    "description": "Tiulowe kwiaty z kryształkami. Biżuteria antyalergiczna.",
-    "specs": {
-    "Wymiary": "5,7 cm x 5,5 cm",
-    "Waga": "6g netto / 11g brutto",
-    "Zapięcie": "sztyft",
-    "Model": "K1723R"
-},
-"material": "Biżuteria sztuczna",
-"availability": "W magazynie"
-},
-{
-  "id": "34290",
-  "name": "KWIATY TULIOWE FUKSJA",
-  "price": "20.30 zł",
-  "category": "sztuczne",
-  "subCategory": "kwiaty",
-  "image": "https://hurt.ecarla.pl/202686-large_default/kolczyki-wiszące-efektowne-tiulowe-z-kryształkami-fuksja-złote-sztyft-k1723f.jpg",
-  "description": "Efektowne kolczyki w kolorze fuksji z kryształkami.",
-  "specs": {
-    "Wymiary": "5,7 cm x 5,5 cm",
-    "Waga": "6g netto / 11g brutto",
-    "Zapięcie": "sztyft",
-    "Model": "K1723F"
-},
-"material": "Biżuteria sztuczna",
-"availability": "W magazynie"
-},
+
 {
     "id": "34291",
     "name": "FIOLETOWY KWIAT",
@@ -4120,7 +4087,7 @@
     price: "79.99 zł", 
     category: "sztuczne",
         subCategory: "uchu",
-    image: "https://hurt.ecarla.pl/162211-large_default/kolczyki-damskie-wianuszki-kst3210.jpg",
+   
     description: [
       "Delikatne kolczyki damskie.",
       "Eleganckie i stylowe kolczyki.",
@@ -4138,7 +4105,7 @@
     color: "Nierozpoznany", 
     availability: "W magazynie", 
     image2: "https://hurt.ecarla.pl/162210-large_default/kolczyki-damskie-wianuszki-kst3210.jpg",
-    image3: "https://hurt.ecarla.pl/162208-large_default/kolczyki-damskie-wianuszki-kst3210.jpg"
+    image: "https://hurt.ecarla.pl/162208-large_default/kolczyki-damskie-wianuszki-kst3210.jpg"
   },
   { 
     id: "27929",    

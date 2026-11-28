@@ -88,30 +88,13 @@ const capitalizeName = (name) => {
           className="ui right floated header "
           style={{
             position: "relative",
-            right: "-40px",
+            right: "-10px",
             display: "flex",
             alignItems: "center",
             gap: "15px",
           }}
           role="menubar"
         >
-          {/* <div
-            className=" search-bar"
-            onMouseEnter={() => setShowSearch(true)}
-            onMouseLeave={() => setShowSearch(false)}
-            role="menuitem"
-            tabIndex="0"
-            aria-haspopup="true"
-            aria-expanded={showSearch}
-            aria-label="Szukaj produktów"
-          >
-            
-            <input type="text" placeholder="Wyszukaj" />
-             <button><i className="fa-solid fa-magnifying-glass"></i></button>
-           
-           
-          </div> */}
-
           <div
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
