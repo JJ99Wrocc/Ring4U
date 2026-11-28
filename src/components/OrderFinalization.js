@@ -145,16 +145,16 @@ const finalTotalCost = (
   };
 
 const handleDeliverySelect = (method) => {
-
   console.log("FINAL DELIVERY SELECT:", method);
 
-  setSelectedDeliveryMethod(method);
+  // Jeśli method to pusty string/null/undefined, nie ustawiaj go jako wybranego
+  const normalizedMethod =
+    typeof method === "string" ? method.trim() : method;
 
-  updateOrderData(
-    "deliveryMethod",
-    method
-  );
+  if (!normalizedMethod) return;
 
+  setSelectedDeliveryMethod(normalizedMethod);
+  updateOrderData("deliveryMethod", normalizedMethod);
 };
 
   const handleEmailChange = (event) => {
@@ -371,16 +371,16 @@ console.log("cena do HotPay:", cena);
               <p className="delivery-title">SPOSÓB DOSTAWY</p>
               <DeliveryMethod onSelect={handleDeliverySelect} />
 
-              {selectedDeliveryMethod && (
-                <>
-                  <hr className="order-line" />
-                  <p className="Payment-method big-letter-order">PŁATNOŚĆ</p>
-                  <PaymentMethods
-                    selected={selectedPaymentMethod}
-                    onSelect={setSelectedPaymentMethod}
-                  />
-                </>
-              )}
+             {Boolean(selectedDeliveryMethod) && (
+  <>
+    <hr className="order-line" />
+    <p className="Payment-method big-letter-order">PŁATNOŚĆ</p>
+    <PaymentMethods
+      selected={selectedPaymentMethod}
+      onSelect={setSelectedPaymentMethod}
+    />
+  </>
+)}
             </span>
           ) : (
             <div className="delivery-method big-letter-order">

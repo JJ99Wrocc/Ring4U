@@ -97,7 +97,7 @@
     border: 1px solid #ffcc00;
 }
 .leaflet-popup-content-wrapper, .leaflet-popup-tip{
-    background-color: #b69292 !important;
+    background: linear-gradient(274deg, #1a1a1e 0%, #2a2a32 10%, #121215 100%) !important;
 }
 
 .popup-premium-content h3 {

@@ -56,6 +56,7 @@
 .order-discount-enter {
   width: 100%;         /* Jeśli chcesz, żeby napis był nad inputem i buttonem */
   margin-bottom: 5px;
+  color: #bc9600 !important;
 }
 
 .order-discount-section input {

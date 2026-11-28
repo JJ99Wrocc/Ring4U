@@ -360,8 +360,8 @@ font-weight: bold;
 }
 .payment-option.selected {
   border-color: green;
-  background-color: #e0ffe0;
-
+  background: linear-gradient(145deg, #0a0a0a, #1a1a1a) !important;
+  color: #bc9600 !important;
 }
 .payment-option {
   transition: all 0.3s ease;

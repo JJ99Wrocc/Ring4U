@@ -32,24 +32,24 @@ const DeliveryMethod = ({ onSelect }) => {
 
 
 
-  const handleSelect = (method) => {
-
+const handleSelect = (method) => {
     setSelectedDelivery(method);
 
+    const isCourier =
+      method === "kurier-inpost" || method === "kurier-dhl";
 
-    updateOrderData("deliveryMethod", {
-
+    const deliveryPayload = {
       method: method,
+      pickupPoint: isCourier
+        ? null
+        : orderData.deliveryMethod?.pickupPoint || null,
+    };
 
-      // NIE KASUJEMY WYBRANEGO PACZKOMATU
-      pickupPoint:
-        orderData.deliveryMethod?.pickupPoint || null
+    updateOrderData("deliveryMethod", deliveryPayload);
 
-    });
-
-
-
-
+    if (onSelect) {
+      onSelect(deliveryPayload);
+    }
   };
 
 
@@ -61,7 +61,7 @@ const getDeliveryPrice = (method) => {
       inpost: "11.49 zł",
       dhl: "9.90 zł",
       "kurier-inpost": "14.49 zł",
-      "kurier-dhl": "14.80 zł"
+      "kurier-dhl": "19.99 zł"
     };
 
     return prices[method] || "0.00 zł";
@@ -311,29 +311,21 @@ const getDeliveryPrice = (method) => {
 
 
 
-
-      <div
-
+<div
         className={`ui segment third-delivery-box delivery-boxes ${
           selectedDelivery === "kurier-dhl" ? "selected" : ""
         }`}
-
-        onClick={() => handleSelect("kurier-dhl")}
-
+        style={{ position: "relative", zIndex: 2 }}
+        onClick={() => {
+          console.log("KLIK DHL");
+          handleSelect("kurier-dhl");
+        }}
       >
-
-        <p>Dostawa kurierska DHL</p>
-
+        <p>Dostawa kurierska do domu</p>
         <p>{getDeliveryPrice("kurier-dhl")}</p>
-
-
         <span className="delivery-flag">
-
           <i className="fa-solid fa-store"></i>
-
         </span>
-
-
       </div>
 
 

@@ -100,7 +100,7 @@ h1{
 }
 
 .segment-product-detail-amount select,.ui.segment:last-child {
- 
+ width: 80px !important;
    background: linear-gradient(274deg, #1a1a1e 0%, #2a2a32 10%, #121215 100%) !important;
   color:#bc9600;
   /* padding: 0.4rem 0.8rem !important; */

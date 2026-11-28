@@ -68,7 +68,7 @@
 
   } 
   .left-order-finalization-box a{
-    color: #090505;
+    color: #bc9600 !important;
   }
   .left-order-finalization-box{
 
@@ -78,7 +78,7 @@
     min-width: 0;
   height: auto;
   min-height: min-content;
-    color: rgb(55, 39, 39);
+    color: #bc9600 !important;
   }
   .big-letter-order{
     font-size: 20px;
@@ -163,7 +163,7 @@
   }
 
   .place-order-btn {
-    background: #cb80a2 !important;
+    background: linear-gradient(274deg, #1a1a1e 0%, #2a2a32 70%, #121215 100%) !important;
     color: rgb(239, 200, 200);
     padding: 14px 28px;
     border: none;
