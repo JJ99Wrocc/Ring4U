@@ -88,7 +88,7 @@ const capitalizeName = (name) => {
           className="ui right floated header "
           style={{
             position: "relative",
-            right: "-10px",
+            right: "-40px",
             display: "flex",
             alignItems: "center",
             gap: "15px",
