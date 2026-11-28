@@ -1881,34 +1881,7 @@
     image2: "",
     image3: ""
   },
-  { 
-    id: "27837",    
-    name:" Kolczyki ze stali - Złote perłki ",
-    price: "89.99 zł", 
-    category: "stal",
-    "subCategory": "platerowane",
-    url: "/product/27837",
-    image: "https://hurt.ecarla.pl/163225-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3229.jpg",
-    description: [
-      "Kolczyki platerowane 14-karatowym złotem, sztyft.",
-      "Eleganckie i stylowe kolczyki.",
-      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    specs: {
-      "Wymiar kolczyków": "3 cm x 3 cm x 1 cm",
-      "Wymiar kartonika": "5,5 cm x 6 cm",
-      "Waga": "10 g netto / 12 g brutto",
-      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
-      "Rodzaj zapięcia": "Sztyft",
-      "Model": "KST3229" 
-    },
-    material: "Stal chirurgiczna", 
-    color: "Jasne złoto", 
-    availability: "W magazynie", 
-    image2: "",
-    image3: ""
-  },
-  
+
   { 
     id: "27847",    
     name:" Kolczyki ze stali - Szkielety muszelek ",
@@ -1916,7 +1889,7 @@
     category: "stal",
     "subCategory": "platerowane",
     url: "/product/27847",
-    image: "https://hurt.ecarla.pl/201006-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3239.jpg",
+
     description: [
       "Kolczyki platerowane 14-karatowym złotem, sztyft.",
       "Eleganckie i stylowe kolczyki.",
@@ -1933,36 +1906,10 @@
     material: "Stal chirurgiczna", 
     color: "Jasne złoto", 
     availability: "W magazynie", 
-    image2: "https://hurt.ecarla.pl/201007-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3239.jpg",
+    image: "https://hurt.ecarla.pl/201007-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3239.jpg",
     image3: ""
   },
-  { 
-    id: "27852",    
-    name:" Kolczyki ze stali - Perełki ",
-    price: "79.99 zł", 
-    category: "stal",
-    "subCategory": "platerowane",
-    url: "/product/27852",
-    image: "https://hurt.ecarla.pl/163240-large_default/kolczyki-ze-stali-szlachetnej-platerowane-14k-zlotem-sztyft-kst3244.jpg",
-    description: [
-      "Kolczyki platerowane 14-karatowym złotem, sztyft.",
-      "Eleganckie i stylowe kolczyki.",
-      "Stal chirurgiczna jest odporna na warunki atmosferyczne, nie ulega korozji, nie rdzewieje, nie śniedzieje."
-    ],
-    specs: {
-      "Wymiar kolczyków": "1,4 cm x 1,4 cm",
-      "Wymiar kartonika": "5,5 cm x 6 cm",
-      "Waga": "4 g netto / 6 g brutto",
-      "Materiał wykonania": "Stal chirurgiczna platerowana złotem",
-      "Rodzaj zapięcia": "Sztyft",
-      "Model": "KST3244" 
-    },
-    material: "Stal chirurgiczna", 
-    color: "Jasne złoto", 
-    availability: "W magazynie", 
-    image2: "",
-    image3: ""
-  },
+
   {
     "id": "34347",
     name:" Kolczyki ze stali - Piękne",
